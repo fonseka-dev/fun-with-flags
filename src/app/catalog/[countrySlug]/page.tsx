@@ -11,12 +11,13 @@ export function generateStaticParams() {
   return getCountrySlugs().map((slug) => ({ countrySlug: slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { countrySlug: string };
+  params: Promise<{ countrySlug: string }>;
 }) {
-  const country = getCountryBySlug(params.countrySlug);
+  const { countrySlug } = await params;
+  const country = getCountryBySlug(countrySlug);
   if (!country) return { title: "Country Not Found" };
   return {
     title: `${country.name} — Explorer's Atlas`,
@@ -24,12 +25,13 @@ export function generateMetadata({
   };
 }
 
-export default function CountryDetailPage({
+export default async function CountryDetailPage({
   params,
 }: {
-  params: { countrySlug: string };
+  params: Promise<{ countrySlug: string }>;
 }) {
-  const country = getCountryBySlug(params.countrySlug);
+  const { countrySlug } = await params;
+  const country = getCountryBySlug(countrySlug);
 
   if (!country) {
     notFound();

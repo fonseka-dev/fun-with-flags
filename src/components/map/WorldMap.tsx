@@ -95,18 +95,35 @@ export function WorldMap({ className = "" }: WorldMapProps) {
         onMouseMove={handlePathHover}
         onMouseLeave={handleMouseLeave}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <object
-          data="/maps/world.svg"
-          type="image/svg+xml"
-          className="w-full h-full pointer-events-none"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 500"
+          className="w-full h-full"
           aria-label="Interactive world map — click a country to learn about it"
         >
-          <p>
-            Your browser does not support SVGs. Please use the catalog to browse
-            countries.
-          </p>
-        </object>
+          <rect width="1000" height="500" fill="var(--color-surface-container)" rx="16" />
+          <text
+            x="500"
+            y="230"
+            textAnchor="middle"
+            fill="var(--color-on-surface-variant)"
+            fontSize="22"
+            fontFamily="sans-serif"
+            fontWeight="bold"
+          >
+            🌍 World Map
+          </text>
+          <text
+            x="500"
+            y="270"
+            textAnchor="middle"
+            fill="var(--color-outline)"
+            fontSize="14"
+            fontFamily="sans-serif"
+          >
+            Interactive map coming soon — browse countries in the Catalog
+          </text>
+        </svg>
       </div>
 
       <MapControls
