@@ -27,7 +27,7 @@ function DashboardContent() {
             </span>
             Explorer
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-on-background leading-none">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background leading-none">
             Welcome back,
             <br />
             <span className="text-primary">Adventurer!</span>

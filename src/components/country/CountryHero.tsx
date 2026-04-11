@@ -24,7 +24,7 @@ export function CountryHero({ country }: CountryHeroProps) {
             <span className="bg-white/20 backdrop-blur-md text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">
               Country Spotlight
             </span>
-            <h1 className="text-white text-5xl md:text-7xl font-extrabold mt-2 tracking-tighter">
+            <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-extrabold mt-2 tracking-tighter">
               {country.name}
             </h1>
           </div>

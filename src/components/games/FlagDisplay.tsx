@@ -14,7 +14,7 @@ export function FlagDisplay({ country }: FlagDisplayProps) {
           alt="Mystery flag — guess which country!"
           width={384}
           height={256}
-          className="rounded-sm object-cover"
+          className="rounded-lg object-cover"
           priority
         />
       </div>

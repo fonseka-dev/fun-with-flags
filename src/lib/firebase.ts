@@ -25,19 +25,39 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const app =
-  getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+// Lazy initialization — Firebase must only run in the browser
+function getFirebaseApp() {
+  if (typeof window === "undefined") {
+    throw new Error("Firebase is only available on the client");
+  }
+  return getApps().length === 0
+    ? initializeApp(firebaseConfig)
+    : getApps()[0];
+}
+
+export function getAuthClient() {
+  return getAuth(getFirebaseApp());
+}
+
+export function getDbClient() {
+  return getFirestore(getFirebaseApp());
+}
+
+/** @deprecated Use getAuthClient() — kept for backwards compat in hooks */
+export const auth = null as unknown as ReturnType<typeof getAuth>;
+
+/** @deprecated Use getDbClient() — kept for backwards compat in hooks */
+export const db = null as unknown as ReturnType<typeof getFirestore>;
 
 export async function signInAnonymouslyIfNeeded(): Promise<User> {
+  const authInst = getAuthClient();
   return new Promise((resolve, reject) => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(authInst, (user) => {
       unsubscribe();
       if (user) {
         resolve(user);
       } else {
-        signInAnonymously(auth)
+        signInAnonymously(authInst)
           .then((cred) => resolve(cred.user))
           .catch(reject);
       }
@@ -48,14 +68,14 @@ export async function signInAnonymouslyIfNeeded(): Promise<User> {
 export async function getUserProgress(
   uid: string,
 ): Promise<UserProgress | null> {
-  const ref = doc(db, "users", uid);
+  const ref = doc(getDbClient(), "users", uid);
   const snap = await getDoc(ref);
   if (!snap.exists()) return null;
   return snap.data() as UserProgress;
 }
 
 export async function initUserProgress(uid: string): Promise<void> {
-  const ref = doc(db, "users", uid);
+  const ref = doc(getDbClient(), "users", uid);
   const snap = await getDoc(ref);
   if (!snap.exists()) {
     await setDoc(ref, {
@@ -72,7 +92,7 @@ export async function addDiscoveredCountry(
   uid: string,
   slug: string,
 ): Promise<void> {
-  const ref = doc(db, "users", uid);
+  const ref = doc(getDbClient(), "users", uid);
   await updateDoc(ref, {
     discoveredCountries: arrayUnion(slug),
     lastPlayedAt: serverTimestamp(),
@@ -83,7 +103,7 @@ export async function updateQuizScore(
   uid: string,
   score: number,
 ): Promise<void> {
-  const ref = doc(db, "users", uid);
+  const ref = doc(getDbClient(), "users", uid);
   const progress = await getUserProgress(uid);
   const updates: Record<string, unknown> = {
     quizGamesPlayed: (progress?.quizGamesPlayed ?? 0) + 1,
