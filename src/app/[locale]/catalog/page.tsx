@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, Suspense } from "react";
+import { useTranslations } from "next-intl";
 import { countries } from "@/data/countries";
 import { filterByContinent, searchCountries } from "@/lib/utils/countries";
 import { useContinentFilter } from "@/lib/hooks/useContinentFilter";
@@ -8,6 +9,7 @@ import { AppShell } from "@/components/layout/AppShell";
 import { CountryGrid } from "@/components/catalog/CountryGrid";
 
 function CatalogContent() {
+  const t = useTranslations("catalog");
   const [searchQuery, setSearchQuery] = useState("");
   const { activeContinent } = useContinentFilter();
 
@@ -21,11 +23,10 @@ function CatalogContent() {
     <AppShell searchQuery={searchQuery} onSearchChange={setSearchQuery}>
       <header className="mb-12">
         <h1 className="text-5xl md:text-6xl font-extrabold text-on-background tracking-tighter mb-4">
-          Discover Nations
+          {t("title")}
         </h1>
         <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
-          Your digital field guide to the wonders of our planet. Explore
-          histories, flags, and cultures across all seven continents.
+          {t("subtitle")}
         </p>
       </header>
       <CountryGrid countries={filteredCountries} />

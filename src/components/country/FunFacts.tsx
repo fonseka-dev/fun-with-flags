@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { FunFact } from "@/data/types";
 
 type FunFactsProps = {
@@ -5,6 +8,8 @@ type FunFactsProps = {
 };
 
 export function FunFacts({ facts }: FunFactsProps) {
+  const t = useTranslations("country");
+
   return (
     <section>
       <div className="flex items-center gap-4 mb-6">
@@ -16,7 +21,7 @@ export function FunFacts({ facts }: FunFactsProps) {
             lightbulb
           </span>
         </div>
-        <h2 className="text-3xl font-extrabold tracking-tight">Fun Facts</h2>
+        <h2 className="text-3xl font-extrabold tracking-tight">{t("funFacts")}</h2>
       </div>
       <div className="grid grid-cols-1 gap-6">
         {facts.map((fact) => (

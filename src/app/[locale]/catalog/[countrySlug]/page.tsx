@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { getCountryBySlug, getCountrySlugs } from "@/lib/utils/countries";
 import { CountryHero } from "@/components/country/CountryHero";
 import { FlagMeaning } from "@/components/country/FlagMeaning";
 import { FunFacts } from "@/components/country/FunFacts";
 import { RegionalContext } from "@/components/country/RegionalContext";
 import { DiscoverTracker } from "@/components/country/DiscoverTracker";
+import { CountryDetailHeader } from "@/components/country/CountryDetailHeader";
 
 export function generateStaticParams() {
   return getCountrySlugs().map((slug) => ({ countrySlug: slug }));
@@ -39,21 +39,7 @@ export default async function CountryDetailPage({
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Simplified TopNav for detail page */}
-      <header className="glass sticky top-0 z-40">
-        <div className="flex items-center gap-6 px-8 py-4 max-w-screen-xl mx-auto">
-          <Link
-            href="/catalog"
-            className="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-bounce group"
-          >
-            <span className="material-symbols-outlined">arrow_back</span>
-            <span className="font-bold">Back to Catalog</span>
-          </Link>
-          <span className="text-2xl font-extrabold text-primary tracking-tight">
-            Explorer&apos;s Atlas
-          </span>
-        </div>
-      </header>
+      <CountryDetailHeader />
 
       <main className="max-w-screen-xl mx-auto px-6 pt-12 pb-32">
         <DiscoverTracker slug={country.slug} />

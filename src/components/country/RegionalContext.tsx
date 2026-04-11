@@ -1,13 +1,17 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Country } from "@/data/types";
 import { getContinentMeta } from "@/data/continents";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 type RegionalContextProps = {
   country: Country;
 };
 
 export function RegionalContext({ country }: RegionalContextProps) {
+  const t = useTranslations("country");
   const continentMeta = getContinentMeta(country.continent);
 
   return (
@@ -16,7 +20,7 @@ export function RegionalContext({ country }: RegionalContextProps) {
         <span className="material-symbols-outlined text-[12rem]">map</span>
       </div>
       <h3 className="text-2xl font-bold mb-4 relative z-10">
-        Regional Context
+        {t("regionalContext")}
       </h3>
       <div className="relative z-10 w-full h-32 bg-white/20 backdrop-blur-sm rounded-lg mb-4 flex items-center justify-center">
         <span className="material-symbols-outlined text-4xl opacity-60">
@@ -34,7 +38,7 @@ export function RegionalContext({ country }: RegionalContextProps) {
         >
           <span className="flex items-center justify-center gap-2">
             <span className="material-symbols-outlined">explore</span>
-            Explore Region
+            {t("exploreRegion")}
           </span>
         </Button>
       </Link>

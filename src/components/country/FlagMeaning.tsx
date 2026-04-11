@@ -1,8 +1,14 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 type FlagMeaningProps = {
   description: string;
 };
 
 export function FlagMeaning({ description }: FlagMeaningProps) {
+  const t = useTranslations("country");
+
   return (
     <section className="mb-12">
       <div className="flex items-center gap-4 mb-6">
@@ -15,7 +21,7 @@ export function FlagMeaning({ description }: FlagMeaningProps) {
           </span>
         </div>
         <h2 className="text-3xl font-extrabold tracking-tight">
-          Meaning of the Flag
+          {t("flagMeaning")}
         </h2>
       </div>
       <div className="bg-surface-container-lowest p-8 rounded-xl shadow-ambient leading-[1.6] text-lg text-on-surface">

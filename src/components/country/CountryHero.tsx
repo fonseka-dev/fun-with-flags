@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Country } from "@/data/types";
 
 type CountryHeroProps = {
@@ -6,6 +9,7 @@ type CountryHeroProps = {
 };
 
 export function CountryHero({ country }: CountryHeroProps) {
+  const t = useTranslations("country");
   return (
     <section className="relative mb-12">
       <div className="flex flex-col lg:flex-row items-end gap-8">
@@ -13,7 +17,7 @@ export function CountryHero({ country }: CountryHeroProps) {
         <div className="relative w-full lg:w-2/3 aspect-video rounded-xl overflow-hidden shadow-ambient-lg">
           <Image
             src={`https://flagcdn.com/w640/${country.flagCode}.png`}
-            alt={`Flag of ${country.name}`}
+            alt={t("flagAlt", { name: country.name })}
             fill
             className="object-cover"
             priority
@@ -22,7 +26,7 @@ export function CountryHero({ country }: CountryHeroProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-8 left-8">
             <span className="bg-white/20 backdrop-blur-md text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">
-              Country Spotlight
+              {t("spotlight")}
             </span>
             <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-extrabold mt-2 tracking-tighter">
               {country.name}
@@ -39,7 +43,7 @@ export function CountryHero({ country }: CountryHeroProps) {
               </span>
             </div>
             <h3 className="text-xs font-bold text-primary uppercase tracking-widest mb-2">
-              Capital City
+              {t("capitalLabel")}
             </h3>
             <p className="text-4xl font-extrabold text-on-surface">
               {country.capital}
@@ -52,7 +56,7 @@ export function CountryHero({ country }: CountryHeroProps) {
               </span>
             </div>
             <h3 className="text-xs font-bold text-primary uppercase tracking-widest mb-2">
-              Population
+              {t("populationLabel")}
             </h3>
             <p className="text-4xl font-extrabold text-on-surface">
               {country.population}
