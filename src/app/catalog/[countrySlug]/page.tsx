@@ -5,6 +5,7 @@ import { CountryHero } from "@/components/country/CountryHero";
 import { FlagMeaning } from "@/components/country/FlagMeaning";
 import { FunFacts } from "@/components/country/FunFacts";
 import { RegionalContext } from "@/components/country/RegionalContext";
+import { DiscoverTracker } from "@/components/country/DiscoverTracker";
 
 export function generateStaticParams() {
   return getCountrySlugs().map((slug) => ({ countrySlug: slug }));
@@ -53,6 +54,7 @@ export default function CountryDetailPage({
       </header>
 
       <main className="max-w-screen-xl mx-auto px-6 pt-12 pb-32">
+        <DiscoverTracker slug={country.slug} />
         <CountryHero country={country} />
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">

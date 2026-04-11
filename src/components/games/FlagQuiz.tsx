@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { Country } from "@/data/types";
 import { useGameState } from "@/lib/hooks/useGameState";
 import { FlagDisplay } from "./FlagDisplay";
@@ -12,10 +13,17 @@ import Link from "next/link";
 
 type FlagQuizProps = {
   pool: Country[];
+  onGameOver?: (score: number) => void;
 };
 
-export function FlagQuiz({ pool }: FlagQuizProps) {
+export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
   const { state, startGame, submitAnswer, nextQuestion } = useGameState(pool);
+
+  useEffect(() => {
+    if (state.status === "gameOver" && onGameOver) {
+      onGameOver(state.score);
+    }
+  }, [state.status, state.score, onGameOver]);
 
   // Idle screen
   if (state.status === "idle") {
