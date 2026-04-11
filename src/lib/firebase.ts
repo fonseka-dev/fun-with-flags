@@ -13,8 +13,10 @@ import {
   updateDoc,
   arrayUnion,
   serverTimestamp,
+  collection,
+  getDocs,
 } from "firebase/firestore";
-import { UserProgress } from "@/data/types";
+import { UserProgress, Country, CountryBase, CountryTranslation, Locale } from "@/data/types";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -125,4 +127,24 @@ export async function updateQuizScore(
     updates.quizHighScore = score;
   }
   await updateDoc(ref, updates);
+}
+
+export async function fetchAllCountries(locale: Locale): Promise<Country[]> {
+  if (!isFirebaseConfigured()) return [];
+
+  const db = getDbClient();
+  const countriesSnap = await getDocs(collection(db, "countries"));
+
+  const results: Country[] = [];
+  for (const countryDoc of countriesSnap.docs) {
+    const base = countryDoc.data() as CountryBase;
+    const transDoc = await getDoc(
+      doc(db, "countries", base.slug, "translations", locale),
+    );
+    if (transDoc.exists()) {
+      results.push({ ...base, ...(transDoc.data() as CountryTranslation) });
+    }
+  }
+
+  return results;
 }
