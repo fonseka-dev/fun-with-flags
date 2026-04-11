@@ -1,8 +1,11 @@
-import { countries } from "@/data/countries";
+import { countries as staticCountries } from "@/data/countries";
 import { Country, Continent } from "@/data/types";
 
-export function getCountryBySlug(slug: string): Country | undefined {
-  return countries.find((c) => c.slug === slug);
+export function getCountryBySlug(
+  slug: string,
+  pool: Country[] = staticCountries,
+): Country | undefined {
+  return pool.find((c) => c.slug === slug);
 }
 
 export function filterByContinent(
@@ -23,6 +26,8 @@ export function searchCountries(list: Country[], query: string): Country[] {
   );
 }
 
-export function getCountrySlugs(): string[] {
-  return countries.map((c) => c.slug);
+export function getCountrySlugs(
+  pool: Country[] = staticCountries,
+): string[] {
+  return pool.map((c) => c.slug);
 }

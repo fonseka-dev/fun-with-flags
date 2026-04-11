@@ -2,7 +2,7 @@
 
 import { useState, useMemo, Suspense } from "react";
 import { useTranslations } from "next-intl";
-import { countries } from "@/data/countries";
+import { useCountries } from "@/lib/providers/CountriesProvider";
 import { filterByContinent, searchCountries } from "@/lib/utils/countries";
 import { useContinentFilter } from "@/lib/hooks/useContinentFilter";
 import { AppShell } from "@/components/layout/AppShell";
@@ -10,6 +10,7 @@ import { CountryGrid } from "@/components/catalog/CountryGrid";
 
 function CatalogContent() {
   const t = useTranslations("catalog");
+  const { countries } = useCountries();
   const [searchQuery, setSearchQuery] = useState("");
   const { activeContinent } = useContinentFilter();
 
@@ -17,7 +18,7 @@ function CatalogContent() {
     let result = filterByContinent(countries, activeContinent);
     result = searchCountries(result, searchQuery);
     return result;
-  }, [activeContinent, searchQuery]);
+  }, [countries, activeContinent, searchQuery]);
 
   return (
     <AppShell searchQuery={searchQuery} onSearchChange={setSearchQuery}>
