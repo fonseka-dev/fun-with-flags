@@ -1,7 +1,8 @@
 "use client";
 
 import { Suspense } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { AppShell } from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/Button";
 
@@ -13,6 +14,8 @@ const dailySuggestions = [
 ];
 
 function DashboardContent() {
+  const t = useTranslations("home");
+
   return (
     <AppShell showSidebar>
       <section className="space-y-12">
@@ -25,16 +28,15 @@ function DashboardContent() {
             >
               star
             </span>
-            Explorer
+            {t("badge")}
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background leading-none">
-            Welcome back,
+            {t("welcome")}
             <br />
-            <span className="text-primary">Adventurer!</span>
+            <span className="text-primary">{t("adventurer")}</span>
           </h1>
           <p className="text-xl text-on-surface-variant max-w-2xl leading-[1.6]">
-            The world is waiting for you. Ready to discover your next
-            destination?
+            {t("subtitle")}
           </p>
         </header>
 
@@ -48,9 +50,9 @@ function DashboardContent() {
             <div className="p-8 pb-0">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="text-3xl font-bold mb-2">Interactive Map</h3>
+                  <h3 className="text-3xl font-bold mb-2">{t("mapCard.title")}</h3>
                   <p className="text-on-surface-variant">
-                    Tap to fly anywhere on Earth
+                    {t("mapCard.subtitle")}
                   </p>
                 </div>
                 <div className="bg-primary-container p-4 rounded-full text-on-primary-container">
@@ -75,8 +77,8 @@ function DashboardContent() {
           {/* Journey Progress */}
           <div className="md:col-span-4 bg-tertiary-container text-on-tertiary-container rounded-xl p-8 flex flex-col justify-between shadow-ambient">
             <div>
-              <h3 className="text-2xl font-bold mb-1">Your Journey</h3>
-              <p className="opacity-80">0 / 195 Countries Found</p>
+              <h3 className="text-2xl font-bold mb-1">{t("journey.title")}</h3>
+              <p className="opacity-80">{t("journey.progress", { discovered: 0, total: 195 })}</p>
             </div>
             <div className="relative py-8 flex justify-center">
               <div className="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center">
@@ -94,7 +96,7 @@ function DashboardContent() {
               className="bg-on-tertiary-container text-tertiary-container hover:brightness-90"
               disabled
             >
-              View Passport
+              {t("journey.viewPassport")}
             </Button>
           </div>
 
@@ -104,9 +106,9 @@ function DashboardContent() {
             className="md:col-span-6 bg-surface-container-highest rounded-xl p-8 group cursor-pointer relative overflow-hidden h-72 flex flex-col justify-between transition-bounce hover:scale-[1.01]"
           >
             <div className="z-10">
-              <h3 className="text-3xl font-bold mb-2">Explore the World</h3>
+              <h3 className="text-3xl font-bold mb-2">{t("exploreCard.title")}</h3>
               <p className="text-on-surface-variant max-w-[200px]">
-                Dive into cultures, flags, and landmarks.
+                {t("exploreCard.subtitle")}
               </p>
             </div>
             <div className="z-10 self-start">
@@ -122,9 +124,9 @@ function DashboardContent() {
             className="md:col-span-6 bg-secondary-container rounded-xl p-8 group cursor-pointer relative overflow-hidden h-72 flex flex-col justify-between transition-bounce hover:scale-[1.01]"
           >
             <div className="z-10">
-              <h3 className="text-3xl font-bold mb-2">Play &amp; Learn</h3>
+              <h3 className="text-3xl font-bold mb-2">{t("playCard.title")}</h3>
               <p className="text-on-secondary-container max-w-[200px]">
-                Win trophies in regional trivia!
+                {t("playCard.subtitle")}
               </p>
             </div>
             <div className="z-10 self-start">
@@ -138,12 +140,12 @@ function DashboardContent() {
         {/* Discover Daily */}
         <section className="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-ambient">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl font-bold">Discover Daily</h2>
+            <h2 className="text-4xl font-bold">{t("discoverDaily")}</h2>
             <Link
               href="/catalog"
               className="text-primary font-bold flex items-center gap-2 hover:underline"
             >
-              More Suggestions
+              {t("moreSuggestions")}
               <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
           </div>
