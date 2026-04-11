@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import {
+  isFirebaseConfigured,
   signInAnonymouslyIfNeeded,
   getUserProgress,
   initUserProgress,
@@ -16,6 +17,12 @@ export function useUserProgress() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Firebase not configured — skip silently, app works without it
+    if (!isFirebaseConfigured()) {
+      setLoading(false);
+      return;
+    }
+
     let cancelled = false;
 
     async function init() {
@@ -27,8 +34,8 @@ export function useUserProgress() {
         const data = await getUserProgress(user.uid);
         if (cancelled) return;
         setProgress(data);
-      } catch (err) {
-        console.error("Firebase auth failed:", err);
+      } catch {
+        // Progress tracking unavailable — app still works
       } finally {
         if (!cancelled) setLoading(false);
       }

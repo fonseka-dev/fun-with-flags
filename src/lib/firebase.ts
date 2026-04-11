@@ -25,10 +25,22 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
+/** Returns true when all required Firebase env vars are present */
+export function isFirebaseConfigured(): boolean {
+  return !!(
+    process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
+    process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID &&
+    process.env.NEXT_PUBLIC_FIREBASE_APP_ID
+  );
+}
+
 // Lazy initialization — Firebase must only run in the browser
 function getFirebaseApp() {
   if (typeof window === "undefined") {
     throw new Error("Firebase is only available on the client");
+  }
+  if (!isFirebaseConfigured()) {
+    throw new Error("Firebase is not configured");
   }
   return getApps().length === 0
     ? initializeApp(firebaseConfig)
