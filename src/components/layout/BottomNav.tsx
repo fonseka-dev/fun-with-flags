@@ -1,16 +1,17 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
-const tabs = [
-  { href: "/map", icon: "explore", label: "Map" },
-  { href: "/games/guess-the-flag", icon: "videogame_asset", label: "Games" },
-  { href: "/catalog", icon: "import_contacts", label: "Passport" },
-];
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 
 export function BottomNav() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
+
+  const tabs = [
+    { href: "/map", icon: "explore", label: t("map") },
+    { href: "/games/guess-the-flag", icon: "videogame_asset", label: t("games") },
+    { href: "/catalog", icon: "import_contacts", label: t("passport") },
+  ] as const;
 
   return (
     <nav className="lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 glass rounded-t-xl">

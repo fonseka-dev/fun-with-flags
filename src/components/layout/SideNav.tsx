@@ -1,9 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Continent } from "@/data/types";
 import { ContinentFilter } from "@/components/catalog/ContinentFilter";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 type SideNavProps = {
   activeContinent: Continent | null;
@@ -14,12 +15,14 @@ export function SideNav({
   activeContinent,
   onSelectContinent,
 }: SideNavProps) {
+  const t = useTranslations("sidebar");
+
   return (
     <aside className="hidden lg:flex flex-col w-72 py-8 gap-2 bg-surface-container-lowest shadow-ambient rounded-r-xl">
       <div className="px-8 mb-6">
-        <h2 className="text-xl font-bold text-primary">The World</h2>
+        <h2 className="text-xl font-bold text-primary">{t("title")}</h2>
         <p className="text-on-surface-variant text-sm font-semibold">
-          Choose a region
+          {t("subtitle")}
         </p>
       </div>
 
@@ -30,7 +33,7 @@ export function SideNav({
           <Button variant="tertiary" fullWidth>
             <span className="flex items-center justify-center gap-2">
               <span className="material-symbols-outlined">auto_awesome</span>
-              Daily Challenge
+              {t("dailyChallenge")}
             </span>
           </Button>
         </Link>

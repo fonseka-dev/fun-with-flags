@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Continent } from "@/data/types";
 import { continents } from "@/data/continents";
 
@@ -9,6 +10,8 @@ type ContinentFilterProps = {
 };
 
 export function ContinentFilter({ active, onSelect }: ContinentFilterProps) {
+  const t = useTranslations("continents");
+
   return (
     <nav className="flex flex-col gap-1">
       {continents.map((c) => {
@@ -28,7 +31,7 @@ export function ContinentFilter({ active, onSelect }: ContinentFilterProps) {
             `}
           >
             <span className="material-symbols-outlined">{c.icon}</span>
-            {c.name}
+            {t(c.name)}
           </button>
         );
       })}
