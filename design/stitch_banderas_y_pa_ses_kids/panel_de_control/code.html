@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explorer’s Atlas | Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#5e8bff",
+                    "on-secondary-container": "#005c15",
+                    "on-secondary": "#d1ffc8",
+                    "on-error": "#ffefee",
+                    "on-background": "#272b51",
+                    "surface-container-highest": "#d8daff",
+                    "on-tertiary-fixed": "#3d2b00",
+                    "primary-container": "#799dff",
+                    "primary-fixed": "#799dff",
+                    "outline": "#70749e",
+                    "surface-container": "#e6e6ff",
+                    "secondary-fixed": "#9df197",
+                    "secondary-container": "#9df197",
+                    "on-primary": "#f1f2ff",
+                    "tertiary-fixed-dim": "#ecb200",
+                    "on-tertiary-container": "#553e00",
+                    "on-primary-container": "#001e58",
+                    "error": "#b31b25",
+                    "surface": "#f8f5ff",
+                    "on-secondary-fixed-variant": "#12661e",
+                    "inverse-surface": "#06092f",
+                    "inverse-on-surface": "#969ac6",
+                    "on-surface": "#272b51",
+                    "surface-container-low": "#f1efff",
+                    "on-secondary-fixed": "#00460e",
+                    "secondary": "#176a21",
+                    "background": "#f8f5ff",
+                    "tertiary-dim": "#664b00",
+                    "primary-dim": "#0047b7",
+                    "surface-variant": "#d8daff",
+                    "outline-variant": "#a6aad7",
+                    "on-primary-fixed-variant": "#00276c",
+                    "surface-dim": "#ced1ff",
+                    "surface-tint": "#0052d0",
+                    "secondary-dim": "#025d16",
+                    "error-dim": "#9f0519",
+                    "on-surface-variant": "#545881",
+                    "on-tertiary": "#fff1db",
+                    "on-primary-fixed": "#000000",
+                    "primary": "#0052d0",
+                    "surface-bright": "#f8f5ff",
+                    "secondary-fixed-dim": "#90e28a",
+                    "tertiary": "#755700",
+                    "surface-container-high": "#dfe0ff",
+                    "primary-fixed-dim": "#638eff",
+                    "tertiary-container": "#fdc003",
+                    "on-tertiary-fixed-variant": "#604700",
+                    "tertiary-fixed": "#fdc003",
+                    "on-error-container": "#570008",
+                    "error-container": "#fb5151",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-xl shadow-blue-900/5">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-blue-700 dark:text-blue-400 tracking-tight">Explorer’s Atlas</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 dark:text-blue-400 border-b-4 border-blue-600 font-['Plus_Jakarta_Sans'] font-bold text-lg hover:scale-105 transition-transform duration-200" href="#">Map</a>
+<a class="text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] font-bold text-lg hover:scale-105 transition-transform duration-200" href="#">Games</a>
+<a class="text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] font-bold text-lg hover:scale-105 transition-transform duration-200" href="#">Passport</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex gap-2">
+<button class="p-2 text-blue-600 hover:scale-105 transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</button>
+<button class="p-2 text-blue-600 hover:scale-105 transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="sports_esports">sports_esports</span>
+</button>
+</div>
+<img alt="Young Explorer Passport Photo" class="w-10 h-10 rounded-full border-2 border-primary shadow-md" data-alt="Close-up portrait of a cheerful young child with bright eyes and a curious expression, warm outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_bgEuCcgC7QlBh112pvhN4_U89DYQQU0jrHVa78BQgGG10pOPmNzKWafiTG6dJjPn8V5yVM60KAj4Cms0vTLEGELlMROuJeyUtmLutl_CJojiC7cEMLx0slYye-ScowyGeB1pZm9Fy5zd75ByL4CPOQNT0yEXp6FEk26xMeY9Q0gjSYqYXfTzLVu5YCtVMCEIZRSive33arD2ktwtnV3_xXh8B8xqrm9qb7HqKmDIuoUKhR6foR3wBQZCAkY8N9iLWCN2EthW3ts"/>
+</div>
+</div>
+</nav>
+<main class="max-w-screen-2xl mx-auto px-8 py-12 flex flex-col md:flex-row gap-8">
+<!-- SideNavBar (Region Filter) -->
+<aside class="hidden lg:flex flex-col h-full py-8 gap-2 bg-slate-50 dark:bg-slate-950 h-screen w-72 rounded-r-3xl shadow-2xl shadow-slate-900/10 shrink-0">
+<div class="px-8 mb-6">
+<h2 class="text-xl font-bold text-blue-600 font-['Plus_Jakarta_Sans']">The World</h2>
+<p class="text-sm text-slate-500">Choose a region</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full mx-4 px-4 py-3 font-bold flex items-center gap-3 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="terrain">terrain</span> Africa
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="temple_buddhist">temple_buddhist</span> Asia
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="castle">castle</span> Europe
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="forest">forest</span> North America
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="landscape">landscape</span> South America
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="tsunami">tsunami</span> Oceania
+                </a>
+</nav>
+<div class="mt-auto px-8">
+<button class="w-full bg-primary text-white py-4 px-6 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                    Daily Challenge
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<section class="flex-grow space-y-12">
+<!-- Welcome Header -->
+<header class="space-y-4">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                    Master Explorer Level 4
+                </div>
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tight text-on-background leading-none">
+                    Welcome back,<br/><span class="text-primary">Adventurer!</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    The world is waiting for you. Ready to discover your next destination?
+                </p>
+</header>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature: Interactive Map -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col">
+<div class="p-8 pb-0">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-3xl font-bold mb-2">Interactive Map</h3>
+<p class="text-on-surface-variant">Tap to fly anywhere on Earth</p>
+</div>
+<div class="bg-primary-container p-4 rounded-full text-on-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+</div>
+</div>
+<div class="relative mt-8 h-80 w-full overflow-hidden">
+<img alt="Digital World Map" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Top-down view of a colorful digital stylized world map with vibrant landmasses and blue oceans, high detail" data-location="World" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRfPGufnMVdMgvC3BBpJ4hfDwmmaNkApM-SHWOxadIWMajxdLS0kuZa6tU5Qh4OZzZfEd6Zb7_rO_rns9Zo2tFybEB1HawlfEZZ4YZkWvKxrC1A-plybwNA8PmDqLmIj13opz75uz9u21kgxgo9YnC6w3TCjQIajUp5miKQMU6k6OdIiw7lLe5vbAUZQCQJoKeqPR02WrjKfSU0ZHU_pp1Zof77IquFOtKfWJQi_QSo4STzqxFOv_vnMgqSM2U1UcMwhihgscKPa6m"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+</div>
+<!-- Progress Tracker -->
+<div class="md:col-span-4 bg-tertiary-container text-on-tertiary-container rounded-xl p-8 flex flex-col justify-between shadow-sm">
+<div>
+<h3 class="text-2xl font-bold mb-1">Your Journey</h3>
+<p class="opacity-80">12 / 195 Countries Found</p>
+</div>
+<div class="relative py-8 flex justify-center">
+<div class="w-40 h-40 rounded-full border-[12px] border-white/20 flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-[12px] border-on-tertiary-container border-t-transparent -rotate-45"></div>
+<span class="material-symbols-outlined text-6xl" data-icon="emoji_events" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+</div>
+<button class="bg-on-tertiary-container text-tertiary-container w-full py-4 rounded-xl font-bold hover:scale-105 transition-transform">
+                        View Passport
+                    </button>
+</div>
+<!-- Catalog Card -->
+<div class="md:col-span-6 bg-surface-container-highest rounded-xl p-8 group cursor-pointer relative overflow-hidden h-96 flex flex-col justify-between">
+<div class="z-10">
+<h3 class="text-3xl font-bold mb-2">Explore the World</h3>
+<p class="text-on-surface-variant max-w-[200px]">Dive into cultures, flags, and landmarks.</p>
+</div>
+<div class="z-10 self-start">
+<span class="material-symbols-outlined text-primary text-6xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<!-- Overlapping Illustration -->
+<img alt="Travel Gear" class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full object-cover group-hover:rotate-6 transition-transform duration-500 opacity-60" data-alt="A vintage globe, camera, and travel journal laid out on a clean white surface, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkQ16sKuOVy0lqnJR8glV6dQ0QhFE8xKkI0Yzk62rwUbU6jz-KYK7P5_S2d5s095MOa1RMPdhKAMoPA982VhIHW3huy2NdijOG1QwrTFgZvUnYGLQavbg3TniJN-eClrPFSGchY6iNy1tkLjJLsv3ysewwLJpi2_G9sPXgmB6YtFYT14Z5L3nComVKNFI4UeBhkUCR0_rmQaVY8WT0RnfcRLUj-WKuDghnAGwAdv1pbU1nz7zPM9SJeknSxttaNca1CbjMige19qJl"/>
+</div>
+<!-- Games Card -->
+<div class="md:col-span-6 bg-secondary-container rounded-xl p-8 group cursor-pointer relative overflow-hidden h-96 flex flex-col justify-between">
+<div class="z-10">
+<h3 class="text-3xl font-bold mb-2">Play &amp; Learn</h3>
+<p class="text-on-secondary-container max-w-[200px]">Win trophies in regional trivia!</p>
+</div>
+<div class="z-10 self-start">
+<span class="material-symbols-outlined text-secondary text-6xl" data-icon="videogame_asset">videogame_asset</span>
+</div>
+<!-- Overlapping Illustration -->
+<img alt="Gaming Setup" class="absolute -right-8 -bottom-8 w-64 h-64 rounded-xl object-cover group-hover:scale-110 transition-transform duration-500 opacity-50 rotate-12" data-alt="Brightly colored geometric shapes and controller icons in a playful 3D rendered style with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL7MLPeHDENBkGPoLOUGMNdpFo4D2_aDxPUM5Rqcx5cj4545XonknL-Ku-Ha30UeZrpdz7OLB0YN-tqxuDQwem5cn0UKBkJhheHY_pZXjJaevnyPyODKtFZ-4ajHgvm-s9SNKiWXHVU4uzlu_k6RCD7zB144xAlDL4kVzR-GxfojHuhO2HDkZkoKl1IRw25dOxGqyTFc4e3nHQB_QZ4Y8k3OImOrD0wPtLE7bB2nH_xT0zc-StiFhcCexgZiOSV7AtOii9Ekee3jaM"/>
+</div>
+</div>
+<!-- "Discover Daily" Section -->
+<section class="mt-16 bg-surface p-12 rounded-xl shadow-inner border-2 border-outline-variant/10">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-4xl font-bold">Discover Daily</h2>
+<button class="text-primary font-bold flex items-center gap-2 hover:underline">
+                        More Suggestions <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Suggestion Card 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<img alt="Sydney Opera House" class="w-full h-40 object-cover rounded-md mb-4" data-alt="The Sydney Opera House at twilight with vibrant purple and orange sky reflecting in the harbor water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEkmqEfA5nk7b0hHVmnER1o-s2Ztw4cZDpZlRV86REIp2jDKlQj39CsEpyU71sDtrmLDMdRpfAtvVcEn8S7ZWT-D8hUTF4kaLL6EuY214mnvDV91HqdPFN01gl9j29F2s7SusMkd1zMPKXFHOd3KUALBg5MfWpp8R-fwp3vPl2mBvAKEqA7PeBFNf4PP5MbZg94JkAAZrzFnTA8ulOMLl-2zeoOfu_7Uf6y_QzeOtYL5q8kb0NiN0MTYSjfoISiLcQdT9RwesU0-Wq"/>
+<span class="text-xs font-bold uppercase text-secondary tracking-widest">Landmark</span>
+<h4 class="font-bold text-lg mt-1">Sydney Opera House</h4>
+<p class="text-on-surface-variant text-sm">Australia</p>
+</div>
+<!-- Suggestion Card 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<img alt="Mount Fuji" class="w-full h-40 object-cover rounded-md mb-4" data-alt="Snow-capped Mount Fuji in Japan framed by pink cherry blossoms in the foreground, bright clear day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYROyKD6icBON7QjAIKmG74FExg9kA40gWj0XTnkax5IzjNgId3-4qcS6xYlnT8kv7iStzdHw1zxkXqwHV0AV6xDJcRtR1S8vbaV6mvXWXD2ldAlwjvhEySeJusNVdwd4gDExSddKVZKkb1OGAk8eHoe9gt5TC6hRtQ6GTXjLo-4DTXGE682JKy_41eJhqHdbRUSp6ZfEF5uDMQ7CwsVbSMUaTA0qYojjSqYYtrNkNWJvfUyOr3Q8GEg5GehdjHQTmAXGu__YV2JBV"/>
+<span class="text-xs font-bold uppercase text-primary tracking-widest">Nature</span>
+<h4 class="font-bold text-lg mt-1">Mount Fuji</h4>
+<p class="text-on-surface-variant text-sm">Japan</p>
+</div>
+<!-- Suggestion Card 3 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<img alt="Machu Picchu" class="w-full h-40 object-cover rounded-md mb-4" data-alt="The ancient stone ruins of Machu Picchu nestled in lush green mountains under a misty morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoLZLVyZtf46Rb6Ip_TuxQuGaZPZf-GxipB5Ay8j1bPdmS4Y-6S0_DF4txhB0sAocYXr1ZqUBBxSrLj4IDImm-xhr4_B2yn2Ubi1nDPNMRYe5gGiwKpc6_czzVkOMItQBadxIaxi1bjVoN6_YfXEiw-_zGQftriQQ_csCz7C-2DD48dkFPBNn5tD_gJbreZOajs02qDh2DymEOJvvIco88g9-8xiuRMUp5tYEEahdMmEKrFNK0OwSCuBEQ2BJQgNieasDnCUuoZ04j"/>
+<span class="text-xs font-bold uppercase text-tertiary tracking-widest">History</span>
+<h4 class="font-bold text-lg mt-1">Machu Picchu</h4>
+<p class="text-on-surface-variant text-sm">Peru</p>
+</div>
+<!-- Suggestion Card 4 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm hover:translate-y-[-8px] transition-transform duration-300">
+<img alt="Santorini" class="w-full h-40 object-cover rounded-md mb-4" data-alt="Traditional white buildings with blue domes on the cliffs of Santorini overlooking the Aegean Sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgbnomLa3Gw0Ho4vZhQ54IT2fE2HTY6XeCKEZXrhtQEtMI-gilW8MvVh-M4K2bG6zfSwmsIuv2mjAyNOvO1ASoVOCDnJqPvYi1pUAwoI2hKIYO30fwiq7_pN456_w4h_au7CxArLT9bNKc3rd6umrZlOehpVwGs8oS1bG7znuhxj10E3Meu-qze3Pb_yD9zRTb2YrSUv_9sCrMieSUmNhnCHBVDWjmwNkjXvic9q3v74iziRGNP5MNtsSuh5wPBi3qmiyqYkIwpPAE"/>
+<span class="text-xs font-bold uppercase text-secondary tracking-widest">Culture</span>
+<h4 class="font-bold text-lg mt-1">Oia Village</h4>
+<p class="text-on-surface-variant text-sm">Greece</p>
+</div>
+</div>
+</section>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-100 dark:border-slate-800 shadow-[0_-10px_40px_rgba(0,0,0,0.08)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-3 scale-110 -translate-y-2 shadow-lg shadow-blue-500/40" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="videogame_asset">videogame_asset</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium">Games</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="import_contacts">import_contacts</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium">Passport</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-medium">Settings</span>
+</a>
+</nav>
+</body></html>

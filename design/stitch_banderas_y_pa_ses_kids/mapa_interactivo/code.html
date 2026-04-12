@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explorer’s Atlas - Interactive World Map</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#5e8bff",
+                    "on-secondary-container": "#005c15",
+                    "on-secondary": "#d1ffc8",
+                    "on-error": "#ffefee",
+                    "on-background": "#272b51",
+                    "surface-container-highest": "#d8daff",
+                    "on-tertiary-fixed": "#3d2b00",
+                    "primary-container": "#799dff",
+                    "primary-fixed": "#799dff",
+                    "outline": "#70749e",
+                    "surface-container": "#e6e6ff",
+                    "secondary-fixed": "#9df197",
+                    "secondary-container": "#9df197",
+                    "on-primary": "#f1f2ff",
+                    "tertiary-fixed-dim": "#ecb200",
+                    "on-tertiary-container": "#553e00",
+                    "on-primary-container": "#001e58",
+                    "error": "#b31b25",
+                    "surface": "#f8f5ff",
+                    "on-secondary-fixed-variant": "#12661e",
+                    "inverse-surface": "#06092f",
+                    "inverse-on-surface": "#969ac6",
+                    "on-surface": "#272b51",
+                    "surface-container-low": "#f1efff",
+                    "on-secondary-fixed": "#00460e",
+                    "secondary": "#176a21",
+                    "background": "#f8f5ff",
+                    "tertiary-dim": "#664b00",
+                    "primary-dim": "#0047b7",
+                    "surface-variant": "#d8daff",
+                    "outline-variant": "#a6aad7",
+                    "on-primary-fixed-variant": "#00276c",
+                    "surface-dim": "#ced1ff",
+                    "surface-tint": "#0052d0",
+                    "secondary-dim": "#025d16",
+                    "error-dim": "#9f0519",
+                    "on-surface-variant": "#545881",
+                    "on-tertiary": "#fff1db",
+                    "on-primary-fixed": "#000000",
+                    "primary": "#0052d0",
+                    "surface-bright": "#f8f5ff",
+                    "secondary-fixed-dim": "#90e28a",
+                    "tertiary": "#755700",
+                    "surface-container-high": "#dfe0ff",
+                    "primary-fixed-dim": "#638eff",
+                    "tertiary-container": "#fdc003",
+                    "on-tertiary-fixed-variant": "#604700",
+                    "tertiary-fixed": "#fdc003",
+                    "on-error-container": "#570008",
+                    "error-container": "#fb5151",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-white/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-xl shadow-blue-900/5 border-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-blue-700 tracking-tight">Explorer’s Atlas</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex items-center gap-6">
+<a class="text-blue-700 border-b-4 border-blue-600 font-bold px-2 py-1 transition-all" href="#">Map</a>
+<a class="text-slate-500 hover:scale-105 transition-transform duration-200 px-2 py-1" href="#">Games</a>
+<a class="text-slate-500 hover:scale-105 transition-transform duration-200 px-2 py-1" href="#">Passport</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-500 hover:scale-105 transition-transform cursor-pointer">public</span>
+<span class="material-symbols-outlined text-slate-500 hover:scale-105 transition-transform cursor-pointer">sports_esports</span>
+<img alt="Young Explorer Passport Photo" class="w-10 h-10 rounded-full border-2 border-primary ring-2 ring-primary-container" data-alt="portrait of a cheerful young boy with a explorer hat and binoculars around his neck in a vibrant studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaWHmSuTJiKCphzQ9BSQsVggGu-D8lZ_1DTuUX6NRYagTzKAl6Tu8rIiznjI4eyZ84hNy0SITec4PFD-sFsT3QDRQW9LPyYLvL8Iufstp8RDXSmxRhJQCF3srrPZCd8X1bus8wBgfXvlh8Gd6izZRvyI7qP-ywmwPWX2MuOJHzHoBEObQO77zoF_X0Wk_LXunuGwhtcfx3WTutZEF5cnBI-_o89smy0ZpQzIxQbersi6RBaRNDAWFRGtQR_opq2J4mhDR5wQ_1GYAC"/>
+</div>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-slate-600">menu</span>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col md:flex-row overflow-hidden relative">
+<!-- SideNavBar - Only visible on desktop region selection -->
+<aside class="hidden lg:flex flex-col h-full w-72 bg-slate-50 py-8 gap-2 rounded-r-3xl shadow-2xl shadow-slate-900/10 z-40">
+<div class="px-8 mb-6">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-600">public</span>
+</div>
+<div>
+<h2 class="text-xl font-bold text-blue-600">The World</h2>
+<p class="text-xs text-slate-500 font-semibold">Choose a region</p>
+</div>
+</div>
+</div>
+<nav class="flex flex-col gap-1 overflow-y-auto">
+<button class="flex items-center gap-4 bg-green-100 text-green-800 rounded-full mx-4 px-4 py-3 font-bold transition-all ease-out duration-300">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">terrain</span>
+                    Africa
+                </button>
+<button class="flex items-center gap-4 text-slate-600 mx-4 px-4 py-3 hover:bg-slate-100 rounded-full transition-all ease-out duration-300">
+<span class="material-symbols-outlined">temple_buddhist</span>
+                    Asia
+                </button>
+<button class="flex items-center gap-4 text-slate-600 mx-4 px-4 py-3 hover:bg-slate-100 rounded-full transition-all ease-out duration-300">
+<span class="material-symbols-outlined">castle</span>
+                    Europe
+                </button>
+<button class="flex items-center gap-4 text-slate-600 mx-4 px-4 py-3 hover:bg-slate-100 rounded-full transition-all ease-out duration-300">
+<span class="material-symbols-outlined">forest</span>
+                    North America
+                </button>
+<button class="flex items-center gap-4 text-slate-600 mx-4 px-4 py-3 hover:bg-slate-100 rounded-full transition-all ease-out duration-300">
+<span class="material-symbols-outlined">landscape</span>
+                    South America
+                </button>
+<button class="flex items-center gap-4 text-slate-600 mx-4 px-4 py-3 hover:bg-slate-100 rounded-full transition-all ease-out duration-300">
+<span class="material-symbols-outlined">tsunami</span>
+                    Oceania
+                </button>
+</nav>
+<div class="mt-auto px-6">
+<button class="w-full bg-tertiary-container text-on-tertiary-container font-bold py-4 rounded-xl shadow-lg shadow-tertiary/20 hover:scale-105 active:scale-95 transition-all">
+                    Daily Challenge
+                </button>
+</div>
+</aside>
+<!-- Interactive Map Canvas -->
+<section class="flex-1 relative bg-surface overflow-hidden p-6 lg:p-12">
+<!-- Map Container -->
+<div class="w-full h-full rounded-xl overflow-hidden relative shadow-inner bg-surface-container-low group">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000" data-alt="a stylized colorful world map with continents colored in green, yellow, orange, and blue with soft paper texture and subtle labels" data-location="World Map" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdqpS-HMvKRZGAFfxUMzvvhw60gFOvveefdOR2F9tiy0N_XwgO3PLcSdj5GqDfRAtG4aE-QZeXdWofCRiWLBx_BYdjEd5FnXsU6cNjV1_4iaF6WKo2mG-iHebXzmu22ACpKCe97lDW4qLdJpODQMg4A0bBBu1TWBfwfqzK_lcODzWZ1frCmD04Jv423gSmPodAw8udCbVRZs4j6GJCqxmT3RlKkt9C12G4g4bsQBXaMS2bXwKqV5Uq0Ww-xm6SQNjda3NvIIbMENZe"/>
+<!-- Interactive Pins (Numbered Labels) -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Pin 1: North America -->
+<div class="absolute top-[30%] left-[20%] pointer-events-auto flex flex-col items-center group/pin">
+<div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-xl ring-4 ring-white/50 cursor-pointer hover:scale-125 transition-transform">1</div>
+<div class="mt-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-blue-900 opacity-0 group-hover/pin:opacity-100 transition-opacity">Canada</div>
+</div>
+<!-- Pin 2: South America -->
+<div class="absolute top-[65%] left-[30%] pointer-events-auto flex flex-col items-center group/pin">
+<div class="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-xl ring-4 ring-white/50 cursor-pointer hover:scale-125 transition-transform">2</div>
+<div class="mt-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-orange-900 opacity-0 group-hover/pin:opacity-100 transition-opacity">Brazil</div>
+</div>
+<!-- Pin 3: Europe -->
+<div class="absolute top-[25%] left-[50%] pointer-events-auto flex flex-col items-center group/pin">
+<div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-xl ring-4 ring-white/50 cursor-pointer hover:scale-125 transition-transform">3</div>
+<div class="mt-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-green-900 opacity-0 group-hover/pin:opacity-100 transition-opacity">France</div>
+</div>
+<!-- Pin 4: Asia -->
+<div class="absolute top-[35%] left-[75%] pointer-events-auto flex flex-col items-center group/pin">
+<div class="w-8 h-8 bg-yellow-500 text-on-tertiary-container rounded-full flex items-center justify-center font-bold text-sm shadow-xl ring-4 ring-white/50 cursor-pointer hover:scale-125 transition-transform">4</div>
+<div class="mt-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-tertiary-dim opacity-0 group-hover/pin:opacity-100 transition-opacity">Japan</div>
+</div>
+<!-- Pin 5: Africa -->
+<div class="absolute top-[55%] left-[52%] pointer-events-auto flex flex-col items-center group/pin">
+<div class="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-xl ring-4 ring-white/50 cursor-pointer hover:scale-125 transition-transform">5</div>
+<div class="mt-2 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-red-900 opacity-0 group-hover/pin:opacity-100 transition-opacity">Egypt</div>
+</div>
+</div>
+<!-- Glassmorphism Map Tools -->
+<div class="absolute bottom-8 right-8 flex flex-col gap-3">
+<button class="w-12 h-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-lg flex items-center justify-center text-on-surface hover:bg-white transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-12 h-12 bg-white/80 backdrop-blur-md rounded-2xl shadow-lg flex items-center justify-center text-on-surface hover:bg-white transition-all">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="w-12 h-12 bg-primary text-white rounded-2xl shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Flag Challenge Panel -->
+<aside class="w-full md:w-96 bg-surface-container-low p-8 border-l-0 md:border-l border-outline-variant/15 flex flex-col gap-6 overflow-y-auto">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-2xl font-black text-on-surface tracking-tight">Flag Challenge</h3>
+<p class="text-sm text-on-surface-variant font-medium">Match the flag to the map number!</p>
+</div>
+<div class="bg-primary/10 text-primary px-3 py-1 rounded-full font-bold text-sm">
+                    3/10
+                </div>
+</div>
+<!-- Bento-style Flag Cards -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Challenge Card 1 -->
+<div class="bg-surface-container-highest p-4 rounded-xl shadow-lg shadow-slate-900/5 group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="w-20 h-14 rounded-lg overflow-hidden shadow-md border-2 border-white">
+<img alt="Canada Flag" class="w-full h-full object-cover" data-alt="close up of the national flag of Canada with the red maple leaf in center and red vertical bands on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn5cgssbaAx08EZ1qNkncSK8JEVYKjcWr6NJyosGHq6jVh4pEJl2_srWhiivEu8Wj8ywYPcwDAM5wRBJOtSYGhkn0kzpvs5sX25fcdoyv5yhh3HnzJ0dQ07ibI1PfYM5phS7HGbTXGWfVnu3c7D7YrjKy928PvCbcS_AjoYMWnzXdcD2ZX55ezpVqLGTBYdyGe4SOqp2_edkS1rIryxK-tdCMitJbFPkjJAZgo-e0Wy4Ilpx28ytx0sTvu_535N3mk7rmCcyI33bLS"/>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-primary mb-1 uppercase tracking-widest">Identify this country</p>
+<div class="flex items-center gap-2">
+<input class="w-20 bg-white border-none rounded-lg text-sm font-bold focus:ring-2 focus:ring-primary" placeholder="Number?" type="text"/>
+<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-dim transition-colors">
+<span class="material-symbols-outlined text-sm">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Challenge Card 2 -->
+<div class="bg-surface-container-highest p-4 rounded-xl shadow-lg shadow-slate-900/5 group hover:-translate-y-1 transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="w-20 h-14 rounded-lg overflow-hidden shadow-md border-2 border-white">
+<img alt="Brazil Flag" class="w-full h-full object-cover" data-alt="close up of the national flag of Brazil with its yellow diamond on green background and blue globe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTBjG7USzxc-7qs-mySbkaK1l_iExVHXvrGG5P2MTAqSgVOsARNY2HgJKtdpFyBMskkHD_PDQhS3lnf7Aja8v-iHhHXAGPodXZ3LUVctj1OITkz9IFYPgbi1jR-DZHHkXp-Asi7AVReniujhT9gZOdHKXAuA4ekM3d20CQLuQCtKkZ2UwxNTziLeQRGDYszOy02nexsUhMYpM-t7NVAjgl0LTJ4DyjjGX7fH6Ms03eDYx0R6N9p4M3yWGxUawR_x-fiWmK98SAlS2h"/>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-primary mb-1 uppercase tracking-widest">Where is Brazil?</p>
+<div class="flex items-center gap-2">
+<input class="w-20 bg-white border-none rounded-lg text-sm font-bold focus:ring-2 focus:ring-primary" placeholder="Number?" type="text"/>
+<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-dim transition-colors">
+<span class="material-symbols-outlined text-sm">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Challenge Card 3 (Success State example) -->
+<div class="bg-secondary/10 border-2 border-secondary/20 p-4 rounded-xl group transition-all duration-300 relative overflow-hidden">
+<div class="flex items-center gap-4">
+<div class="w-20 h-14 rounded-lg overflow-hidden shadow-md border-2 border-white grayscale-0">
+<img alt="France Flag" class="w-full h-full object-cover" data-alt="the national flag of France with blue white and red vertical stripes in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClBpf82gqVMjVjKEOOkON8DwdB0lUjZIMr1J_nSD3LF5XaQYJgNDEeoeNl1q9Tmb0zo4zkPO3hiqC3KAYO8ICUWJAkugZGUPEcfpDSajpte1I3pPYNwX8nL4JKDuWhaRvo3AxEwPVQ9rXos5E7OTqR99w6POOR7jndGUIk3a71hvs58iffpA4xIEqISxDH1QWF_2Ka7Au67GMVl6ntU1wiFLkEiqhOoGbdE-QNNv6dHOxtnuRgHzrhLAb2VhZDJSdZnJZYXobwLN72"/>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold text-secondary mb-1 uppercase tracking-widest">Matched!</p>
+<div class="flex items-center gap-2">
+<div class="bg-white/50 px-3 py-1 rounded-lg text-sm font-black text-secondary">No. 3</div>
+<span class="material-symbols-outlined text-secondary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hint Section -->
+<div class="mt-auto bg-surface-container-lowest p-6 rounded-2xl">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-dim text-3xl">lightbulb</span>
+<div>
+<h4 class="text-lg font-bold text-on-surface">Pro Explorer Tip</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Most countries in Asia are shown in <span class="text-tertiary font-bold">yellow</span> on this map. Can you find the island nation of Japan?</p>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white/90 backdrop-blur-md border-t border-slate-100 shadow-[0_-10px_40px_rgba(0,0,0,0.08)]">
+<button class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-3 scale-110 -translate-y-2 shadow-lg shadow-blue-500/40">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-[10px] font-medium mt-1">Map</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">videogame_asset</span>
+<span class="text-[10px] font-medium mt-1">Games</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">import_contacts</span>
+<span class="text-[10px] font-medium mt-1">Passport</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-medium mt-1">Settings</span>
+</button>
+</nav>
+<!-- Floating Action Button - Suppressed on Map view to keep focus, but here's the structure if needed for context -->
+<!-- <button class="fixed bottom-10 right-10 bg-primary text-white p-5 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all">
+        <span class="material-symbols-outlined">quiz</span>
+    </button> -->
+</body></html>

@@ -2,7 +2,7 @@
   "nav": {
     "title": "Atlas del Explorador",
     "home": "Inicio",
-    "passport": "Pasaporte",
+    "passport": "Países",
     "games": "Juegos",
     "map": "Mapa"
   },
@@ -34,7 +34,7 @@
     "journey": {
       "title": "Tu Viaje",
       "progress": "{discovered} / {total} Países Descubiertos",
-      "viewPassport": "Ver Pasaporte"
+      "viewPassport": "Mi Libro de Aventuras"
     },
     "exploreCard": {
       "title": "Explora el Mundo",

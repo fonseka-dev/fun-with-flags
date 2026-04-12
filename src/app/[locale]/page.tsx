@@ -1,20 +1,25 @@
 "use client";
 
-import { Suspense } from "react";
+import { useMemo, Suspense } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { AppShell } from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/Button";
-
-const dailySuggestions = [
-  { title: "Sydney Opera House", subtitle: "Australia", category: "Landmark", color: "secondary" },
-  { title: "Mount Fuji", subtitle: "Japan", category: "Nature", color: "primary" },
-  { title: "Machu Picchu", subtitle: "Peru", category: "History", color: "tertiary" },
-  { title: "Oia Village", subtitle: "Greece", category: "Culture", color: "secondary" },
-];
+import { useCountries } from "@/lib/providers/CountriesProvider";
 
 function DashboardContent() {
   const t = useTranslations("home");
+  const { countries } = useCountries();
+
+  // Pick 4 countries daily — deterministic based on day-of-year
+  const dailyCountries = useMemo(() => {
+    if (countries.length === 0) return [];
+    const dayOfYear = Math.floor(
+      (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86_400_000,
+    );
+    const step = Math.floor(countries.length / 4);
+    return [0, 1, 2, 3].map((i) => countries[(dayOfYear + i * step) % countries.length]);
+  }, [countries]);
 
   return (
     <AppShell showSidebar>
@@ -150,26 +155,25 @@ function DashboardContent() {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {dailySuggestions.map((item) => (
-              <div
-                key={item.title}
-                className="bg-surface-container-low p-4 rounded-lg shadow-ambient hover:-translate-y-2 transition-bounce"
+            {dailyCountries.map((country) => (
+              <Link
+                key={country.slug}
+                href={`/catalog/${country.slug}`}
+                className="bg-surface-container-low p-4 rounded-lg shadow-ambient hover:-translate-y-2 transition-bounce block"
               >
-                <div className="w-full h-32 bg-surface-container rounded-lg mb-4 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-4xl text-outline-variant">
-                    image
-                  </span>
+                <div className="w-full h-32 bg-surface-container rounded-lg mb-4 overflow-hidden">
+                  <img
+                    src={`https://flagcdn.com/w320/${country.flagCode}.png`}
+                    alt={`Flag of ${country.name}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <span
-                  className={`text-xs font-bold uppercase tracking-widest text-${item.color}`}
-                >
-                  {item.category}
+                <span className="text-xs font-bold uppercase tracking-widest text-primary">
+                  {country.continent}
                 </span>
-                <h4 className="font-bold text-lg mt-1">{item.title}</h4>
-                <p className="text-on-surface-variant text-sm">
-                  {item.subtitle}
-                </p>
-              </div>
+                <h4 className="font-bold text-lg mt-1">{country.name}</h4>
+                <p className="text-on-surface-variant text-sm">{country.capital}</p>
+              </Link>
             ))}
           </div>
         </section>

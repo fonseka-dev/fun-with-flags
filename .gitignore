@@ -1,1 +1,4 @@
 .worktrees/
+infra/
+.superpowers/
+.env.local

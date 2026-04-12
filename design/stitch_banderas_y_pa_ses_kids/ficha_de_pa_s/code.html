@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#5e8bff",
+                    "on-secondary-container": "#005c15",
+                    "on-secondary": "#d1ffc8",
+                    "on-error": "#ffefee",
+                    "on-background": "#272b51",
+                    "surface-container-highest": "#d8daff",
+                    "on-tertiary-fixed": "#3d2b00",
+                    "primary-container": "#799dff",
+                    "primary-fixed": "#799dff",
+                    "outline": "#70749e",
+                    "surface-container": "#e6e6ff",
+                    "secondary-fixed": "#9df197",
+                    "secondary-container": "#9df197",
+                    "on-primary": "#f1f2ff",
+                    "tertiary-fixed-dim": "#ecb200",
+                    "on-tertiary-container": "#553e00",
+                    "on-primary-container": "#001e58",
+                    "error": "#b31b25",
+                    "surface": "#f8f5ff",
+                    "on-secondary-fixed-variant": "#12661e",
+                    "inverse-surface": "#06092f",
+                    "inverse-on-surface": "#969ac6",
+                    "on-surface": "#272b51",
+                    "surface-container-low": "#f1efff",
+                    "on-secondary-fixed": "#00460e",
+                    "secondary": "#176a21",
+                    "background": "#f8f5ff",
+                    "tertiary-dim": "#664b00",
+                    "primary-dim": "#0047b7",
+                    "surface-variant": "#d8daff",
+                    "outline-variant": "#a6aad7",
+                    "on-primary-fixed-variant": "#00276c",
+                    "surface-dim": "#ced1ff",
+                    "surface-tint": "#0052d0",
+                    "secondary-dim": "#025d16",
+                    "error-dim": "#9f0519",
+                    "on-surface-variant": "#545881",
+                    "on-tertiary": "#fff1db",
+                    "on-primary-fixed": "#000000",
+                    "primary": "#0052d0",
+                    "surface-bright": "#f8f5ff",
+                    "secondary-fixed-dim": "#90e28a",
+                    "tertiary": "#755700",
+                    "surface-container-high": "#dfe0ff",
+                    "primary-fixed-dim": "#638eff",
+                    "tertiary-container": "#fdc003",
+                    "on-tertiary-fixed-variant": "#604700",
+                    "tertiary-fixed": "#fdc003",
+                    "on-error-container": "#570008",
+                    "error-container": "#fb5151",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<header class="bg-white/80 backdrop-blur-xl docked full-width top-0 sticky shadow-xl shadow-blue-900/5 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors group">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-bold">Back to Catalog</span>
+</button>
+<div class="text-2xl font-black text-blue-700 tracking-tight">Explorer’s Atlas</div>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-slate-500 hover:scale-105 transition-transform duration-200" href="#">Africa</a>
+<a class="text-blue-700 border-b-4 border-blue-600" href="#">Asia</a>
+<a class="text-slate-500 hover:scale-105 transition-transform duration-200" href="#">Europe</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-600">public</span>
+<span class="material-symbols-outlined text-blue-600">sports_esports</span>
+<img alt="Young Explorer Passport Photo" class="w-10 h-10 rounded-full border-2 border-blue-100 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJHmiQXmn1-0FAugIyWLIhZwI-Xno4YbFSGqDjU79pPQjuJST9j4nOAZvJ-TIRLSj-r46nPy3C3-aXipBE5Frf7wo7dcOg8frfvgFhU7-tptkFJQgCV-lbIuZdZNHasa8bCuyOxn9ltUyQJSzIMHAk825mNRUCrotwlnSWw30k_RP8C3-F1guC8nOz4LLryeMcNtAhXixYjl-1AiYvLqhTWkdWpIZC-uwaafr6UR4SJqg3XBWLkDv6TE3cHP3TXiSzX-0AEDCWhrBt"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 pt-12 pb-32">
+<section class="relative mb-20">
+<div class="flex flex-col lg:flex-row items-end gap-12">
+<div class="relative w-full lg:w-2/3 aspect-[16/9] rounded-xl overflow-hidden shadow-2xl shadow-slate-900/10 transition-transform duration-500 hover:scale-[1.01]">
+<img class="w-full h-full object-cover" data-alt="Modern high-resolution image of the national flag of Japan waving gently in a soft breeze against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUXEaxK5gGYWbVDf1uXwzh7G6gMyFPnA0vKJ-ZQOAiEx1GC36ExvKwbN97uYUd-J0KTcWk7JdgrYChvpkKVT09JjCuXhQtAE1kuZjHqY-t5l9uR6GdfynmYbsGeQm_imnsRf3NgpGqA7tmHAf0_8m1qFF_uiOejGyTsc-M7ceSfv-2BemAD-OSW_Jo89MTFaGylvTwyivsarLJ76KfIR_yTXaORB_Y7sgVPJ8Vj3ci8jqnekXWGQ8FigGP0_JnApzZtIJALmbQ7TUC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="bg-white/20 backdrop-blur-md text-white px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">Country Spotlight</span>
+<h1 class="text-white text-7xl font-extrabold mt-2 tracking-tighter">Japan</h1>
+</div>
+</div>
+<div class="w-full lg:w-1/3 flex flex-col gap-6">
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-9xl">location_city</span>
+</div>
+<h3 class="text-label-sm font-bold text-primary uppercase tracking-widest mb-2">Capital City</h3>
+<p class="text-4xl font-black text-on-surface">Tokyo</p>
+<p class="text-on-surface-variant mt-2 leading-relaxed">The world's most populous metropolitan area, blending neon skyscrapers with ancient temples.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-9xl">groups</span>
+</div>
+<h3 class="text-label-sm font-bold text-primary uppercase tracking-widest mb-2">Population</h3>
+<p class="text-4xl font-black text-on-surface">125.7 Million</p>
+<p class="text-on-surface-variant mt-2 leading-relaxed">A fascinating mix of bustling urban density and quiet, traditional rural communities.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-7 space-y-12">
+<section>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-weight="fill">flag</span>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight">Meaning of the Flag</h2>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 leading-relaxed text-lg">
+<p class="mb-4">The national flag of Japan is officially called <span class="font-bold text-primary">Nisshōki</span> ("Sun-mark flag"), but is more commonly known as <span class="font-bold text-primary">Hinomaru</span> ("Circle of the Sun").</p>
+<p>It features a red circle representing the sun in the center of a white field. White represents honesty, integrity, and purity, while the red circle represents the sun, as Japan is famously known as the <strong>"Land of the Rising Sun."</strong> This imagery connects the nation to the sun goddess Amaterasu, the mythological founder of Japan.</p>
+</div>
+</section>
+<section>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">lightbulb</span>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight">Fun Facts</h2>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex gap-6 items-start bg-white p-6 rounded-xl shadow-sm hover:translate-x-2 transition-transform">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-secondary">mountain_flag</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">Volcanic Landscape</h4>
+<p class="text-on-surface-variant">Japan has over 100 active volcanoes! Mount Fuji is the tallest and most iconic, standing at 3,776 meters.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start bg-white p-6 rounded-xl shadow-sm hover:translate-x-2 transition-transform">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-primary">restaurant</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">Sushi Origins</h4>
+<p class="text-on-surface-variant">While sushi is now high-end, it originally started as a cheap "fast food" for laborers to eat on the go!</p>
+</div>
+</div>
+<div class="flex gap-6 items-start bg-white p-6 rounded-xl shadow-sm hover:translate-x-2 transition-transform">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-tertiary">train</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">Bullet Train Punctuality</h4>
+<p class="text-on-surface-variant">Japanese trains are so punctual that if a train is more than 5 minutes late, the staff hands out "delay certificates."</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<aside class="md:col-span-5">
+<div class="sticky top-24 space-y-8">
+<div class="bg-primary p-8 rounded-xl text-white relative overflow-hidden group">
+<div class="absolute -right-8 -bottom-8 opacity-20 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[12rem]">map</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 relative z-10">Regional Context</h3>
+<div class="relative z-10 w-full h-48 bg-white/20 backdrop-blur-sm rounded-lg mb-6 flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-lg opacity-80 mix-blend-overlay" data-alt="Illustrated map silhouette of the Japanese archipelago highlighted against the sea of Japan and the Pacific Ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_9E5PemvaTEMoGJhLRY3LO0eEsFRinKj0pmLWkN5yrXoiLA9hrj0dDlxgC291ssf0enksg0mUIMbbymYMm8dakv6XPsltXqPwvdGkCnozGlnxiq86VpdmH2QrFhMCdDredBFEn6vh1S-61mLUw0Sx_Ae8VYdBp9-xlLon70d6KgGVbnHGeFj1thvz-QoseVrg-nzpBjnp_cSVx6RebrqRK5US2E9tOau_5qdemsGHI7sqb6dFyELz1jaUJIbw9jJOD0bzjlxWnTHM"/>
+<span class="absolute text-sm font-bold bg-white text-primary px-3 py-1 rounded-full">East Asia</span>
+</div>
+<button class="w-full bg-white text-primary py-4 rounded-xl font-bold text-lg hover:bg-on-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">explore</span>
+                            Explore Region
+                        </button>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">emoji_events</span>
+                            Achievements
+                        </h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 bg-white/50 p-4 rounded-lg">
+<div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<p class="font-bold text-sm">Flag Discovered</p>
+<p class="text-xs text-on-surface-variant">Added to Passport</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white/50 p-4 rounded-lg opacity-50">
+<div class="w-10 h-10 rounded-full bg-slate-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">lock</span>
+</div>
+<div>
+<p class="font-bold text-sm">Quiz Master</p>
+<p class="text-xs text-on-surface-variant">Unlock via game</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-100 shadow-[0_-10px_40px_rgba(0,0,0,0.08)] rounded-t-[3rem]">
+<div class="flex flex-col items-center justify-center text-slate-400 p-3">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] mt-1 font-medium">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-3">
+<span class="material-symbols-outlined">videogame_asset</span>
+<span class="text-[10px] mt-1 font-medium">Games</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-3 scale-110 -translate-y-2 shadow-lg shadow-blue-500/40">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">import_contacts</span>
+<span class="text-[10px] mt-1 font-medium">Passport</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-3">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] mt-1 font-medium">Settings</span>
+</div>
+</nav>
+</body></html>

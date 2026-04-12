@@ -2,7 +2,7 @@
   "nav": {
     "title": "Explorer's Atlas",
     "home": "Home",
-    "passport": "Passport",
+    "passport": "Countries",
     "games": "Games",
     "map": "Map"
   },
@@ -34,7 +34,7 @@
     "journey": {
       "title": "Your Journey",
       "progress": "{discovered} / {total} Countries Found",
-      "viewPassport": "View Passport"
+      "viewPassport": "My Adventure Book"
     },
     "exploreCard": {
       "title": "Explore the World",

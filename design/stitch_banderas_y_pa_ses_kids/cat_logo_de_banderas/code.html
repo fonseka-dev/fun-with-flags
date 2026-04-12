@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explorer’s Atlas - Country Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#5e8bff",
+                    "on-secondary-container": "#005c15",
+                    "on-secondary": "#d1ffc8",
+                    "on-error": "#ffefee",
+                    "on-background": "#272b51",
+                    "surface-container-highest": "#d8daff",
+                    "on-tertiary-fixed": "#3d2b00",
+                    "primary-container": "#799dff",
+                    "primary-fixed": "#799dff",
+                    "outline": "#70749e",
+                    "surface-container": "#e6e6ff",
+                    "secondary-fixed": "#9df197",
+                    "secondary-container": "#9df197",
+                    "on-primary": "#f1f2ff",
+                    "tertiary-fixed-dim": "#ecb200",
+                    "on-tertiary-container": "#553e00",
+                    "on-primary-container": "#001e58",
+                    "error": "#b31b25",
+                    "surface": "#f8f5ff",
+                    "on-secondary-fixed-variant": "#12661e",
+                    "inverse-surface": "#06092f",
+                    "inverse-on-surface": "#969ac6",
+                    "on-surface": "#272b51",
+                    "surface-container-low": "#f1efff",
+                    "on-secondary-fixed": "#00460e",
+                    "secondary": "#176a21",
+                    "background": "#f8f5ff",
+                    "tertiary-dim": "#664b00",
+                    "primary-dim": "#0047b7",
+                    "surface-variant": "#d8daff",
+                    "outline-variant": "#a6aad7",
+                    "on-primary-fixed-variant": "#00276c",
+                    "surface-dim": "#ced1ff",
+                    "surface-tint": "#0052d0",
+                    "secondary-dim": "#025d16",
+                    "error-dim": "#9f0519",
+                    "on-surface-variant": "#545881",
+                    "on-tertiary": "#fff1db",
+                    "on-primary-fixed": "#000000",
+                    "primary": "#0052d0",
+                    "surface-bright": "#f8f5ff",
+                    "secondary-fixed-dim": "#90e28a",
+                    "tertiary": "#755700",
+                    "surface-container-high": "#dfe0ff",
+                    "primary-fixed-dim": "#638eff",
+                    "tertiary-container": "#fdc003",
+                    "on-tertiary-fixed-variant": "#604700",
+                    "tertiary-fixed": "#fdc003",
+                    "on-error-container": "#570008",
+                    "error-container": "#fb5151",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 sticky shadow-xl shadow-blue-900/5 z-40">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-blue-700 dark:text-blue-400 tracking-tight">Explorer’s Atlas</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6 text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] font-bold text-lg">
+<a class="text-blue-700 dark:text-blue-400 border-b-4 border-blue-600 hover:scale-105 transition-transform duration-200" href="#">Map</a>
+<a class="text-slate-500 dark:text-slate-400 hover:scale-105 transition-transform duration-200" href="#">Games</a>
+<a class="text-slate-500 dark:text-slate-400 hover:scale-105 transition-transform duration-200" href="#">Passport</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<input class="bg-slate-100 dark:bg-slate-800 border-none rounded-full px-6 py-2 w-64 focus:ring-2 focus:ring-primary outline-none" placeholder="Search countries..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-slate-400">search</span>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400 p-2 bg-slate-100 dark:bg-slate-800 rounded-full cursor-pointer active:scale-95 transition-all">public</span>
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400 p-2 bg-slate-100 dark:bg-slate-800 rounded-full cursor-pointer active:scale-95 transition-all">sports_esports</span>
+</div>
+<img alt="Young Explorer Passport Photo" class="w-10 h-10 rounded-full object-cover border-2 border-primary" data-alt="Close-up portrait of a cheerful young explorer wearing a vintage safari hat with soft outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8FHVySOk03bkCsbwOUOLYu3ty7QM72LpV8u74MU5fbmR8yGZgcfG3ECEQHqEkjsOCGE48SqK8m82ZGhETq487r33TsTgLeKRFTZs6K-LY8kjxnJiwHjd5PS_0SC92nOg10N-4e6O_I-rLamb29aMpAqqrSmK_rh59NSRmBYVM5vVLwNh1GA2bgvoHUScM-SMmmljUZwvKJ5KvJsMIV-gjd2MmuACi2bqXLO685YfYLRcl3v37hV05X7NxMkTMQcXYqx8FWOa6nPn"/>
+</div>
+</div>
+</header>
+<div class="flex max-w-screen-2xl mx-auto min-h-screen">
+<!-- Side Navigation (Filters) -->
+<aside class="hidden lg:flex flex-col h-screen w-72 sticky top-20 py-8 gap-2 bg-slate-50 dark:bg-slate-950 shadow-2xl shadow-slate-900/10 rounded-r-3xl">
+<div class="px-8 mb-6">
+<h2 class="text-xl font-bold text-blue-600 font-['Plus_Jakarta_Sans']">The World</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-semibold">Choose a region</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full mx-4 px-4 py-3 font-bold flex items-center gap-3 ease-out duration-300" href="#">
+<span class="material-symbols-outlined">terrain</span> Africa
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">temple_buddhist</span> Asia
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">castle</span> Europe
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">forest</span> North America
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">landscape</span> South America
+                </a>
+<a class="text-slate-600 dark:text-slate-400 mx-4 px-4 py-3 flex items-center gap-3 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">tsunami</span> Oceania
+                </a>
+</nav>
+<div class="mt-auto px-6 pb-20">
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-4 rounded-xl shadow-lg shadow-blue-500/20 active:scale-95 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">auto_awesome</span> Daily Challenge
+                </button>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 p-6 md:p-12">
+<header class="mb-12">
+<h1 class="text-5xl md:text-6xl font-black text-on-background tracking-tighter mb-4">Discover Nations</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents.</p>
+</header>
+<!-- Country Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Card 1: Japan -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of Japan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="The bright red national flag of Japan waving against a clear blue sky background with soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxBOdhKlzOpZN2l3hsZvvvGovcgfOMbOYmtVetUcW6PAo1Tvrp9onG4lQ-ie9mh63-AH_lAoJAxStbRIVgxiTek-E0wgmtR6Q5vhK8XapRFiK1NXCVf4Cl-i4kbVainvl9ex8bQw4xSkGzG1ljzloP7pbF4RG3KAoOJA5odlun56H0SKseE9Y0v3AOjNZV0Dna-iDCn6kHvS6JXU8gK9q_LU3bBRJnwa3SQC7TcIKIiVIkgC7BRKU7_reoQ5H1lYZrp-XiNYR7ojJL"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-full px-3 py-1 flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-on-surface">Trending</span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">Japan</h3>
+<p class="text-secondary font-bold text-sm">Asia</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Tokyo</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">125.7M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+<!-- Card 2: Kenya -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of Kenya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="The Kenyan flag with its traditional Maasai shield and spears in the center waving proudly against a savannah background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA839p7QqFhIzySFnoLrrxfpo4WubPEe-_DV-N6NpaqL7miUyil0Hp0-clNELhtGNXSdxxK-vTb1oG73k8vZ3ojlAKb8kcu83g4FgADljHY0Es5ikXielTCPdF-LAW6dIP2PtsI8F3BZF42WkbiuQsm0sK2jrbbD59PBS2V8S1RsUzBvJdnAVrAVwPL2pZBMjEXzt1cDrQ5vIW4LXB0pAANNyMB9_-xbvMBE0gmRGh3bP66q3aOVYgjYYGGOTVGEndxB_cpET6iRm6h"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">Kenya</h3>
+<p class="text-secondary font-bold text-sm">Africa</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Nairobi</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">54.0M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+<!-- Card 3: Brazil -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of Brazil" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant green and yellow Brazilian flag with the blue globe and stars center against a bright tropical forest backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0mAClv5OZ54z25t4qtNiXKsDnNqukbBD-W5MbR1TqNSly4WNsIc3I12Inc1UsEP2chTX25ctswTajD1UK5o3pxhymhwqAKNyyNekDF1LEoCkzJjNkgXzPl2wDbghu9ATdkM0fcyFpiM0SXxIWIjyNPjn2Rz9qjoj_-DmDy879Du3Ckdqb_iyFumEsJ9NU4IaC3WXBuK73gGNkpA7NfOoG4GF_S_LBNLFYwZOpwsB7oEm1LtHQilqUPPFsm8z21zLFmntkOrJNDqL4"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">Brazil</h3>
+<p class="text-secondary font-bold text-sm">South America</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Brasília</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">214.3M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+<!-- Card 4: France -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of France" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="French tricolor flag blue, white, and red stripes blowing gently in a Parisian breeze with the Eiffel Tower silhouette in far distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9IMDwfcS1dsqxdlZcUMtBOKYTktrvXdDFL_ingE2d7p8YPWNnBLQg-orATGYhp0In420QKsr9dAZXM7-lZ8NpiloLVqV-geuoCer90v-iDKhxhKEoDsFiN1Xg5IWccQ9AU6n0d1qeJvX49oBvI-CzPyDqGld_4Va3lMDSIaS-dyvk_3eXUjwIBcJXNj69KCGk7lo2UH5kg31DXB15TWfZRXlJyCZ4IoMnKWIbOb-J9CEBbyvqo27NzgExEuny04tdhhF-KzXmP8Xn"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">France</h3>
+<p class="text-secondary font-bold text-sm">Europe</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Paris</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">67.5M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+<!-- Card 5: Canada -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of Canada" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="The red maple leaf of Canada on white background with red borders waving over a snowy mountain range" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMxviJojDhU33JEjyVdF-ko8wGhDWCQGDi-Zgt-fBEBeilV_AOZbkFeU6ziwb3qrwzL2pKxCFXd9BW3knlgwSDjl3t9wbIR_8rmCFwSK2p-nqjx4H_IZoNuUUV4Iz8Wus0Jh05zxEkrRVIxDWOJUF2iLXNOgWBw5QCa4rAWnHShuFUz985hb-qVH7ESMFWhUF-VEJgeCjO8hxRoAeonmoOM5LEMW6RxjslzNNZPslgLrVfCvyeMwAy4_CdKVY0tuzwJmMG2RFAZRsr"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">Canada</h3>
+<p class="text-secondary font-bold text-sm">North America</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Ottawa</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">38.2M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+<!-- Card 6: Australia -->
+<div class="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-xl shadow-on-surface/5 flex flex-col">
+<div class="relative h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Flag of Australia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Australian flag with the Union Jack and Southern Cross stars against a beautiful deep blue ocean harbor background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6YnShdgz3o4W3v5wTYnpQfDqrT2ljDNOKyuhIzFSGiW9MQm2eqJHHjPZc0LpBP5UG7HyKO1GBgkDcBmpczf0OGxu6PDtQ3g-A456M6Rfl1w3oS8wMkZG4HSS6Y-GulK3hvB9EGO3T2jVViJcu9zEZkLz4h3jz81r4ki4eSUGyCLjhrln9hTD4lB4ipS6REvZWAWsG4DZI_KQeV1_GI1lgpk9-HDSkRglsEM2gSg36hWYHVC_OGKJhmTsxRxC1IJiw8zzZw-fvYrMu"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-extrabold text-on-surface tracking-tight">Australia</h3>
+<p class="text-secondary font-bold text-sm">Oceania</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">info</span>
+</div>
+<div class="space-y-3 mb-6">
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Capital City</span>
+<span class="text-on-surface font-bold">Canberra</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-on-surface-variant font-medium">Population</span>
+<span class="text-on-surface font-bold">25.7M</span>
+</div>
+</div>
+<button class="mt-auto w-full bg-primary text-on-primary py-3 rounded-full font-bold shadow-md hover:bg-primary-dim transition-colors">Explore Culture</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Bottom Navigation (Mobile Only) -->
+<footer class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-100 dark:border-slate-800 shadow-[0_-10px_40px_rgba(0,0,0,0.08)] rounded-t-[3rem]">
+<div class="flex flex-col items-center justify-center bg-blue-600 text-white rounded-2xl p-3 scale-110 -translate-y-2 shadow-lg shadow-blue-500/40">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium mt-1">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">videogame_asset</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium mt-1">Games</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">import_contacts</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium mt-1">Passport</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-medium mt-1">Settings</span>
+</div>
+</footer>
+</body></html>
