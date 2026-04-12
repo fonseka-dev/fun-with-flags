@@ -65,6 +65,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           return;
         }
         setUser(firebaseUser);
+        if (process.env.NODE_ENV === "development") {
+          console.log("[Auth] onAuthStateChanged:", {
+            uid: firebaseUser.uid.slice(0, 8),
+            isAnonymous: firebaseUser.isAnonymous,
+            displayName: firebaseUser.displayName,
+            photoURL: firebaseUser.photoURL ? "✓" : "null",
+          });
+        }
         await initUserProgress(firebaseUser.uid, {
           isAnonymous: firebaseUser.isAnonymous,
           ...(firebaseUser.displayName
@@ -76,8 +84,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         });
         const data = await getUserProgress(firebaseUser.uid);
         setProgress(data);
-      } catch {
-        // Auth unavailable — app still works
+      } catch (err: unknown) {
+        // Auth or Firestore unavailable — app still works without progress data
+        console.warn("[Auth] onAuthStateChanged handler error:", err);
       } finally {
         setLoading(false);
       }
@@ -146,11 +155,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   const isAnonymous = user?.isAnonymous ?? true;
-  // Prefer the authoritative Firebase Auth values for logged-in users: they are
-  // updated synchronously when setUser() is called and avoid a race with the
-  // Firestore getUserProgress() read that populates `progress`.
-  const displayName = (!isAnonymous && user?.displayName)
-    ? user.displayName
+  // For authenticated users, prefer live Firebase User profile (displayName/photoURL)
+  // over Firestore progress — avoids race conditions and shows name immediately.
+  // Fallback chain for display name: Google name → Google email → Firestore pseudonym → "Explorer"
+  const displayName = (!isAnonymous && (user?.displayName || user?.email))
+    ? (user!.displayName || user!.email!.split("@")[0])
     : (progress?.displayName ?? (user ? "Explorer" : ""));
   const avatarUrl = (!isAnonymous && user?.photoURL)
     ? user.photoURL
