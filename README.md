@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Explorer's Atlas
 
-## Getting Started
+**Explore every nation on Earth. Learn their flags. Test your knowledge.**
 
-First, run the development server:
+Explorer's Atlas is an interactive geography app covering all **245 countries and territories** across 7 continents. Discover cultures, play flag quizzes, track your progress, and challenge yourself — all in English or Spanish.
+
+![Home screen](design/screenshots/home.png)
+
+---
+
+## ✨ Features
+
+- **🗺️ Countries Catalog** — Browse all 245 nations with flags, capitals, populations and continents. Filter by region, or search by name.
+- **🎮 Flag Quiz** — See a flag, pick the right country from 4 options. 3 lives, score tracking, and a Daily Challenge mode to keep you coming back.
+- **📈 Personal Journey** — Your progress is saved automatically. See how many countries you've discovered and your quiz high score.
+- **🔐 Sign In with Google** — One click to save your progress across devices and sessions.
+- **🌐 Bilingual** — Full English and Spanish interface (EN / ES).
+- **👤 No account required** — Start exploring instantly as a guest; sign in whenever you're ready.
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](design/screenshots/home.png)
+
+### Countries Catalog
+![Countries](design/screenshots/countries.png)
+
+### Flag Quiz
+![Flag Quiz](design/screenshots/games.png)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- A Firebase project (free tier is enough) — see [Firebase Setup](#-firebase-setup)
+
+### Install & run
 
 ```bash
+git clone https://github.com/fonseka-dev/fun-with-flags.git
+cd fun-with-flags
+npm install
+cp .env.local.example .env.local   # then fill in your Firebase credentials
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔥 Firebase Setup
 
-## Learn More
+The app uses Firebase for anonymous sessions, Google Sign-In, and progress persistence via Firestore. Follow the step-by-step guide:
 
-To learn more about Next.js, take a look at the following resources:
+👉 **[`infra/firebase.md`](infra/firebase.md)** *(not included in repo — see below)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> The `infra/` folder is gitignored because it contains project-specific Firebase console links. To set up your own instance, you need to:
+> 1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+> 2. Enable **Anonymous Authentication** and **Google Sign-In**
+> 3. Create a **Firestore** database
+> 4. Copy your config into `.env.local` using the variables in `.env.local.example`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The app works without Firebase — sign-in and progress tracking will simply be inactive.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧪 Running Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test
+```
+
+31 unit tests covering auth flows, country data, and quiz logic.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Auth & DB | Firebase (Anonymous Auth, Google Sign-In, Firestore) |
+| i18n | next-intl (EN / ES) |
+| Testing | Vitest |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages
+├── components/       # Reusable UI components
+├── lib/              # Firebase client, auth provider, helpers
+└── messages/         # i18n translation files (en.json, es.json)
+scripts/              # Country data seeding scripts
+public/               # Static assets
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To get started:
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit using [Conventional Commits](https://www.conventionalcommits.org/): `feat(quiz): add timer mode`
+4. Push and open a Pull Request
+
+---
+
+## 📄 License
+
+Licensed under the [Apache License 2.0](LICENSE).
