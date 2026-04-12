@@ -88,6 +88,8 @@
     "signInSubtitle": "Inicia sesión para guardar tu progreso en todos tus dispositivos",
     "signingIn": "Iniciando sesión...",
     "signInError": "Error al iniciar sesión. Inténtalo de nuevo.",
+    "signInErrorDomain": "Este dominio no está autorizado. Añade localhost en Firebase Console → Authentication → Settings → Authorized domains.",
+    "signInErrorDisabled": "Google Sign-In no está habilitado. Actívalo en Firebase Console → Authentication → Sign-in methods.",
     "anonymousLabel": "Jugando como",
     "progressSummary": "{countries} países · Puntuación más alta {score}",
     "close": "Cerrar"

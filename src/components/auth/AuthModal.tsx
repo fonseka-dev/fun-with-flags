@@ -23,8 +23,16 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
     try {
       await signInWithGoogle();
       onClose();
-    } catch {
-      setError(t("signInError"));
+    } catch (err: unknown) {
+      const error = err as { code?: string; message?: string };
+      console.error("[Auth] Sign-in failed:", error.code, error.message);
+      if (error.code === "auth/unauthorized-domain") {
+        setError(t("signInErrorDomain"));
+      } else if (error.code === "auth/operation-not-allowed") {
+        setError(t("signInErrorDisabled"));
+      } else {
+        setError(t("signInError"));
+      }
     } finally {
       setIsSigningIn(false);
     }

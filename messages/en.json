@@ -88,6 +88,8 @@
     "signInSubtitle": "Sign in to save your progress across all your devices",
     "signingIn": "Signing in...",
     "signInError": "Sign in failed. Please try again.",
+    "signInErrorDomain": "This domain is not authorized. Add localhost to your Firebase Console → Authentication → Settings → Authorized domains.",
+    "signInErrorDisabled": "Google sign-in is not enabled. Enable it in Firebase Console → Authentication → Sign-in methods.",
     "anonymousLabel": "Playing as",
     "progressSummary": "{countries} countries · High score {score}",
     "close": "Close"
