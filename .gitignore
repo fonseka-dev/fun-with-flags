@@ -45,3 +45,6 @@ yarn-debug.log*
 
 # ── Infrastructure (project-specific Firebase credentials) ────
 infra/
+
+# ── Internal docs (design specs, implementation plans) ────────
+docs/
