@@ -1,4 +1,4 @@
 .worktrees/
 infra/
 .superpowers/
-.env.local
+.env.local.next/
