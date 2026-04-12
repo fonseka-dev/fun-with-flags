@@ -2,8 +2,13 @@ import { initializeApp, getApps } from "firebase/app";
 import {
   getAuth,
   signInAnonymously,
+  signInWithPopup,
+  linkWithPopup,
+  signOut,
+  GoogleAuthProvider,
   onAuthStateChanged,
   type User,
+  type AuthCredential,
 } from "firebase/auth";
 import {
   getFirestore,
@@ -63,6 +68,16 @@ export const auth = null as unknown as ReturnType<typeof getAuth>;
 /** @deprecated Use getDbClient() — kept for backwards compat in hooks */
 export const db = null as unknown as ReturnType<typeof getFirestore>;
 
+/**
+ * Derives a deterministic "Explorer #NNNN" pseudonym from a Firebase UID.
+ * Used for anonymous users in rankings. Range: 1000–9999.
+ */
+export function generatePseudonym(uid: string): string {
+  const hex = uid.replace(/[^0-9a-f]/gi, "").slice(0, 4) || "0000";
+  const num = (parseInt(hex, 16) % 9000) + 1000;
+  return `Explorer #${num}`;
+}
+
 export async function signInAnonymouslyIfNeeded(): Promise<User> {
   const authInst = getAuthClient();
   return new Promise((resolve, reject) => {
@@ -88,17 +103,29 @@ export async function getUserProgress(
   return snap.data() as UserProgress;
 }
 
-export async function initUserProgress(uid: string): Promise<void> {
+export async function initUserProgress(
+  uid: string,
+  options?: { displayName?: string; isAnonymous?: boolean; avatarUrl?: string },
+): Promise<void> {
   const ref = doc(getDbClient(), "users", uid);
   const snap = await getDoc(ref);
   if (!snap.exists()) {
     await setDoc(ref, {
       uid,
+      displayName: options?.displayName ?? generatePseudonym(uid),
+      isAnonymous: options?.isAnonymous ?? true,
+      avatarUrl: options?.avatarUrl ?? null,
       discoveredCountries: [],
       quizHighScore: 0,
       quizGamesPlayed: 0,
       lastPlayedAt: serverTimestamp(),
     });
+  } else if (options?.displayName || options?.avatarUrl !== undefined) {
+    const updates: Record<string, unknown> = {};
+    if (options.displayName) updates.displayName = options.displayName;
+    if (options.avatarUrl !== undefined) updates.avatarUrl = options.avatarUrl;
+    if (options.isAnonymous !== undefined) updates.isAnonymous = options.isAnonymous;
+    await updateDoc(ref, updates);
   }
 }
 
@@ -127,6 +154,78 @@ export async function updateQuizScore(
     updates.quizHighScore = score;
   }
   await updateDoc(ref, updates);
+}
+
+const googleProvider = new GoogleAuthProvider();
+
+/**
+ * Attempts to upgrade the current anonymous session to a Google account.
+ * Preferred path: linkWithPopup preserves the UID and all existing progress.
+ *
+ * If the Google credential is already associated with a different account
+ * (CREDENTIAL_ALREADY_IN_USE), progress from the anonymous session is merged
+ * into the existing Google account, then that Google account is signed in.
+ */
+export async function linkAnonymousWithGoogle(): Promise<User> {
+  const authInst = getAuthClient();
+  const currentUser = authInst.currentUser;
+  if (!currentUser) throw new Error("No current user to link");
+
+  try {
+    const result = await linkWithPopup(currentUser, googleProvider);
+    // SUCCESS — same UID, now a Google account
+    const { displayName, photoURL, uid } = result.user;
+    await initUserProgress(uid, {
+      displayName: displayName ?? generatePseudonym(uid),
+      isAnonymous: false,
+      avatarUrl: photoURL ?? undefined,
+    });
+    return result.user;
+  } catch (err: unknown) {
+    const error = err as { code?: string; credential?: AuthCredential };
+    if (error.code !== "auth/credential-already-in-use") throw err;
+
+    // CREDENTIAL_ALREADY_IN_USE — anonymous progress must be merged
+    const anonProgress = await getUserProgress(currentUser.uid);
+
+    const credential = error.credential;
+    if (!credential) throw err;
+    const { signInWithCredential } = await import("firebase/auth");
+    const googleResult = await signInWithCredential(authInst, credential);
+    const googleUid = googleResult.user.uid;
+
+    if (anonProgress) {
+      const googleProgress = await getUserProgress(googleUid);
+      const mergedDiscovered = Array.from(
+        new Set([
+          ...(googleProgress?.discoveredCountries ?? []),
+          ...anonProgress.discoveredCountries,
+        ]),
+      );
+      const mergedHighScore = Math.max(
+        googleProgress?.quizHighScore ?? 0,
+        anonProgress.quizHighScore,
+      );
+      const { displayName, photoURL } = googleResult.user;
+      await initUserProgress(googleUid, {
+        displayName: displayName ?? generatePseudonym(googleUid),
+        isAnonymous: false,
+        avatarUrl: photoURL ?? undefined,
+      });
+      const ref = doc(getDbClient(), "users", googleUid);
+      await updateDoc(ref, {
+        discoveredCountries: mergedDiscovered,
+        quizHighScore: mergedHighScore,
+      });
+    }
+
+    return googleResult.user;
+  }
+}
+
+/** Signs out the current user. A new anonymous session is created by AuthProvider. */
+export async function signOutUser(): Promise<void> {
+  await signOut(getAuthClient());
 }
 
 export async function fetchAllCountries(locale: Locale): Promise<Country[]> {
