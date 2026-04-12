@@ -49,7 +49,10 @@
   },
   "catalog": {
     "title": "Descubre Naciones",
-    "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de los siete continentes."
+    "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de los siete continentes.",
+    "capitalLabel": "Capital",
+    "populationLabel": "Población",
+    "exploreCulture": "Explorar Cultura"
   },
   "country": {
     "spotlight": "País Destacado",

@@ -49,7 +49,10 @@
   },
   "catalog": {
     "title": "Discover Nations",
-    "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents."
+    "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents.",
+    "capitalLabel": "Capital City",
+    "populationLabel": "Population",
+    "exploreCulture": "Explore Culture"
   },
   "country": {
     "spotlight": "Country Spotlight",
