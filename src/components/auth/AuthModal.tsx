@@ -25,7 +25,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
       onClose();
     } catch (err: unknown) {
       const error = err as { code?: string; message?: string };
-      console.error("[Auth] Sign-in failed:", error.code, error.message);
+      console.warn("[Auth] Sign-in failed:", error.code, error.message);
       if (error.code === "auth/unauthorized-domain") {
         setError(t("signInErrorDomain"));
       } else if (error.code === "auth/operation-not-allowed") {

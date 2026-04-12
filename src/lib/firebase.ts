@@ -188,14 +188,23 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
     // CREDENTIAL_ALREADY_IN_USE — anonymous progress must be merged
     const anonProgress = await getUserProgress(currentUser.uid);
 
-    const credential = error.credential;
+    // Firebase v9+ modular SDK stores the credential at error.customData,
+    // not directly on error.credential. Use the provider helper to extract it.
+    const credential = GoogleAuthProvider.credentialFromError(err as Error);
     if (!credential) throw err;
     const { signInWithCredential } = await import("firebase/auth");
     const googleResult = await signInWithCredential(authInst, credential);
     const googleUid = googleResult.user.uid;
 
+    // Always (re)create the Google user's doc in case it was deleted.
+    const googleProgress = await getUserProgress(googleUid);
+    const { displayName: gDisplayName, photoURL } = googleResult.user;
+    await initUserProgress(googleUid, {
+      displayName: gDisplayName ?? generatePseudonym(googleUid),
+      isAnonymous: false,
+      avatarUrl: photoURL ?? undefined,
+    });
     if (anonProgress) {
-      const googleProgress = await getUserProgress(googleUid);
       const mergedDiscovered = Array.from(
         new Set([
           ...(googleProgress?.discoveredCountries ?? []),
@@ -206,12 +215,6 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
         googleProgress?.quizHighScore ?? 0,
         anonProgress.quizHighScore,
       );
-      const { displayName, photoURL } = googleResult.user;
-      await initUserProgress(googleUid, {
-        displayName: displayName ?? generatePseudonym(googleUid),
-        isAnonymous: false,
-        avatarUrl: photoURL ?? undefined,
-      });
       const ref = doc(getDbClient(), "users", googleUid);
       await updateDoc(ref, {
         discoveredCountries: mergedDiscovered,

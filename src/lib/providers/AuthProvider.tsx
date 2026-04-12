@@ -98,7 +98,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (error.code === "auth/popup-closed-by-user") return;
       if (error.code === "auth/cancelled-popup-request") return;
       if (error.code === "auth/popup-blocked") return;
-      console.error("[Auth] linkAnonymousWithGoogle error:", error.code);
+      console.warn("[Auth] linkAnonymousWithGoogle error:", error.code);
       throw err;
     }
   }, []);
