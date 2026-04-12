@@ -34,6 +34,7 @@
     "journey": {
       "title": "Your Journey",
       "progress": "{discovered} / {total} Countries Found",
+      "highScore": "Quiz High Score: {score} pts",
       "viewPassport": "My Adventure Book"
     },
     "exploreCard": {

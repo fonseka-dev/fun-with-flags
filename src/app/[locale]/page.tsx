@@ -6,10 +6,12 @@ import { Link } from "@/i18n/navigation";
 import { AppShell } from "@/components/layout/AppShell";
 import { Button } from "@/components/ui/Button";
 import { useCountries } from "@/lib/providers/CountriesProvider";
+import { useAuth } from "@/lib/providers/AuthProvider";
 
 function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
+  const { progress } = useAuth();
 
   // Pick 4 countries daily — deterministic based on day-of-year
   const dailyCountries = useMemo(() => {
@@ -83,7 +85,12 @@ function DashboardContent() {
           <div className="md:col-span-4 bg-tertiary-container text-on-tertiary-container rounded-xl p-8 flex flex-col justify-between shadow-ambient">
             <div>
               <h3 className="text-2xl font-bold mb-1">{t("journey.title")}</h3>
-              <p className="opacity-80">{t("journey.progress", { discovered: 0, total: 195 })}</p>
+              <p className="opacity-80">{t("journey.progress", { discovered: progress?.discoveredCountries.length ?? 0, total: 245 })}</p>
+              {(progress?.quizHighScore ?? 0) > 0 && (
+                <p className="text-sm opacity-70 mt-1">
+                  {t("journey.highScore", { score: progress?.quizHighScore ?? 0 })}
+                </p>
+              )}
             </div>
             <div className="relative py-8 flex justify-center">
               <div className="w-32 h-32 rounded-full bg-white/20 flex items-center justify-center">
