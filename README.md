@@ -37,7 +37,7 @@ Explorer's Atlas is an interactive geography app covering all **245 countries an
 ### Prerequisites
 
 - Node.js 18+
-- A Firebase project (free tier is enough) — see [Firebase Setup](#-firebase-setup)
+- A Firebase project (free tier is enough)
 
 ### Install & run
 
@@ -57,9 +57,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 The app uses Firebase for anonymous sessions, Google Sign-In, and progress persistence via Firestore. Follow the step-by-step guide:
 
-👉 **[`infra/firebase.md`](infra/firebase.md)** *(not included in repo — see below)*
-
-> The `infra/` folder is gitignored because it contains project-specific Firebase console links. To set up your own instance, you need to:
 > 1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
 > 2. Enable **Anonymous Authentication** and **Google Sign-In**
 > 3. Create a **Firestore** database
