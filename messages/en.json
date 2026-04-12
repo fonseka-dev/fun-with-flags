@@ -78,5 +78,17 @@
     "hintTitle": "Explorer's Hint",
     "currentScore": "Current Score",
     "livesLeft": "Lives Left"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signInWithGoogle": "Sign in with Google",
+    "signOut": "Sign Out",
+    "signInTitle": "Welcome to Explorer's Atlas",
+    "signInSubtitle": "Sign in to save your progress across all your devices",
+    "signingIn": "Signing in...",
+    "signInError": "Sign in failed. Please try again.",
+    "anonymousLabel": "Playing as",
+    "progressSummary": "{countries} countries · High score {score}",
+    "close": "Close"
   }
 }
