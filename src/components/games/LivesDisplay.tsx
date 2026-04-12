@@ -1,13 +1,19 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 type LivesDisplayProps = {
   lives: number;
   maxLives?: number;
 };
 
 export function LivesDisplay({ lives, maxLives = 3 }: LivesDisplayProps) {
+  const t = useTranslations("quiz");
+
   return (
     <div className="flex flex-col items-end">
       <span className="text-xs font-bold uppercase tracking-widest text-error mb-1">
-        Lives Left
+        {t("livesLeft")}
       </span>
       <div className="flex gap-2">
         {Array.from({ length: maxLives }).map((_, i) => (

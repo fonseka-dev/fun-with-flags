@@ -1,23 +1,26 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { SearchInput } from "@/components/ui/SearchInput";
+import { LanguageToggle } from "./LanguageToggle";
 
 type TopNavProps = {
   searchQuery?: string;
   onSearchChange?: (value: string) => void;
 };
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/catalog", label: "Passport" },
-  { href: "/games/guess-the-flag", label: "Games" },
-  { href: "/map", label: "Map" },
-];
-
 export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
+  const t = useTranslations("nav");
+  const tSearch = useTranslations("search");
   const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/", label: t("home") },
+    { href: "/catalog", label: t("passport") },
+    { href: "/games/guess-the-flag", label: t("games") },
+    { href: "/map", label: t("map") },
+  ] as const;
 
   return (
     <header className="glass sticky top-0 z-40">
@@ -26,7 +29,7 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
           href="/"
           className="text-2xl font-extrabold text-primary tracking-tight"
         >
-          Explorer&apos;s Atlas
+          {t("title")}
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
@@ -60,9 +63,11 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
               <SearchInput
                 value={searchQuery ?? ""}
                 onChange={onSearchChange}
+                placeholder={tSearch("placeholder")}
               />
             </div>
           )}
+          <LanguageToggle />
           <div className="flex gap-2">
             <Link
               href="/map"

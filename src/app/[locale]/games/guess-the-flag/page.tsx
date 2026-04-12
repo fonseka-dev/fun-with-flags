@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useMemo } from "react";
-import { countries } from "@/data/countries";
+import { useCountries } from "@/lib/providers/CountriesProvider";
 import { filterByContinent } from "@/lib/utils/countries";
 import { useContinentFilter } from "@/lib/hooks/useContinentFilter";
 import { useUserProgress } from "@/lib/hooks/useUserProgress";
@@ -9,12 +9,13 @@ import { AppShell } from "@/components/layout/AppShell";
 import { FlagQuiz } from "@/components/games/FlagQuiz";
 
 function GuessTheFlagContent() {
+  const { countries } = useCountries();
   const { activeContinent } = useContinentFilter();
   const { saveQuizScore } = useUserProgress();
 
   const pool = useMemo(
     () => filterByContinent(countries, activeContinent),
-    [activeContinent],
+    [countries, activeContinent],
   );
 
   return (

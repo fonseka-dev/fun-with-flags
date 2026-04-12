@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { Country } from "@/data/types";
 import { useGameState } from "@/lib/hooks/useGameState";
 import { FlagDisplay } from "./FlagDisplay";
@@ -9,7 +10,7 @@ import { ScoreBoard } from "./ScoreBoard";
 import { LivesDisplay } from "./LivesDisplay";
 import { HintCard } from "./HintCard";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 type FlagQuizProps = {
   pool: Country[];
@@ -17,6 +18,7 @@ type FlagQuizProps = {
 };
 
 export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
+  const t = useTranslations("quiz");
   const { state, startGame, submitAnswer, nextQuestion } = useGameState(pool);
 
   useEffect(() => {
@@ -33,16 +35,15 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           flag
         </span>
         <h2 className="text-4xl font-extrabold text-on-background text-center">
-          Guess the Flag!
+          {t("title")}
         </h2>
         <p className="text-on-surface-variant text-lg text-center max-w-md leading-[1.6]">
-          Can you identify which country a flag belongs to? Test your knowledge
-          across regions and continents!
+          {t("subtitle")}
         </p>
         <Button variant="primary" onClick={startGame}>
           <span className="flex items-center gap-2">
             <span className="material-symbols-outlined">play_arrow</span>
-            Start Game
+            {t("startGame")}
           </span>
         </Button>
       </div>
@@ -57,20 +58,20 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           emoji_events
         </span>
         <h2 className="text-4xl font-extrabold text-on-background text-center">
-          Game Over!
+          {t("gameOver")}
         </h2>
         <p className="text-6xl font-extrabold text-primary">
           {state.score.toLocaleString()}
         </p>
         <p className="text-on-surface-variant text-lg">
-          You answered {state.questionIndex + 1} questions
+          {t("questionsAnswered", { count: state.questionIndex + 1 })}
         </p>
         <div className="flex gap-4">
           <Button variant="primary" onClick={startGame}>
-            Play Again
+            {t("playAgain")}
           </Button>
           <Link href="/">
-            <Button variant="ghost">Back to Home</Button>
+            <Button variant="ghost">{t("backToHome")}</Button>
           </Link>
         </div>
       </div>
@@ -93,7 +94,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
       {/* Question card */}
       <div className="w-full bg-surface-container-low rounded-xl p-8 md:p-12 flex flex-col items-center relative overflow-hidden">
         <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-on-background">
-          Who am I?
+          {t("whoAmI")}
         </h1>
         <FlagDisplay country={currentQuestion.correct} />
       </div>
@@ -118,7 +119,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           <Button variant="primary" onClick={nextQuestion}>
             <span className="flex items-center gap-2">
               <span className="material-symbols-outlined">arrow_forward</span>
-              Next Question
+              {t("nextQuestion")}
             </span>
           </Button>
         </div>

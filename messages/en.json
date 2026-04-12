@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "title": "Explorer's Atlas",
+    "home": "Home",
+    "passport": "Passport",
+    "games": "Games",
+    "map": "Map"
+  },
+  "sidebar": {
+    "title": "The World",
+    "subtitle": "Choose a region",
+    "dailyChallenge": "Daily Challenge"
+  },
+  "search": {
+    "placeholder": "Search countries..."
+  },
+  "continents": {
+    "Africa": "Africa",
+    "Asia": "Asia",
+    "Europe": "Europe",
+    "North America": "North America",
+    "South America": "South America",
+    "Oceania": "Oceania"
+  },
+  "home": {
+    "badge": "Explorer",
+    "welcome": "Welcome back,",
+    "adventurer": "Adventurer!",
+    "subtitle": "The world is waiting for you. Ready to discover your next destination?",
+    "mapCard": {
+      "title": "Interactive Map",
+      "subtitle": "Tap to fly anywhere on Earth"
+    },
+    "journey": {
+      "title": "Your Journey",
+      "progress": "{discovered} / {total} Countries Found",
+      "viewPassport": "View Passport"
+    },
+    "exploreCard": {
+      "title": "Explore the World",
+      "subtitle": "Dive into cultures, flags, and landmarks."
+    },
+    "playCard": {
+      "title": "Play & Learn",
+      "subtitle": "Win trophies in regional trivia!"
+    },
+    "discoverDaily": "Discover Daily",
+    "moreSuggestions": "More Suggestions"
+  },
+  "catalog": {
+    "title": "Discover Nations",
+    "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents."
+  },
+  "country": {
+    "spotlight": "Country Spotlight",
+    "capitalLabel": "Capital City",
+    "populationLabel": "Population",
+    "flagMeaning": "Meaning of the Flag",
+    "funFacts": "Fun Facts",
+    "regionalContext": "Regional Context",
+    "exploreRegion": "Explore Region",
+    "flagAlt": "Flag of {name}",
+    "backToCatalog": "Back to Catalog"
+  },
+  "quiz": {
+    "title": "Guess the Flag!",
+    "subtitle": "Can you identify which country a flag belongs to? Test your knowledge across regions and continents!",
+    "startGame": "Start Game",
+    "gameOver": "Game Over!",
+    "questionsAnswered": "You answered {count} questions",
+    "playAgain": "Play Again",
+    "backToHome": "Back to Home",
+    "whoAmI": "Who am I?",
+    "nextQuestion": "Next Question",
+    "hintTitle": "Explorer's Hint",
+    "currentScore": "Current Score",
+    "livesLeft": "Lives Left"
+  }
+}

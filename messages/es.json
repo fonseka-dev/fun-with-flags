@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "title": "Atlas del Explorador",
+    "home": "Inicio",
+    "passport": "Pasaporte",
+    "games": "Juegos",
+    "map": "Mapa"
+  },
+  "sidebar": {
+    "title": "El Mundo",
+    "subtitle": "Elige una región",
+    "dailyChallenge": "Desafío Diario"
+  },
+  "search": {
+    "placeholder": "Buscar países..."
+  },
+  "continents": {
+    "Africa": "África",
+    "Asia": "Asia",
+    "Europe": "Europa",
+    "North America": "Norteamérica",
+    "South America": "Sudamérica",
+    "Oceania": "Oceanía"
+  },
+  "home": {
+    "badge": "Explorador",
+    "welcome": "¡Bienvenido de nuevo,",
+    "adventurer": "Aventurero!",
+    "subtitle": "El mundo te espera. ¿Listo para descubrir tu próximo destino?",
+    "mapCard": {
+      "title": "Mapa Interactivo",
+      "subtitle": "Toca para volar a cualquier lugar de la Tierra"
+    },
+    "journey": {
+      "title": "Tu Viaje",
+      "progress": "{discovered} / {total} Países Descubiertos",
+      "viewPassport": "Ver Pasaporte"
+    },
+    "exploreCard": {
+      "title": "Explora el Mundo",
+      "subtitle": "Sumérgete en culturas, banderas y monumentos."
+    },
+    "playCard": {
+      "title": "Juega y Aprende",
+      "subtitle": "¡Gana trofeos en trivias regionales!"
+    },
+    "discoverDaily": "Descubre Hoy",
+    "moreSuggestions": "Más Sugerencias"
+  },
+  "catalog": {
+    "title": "Descubre Naciones",
+    "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de los siete continentes."
+  },
+  "country": {
+    "spotlight": "País Destacado",
+    "capitalLabel": "Capital",
+    "populationLabel": "Población",
+    "flagMeaning": "Significado de la Bandera",
+    "funFacts": "Datos Curiosos",
+    "regionalContext": "Contexto Regional",
+    "exploreRegion": "Explorar Región",
+    "flagAlt": "Bandera de {name}",
+    "backToCatalog": "Volver al Catálogo"
+  },
+  "quiz": {
+    "title": "¡Adivina la Bandera!",
+    "subtitle": "¿Puedes identificar a qué país pertenece una bandera? ¡Pon a prueba tus conocimientos por regiones y continentes!",
+    "startGame": "Comenzar Juego",
+    "gameOver": "¡Fin del Juego!",
+    "questionsAnswered": "Respondiste {count} preguntas",
+    "playAgain": "Jugar de Nuevo",
+    "backToHome": "Volver al Inicio",
+    "whoAmI": "¿Quién soy?",
+    "nextQuestion": "Siguiente Pregunta",
+    "hintTitle": "Pista del Explorador",
+    "currentScore": "Puntuación Actual",
+    "livesLeft": "Vidas Restantes"
+  }
+}

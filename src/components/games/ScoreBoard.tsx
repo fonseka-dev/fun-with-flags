@@ -1,12 +1,18 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 type ScoreBoardProps = {
   score: number;
 };
 
 export function ScoreBoard({ score }: ScoreBoardProps) {
+  const t = useTranslations("quiz");
+
   return (
     <div className="flex flex-col">
       <span className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
-        Current Score
+        {t("currentScore")}
       </span>
       <div className="flex items-center gap-2">
         <span
