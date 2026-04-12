@@ -11,7 +11,7 @@ import { useAuth } from "@/lib/providers/AuthProvider";
 function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
-  const { progress } = useAuth();
+  const { progress, isAnonymous, displayName } = useAuth();
 
   // Pick 4 countries daily — deterministic based on day-of-year
   const dailyCountries = useMemo(() => {
@@ -40,7 +40,9 @@ function DashboardContent() {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background leading-none">
             {t("welcome")}
             <br />
-            <span className="text-primary">{t("adventurer")}</span>
+            <span className="text-primary">
+              {isAnonymous ? t("adventurer") : `${displayName}!`}
+            </span>
           </h1>
           <p className="text-xl text-on-surface-variant max-w-2xl leading-[1.6]">
             {t("subtitle")}

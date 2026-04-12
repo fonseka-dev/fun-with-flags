@@ -146,8 +146,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   const isAnonymous = user?.isAnonymous ?? true;
-  const displayName = progress?.displayName ?? (user ? "Explorer" : "");
-  const avatarUrl = progress?.avatarUrl ?? null;
+  // Prefer the authoritative Firebase Auth values for logged-in users: they are
+  // updated synchronously when setUser() is called and avoid a race with the
+  // Firestore getUserProgress() read that populates `progress`.
+  const displayName = (!isAnonymous && user?.displayName)
+    ? user.displayName
+    : (progress?.displayName ?? (user ? "Explorer" : ""));
+  const avatarUrl = (!isAnonymous && user?.photoURL)
+    ? user.photoURL
+    : (progress?.avatarUrl ?? null);
 
   return (
     <AuthContext.Provider
