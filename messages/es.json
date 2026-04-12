@@ -34,6 +34,7 @@
     "journey": {
       "title": "Tu Viaje",
       "progress": "{discovered} / {total} Países Descubiertos",
+      "highScore": "Puntuación récord: {score} pts",
       "viewPassport": "Mi Libro de Aventuras"
     },
     "exploreCard": {
@@ -78,5 +79,17 @@
     "hintTitle": "Pista del Explorador",
     "currentScore": "Puntuación Actual",
     "livesLeft": "Vidas Restantes"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signInWithGoogle": "Entrar con Google",
+    "signOut": "Cerrar sesión",
+    "signInTitle": "Bienvenido a Explorer's Atlas",
+    "signInSubtitle": "Inicia sesión para guardar tu progreso en todos tus dispositivos",
+    "signingIn": "Iniciando sesión...",
+    "signInError": "Error al iniciar sesión. Inténtalo de nuevo.",
+    "anonymousLabel": "Jugando como",
+    "progressSummary": "{countries} países · Puntuación más alta {score}",
+    "close": "Cerrar"
   }
 }

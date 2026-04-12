@@ -36,6 +36,9 @@ export type Country = CountryBase & CountryTranslation;
 
 export type UserProgress = {
   uid: string;
+  displayName: string;
+  isAnonymous: boolean;
+  avatarUrl?: string;
   discoveredCountries: string[];
   quizHighScore: number;
   quizGamesPlayed: number;
