@@ -18,7 +18,7 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
   const tSearch = useTranslations("search");
   const tAuth = useTranslations("auth");
   const pathname = usePathname();
-  const { isAnonymous, displayName, avatarUrl, signOut, user } = useAuth();
+  const { isAnonymous, displayName, avatarUrl, signOut } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
@@ -31,17 +31,6 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
 
   return (
     <>
-      {/* DEV-only auth state debugger — remove before production */}
-      {process.env.NODE_ENV === "development" && (
-        <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-black/80 text-yellow-300 text-xs font-mono px-3 py-1 flex gap-4 flex-wrap">
-          <span>isAnon: <b>{String(isAnonymous)}</b></span>
-          <span>uid: <b>{user?.uid?.slice(0, 8) ?? "null"}</b></span>
-          <span>name: <b>{user?.displayName ?? "null"}</b></span>
-          <span>photo: <b>{user?.photoURL ? "✓" : "null"}</b></span>
-          <span>displayName(ctx): <b>{displayName}</b></span>
-          <span>avatarUrl(ctx): <b>{avatarUrl ? "✓" : "null"}</b></span>
-        </div>
-      )}
       <header className="glass sticky top-0 z-40">
         <div className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
           <Link

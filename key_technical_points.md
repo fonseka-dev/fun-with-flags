@@ -238,6 +238,63 @@ await updateDoc(ref, { discoveredCountries: merged, quizHighScore: merged });
 
 ---
 
+## 10. Firebase Auth — `signInWithCredential` Leaves `displayName`/`photoURL` Null (CRITICAL)
+
+### Problem
+After the `credential-already-in-use` merge path (where `signInWithCredential` is called instead of `linkWithPopup`), the Firebase `User` object has:
+```
+user.displayName === null
+user.photoURL    === null
+```
+This causes the avatar **not** to render and the display name to fall back to the pseudonym.
+
+### Root Cause
+Firebase Auth internally uses two different code paths:
+- **`linkWithPopup`** immediately updates the top-level `user.displayName` / `user.photoURL` from the Google OAuth response.
+- **`signInWithCredential`** (used in the credential-already-in-use fallback) does **not** always populate these top-level fields. The canonical Google profile data is only stored inside `user.providerData[0]` (where `providerId === "google.com"`).
+
+This is a Firebase SDK behavior difference, not a bug per se.
+
+### Fix — Always check `user.providerData`
+
+In any code that reads a logged-in user's identity, check `providerData` as a fallback:
+
+```typescript
+// ✅ CORRECT — providerData fallback for signInWithCredential path
+const googleProvider = user.providerData.find((p) => p.providerId === "google.com");
+
+const displayName =
+  user.displayName ??
+  googleProvider?.displayName ??
+  user.email?.split("@")[0] ??
+  "Explorer";
+
+const photoURL =
+  user.photoURL ??
+  googleProvider?.photoURL ??
+  null;
+```
+
+```typescript
+// ❌ WRONG — fails when signInWithCredential was used
+const displayName = user.displayName ?? "Explorer";  // null for Google accounts in merge path
+const photoURL    = user.photoURL    ?? null;         // null for Google accounts in merge path
+```
+
+Also apply this when saving to Firestore:
+```typescript
+const googleProviderData = googleResult.user.providerData.find(
+  (p) => p.providerId === "google.com"
+);
+const displayName = googleResult.user.displayName ?? googleProviderData?.displayName ?? null;
+const photoURL    = googleResult.user.photoURL    ?? googleProviderData?.photoURL    ?? null;
+```
+
+### Confirmed in this codebase
+`linkAnonymousWithGoogle` in `src/lib/firebase.ts` and `AuthProvider.tsx` both now use this pattern.
+
+---
+
 ## How to Update This File
 
 After resolving a bug or identifying a non-obvious technical constraint:

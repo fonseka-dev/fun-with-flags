@@ -198,11 +198,23 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
 
     // Always (re)create the Google user's doc in case it was deleted.
     const googleProgress = await getUserProgress(googleUid);
-    const { displayName: gDisplayName, photoURL } = googleResult.user;
+    // signInWithCredential leaves user.displayName/photoURL null in some Firebase
+    // versions — the canonical Google profile lives in providerData[0].
+    const googleProviderData = googleResult.user.providerData.find(
+      (p) => p.providerId === "google.com",
+    );
+    const gDisplayName =
+      googleResult.user.displayName ??
+      googleProviderData?.displayName ??
+      null;
+    const gPhotoURL =
+      googleResult.user.photoURL ??
+      googleProviderData?.photoURL ??
+      null;
     await initUserProgress(googleUid, {
       displayName: gDisplayName ?? generatePseudonym(googleUid),
       isAnonymous: false,
-      avatarUrl: photoURL ?? undefined,
+      avatarUrl: gPhotoURL ?? undefined,
     });
     if (anonProgress) {
       const mergedDiscovered = Array.from(

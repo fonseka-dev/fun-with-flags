@@ -65,14 +65,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           return;
         }
         setUser(firebaseUser);
-        if (process.env.NODE_ENV === "development") {
-          console.log("[Auth] onAuthStateChanged:", {
-            uid: firebaseUser.uid.slice(0, 8),
-            isAnonymous: firebaseUser.isAnonymous,
-            displayName: firebaseUser.displayName,
-            photoURL: firebaseUser.photoURL ? "✓" : "null",
-          });
-        }
         await initUserProgress(firebaseUser.uid, {
           isAnonymous: firebaseUser.isAnonymous,
           ...(firebaseUser.displayName
@@ -155,14 +147,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   const isAnonymous = user?.isAnonymous ?? true;
-  // For authenticated users, prefer live Firebase User profile (displayName/photoURL)
-  // over Firestore progress — avoids race conditions and shows name immediately.
-  // Fallback chain for display name: Google name → Google email → Firestore pseudonym → "Explorer"
-  const displayName = (!isAnonymous && (user?.displayName || user?.email))
-    ? (user!.displayName || user!.email!.split("@")[0])
+  // When signing in via signInWithCredential (credential-already-in-use path),
+  // Firebase Auth leaves user.displayName and user.photoURL as null — the
+  // actual Google profile is only in user.providerData[0]. Always check there.
+  const googleProvider = user?.providerData?.find((p) => p.providerId === "google.com");
+  // Fallback chain: User.displayName → providerData name → email username → Firestore → "Explorer"
+  const displayName = !isAnonymous
+    ? (user?.displayName ||
+       googleProvider?.displayName ||
+       (user?.email ? user.email.split("@")[0] : null) ||
+       progress?.displayName ||
+       "Explorer")
     : (progress?.displayName ?? (user ? "Explorer" : ""));
-  const avatarUrl = (!isAnonymous && user?.photoURL)
-    ? user.photoURL
+  // Fallback chain: User.photoURL → providerData photoURL → Firestore → null
+  const avatarUrl = !isAnonymous
+    ? (user?.photoURL || googleProvider?.photoURL || progress?.avatarUrl || null)
     : (progress?.avatarUrl ?? null);
 
   return (
