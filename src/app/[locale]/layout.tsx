@@ -4,6 +4,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CountriesProvider } from "@/lib/providers/CountriesProvider";
+import { AuthProvider } from "@/lib/providers/AuthProvider";
 import "../globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -39,7 +40,9 @@ export default async function LocaleLayout({
       <body className="font-sans">
         <NextIntlClientProvider messages={messages}>
           <CountriesProvider>
-            {children}
+            <AuthProvider>
+              {children}
+            </AuthProvider>
           </CountriesProvider>
         </NextIntlClientProvider>
       </body>
