@@ -50,3 +50,6 @@ infra/
 docs/
 AGENTS.md
 CLAUDE.md
+
+# ── Firebase cache ────────────────────────────────────────────
+.firebase/
