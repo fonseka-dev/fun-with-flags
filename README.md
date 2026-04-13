@@ -76,7 +76,7 @@ npm test
 
 ---
 
-## � Deployment
+## 🚀 Deployment
 
 The app is hosted on **Firebase Hosting** with Cloud Run for server-side rendering.
 
@@ -107,7 +107,7 @@ Requires Firebase CLI (`npm install -g firebase-tools`) and `firebase login`.
 
 ---
 
-## �🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |---|---|
