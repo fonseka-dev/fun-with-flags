@@ -1,8 +1,7 @@
-import { initializeApp, getApps } from "firebase/app";
+import { initializeApp, getApps, FirebaseError } from "firebase/app";
 import {
   getAuth,
   signInAnonymously,
-  signInWithPopup,
   linkWithPopup,
   signOut,
   GoogleAuthProvider,
@@ -190,7 +189,7 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
 
     // Firebase v9+ modular SDK stores the credential at error.customData,
     // not directly on error.credential. Use the provider helper to extract it.
-    const credential = GoogleAuthProvider.credentialFromError(err as Error);
+    const credential = GoogleAuthProvider.credentialFromError(err as FirebaseError);
     if (!credential) throw err;
     const { signInWithCredential } = await import("firebase/auth");
     const googleResult = await signInWithCredential(authInst, credential);
