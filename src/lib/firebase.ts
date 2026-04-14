@@ -2,7 +2,6 @@ import { initializeApp, getApps } from "firebase/app";
 import {
   getAuth,
   signInAnonymously,
-  signInWithPopup,
   linkWithPopup,
   signOut,
   GoogleAuthProvider,
