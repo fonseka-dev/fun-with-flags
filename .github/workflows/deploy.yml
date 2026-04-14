@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '25'
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
@@ -46,3 +46,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FUNWITHFLAGS_5B62A }}
           channelId: live
           projectId: funwithflags-5b62a
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
