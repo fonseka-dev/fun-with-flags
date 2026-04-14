@@ -8,19 +8,22 @@ import { Button } from "@/components/ui/Button";
 import { useCountries } from "@/lib/providers/CountriesProvider";
 import { useAuth } from "@/lib/providers/AuthProvider";
 
+// Computed once at module load — stable within a session, changes on next page load each day
+const _now = Date.now();
+const DAY_OF_YEAR = Math.floor(
+  (_now - new Date(new Date(_now).getFullYear(), 0, 0).getTime()) / 86_400_000,
+);
+
 function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
   const { progress, isAnonymous, displayName } = useAuth();
 
-  // Pick 4 countries daily — deterministic based on day-of-year
+  // Pick 4 countries daily — deterministic based on day-of-year (DAY_OF_YEAR computed at module load)
   const dailyCountries = useMemo(() => {
     if (countries.length === 0) return [];
-    const dayOfYear = Math.floor(
-      (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86_400_000,
-    );
     const step = Math.floor(countries.length / 4);
-    return [0, 1, 2, 3].map((i) => countries[(dayOfYear + i * step) % countries.length]);
+    return [0, 1, 2, 3].map((i) => countries[(DAY_OF_YEAR + i * step) % countries.length]);
   }, [countries]);
 
   return (
