@@ -16,10 +16,7 @@ export function BottomNav() {
   return (
     <nav className="lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 glass rounded-t-xl">
       {tabs.map((tab) => {
-        const isActive =
-          tab.href === "/"
-            ? pathname === "/"
-            : pathname.startsWith(tab.href);
+        const isActive = pathname.startsWith(tab.href);
         return (
           <Link
             key={tab.href}
