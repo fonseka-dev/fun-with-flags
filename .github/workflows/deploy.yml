@@ -7,3 +7,9 @@ name: Deploy to Vercel
 # No secrets or configuration needed here.
 on:
   workflow_dispatch: # manual trigger only, kept for reference
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deployments are handled by Vercel's GitHub integration."
