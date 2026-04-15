@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { getCountryBySlug, getCountrySlugs } from "@/lib/utils/countries";
 import { CountryDetailHeader } from "@/components/country/CountryDetailHeader";
 import { CountryDetailContent } from "@/components/country/CountryDetailContent";
@@ -12,9 +13,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ countrySlug: string }>;
+  params: Promise<{ locale: string; countrySlug: string }>;
 }) {
-  const { countrySlug } = await params;
+  const { locale, countrySlug } = await params;
+  setRequestLocale(locale);
   const country = getCountryBySlug(countrySlug);
   if (!country) return { title: "Country — Explorer's Atlas" };
   return {
@@ -26,9 +28,10 @@ export async function generateMetadata({
 export default async function CountryDetailPage({
   params,
 }: {
-  params: Promise<{ countrySlug: string }>;
+  params: Promise<{ locale: string; countrySlug: string }>;
 }) {
-  const { countrySlug } = await params;
+  const { locale, countrySlug } = await params;
+  setRequestLocale(locale);
 
   return (
     <div className="min-h-screen bg-surface">
