@@ -36,7 +36,7 @@ Explorer's Atlas is an interactive geography app covering all **245 countries an
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 22+
 - A Firebase project (free tier is enough)
 
 ### Install & run
@@ -76,37 +76,6 @@ npm test
 
 ---
 
-## 🚀 Deployment
-
-The app is hosted on **Firebase Hosting** with Cloud Run for server-side rendering.
-
-### How it works
-
-Merging a PR into `main` triggers an automatic deploy to Firebase Hosting via GitHub Actions.
-
-### Branching strategy
-
-```
-feature/my-feature  →  PR  →  development  →  PR  →  main  →  auto-deploy
-```
-
-| Branch | Purpose |
-|---|---|
-| `main` | Production — auto-deploys to Firebase |
-| `development` | Integration — merge features here first |
-| `feature/*` | Short-lived feature branches |
-
-### Manual deploy (if needed)
-
-```bash
-npm run build
-npx firebase deploy --only hosting
-```
-
-Requires Firebase CLI (`npm install -g firebase-tools`) and `firebase login`.
-
----
-
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -117,6 +86,7 @@ Requires Firebase CLI (`npm install -g firebase-tools`) and `firebase login`.
 | Auth & DB | Firebase (Anonymous Auth, Google Sign-In, Firestore) |
 | i18n | next-intl (EN / ES) |
 | Testing | Vitest |
+| Hosting | Vercel |
 
 ---
 
