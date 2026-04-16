@@ -4,6 +4,8 @@
 
 Explorer's Atlas is an interactive geography app covering all **245 countries and territories** across 7 continents. Discover cultures, play flag quizzes, track your progress, and challenge yourself — all in English or Spanish.
 
+**🔗 Live site: [fun-with-flags-six.vercel.app](https://fun-with-flags-six.vercel.app/)**
+
 ![Home screen](design/screenshots/home.png)
 
 ---
