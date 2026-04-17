@@ -248,16 +248,18 @@ export async function fetchAllCountries(locale: Locale): Promise<Country[]> {
   const db = getDbClient();
   const countriesSnap = await getDocs(collection(db, "countries"));
 
-  const results: Country[] = [];
-  for (const countryDoc of countriesSnap.docs) {
-    const base = countryDoc.data() as CountryBase;
-    const transDoc = await getDoc(
-      doc(db, "countries", base.slug, "translations", locale),
-    );
-    if (transDoc.exists()) {
-      results.push({ ...base, ...(transDoc.data() as CountryTranslation) });
-    }
-  }
+  const results = await Promise.all(
+    countriesSnap.docs.map(async (countryDoc) => {
+      const base = countryDoc.data() as CountryBase;
+      const transDoc = await getDoc(
+        doc(db, "countries", base.slug, "translations", locale),
+      );
+      if (transDoc.exists()) {
+        return { ...base, ...(transDoc.data() as CountryTranslation) } as Country;
+      }
+      return null;
+    }),
+  );
 
-  return results;
+  return results.filter((c): c is Country => c !== null);
 }
