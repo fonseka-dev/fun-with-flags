@@ -15,21 +15,26 @@ import { countries as staticCountries } from "@/data/countries";
 type CountriesContextType = {
   countries: Country[];
   loading: boolean;
+  /** True while Firestore enrichment is running in the background */
+  enriching: boolean;
 };
 
 const CountriesContext = createContext<CountriesContextType>({
   countries: staticCountries,
-  loading: true,
+  loading: false,
+  enriching: false,
 });
 
 export function CountriesProvider({ children }: { children: ReactNode }) {
   const locale = useLocale() as Locale;
   const [countries, setCountries] = useState<Country[]>(staticCountries);
-  const [loading, setLoading] = useState(true);
+  // loading is false immediately — static data is complete and usable
+  const [loading] = useState(false);
+  const [enriching, setEnriching] = useState(isFirebaseConfigured());
 
   useEffect(() => {
     if (!isFirebaseConfigured()) {
-      setLoading(false);
+      setEnriching(false);
       return;
     }
 
@@ -44,7 +49,7 @@ export function CountriesProvider({ children }: { children: ReactNode }) {
       } catch {
         // Firestore unavailable — keep static fallback
       } finally {
-        if (!cancelled) setLoading(false);
+        if (!cancelled) setEnriching(false);
       }
     }
 
@@ -55,7 +60,7 @@ export function CountriesProvider({ children }: { children: ReactNode }) {
   }, [locale]);
 
   return (
-    <CountriesContext.Provider value={{ countries, loading }}>
+    <CountriesContext.Provider value={{ countries, loading, enriching }}>
       {children}
     </CountriesContext.Provider>
   );
