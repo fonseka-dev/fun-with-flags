@@ -1,6 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { hasAccess, FEATURE_TIERS } from "@/lib/utils/access";
-import type { Feature } from "@/lib/utils/access";
+import { hasAccess } from "@/lib/utils/access";
 import type { UserTier } from "@/data/types";
 
 describe("hasAccess", () => {
