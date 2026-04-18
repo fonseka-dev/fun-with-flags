@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { hasAccess, FEATURE_TIERS } from "@/lib/utils/access";
-import type { UserTier, Feature } from "@/lib/utils/access";
+import type { Feature } from "@/lib/utils/access";
+import type { UserTier } from "@/data/types";
 
 describe("hasAccess", () => {
   it("free user can access free features", () => {
@@ -19,10 +20,10 @@ describe("hasAccess", () => {
     expect(hasAccess("premium", "advancedQuiz")).toBe(true);
   });
 
-  it("FEATURE_TIERS covers all Feature keys", () => {
-    const features: Feature[] = ["advancedQuiz", "leaderboard"];
-    for (const f of features) {
-      expect(FEATURE_TIERS[f]).toBeDefined();
+  it("both tiers are covered for features accessible to all", () => {
+    const freeTiers: UserTier[] = ["free", "premium"];
+    for (const tier of freeTiers) {
+      expect(hasAccess(tier, "leaderboard")).toBe(true);
     }
   });
 });
