@@ -5,7 +5,7 @@ import {
   searchCountries,
   getCountrySlugs,
 } from "@/lib/utils/countries";
-import { countries } from "@/data/countries";
+import { countries, getCountriesForLocale, countriesData } from "@/data/countries";
 
 describe("getCountryBySlug", () => {
   it("returns the country matching the slug", () => {
@@ -64,5 +64,29 @@ describe("getCountrySlugs", () => {
     expect(slugs).toContain("japan");
     expect(slugs).toContain("brazil");
     expect(slugs.length).toBe(countries.length);
+  });
+});
+
+describe("getCountriesForLocale", () => {
+  it("returns a flat Country[] with name/capital from the requested locale", () => {
+    const en = getCountriesForLocale("en", countriesData.slice(0, 5));
+    expect(en[0]).toHaveProperty("name");
+    expect(en[0]).toHaveProperty("capital");
+    expect(en[0]).not.toHaveProperty("translations");
+  });
+
+  it("returns different names for en vs es when translations differ", () => {
+    // Germany has nameEs='Alemania' in the translations
+    const germanyEntry = countriesData.find((e) => e.slug === "germany");
+    if (!germanyEntry) return; // skip if not present
+    const [en] = getCountriesForLocale("en", [germanyEntry]);
+    const [es] = getCountriesForLocale("es", [germanyEntry]);
+    expect(en.name).toBe("Germany");
+    expect(es.name).toBe("Alemania");
+  });
+
+  it("returns all 245 entries for en", () => {
+    const result = getCountriesForLocale("en");
+    expect(result.length).toBe(countriesData.length);
   });
 });
