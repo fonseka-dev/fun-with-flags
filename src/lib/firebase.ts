@@ -18,7 +18,7 @@ import {
   arrayUnion,
   serverTimestamp,
 } from "firebase/firestore";
-import { UserProgress } from "@/data/types";
+import { UserProgress, UserTier } from "@/data/types";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -112,6 +112,7 @@ export async function initUserProgress(
       displayName: options?.displayName ?? generatePseudonym(uid),
       isAnonymous: options?.isAnonymous ?? true,
       avatarUrl: options?.avatarUrl ?? null,
+      tier: "free" as const,
       discoveredCountries: [],
       quizHighScore: 0,
       quizGamesPlayed: 0,
@@ -233,6 +234,19 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
 
     return googleResult.user;
   }
+}
+
+/**
+ * Updates a user's subscription tier in Firestore.
+ * Called only by trusted backend processes (Cloud Functions / billing webhooks).
+ * Client writes to `tier` are blocked by Firestore security rules.
+ */
+export async function updateUserTier(
+  uid: string,
+  tier: UserTier,
+): Promise<void> {
+  const ref = doc(getDbClient(), "users", uid);
+  await updateDoc(ref, { tier });
 }
 
 /** Signs out the current user. A new anonymous session is created by AuthProvider. */
