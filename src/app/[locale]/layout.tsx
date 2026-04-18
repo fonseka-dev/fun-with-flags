@@ -7,6 +7,10 @@ import { CountriesProvider } from "@/lib/providers/CountriesProvider";
 import { AuthProvider } from "@/lib/providers/AuthProvider";
 import "../globals.css";
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-jakarta",
