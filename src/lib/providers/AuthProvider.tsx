@@ -21,6 +21,9 @@ import {
   updateQuizScore,
 } from "@/lib/firebase";
 import type { UserProgress } from "@/data/types";
+import type { UserTier } from "@/data/types";
+import { hasAccess as checkAccess } from "@/lib/utils/access";
+import type { Feature } from "@/lib/utils/access";
 
 type AuthContextValue = {
   user: User | null;
@@ -29,6 +32,8 @@ type AuthContextValue = {
   isAnonymous: boolean;
   displayName: string;
   avatarUrl: string | null;
+  tier: UserTier;
+  hasAccess: (feature: Feature) => boolean;
   signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   discoverCountry: (slug: string) => Promise<void>;
@@ -164,6 +169,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     ? (user?.photoURL || googleProvider?.photoURL || progress?.avatarUrl || null)
     : (progress?.avatarUrl ?? null);
 
+  const tier: UserTier = progress?.tier ?? "free";
+  const hasAccessFn = useCallback(
+    (feature: Feature) => checkAccess(tier, feature),
+    [tier],
+  );
+
   return (
     <AuthContext.Provider
       value={{
@@ -173,6 +184,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         isAnonymous,
         displayName,
         avatarUrl,
+        tier,
+        hasAccess: hasAccessFn,
         signInWithGoogle,
         signOut: handleSignOut,
         discoverCountry,
