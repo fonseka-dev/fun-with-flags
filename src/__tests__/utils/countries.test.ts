@@ -78,7 +78,8 @@ describe("getCountriesForLocale", () => {
   it("returns different names for en vs es when translations differ", () => {
     // Germany has nameEs='Alemania' in the translations
     const germanyEntry = countriesData.find((e) => e.slug === "germany");
-    if (!germanyEntry) return; // skip if not present
+    expect(germanyEntry).toBeDefined();
+    if (!germanyEntry) return; // type narrowing only
     const [en] = getCountriesForLocale("en", [germanyEntry]);
     const [es] = getCountriesForLocale("es", [germanyEntry]);
     expect(en.name).toBe("Germany");
@@ -87,6 +88,6 @@ describe("getCountriesForLocale", () => {
 
   it("returns all 245 entries for en", () => {
     const result = getCountriesForLocale("en");
-    expect(result.length).toBe(countriesData.length);
+    expect(result.length).toBe(245);
   });
 });
