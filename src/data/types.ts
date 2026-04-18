@@ -14,7 +14,7 @@ export type FunFact = {
   description: string;
 };
 
-/** Locale-independent fields stored in the Firestore country doc */
+/** Locale-independent fields stored in src/data/countries.ts */
 export type CountryBase = {
   slug: string;
   flagCode: string;
@@ -23,12 +23,17 @@ export type CountryBase = {
   region: string;
 };
 
-/** Translatable fields stored in the Firestore translation subcollection */
+/** Translatable fields — name, capital, flag description, and fun facts */
 export type CountryTranslation = {
   name: string;
   capital: string;
   flagDescription: string;
-  funFacts: [FunFact, FunFact, FunFact];
+  funFacts: FunFact[];
+};
+
+/** Full entry shape stored in src/data/countries.ts — base + embedded translations */
+export type CountryEntry = CountryBase & {
+  translations: { en: CountryTranslation; es: CountryTranslation };
 };
 
 /** Merged type used by components — backward compatible */

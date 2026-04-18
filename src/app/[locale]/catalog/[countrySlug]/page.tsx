@@ -3,8 +3,7 @@ import { getCountryBySlug, getCountrySlugs } from "@/lib/utils/countries";
 import { CountryDetailHeader } from "@/components/country/CountryDetailHeader";
 import { CountryDetailContent } from "@/components/country/CountryDetailContent";
 
-// Allow Firestore-only slugs (countries not in the static list) to be rendered dynamically
-export const dynamicParams = true;
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return getCountrySlugs().map((slug) => ({ countrySlug: slug }));
