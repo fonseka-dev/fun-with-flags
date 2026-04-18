@@ -20,8 +20,7 @@ import {
   addDiscoveredCountry,
   updateQuizScore,
 } from "@/lib/firebase";
-import type { UserProgress } from "@/data/types";
-import type { UserTier } from "@/data/types";
+import type { UserProgress, UserTier } from "@/data/types";
 import { hasAccess as checkAccess } from "@/lib/utils/access";
 import type { Feature } from "@/lib/utils/access";
 
