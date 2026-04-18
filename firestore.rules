@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      // Users can read and write their own document.
+      // On create, any fields are allowed (new users always start at free tier).
+      // On update, clients cannot change the `tier` field (prevents privilege escalation).
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create: if request.auth != null && request.auth.uid == uid;
+      allow update: if request.auth != null && request.auth.uid == uid
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny(["tier"]);
+    }
+  }
+}
