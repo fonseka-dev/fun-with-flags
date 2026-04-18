@@ -17,10 +17,8 @@ import {
   updateDoc,
   arrayUnion,
   serverTimestamp,
-  collection,
-  getDocs,
 } from "firebase/firestore";
-import { UserProgress, Country, CountryBase, CountryTranslation, Locale } from "@/data/types";
+import { UserProgress } from "@/data/types";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -242,24 +240,4 @@ export async function signOutUser(): Promise<void> {
   await signOut(getAuthClient());
 }
 
-export async function fetchAllCountries(locale: Locale): Promise<Country[]> {
-  if (!isFirebaseConfigured()) return [];
 
-  const db = getDbClient();
-  const countriesSnap = await getDocs(collection(db, "countries"));
-
-  const results = await Promise.all(
-    countriesSnap.docs.map(async (countryDoc) => {
-      const base = countryDoc.data() as CountryBase;
-      const transDoc = await getDoc(
-        doc(db, "countries", base.slug, "translations", locale),
-      );
-      if (transDoc.exists()) {
-        return { ...base, ...(transDoc.data() as CountryTranslation) } as Country;
-      }
-      return null;
-    }),
-  );
-
-  return results.filter((c): c is Country => c !== null);
-}
