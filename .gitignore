@@ -58,8 +58,5 @@ firebase-debug.*.log
 ui-debug.log
 .firebaseHosting.*
 
-# ── Copilot ───────────────────────────────────────────────────
-.github/copilot-instructions.md
-
 # ── Others ────────────────────────────────────────────────────
 logs.txt
