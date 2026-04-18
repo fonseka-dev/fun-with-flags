@@ -9,9 +9,29 @@ import { RegionalContext } from "@/components/country/RegionalContext";
 import { DiscoverTracker } from "@/components/country/DiscoverTracker";
 
 export function CountryDetailContent({ slug }: { slug: string }) {
-  const { countries } = useCountries();
+  const { countries, enriching } = useCountries();
 
   const country = countries.find((c) => c.slug === slug);
+
+  // While Firestore enrichment is in progress, show a skeleton rather than
+  // immediately 404-ing — the country may exist in Firestore but not the
+  // static array (e.g. Jersey and other territories).
+  if (!country && enriching) {
+    return (
+      <div className="max-w-screen-xl mx-auto px-6 pt-12 pb-32 animate-pulse space-y-12">
+        <div className="h-64 bg-surface-container-low rounded-xl" />
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div className="md:col-span-7 space-y-8">
+            <div className="h-40 bg-surface-container-low rounded-xl" />
+            <div className="h-40 bg-surface-container-low rounded-xl" />
+          </div>
+          <div className="md:col-span-5">
+            <div className="h-64 bg-surface-container-low rounded-xl" />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (!country) {
     notFound();
