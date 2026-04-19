@@ -6,6 +6,8 @@ export type Continent =
   | "South America"
   | "Oceania";
 
+export type Difficulty = "easy" | "normal" | "hard";
+
 export type Locale = "en" | "es";
 
 export type FunFact = {

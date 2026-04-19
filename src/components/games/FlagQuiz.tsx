@@ -2,13 +2,13 @@
 
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { Country } from "@/data/types";
-import { useGameState } from "@/lib/hooks/useGameState";
+import { Country, Difficulty } from "@/data/types";
+import { useGameState, TIMER_DURATIONS } from "@/lib/hooks/useGameState";
 import { FlagDisplay } from "./FlagDisplay";
 import { AnswerOptions } from "./AnswerOptions";
 import { ScoreBoard } from "./ScoreBoard";
 import { LivesDisplay } from "./LivesDisplay";
-import { HintCard } from "./HintCard";
+import { TimerDisplay } from "./TimerDisplay";
 import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 
@@ -17,9 +17,15 @@ type FlagQuizProps = {
   onGameOver?: (score: number) => void;
 };
 
+const DIFFICULTIES: { key: Difficulty; descKey: string }[] = [
+  { key: "easy", descKey: "easyDesc" },
+  { key: "normal", descKey: "normalDesc" },
+  { key: "hard", descKey: "hardDesc" },
+];
+
 export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
   const t = useTranslations("quiz");
-  const { state, startGame, submitAnswer, nextQuestion } = useGameState(pool);
+  const { state, selectDifficulty, startGame, submitAnswer } = useGameState(pool);
 
   useEffect(() => {
     if (state.status === "gameOver" && onGameOver) {
@@ -40,6 +46,36 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
         <p className="text-on-surface-variant text-lg text-center max-w-md leading-[1.6]">
           {t("subtitle")}
         </p>
+
+        {/* Difficulty picker */}
+        <div className="flex flex-col items-center gap-3 w-full max-w-sm">
+          <p className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+            {t("selectDifficulty")}
+          </p>
+          <div className="flex gap-3 w-full">
+            {DIFFICULTIES.map(({ key, descKey }) => {
+              const isSelected = state.difficulty === key;
+              return (
+                <button
+                  key={key}
+                  onClick={() => selectDifficulty(key)}
+                  className={`
+                    flex-1 flex flex-col items-center gap-1 py-3 px-2 rounded-xl
+                    border-2 transition-bounce
+                    ${isSelected
+                      ? "bg-secondary-container text-on-secondary-container border-secondary"
+                      : "bg-surface-container text-on-surface-variant border-transparent hover:bg-surface-container-highest"
+                    }
+                  `}
+                >
+                  <span className="text-sm font-extrabold capitalize">{t(key)}</span>
+                  <span className="text-xs opacity-70">{t(descKey)}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         <Button variant="primary" onClick={startGame}>
           <span className="flex items-center gap-2">
             <span className="material-symbols-outlined">play_arrow</span>
@@ -79,15 +115,21 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
   }
 
   // Active game
-  const { currentQuestion, score, lives, selectedAnswer, status } = state;
+  const { currentQuestion, score, lives, selectedAnswer, status, difficulty, timeLeft } = state;
 
   if (!currentQuestion) return null;
 
+  const totalTime = TIMER_DURATIONS[difficulty];
+  const showTimer = difficulty !== "easy" && timeLeft !== null;
+
   return (
     <div className="flex flex-col items-center w-full">
-      {/* Score + Lives header */}
+      {/* Score + Timer + Lives header */}
       <div className="w-full flex justify-between items-end mb-10">
         <ScoreBoard score={score} />
+        {showTimer && (
+          <TimerDisplay timeLeft={timeLeft} totalTime={totalTime!} />
+        )}
         <LivesDisplay lives={lives} />
       </div>
 
@@ -107,23 +149,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
         status={status}
         onSelect={submitAnswer}
       />
-
-      {/* Hint (shows after wrong answer) */}
-      {status === "wrong" && (
-        <HintCard hint={currentQuestion.correct.flagDescription} />
-      )}
-
-      {/* Next button (shows after answering) */}
-      {(status === "correct" || status === "wrong") && (
-        <div className="mt-8">
-          <Button variant="primary" onClick={nextQuestion}>
-            <span className="flex items-center gap-2">
-              <span className="material-symbols-outlined">arrow_forward</span>
-              {t("nextQuestion")}
-            </span>
-          </Button>
-        </div>
-      )}
     </div>
   );
 }
+

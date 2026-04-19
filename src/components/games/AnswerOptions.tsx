@@ -16,7 +16,7 @@ export function AnswerOptions({
   status,
   onSelect,
 }: AnswerOptionsProps) {
-  const isAnswered = status === "correct" || status === "wrong";
+  const isAnswered = status === "correct" || status === "wrong" || status === "timeout";
 
   function getOptionStyle(slug: string): string {
     if (!isAnswered) {
@@ -25,7 +25,8 @@ export function AnswerOptions({
     if (slug === correctSlug) {
       return "bg-secondary text-on-secondary";
     }
-    if (slug === selectedAnswer && slug !== correctSlug) {
+    // On timeout, no answer was selected — don't highlight anything red
+    if (status !== "timeout" && slug === selectedAnswer && slug !== correctSlug) {
       return "bg-error text-on-error";
     }
     return "bg-surface-container-highest opacity-50";

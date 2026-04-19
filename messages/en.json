@@ -75,10 +75,17 @@
     "playAgain": "Play Again",
     "backToHome": "Back to Home",
     "whoAmI": "Who am I?",
-    "nextQuestion": "Next Question",
     "hintTitle": "Explorer's Hint",
     "currentScore": "Current Score",
-    "livesLeft": "Lives Left"
+    "livesLeft": "Lives Left",
+    "timeLeft": "TIME LEFT",
+    "selectDifficulty": "Choose Difficulty",
+    "easy": "Easy",
+    "normal": "Normal",
+    "hard": "Hard",
+    "easyDesc": "No time pressure",
+    "normalDesc": "5 seconds",
+    "hardDesc": "3 seconds"
   },
   "auth": {
     "signIn": "Sign In",

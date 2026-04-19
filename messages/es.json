@@ -75,10 +75,17 @@
     "playAgain": "Jugar de Nuevo",
     "backToHome": "Volver al Inicio",
     "whoAmI": "¿Quién soy?",
-    "nextQuestion": "Siguiente Pregunta",
     "hintTitle": "Pista del Explorador",
     "currentScore": "Puntuación Actual",
-    "livesLeft": "Vidas Restantes"
+    "livesLeft": "Vidas Restantes",
+    "timeLeft": "TIEMPO",
+    "selectDifficulty": "Elige Dificultad",
+    "easy": "Fácil",
+    "normal": "Normal",
+    "hard": "Difícil",
+    "easyDesc": "Sin límite de tiempo",
+    "normalDesc": "5 segundos",
+    "hardDesc": "3 segundos"
   },
   "auth": {
     "signIn": "Iniciar sesión",
