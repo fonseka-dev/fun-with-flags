@@ -82,16 +82,16 @@ export function PersonalProgressCard({
       {/* Progress Bar */}
       <div className="w-full md:w-1/3 relative z-10">
         <div className="flex justify-between items-end mb-2">
-          <span className="text-white font-bold text-sm">{score.toLocaleString()} pts</span>
+          <span className="text-white font-bold text-sm">{t("xpPoints", { score: score.toLocaleString() })}</span>
           {isFirst ? (
             <span className="text-white text-xs opacity-80">{t("defending")}</span>
           ) : nextRankScore != null ? (
             <span className="text-white text-xs opacity-70">
-              {(nextRankScore - score).toLocaleString()} pts to #{rank - 1}
+              {t("xpToNextPlayer", { xp: (nextRankScore - score).toLocaleString(), rank: rank - 1 })}
             </span>
           ) : xpToNext > 0 ? (
             <span className="text-white text-xs opacity-70">
-              {xpToNext.toLocaleString()} pts to next tier
+              {t("xpToNextRank", { xp: xpToNext.toLocaleString(), tier: t(`rankTiers.${tiers[tierIndex + 1]}`) })}
             </span>
           ) : null}
         </div>

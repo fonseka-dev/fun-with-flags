@@ -40,9 +40,9 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
       entry: entries[0],
       rank: 1,
       platformHeight: "h-44",
-      medalBg: "bg-tertiary-fixed",
-      medalText: "text-on-tertiary-fixed",
-      borderColor: "border-tertiary",
+      medalBg: "bg-amber-400",
+      medalText: "text-white",
+      borderColor: "border-amber-400",
     });
   }
   if (entries[2]) {
@@ -69,15 +69,7 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
             className={`flex flex-col items-center w-full ${isFirst ? "md:w-56 z-10" : "md:w-48"}`}
           >
             {/* Avatar */}
-            <div className="mb-4 relative">
-              {isFirst && (
-                <span
-                  className="material-symbols-outlined text-tertiary-fixed text-5xl absolute -top-10 left-1/2 -translate-x-1/2"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  workspace_premium
-                </span>
-              )}
+            <div className="mb-4 relative animate-bounce">
               <div
                 className={`${avatarSize} rounded-full border-4 ${borderColor} p-1 bg-surface-container-lowest shadow-xl ${isFirst ? "scale-110 shadow-2xl" : ""}`}
               >
@@ -110,7 +102,7 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
                 {entry.quizHighScore.toLocaleString()}
               </span>
               <span className="text-[10px] text-on-surface-variant uppercase font-bold tracking-widest">
-                {t("xpPoints", { score: "" }).replace(" pts", " pts")}
+                {t("pointsLabel")}
               </span>
               <RankTierBadge tier={getRankTier(entry.quizHighScore)} size="sm" />
             </div>
