@@ -421,3 +421,48 @@ describe("useGameState — auto-advance", () => {
     expect(result.current.state.status).toBe("correct"); // still showing feedback
   });
 });
+
+describe("useGameState — fast answer tracking", () => {
+  beforeEach(() => vi.useFakeTimers());
+  afterEach(() => vi.useRealTimers());
+
+  it("increments fastAnswerCount when answer submitted before 2000ms", () => {
+    const { result } = renderHook(() => useGameState(countries));
+    act(() => {
+      result.current.selectDifficulty("easy");
+      result.current.startGame();
+    });
+    // Submit immediately — timeTaken ≈ 0ms, well under the 2000ms threshold
+    const correctSlug = result.current.state.currentQuestion!.correct.slug;
+    act(() => result.current.submitAnswer(correctSlug));
+    expect(result.current.state.fastAnswerCount).toBe(1);
+  });
+
+  it("does NOT increment fastAnswerCount when answer submitted at or after 2000ms", () => {
+    const { result } = renderHook(() => useGameState(countries));
+    act(() => {
+      result.current.selectDifficulty("easy");
+      result.current.startGame();
+    });
+    // Advance 2000ms without submitting — questionStartedAt is now 2000ms in the past
+    act(() => vi.advanceTimersByTime(2000));
+    const correctSlug = result.current.state.currentQuestion!.correct.slug;
+    act(() => result.current.submitAnswer(correctSlug));
+    expect(result.current.state.fastAnswerCount).toBe(0);
+  });
+
+  it("accumulates fastAnswerCount across multiple fast answers", () => {
+    const { result } = renderHook(() => useGameState(countries));
+    act(() => {
+      result.current.selectDifficulty("easy");
+      result.current.startGame();
+    });
+    // Answer 3 questions immediately (fast each time)
+    for (let i = 0; i < 3; i++) {
+      const correctSlug = result.current.state.currentQuestion!.correct.slug;
+      act(() => result.current.submitAnswer(correctSlug));
+      act(() => vi.advanceTimersByTime(2000)); // auto-advance to next question
+    }
+    expect(result.current.state.fastAnswerCount).toBe(3);
+  });
+});

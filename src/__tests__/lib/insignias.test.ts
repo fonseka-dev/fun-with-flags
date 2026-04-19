@@ -4,14 +4,20 @@ import type { UserProgress } from "@/data/types";
 
 function makeProgress(overrides: Partial<UserProgress> = {}): UserProgress {
   return {
+    uid: "test-uid",
+    nickname: "Test Explorer",
+    isAnonymous: true,
+    avatarSeed: "test-seed",
+    onboardingComplete: true,
+    tier: "free",
+    discoveredCountries: [],
     quizHighScore: 0,
     quizGamesPlayed: 0,
     totalCorrectAnswers: 0,
     earnedInsignias: [],
-    nickname: null,
-    avatarSeed: null,
+    lastPlayedAt: new Date(0),
     ...overrides,
-  };
+  } as UserProgress;
 }
 
 function makeResult(overrides: Partial<GameResult> = {}): GameResult {
