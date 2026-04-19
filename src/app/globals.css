@@ -90,22 +90,24 @@
 }
 
 @keyframes insignia-pop-in {
-  0% {
-    opacity: 0;
-    transform: scale(0.4) rotate(-6deg);
-  }
-  70% {
-    transform: scale(1.12) rotate(2deg);
-  }
-  100% {
+  0%, 55%, 100% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
+  }
+  65% {
+    transform: scale(0.82) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1.18) rotate(3deg);
+  }
+  90% {
+    transform: scale(0.96) rotate(-1deg);
   }
 }
 
 @layer utilities {
   .animate-insignia-pop {
-    animation: insignia-pop-in 0.45s var(--ease-back-out) both;
+    animation: insignia-pop-in 2.8s ease-in-out infinite;
   }
 
   .glass {
