@@ -2,8 +2,9 @@
 
 import { useMemo, Suspense } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 import { AppShell } from "@/components/layout/AppShell";
+import { Continent } from "@/data/types";
 import { Button } from "@/components/ui/Button";
 import { useCountries } from "@/lib/providers/CountriesProvider";
 import { useAuth } from "@/lib/providers/AuthProvider";
@@ -18,6 +19,11 @@ function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
   const { progress, isAnonymous, nickname } = useAuth();
+  const router = useRouter();
+
+  const handleContinentSelect = (continent: Continent | null) => {
+    if (continent) router.push(`/catalog?continent=${continent}`);
+  };
 
   // Pick 4 countries daily — deterministic based on day-of-year (DAY_OF_YEAR computed at module load)
   const dailyCountries = useMemo(() => {
@@ -27,7 +33,7 @@ function DashboardContent() {
   }, [countries]);
 
   return (
-    <AppShell showSidebar>
+    <AppShell showSidebar onContinentSelect={handleContinentSelect}>
       <section className="space-y-12">
         {/* Welcome Header */}
         <header className="space-y-4">

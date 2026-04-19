@@ -5,12 +5,14 @@ import { TopNav } from "./TopNav";
 import { SideNav } from "./SideNav";
 import { BottomNav } from "./BottomNav";
 import { useContinentFilter } from "@/lib/hooks/useContinentFilter";
+import { Continent } from "@/data/types";
 
 type AppShellProps = {
   children: ReactNode;
   showSidebar?: boolean;
   searchQuery?: string;
   onSearchChange?: (value: string) => void;
+  onContinentSelect?: (continent: Continent | null) => void;
 };
 
 function AppShellInner({
@@ -18,8 +20,11 @@ function AppShellInner({
   showSidebar = true,
   searchQuery,
   onSearchChange,
+  onContinentSelect,
 }: AppShellProps) {
   const { activeContinent, setContinent } = useContinentFilter();
+
+  const handleContinentSelect = onContinentSelect ?? setContinent;
 
   return (
     <div className="min-h-screen bg-surface">
@@ -28,7 +33,7 @@ function AppShellInner({
         {showSidebar && (
           <SideNav
             activeContinent={activeContinent}
-            onSelectContinent={setContinent}
+            onSelectContinent={handleContinentSelect}
           />
         )}
         <main className="flex-1 p-6 md:p-12 pb-24 lg:pb-12">
