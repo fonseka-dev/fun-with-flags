@@ -93,5 +93,29 @@
     "anonymousLabel": "Playing as",
     "progressSummary": "{countries} countries · High score {score}",
     "close": "Close"
+  },
+  "onboarding": {
+    "title": "Explorer's Atlas",
+    "subtitle": "Your journey across the world starts here.",
+    "chooseAvatar": "Choose Your Avatar",
+    "yourName": "Your Explorer Name",
+    "namePlaceholder": "e.g. Captain Discovery",
+    "nameHint": "Choose a fun name that other explorers will see!",
+    "nameErrorShort": "Pick a name with at least 2 characters",
+    "nameErrorProfanity": "Hmm, let's try a different name! 🌍",
+    "levelBadge": "Level 1 Navigator",
+    "flagsFound": "Flags Found",
+    "stampRank": "Stamp Rank",
+    "startExploring": "Start Exploring!",
+    "profilePreview": "Profile Preview"
+  },
+  "profile": {
+    "title": "Your Profile",
+    "changeAvatar": "Change Avatar",
+    "nicknameLocked": "Your explorer name is locked in!",
+    "flagsFound": "Flags Found",
+    "highScore": "High Score",
+    "gamesPlayed": "Games Played",
+    "close": "Close"
   }
 }
