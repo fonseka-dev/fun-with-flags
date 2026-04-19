@@ -4,7 +4,8 @@
     "home": "Home",
     "passport": "Countries",
     "games": "Games",
-    "map": "Map"
+    "map": "Map",
+    "leaderboard": "Rankings"
   },
   "sidebar": {
     "title": "The World",
@@ -142,5 +143,38 @@
     "highScore": "High Score",
     "gamesPlayed": "Games Played",
     "close": "Close"
+  },
+  "leaderboard": {
+    "title": "World Rankings",
+    "subtitle": "Top explorers ranked by their best quiz score",
+    "allTime": "All Time",
+    "topExplorers": "Top Explorers",
+    "playAgain": "Play Again",
+    "playNow": "Play Now",
+    "loadMore": "Load More",
+    "xpPoints": "{score} points",
+    "pointsLabel": "points",
+    "yourRank": "Your Rank",
+    "rankNumber": "#{rank}",
+    "xpToNextRank": "{xp} points to {tier}",
+    "xpToNextPlayer": "{xp} points to #{rank}",
+    "defending": "Defending your crown!",
+    "noScore": "Play your first game to get ranked!",
+    "rankTiers": {
+      "novice": "Novice",
+      "explorer": "Explorer",
+      "pathfinder": "Pathfinder",
+      "scholar": "Scholar",
+      "grandmaster": "Grandmaster"
+    },
+    "motivation": {
+      "rank1": "You're #1! Defend your crown!",
+      "podium": "You're on the podium!",
+      "top10pct": "Top 10% of all explorers!",
+      "top25pct": "Top 25% of all explorers!",
+      "top50pct": "Top half of all explorers!",
+      "climbing": "Keep playing to climb the ranks!",
+      "noScore": "Play your first game to get ranked!"
+    }
   }
 }

@@ -22,6 +22,7 @@ import {
   completeOnboarding,
   updateAvatar,
   generatePseudonym,
+  upsertLeaderboardEntry,
 } from "@/lib/firebase";
 import type { UserProgress, UserTier, InsigniaId } from "@/data/types";
 import { avatarUrl as deriveAvatarUrl } from "@/data/types";
@@ -30,6 +31,7 @@ import type { Feature } from "@/lib/utils/access";
 
 type AuthContextValue = {
   user: User | null;
+  uid: string | null;
   progress: UserProgress | null;
   loading: boolean;
   isAnonymous: boolean;
@@ -82,6 +84,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         });
         const data = await getUserProgress(firebaseUser.uid);
         setProgress(data);
+        // Backfill leaderboard for existing users who played before this feature
+        if (data && data.quizHighScore > 0) {
+          void upsertLeaderboardEntry(
+            firebaseUser.uid,
+            data.nickname ?? generatePseudonym(firebaseUser.uid),
+            data.avatarSeed ?? firebaseUser.uid,
+            data.quizHighScore,
+          );
+        }
       } catch (err: unknown) {
         // Auth or Firestore unavailable — app still works without progress data
         console.warn("[Auth] onAuthStateChanged handler error:", err);
@@ -100,6 +111,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(updatedUser);
       const data = await getUserProgress(updatedUser.uid);
       setProgress(data);
+      if (data && data.quizHighScore > 0) {
+        void upsertLeaderboardEntry(
+          updatedUser.uid,
+          data.nickname ?? generatePseudonym(updatedUser.uid),
+          data.avatarSeed ?? updatedUser.uid,
+          data.quizHighScore,
+        );
+      }
     } catch (err: unknown) {
       const error = err as { code?: string };
       if (error.code === "auth/popup-closed-by-user") return;
@@ -139,20 +158,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (score: number, insignias: InsigniaId[], correctInGame: number) => {
       if (!user) return;
       await saveQuizResultToDb(user.uid, score, insignias, correctInGame);
-      setProgress((prev) =>
-        prev
-          ? {
-              ...prev,
-              quizGamesPlayed: prev.quizGamesPlayed + 1,
-              quizHighScore: score > prev.quizHighScore ? score : prev.quizHighScore,
-              totalCorrectAnswers: (prev.totalCorrectAnswers ?? 0) + correctInGame,
-              earnedInsignias: [
-                ...(prev.earnedInsignias ?? []),
-                ...insignias,
-              ],
-            }
-          : prev,
-      );
+      setProgress((prev) => {
+        if (!prev) return prev;
+        const newHighScore = score > prev.quizHighScore ? score : prev.quizHighScore;
+        // Sync leaderboard entry with updated high score
+        void upsertLeaderboardEntry(
+          user.uid,
+          prev.nickname,
+          prev.avatarSeed,
+          newHighScore,
+        );
+        return {
+          ...prev,
+          quizGamesPlayed: prev.quizGamesPlayed + 1,
+          quizHighScore: newHighScore,
+          totalCorrectAnswers: (prev.totalCorrectAnswers ?? 0) + correctInGame,
+          earnedInsignias: [
+            ...(prev.earnedInsignias ?? []),
+            ...insignias,
+          ],
+        };
+      });
     },
     [user],
   );
@@ -161,11 +187,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (newNickname: string, newAvatarSeed: string) => {
       if (!user) return;
       await completeOnboarding(user.uid, newNickname, newAvatarSeed);
-      setProgress((prev) =>
-        prev
-          ? { ...prev, nickname: newNickname, avatarSeed: newAvatarSeed, onboardingComplete: true }
-          : prev,
-      );
+      setProgress((prev) => {
+        if (!prev) return prev;
+        // Sync leaderboard entry with new nickname and avatar
+        void upsertLeaderboardEntry(
+          user.uid,
+          newNickname,
+          newAvatarSeed,
+          prev.quizHighScore,
+        );
+        return { ...prev, nickname: newNickname, avatarSeed: newAvatarSeed, onboardingComplete: true };
+      });
     },
     [user],
   );
@@ -174,9 +206,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (newSeed: string) => {
       if (!user) return;
       await updateAvatar(user.uid, newSeed);
-      setProgress((prev) =>
-        prev ? { ...prev, avatarSeed: newSeed } : prev,
-      );
+      setProgress((prev) => {
+        if (!prev) return prev;
+        // Sync leaderboard entry with new avatar
+        void upsertLeaderboardEntry(
+          user.uid,
+          prev.nickname,
+          newSeed,
+          prev.quizHighScore,
+        );
+        return { ...prev, avatarSeed: newSeed };
+      });
     },
     [user],
   );
@@ -197,6 +237,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     <AuthContext.Provider
       value={{
         user,
+        uid: user?.uid ?? null,
         progress,
         loading,
         isAnonymous,

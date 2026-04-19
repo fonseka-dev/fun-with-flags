@@ -28,6 +28,7 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
     { href: "/catalog", label: t("passport") },
     { href: "/games/guess-the-flag", label: t("games") },
     { href: "/map", label: t("map") },
+    { href: "/leaderboard", label: t("leaderboard") },
   ] as const;
 
   return (

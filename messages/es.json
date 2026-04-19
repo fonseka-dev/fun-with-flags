@@ -4,7 +4,8 @@
     "home": "Inicio",
     "passport": "Países",
     "games": "Juegos",
-    "map": "Mapa"
+    "map": "Mapa",
+    "leaderboard": "Clasificación"
   },
   "sidebar": {
     "title": "El Mundo",
@@ -142,5 +143,38 @@
     "highScore": "Puntuación Máxima",
     "gamesPlayed": "Juegos Jugados",
     "close": "Cerrar"
+  },
+  "leaderboard": {
+    "title": "Clasificación Mundial",
+    "subtitle": "Los mejores exploradores por su mejor puntuación en el quiz",
+    "allTime": "Histórico",
+    "topExplorers": "Mejores Exploradores",
+    "playAgain": "Jugar de Nuevo",
+    "playNow": "Jugar Ahora",
+    "loadMore": "Cargar Más",
+    "xpPoints": "{score} puntos",
+    "pointsLabel": "puntos",
+    "yourRank": "Tu Posición",
+    "rankNumber": "#{rank}",
+    "xpToNextRank": "{xp} puntos para {tier}",
+    "xpToNextPlayer": "{xp} puntos para el #{rank}",
+    "defending": "¡Defendiendo tu corona!",
+    "noScore": "¡Juega tu primera partida para aparecer en el ranking!",
+    "rankTiers": {
+      "novice": "Novato",
+      "explorer": "Explorador",
+      "pathfinder": "Explorador de Rutas",
+      "scholar": "Erudito",
+      "grandmaster": "Gran Maestro"
+    },
+    "motivation": {
+      "rank1": "¡Eres el #1! ¡Defiende tu corona!",
+      "podium": "¡Estás en el podio!",
+      "top10pct": "¡Top 10% de todos los exploradores!",
+      "top25pct": "¡Top 25% de todos los exploradores!",
+      "top50pct": "¡En la mitad superior de exploradores!",
+      "climbing": "¡Sigue jugando para escalar en el ranking!",
+      "noScore": "¡Juega tu primera partida para aparecer en el ranking!"
+    }
   }
 }

@@ -11,6 +11,7 @@ export function BottomNav() {
     { href: "/map", icon: "explore", label: t("map") },
     { href: "/games/guess-the-flag", icon: "videogame_asset", label: t("games") },
     { href: "/catalog", icon: "import_contacts", label: t("passport") },
+    { href: "/leaderboard", icon: "leaderboard", label: t("leaderboard") },
   ] as const;
 
   return (

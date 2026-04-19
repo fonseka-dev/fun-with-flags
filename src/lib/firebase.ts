@@ -18,8 +18,17 @@ import {
   arrayUnion,
   serverTimestamp,
   increment,
+  collection,
+  query,
+  orderBy,
+  limit,
+  startAfter,
+  where,
+  getDocs,
+  getCountFromServer,
+  type Timestamp,
 } from "firebase/firestore";
-import { UserProgress, UserTier, InsigniaId } from "@/data/types";
+import { UserProgress, UserTier, InsigniaId, LeaderboardEntry } from "@/data/types";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -262,6 +271,75 @@ export async function updateUserTier(
 /** Signs out the current user. A new anonymous session is created by AuthProvider. */
 export async function signOutUser(): Promise<void> {
   await signOut(getAuthClient());
+}
+
+// ─── Leaderboard ─────────────────────────────────────────────────────────────
+
+/**
+ * Upserts a leaderboard entry for the given user.
+ * Always writes the provided highScore — callers should pass the current best.
+ */
+export async function upsertLeaderboardEntry(
+  uid: string,
+  nickname: string,
+  avatarSeed: string,
+  highScore: number,
+): Promise<void> {
+  const ref = doc(getDbClient(), "leaderboard", uid);
+  await setDoc(
+    ref,
+    {
+      uid,
+      nickname,
+      avatarSeed,
+      quizHighScore: highScore,
+      updatedAt: serverTimestamp(),
+    },
+    { merge: true },
+  );
+}
+
+/**
+ * Returns top leaderboard entries ordered by quizHighScore descending.
+ * Pass startAfterScore to paginate past a previous page's last score.
+ */
+export async function getTopLeaderboard(
+  limitCount: number,
+  startAfterScore?: number,
+): Promise<LeaderboardEntry[]> {
+  const col = collection(getDbClient(), "leaderboard");
+  const constraints = startAfterScore !== undefined
+    ? [orderBy("quizHighScore", "desc"), startAfter(startAfterScore), limit(limitCount)]
+    : [orderBy("quizHighScore", "desc"), limit(limitCount)];
+  const q = query(col, ...constraints);
+  const snap = await getDocs(q);
+  return snap.docs.map((d) => ({
+    uid: d.id,
+    nickname: d.data().nickname as string,
+    avatarSeed: d.data().avatarSeed as string,
+    quizHighScore: d.data().quizHighScore as number,
+    updatedAt: (d.data().updatedAt as Timestamp).toDate(),
+  }));
+}
+
+/** Returns the total number of entries in the leaderboard collection. */
+export async function getLeaderboardCount(): Promise<number> {
+  const col = collection(getDbClient(), "leaderboard");
+  const snap = await getCountFromServer(col);
+  return snap.data().count;
+}
+
+/**
+ * Returns the rank of a user given their high score.
+ * Rank = (number of users with a strictly higher score) + 1.
+ * Returns 0 if highScore is 0 (unranked).
+ */
+export async function getUserRank(highScore: number): Promise<number> {
+  if (highScore <= 0) return 0;
+  const col = collection(getDbClient(), "leaderboard");
+  const q = query(col, where("quizHighScore", ">", highScore));
+  const snap = await getCountFromServer(q);
+  return snap.data().count + 1;
 }
 
 
