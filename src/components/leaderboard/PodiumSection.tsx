@@ -15,6 +15,7 @@ type PodiumPosition = {
   medalBg: string;
   medalText: string;
   borderColor: string;
+  animationDelay: string;
 };
 
 export function PodiumSection({ entries }: PodiumSectionProps) {
@@ -33,6 +34,7 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
       medalBg: "bg-slate-300",
       medalText: "text-on-surface",
       borderColor: "border-slate-300",
+      animationDelay: "0ms",
     });
   }
   if (entries[0]) {
@@ -43,6 +45,7 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
       medalBg: "bg-amber-400",
       medalText: "text-white",
       borderColor: "border-amber-400",
+      animationDelay: "300ms",
     });
   }
   if (entries[2]) {
@@ -53,12 +56,13 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
       medalBg: "bg-orange-400",
       medalText: "text-white",
       borderColor: "border-orange-400",
+      animationDelay: "600ms",
     });
   }
 
   return (
     <div className="flex flex-col md:flex-row items-end justify-center gap-4 lg:gap-8 mb-20">
-      {positions.map(({ entry, rank, platformHeight, medalBg, medalText, borderColor }) => {
+      {positions.map(({ entry, rank, platformHeight, medalBg, medalText, borderColor, animationDelay }) => {
         const isFirst = rank === 1;
         const avatarSize = isFirst ? "w-32 h-32" : "w-24 h-24";
         const medalSize = isFirst ? "w-10 h-10 text-base" : "w-8 h-8 text-sm";
@@ -69,7 +73,7 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
             className={`flex flex-col items-center w-full ${isFirst ? "md:w-56 z-10" : "md:w-48"}`}
           >
             {/* Avatar */}
-            <div className="mb-4 relative animate-bounce">
+            <div className="mb-4 relative animate-bounce" style={{ animationDelay }}>
               <div
                 className={`${avatarSize} rounded-full border-4 ${borderColor} p-1 bg-surface-container-lowest shadow-xl ${isFirst ? "scale-110 shadow-2xl" : ""}`}
               >
