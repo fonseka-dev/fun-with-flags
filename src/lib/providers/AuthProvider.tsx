@@ -19,8 +19,12 @@ import {
   signOutUser,
   addDiscoveredCountry,
   updateQuizScore,
+  completeOnboarding,
+  updateAvatar,
+  generatePseudonym,
 } from "@/lib/firebase";
 import type { UserProgress, UserTier } from "@/data/types";
+import { avatarUrl as deriveAvatarUrl } from "@/data/types";
 import { hasAccess as checkAccess } from "@/lib/utils/access";
 import type { Feature } from "@/lib/utils/access";
 
@@ -29,14 +33,18 @@ type AuthContextValue = {
   progress: UserProgress | null;
   loading: boolean;
   isAnonymous: boolean;
-  displayName: string;
-  avatarUrl: string | null;
+  nickname: string;
+  avatarSeed: string;
+  avatarUrl: string;
+  needsOnboarding: boolean;
   tier: UserTier;
   hasAccess: (feature: Feature) => boolean;
   signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   discoverCountry: (slug: string) => Promise<void>;
   saveQuizScore: (score: number) => Promise<void>;
+  completeOnboardingFlow: (nickname: string, avatarSeed: string) => Promise<void>;
+  updateAvatarSeed: (avatarSeed: string) => Promise<void>;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -71,12 +79,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setUser(firebaseUser);
         await initUserProgress(firebaseUser.uid, {
           isAnonymous: firebaseUser.isAnonymous,
-          ...(firebaseUser.displayName
-            ? { displayName: firebaseUser.displayName }
-            : {}),
-          ...(firebaseUser.photoURL !== undefined
-            ? { avatarUrl: firebaseUser.photoURL ?? undefined }
-            : {}),
         });
         const data = await getUserProgress(firebaseUser.uid);
         setProgress(data);
@@ -150,23 +152,35 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [user],
   );
 
+  const completeOnboardingFlow = useCallback(
+    async (newNickname: string, newAvatarSeed: string) => {
+      if (!user) return;
+      await completeOnboarding(user.uid, newNickname, newAvatarSeed);
+      setProgress((prev) =>
+        prev
+          ? { ...prev, nickname: newNickname, avatarSeed: newAvatarSeed, onboardingComplete: true }
+          : prev,
+      );
+    },
+    [user],
+  );
+
+  const updateAvatarSeed = useCallback(
+    async (newSeed: string) => {
+      if (!user) return;
+      await updateAvatar(user.uid, newSeed);
+      setProgress((prev) =>
+        prev ? { ...prev, avatarSeed: newSeed } : prev,
+      );
+    },
+    [user],
+  );
+
   const isAnonymous = user?.isAnonymous ?? true;
-  // When signing in via signInWithCredential (credential-already-in-use path),
-  // Firebase Auth leaves user.displayName and user.photoURL as null — the
-  // actual Google profile is only in user.providerData[0]. Always check there.
-  const googleProvider = user?.providerData?.find((p) => p.providerId === "google.com");
-  // Fallback chain: User.displayName → providerData name → email username → Firestore → "Explorer"
-  const displayName = !isAnonymous
-    ? (user?.displayName ||
-       googleProvider?.displayName ||
-       (user?.email ? user.email.split("@")[0] : null) ||
-       progress?.displayName ||
-       "Explorer")
-    : (progress?.displayName ?? (user ? "Explorer" : ""));
-  // Fallback chain: User.photoURL → providerData photoURL → Firestore → null
-  const avatarUrl = !isAnonymous
-    ? (user?.photoURL || googleProvider?.photoURL || progress?.avatarUrl || null)
-    : (progress?.avatarUrl ?? null);
+  const nickname = progress?.nickname ?? (user ? generatePseudonym(user.uid) : "Explorer");
+  const avatarSeed = progress?.avatarSeed ?? (user?.uid ?? "explorer");
+  const avatarUrlValue = deriveAvatarUrl(avatarSeed);
+  const needsOnboarding = !isAnonymous && !(progress?.onboardingComplete ?? false);
 
   const tier: UserTier = progress?.tier ?? "free";
   const hasAccessFn = useCallback(
@@ -181,14 +195,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         progress,
         loading,
         isAnonymous,
-        displayName,
-        avatarUrl,
+        nickname,
+        avatarSeed,
+        avatarUrl: avatarUrlValue,
+        needsOnboarding,
         tier,
         hasAccess: hasAccessFn,
         signInWithGoogle,
         signOut: handleSignOut,
         discoverCountry,
         saveQuizScore,
+        completeOnboardingFlow,
+        updateAvatarSeed,
       }}
     >
       {children}
