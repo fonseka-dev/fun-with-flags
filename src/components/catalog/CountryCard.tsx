@@ -14,7 +14,10 @@ export function CountryCard({ country }: CountryCardProps) {
   const t = useTranslations("catalog");
 
   return (
-    <div className="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-bounce shadow-ambient flex flex-col">
+    <Link
+      href={`/catalog/${country.slug}`}
+      className="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-bounce shadow-ambient flex flex-col"
+    >
       <div className="relative h-48 overflow-hidden bg-surface-container-highest">
         <Image
           src={`https://flagcdn.com/w320/${country.flagCode}.png`}
@@ -51,12 +54,12 @@ export function CountryCard({ country }: CountryCardProps) {
             </span>
           </div>
         </div>
-        <Link href={`/catalog/${country.slug}`} className="mt-auto">
+        <div className="mt-auto">
           <Button variant="primary" fullWidth>
             {t("exploreCulture")}
           </Button>
-        </Link>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
