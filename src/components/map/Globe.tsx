@@ -2,7 +2,9 @@
 
 import { Suspense, lazy, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
+import { useLocale, useTranslations } from "next-intl";
 import { GlobeControls } from "./GlobeControls";
+import type { Locale } from "@/data/types";
 
 const GlobeScene = lazy(() =>
   import("./GlobeScene").then((m) => ({ default: m.GlobeScene })),
@@ -16,6 +18,8 @@ type GlobeProps = {
 export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
   const [showLabels, setShowLabels] = useState(false);
   const zoomRef = useRef<number>(0);
+  const locale = useLocale() as Locale;
+  const t = useTranslations("globe");
 
   const handleZoomIn = () => { zoomRef.current = 1; };
   const handleZoomOut = () => { zoomRef.current = -1; };
@@ -34,6 +38,8 @@ export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
             onCountrySelect={onCountrySelect}
             showLabels={showLabels}
             zoomRef={zoomRef}
+            locale={locale}
+            globeT={{ capital: t("capital"), explore: t("explore") }}
           />
         </Suspense>
       </Canvas>

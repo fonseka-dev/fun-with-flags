@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { Html } from "@react-three/drei";
-import { useLocale } from "next-intl";
 import type { ProcessedCountry } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
 import type { Locale } from "@/data/types";
@@ -8,10 +7,10 @@ import type { Locale } from "@/data/types";
 type CountryLabelsProps = {
   countries: ProcessedCountry[];
   visible: boolean;
+  locale: Locale;
 };
 
-export function CountryLabels({ countries, visible }: CountryLabelsProps) {
-  const locale = useLocale() as Locale;
+export function CountryLabels({ countries, visible, locale }: CountryLabelsProps) {
 
   const nameBySlug = useMemo(
     () => new Map(countriesData.map((c) => [c.slug, c.translations[locale].name])),

@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 import { Html } from "@react-three/drei";
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import type { FunFact } from "@/data/types";
 
 const CONTINENT_DOT_COLORS: Record<string, string> = {
@@ -23,6 +21,9 @@ type CountryPopupProps = {
   continent: string;
   funFact: FunFact | null;
   centroid: [number, number, number];
+  locale: string;
+  capitalLabel: string;
+  exploreLabel: string;
   onClose: () => void;
 };
 
@@ -34,9 +35,11 @@ export function CountryPopup({
   continent,
   funFact,
   centroid,
+  locale,
+  capitalLabel,
+  exploreLabel,
   onClose,
 }: CountryPopupProps) {
-  const t = useTranslations("globe");
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -72,7 +75,7 @@ export function CountryPopup({
 
         {/* Capital */}
         <div className="mb-2">
-          <span className="text-xs text-white/50">{t("capital")}</span>
+          <span className="text-xs text-white/50">{capitalLabel}</span>
           <p className="text-sm">{capital}</p>
         </div>
 
@@ -98,12 +101,12 @@ export function CountryPopup({
         )}
 
         {/* Explore link */}
-        <Link
-          href={`/catalog/${slug}`}
+        <a
+          href={`/${locale}/catalog/${slug}`}
           className="mt-3 block w-full rounded-xl bg-white/10 py-2 text-center text-sm font-medium transition-colors hover:bg-white/20"
         >
-          {t("explore")}
-        </Link>
+          {exploreLabel}
+        </a>
       </div>
     </Html>
   );

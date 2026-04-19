@@ -21,7 +21,7 @@
     "next-intl": "^4.9.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "three": "^0.184.0",
+    "three": "0.182.0",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/three": "^0.184.0",
+    "@types/three": "0.182.0",
     "@types/topojson-client": "^3.1.5",
     "@vitejs/plugin-react": "^6.0.1",
     "eslint": "^9",
