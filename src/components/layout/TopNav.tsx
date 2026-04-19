@@ -7,6 +7,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { LanguageToggle } from "./LanguageToggle";
 import { useAuth } from "@/lib/providers/AuthProvider";
 import { AuthModal } from "@/components/auth/AuthModal";
+import { ProfileDialog } from "@/components/auth/ProfileDialog";
 
 type TopNavProps = {
   searchQuery?: string;
@@ -18,9 +19,9 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
   const tSearch = useTranslations("search");
   const tAuth = useTranslations("auth");
   const pathname = usePathname();
-  const { isAnonymous, displayName, avatarUrl, signOut } = useAuth();
+  const { isAnonymous, nickname, avatarUrl } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: t("home") },
@@ -100,61 +101,28 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
                 {tAuth("signIn")}
               </button>
             ) : (
-              <div className="relative">
-                <button
-                  onClick={() => setIsUserMenuOpen((v) => !v)}
-                  className="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full hover:bg-surface-container transition-bounce"
-                >
-                  {avatarUrl ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={avatarUrl}
-                      alt={displayName}
-                      className="w-7 h-7 rounded-full object-cover"
-                      referrerPolicy="no-referrer"
-                    />
-                  ) : (
-                    <div className="w-7 h-7 rounded-full bg-primary-container flex items-center justify-center">
-                      <span className="material-symbols-outlined text-sm text-on-primary-container">
-                        person
-                      </span>
-                    </div>
-                  )}
-                  <span className="text-sm font-bold text-on-surface max-w-[120px] truncate hidden sm:block">
-                    {displayName}
-                  </span>
-                  <span className="material-symbols-outlined text-xs text-on-surface-variant">
-                    expand_more
-                  </span>
-                </button>
-
-                {isUserMenuOpen && (
-                  <>
-                    <div
-                      className="fixed inset-0 z-30"
-                      onClick={() => setIsUserMenuOpen(false)}
-                    />
-                    <div className="absolute right-0 top-full mt-2 bg-white/90 backdrop-blur-[24px] rounded-xl shadow-ambient py-1 min-w-[140px] z-40">
-                      <button
-                        onClick={async () => {
-                          setIsUserMenuOpen(false);
-                          await signOut();
-                        }}
-                        className="w-full text-left px-4 py-2.5 text-sm font-medium text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-2"
-                      >
-                        <span className="material-symbols-outlined text-sm">logout</span>
-                        {tAuth("signOut")}
-                      </button>
-                    </div>
-                  </>
-                )}
-              </div>
+              <button
+                onClick={() => setIsProfileOpen(true)}
+                className="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full hover:bg-surface-container transition-bounce"
+                aria-label="Open profile"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={avatarUrl}
+                  alt={nickname}
+                  className="w-7 h-7 rounded-full object-cover"
+                />
+                <span className="text-sm font-bold text-on-surface max-w-[120px] truncate hidden sm:block">
+                  {nickname}
+                </span>
+              </button>
             )}
           </div>
         </div>
       </header>
 
       <AuthModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <ProfileDialog isOpen={isProfileOpen} onClose={() => setIsProfileOpen(false)} />
     </>
   );
 }

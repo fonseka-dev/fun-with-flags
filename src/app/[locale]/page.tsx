@@ -17,7 +17,7 @@ const DAY_OF_YEAR = Math.floor(
 function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
-  const { progress, isAnonymous, displayName } = useAuth();
+  const { progress, isAnonymous, nickname } = useAuth();
 
   // Pick 4 countries daily — deterministic based on day-of-year (DAY_OF_YEAR computed at module load)
   const dailyCountries = useMemo(() => {
@@ -44,7 +44,7 @@ function DashboardContent() {
             {t("welcome")}
             <br />
             <span className="text-primary">
-              {isAnonymous ? t("adventurer") : `${displayName}!`}
+              {isAnonymous ? t("adventurer") : `${nickname}!`}
             </span>
           </h1>
           <p className="text-xl text-on-surface-variant max-w-2xl leading-[1.6]">

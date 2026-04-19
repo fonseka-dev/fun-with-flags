@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CountriesProvider } from "@/lib/providers/CountriesProvider";
 import { AuthProvider } from "@/lib/providers/AuthProvider";
+import { OnboardingGuard } from "@/components/auth/OnboardingGuard";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <CountriesProvider>
             <AuthProvider>
+              <OnboardingGuard />
               {children}
             </AuthProvider>
           </CountriesProvider>
