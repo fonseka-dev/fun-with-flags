@@ -1,7 +1,8 @@
 "use client";
 
-import { Suspense, lazy, useState, useEffect } from "react";
+import { Suspense, lazy, useState, useEffect, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
+import { GlobeControls } from "./GlobeControls";
 
 const GlobeScene = lazy(() =>
   import("./GlobeScene").then((m) => ({ default: m.GlobeScene })),
@@ -14,10 +15,16 @@ type GlobeProps = {
 
 export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
   const [ready, setReady] = useState(false);
+  const [showLabels, setShowLabels] = useState(false);
+  const zoomRef = useRef<number>(0);
 
   useEffect(() => {
     setReady(true);
   }, []);
+
+  const handleZoomIn = () => { zoomRef.current = 1; };
+  const handleZoomOut = () => { zoomRef.current = -1; };
+  const handleReset = () => { zoomRef.current = 2; };
 
   return (
     <div className="relative h-full w-full">
@@ -35,9 +42,18 @@ export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
           <GlobeScene
             discoveredSlugs={discoveredSlugs}
             onCountrySelect={onCountrySelect}
+            showLabels={showLabels}
+            zoomRef={zoomRef}
           />
         </Suspense>
       </Canvas>
+      <GlobeControls
+        onZoomIn={handleZoomIn}
+        onZoomOut={handleZoomOut}
+        onReset={handleReset}
+        showLabels={showLabels}
+        onToggleLabels={() => setShowLabels((v) => !v)}
+      />
     </div>
   );
 }

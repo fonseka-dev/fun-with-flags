@@ -1,19 +1,40 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, type RefObject } from "react";
+import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
 import { GlobeAtmosphere } from "./GlobeAtmosphere";
 import { CountryMeshes } from "./CountryMeshes";
 import { CountryPopup } from "./CountryPopup";
+import { CountryLabels } from "./CountryLabels";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
+
+function ZoomController({ zoomRef }: { zoomRef: RefObject<number> }) {
+  useFrame(({ camera }) => {
+    const cmd = zoomRef.current;
+    if (cmd === 1) {
+      camera.position.z = Math.max(camera.position.z - 0.1, 1.5);
+      zoomRef.current = 0;
+    } else if (cmd === -1) {
+      camera.position.z = Math.min(camera.position.z + 0.1, 4);
+      zoomRef.current = 0;
+    } else if (cmd === 2) {
+      camera.position.set(0, 0, 2.5);
+      zoomRef.current = 0;
+    }
+  });
+  return null;
+}
 
 type GlobeSceneProps = {
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
+  showLabels: boolean;
+  zoomRef: RefObject<number>;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
@@ -60,12 +81,14 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect }: GlobeSceneProps
         discoveredSlugs={discoveredSlugs}
         onCountrySelect={handleCountrySelect}
       />
+      <CountryLabels countries={countries} visible={showLabels} />
       {popupData && (
         <CountryPopup
           {...popupData}
           onClose={() => setSelectedSlug(null)}
         />
       )}
+      <ZoomController zoomRef={zoomRef} />
       <OrbitControls
         enablePan={false}
         enableDamping={true}
