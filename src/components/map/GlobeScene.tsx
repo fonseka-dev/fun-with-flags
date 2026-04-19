@@ -1,6 +1,8 @@
 import { useState, useMemo } from "react";
 import { OrbitControls } from "@react-three/drei";
+import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
+import { GlobeAtmosphere } from "./GlobeAtmosphere";
 import { CountryMeshes } from "./CountryMeshes";
 import { CountryPopup } from "./CountryPopup";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
@@ -48,9 +50,11 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect }: GlobeSceneProps
 
   return (
     <>
+      <StarField />
       <ambientLight intensity={0.4} />
       <directionalLight position={[5, 3, 5]} intensity={0.8} />
       <GlobeSphere />
+      <GlobeAtmosphere />
       <CountryMeshes
         countries={countries}
         discoveredSlugs={discoveredSlugs}
