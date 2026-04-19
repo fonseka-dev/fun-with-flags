@@ -1,4 +1,6 @@
-import { useGlobeData } from "@/lib/hooks/useGlobeData";
+import * as THREE from "three";
+import type { ThreeEvent } from "@react-three/fiber";
+import type { ProcessedCountry } from "@/lib/hooks/useGlobeData";
 import type { Continent } from "@/data/types";
 
 const CONTINENT_COLORS: Record<Continent, string> = {
@@ -13,15 +15,28 @@ const CONTINENT_COLORS: Record<Continent, string> = {
 const UNDISCOVERED_COLOR = "#C0C0C0";
 
 type CountryMeshesProps = {
+  countries: ProcessedCountry[];
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
 };
 
 export function CountryMeshes({
+  countries,
   discoveredSlugs,
   onCountrySelect,
 }: CountryMeshesProps) {
-  const { countries } = useGlobeData();
+  const handlePointerOver = (e: ThreeEvent<PointerEvent>) => {
+    e.stopPropagation();
+    const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
+    mat.emissive.set("#333333");
+    document.body.style.cursor = "pointer";
+  };
+
+  const handlePointerOut = (e: ThreeEvent<PointerEvent>) => {
+    const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
+    mat.emissive.set("#000000");
+    document.body.style.cursor = "default";
+  };
 
   return (
     <>
@@ -36,6 +51,12 @@ export function CountryMeshes({
             key={country.slug}
             geometry={country.geometry}
             userData={{ slug: country.slug }}
+            onPointerOver={handlePointerOver}
+            onPointerOut={handlePointerOut}
+            onClick={(e) => {
+              e.stopPropagation();
+              onCountrySelect?.(country.slug);
+            }}
           >
             <meshStandardMaterial
               color={color}
