@@ -54,7 +54,7 @@ export type UserProgress = {
   lastPlayedAt: Date;
 };
 
-/** Derives a DiceBear adventurer SVG URL from an avatar seed. Never store this URL — store the seed. */
+/** Derives a DiceBear fun-emoji SVG URL from an avatar seed. Never store this URL — store the seed. */
 export function avatarUrl(seed: string): string {
-  return `https://api.dicebear.com/9.x/adventurer/svg?seed=${encodeURIComponent(seed)}`;
+  return `https://api.dicebear.com/9.x/fun-emoji/svg?seed=${encodeURIComponent(seed)}`;
 }

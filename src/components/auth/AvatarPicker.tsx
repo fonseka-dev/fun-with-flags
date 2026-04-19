@@ -3,19 +3,20 @@
 import Image from "next/image";
 import { avatarUrl } from "@/data/types";
 
+// 12 seeds chosen to produce a roughly 50/50 male/female mix in fun-emoji style.
 export const AVATAR_SEEDS = [
-  "explorer",
-  "captain",
-  "navigator",
-  "pioneer",
-  "voyager",
-  "scout",
-  "ranger",
-  "pathfinder",
-  "discoverer",
-  "traveler",
-  "adventurer",
-  "wanderer",
+  "felix",
+  "luna",
+  "marco",
+  "nova",
+  "oliver",
+  "stella",
+  "rio",
+  "maya",
+  "leo",
+  "aria",
+  "finn",
+  "zoe",
 ] as const;
 
 type Props = {
