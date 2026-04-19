@@ -43,6 +43,24 @@ export type Country = CountryBase & CountryTranslation;
 
 export type UserTier = "free" | "premium";
 
+export type InsigniaId =
+  | "cartographer"
+  | "speedy"
+  | "explorer"
+  | "flawless"
+  | "persistent"
+  | "conqueror"
+  | "marathon"
+  | "scholar";
+
+export type Insignia = {
+  id: InsigniaId;
+  icon: string;
+  labelKey: string;
+  descKey: string;
+  colorClass: string;
+};
+
 export type UserProgress = {
   uid: string;
   nickname: string;
@@ -53,6 +71,8 @@ export type UserProgress = {
   discoveredCountries: string[];
   quizHighScore: number;
   quizGamesPlayed: number;
+  totalCorrectAnswers: number;
+  earnedInsignias: InsigniaId[];
   lastPlayedAt: Date;
 };
 

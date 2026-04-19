@@ -17,8 +17,9 @@ import {
   updateDoc,
   arrayUnion,
   serverTimestamp,
+  increment,
 } from "firebase/firestore";
-import { UserProgress, UserTier } from "@/data/types";
+import { UserProgress, UserTier, InsigniaId } from "@/data/types";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -117,6 +118,8 @@ export async function initUserProgress(
       discoveredCountries: [],
       quizHighScore: 0,
       quizGamesPlayed: 0,
+      totalCorrectAnswers: 0,
+      earnedInsignias: [],
       lastPlayedAt: serverTimestamp(),
     });
   } else {
@@ -157,18 +160,26 @@ export async function addDiscoveredCountry(
   });
 }
 
-export async function updateQuizScore(
+export async function saveQuizResult(
   uid: string,
   score: number,
+  insignias: InsigniaId[],
+  correctInGame: number,
 ): Promise<void> {
   const ref = doc(getDbClient(), "users", uid);
-  const progress = await getUserProgress(uid);
   const updates: Record<string, unknown> = {
-    quizGamesPlayed: (progress?.quizGamesPlayed ?? 0) + 1,
+    quizGamesPlayed: increment(1),
+    totalCorrectAnswers: increment(correctInGame),
     lastPlayedAt: serverTimestamp(),
   };
-  if (!progress || score > progress.quizHighScore) {
-    updates.quizHighScore = score;
+  if (score > 0) {
+    const progress = await getUserProgress(uid);
+    if (!progress || score > (progress.quizHighScore ?? 0)) {
+      updates.quizHighScore = score;
+    }
+  }
+  if (insignias.length > 0) {
+    updates.earnedInsignias = arrayUnion(...insignias);
   }
   await updateDoc(ref, updates);
 }

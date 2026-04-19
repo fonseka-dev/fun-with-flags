@@ -70,7 +70,7 @@
     "title": "¡Adivina la Bandera!",
     "subtitle": "¿Puedes identificar a qué país pertenece una bandera? ¡Pon a prueba tus conocimientos por regiones y continentes!",
     "startGame": "Comenzar Juego",
-    "gameOver": "¡Fin del Juego!",
+    "gameOver": "¡Gran esfuerzo, Explorador!",
     "questionsAnswered": "Respondiste {count} preguntas",
     "playAgain": "Jugar de Nuevo",
     "backToHome": "Volver al Inicio",
@@ -85,7 +85,25 @@
     "hard": "Difícil",
     "easyDesc": "Sin límite de tiempo",
     "normalDesc": "5 segundos",
-    "hardDesc": "3 segundos"
+    "hardDesc": "3 segundos",
+    "exitGame": "Salir del juego",
+    "easyNoScore": "El modo Fácil no otorga puntos — ¡prueba Normal o Difícil para puntuar!",
+    "easyNoScoreShort": "Modo Fácil — sin puntos",
+    "basePoints": "Puntos Base",
+    "totalScore": "Puntuación Total",
+    "newRecord": "¡NUEVO RÉCORD!",
+    "difficultyMultiplierHard": "MULTIPLICADOR DIFÍCIL",
+    "insigniasUnlocked": "Insignias Desbloqueadas",
+    "insignia": {
+      "cartographer": { "label": "Cartógrafo", "desc": "10 respuestas seguidas" },
+      "speedy": { "label": "Veloz", "desc": "Respuesta en menos de 2 segundos" },
+      "explorer": { "label": "Explorador", "desc": "¡Jugaste tu primera partida!" },
+      "flawless": { "label": "Impecable", "desc": "Sin perder ninguna vida" },
+      "persistent": { "label": "Persistente", "desc": "5 partidas jugadas" },
+      "conqueror": { "label": "Conquistador", "desc": "Completaste una partida en Difícil" },
+      "marathon": { "label": "Maratón", "desc": "Más de 20 preguntas respondidas" },
+      "scholar": { "label": "Sabio", "desc": "50 respuestas correctas en total" }
+    }
   },
   "auth": {
     "signIn": "Iniciar sesión",

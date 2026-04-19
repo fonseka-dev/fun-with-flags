@@ -70,7 +70,7 @@
     "title": "Guess the Flag!",
     "subtitle": "Can you identify which country a flag belongs to? Test your knowledge across regions and continents!",
     "startGame": "Start Game",
-    "gameOver": "Game Over!",
+    "gameOver": "Great effort, Explorer!",
     "questionsAnswered": "You answered {count} questions",
     "playAgain": "Play Again",
     "backToHome": "Back to Home",
@@ -85,7 +85,25 @@
     "hard": "Hard",
     "easyDesc": "No time pressure",
     "normalDesc": "5 seconds",
-    "hardDesc": "3 seconds"
+    "hardDesc": "3 seconds",
+    "exitGame": "Exit game",
+    "easyNoScore": "Easy mode doesn't earn points — try Normal or Hard to score!",
+    "easyNoScoreShort": "Easy mode — no points",
+    "basePoints": "Base Points",
+    "totalScore": "Total Score",
+    "newRecord": "NEW RECORD!",
+    "difficultyMultiplierHard": "HARD MULTIPLIER",
+    "insigniasUnlocked": "Insignias Unlocked",
+    "insignia": {
+      "cartographer": { "label": "Cartographer", "desc": "10 correct in a row" },
+      "speedy": { "label": "Speedy", "desc": "Answered in under 2 seconds" },
+      "explorer": { "label": "Explorer", "desc": "Played your first game!" },
+      "flawless": { "label": "Flawless", "desc": "No lives lost" },
+      "persistent": { "label": "Persistent", "desc": "Played 5 games" },
+      "conqueror": { "label": "Conqueror", "desc": "Completed a Hard game" },
+      "marathon": { "label": "Marathon", "desc": "Answered 20+ questions" },
+      "scholar": { "label": "Scholar", "desc": "50 total correct answers" }
+    }
   },
   "auth": {
     "signIn": "Sign In",

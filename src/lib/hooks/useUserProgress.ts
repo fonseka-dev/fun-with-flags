@@ -7,12 +7,12 @@ import { useAuth } from "@/lib/providers/AuthProvider";
  * Prefer useAuth() directly in new components.
  */
 export function useUserProgress() {
-  const { user, progress, loading, discoverCountry, saveQuizScore } = useAuth();
+  const { user, progress, loading, discoverCountry, saveQuizResult } = useAuth();
   return {
     uid: user?.uid ?? null,
     progress,
     loading,
     discoverCountry,
-    saveQuizScore,
+    saveQuizResult,
   };
 }
