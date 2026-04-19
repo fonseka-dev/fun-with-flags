@@ -18,12 +18,12 @@ import {
   linkAnonymousWithGoogle,
   signOutUser,
   addDiscoveredCountry,
-  updateQuizScore,
+  saveQuizResult as saveQuizResultToDb,
   completeOnboarding,
   updateAvatar,
   generatePseudonym,
 } from "@/lib/firebase";
-import type { UserProgress, UserTier } from "@/data/types";
+import type { UserProgress, UserTier, InsigniaId } from "@/data/types";
 import { avatarUrl as deriveAvatarUrl } from "@/data/types";
 import { hasAccess as checkAccess } from "@/lib/utils/access";
 import type { Feature } from "@/lib/utils/access";
@@ -42,7 +42,7 @@ type AuthContextValue = {
   signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   discoverCountry: (slug: string) => Promise<void>;
-  saveQuizScore: (score: number) => Promise<void>;
+  saveQuizResult: (score: number, insignias: InsigniaId[], correctInGame: number) => Promise<void>;
   completeOnboardingFlow: (nickname: string, avatarSeed: string) => Promise<void>;
   updateAvatarSeed: (avatarSeed: string) => Promise<void>;
 };
@@ -135,16 +135,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [user],
   );
 
-  const saveQuizScore = useCallback(
-    async (score: number) => {
+  const saveQuizResult = useCallback(
+    async (score: number, insignias: InsigniaId[], correctInGame: number) => {
       if (!user) return;
-      await updateQuizScore(user.uid, score);
+      await saveQuizResultToDb(user.uid, score, insignias, correctInGame);
       setProgress((prev) =>
         prev
           ? {
               ...prev,
               quizGamesPlayed: prev.quizGamesPlayed + 1,
-              quizHighScore: Math.max(prev.quizHighScore, score),
+              quizHighScore: score > prev.quizHighScore ? score : prev.quizHighScore,
+              totalCorrectAnswers: (prev.totalCorrectAnswers ?? 0) + correctInGame,
+              earnedInsignias: [
+                ...(prev.earnedInsignias ?? []),
+                ...insignias,
+              ],
             }
           : prev,
       );
@@ -204,7 +209,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         signInWithGoogle,
         signOut: handleSignOut,
         discoverCountry,
-        saveQuizScore,
+        saveQuizResult,
         completeOnboardingFlow,
         updateAvatarSeed,
       }}

@@ -23,15 +23,27 @@ export type GameState = {
   currentQuestion: QuizQuestion | null;
   usedSlugs: string[];
   timeLeft: number | null;
+  currentStreak: number;
+  maxStreak: number;
+  questionStartedAt: number | null;
+  fastAnswerCount: number;
 };
 
 const INITIAL_LIVES = 3;
 const POINTS_PER_CORRECT = 100;
+const AUTO_ADVANCE_DELAY = 2000;
+const FAST_ANSWER_THRESHOLD_MS = 2000;
 
 export const TIMER_DURATIONS: Record<Difficulty, number | null> = {
   easy: null,
   normal: 5,
   hard: 3,
+};
+
+export const SCORE_MULTIPLIERS: Record<Difficulty, number> = {
+  easy: 0,
+  normal: 1,
+  hard: 2,
 };
 
 function createInitialState(): GameState {
@@ -45,6 +57,10 @@ function createInitialState(): GameState {
     currentQuestion: null,
     usedSlugs: [],
     timeLeft: null,
+    currentStreak: 0,
+    maxStreak: 0,
+    questionStartedAt: null,
+    fastAnswerCount: 0,
   };
 }
 
@@ -76,9 +92,14 @@ export function useGameState(
         currentQuestion: question,
         usedSlugs: question ? [question.correct.slug] : [],
         timeLeft: TIMER_DURATIONS[prev.difficulty],
+        questionStartedAt: Date.now(),
       };
     });
   }, [filteredPool]);
+
+  const exitGame = useCallback(() => {
+    setState(createInitialState());
+  }, []);
 
   const submitAnswer = useCallback((slug: string) => {
     setState((prev) => {
@@ -87,22 +108,30 @@ export function useGameState(
       const isCorrect = slug === prev.currentQuestion.correct.slug;
 
       if (isCorrect) {
+        const timeTaken = Date.now() - (prev.questionStartedAt ?? Date.now());
+        const isFast = timeTaken < FAST_ANSWER_THRESHOLD_MS;
+        const newStreak = prev.currentStreak + 1;
         return {
           ...prev,
           status: "correct",
           score: prev.score + POINTS_PER_CORRECT,
           selectedAnswer: slug,
           timeLeft: null,
+          currentStreak: newStreak,
+          maxStreak: Math.max(prev.maxStreak, newStreak),
+          fastAnswerCount: isFast ? prev.fastAnswerCount + 1 : prev.fastAnswerCount,
         };
       }
 
+      // Always go to "wrong" first (even on last life) so the feedback delay is visible
       const newLives = prev.lives - 1;
       return {
         ...prev,
-        status: newLives <= 0 ? "gameOver" : "wrong",
+        status: "wrong",
         lives: newLives,
         selectedAnswer: slug,
         timeLeft: null,
+        currentStreak: 0,
       };
     });
   }, []);
@@ -124,7 +153,7 @@ export function useGameState(
     return () => clearTimeout(timer);
   }, [status, timeLeft]);
 
-  // Timeout: when timeLeft reaches 0 while still playing, treat as a wrong answer
+  // Timeout: when timeLeft reaches 0 while still playing, always go to "timeout" first
   useEffect(() => {
     if (status !== "playing" || timeLeft !== 0) return;
 
@@ -135,8 +164,9 @@ export function useGameState(
         const newLives = prev.lives - 1;
         return {
           ...prev,
-          status: newLives <= 0 ? "gameOver" : "timeout",
+          status: "timeout",
           lives: newLives,
+          currentStreak: 0,
         };
       });
     }, 0);
@@ -144,7 +174,8 @@ export function useGameState(
     return () => clearTimeout(timer);
   }, [status, timeLeft]);
 
-  // Auto-advance: move to next question 500ms after answer feedback
+  // Auto-advance: move to next question after feedback delay
+  // If lives reached 0, route to gameOver instead of advancing
   useEffect(() => {
     if (status !== "correct" && status !== "wrong" && status !== "timeout") return;
 
@@ -153,6 +184,9 @@ export function useGameState(
         if (prev.status !== "correct" && prev.status !== "wrong" && prev.status !== "timeout") {
           return prev;
         }
+
+        // Last life was just spent — go to game over now that feedback was shown
+        if (prev.lives <= 0) return { ...prev, status: "gameOver" };
 
         const question = generateQuestion(filteredPool, prev.usedSlugs);
         if (!question) return { ...prev, status: "gameOver" };
@@ -165,9 +199,10 @@ export function useGameState(
           currentQuestion: question,
           usedSlugs: [...prev.usedSlugs, question.correct.slug],
           timeLeft: TIMER_DURATIONS[prev.difficulty],
+          questionStartedAt: Date.now(),
         };
       });
-    }, 500);
+    }, AUTO_ADVANCE_DELAY);
 
     return () => clearTimeout(timer);
   }, [status, filteredPool]);
@@ -176,6 +211,7 @@ export function useGameState(
     state,
     selectDifficulty,
     startGame,
+    exitGame,
     submitAnswer,
   };
 }
