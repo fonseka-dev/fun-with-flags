@@ -93,5 +93,29 @@
     "anonymousLabel": "Jugando como",
     "progressSummary": "{countries} países · Puntuación más alta {score}",
     "close": "Cerrar"
+  },
+  "onboarding": {
+    "title": "Atlas del Explorador",
+    "subtitle": "Tu viaje por el mundo comienza aquí.",
+    "chooseAvatar": "Elige tu Avatar",
+    "yourName": "Tu Nombre de Explorador",
+    "namePlaceholder": "ej. Capitán Descubridor",
+    "nameHint": "¡Elige un nombre divertido que otros exploradores verán!",
+    "nameErrorShort": "Elige un nombre de al menos 2 caracteres",
+    "nameErrorProfanity": "¡Vaya, intenta con un nombre diferente! 🌍",
+    "levelBadge": "Navegante Nivel 1",
+    "flagsFound": "Banderas Encontradas",
+    "stampRank": "Rango de Sellos",
+    "startExploring": "¡Empezar a Explorar!",
+    "profilePreview": "Vista Previa del Perfil"
+  },
+  "profile": {
+    "title": "Tu Perfil",
+    "changeAvatar": "Cambiar Avatar",
+    "nicknameLocked": "¡Tu nombre de explorador está bloqueado!",
+    "flagsFound": "Banderas Encontradas",
+    "highScore": "Puntuación Máxima",
+    "gamesPlayed": "Juegos Jugados",
+    "close": "Cerrar"
   }
 }

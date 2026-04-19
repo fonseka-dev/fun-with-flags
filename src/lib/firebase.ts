@@ -102,29 +102,48 @@ export async function getUserProgress(
 
 export async function initUserProgress(
   uid: string,
-  options?: { displayName?: string; isAnonymous?: boolean; avatarUrl?: string },
+  options?: { nickname?: string; isAnonymous?: boolean; avatarSeed?: string },
 ): Promise<void> {
   const ref = doc(getDbClient(), "users", uid);
   const snap = await getDoc(ref);
   if (!snap.exists()) {
     await setDoc(ref, {
       uid,
-      displayName: options?.displayName ?? generatePseudonym(uid),
+      nickname: options?.nickname ?? generatePseudonym(uid),
       isAnonymous: options?.isAnonymous ?? true,
-      avatarUrl: options?.avatarUrl ?? null,
+      avatarSeed: options?.avatarSeed ?? uid,
+      onboardingComplete: false,
       tier: "free" as const,
       discoveredCountries: [],
       quizHighScore: 0,
       quizGamesPlayed: 0,
       lastPlayedAt: serverTimestamp(),
     });
-  } else if (options?.displayName || options?.avatarUrl !== undefined) {
+  } else {
     const updates: Record<string, unknown> = {};
-    if (options.displayName) updates.displayName = options.displayName;
-    if (options.avatarUrl !== undefined) updates.avatarUrl = options.avatarUrl;
-    if (options.isAnonymous !== undefined) updates.isAnonymous = options.isAnonymous;
-    await updateDoc(ref, updates);
+    if (options?.isAnonymous !== undefined) updates.isAnonymous = options.isAnonymous;
+    if (Object.keys(updates).length > 0) {
+      await updateDoc(ref, updates);
+    }
   }
+}
+
+export async function completeOnboarding(
+  uid: string,
+  nickname: string,
+  avatarSeed: string,
+): Promise<void> {
+  const ref = doc(getDbClient(), "users", uid);
+  await updateDoc(ref, {
+    nickname,
+    avatarSeed,
+    onboardingComplete: true,
+  });
+}
+
+export async function updateAvatar(uid: string, avatarSeed: string): Promise<void> {
+  const ref = doc(getDbClient(), "users", uid);
+  await updateDoc(ref, { avatarSeed });
 }
 
 export async function addDiscoveredCountry(
@@ -171,13 +190,9 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
 
   try {
     const result = await linkWithPopup(currentUser, googleProvider);
-    // SUCCESS — same UID, now a Google account
-    const { displayName, photoURL, uid } = result.user;
-    await initUserProgress(uid, {
-      displayName: displayName ?? generatePseudonym(uid),
-      isAnonymous: false,
-      avatarUrl: photoURL ?? undefined,
-    });
+    // SUCCESS — same UID, now a Google account. Don't pass displayName/photoURL — onboarding will set nickname/avatarSeed.
+    const { uid } = result.user;
+    await initUserProgress(uid, { isAnonymous: false });
     return result.user;
   } catch (err: unknown) {
     const error = err as { code?: string; credential?: AuthCredential };
@@ -195,25 +210,9 @@ export async function linkAnonymousWithGoogle(): Promise<User> {
     const googleUid = googleResult.user.uid;
 
     // Always (re)create the Google user's doc in case it was deleted.
+    // Don't pass displayName/photoURL — onboarding will set nickname/avatarSeed.
     const googleProgress = await getUserProgress(googleUid);
-    // signInWithCredential leaves user.displayName/photoURL null in some Firebase
-    // versions — the canonical Google profile lives in providerData[0].
-    const googleProviderData = googleResult.user.providerData.find(
-      (p) => p.providerId === "google.com",
-    );
-    const gDisplayName =
-      googleResult.user.displayName ??
-      googleProviderData?.displayName ??
-      null;
-    const gPhotoURL =
-      googleResult.user.photoURL ??
-      googleProviderData?.photoURL ??
-      null;
-    await initUserProgress(googleUid, {
-      displayName: gDisplayName ?? generatePseudonym(googleUid),
-      isAnonymous: false,
-      avatarUrl: gPhotoURL ?? undefined,
-    });
+    await initUserProgress(googleUid, { isAnonymous: false });
     if (anonProgress) {
       const mergedDiscovered = Array.from(
         new Set([

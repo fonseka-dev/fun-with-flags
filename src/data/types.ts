@@ -43,12 +43,18 @@ export type UserTier = "free" | "premium";
 
 export type UserProgress = {
   uid: string;
-  displayName: string;
+  nickname: string;
   isAnonymous: boolean;
-  avatarUrl?: string;
+  avatarSeed: string;
+  onboardingComplete: boolean;
   tier: UserTier;
   discoveredCountries: string[];
   quizHighScore: number;
   quizGamesPlayed: number;
   lastPlayedAt: Date;
 };
+
+/** Derives a DiceBear fun-emoji SVG URL from an avatar seed. Never store this URL — store the seed. */
+export function avatarUrl(seed: string): string {
+  return `https://api.dicebear.com/9.x/fun-emoji/svg?seed=${encodeURIComponent(seed)}`;
+}
