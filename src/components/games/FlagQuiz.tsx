@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Country, Difficulty, InsigniaId } from "@/data/types";
+import { avatarUrl } from "@/data/types";
 import { useGameState, TIMER_DURATIONS, SCORE_MULTIPLIERS } from "@/lib/hooks/useGameState";
 import { useUserProgress } from "@/lib/hooks/useUserProgress";
 import { evaluateInsignias, INSIGNIAS } from "@/lib/utils/insignias";
@@ -170,22 +171,22 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
 
     return (
       <div className="flex flex-col items-center justify-center py-12 gap-8 w-full">
-        {/* Hero icon */}
-        <div className="inline-flex items-center justify-center w-24 h-24 bg-tertiary-container rounded-full ring-8 ring-on-tertiary/20">
-          <span
-            className="material-symbols-outlined text-5xl text-on-tertiary-container"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          >
-            sentiment_very_satisfied
-          </span>
+        {/* Hero avatar */}
+        <div className="inline-flex items-center justify-center w-24 h-24 bg-tertiary-container rounded-full ring-8 ring-on-tertiary/20 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={avatarUrl(progress?.avatarSeed ?? "explorer")}
+            alt={progress?.nickname ?? "Explorer"}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-black text-on-surface mb-2 tracking-tight">
-            {t("gameOver")}
+            {t("gameOver", { name: progress?.nickname ?? "Explorer" })}
           </h2>
           <p className="text-on-surface-variant text-lg font-medium">
-            {t("questionsAnswered", { count: state.questionIndex + 1 })}
+            {t("correctAnswered", { count: snap.correctInGame })}
           </p>
         </div>
 
@@ -283,8 +284,9 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
                 const insignia = INSIGNIAS[id];
                 return (
                   <div
-                    key={`${id}-${idx}`}
-                    className="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-3 shadow-sm"
+                    key={id}
+                    className="animate-insignia-pop bg-surface-container-lowest p-4 rounded-xl flex items-center gap-3 shadow-sm"
+                    style={{ animationDelay: `${idx * 120}ms` }}
                   >
                     <div className="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center shrink-0">
                       <span
