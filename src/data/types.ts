@@ -43,6 +43,21 @@ export type Country = CountryBase & CountryTranslation;
 
 export type UserTier = "free" | "premium";
 
+export type RankTier =
+  | "novice"
+  | "explorer"
+  | "pathfinder"
+  | "scholar"
+  | "grandmaster";
+
+export type LeaderboardEntry = {
+  uid: string;
+  nickname: string;
+  avatarSeed: string;
+  quizHighScore: number;
+  updatedAt: Date;
+};
+
 export type InsigniaId =
   | "cartographer"
   | "speedy"
