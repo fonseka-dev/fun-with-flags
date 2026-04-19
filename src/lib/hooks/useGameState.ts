@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Country, Continent, Difficulty } from "@/data/types";
 import { generateQuestion, QuizQuestion } from "@/lib/utils/quiz";
 import { filterByContinent } from "@/lib/utils/countries";
@@ -54,10 +54,10 @@ export function useGameState(
 ) {
   const [state, setState] = useState<GameState>(createInitialState);
 
-  const filteredPool = continent ? filterByContinent(pool, continent) : pool;
-  // Keep a ref so effects always have the latest pool without being dependencies
-  const filteredPoolRef = useRef(filteredPool);
-  filteredPoolRef.current = filteredPool;
+  const filteredPool = useMemo(
+    () => (continent ? filterByContinent(pool, continent) : pool),
+    [pool, continent],
+  );
 
   const selectDifficulty = useCallback((difficulty: Difficulty) => {
     setState((prev) => {
@@ -68,7 +68,7 @@ export function useGameState(
 
   const startGame = useCallback(() => {
     setState((prev) => {
-      const question = generateQuestion(filteredPoolRef.current);
+      const question = generateQuestion(filteredPool);
       return {
         ...createInitialState(),
         difficulty: prev.difficulty,
@@ -78,7 +78,7 @@ export function useGameState(
         timeLeft: TIMER_DURATIONS[prev.difficulty],
       };
     });
-  }, []);
+  }, [filteredPool]);
 
   const submitAnswer = useCallback((slug: string) => {
     setState((prev) => {
@@ -107,9 +107,12 @@ export function useGameState(
     });
   }, []);
 
+  // Destructure stable primitives for use as effect dependencies
+  const { status, timeLeft } = state;
+
   // Countdown: decrement timeLeft by 1 every second while playing
   useEffect(() => {
-    if (state.status !== "playing" || state.timeLeft === null || state.timeLeft <= 0) return;
+    if (status !== "playing" || timeLeft === null || timeLeft <= 0) return;
 
     const timer = setTimeout(() => {
       setState((prev) => {
@@ -119,26 +122,30 @@ export function useGameState(
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [state.status, state.timeLeft]);
+  }, [status, timeLeft]);
 
   // Timeout: when timeLeft reaches 0 while still playing, treat as a wrong answer
   useEffect(() => {
-    if (state.status !== "playing" || state.timeLeft !== 0) return;
+    if (status !== "playing" || timeLeft !== 0) return;
 
-    setState((prev) => {
-      if (prev.status !== "playing" || prev.timeLeft !== 0) return prev;
-      const newLives = prev.lives - 1;
-      return {
-        ...prev,
-        status: newLives <= 0 ? "gameOver" : "timeout",
-        lives: newLives,
-      };
-    });
-  }, [state.status, state.timeLeft]);
+    // Defer setState to avoid synchronous state update within an effect
+    const timer = setTimeout(() => {
+      setState((prev) => {
+        if (prev.status !== "playing" || prev.timeLeft !== 0) return prev;
+        const newLives = prev.lives - 1;
+        return {
+          ...prev,
+          status: newLives <= 0 ? "gameOver" : "timeout",
+          lives: newLives,
+        };
+      });
+    }, 0);
+
+    return () => clearTimeout(timer);
+  }, [status, timeLeft]);
 
   // Auto-advance: move to next question 500ms after answer feedback
   useEffect(() => {
-    const { status } = state;
     if (status !== "correct" && status !== "wrong" && status !== "timeout") return;
 
     const timer = setTimeout(() => {
@@ -147,7 +154,7 @@ export function useGameState(
           return prev;
         }
 
-        const question = generateQuestion(filteredPoolRef.current, prev.usedSlugs);
+        const question = generateQuestion(filteredPool, prev.usedSlugs);
         if (!question) return { ...prev, status: "gameOver" };
 
         return {
@@ -163,7 +170,7 @@ export function useGameState(
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [state.status]);
+  }, [status, filteredPool]);
 
   return {
     state,

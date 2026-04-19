@@ -191,10 +191,11 @@ describe("useGameState — timer", () => {
     expect(result.current.state.timeLeft).toBe(3);
     expect(result.current.state.lives).toBe(3);
 
-    // Advance 3 ticks to reach timeLeft=0
+    // Advance 3 ticks to reach timeLeft=0, then flush the deferred timeout handler
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
+    act(() => vi.advanceTimersByTime(0));
 
     expect(result.current.state.status).toBe("timeout");
     expect(result.current.state.lives).toBe(2);
@@ -222,6 +223,7 @@ describe("useGameState — timer", () => {
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
+    act(() => vi.advanceTimersByTime(0));
 
     expect(result.current.state.status).toBe("gameOver");
     expect(result.current.state.lives).toBe(0);
@@ -272,10 +274,11 @@ describe("useGameState — auto-advance", () => {
       result.current.startGame();
     });
 
-    // Expire timer
+    // Expire timer (flush the deferred timeout setState with +0ms)
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
     act(() => vi.advanceTimersByTime(1000));
+    act(() => vi.advanceTimersByTime(0));
     expect(result.current.state.status).toBe("timeout");
 
     // Auto-advance fires
