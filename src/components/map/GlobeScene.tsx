@@ -1,6 +1,7 @@
 import { useState, useMemo, type RefObject } from "react";
 import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { useLocale } from "next-intl";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
 import { GlobeAtmosphere } from "./GlobeAtmosphere";
@@ -9,6 +10,7 @@ import { CountryPopup } from "./CountryPopup";
 import { CountryLabels } from "./CountryLabels";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
+import type { Locale } from "@/data/types";
 
 function ZoomController({ zoomRef }: { zoomRef: RefObject<number> }) {
   useFrame(({ camera }) => {
@@ -36,6 +38,7 @@ type GlobeSceneProps = {
 
 export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef }: GlobeSceneProps) {
   const { countries } = useGlobeData();
+  const locale = useLocale() as Locale;
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
   const handleCountrySelect = (slug: string) => {
@@ -52,22 +55,22 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
     const entry = countriesData.find((c) => c.slug === selectedSlug);
     if (!entry) return null;
 
-    const t = entry.translations.en;
+    const tr = entry.translations[locale];
     const funFact =
-      t.funFacts.length > 0
-        ? t.funFacts[Math.floor(Math.random() * t.funFacts.length)]
+      tr.funFacts.length > 0
+        ? tr.funFacts[Math.floor(Math.random() * tr.funFacts.length)]
         : null;
 
     return {
       slug: entry.slug,
       flagCode: entry.flagCode,
-      name: t.name,
-      capital: t.capital,
+      name: tr.name,
+      capital: tr.capital,
       continent: entry.continent,
       funFact,
       centroid: processed.centroid,
     };
-  }, [selectedSlug, countries]);
+  }, [selectedSlug, countries, locale]);
 
   return (
     <>
