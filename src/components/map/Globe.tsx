@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, lazy, useState, useEffect, useRef } from "react";
+import { Suspense, lazy, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { GlobeControls } from "./GlobeControls";
 
@@ -14,13 +14,8 @@ type GlobeProps = {
 };
 
 export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
-  const [ready, setReady] = useState(false);
   const [showLabels, setShowLabels] = useState(false);
   const zoomRef = useRef<number>(0);
-
-  useEffect(() => {
-    setReady(true);
-  }, []);
 
   const handleZoomIn = () => { zoomRef.current = 1; };
   const handleZoomOut = () => { zoomRef.current = -1; };
@@ -28,11 +23,6 @@ export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
 
   return (
     <div className="relative h-full w-full">
-      {!ready && (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#0A0E27]">
-          <div className="h-16 w-16 animate-pulse rounded-full border-4 border-white/20" />
-        </div>
-      )}
       <Canvas
         camera={{ position: [0, 0, 2.5], fov: 45 }}
         dpr={[1, 2]}

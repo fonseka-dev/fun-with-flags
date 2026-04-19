@@ -58,7 +58,7 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
     const tr = entry.translations[locale];
     const funFact =
       tr.funFacts.length > 0
-        ? tr.funFacts[Math.floor(Math.random() * tr.funFacts.length)]
+        ? tr.funFacts[0]
         : null;
 
     return {

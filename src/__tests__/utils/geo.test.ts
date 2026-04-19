@@ -5,7 +5,7 @@ import {
   getCountryFlagCode,
   ISO_NUMERIC_TO_ALPHA2,
 } from "@/lib/utils/geo";
-import type { Feature, Polygon } from "geojson";
+import type { Feature } from "geojson";
 
 // ---------------------------------------------------------------------------
 // latLngToCartesian

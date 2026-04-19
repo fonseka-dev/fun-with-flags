@@ -1,5 +1,4 @@
 import * as topojson from "topojson-client";
-import { geoArea, geoCentroid } from "d3-geo";
 import earcut from "earcut";
 import {
   BufferGeometry,
