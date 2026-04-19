@@ -39,11 +39,14 @@ export type CountryEntry = CountryBase & {
 /** Merged type used by components — backward compatible */
 export type Country = CountryBase & CountryTranslation;
 
+export type UserTier = "free" | "premium";
+
 export type UserProgress = {
   uid: string;
   displayName: string;
   isAnonymous: boolean;
   avatarUrl?: string;
+  tier: UserTier;
   discoveredCountries: string[];
   quizHighScore: number;
   quizGamesPlayed: number;
