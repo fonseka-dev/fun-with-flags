@@ -192,6 +192,8 @@
     "enableDaylight": "Enable daylight",
     "disableDaylight": "Disable daylight",
     "pauseRotation": "Pause rotation",
-    "resumeRotation": "Resume rotation"
+    "resumeRotation": "Resume rotation",
+    "markExplored": "Mark as Explored",
+    "alreadyExplored": "Already Explored"
   }
 }

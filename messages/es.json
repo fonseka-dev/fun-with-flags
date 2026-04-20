@@ -192,6 +192,8 @@
     "enableDaylight": "Activar luz de día",
     "disableDaylight": "Desactivar luz de día",
     "pauseRotation": "Pausar rotación",
-    "resumeRotation": "Reanudar rotación"
+    "resumeRotation": "Reanudar rotación",
+    "markExplored": "Marcar como Explorado",
+    "alreadyExplored": "Ya Explorado"
   }
 }

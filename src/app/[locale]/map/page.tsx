@@ -6,7 +6,7 @@ import { Globe } from "@/components/map/Globe";
 import { useUserProgress } from "@/lib/hooks/useUserProgress";
 
 function MapContent() {
-  const { progress, loading } = useUserProgress();
+  const { progress, loading, discoverCountry } = useUserProgress();
   const discoveredSlugs = progress?.discoveredCountries ?? [];
 
   return (
@@ -19,7 +19,7 @@ function MapContent() {
           <div className="h-16 w-16 animate-pulse rounded-full border-4 border-white/20" />
         </div>
       ) : (
-        <Globe discoveredSlugs={discoveredSlugs} />
+        <Globe discoveredSlugs={discoveredSlugs} discoverCountry={discoverCountry} />
       )}
     </div>
   );
