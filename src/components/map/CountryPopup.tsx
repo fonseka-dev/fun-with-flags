@@ -50,7 +50,7 @@ export function CountryPopup({
   }, [onClose]);
 
   return (
-    <Html position={centroid} center distanceFactor={4}>
+    <Html position={centroid} center>
       <div
         onClick={(e) => e.stopPropagation()}
         className="min-w-[240px] max-w-[280px] rounded-2xl border border-white/10 bg-black/60 p-4 text-white shadow-2xl backdrop-blur-xl"

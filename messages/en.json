@@ -188,6 +188,10 @@
     "hideLabels": "Hide labels",
     "capital": "Capital",
     "continent": "Continent",
-    "funFact": "Fun Fact"
+    "funFact": "Fun Fact",
+    "enableDaylight": "Enable daylight",
+    "disableDaylight": "Disable daylight",
+    "pauseRotation": "Pause rotation",
+    "resumeRotation": "Resume rotation"
   }
 }

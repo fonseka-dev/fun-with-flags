@@ -5,11 +5,11 @@ export function StarField() {
     <Stars
       radius={100}
       depth={50}
-      count={1500}
-      factor={3}
+      count={6000}
+      factor={6}
       saturation={0}
       fade
-      speed={0.5}
+      speed={0.3}
     />
   );
 }

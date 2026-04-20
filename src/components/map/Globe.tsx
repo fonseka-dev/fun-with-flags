@@ -17,6 +17,8 @@ type GlobeProps = {
 
 export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
   const [showLabels, setShowLabels] = useState(false);
+  const [isDaylight, setIsDaylight] = useState(false);
+  const [autoRotate, setAutoRotate] = useState(true);
   const zoomRef = useRef<number>(0);
   const locale = useLocale() as Locale;
   const t = useTranslations("globe");
@@ -40,6 +42,8 @@ export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
             zoomRef={zoomRef}
             locale={locale}
             globeT={{ capital: t("capital"), explore: t("explore") }}
+              isDaylight={isDaylight}
+              autoRotate={autoRotate}
           />
         </Suspense>
       </Canvas>
@@ -49,6 +53,10 @@ export function Globe({ discoveredSlugs, onCountrySelect }: GlobeProps) {
         onReset={handleReset}
         showLabels={showLabels}
         onToggleLabels={() => setShowLabels((v) => !v)}
+        autoRotate={autoRotate}
+        onToggleRotate={() => setAutoRotate((v) => !v)}
+        isDaylight={isDaylight}
+        onToggleDaylight={() => setIsDaylight((v) => !v)}
       />
     </div>
   );

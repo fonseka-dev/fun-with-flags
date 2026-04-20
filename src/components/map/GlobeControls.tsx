@@ -6,6 +6,10 @@ type GlobeControlsProps = {
   onReset: () => void;
   showLabels: boolean;
   onToggleLabels: () => void;
+  autoRotate: boolean;
+  onToggleRotate: () => void;
+  isDaylight: boolean;
+  onToggleDaylight: () => void;
 };
 
 export function GlobeControls({
@@ -14,6 +18,10 @@ export function GlobeControls({
   onReset,
   showLabels,
   onToggleLabels,
+  autoRotate,
+  onToggleRotate,
+  isDaylight,
+  onToggleDaylight,
 }: GlobeControlsProps) {
   const t = useTranslations("globe");
   const btnBase =
@@ -21,6 +29,24 @@ export function GlobeControls({
 
   return (
     <div className="absolute bottom-8 right-8 z-10 flex flex-col gap-3">
+      <button
+        onClick={onToggleDaylight}
+        className={btnBase}
+        aria-label={isDaylight ? t("disableDaylight") : t("enableDaylight")}
+      >
+        <span className="material-symbols-outlined">
+          {isDaylight ? "nights_stay" : "wb_sunny"}
+        </span>
+      </button>
+      <button
+        onClick={onToggleRotate}
+        className={btnBase}
+        aria-label={autoRotate ? t("pauseRotation") : t("resumeRotation")}
+      >
+        <span className="material-symbols-outlined">
+          {autoRotate ? "pause_circle" : "play_circle"}
+        </span>
+      </button>
       <button onClick={onZoomIn} className={btnBase} aria-label={t("zoomIn")}>
         <span className="material-symbols-outlined">add</span>
       </button>
