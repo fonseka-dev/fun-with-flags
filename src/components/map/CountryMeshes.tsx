@@ -18,12 +18,14 @@ type CountryMeshesProps = {
   countries: ProcessedCountry[];
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
+  mode: "realistic" | "political";
 };
 
 export function CountryMeshes({
   countries,
   discoveredSlugs,
   onCountrySelect,
+  mode,
 }: CountryMeshesProps) {
   const handlePointerOver = (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
@@ -58,10 +60,12 @@ export function CountryMeshes({
               onCountrySelect?.(country.slug);
             }}
           >
-            <meshStandardMaterial
+          <meshStandardMaterial
               color={color}
               roughness={0.6}
               metalness={0.1}
+              transparent={mode === "realistic"}
+              opacity={mode === "realistic" ? 0 : 1}
             />
           </mesh>
         );

@@ -10,6 +10,8 @@ type GlobeControlsProps = {
   onToggleRotate: () => void;
   isDaylight: boolean;
   onToggleDaylight: () => void;
+  globeMode: "realistic" | "political";
+  onToggleMode: () => void;
 };
 
 export function GlobeControls({
@@ -22,6 +24,8 @@ export function GlobeControls({
   onToggleRotate,
   isDaylight,
   onToggleDaylight,
+  globeMode,
+  onToggleMode,
 }: GlobeControlsProps) {
   const t = useTranslations("globe");
   const btnBase =
@@ -29,6 +33,15 @@ export function GlobeControls({
 
   return (
     <div className="absolute bottom-8 right-8 z-10 flex flex-col gap-3">
+      <button
+        onClick={onToggleMode}
+        className={btnBase}
+        aria-label={globeMode === "realistic" ? t("politicalMode") : t("realisticMode")}
+      >
+        <span className="material-symbols-outlined">
+          {globeMode === "realistic" ? "map" : "satellite_alt"}
+        </span>
+      </button>
       <button
         onClick={onToggleDaylight}
         className={btnBase}

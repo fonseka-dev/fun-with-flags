@@ -23,6 +23,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [showLabels, setShowLabels] = useState(false);
   const [isDaylight, setIsDaylight] = useState(false);
   const [autoRotate, setAutoRotate] = useState(true);
+  const [globeMode, setGlobeMode] = useState<"realistic" | "political">("political");
   const targetZRef = useRef<number>(2.5);
   const cameraRef = useRef<RootState["camera"] | null>(null);
   const closePopupRef = useRef<(() => void) | null>(null);
@@ -100,6 +101,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             autoRotate={autoRotate}
             discoverCountry={discoverCountry}
             closePopupRef={closePopupRef}
+            globeMode={globeMode}
           />
         </Suspense>
       </Canvas>
@@ -113,6 +115,8 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         onToggleRotate={() => setAutoRotate((v) => !v)}
         isDaylight={isDaylight}
         onToggleDaylight={() => setIsDaylight((v) => !v)}
+        globeMode={globeMode}
+        onToggleMode={() => setGlobeMode((m) => m === "realistic" ? "political" : "realistic")}
       />
     </div>
   );
