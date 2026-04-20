@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 
 type GlobeControlsProps = {
-  onZoomIn: () => void;
-  onZoomOut: () => void;
   onReset: () => void;
   showLabels: boolean;
   onToggleLabels: () => void;
@@ -19,8 +17,6 @@ type GlobeControlsProps = {
 };
 
 export function GlobeControls({
-  onZoomIn,
-  onZoomOut,
   onReset,
   showLabels,
   onToggleLabels,
@@ -76,12 +72,6 @@ export function GlobeControls({
         <span className="material-symbols-outlined">
           {hoverMode ? "mouse" : "touch_app"}
         </span>
-      </button>
-      <button onClick={onZoomIn} className={btnBase} aria-label={t("zoomIn")}>
-        <span className="material-symbols-outlined">add</span>
-      </button>
-      <button onClick={onZoomOut} className={btnBase} aria-label={t("zoomOut")}>
-        <span className="material-symbols-outlined">remove</span>
       </button>
       <button
         onClick={onToggleLabels}

@@ -28,22 +28,12 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [geolocating, setGeolocating] = useState(false);
   const [geoError, setGeoError] = useState<string | null>(null);
   const geoErrorTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const targetZRef = useRef<number>(2.5);
   const cameraRef = useRef<RootState["camera"] | null>(null);
   const closePopupRef = useRef<(() => void) | null>(null);
   const locale = useLocale() as Locale;
   const t = useTranslations("globe");
 
-  const handleZoomIn = () => {
-    const currentZ = cameraRef.current?.position.z ?? 2.5;
-    targetZRef.current = Math.max(currentZ - 0.5, 1.5);
-  };
-  const handleZoomOut = () => {
-    const currentZ = cameraRef.current?.position.z ?? 2.5;
-    targetZRef.current = Math.min(currentZ + 0.5, 4.0);
-  };
   const handleReset = () => {
-    targetZRef.current = 2.5;
     if (cameraRef.current) {
       cameraRef.current.position.set(0, 0, 2.5);
     }
@@ -69,7 +59,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         const z = r * Math.sin(phi) * Math.sin(theta);
         if (cameraRef.current) {
           cameraRef.current.position.set(x, y, z);
-          targetZRef.current = r;
         }
         setGeolocating(false);
       },
@@ -89,7 +78,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
       if (saved) {
         const { x, y, z } = JSON.parse(saved);
         state.camera.position.set(x, y, z);
-        targetZRef.current = z;
       }
     } catch {
       // sessionStorage unavailable — ignore
@@ -126,7 +114,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             discoveredSlugs={discoveredSlugs}
             onCountrySelect={onCountrySelect}
             showLabels={showLabels}
-            targetZRef={targetZRef}
             locale={locale}
             globeT={{
               capital: t("capital"),
@@ -144,8 +131,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         </Suspense>
       </Canvas>
       <GlobeControls
-        onZoomIn={handleZoomIn}
-        onZoomOut={handleZoomOut}
         onReset={handleReset}
         showLabels={showLabels}
         onToggleLabels={() => setShowLabels((v) => !v)}

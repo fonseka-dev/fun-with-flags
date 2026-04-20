@@ -1,5 +1,4 @@
 import { useState, useRef, useMemo, useEffect, type RefObject } from "react";
-import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
@@ -11,22 +10,10 @@ import { countriesData } from "@/data/countries";
 import type * as THREE from "three";
 import type { Locale } from "@/data/types";
 
-function ZoomController({ targetZRef }: { targetZRef: RefObject<number> }) {
-  useFrame(({ camera }) => {
-    const target = targetZRef.current;
-    const diff = target - camera.position.z;
-    if (Math.abs(diff) > 0.001) {
-      camera.position.z += diff * 0.08;
-    }
-  });
-  return null;
-}
-
 type GlobeSceneProps = {
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
   showLabels: boolean;
-  targetZRef: RefObject<number>;
   locale: Locale;
   globeT: { capital: string; explore: string; markExplored: string; alreadyExplored: string };
   isDaylight: boolean;
@@ -37,7 +24,7 @@ type GlobeSceneProps = {
   hoverMode: boolean;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const sphereRef = useRef<THREE.Mesh>(null);
@@ -113,9 +100,9 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targe
           onClose={() => setSelectedSlug(null)}
         />
       )}
-      <ZoomController targetZRef={targetZRef} />
       <OrbitControls
         enablePan={false}
+        enableZoom={true}
         enableDamping={true}
         dampingFactor={0.05}
         minDistance={1.5}
