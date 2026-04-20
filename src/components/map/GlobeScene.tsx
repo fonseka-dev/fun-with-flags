@@ -33,12 +33,13 @@ type GlobeSceneProps = {
   showLabels: boolean;
   zoomRef: RefObject<number>;
   locale: Locale;
-  globeT: { capital: string; explore: string };
+  globeT: { capital: string; explore: string; markExplored: string; alreadyExplored: string };
   isDaylight: boolean;
   autoRotate: boolean;
+  discoverCountry: (slug: string) => void;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT, isDaylight, autoRotate }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
@@ -70,8 +71,9 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
       continent: entry.continent,
       funFact,
       centroid: processed.centroid,
+      isDiscovered: discoveredSlugs.includes(entry.slug),
     };
-  }, [selectedSlug, countries, locale]);
+  }, [selectedSlug, countries, locale, discoveredSlugs]);
 
   return (
     <>
@@ -91,6 +93,9 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
           locale={locale}
           capitalLabel={globeT.capital}
           exploreLabel={globeT.explore}
+          markExploredLabel={globeT.markExplored}
+          alreadyExploredLabel={globeT.alreadyExplored}
+          onMarkExplored={discoverCountry}
           onClose={() => setSelectedSlug(null)}
         />
       )}

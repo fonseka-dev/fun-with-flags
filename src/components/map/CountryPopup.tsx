@@ -24,6 +24,10 @@ type CountryPopupProps = {
   locale: string;
   capitalLabel: string;
   exploreLabel: string;
+  markExploredLabel: string;
+  alreadyExploredLabel: string;
+  isDiscovered: boolean;
+  onMarkExplored: (slug: string) => void;
   onClose: () => void;
 };
 
@@ -38,6 +42,10 @@ export function CountryPopup({
   locale,
   capitalLabel,
   exploreLabel,
+  markExploredLabel,
+  alreadyExploredLabel,
+  isDiscovered,
+  onMarkExplored,
   onClose,
 }: CountryPopupProps) {
 
@@ -99,6 +107,26 @@ export function CountryPopup({
             <p className="text-xs text-white/70">{funFact.description}</p>
           </div>
         )}
+
+        {/* Mark as Explored */}
+        <button
+          onClick={() => !isDiscovered && onMarkExplored(slug)}
+          disabled={isDiscovered}
+          className={`mt-3 block w-full rounded-xl py-2 text-center text-sm font-medium transition-colors ${
+            isDiscovered
+              ? "cursor-default bg-emerald-500/20 text-emerald-400"
+              : "bg-emerald-500/80 text-white hover:bg-emerald-400/80"
+          }`}
+        >
+          {isDiscovered ? (
+            <span className="flex items-center justify-center gap-1.5">
+              <span className="material-symbols-outlined text-sm">check_circle</span>
+              {alreadyExploredLabel}
+            </span>
+          ) : (
+            markExploredLabel
+          )}
+        </button>
 
         {/* Explore link */}
         <a
