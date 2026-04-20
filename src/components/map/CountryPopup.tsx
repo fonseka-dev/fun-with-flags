@@ -130,7 +130,7 @@ export function CountryPopup({
 
         {/* Explore link */}
         <a
-          href={`/${locale}/catalog/${slug}`}
+          href={`/${locale}/catalog/${slug}?from=map`}
           className="mt-3 block w-full rounded-xl bg-white/10 py-2 text-center text-sm font-medium transition-colors hover:bg-white/20"
         >
           {exploreLabel}
