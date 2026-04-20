@@ -10,18 +10,12 @@ import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
 import type { Locale } from "@/data/types";
 
-function ZoomController({ zoomRef }: { zoomRef: RefObject<number> }) {
+function ZoomController({ targetZRef }: { targetZRef: RefObject<number> }) {
   useFrame(({ camera }) => {
-    const cmd = zoomRef.current;
-    if (cmd === 1) {
-      camera.position.z = Math.max(camera.position.z - 0.1, 1.5);
-      zoomRef.current = 0;
-    } else if (cmd === -1) {
-      camera.position.z = Math.min(camera.position.z + 0.1, 4);
-      zoomRef.current = 0;
-    } else if (cmd === 2) {
-      camera.position.set(0, 0, 2.5);
-      zoomRef.current = 0;
+    const target = targetZRef.current;
+    const diff = target - camera.position.z;
+    if (Math.abs(diff) > 0.001) {
+      camera.position.z += diff * 0.08;
     }
   });
   return null;
@@ -31,7 +25,7 @@ type GlobeSceneProps = {
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
   showLabels: boolean;
-  zoomRef: RefObject<number>;
+  targetZRef: RefObject<number>;
   locale: Locale;
   globeT: { capital: string; explore: string; markExplored: string; alreadyExplored: string };
   isDaylight: boolean;
@@ -39,7 +33,7 @@ type GlobeSceneProps = {
   discoverCountry: (slug: string) => void;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
@@ -99,7 +93,7 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
           onClose={() => setSelectedSlug(null)}
         />
       )}
-      <ZoomController zoomRef={zoomRef} />
+      <ZoomController targetZRef={targetZRef} />
       <OrbitControls
         enablePan={false}
         enableDamping={true}

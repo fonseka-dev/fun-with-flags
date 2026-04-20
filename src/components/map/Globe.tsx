@@ -23,14 +23,25 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [showLabels, setShowLabels] = useState(false);
   const [isDaylight, setIsDaylight] = useState(false);
   const [autoRotate, setAutoRotate] = useState(true);
-  const zoomRef = useRef<number>(0);
+  const targetZRef = useRef<number>(2.5);
   const cameraRef = useRef<RootState["camera"] | null>(null);
   const locale = useLocale() as Locale;
   const t = useTranslations("globe");
 
-  const handleZoomIn = () => { zoomRef.current = 1; };
-  const handleZoomOut = () => { zoomRef.current = -1; };
-  const handleReset = () => { zoomRef.current = 2; };
+  const handleZoomIn = () => {
+    const currentZ = cameraRef.current?.position.z ?? 2.5;
+    targetZRef.current = Math.max(currentZ - 0.5, 1.5);
+  };
+  const handleZoomOut = () => {
+    const currentZ = cameraRef.current?.position.z ?? 2.5;
+    targetZRef.current = Math.min(currentZ + 0.5, 4.0);
+  };
+  const handleReset = () => {
+    targetZRef.current = 2.5;
+    if (cameraRef.current) {
+      cameraRef.current.position.set(0, 0, 2.5);
+    }
+  };
 
   const handleCreated = (state: RootState) => {
     cameraRef.current = state.camera;
@@ -39,6 +50,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
       if (saved) {
         const { x, y, z } = JSON.parse(saved);
         state.camera.position.set(x, y, z);
+        targetZRef.current = z;
       }
     } catch {
       // sessionStorage unavailable — ignore
@@ -74,7 +86,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             discoveredSlugs={discoveredSlugs}
             onCountrySelect={onCountrySelect}
             showLabels={showLabels}
-            zoomRef={zoomRef}
+            targetZRef={targetZRef}
             locale={locale}
             globeT={{
               capital: t("capital"),
