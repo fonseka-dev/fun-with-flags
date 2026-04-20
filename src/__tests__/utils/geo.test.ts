@@ -4,8 +4,10 @@ import {
   computeCentroid,
   getCountryFlagCode,
   ISO_NUMERIC_TO_ALPHA2,
+  subdivideRing,
+  triangulatePolygon,
 } from "@/lib/utils/geo";
-import type { Feature } from "geojson";
+import type { Feature, Position } from "geojson";
 
 // ---------------------------------------------------------------------------
 // latLngToCartesian
@@ -153,5 +155,62 @@ describe("ISO_NUMERIC_TO_ALPHA2", () => {
     for (const code of Object.values(ISO_NUMERIC_TO_ALPHA2)) {
       expect(code).toMatch(/^[a-z]{2}$/);
     }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// subdivideRing
+// ---------------------------------------------------------------------------
+
+describe("subdivideRing", () => {
+  it("returns the same ring when all segments are under 5°", () => {
+    const ring: Position[] = [[0, 0], [1, 0], [0, 1]];
+    const result = subdivideRing(ring);
+    expect(result).toHaveLength(3);
+  });
+
+  it("inserts intermediate points for segments spanning > 5°", () => {
+    const ring: Position[] = [[0, 0], [15, 0], [0, 1]];
+    const result = subdivideRing(ring);
+    expect(result.length).toBeGreaterThan(3);
+  });
+
+  it("handles a ring with fewer than 2 points without crashing", () => {
+    const ring: Position[] = [[0, 0]];
+    expect(() => subdivideRing(ring)).not.toThrow();
+  });
+});
+
+// ---------------------------------------------------------------------------
+// triangulatePolygon
+// ---------------------------------------------------------------------------
+
+describe("triangulatePolygon", () => {
+  it("returns null for empty rings array", () => {
+    expect(triangulatePolygon([], 1)).toBeNull();
+  });
+
+  it("returns null for a degenerate ring with < 3 points", () => {
+    const rings: Position[][] = [[[0, 0], [1, 0]]];
+    expect(triangulatePolygon(rings, 1)).toBeNull();
+  });
+
+  it("triangulates a simple convex polygon (outer ring only)", () => {
+    const outerRing: Position[] = [
+      [0, 0], [2, 0], [2, 2], [0, 2], [0, 0],
+    ];
+    const result = triangulatePolygon([outerRing], 1);
+    expect(result).not.toBeNull();
+    expect(result!.indices.length).toBe(6);
+    expect(result!.positions.length).toBe(12);
+  });
+
+  it("triangulates a polygon with a hole and returns valid triangle indices", () => {
+    const outerRing: Position[] = [[-4, -4], [4, -4], [4, 4], [-4, 4]];
+    const holeRing: Position[] = [[-1, -1], [1, -1], [1, 1], [-1, 1]];
+    const result = triangulatePolygon([outerRing, holeRing], 1);
+    expect(result).not.toBeNull();
+    expect(result!.indices.length).toBeGreaterThan(0);
+    expect(result!.indices.length % 3).toBe(0);
   });
 });
