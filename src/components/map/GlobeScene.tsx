@@ -1,4 +1,4 @@
-import { useState, useMemo, type RefObject } from "react";
+import { useState, useRef, useMemo, type RefObject } from "react";
 import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
@@ -8,6 +8,7 @@ import { CountryPopup } from "./CountryPopup";
 import { CountryLabels } from "./CountryLabels";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
+import type * as THREE from "three";
 import type { Locale } from "@/data/types";
 
 function ZoomController({ targetZRef }: { targetZRef: RefObject<number> }) {
@@ -36,6 +37,7 @@ type GlobeSceneProps = {
 export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const sphereRef = useRef<THREE.Mesh>(null);
 
   const handleCountrySelect = (slug: string) => {
     setSelectedSlug(slug);
@@ -74,13 +76,13 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targe
       <StarField />
       <ambientLight intensity={isDaylight ? 1.0 : 0.15} />
       <directionalLight position={[5, 3, 5]} intensity={isDaylight ? 0.3 : 1.0} />
-      <GlobeSphere />
+      <GlobeSphere ref={sphereRef} />
       <CountryMeshes
         countries={countries}
         discoveredSlugs={discoveredSlugs}
         onCountrySelect={handleCountrySelect}
       />
-      <CountryLabels countries={countries} visible={showLabels} locale={locale} />
+      <CountryLabels countries={countries} visible={showLabels} locale={locale} sphereRef={sphereRef} />
       {popupData && (
         <CountryPopup
           {...popupData}
