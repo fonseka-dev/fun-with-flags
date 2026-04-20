@@ -1,4 +1,4 @@
-import { useState, useMemo, type RefObject } from "react";
+import { useState, useRef, useMemo, useEffect, type RefObject } from "react";
 import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
@@ -8,20 +8,15 @@ import { CountryPopup } from "./CountryPopup";
 import { CountryLabels } from "./CountryLabels";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
+import type * as THREE from "three";
 import type { Locale } from "@/data/types";
 
-function ZoomController({ zoomRef }: { zoomRef: RefObject<number> }) {
+function ZoomController({ targetZRef }: { targetZRef: RefObject<number> }) {
   useFrame(({ camera }) => {
-    const cmd = zoomRef.current;
-    if (cmd === 1) {
-      camera.position.z = Math.max(camera.position.z - 0.1, 1.5);
-      zoomRef.current = 0;
-    } else if (cmd === -1) {
-      camera.position.z = Math.min(camera.position.z + 0.1, 4);
-      zoomRef.current = 0;
-    } else if (cmd === 2) {
-      camera.position.set(0, 0, 2.5);
-      zoomRef.current = 0;
+    const target = targetZRef.current;
+    const diff = target - camera.position.z;
+    if (Math.abs(diff) > 0.001) {
+      camera.position.z += diff * 0.08;
     }
   });
   return null;
@@ -31,17 +26,26 @@ type GlobeSceneProps = {
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
   showLabels: boolean;
-  zoomRef: RefObject<number>;
+  targetZRef: RefObject<number>;
   locale: Locale;
   globeT: { capital: string; explore: string; markExplored: string; alreadyExplored: string };
   isDaylight: boolean;
   autoRotate: boolean;
   discoverCountry: (slug: string) => void;
+  closePopupRef: RefObject<(() => void) | null>;
+  globeMode: "realistic" | "political";
+  hoverMode: boolean;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const sphereRef = useRef<THREE.Mesh>(null);
+
+  useEffect(() => {
+    closePopupRef.current = () => setSelectedSlug(null);
+    return () => { closePopupRef.current = null; };
+  }, [closePopupRef]);
 
   const handleCountrySelect = (slug: string) => {
     setSelectedSlug(slug);
@@ -80,13 +84,23 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
       <StarField />
       <ambientLight intensity={isDaylight ? 1.0 : 0.15} />
       <directionalLight position={[5, 3, 5]} intensity={isDaylight ? 0.3 : 1.0} />
-      <GlobeSphere />
+      <GlobeSphere ref={sphereRef} mode={globeMode} />
       <CountryMeshes
         countries={countries}
         discoveredSlugs={discoveredSlugs}
         onCountrySelect={handleCountrySelect}
+        mode={globeMode}
+        hoverMode={hoverMode}
+        onCountryHover={(slug) => {
+          if (slug === null) {
+            setSelectedSlug(null);
+          } else {
+            setSelectedSlug(slug);
+            onCountrySelect?.(slug);
+          }
+        }}
       />
-      <CountryLabels countries={countries} visible={showLabels} locale={locale} />
+      <CountryLabels countries={countries} visible={showLabels} locale={locale} sphereRef={sphereRef} />
       {popupData && (
         <CountryPopup
           {...popupData}
@@ -99,7 +113,7 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
           onClose={() => setSelectedSlug(null)}
         />
       )}
-      <ZoomController zoomRef={zoomRef} />
+      <ZoomController targetZRef={targetZRef} />
       <OrbitControls
         enablePan={false}
         enableDamping={true}

@@ -65,7 +65,8 @@
     "regionalContext": "Contexto Regional",
     "exploreRegion": "Explorar Región",
     "flagAlt": "Bandera de {name}",
-    "backToCatalog": "Volver al Catálogo"
+    "backToCatalog": "Volver al Catálogo",
+    "backToMap": "Volver al Mapa"
   },
   "quiz": {
     "title": "¡Adivina la Bandera!",
@@ -194,6 +195,14 @@
     "pauseRotation": "Pausar rotación",
     "resumeRotation": "Reanudar rotación",
     "markExplored": "Marcar como Explorado",
-    "alreadyExplored": "Ya Explorado"
+    "alreadyExplored": "Ya Explorado",
+    "toggleMode": "Alternar modo de mapa",
+    "realisticMode": "Cambiar a realista",
+    "politicalMode": "Cambiar a político",
+    "enableHoverPreview": "Activar vista previa al pasar",
+    "disableHoverPreview": "Desactivar vista previa al pasar",
+    "geolocate": "Encontrar mi ubicación",
+    "reset": "Restablecer vista",
+    "geolocationError": "No se pudo detectar tu ubicación"
   }
 }

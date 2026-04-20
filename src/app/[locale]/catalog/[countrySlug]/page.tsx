@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { setRequestLocale } from "next-intl/server";
 import { getCountryBySlug, getCountrySlugs } from "@/lib/utils/countries";
 import { CountryDetailHeader } from "@/components/country/CountryDetailHeader";
@@ -34,7 +35,9 @@ export default async function CountryDetailPage({
 
   return (
     <div className="min-h-screen bg-surface">
-      <CountryDetailHeader />
+      <Suspense fallback={null}>
+        <CountryDetailHeader />
+      </Suspense>
       <CountryDetailContent slug={countrySlug} />
     </div>
   );

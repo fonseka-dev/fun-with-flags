@@ -18,24 +18,32 @@ type CountryMeshesProps = {
   countries: ProcessedCountry[];
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
+  mode: "realistic" | "political";
+  hoverMode: boolean;
+  onCountryHover?: (slug: string | null) => void;
 };
 
 export function CountryMeshes({
   countries,
   discoveredSlugs,
   onCountrySelect,
+  mode,
+  hoverMode,
+  onCountryHover,
 }: CountryMeshesProps) {
-  const handlePointerOver = (e: ThreeEvent<PointerEvent>) => {
+  const handlePointerOver = (e: ThreeEvent<PointerEvent>, slug: string) => {
     e.stopPropagation();
     const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
     mat.emissive.set("#333333");
     document.body.style.cursor = "pointer";
+    if (hoverMode) onCountryHover?.(slug);
   };
 
   const handlePointerOut = (e: ThreeEvent<PointerEvent>) => {
     const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
     mat.emissive.set("#000000");
     document.body.style.cursor = "default";
+    if (hoverMode) onCountryHover?.(null);
   };
 
   return (
@@ -51,17 +59,19 @@ export function CountryMeshes({
             key={country.slug}
             geometry={country.geometry}
             userData={{ slug: country.slug }}
-            onPointerOver={handlePointerOver}
+            onPointerOver={(e) => handlePointerOver(e, country.slug)}
             onPointerOut={handlePointerOut}
             onClick={(e) => {
               e.stopPropagation();
               onCountrySelect?.(country.slug);
             }}
           >
-            <meshStandardMaterial
+          <meshStandardMaterial
               color={color}
               roughness={0.6}
               metalness={0.1}
+              transparent={mode === "realistic"}
+              opacity={mode === "realistic" ? 0 : 1}
             />
           </mesh>
         );

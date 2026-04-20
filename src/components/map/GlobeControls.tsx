@@ -10,6 +10,12 @@ type GlobeControlsProps = {
   onToggleRotate: () => void;
   isDaylight: boolean;
   onToggleDaylight: () => void;
+  globeMode: "realistic" | "political";
+  onToggleMode: () => void;
+  hoverMode: boolean;
+  onToggleHoverMode: () => void;
+  onGeolocate: () => void;
+  geolocating: boolean;
 };
 
 export function GlobeControls({
@@ -22,6 +28,12 @@ export function GlobeControls({
   onToggleRotate,
   isDaylight,
   onToggleDaylight,
+  globeMode,
+  onToggleMode,
+  hoverMode,
+  onToggleHoverMode,
+  onGeolocate,
+  geolocating,
 }: GlobeControlsProps) {
   const t = useTranslations("globe");
   const btnBase =
@@ -29,6 +41,15 @@ export function GlobeControls({
 
   return (
     <div className="absolute bottom-8 right-8 z-10 flex flex-col gap-3">
+      <button
+        onClick={onToggleMode}
+        className={btnBase}
+        aria-label={globeMode === "realistic" ? t("politicalMode") : t("realisticMode")}
+      >
+        <span className="material-symbols-outlined">
+          {globeMode === "realistic" ? "map" : "satellite_alt"}
+        </span>
+      </button>
       <button
         onClick={onToggleDaylight}
         className={btnBase}
@@ -45,6 +66,15 @@ export function GlobeControls({
       >
         <span className="material-symbols-outlined">
           {autoRotate ? "pause_circle" : "play_circle"}
+        </span>
+      </button>
+      <button
+        onClick={onToggleHoverMode}
+        className={btnBase}
+        aria-label={hoverMode ? t("disableHoverPreview") : t("enableHoverPreview")}
+      >
+        <span className="material-symbols-outlined">
+          {hoverMode ? "mouse" : "touch_app"}
         </span>
       </button>
       <button onClick={onZoomIn} className={btnBase} aria-label={t("zoomIn")}>
@@ -64,8 +94,16 @@ export function GlobeControls({
       </button>
       <button
         onClick={onReset}
-        className="w-12 h-12 bg-indigo-500/80 text-white rounded-2xl shadow-lg flex items-center justify-center hover:bg-indigo-400/80 hover:scale-110 active:scale-95 transition-all duration-200"
-        aria-label={t("resetView")}
+        className={btnBase}
+        aria-label={t("reset")}
+      >
+        <span className="material-symbols-outlined">refresh</span>
+      </button>
+      <button
+        onClick={onGeolocate}
+        disabled={geolocating}
+        className={`w-12 h-12 bg-indigo-500/80 text-white rounded-2xl shadow-lg flex items-center justify-center hover:bg-indigo-400/80 hover:scale-110 active:scale-95 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed${geolocating ? " animate-pulse" : ""}`}
+        aria-label={t("geolocate")}
       >
         <span className="material-symbols-outlined">my_location</span>
       </button>

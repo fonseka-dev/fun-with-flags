@@ -65,7 +65,8 @@
     "regionalContext": "Regional Context",
     "exploreRegion": "Explore Region",
     "flagAlt": "Flag of {name}",
-    "backToCatalog": "Back to Catalog"
+    "backToCatalog": "Back to Catalog",
+    "backToMap": "Back to Map"
   },
   "quiz": {
     "title": "Guess the Flag!",
@@ -194,6 +195,14 @@
     "pauseRotation": "Pause rotation",
     "resumeRotation": "Resume rotation",
     "markExplored": "Mark as Explored",
-    "alreadyExplored": "Already Explored"
+    "alreadyExplored": "Already Explored",
+    "toggleMode": "Toggle map mode",
+    "realisticMode": "Switch to realistic",
+    "politicalMode": "Switch to political",
+    "enableHoverPreview": "Enable hover preview",
+    "disableHoverPreview": "Disable hover preview",
+    "geolocate": "Find my location",
+    "reset": "Reset view",
+    "geolocationError": "Could not detect your location"
   }
 }

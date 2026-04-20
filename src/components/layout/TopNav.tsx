@@ -12,9 +12,10 @@ import { ProfileDialog } from "@/components/auth/ProfileDialog";
 type TopNavProps = {
   searchQuery?: string;
   onSearchChange?: (value: string) => void;
+  transparent?: boolean;
 };
 
-export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
+export function TopNav({ searchQuery, onSearchChange, transparent = false }: TopNavProps) {
   const t = useTranslations("nav");
   const tSearch = useTranslations("search");
   const tAuth = useTranslations("auth");
@@ -33,11 +34,19 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
 
   return (
     <>
-      <header className="glass sticky top-0 z-40">
+      <header
+        className={
+          transparent
+            ? "bg-transparent backdrop-blur-md shadow-[0_2px_20px_rgba(0,0,0,0.4)] sticky top-0 z-40"
+            : "glass sticky top-0 z-40"
+        }
+      >
         <div className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
           <Link
             href="/"
-            className="text-2xl font-extrabold text-primary tracking-tight"
+            className={`text-2xl font-extrabold tracking-tight ${
+              transparent ? "text-white" : "text-primary"
+            }`}
           >
             {t("title")}
           </Link>
@@ -55,9 +64,13 @@ export function TopNav({ searchQuery, onSearchChange }: TopNavProps) {
                   className={`
                     font-bold text-lg transition-bounce
                     ${
-                      isActive
-                        ? "text-primary border-b-4 border-primary"
-                        : "text-on-surface-variant hover:text-on-surface hover:scale-105"
+                      transparent
+                        ? isActive
+                          ? "text-white border-b-4 border-white"
+                          : "text-white/70 hover:text-white hover:scale-105"
+                        : isActive
+                          ? "text-primary border-b-4 border-primary"
+                          : "text-on-surface-variant hover:text-on-surface hover:scale-105"
                     }
                   `}
                 >

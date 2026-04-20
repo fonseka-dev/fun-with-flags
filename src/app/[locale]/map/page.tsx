@@ -12,7 +12,7 @@ function MapContent() {
   return (
     <div className="relative h-screen overflow-hidden bg-[#0A0E27]">
       <div className="absolute inset-x-0 top-0 z-20">
-        <TopNav />
+        <TopNav transparent />
       </div>
       {loading ? (
         <div className="flex h-full items-center justify-center">
