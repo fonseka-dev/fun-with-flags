@@ -176,5 +176,18 @@
       "climbing": "¡Sigue jugando para escalar en el ranking!",
       "noScore": "¡Juega tu primera partida para aparecer en el ranking!"
     }
+  },
+  "globe": {
+    "loading": "Cargando globo...",
+    "explore": "Explorar",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "resetView": "Restablecer vista",
+    "toggleLabels": "Alternar etiquetas",
+    "showLabels": "Mostrar etiquetas",
+    "hideLabels": "Ocultar etiquetas",
+    "capital": "Capital",
+    "continent": "Continente",
+    "funFact": "Dato Curioso"
   }
 }

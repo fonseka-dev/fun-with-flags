@@ -91,6 +91,17 @@ export type UserProgress = {
   lastPlayedAt: Date;
 };
 
+/** Metadata for a country rendered on the 3D globe */
+export type GlobeCountry = {
+  slug: string;
+  flagCode: string;
+  continent: Continent;
+  centroid: [number, number, number]; // [x, y, z] on unit sphere
+};
+
+/** Globe visualization modes (extensible for future) */
+export type GlobeMode = "progress" | "continent";
+
 /** Derives a DiceBear fun-emoji SVG URL from an avatar seed. Never store this URL — store the seed. */
 export function avatarUrl(seed: string): string {
   return `https://api.dicebear.com/9.x/fun-emoji/svg?seed=${encodeURIComponent(seed)}`;

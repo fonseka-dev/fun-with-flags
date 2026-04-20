@@ -176,5 +176,18 @@
       "climbing": "Keep playing to climb the ranks!",
       "noScore": "Play your first game to get ranked!"
     }
+  },
+  "globe": {
+    "loading": "Loading globe...",
+    "explore": "Explore",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetView": "Reset view",
+    "toggleLabels": "Toggle labels",
+    "showLabels": "Show labels",
+    "hideLabels": "Hide labels",
+    "capital": "Capital",
+    "continent": "Continent",
+    "funFact": "Fun Fact"
   }
 }

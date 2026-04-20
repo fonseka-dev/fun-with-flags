@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
-  <rect width="1000" height="500" fill="#e6e6ff" rx="16"/>
-  <text x="500" y="250" text-anchor="middle" fill="#545881" font-size="24" font-family="sans-serif">
-    World Map — Replace with Natural Earth Data SVG
-  </text>
-</svg>
