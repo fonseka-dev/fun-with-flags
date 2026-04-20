@@ -12,6 +12,8 @@ type GlobeControlsProps = {
   onToggleDaylight: () => void;
   globeMode: "realistic" | "political";
   onToggleMode: () => void;
+  hoverMode: boolean;
+  onToggleHoverMode: () => void;
 };
 
 export function GlobeControls({
@@ -26,6 +28,8 @@ export function GlobeControls({
   onToggleDaylight,
   globeMode,
   onToggleMode,
+  hoverMode,
+  onToggleHoverMode,
 }: GlobeControlsProps) {
   const t = useTranslations("globe");
   const btnBase =
@@ -58,6 +62,15 @@ export function GlobeControls({
       >
         <span className="material-symbols-outlined">
           {autoRotate ? "pause_circle" : "play_circle"}
+        </span>
+      </button>
+      <button
+        onClick={onToggleHoverMode}
+        className={btnBase}
+        aria-label={hoverMode ? t("disableHoverPreview") : t("enableHoverPreview")}
+      >
+        <span className="material-symbols-outlined">
+          {hoverMode ? "mouse" : "touch_app"}
         </span>
       </button>
       <button onClick={onZoomIn} className={btnBase} aria-label={t("zoomIn")}>

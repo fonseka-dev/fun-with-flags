@@ -34,9 +34,10 @@ type GlobeSceneProps = {
   discoverCountry: (slug: string) => void;
   closePopupRef: RefObject<(() => void) | null>;
   globeMode: "realistic" | "political";
+  hoverMode: boolean;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const sphereRef = useRef<THREE.Mesh>(null);
@@ -89,6 +90,15 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targe
         discoveredSlugs={discoveredSlugs}
         onCountrySelect={handleCountrySelect}
         mode={globeMode}
+        hoverMode={hoverMode}
+        onCountryHover={(slug) => {
+          if (slug === null) {
+            setSelectedSlug(null);
+          } else {
+            setSelectedSlug(slug);
+            onCountrySelect?.(slug);
+          }
+        }}
       />
       <CountryLabels countries={countries} visible={showLabels} locale={locale} sphereRef={sphereRef} />
       {popupData && (
