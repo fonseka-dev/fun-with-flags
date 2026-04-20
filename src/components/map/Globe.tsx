@@ -1,9 +1,11 @@
 "use client";
 
-import { Suspense, lazy, useState, useRef, useEffect } from "react";
+import { Suspense, lazy, useState, useRef, useEffect, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useLocale, useTranslations } from "next-intl";
 import { GlobeControls } from "./GlobeControls";
+import { CountryPopup } from "./CountryPopup";
+import { countriesData } from "@/data/countries";
 import type { Locale } from "@/data/types";
 import type { RootState } from "@react-three/fiber";
 
@@ -25,6 +27,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [autoRotate, setAutoRotate] = useState(true);
   const [globeMode, setGlobeMode] = useState<"realistic" | "political">("political");
   const [hoverMode, setHoverMode] = useState(false);
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [geolocating, setGeolocating] = useState(false);
   const [geoError, setGeoError] = useState<string | null>(null);
   const geoErrorTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -32,6 +35,27 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const closePopupRef = useRef<(() => void) | null>(null);
   const locale = useLocale() as Locale;
   const t = useTranslations("globe");
+
+  // Keep closePopupRef in sync with selectedSlug setter
+  useEffect(() => {
+    closePopupRef.current = () => setSelectedSlug(null);
+  });
+
+  const popupData = useMemo(() => {
+    if (!selectedSlug) return null;
+    const entry = countriesData.find((c) => c.slug === selectedSlug);
+    if (!entry) return null;
+    const tr = entry.translations[locale];
+    return {
+      slug: entry.slug,
+      flagCode: entry.flagCode,
+      name: tr.name,
+      capital: tr.capital,
+      continent: entry.continent,
+      funFact: tr.funFacts.length > 0 ? tr.funFacts[0] : null,
+      isDiscovered: discoveredSlugs.includes(entry.slug),
+    };
+  }, [selectedSlug, locale, discoveredSlugs]);
 
   const handleReset = () => {
     if (cameraRef.current) {
@@ -127,9 +151,27 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             closePopupRef={closePopupRef}
             globeMode={globeMode}
             hoverMode={hoverMode}
+            selectedSlug={selectedSlug}
+            setSelectedSlug={setSelectedSlug}
           />
         </Suspense>
       </Canvas>
+      {popupData && (
+        <div className="pointer-events-none absolute left-6 top-1/2 z-30 -translate-y-1/2">
+          <div className="pointer-events-auto">
+            <CountryPopup
+              {...popupData}
+              locale={locale}
+              capitalLabel={t("capital")}
+              exploreLabel={t("explore")}
+              markExploredLabel={t("markExplored")}
+              alreadyExploredLabel={t("alreadyExplored")}
+              onMarkExplored={discoverCountry}
+              onClose={() => setSelectedSlug(null)}
+            />
+          </div>
+        </div>
+      )}
       <GlobeControls
         onReset={handleReset}
         showLabels={showLabels}

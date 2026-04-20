@@ -1,12 +1,10 @@
-import { useState, useRef, useMemo, useEffect, type RefObject } from "react";
+import { useRef, type RefObject } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
 import { CountryMeshes } from "./CountryMeshes";
-import { CountryPopup } from "./CountryPopup";
 import { CountryLabels } from "./CountryLabels";
 import { useGlobeData } from "@/lib/hooks/useGlobeData";
-import { countriesData } from "@/data/countries";
 import type * as THREE from "three";
 import type { Locale } from "@/data/types";
 
@@ -22,54 +20,23 @@ type GlobeSceneProps = {
   closePopupRef: RefObject<(() => void) | null>;
   globeMode: "realistic" | "political";
   hoverMode: boolean;
+  selectedSlug: string | null;
+  setSelectedSlug: (slug: string | null) => void;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode, selectedSlug, setSelectedSlug }: GlobeSceneProps) {
   const { countries } = useGlobeData();
-  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const sphereRef = useRef<THREE.Mesh>(null);
-
-  useEffect(() => {
-    closePopupRef.current = () => setSelectedSlug(null);
-    return () => { closePopupRef.current = null; };
-  }, [closePopupRef]);
 
   const handleCountrySelect = (slug: string) => {
     setSelectedSlug(slug);
     onCountrySelect?.(slug);
   };
 
-  const popupData = useMemo(() => {
-    if (!selectedSlug) return null;
-
-    const processed = countries.find((c) => c.slug === selectedSlug);
-    if (!processed) return null;
-
-    const entry = countriesData.find((c) => c.slug === selectedSlug);
-    if (!entry) return null;
-
-    const tr = entry.translations[locale];
-    const funFact =
-      tr.funFacts.length > 0
-        ? tr.funFacts[0]
-        : null;
-
-    return {
-      slug: entry.slug,
-      flagCode: entry.flagCode,
-      name: tr.name,
-      capital: tr.capital,
-      continent: entry.continent,
-      funFact,
-      centroid: processed.centroid,
-      isDiscovered: discoveredSlugs.includes(entry.slug),
-    };
-  }, [selectedSlug, countries, locale, discoveredSlugs]);
-
   return (
     <>
       <StarField />
-      <ambientLight intensity={isDaylight ? 1.0 : 0.15} />
+      <ambientLight intensity={globeMode === "realistic" ? 1.0 : isDaylight ? 1.0 : 0.4} />
       <directionalLight position={[5, 3, 5]} intensity={isDaylight ? 0.3 : 1.0} />
       <GlobeSphere ref={sphereRef} mode={globeMode} />
       <CountryMeshes
@@ -79,27 +46,11 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, local
         mode={globeMode}
         hoverMode={hoverMode}
         onCountryHover={(slug) => {
-          if (slug === null) {
-            setSelectedSlug(null);
-          } else {
-            setSelectedSlug(slug);
-            onCountrySelect?.(slug);
-          }
+          setSelectedSlug(slug);
+          if (slug) onCountrySelect?.(slug);
         }}
       />
       <CountryLabels countries={countries} visible={showLabels} locale={locale} sphereRef={sphereRef} />
-      {popupData && (
-        <CountryPopup
-          {...popupData}
-          locale={locale}
-          capitalLabel={globeT.capital}
-          exploreLabel={globeT.explore}
-          markExploredLabel={globeT.markExplored}
-          alreadyExploredLabel={globeT.alreadyExplored}
-          onMarkExplored={discoverCountry}
-          onClose={() => setSelectedSlug(null)}
-        />
-      )}
       <OrbitControls
         enablePan={false}
         enableZoom={true}
