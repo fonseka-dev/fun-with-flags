@@ -119,47 +119,92 @@ function projectToTangentPlane(
   return result;
 }
 
-function triangulateRing(
-  ring: Position[],
+/**
+ * Insert intermediate points so no segment spans more than 5° in lat or lng.
+ * Reduces tangent-plane distortion for large countries like Russia / Canada.
+ */
+export function subdivideRing(ring: Position[]): Position[] {
+  const THRESHOLD_DEG = 5;
+  if (ring.length < 2) return ring;
+  const result: Position[] = [];
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i];
+    const b = ring[(i + 1) % ring.length];
+    result.push(a);
+    const steps = Math.max(
+      Math.ceil(Math.abs(b[0] - a[0]) / THRESHOLD_DEG),
+      Math.ceil(Math.abs(b[1] - a[1]) / THRESHOLD_DEG),
+    );
+    for (let s = 1; s < steps; s++) {
+      const t = s / steps;
+      result.push([a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]);
+    }
+  }
+  return result;
+}
+
+/**
+ * Triangulate a polygon (outer ring + optional holes) projected onto a sphere.
+ * All rings in `rings` are subdivided before projection to reduce distortion.
+ */
+export function triangulatePolygon(
+  rings: Position[][],
   radius: number,
 ): { positions: number[]; indices: number[] } | null {
-  // Remove closing vertex if it duplicates the first
-  let coords = ring;
-  if (
-    coords.length > 1 &&
-    coords[0][0] === coords[coords.length - 1][0] &&
-    coords[0][1] === coords[coords.length - 1][1]
-  ) {
-    coords = coords.slice(0, -1);
+  // Normalize rings: remove closing duplicate vertex, discard degenerate rings
+  const normalized = rings
+    .map((ring) => {
+      let coords = ring;
+      if (
+        coords.length > 1 &&
+        coords[0][0] === coords[coords.length - 1][0] &&
+        coords[0][1] === coords[coords.length - 1][1]
+      ) {
+        coords = coords.slice(0, -1);
+      }
+      return coords;
+    })
+    .filter((r) => r.length >= 3);
+
+  if (normalized.length === 0) return null;
+
+  const subdivided = normalized.map(subdivideRing);
+
+  // Compute combined centroid for stable tangent-plane basis
+  let cx = 0, cy = 0, cz = 0, totalVerts = 0;
+  for (const ring of subdivided) {
+    for (const [lng, lat] of ring) {
+      const [x, y, z] = latLngToCartesian(lat, lng, radius);
+      cx += x; cy += y; cz += z;
+      totalVerts++;
+    }
   }
-  if (coords.length < 3) return null;
+  if (totalVerts === 0) return null;
 
-  // Build 3D positions
-  const positions3D = new Float64Array(coords.length * 3);
-  let cx = 0,
-    cy = 0,
-    cz = 0;
+  const centroid = new Vector3(cx / totalVerts, cy / totalVerts, cz / totalVerts);
 
-  for (let i = 0; i < coords.length; i++) {
-    const [lng, lat] = coords[i];
-    const [x, y, z] = latLngToCartesian(lat, lng, radius);
-    positions3D[i * 3] = x;
-    positions3D[i * 3 + 1] = y;
-    positions3D[i * 3 + 2] = z;
-    cx += x;
-    cy += y;
-    cz += z;
+  // Build flat 3D array and track where each hole ring starts
+  const positions3D = new Float64Array(totalVerts * 3);
+  const holeIndices: number[] = [];
+  let offset = 0;
+
+  for (let ri = 0; ri < subdivided.length; ri++) {
+    if (ri > 0) holeIndices.push(offset);
+    for (const [lng, lat] of subdivided[ri]) {
+      const [x, y, z] = latLngToCartesian(lat, lng, radius);
+      positions3D[offset * 3] = x;
+      positions3D[offset * 3 + 1] = y;
+      positions3D[offset * 3 + 2] = z;
+      offset++;
+    }
   }
 
-  const centroid = new Vector3(
-    cx / coords.length,
-    cy / coords.length,
-    cz / coords.length,
-  );
-
-  // Project to 2D, triangulate
   const coords2D = projectToTangentPlane(positions3D, centroid);
-  const indices = earcut(Array.from(coords2D), undefined, 2);
+  const indices = earcut(
+    Array.from(coords2D),
+    holeIndices.length > 0 ? holeIndices : undefined,
+    2,
+  );
   if (indices.length === 0) return null;
 
   return { positions: Array.from(positions3D), indices };
@@ -187,11 +232,7 @@ export function buildCountryGeometry(
   let indexOffset = 0;
 
   for (const polygon of polygons) {
-    // Use only the outer ring (index 0) — skip holes for globe display
-    const outerRing = polygon[0];
-    if (!outerRing) continue;
-
-    const result = triangulateRing(outerRing, radius);
+    const result = triangulatePolygon(polygon, radius);
     if (!result) continue;
 
     allPositions.push(...result.positions);

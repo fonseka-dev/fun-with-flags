@@ -71,7 +71,12 @@ export function CountryMeshes({
               roughness={0.6}
               metalness={0.1}
               transparent={mode === "realistic"}
-              opacity={mode === "realistic" ? 0 : 1}
+              opacity={mode === "realistic" ? 0.15 : 1}
+              depthWrite={mode !== "realistic"}
+              side={THREE.DoubleSide}
+              polygonOffset={true}
+              polygonOffsetFactor={-1}
+              polygonOffsetUnits={-1}
             />
           </mesh>
         );

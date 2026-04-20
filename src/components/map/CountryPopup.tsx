@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { Html } from "@react-three/drei";
 import type { FunFact } from "@/data/types";
 
 const CONTINENT_DOT_COLORS: Record<string, string> = {
@@ -20,7 +19,6 @@ type CountryPopupProps = {
   capital: string;
   continent: string;
   funFact: FunFact | null;
-  centroid: [number, number, number];
   locale: string;
   capitalLabel: string;
   exploreLabel: string;
@@ -38,7 +36,6 @@ export function CountryPopup({
   capital,
   continent,
   funFact,
-  centroid,
   locale,
   capitalLabel,
   exploreLabel,
@@ -58,11 +55,10 @@ export function CountryPopup({
   }, [onClose]);
 
   return (
-    <Html position={centroid} center>
-      <div
-        onClick={(e) => e.stopPropagation()}
-        className="min-w-[240px] max-w-[280px] rounded-2xl border border-white/10 bg-black/60 p-4 text-white shadow-2xl backdrop-blur-xl"
-      >
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="min-w-[240px] max-w-[280px] rounded-2xl border border-white/10 bg-black/60 p-4 text-white shadow-2xl backdrop-blur-xl"
+    >
         {/* Header: flag + name + close */}
         <div className="mb-3 flex items-center gap-3">
           <img
@@ -135,7 +131,6 @@ export function CountryPopup({
         >
           {exploreLabel}
         </a>
-      </div>
-    </Html>
+    </div>
   );
 }
