@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo, type RefObject } from "react";
+import { useState, useRef, useMemo, useEffect, type RefObject } from "react";
 import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
@@ -32,12 +32,18 @@ type GlobeSceneProps = {
   isDaylight: boolean;
   autoRotate: boolean;
   discoverCountry: (slug: string) => void;
+  closePopupRef: RefObject<(() => void) | null>;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, targetZRef, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const sphereRef = useRef<THREE.Mesh>(null);
+
+  useEffect(() => {
+    closePopupRef.current = () => setSelectedSlug(null);
+    return () => { closePopupRef.current = null; };
+  }, [closePopupRef]);
 
   const handleCountrySelect = (slug: string) => {
     setSelectedSlug(slug);

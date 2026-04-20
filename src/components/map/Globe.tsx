@@ -25,6 +25,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [autoRotate, setAutoRotate] = useState(true);
   const targetZRef = useRef<number>(2.5);
   const cameraRef = useRef<RootState["camera"] | null>(null);
+  const closePopupRef = useRef<(() => void) | null>(null);
   const locale = useLocale() as Locale;
   const t = useTranslations("globe");
 
@@ -80,6 +81,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         dpr={[1, 2]}
         style={{ background: "#0A0E27" }}
         onCreated={handleCreated}
+        onPointerMissed={() => closePopupRef.current?.()}
       >
         <Suspense fallback={null}>
           <GlobeScene
@@ -97,6 +99,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             isDaylight={isDaylight}
             autoRotate={autoRotate}
             discoverCountry={discoverCountry}
+            closePopupRef={closePopupRef}
           />
         </Suspense>
       </Canvas>
