@@ -25,6 +25,9 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   const [autoRotate, setAutoRotate] = useState(true);
   const [globeMode, setGlobeMode] = useState<"realistic" | "political">("political");
   const [hoverMode, setHoverMode] = useState(false);
+  const [geolocating, setGeolocating] = useState(false);
+  const [geoError, setGeoError] = useState<string | null>(null);
+  const geoErrorTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const targetZRef = useRef<number>(2.5);
   const cameraRef = useRef<RootState["camera"] | null>(null);
   const closePopupRef = useRef<(() => void) | null>(null);
@@ -44,6 +47,39 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
     if (cameraRef.current) {
       cameraRef.current.position.set(0, 0, 2.5);
     }
+  };
+
+  const handleGeolocate = () => {
+    if (!navigator.geolocation) {
+      if (geoErrorTimer.current) clearTimeout(geoErrorTimer.current);
+      setGeoError(t("geolocationError"));
+      geoErrorTimer.current = setTimeout(() => setGeoError(null), 3000);
+      return;
+    }
+    setGeolocating(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        const r = 2.0;
+        const phi = (90 - lat) * (Math.PI / 180);
+        const theta = (lng + 180) * (Math.PI / 180);
+        const x = -r * Math.sin(phi) * Math.cos(theta);
+        const y = r * Math.cos(phi);
+        const z = r * Math.sin(phi) * Math.sin(theta);
+        if (cameraRef.current) {
+          cameraRef.current.position.set(x, y, z);
+          targetZRef.current = r;
+        }
+        setGeolocating(false);
+      },
+      () => {
+        if (geoErrorTimer.current) clearTimeout(geoErrorTimer.current);
+        setGeoError(t("geolocationError"));
+        geoErrorTimer.current = setTimeout(() => setGeoError(null), 3000);
+        setGeolocating(false);
+      },
+    );
   };
 
   const handleCreated = (state: RootState) => {
@@ -121,7 +157,14 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         onToggleMode={() => setGlobeMode((m) => m === "realistic" ? "political" : "realistic")}
         hoverMode={hoverMode}
         onToggleHoverMode={() => setHoverMode((v) => !v)}
+        onGeolocate={handleGeolocate}
+        geolocating={geolocating}
       />
+      {geoError && (
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white text-sm px-4 py-2 rounded-xl backdrop-blur-md pointer-events-none">
+          {geoError}
+        </div>
+      )}
     </div>
   );
 }
