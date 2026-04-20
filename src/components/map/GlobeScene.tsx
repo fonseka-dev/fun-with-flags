@@ -3,7 +3,6 @@ import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
-import { GlobeAtmosphere } from "./GlobeAtmosphere";
 import { CountryMeshes } from "./CountryMeshes";
 import { CountryPopup } from "./CountryPopup";
 import { CountryLabels } from "./CountryLabels";
@@ -35,9 +34,11 @@ type GlobeSceneProps = {
   zoomRef: RefObject<number>;
   locale: Locale;
   globeT: { capital: string; explore: string };
+  isDaylight: boolean;
+  autoRotate: boolean;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT }: GlobeSceneProps) {
+export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomRef, locale, globeT, isDaylight, autoRotate }: GlobeSceneProps) {
   const { countries } = useGlobeData();
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
@@ -75,10 +76,9 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
   return (
     <>
       <StarField />
-      <ambientLight intensity={0.4} />
-      <directionalLight position={[5, 3, 5]} intensity={0.8} />
+      <ambientLight intensity={isDaylight ? 1.0 : 0.15} />
+      <directionalLight position={[5, 3, 5]} intensity={isDaylight ? 0.3 : 1.0} />
       <GlobeSphere />
-      <GlobeAtmosphere />
       <CountryMeshes
         countries={countries}
         discoveredSlugs={discoveredSlugs}
@@ -102,7 +102,7 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, zoomR
         minDistance={1.5}
         maxDistance={4}
         rotateSpeed={0.5}
-        autoRotate={!selectedSlug}
+        autoRotate={autoRotate && !selectedSlug}
         autoRotateSpeed={0.5}
       />
     </>

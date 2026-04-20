@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
-import { AppShell } from "@/components/layout/AppShell";
+import { TopNav } from "@/components/layout/TopNav";
 import { Globe } from "@/components/map/Globe";
 import { useUserProgress } from "@/lib/hooks/useUserProgress";
 
@@ -10,17 +10,18 @@ function MapContent() {
   const discoveredSlugs = progress?.discoveredCountries ?? [];
 
   return (
-    <AppShell>
-      <div className="h-[calc(100vh-4rem)] bg-[#0A0E27]">
-        {loading ? (
-          <div className="flex h-full items-center justify-center">
-            <div className="h-16 w-16 animate-pulse rounded-full border-4 border-white/20" />
-          </div>
-        ) : (
-          <Globe discoveredSlugs={discoveredSlugs} />
-        )}
+    <div className="relative h-screen overflow-hidden bg-[#0A0E27]">
+      <div className="absolute inset-x-0 top-0 z-20">
+        <TopNav />
       </div>
-    </AppShell>
+      {loading ? (
+        <div className="flex h-full items-center justify-center">
+          <div className="h-16 w-16 animate-pulse rounded-full border-4 border-white/20" />
+        </div>
+      ) : (
+        <Globe discoveredSlugs={discoveredSlugs} />
+      )}
+    </div>
   );
 }
 
