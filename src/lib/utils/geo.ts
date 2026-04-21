@@ -6,7 +6,7 @@ import {
   Float32BufferAttribute,
 } from "three";
 import Delaunator from "delaunator";
-import { geoBounds, geoContains } from "d3-geo";
+import { geoContains } from "d3-geo";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, MultiPolygon, Polygon, Position } from "geojson";
 
@@ -100,14 +100,17 @@ export function getInteriorGeoPoints(
   rings: Position[][],
   resolution: number,
 ): Position[] {
-  // d3-geo requires properly closed rings (first === last vertex) for correct
-  // bounds and containment checks.
-  const closedRings = rings.map((ring) => [...ring, ring[0]]);
-  const polygon = { type: "Polygon" as const, coordinates: closedRings };
-  const [[minLng, minLat], [maxLng, maxLat]] = geoBounds(polygon);
-
-  // Skip antimeridian-crossing or degenerate bounding boxes
-  if (maxLng < minLng) return [];
+  // Scan outer ring vertices directly — avoids geoBounds which returns inverted
+  // bounds for antimeridian-crossing polygons (e.g. Russia), triggering a false
+  // `maxLng < minLng` guard that made the function return [] for such countries.
+  const outer = rings[0];
+  let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity;
+  for (const [lng, lat] of outer) {
+    if (lng < minLng) minLng = lng;
+    if (lng > maxLng) maxLng = lng;
+    if (lat < minLat) minLat = lat;
+    if (lat > maxLat) maxLat = lat;
+  }
 
   const lngSpan = maxLng - minLng;
   const latSpan = maxLat - minLat;
@@ -115,12 +118,41 @@ export function getInteriorGeoPoints(
   // Skip tiny polygons — flat earcut handles them fine without interior seeding
   if (lngSpan < resolution && latSpan < resolution) return [];
 
+  // d3-geo requires properly closed rings (first === last vertex) for correct
+  // containment checks.
+  const closedRings = rings.map((ring) => [...ring, ring[0]]);
+  const polygon = { type: "Polygon" as const, coordinates: closedRings };
   const result: Position[] = [];
-  // Offset by half-resolution to centre the first grid point inside each cell
-  for (let lat = minLat + resolution / 2; lat < maxLat; lat += resolution) {
-    for (let lng = minLng + resolution / 2; lng < maxLng; lng += resolution) {
-      if (geoContains(polygon, [lng, lat])) {
-        result.push([lng, lat]);
+
+  if (lngSpan <= 180) {
+    // Normal (non-antimeridian-crossing) polygon: single rectangular grid.
+    for (let lat = minLat + resolution / 2; lat < maxLat; lat += resolution) {
+      for (let lng = minLng + resolution / 2; lng < maxLng; lng += resolution) {
+        if (geoContains(polygon, [lng, lat])) result.push([lng, lat]);
+      }
+    }
+  } else {
+    // Antimeridian-crossing polygon (lngSpan > 180°, e.g. Russia, Fiji, Kiribati).
+    // The raw vertex range spans both sides of ±180°. Generate two sub-grids:
+    //   • Western sub-range: [minLngPositive .. 180)
+    //   • Eastern sub-range: (-180 .. maxLngNegative]
+    // Both filtered by geoContains which handles antimeridian correctly.
+    let minLngPos = Infinity, maxLngNeg = -Infinity;
+    for (const [lng] of outer) {
+      if (lng >= 0 && lng < minLngPos) minLngPos = lng;
+      if (lng < 0 && lng > maxLngNeg) maxLngNeg = lng;
+    }
+
+    // Western sub-range [minLngPos..180)
+    for (let lat = minLat + resolution / 2; lat < maxLat; lat += resolution) {
+      for (let lng = minLngPos + resolution / 2; lng < 180; lng += resolution) {
+        if (geoContains(polygon, [lng, lat])) result.push([lng, lat]);
+      }
+    }
+    // Eastern sub-range (-180..maxLngNeg]
+    for (let lat = minLat + resolution / 2; lat < maxLat; lat += resolution) {
+      for (let lng = -180 + resolution / 2; lng <= maxLngNeg; lng += resolution) {
+        if (geoContains(polygon, [lng, lat])) result.push([lng, lat]);
       }
     }
   }
@@ -278,7 +310,19 @@ export function triangulatePolygon(
       const a = delaunay.triangles[t];
       const b = delaunay.triangles[t + 1];
       const c = delaunay.triangles[t + 2];
-      const centLng = (points[a][0] + points[b][0] + points[c][0]) / 3;
+      // Antimeridian-safe centroid: unwrap lngB and lngC relative to lngA so that
+      // triangles straddling ±180° (e.g. Russia's eastern coast) get a correct
+      // geographic centroid. Without unwrapping, a triangle with vertices at
+      // +178°, −178°, −175° computes centroid = (178−178−175)/3 = −58° (Atlantic!),
+      // causing geoContains to reject it and leaving a seam hole at the antimeridian.
+      const lngA = points[a][0];
+      const lngB = points[b][0];
+      const lngC = points[c][0];
+      const unwrappedB = lngB - lngA > 180 ? lngB - 360 : lngB - lngA < -180 ? lngB + 360 : lngB;
+      const unwrappedC = lngC - lngA > 180 ? lngC - 360 : lngC - lngA < -180 ? lngC + 360 : lngC;
+      const rawCentLng = (lngA + unwrappedB + unwrappedC) / 3;
+      // Wrap back to [-180, 180] before passing to geoContains
+      const centLng = ((rawCentLng + 180) % 360 + 360) % 360 - 180;
       const centLat = (points[a][1] + points[b][1] + points[c][1]) / 3;
       if (geoContains(geoPolygon, [centLng, centLat])) {
         indices.push(a, b, c);

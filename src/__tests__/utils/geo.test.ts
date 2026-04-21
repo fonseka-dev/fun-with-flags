@@ -277,11 +277,51 @@ describe("getInteriorGeoPoints", () => {
     }
   });
 
-  it("returns [] for antimeridian-crossing bbox (maxLng < minLng)", () => {
-    // Polygon straddling ±180° — geoBounds returns inverted range
-    const rings: Position[][] = [[[170, -10], [190, -10], [190, 10], [170, 10]]];
-    // We expect an empty result (antimeridian-crossing guard)
-    const pts = getInteriorGeoPoints(rings, 5);
-    expect(Array.isArray(pts)).toBe(true);
+  it("returns interior points for a Russia-like antimeridian-crossing polygon", () => {
+    // Russia's ring has vertices near ±180° on BOTH sides (the antimeridian is
+    // Russia's eastern coastline in Natural Earth data). The ring has no explicit
+    // ±180 vertex; instead there's an edge from +179° to −179° which d3-geo detects
+    // as a genuine antimeridian crossing (delta_lng = -358, |358| > 180).
+    //
+    // geoBounds on this CW ring returns [[27,41],[-168,82]] — inverted bounds where
+    // maxLng=-168 < minLng=27. The old guard `if (maxLng < minLng) return []` fired
+    // here → hollow ring bug. After the fix, interior points must be produced.
+    const rings: Position[][] = [[
+      [27, 41], [100, 41], [179, 41], [-179, 41], [-168, 41],
+      [-168, 72], [-179, 72], [179, 72], [100, 72], [27, 72],
+    ]];
+    const pts = getInteriorGeoPoints(rings, 10);
+    // Must produce interior seed points — not bail out with []
+    expect(pts.length).toBeGreaterThan(0);
+    // All returned points must be valid geographic coordinates
+    for (const [lng, lat] of pts) {
+      expect(lng).toBeGreaterThanOrEqual(-180);
+      expect(lng).toBeLessThanOrEqual(180);
+      expect(lat).toBeGreaterThan(35);
+      expect(lat).toBeLessThan(90);
+    }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// triangulatePolygon — antimeridian regression
+// ---------------------------------------------------------------------------
+
+describe("triangulatePolygon — antimeridian regression", () => {
+  it("returns non-null for a Russia-like polygon crossing ±180°", () => {
+    // Same Russia-like ring: vertices near ±179° on both sides of antimeridian.
+    // With old code: geoBounds returns inverted → getInteriorGeoPoints returns []
+    // → earcut on SLERP-subdivided ring sees coordinate jump at ±179° as
+    //   self-intersecting → returns [] → triangulatePolygon returns null.
+    // After the fix this must succeed.
+    const rings: Position[][] = [[
+      [27, 41], [100, 41], [179, 41], [-179, 41], [-168, 41],
+      [-168, 72], [-179, 72], [179, 72], [100, 72], [27, 72],
+    ]];
+    const result = triangulatePolygon(rings, 1);
+    // Before the fix this returned null. After the fix it must succeed.
+    expect(result).not.toBeNull();
+    expect(result!.positions.length).toBeGreaterThan(0);
+    expect(result!.indices.length).toBeGreaterThan(0);
   });
 });
