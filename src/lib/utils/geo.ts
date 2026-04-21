@@ -120,26 +120,72 @@ function projectToTangentPlane(
 }
 
 /**
- * Insert intermediate points so no segment spans more than 5° in lat or lng.
- * Reduces tangent-plane distortion for large countries like Russia / Canada.
+ * Insert great-circle midpoints along edges that span more than 5° of arc.
+ *
+ * Uses haversine distance (antimeridian-safe) to measure each edge, then
+ * SLERP (spherical linear interpolation) in 3D Cartesian to place midpoints
+ * exactly on the great-circle path.
+ *
+ * Why SLERP instead of linear (lng, lat) interpolation:
+ *   - Linear interpolation wraps incorrectly across ±180° longitude
+ *     (e.g., 170°E → 170°W: linear sweeps through Europe; SLERP stays in Pacific)
+ *   - Linear deviates from the great-circle path by 2–10° for long edges,
+ *     causing self-intersections in the tangent-plane projection for large countries
  */
 export function subdivideRing(ring: Position[]): Position[] {
-  const THRESHOLD_DEG = 5;
+  const THRESHOLD_RAD = 5 * DEG2RAD;
   if (ring.length < 2) return ring;
   const result: Position[] = [];
+
   for (let i = 0; i < ring.length; i++) {
     const a = ring[i];
     const b = ring[(i + 1) % ring.length];
     result.push(a);
-    const steps = Math.max(
-      Math.ceil(Math.abs(b[0] - a[0]) / THRESHOLD_DEG),
-      Math.ceil(Math.abs(b[1] - a[1]) / THRESHOLD_DEG),
-    );
-    for (let s = 1; s < steps; s++) {
-      const t = s / steps;
-      result.push([a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]);
+
+    const aLat = a[1] * DEG2RAD, aLng = a[0] * DEG2RAD;
+    const bLat = b[1] * DEG2RAD, bLng = b[0] * DEG2RAD;
+
+    // Haversine central angle — always returns the shorter arc (antimeridian-safe)
+    const dLat = bLat - aLat, dLng = bLng - aLng;
+    const sinHalfDLat = Math.sin(dLat / 2), sinHalfDLng = Math.sin(dLng / 2);
+    const hav =
+      sinHalfDLat * sinHalfDLat +
+      Math.cos(aLat) * Math.cos(bLat) * sinHalfDLng * sinHalfDLng;
+    const angle = 2 * Math.asin(Math.sqrt(Math.min(1, hav)));
+
+    if (angle > THRESHOLD_RAD) {
+      const steps = Math.ceil(angle / THRESHOLD_RAD);
+
+      // 3D unit vectors — standard geographic convention: z = cos(lat)·sin(lng)
+      // (differs from latLngToCartesian which negates z for Three.js Y-up rendering;
+      //  sign doesn't matter here since midpoints are converted back to lat/lng via atan2)
+      const ax = Math.cos(aLat) * Math.cos(aLng);
+      const ay = Math.sin(aLat);
+      const az = Math.cos(aLat) * Math.sin(aLng);
+      const bx = Math.cos(bLat) * Math.cos(bLng);
+      const by = Math.sin(bLat);
+      const bz = Math.cos(bLat) * Math.sin(bLng);
+
+      const dot = Math.min(1, Math.max(-1, ax * bx + ay * by + az * bz));
+      const theta = Math.acos(dot);
+      const sinTheta = Math.sin(theta);
+      if (sinTheta < 1e-10) continue; // coincident or antipodal points — great circle undefined
+
+      for (let s = 1; s < steps; s++) {
+        const t = s / steps;
+        const wa = Math.sin((1 - t) * theta) / sinTheta;
+        const wb = Math.sin(t * theta) / sinTheta;
+        const cx = wa * ax + wb * bx;
+        const cy = wa * ay + wb * by;
+        const cz = wa * az + wb * bz;
+        result.push([
+          Math.atan2(cz, cx) / DEG2RAD,
+          Math.atan2(cy, Math.sqrt(cx * cx + cz * cz)) / DEG2RAD,
+        ]);
+      }
     }
   }
+
   return result;
 }
 
@@ -170,18 +216,21 @@ export function triangulatePolygon(
 
   const subdivided = normalized.map(subdivideRing);
 
-  // Compute combined centroid for stable tangent-plane basis
-  let cx = 0, cy = 0, cz = 0, totalVerts = 0;
-  for (const ring of subdivided) {
-    for (const [lng, lat] of ring) {
-      const [x, y, z] = latLngToCartesian(lat, lng, radius);
-      cx += x; cy += y; cz += z;
-      totalVerts++;
-    }
+  // Compute centroid from the outer ring only (subdivided[0]).
+  // Including hole rings would bias the tangent-plane origin inward for
+  // enclave countries (e.g., South Africa ⊃ Lesotho, Italy ⊃ Vatican).
+  let cx = 0, cy = 0, cz = 0, outerCount = 0;
+  for (const [lng, lat] of subdivided[0]) {
+    const [x, y, z] = latLngToCartesian(lat, lng, radius);
+    cx += x; cy += y; cz += z;
+    outerCount++;
   }
-  if (totalVerts === 0) return null;
+  if (outerCount === 0) return null;
 
-  const centroid = new Vector3(cx / totalVerts, cy / totalVerts, cz / totalVerts);
+  let totalVerts = 0;
+  for (const ring of subdivided) totalVerts += ring.length;
+
+  const centroid = new Vector3(cx / outerCount, cy / outerCount, cz / outerCount);
 
   // Build flat 3D array and track where each hole ring starts
   const positions3D = new Float64Array(totalVerts * 3);
@@ -498,12 +547,26 @@ export function getCountryFlagCode(
 // ---------------------------------------------------------------------------
 
 /**
- * Fetch the Natural Earth 110m TopoJSON and convert to GeoJSON features.
+ * Fetch the Natural Earth world topology and convert to GeoJSON features.
+ *
+ * Resolution: world-50m.json (~200 KB, 50 km coastline tolerance)
+ * Upgraded from world-110m.json on 2026-04-21 to reduce polygon edge lengths,
+ * which improves SLERP subdivision quality and reduces triangulation artifacts.
+ *
+ * Both resolution files are kept in public/geo/ for easy rollback.
+ *
+ * ── To revert to 110m (lower quality, ~100 KB, faster triangulation) ────────
+ *   Change the URL below from "/geo/world-50m.json" to "/geo/world-110m.json"
+ *   Trade-offs:
+ *     world-110m  ~100 KB  110 km tolerance  faster triangulation  jagged coasts
+ *     world-50m   ~200 KB   50 km tolerance  better triangulation  smooth coasts  ← current
+ *     world-10m  ~1000 KB   10 km tolerance  too large for browser use
+ * ────────────────────────────────────────────────────────────────────────────
  */
 export async function loadWorldTopology(): Promise<
   Feature<Polygon | MultiPolygon>[]
 > {
-  const response = await fetch("/geo/world-110m.json");
+  const response = await fetch("/geo/world-50m.json");
   const topology = (await response.json()) as Topology<{
     countries: GeometryCollection;
   }>;
