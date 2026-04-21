@@ -156,7 +156,9 @@ export function subdivideRing(ring: Position[]): Position[] {
     if (angle > THRESHOLD_RAD) {
       const steps = Math.ceil(angle / THRESHOLD_RAD);
 
-      // 3D unit vectors (z = cos·sin(lng) for standard right-hand Y-up convention)
+      // 3D unit vectors — standard geographic convention: z = cos(lat)·sin(lng)
+      // (differs from latLngToCartesian which negates z for Three.js Y-up rendering;
+      //  sign doesn't matter here since midpoints are converted back to lat/lng via atan2)
       const ax = Math.cos(aLat) * Math.cos(aLng);
       const ay = Math.sin(aLat);
       const az = Math.cos(aLat) * Math.sin(aLng);
@@ -167,7 +169,7 @@ export function subdivideRing(ring: Position[]): Position[] {
       const dot = Math.min(1, Math.max(-1, ax * bx + ay * by + az * bz));
       const theta = Math.acos(dot);
       const sinTheta = Math.sin(theta);
-      if (sinTheta < 1e-10) continue; // coincident points — skip
+      if (sinTheta < 1e-10) continue; // coincident or antipodal points — great circle undefined
 
       for (let s = 1; s < steps; s++) {
         const t = s / steps;

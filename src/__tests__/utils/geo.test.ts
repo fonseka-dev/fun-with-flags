@@ -187,7 +187,8 @@ describe("subdivideRing", () => {
     const result = subdivideRing(ring);
     // Find the index of [-170, 0] — the end of the antimeridian edge
     const endIdx = result.findIndex((p) => p[0] === -170 && p[1] === 0);
-    expect(endIdx).toBeGreaterThan(1); // must have inserted intermediate points
+    expect(endIdx).not.toBe(-1); // -170 endpoint must be present
+    expect(endIdx).toBe(4); // ceil(20° / 5°) = 4 steps → 3 intermediates
     // All intermediate points should have |lng| > 165° (hugging ±180°, not crossing 0°)
     const intermediates = result.slice(1, endIdx);
     for (const pt of intermediates) {
