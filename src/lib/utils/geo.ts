@@ -120,26 +120,70 @@ function projectToTangentPlane(
 }
 
 /**
- * Insert intermediate points so no segment spans more than 5° in lat or lng.
- * Reduces tangent-plane distortion for large countries like Russia / Canada.
+ * Insert great-circle midpoints along edges that span more than 5° of arc.
+ *
+ * Uses haversine distance (antimeridian-safe) to measure each edge, then
+ * SLERP (spherical linear interpolation) in 3D Cartesian to place midpoints
+ * exactly on the great-circle path.
+ *
+ * Why SLERP instead of linear (lng, lat) interpolation:
+ *   - Linear interpolation wraps incorrectly across ±180° longitude
+ *     (e.g., 170°E → 170°W: linear sweeps through Europe; SLERP stays in Pacific)
+ *   - Linear deviates from the great-circle path by 2–10° for long edges,
+ *     causing self-intersections in the tangent-plane projection for large countries
  */
 export function subdivideRing(ring: Position[]): Position[] {
-  const THRESHOLD_DEG = 5;
+  const THRESHOLD_RAD = 5 * DEG2RAD;
   if (ring.length < 2) return ring;
   const result: Position[] = [];
+
   for (let i = 0; i < ring.length; i++) {
     const a = ring[i];
     const b = ring[(i + 1) % ring.length];
     result.push(a);
-    const steps = Math.max(
-      Math.ceil(Math.abs(b[0] - a[0]) / THRESHOLD_DEG),
-      Math.ceil(Math.abs(b[1] - a[1]) / THRESHOLD_DEG),
-    );
-    for (let s = 1; s < steps; s++) {
-      const t = s / steps;
-      result.push([a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]);
+
+    const aLat = a[1] * DEG2RAD, aLng = a[0] * DEG2RAD;
+    const bLat = b[1] * DEG2RAD, bLng = b[0] * DEG2RAD;
+
+    // Haversine central angle — always returns the shorter arc (antimeridian-safe)
+    const dLat = bLat - aLat, dLng = bLng - aLng;
+    const sinHalfDLat = Math.sin(dLat / 2), sinHalfDLng = Math.sin(dLng / 2);
+    const hav =
+      sinHalfDLat * sinHalfDLat +
+      Math.cos(aLat) * Math.cos(bLat) * sinHalfDLng * sinHalfDLng;
+    const angle = 2 * Math.asin(Math.sqrt(Math.min(1, hav)));
+
+    if (angle > THRESHOLD_RAD) {
+      const steps = Math.ceil(angle / THRESHOLD_RAD);
+
+      // 3D unit vectors (z = cos·sin(lng) for standard right-hand Y-up convention)
+      const ax = Math.cos(aLat) * Math.cos(aLng);
+      const ay = Math.sin(aLat);
+      const az = Math.cos(aLat) * Math.sin(aLng);
+      const bx = Math.cos(bLat) * Math.cos(bLng);
+      const by = Math.sin(bLat);
+      const bz = Math.cos(bLat) * Math.sin(bLng);
+
+      const dot = Math.min(1, Math.max(-1, ax * bx + ay * by + az * bz));
+      const theta = Math.acos(dot);
+      const sinTheta = Math.sin(theta);
+      if (sinTheta < 1e-10) continue; // coincident points — skip
+
+      for (let s = 1; s < steps; s++) {
+        const t = s / steps;
+        const wa = Math.sin((1 - t) * theta) / sinTheta;
+        const wb = Math.sin(t * theta) / sinTheta;
+        const cx = wa * ax + wb * bx;
+        const cy = wa * ay + wb * by;
+        const cz = wa * az + wb * bz;
+        result.push([
+          Math.atan2(cz, cx) / DEG2RAD,
+          Math.atan2(cy, Math.sqrt(cx * cx + cz * cz)) / DEG2RAD,
+        ]);
+      }
     }
   }
+
   return result;
 }
 

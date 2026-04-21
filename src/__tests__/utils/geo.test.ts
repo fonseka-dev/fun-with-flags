@@ -179,6 +179,21 @@ describe("subdivideRing", () => {
     const ring: Position[] = [[0, 0]];
     expect(() => subdivideRing(ring)).not.toThrow();
   });
+
+  it("handles antimeridian crossing (170°E → 170°W) through ±180°, not through 0°", () => {
+    // Linear interpolation bug: 170 to -170 gives |Δlng|=340°, sweeping through 0° (Europe)
+    // SLERP fix: haversine distance = 20°, great-circle stays near ±180° (Pacific)
+    const ring: Position[] = [[170, 0], [-170, 0], [0, 30]];
+    const result = subdivideRing(ring);
+    // Find the index of [-170, 0] — the end of the antimeridian edge
+    const endIdx = result.findIndex((p) => p[0] === -170 && p[1] === 0);
+    expect(endIdx).toBeGreaterThan(1); // must have inserted intermediate points
+    // All intermediate points should have |lng| > 165° (hugging ±180°, not crossing 0°)
+    const intermediates = result.slice(1, endIdx);
+    for (const pt of intermediates) {
+      expect(Math.abs(pt[0])).toBeGreaterThan(165);
+    }
+  });
 });
 
 // ---------------------------------------------------------------------------
