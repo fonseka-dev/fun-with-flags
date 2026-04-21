@@ -547,12 +547,26 @@ export function getCountryFlagCode(
 // ---------------------------------------------------------------------------
 
 /**
- * Fetch the Natural Earth 110m TopoJSON and convert to GeoJSON features.
+ * Fetch the Natural Earth world topology and convert to GeoJSON features.
+ *
+ * Resolution: world-50m.json (~200 KB, 50 km coastline tolerance)
+ * Upgraded from world-110m.json on 2026-04-21 to reduce polygon edge lengths,
+ * which improves SLERP subdivision quality and reduces triangulation artifacts.
+ *
+ * Both resolution files are kept in public/geo/ for easy rollback.
+ *
+ * ── To revert to 110m (lower quality, ~100 KB, faster triangulation) ────────
+ *   Change the URL below from "/geo/world-50m.json" to "/geo/world-110m.json"
+ *   Trade-offs:
+ *     world-110m  ~100 KB  110 km tolerance  faster triangulation  jagged coasts
+ *     world-50m   ~200 KB   50 km tolerance  better triangulation  smooth coasts  ← current
+ *     world-10m  ~1000 KB   10 km tolerance  too large for browser use
+ * ────────────────────────────────────────────────────────────────────────────
  */
 export async function loadWorldTopology(): Promise<
   Feature<Polygon | MultiPolygon>[]
 > {
-  const response = await fetch("/geo/world-110m.json");
+  const response = await fetch("/geo/world-50m.json");
   const topology = (await response.json()) as Topology<{
     countries: GeometryCollection;
   }>;
