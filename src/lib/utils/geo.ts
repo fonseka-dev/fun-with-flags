@@ -4,8 +4,9 @@ import {
   BufferGeometry,
   BufferAttribute,
   Float32BufferAttribute,
-  Vector3,
 } from "three";
+import Delaunator from "delaunator";
+import { geoBounds, geoContains } from "d3-geo";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, MultiPolygon, Polygon, Position } from "geojson";
 
@@ -85,35 +86,43 @@ export function computeCentroid(
 // ---------------------------------------------------------------------------
 
 /**
- * Project 3D ring vertices onto a 2D tangent plane for earcut triangulation.
- * Uses the polygon centroid as origin and builds an orthonormal basis.
+ * Generate interior seed points for a polygon using a regular geographic grid,
+ * filtered by geoContains to keep only points inside the polygon (holes excluded).
+ *
+ * Used to seed Delaunay triangulation so that large polygons get interior
+ * triangles rather than the hollow-ring artefact that earcut+tangent-plane
+ * projection produced for countries spanning more than ~90° from their centroid.
+ *
+ * @param rings - Normalised polygon rings (outer first, then holes). No closing vertices.
+ * @param resolution - Grid spacing in degrees (5° matches three-globe defaults).
  */
-function projectToTangentPlane(
-  positions3D: Float64Array,
-  centroid: Vector3,
-): Float64Array {
-  // Build orthonormal basis on the tangent plane
-  const normal = centroid.clone().normalize();
-  const up = new Vector3(0, 1, 0);
-  let tangentU = new Vector3().crossVectors(up, normal);
-  if (tangentU.lengthSq() < 1e-8) {
-    tangentU = new Vector3().crossVectors(new Vector3(1, 0, 0), normal);
-  }
-  tangentU.normalize();
-  const tangentV = new Vector3().crossVectors(normal, tangentU).normalize();
+export function getInteriorGeoPoints(
+  rings: Position[][],
+  resolution: number,
+): Position[] {
+  // d3-geo requires properly closed rings (first === last vertex) for correct
+  // bounds and containment checks.
+  const closedRings = rings.map((ring) => [...ring, ring[0]]);
+  const polygon = { type: "Polygon" as const, coordinates: closedRings };
+  const [[minLng, minLat], [maxLng, maxLat]] = geoBounds(polygon);
 
-  const vertexCount = positions3D.length / 3;
-  const result = new Float64Array(vertexCount * 2);
-  const v = new Vector3();
+  // Skip antimeridian-crossing or degenerate bounding boxes
+  if (maxLng < minLng) return [];
 
-  for (let i = 0; i < vertexCount; i++) {
-    v.set(
-      positions3D[i * 3] - centroid.x,
-      positions3D[i * 3 + 1] - centroid.y,
-      positions3D[i * 3 + 2] - centroid.z,
-    );
-    result[i * 2] = v.dot(tangentU);
-    result[i * 2 + 1] = v.dot(tangentV);
+  const lngSpan = maxLng - minLng;
+  const latSpan = maxLat - minLat;
+
+  // Skip tiny polygons — flat earcut handles them fine without interior seeding
+  if (lngSpan < resolution && latSpan < resolution) return [];
+
+  const result: Position[] = [];
+  // Offset by half-resolution to centre the first grid point inside each cell
+  for (let lat = minLat + resolution / 2; lat < maxLat; lat += resolution) {
+    for (let lng = minLng + resolution / 2; lng < maxLng; lng += resolution) {
+      if (geoContains(polygon, [lng, lat])) {
+        result.push([lng, lat]);
+      }
+    }
   }
 
   return result;
@@ -190,8 +199,20 @@ export function subdivideRing(ring: Position[]): Position[] {
 }
 
 /**
- * Triangulate a polygon (outer ring + optional holes) projected onto a sphere.
- * All rings in `rings` are subdivided before projection to reduce distortion.
+ * Triangulate a polygon (outer ring + optional holes) onto a sphere.
+ *
+ * Algorithm (replaces the old tangent-plane projection + earcut approach):
+ *
+ *  1. Normalise + SLERP-subdivide each ring (antimeridian-safe great-circle edges).
+ *  2. Seed interior points via a regular geographic grid (getInteriorGeoPoints).
+ *  3a. No interior points (small polygon): earcut on flat [lng, lat] coords.
+ *  3b. Has interior points (large polygon): Delaunay on [lng, lat] + geoContains
+ *      centroid filter to discard exterior / hole triangles.
+ *  4. Convert ALL points to 3D after triangulation — never project to a tangent plane.
+ *
+ * The old tangent-plane projection produced self-intersecting 2D outlines for
+ * polygons spanning more than ~90° of arc from their centroid (e.g. USA, Russia,
+ * Canada), causing earcut to return no triangles and leaving a hollow ring artefact.
  */
 export function triangulatePolygon(
   rings: Position[][],
@@ -216,47 +237,62 @@ export function triangulatePolygon(
 
   const subdivided = normalized.map(subdivideRing);
 
-  // Compute centroid from the outer ring only (subdivided[0]).
-  // Including hole rings would bias the tangent-plane origin inward for
-  // enclave countries (e.g., South Africa ⊃ Lesotho, Italy ⊃ Vatican).
-  let cx = 0, cy = 0, cz = 0, outerCount = 0;
-  for (const [lng, lat] of subdivided[0]) {
-    const [x, y, z] = latLngToCartesian(lat, lng, radius);
-    cx += x; cy += y; cz += z;
-    outerCount++;
-  }
-  if (outerCount === 0) return null;
-
-  let totalVerts = 0;
-  for (const ring of subdivided) totalVerts += ring.length;
-
-  const centroid = new Vector3(cx / outerCount, cy / outerCount, cz / outerCount);
-
-  // Build flat 3D array and track where each hole ring starts
-  const positions3D = new Float64Array(totalVerts * 3);
+  // Flatten all ring points and track hole start indices (for the earcut path)
+  const edgePoints: Position[] = [];
   const holeIndices: number[] = [];
-  let offset = 0;
 
   for (let ri = 0; ri < subdivided.length; ri++) {
-    if (ri > 0) holeIndices.push(offset);
-    for (const [lng, lat] of subdivided[ri]) {
-      const [x, y, z] = latLngToCartesian(lat, lng, radius);
-      positions3D[offset * 3] = x;
-      positions3D[offset * 3 + 1] = y;
-      positions3D[offset * 3 + 2] = z;
-      offset++;
+    if (ri > 0) holeIndices.push(edgePoints.length);
+    for (const pt of subdivided[ri]) {
+      edgePoints.push(pt);
     }
   }
 
-  const coords2D = projectToTangentPlane(positions3D, centroid);
-  const indices = earcut(
-    Array.from(coords2D),
-    holeIndices.length > 0 ? holeIndices : undefined,
-    2,
-  );
-  if (indices.length === 0) return null;
+  // Seed interior points via a regular geographic grid filtered by geoContains.
+  // These force Delaunay to produce triangles covering the polygon interior,
+  // eliminating the hollow-ring artefact for large countries.
+  const innerPoints = getInteriorGeoPoints(normalized, 5);
+  const points = [...edgePoints, ...innerPoints];
 
-  return { positions: Array.from(positions3D), indices };
+  let indices: number[];
+
+  if (innerPoints.length === 0) {
+    // Small polygon: earcut on flat [lng, lat] — no tangent-plane projection.
+    const flat = points.flatMap(([lng, lat]) => [lng, lat]);
+    const raw = earcut(flat, holeIndices.length > 0 ? holeIndices : undefined, 2);
+    if (raw.length === 0) return null;
+    indices = raw;
+  } else {
+    // Large polygon: Delaunay triangulation in [lng, lat] space + geoContains filter.
+    // Closed rings required by d3-geo for correct containment checks.
+    const closedRings = normalized.map((ring) => [...ring, ring[0]]);
+    const geoPolygon = { type: "Polygon" as const, coordinates: closedRings };
+    const flat = new Float64Array(points.length * 2);
+    for (let i = 0; i < points.length; i++) {
+      flat[i * 2] = points[i][0];
+      flat[i * 2 + 1] = points[i][1];
+    }
+    const delaunay = new Delaunator(flat);
+    indices = [];
+    for (let t = 0; t < delaunay.triangles.length; t += 3) {
+      const a = delaunay.triangles[t];
+      const b = delaunay.triangles[t + 1];
+      const c = delaunay.triangles[t + 2];
+      const centLng = (points[a][0] + points[b][0] + points[c][0]) / 3;
+      const centLat = (points[a][1] + points[b][1] + points[c][1]) / 3;
+      if (geoContains(geoPolygon, [centLng, centLat])) {
+        indices.push(a, b, c);
+      }
+    }
+    if (indices.length === 0) return null;
+  }
+
+  // Convert all points to 3D AFTER triangulation — never project to a tangent plane.
+  const positions = points.flatMap(([lng, lat]) =>
+    latLngToCartesian(lat, lng, radius),
+  );
+
+  return { positions, indices };
 }
 
 // ---------------------------------------------------------------------------

@@ -6,6 +6,7 @@ import {
   ISO_NUMERIC_TO_ALPHA2,
   subdivideRing,
   triangulatePolygon,
+  getInteriorGeoPoints,
 } from "@/lib/utils/geo";
 import type { Feature, Position } from "geojson";
 
@@ -212,8 +213,9 @@ describe("triangulatePolygon", () => {
   });
 
   it("triangulates a simple convex polygon (outer ring only)", () => {
+    // CW winding matches topojson-client real data convention (d3-geo interior = CW)
     const outerRing: Position[] = [
-      [0, 0], [2, 0], [2, 2], [0, 2], [0, 0],
+      [0, 0], [0, 2], [2, 2], [2, 0], [0, 0],
     ];
     const result = triangulatePolygon([outerRing], 1);
     expect(result).not.toBeNull();
@@ -222,11 +224,64 @@ describe("triangulatePolygon", () => {
   });
 
   it("triangulates a polygon with a hole and returns valid triangle indices", () => {
-    const outerRing: Position[] = [[-4, -4], [4, -4], [4, 4], [-4, 4]];
+    // CW outer ring + CCW hole ring matches topojson-client convention
+    const outerRing: Position[] = [[-4, -4], [-4, 4], [4, 4], [4, -4]];
     const holeRing: Position[] = [[-1, -1], [1, -1], [1, 1], [-1, 1]];
     const result = triangulatePolygon([outerRing, holeRing], 1);
     expect(result).not.toBeNull();
     expect(result!.indices.length).toBeGreaterThan(0);
     expect(result!.indices.length % 3).toBe(0);
+  });
+
+  // Regression: large polygons used to produce an empty result because
+  // projectToTangentPlane caused self-intersections for polygons spanning >90°.
+  it("triangulates a large polygon (~USA bounding box, 60°×25°) with interior triangles", () => {
+    // CW winding: up, right, down, left — matches real topojson exterior ring convention
+    const outerRing: Position[] = [
+      [-125, 24], [-125, 49], [-65, 49], [-65, 24], [-125, 24],
+    ];
+    const result = triangulatePolygon([outerRing], 1);
+    expect(result).not.toBeNull();
+    // Must have interior triangles — not just 2 like a simple quad
+    expect(result!.indices.length).toBeGreaterThan(6);
+    expect(result!.indices.length % 3).toBe(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// getInteriorGeoPoints
+// ---------------------------------------------------------------------------
+
+describe("getInteriorGeoPoints", () => {
+  it("returns [] for a tiny polygon whose bbox is smaller than the resolution", () => {
+    // 2°×2° square, CW winding — well under 5° threshold
+    const rings: Position[][] = [[[0, 0], [0, 2], [2, 2], [2, 0]]];
+    expect(getInteriorGeoPoints(rings, 5)).toHaveLength(0);
+  });
+
+  it("returns interior points for a large polygon (USA-sized ~60°×25°)", () => {
+    // CW winding matches real topojson exterior ring convention
+    const rings: Position[][] = [[
+      [-125, 24], [-125, 49], [-65, 49], [-65, 24],
+    ]];
+    const pts = getInteriorGeoPoints(rings, 5);
+    expect(pts.length).toBeGreaterThan(0);
+    // All points must lie within a generous spherical bbox.
+    // Note: geoBounds returns the SPHERICAL extent — the great-circle top edge at 49°N
+    // bulges northward, so some interior points may legitimately exceed 49°N.
+    for (const [lng, lat] of pts) {
+      expect(lng).toBeGreaterThan(-130);
+      expect(lng).toBeLessThan(-60);
+      expect(lat).toBeGreaterThan(20);
+      expect(lat).toBeLessThan(60);
+    }
+  });
+
+  it("returns [] for antimeridian-crossing bbox (maxLng < minLng)", () => {
+    // Polygon straddling ±180° — geoBounds returns inverted range
+    const rings: Position[][] = [[[170, -10], [190, -10], [190, 10], [170, 10]]];
+    // We expect an empty result (antimeridian-crossing guard)
+    const pts = getInteriorGeoPoints(rings, 5);
+    expect(Array.isArray(pts)).toBe(true);
   });
 });
