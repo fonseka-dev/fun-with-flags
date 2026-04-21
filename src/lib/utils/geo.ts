@@ -216,18 +216,21 @@ export function triangulatePolygon(
 
   const subdivided = normalized.map(subdivideRing);
 
-  // Compute combined centroid for stable tangent-plane basis
-  let cx = 0, cy = 0, cz = 0, totalVerts = 0;
-  for (const ring of subdivided) {
-    for (const [lng, lat] of ring) {
-      const [x, y, z] = latLngToCartesian(lat, lng, radius);
-      cx += x; cy += y; cz += z;
-      totalVerts++;
-    }
+  // Compute centroid from the outer ring only (subdivided[0]).
+  // Including hole rings would bias the tangent-plane origin inward for
+  // enclave countries (e.g., South Africa ⊃ Lesotho, Italy ⊃ Vatican).
+  let cx = 0, cy = 0, cz = 0, outerCount = 0;
+  for (const [lng, lat] of subdivided[0]) {
+    const [x, y, z] = latLngToCartesian(lat, lng, radius);
+    cx += x; cy += y; cz += z;
+    outerCount++;
   }
-  if (totalVerts === 0) return null;
+  if (outerCount === 0) return null;
 
-  const centroid = new Vector3(cx / totalVerts, cy / totalVerts, cz / totalVerts);
+  let totalVerts = 0;
+  for (const ring of subdivided) totalVerts += ring.length;
+
+  const centroid = new Vector3(cx / outerCount, cy / outerCount, cz / outerCount);
 
   // Build flat 3D array and track where each hole ring starts
   const positions3D = new Float64Array(totalVerts * 3);
