@@ -7,6 +7,7 @@
 - **Repo:** https://github.com/fonseka-dev/fun-with-flags
 - **Deploy:** Vercel (auto-deploys `main`)
 - **Docs:** `docs/project_documentation.md`
+- **Maps documentation:** `docs/maps_documentation.md`
 
 ## Tech Stack
 
