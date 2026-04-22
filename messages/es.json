@@ -36,7 +36,7 @@
       "title": "Tu Viaje",
       "progress": "{discovered} / {total} Países Descubiertos",
       "highScore": "Puntuación récord: {score} pts",
-      "viewPassport": "Mi Libro de Aventuras"
+      "viewPassport": "Continuar Aventura"
     },
     "exploreCard": {
       "title": "Explora el Mundo",
