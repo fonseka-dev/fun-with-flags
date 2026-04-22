@@ -47,6 +47,7 @@ type AuthContextValue = {
   saveQuizResult: (score: number, insignias: InsigniaId[], correctInGame: number) => Promise<void>;
   completeOnboardingFlow: (nickname: string, avatarSeed: string) => Promise<void>;
   updateAvatarSeed: (avatarSeed: string) => Promise<void>;
+  lastGameInsignias: InsigniaId[];
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
@@ -61,6 +62,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [loading, setLoading] = useState(true);
+  const [lastGameInsignias, setLastGameInsignias] = useState<InsigniaId[]>([]);
 
   useEffect(() => {
     if (!isFirebaseConfigured()) {
@@ -158,6 +160,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     async (score: number, insignias: InsigniaId[], correctInGame: number) => {
       if (!user) return;
       await saveQuizResultToDb(user.uid, score, insignias, correctInGame);
+      setLastGameInsignias(insignias);
       setProgress((prev) => {
         if (!prev) return prev;
         const newHighScore = score > prev.quizHighScore ? score : prev.quizHighScore;
@@ -253,6 +256,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         saveQuizResult,
         completeOnboardingFlow,
         updateAvatarSeed,
+        lastGameInsignias,
       }}
     >
       {children}

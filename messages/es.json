@@ -143,7 +143,11 @@
     "flagsFound": "Banderas Encontradas",
     "highScore": "Puntuación Máxima",
     "gamesPlayed": "Juegos Jugados",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "badgesTitle": "Mis Insignias",
+    "noBadgesYet": "¡Juega para ganar insignias!",
+    "pointsToNextTier": "{xp} pts para {tier}",
+    "maxTierReached": "¡Rango máximo alcanzado!"
   },
   "leaderboard": {
     "title": "Clasificación Mundial",

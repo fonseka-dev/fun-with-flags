@@ -143,7 +143,11 @@
     "flagsFound": "Flags Found",
     "highScore": "High Score",
     "gamesPlayed": "Games Played",
-    "close": "Close"
+    "close": "Close",
+    "badgesTitle": "My Badges",
+    "noBadgesYet": "Play games to earn badges!",
+    "pointsToNextTier": "{xp} pts to {tier}",
+    "maxTierReached": "Maximum rank reached!"
   },
   "leaderboard": {
     "title": "World Rankings",
