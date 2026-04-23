@@ -29,7 +29,7 @@ function AppShellInner({
   return (
     <div className="min-h-screen bg-surface">
       <TopNav searchQuery={searchQuery} onSearchChange={onSearchChange} />
-      <div className="flex max-w-screen-2xl mx-auto">
+      <div className="flex items-start max-w-screen-2xl mx-auto">
         {showSidebar && (
           <SideNav
             activeContinent={activeContinent}

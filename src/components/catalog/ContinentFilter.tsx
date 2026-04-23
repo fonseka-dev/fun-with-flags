@@ -21,7 +21,7 @@ export function ContinentFilter({ active, onSelect }: ContinentFilterProps) {
             key={c.name}
             onClick={() => onSelect(isActive ? null : c.name)}
             className={`
-              flex items-center gap-3 mx-4 px-4 py-3 rounded-full font-semibold
+              group flex items-center gap-3 mx-4 px-4 py-3 rounded-full font-semibold
               transition-all duration-300
               ${
                 isActive
@@ -30,7 +30,7 @@ export function ContinentFilter({ active, onSelect }: ContinentFilterProps) {
               }
             `}
           >
-            <span className="material-symbols-outlined">{c.icon}</span>
+            <span className="material-symbols-outlined transition-transform duration-150 group-hover:scale-110">{c.icon}</span>
             {t(c.name)}
           </button>
         );
