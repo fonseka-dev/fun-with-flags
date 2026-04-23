@@ -27,18 +27,20 @@ function AppShellInner({
   const handleContinentSelect = onContinentSelect ?? setContinent;
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="h-screen flex flex-col bg-surface">
       <TopNav searchQuery={searchQuery} onSearchChange={onSearchChange} />
-      <div className="flex items-start max-w-screen-2xl mx-auto">
-        {showSidebar && (
-          <SideNav
-            activeContinent={activeContinent}
-            onSelectContinent={handleContinentSelect}
-          />
-        )}
-        <main className="flex-1 p-6 md:p-12 pb-24 lg:pb-12">
-          {children}
-        </main>
+      <div className="flex-1 overflow-hidden">
+        <div className="flex h-full max-w-screen-2xl mx-auto">
+          {showSidebar && (
+            <SideNav
+              activeContinent={activeContinent}
+              onSelectContinent={handleContinentSelect}
+            />
+          )}
+          <main className="flex-1 overflow-y-auto scrollbar-hidden p-6 md:p-12 pb-24 lg:pb-12">
+            {children}
+          </main>
+        </div>
       </div>
       <BottomNav />
     </div>

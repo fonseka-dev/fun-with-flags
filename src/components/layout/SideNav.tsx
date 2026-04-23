@@ -18,7 +18,7 @@ export function SideNav({
   const t = useTranslations("sidebar");
 
   return (
-    <aside className="hidden lg:flex flex-col w-72 py-8 gap-2 bg-surface-container-lowest shadow-ambient rounded-xl sticky top-16 self-start h-[calc(100vh-4rem)] overflow-y-auto mt-2 mb-2">
+    <aside className="hidden lg:flex flex-col w-72 py-8 gap-2 bg-surface-container-lowest shadow-ambient rounded-xl overflow-y-auto my-4">
       <div className="px-8 mb-6">
         <h2 className="text-xl font-bold text-primary">{t("title")}</h2>
         <p className="text-on-surface-variant text-sm font-semibold">
