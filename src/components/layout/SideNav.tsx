@@ -18,7 +18,7 @@ export function SideNav({
   const t = useTranslations("sidebar");
 
   return (
-    <aside className="hidden lg:flex flex-col w-72 py-8 gap-2 bg-surface-container-lowest shadow-ambient rounded-r-xl">
+    <aside className="hidden lg:flex flex-col w-72 py-8 gap-2 bg-surface-container-lowest shadow-ambient rounded-xl sticky top-16 self-start h-[calc(100vh-4rem)] overflow-y-auto mt-2 mb-2">
       <div className="px-8 mb-6">
         <h2 className="text-xl font-bold text-primary">{t("title")}</h2>
         <p className="text-on-surface-variant text-sm font-semibold">
@@ -29,10 +29,10 @@ export function SideNav({
       <ContinentFilter active={activeContinent} onSelect={onSelectContinent} />
 
       <div className="mt-auto px-6 pb-8">
-        <Link href="/games/guess-the-flag">
+        <Link href="/games/guess-the-flag" className="group/cta">
           <Button variant="tertiary" fullWidth>
             <span className="flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined">auto_awesome</span>
+              <span className="material-symbols-outlined transition-transform duration-150 group-hover/cta:scale-110">auto_awesome</span>
               {t("dailyChallenge")}
             </span>
           </Button>
