@@ -195,7 +195,7 @@ function DashboardContent() {
             </div>
             <div className="absolute bottom-0 right-0 w-48 h-40 overflow-hidden rounded-tl-xl pointer-events-none">
               <Image
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1674362217324-53167c4ad647?auto=format&fit=crop&w=400&q=80"
                 alt=""
                 fill
                 className="object-cover opacity-80"
