@@ -34,7 +34,7 @@
     },
     "journey": {
       "title": "Your Journey",
-      "progress": "{discovered} / {total} Countries Found",
+      "progress": "{discovered} / {total} Nations & Territories Found",
       "highScore": "Quiz High Score: {score} pts",
       "viewPassport": "Continue Adventure"
     },
