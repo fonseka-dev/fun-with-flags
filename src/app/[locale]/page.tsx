@@ -71,18 +71,12 @@ function DashboardContent() {
             href="/map"
             className="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden group cursor-pointer shadow-ambient hover:shadow-ambient-lg transition-bounce flex flex-col"
           >
-            <div className="p-8 pb-0">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="text-3xl font-bold mb-2">{t("mapCard.title")}</h3>
-                  <p className="text-on-surface-variant">
-                    {t("mapCard.subtitle")}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="relative mt-8 h-64 w-full overflow-hidden">
+            <div className="relative flex-1 min-h-64 w-full overflow-hidden">
               <MiniMap />
+              <div className="absolute top-0 left-0 right-0 z-10 p-6 bg-gradient-to-b from-black/50 to-transparent">
+                <h3 className="text-3xl font-bold text-white mb-1">{t("mapCard.title")}</h3>
+                <p className="text-white/75 text-sm">{t("mapCard.subtitle")}</p>
+              </div>
             </div>
           </Link>
 
@@ -167,14 +161,14 @@ function DashboardContent() {
                 auto_stories
               </span>
             </div>
-            <div className="absolute bottom-0 right-0 grid grid-cols-4 gap-1 p-2 pointer-events-none select-none">
-              {["br","in","jp","ca","za","ng","au","mx","fr","ua","gb","ar"].map((code) => (
+            <div className="absolute bottom-0 right-0 grid grid-cols-3 gap-1.5 p-3 pointer-events-none select-none">
+              {["br","in","jp","za","fr","au"].map((code) => (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   key={code}
-                  src={`https://flagcdn.com/w80/${code}.png`}
+                  src={`https://flagcdn.com/w160/${code}.png`}
                   alt=""
-                  className="w-10 h-7 object-cover rounded shadow-sm"
+                  className="w-20 h-14 object-cover rounded-md shadow-md"
                 />
               ))}
             </div>
@@ -201,7 +195,7 @@ function DashboardContent() {
             </div>
             <div className="absolute bottom-0 right-0 w-48 h-40 overflow-hidden rounded-tl-xl pointer-events-none">
               <Image
-                src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=400&q=80"
+                src="https://images.unsplash.com/photo-1674362217324-53167c4ad647?auto=format&fit=crop&w=400&q=80"
                 alt=""
                 fill
                 className="object-cover opacity-80"

@@ -25,8 +25,8 @@ const WIDTH = 568;
 const HEIGHT = 256;
 
 const projection = geoMercator()
-  .center([15, 52])
-  .scale(520)
+  .center([-3.7, 40.4])
+  .scale(680)
   .translate([WIDTH / 2, HEIGHT / 2]);
 
 const pathGenerator = geoPath(projection);
