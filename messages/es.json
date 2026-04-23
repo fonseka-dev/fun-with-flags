@@ -34,7 +34,7 @@
     },
     "journey": {
       "title": "Tu Viaje",
-      "progress": "{discovered} / {total} Países Descubiertos",
+      "progress": "{discovered} / {total} Naciones y Territorios",
       "highScore": "Puntuación récord: {score} pts",
       "viewPassport": "Continuar Aventura"
     },

@@ -1,12 +1,14 @@
 "use client";
 
 import { useMemo, Suspense } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import { AppShell } from "@/components/layout/AppShell";
 import { Continent } from "@/data/types";
 import { useCountries } from "@/lib/providers/CountriesProvider";
 import { useAuth } from "@/lib/providers/AuthProvider";
+import { MiniMap } from "@/components/map/MiniMap";
 
 // Computed once at module load — stable within a session, changes on next page load each day
 const _now = Date.now();
@@ -77,49 +79,10 @@ function DashboardContent() {
                     {t("mapCard.subtitle")}
                   </p>
                 </div>
-                <div className="bg-primary-container p-4 rounded-full text-on-primary-container">
-                  <span
-                    className="material-symbols-outlined text-4xl"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    explore
-                  </span>
-                </div>
               </div>
             </div>
-            <div className="relative mt-8 h-64 w-full overflow-hidden bg-gradient-to-br from-surface-container to-primary-container">
-              <svg
-                className="absolute inset-0 w-full h-full"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="1.5" fill="#0052d0" opacity="0.25" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#dot-grid)" />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="material-symbols-outlined text-primary opacity-20 select-none"
-                  style={{ fontSize: "9rem", fontVariationSettings: "'FILL' 1" }}
-                >
-                  public
-                </span>
-              </div>
-              <span
-                className="material-symbols-outlined absolute top-4 right-10 text-primary opacity-10 select-none pointer-events-none"
-                style={{ fontSize: "4rem" }}
-              >
-                travel_explore
-              </span>
-              <span
-                className="material-symbols-outlined absolute bottom-4 left-8 text-primary opacity-10 select-none pointer-events-none"
-                style={{ fontSize: "3rem" }}
-              >
-                location_on
-              </span>
+            <div className="relative mt-8 h-64 w-full overflow-hidden">
+              <MiniMap />
             </div>
           </Link>
 
@@ -204,18 +167,17 @@ function DashboardContent() {
                 auto_stories
               </span>
             </div>
-            <span
-              className="material-symbols-outlined absolute -bottom-6 -right-6 text-primary opacity-[0.08] select-none pointer-events-none"
-              style={{ fontSize: "13rem" }}
-            >
-              luggage
-            </span>
-            <span
-              className="material-symbols-outlined absolute top-6 right-10 text-primary opacity-[0.06] select-none pointer-events-none"
-              style={{ fontSize: "5rem" }}
-            >
-              travel_explore
-            </span>
+            <div className="absolute bottom-0 right-0 grid grid-cols-4 gap-1 p-2 pointer-events-none select-none">
+              {["br","in","jp","ca","za","ng","au","mx","fr","ua","gb","ar"].map((code) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={code}
+                  src={`https://flagcdn.com/w80/${code}.png`}
+                  alt=""
+                  className="w-10 h-7 object-cover rounded shadow-sm"
+                />
+              ))}
+            </div>
           </Link>
 
           {/* Play & Learn */}
@@ -237,18 +199,15 @@ function DashboardContent() {
                 videogame_asset
               </span>
             </div>
-            <span
-              className="material-symbols-outlined absolute -bottom-6 -right-6 text-secondary opacity-[0.08] select-none pointer-events-none"
-              style={{ fontSize: "13rem" }}
-            >
-              sports_esports
-            </span>
-            <span
-              className="material-symbols-outlined absolute top-6 right-10 text-secondary opacity-[0.06] select-none pointer-events-none"
-              style={{ fontSize: "5rem" }}
-            >
-              emoji_events
-            </span>
+            <div className="absolute bottom-0 right-0 w-48 h-40 overflow-hidden rounded-tl-xl pointer-events-none">
+              <Image
+                src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?auto=format&fit=crop&w=400&q=80"
+                alt=""
+                fill
+                className="object-cover opacity-80"
+                sizes="192px"
+              />
+            </div>
           </Link>
         </div>
 
