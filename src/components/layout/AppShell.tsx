@@ -37,7 +37,7 @@ function AppShellInner({
               onSelectContinent={handleContinentSelect}
             />
           )}
-          <main className="flex-1 overflow-y-auto p-6 md:p-12 pb-24 lg:pb-12">
+          <main className="flex-1 overflow-y-auto scrollbar-hidden p-6 md:p-12 pb-24 lg:pb-12">
             {children}
           </main>
         </div>

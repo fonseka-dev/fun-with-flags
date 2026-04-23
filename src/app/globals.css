@@ -124,4 +124,13 @@
     transition-timing-function: var(--ease-back-out);
     transition-duration: 200ms;
   }
+
+  .scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
 }
