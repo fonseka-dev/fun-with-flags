@@ -2,10 +2,12 @@
 
 import { Suspense, lazy, useState, useRef, useEffect, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
 import { useLocale, useTranslations } from "next-intl";
 import { GlobeControls } from "./GlobeControls";
 import { CountryPopup } from "./CountryPopup";
 import { countriesData } from "@/data/countries";
+import { useGlobeData } from "@/lib/hooks/useGlobeData";
 import type { Locale } from "@/data/types";
 import type { RootState } from "@react-three/fiber";
 
@@ -22,6 +24,7 @@ type GlobeProps = {
 };
 
 export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: GlobeProps) {
+  const { countries, loading, upgrading } = useGlobeData();
   const [showLabels, setShowLabels] = useState(false);
   const [isDaylight, setIsDaylight] = useState(false);
   const [autoRotate, setAutoRotate] = useState(true);
@@ -133,8 +136,16 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         onCreated={handleCreated}
         onPointerMissed={() => closePopupRef.current?.()}
       >
-        <Suspense fallback={null}>
+        <Suspense fallback={
+          <Html center>
+            <span className="material-symbols-outlined animate-spin text-5xl text-white/60">
+              public
+            </span>
+          </Html>
+        }>
           <GlobeScene
+            countries={countries}
+            upgrading={upgrading}
             discoveredSlugs={discoveredSlugs}
             onCountrySelect={onCountrySelect}
             showLabels={showLabels}
@@ -156,6 +167,13 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
           />
         </Suspense>
       </Canvas>
+      {loading && (
+        <div className="pointer-events-none absolute inset-0 flex items-end justify-center pb-12">
+          <span className="rounded-full bg-black/40 px-4 py-2 text-sm text-white/80 backdrop-blur-sm">
+            {t("loadingCountries")}
+          </span>
+        </div>
+      )}
       {popupData && (
         <div className="pointer-events-none absolute left-6 top-1/2 z-30 -translate-y-1/2">
           <div className="pointer-events-auto">
