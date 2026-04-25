@@ -52,7 +52,7 @@
   --color-inverse-on-surface: #969ac6;
   --color-inverse-primary: #5e8bff;
 
-  --color-background: #0052CC;
+  --color-background: #0044BB;
 
   /* Continent accent colors */
   --color-continent-africa: #176a21;
@@ -80,9 +80,15 @@
 }
 
 @layer base {
+  html {
+    min-height: 100%;
+    background: radial-gradient(ellipse at 40% 35%, #4499FF 0%, #1A67F5 40%, #0044BB 100%) fixed;
+    background-color: #0044BB;
+  }
+
   body {
-    background: radial-gradient(ellipse at center, #3385FF 0%, #0052CC 100%);
-    background-attachment: fixed;
+    min-height: 100vh;
+    background: transparent;
     color: var(--color-on-surface);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
