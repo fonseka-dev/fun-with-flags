@@ -19,14 +19,14 @@
   --color-error: #b31b25;
   --color-error-container: #fb5151;
 
-  --color-surface: #f8f5ff;
-  --color-surface-dim: #ced1ff;
+  --color-surface: #D4DFFF;
+  --color-surface-dim: #B0C5FF;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f1efff;
-  --color-surface-container: #e6e6ff;
-  --color-surface-container-high: #dfe0ff;
-  --color-surface-container-highest: #d8daff;
-  --color-surface-variant: #d8daff;
+  --color-surface-container-low: #EEF5FF;
+  --color-surface-container: #E2EEFF;
+  --color-surface-container-high: #D6E6FF;
+  --color-surface-container-highest: #C8DBFF;
+  --color-surface-variant: #C8DBFF;
 
   --color-on-surface: #272b51;
   --color-on-surface-variant: #545881;
@@ -52,7 +52,7 @@
   --color-inverse-on-surface: #969ac6;
   --color-inverse-primary: #5e8bff;
 
-  --color-background: #f8f5ff;
+  --color-background: #D4DFFF;
 
   /* Continent accent colors */
   --color-continent-africa: #176a21;
@@ -81,7 +81,9 @@
 
 @layer base {
   body {
-    background-color: var(--color-background);
+    background-color: var(--color-background); /* solid fallback */
+    background-image: radial-gradient(ellipse at 60% 20%, #EAF3FF 0%, #CCDEFF 55%, #BDD5FF 100%);
+    background-attachment: fixed;
     color: var(--color-on-surface);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -111,7 +113,7 @@
   }
 
   .glass {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(24px);
     box-shadow: var(--shadow-ambient);
   }
