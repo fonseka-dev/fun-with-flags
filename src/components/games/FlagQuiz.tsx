@@ -61,7 +61,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
     const correctInGame = Math.round(state.score / POINTS_PER_CORRECT);
     const multiplier = SCORE_MULTIPLIERS[state.difficulty];
     const computed = state.score * multiplier;
-    const isRecord = computed > 0 && computed > (progress?.quizHighScore ?? 0);
+    const isRecord = !!progress && computed > 0 && computed > (progress.quizHighScore ?? 0);
     const gameResult = {
       difficulty: state.difficulty,
       livesRemaining: state.lives,
