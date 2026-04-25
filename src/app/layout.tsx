@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthProvider } from "@/lib/providers/AuthProvider";
 
 export const metadata: Metadata = {
   title: "Explorer's Atlas",
@@ -11,5 +12,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return <AuthProvider>{children}</AuthProvider>;
 }
