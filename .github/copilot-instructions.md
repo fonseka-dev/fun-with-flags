@@ -87,18 +87,30 @@ CI runs lint → test → build on every PR targeting `main`. All three must pas
 - **The user always stays on `main`** — all development happens in isolated git worktrees under `.worktrees/`.
   Every new feature, bug fix, or chore gets its own worktree + branch created automatically. The user never needs to switch branches manually.
 
+### Worktree Environment Setup
+
+After creating a worktree, symlink `.env.local` from the project root so the worktree can access environment variables for local testing:
+
+```bash
+ln -s /Users/george/dev/FunWithFlags/.env.local \
+      /Users/george/dev/FunWithFlags/.worktrees/<branch-name>/.env.local
+```
+
+Replace `<branch-name>` with the actual branch name (e.g., `feat/dashboard-visual-refresh`).
+
 ### Post-Merge Cleanup (REQUIRED after every PR merge)
 
 After merging a PR, always run these steps and confirm in chat:
 
 ```bash
-git worktree remove .worktrees/<branch-name>   # remove local worktree
+rm /Users/george/dev/FunWithFlags/.worktrees/<branch-name>/.env.local  # remove .env.local symlink
+git worktree remove .worktrees/<branch-name>                            # remove local worktree
 git checkout main
-git pull                                        # bring main up to date
-npm test                                        # confirm all tests still pass
+git pull                                                                  # bring main up to date
+npm test                                                                  # confirm all tests still pass
 ```
 
-Then report: "Merged. `main` is up to date. Tests passing (N/N)."
+Then report the worktree path and test status: "Merged. Worktree: `.worktrees/<branch-name>`. `main` is up to date. Tests passing (N/N)."
 
 ## GitHub Project — Work Item Management
 
@@ -122,9 +134,21 @@ All work tracked in the **Fun-With-Flags** GitHub Project:
 2. If not, create one with `gh issue create` and add it to the project.
 3. Set Status → `In progress` on the project item.
 4. Create a worktree + branch (`feat/<topic>`, `fix/<topic>`, `chore/<topic>`).
-5. Only then begin implementation.
+5. Symlink `.env.local` to the worktree (see "Worktree Environment Setup" above).
+6. Only then begin implementation.
 
 This applies to every interaction — new features, bug fixes, refactors, chores, and one-liners. No exceptions. If a user asks a purely informational question with no code change, skip this checklist.
+
+### PR Creation
+
+When finishing an implementation and creating a PR, always print the **relative worktree path** in the chat so you can test it locally:
+
+```
+Worktree: .worktrees/feat/dashboard-visual-refresh
+PR: https://github.com/fonseka-dev/fun-with-flags/pull/XX
+```
+
+You can now run `npm run dev` in the worktree and test the changes before merge.
 
 ### Status Flow
 
