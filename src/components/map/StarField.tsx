@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { Stars } from "@react-three/drei";
 
-export function StarField() {
+function StarFieldImpl() {
   return (
     <Stars
       radius={100}
@@ -13,3 +14,4 @@ export function StarField() {
     />
   );
 }
+export const StarField = memo(StarFieldImpl);

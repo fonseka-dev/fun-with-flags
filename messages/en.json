@@ -207,6 +207,7 @@
     "disableHoverPreview": "Disable hover preview",
     "geolocate": "Find my location",
     "reset": "Reset view",
-    "geolocationError": "Could not detect your location"
+    "geolocationError": "Could not detect your location",
+    "loadingCountries": "Loading countries…"
   }
 }

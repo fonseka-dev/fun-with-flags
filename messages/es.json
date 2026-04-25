@@ -207,6 +207,7 @@
     "disableHoverPreview": "Desactivar vista previa al pasar",
     "geolocate": "Encontrar mi ubicación",
     "reset": "Restablecer vista",
-    "geolocationError": "No se pudo detectar tu ubicación"
+    "geolocationError": "No se pudo detectar tu ubicación",
+    "loadingCountries": "Cargando países…"
   }
 }

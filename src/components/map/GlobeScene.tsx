@@ -1,14 +1,16 @@
-import { useRef, type RefObject } from "react";
+import { memo, useCallback, useRef, type RefObject } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { StarField } from "./StarField";
 import { GlobeSphere } from "./GlobeSphere";
 import { CountryMeshes } from "./CountryMeshes";
 import { CountryLabels } from "./CountryLabels";
-import { useGlobeData } from "@/lib/hooks/useGlobeData";
+import type { ProcessedCountry } from "@/lib/hooks/useGlobeData";
 import type * as THREE from "three";
 import type { Locale } from "@/data/types";
 
 type GlobeSceneProps = {
+  countries: ProcessedCountry[];
+  upgrading: boolean;
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
   showLabels: boolean;
@@ -24,14 +26,24 @@ type GlobeSceneProps = {
   setSelectedSlug: (slug: string | null) => void;
 };
 
-export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode, selectedSlug, setSelectedSlug }: GlobeSceneProps) {
-  const { countries } = useGlobeData();
+function GlobeSceneImpl({ countries, upgrading, discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode, selectedSlug, setSelectedSlug }: GlobeSceneProps) {
   const sphereRef = useRef<THREE.Mesh>(null);
 
-  const handleCountrySelect = (slug: string) => {
-    setSelectedSlug(slug);
-    onCountrySelect?.(slug);
-  };
+  const handleCountrySelect = useCallback(
+    (slug: string) => {
+      setSelectedSlug(slug);
+      onCountrySelect?.(slug);
+    },
+    [setSelectedSlug, onCountrySelect],
+  );
+
+  const handleCountryHover = useCallback(
+    (slug: string | null) => {
+      setSelectedSlug(slug);
+      if (slug) onCountrySelect?.(slug);
+    },
+    [setSelectedSlug, onCountrySelect],
+  );
 
   return (
     <>
@@ -41,14 +53,12 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, local
       <GlobeSphere ref={sphereRef} mode={globeMode} />
       <CountryMeshes
         countries={countries}
+        upgrading={upgrading}
         discoveredSlugs={discoveredSlugs}
         onCountrySelect={handleCountrySelect}
         mode={globeMode}
         hoverMode={hoverMode}
-        onCountryHover={(slug) => {
-          setSelectedSlug(slug);
-          if (slug) onCountrySelect?.(slug);
-        }}
+        onCountryHover={handleCountryHover}
       />
       <CountryLabels countries={countries} visible={showLabels} locale={locale} sphereRef={sphereRef} />
       <OrbitControls
@@ -65,3 +75,4 @@ export function GlobeScene({ discoveredSlugs, onCountrySelect, showLabels, local
     </>
   );
 }
+export const GlobeScene = memo(GlobeSceneImpl);

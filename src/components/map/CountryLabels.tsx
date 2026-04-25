@@ -1,4 +1,4 @@
-import { useMemo, type RefObject } from "react";
+import { memo, useMemo, type RefObject } from "react";
 import { Html } from "@react-three/drei";
 import type { ProcessedCountry } from "@/lib/hooks/useGlobeData";
 import { countriesData } from "@/data/countries";
@@ -12,7 +12,7 @@ type CountryLabelsProps = {
   sphereRef: RefObject<THREE.Mesh | null>;
 };
 
-export function CountryLabels({ countries, visible, locale, sphereRef }: CountryLabelsProps) {
+function CountryLabelsImpl({ countries, visible, locale, sphereRef }: CountryLabelsProps) {
 
   const nameBySlug = useMemo(
     () => new Map(countriesData.map((c) => [c.slug, c.translations[locale].name])),
@@ -43,3 +43,4 @@ export function CountryLabels({ countries, visible, locale, sphereRef }: Country
     </>
   );
 }
+export const CountryLabels = memo(CountryLabelsImpl);
