@@ -9,8 +9,9 @@ import {
   getInteriorGeoPoints,
   loadWorldTopology,
   _resetTopologyCacheForTesting,
+  buildCountryGeometryData,
 } from "@/lib/utils/geo";
-import type { Feature, Position } from "geojson";
+import type { Feature, Polygon, Position } from "geojson";
 
 // ---------------------------------------------------------------------------
 // latLngToCartesian
@@ -356,5 +357,52 @@ describe("loadWorldTopology", () => {
     expect(fetchSpy).toHaveBeenCalledTimes(1);
     expect(result2).toBe(result1);
     expect(result3).toBe(result1);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildCountryGeometryData
+// ---------------------------------------------------------------------------
+
+describe("buildCountryGeometryData", () => {
+  it("returns positions and indices arrays for a simple polygon", () => {
+    const feature: Feature<Polygon> = {
+      type: "Feature",
+      id: "840",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          [
+            [-5, -5],
+            [5, -5],
+            [5, 5],
+            [-5, 5],
+            [-5, -5],
+          ],
+        ],
+      },
+      properties: {},
+    };
+
+    const result = buildCountryGeometryData(feature, 1.0);
+    expect(result).not.toBeNull();
+    expect(result!.positions.length).toBeGreaterThan(0);
+    expect(result!.positions.length % 3).toBe(0);
+    expect(result!.indices.length).toBeGreaterThan(0);
+    expect(result!.indices.length % 3).toBe(0);
+  });
+
+  it("returns null for a feature with empty geometry", () => {
+    const feature: Feature<Polygon> = {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [[]],
+      },
+      properties: {},
+    };
+
+    const result = buildCountryGeometryData(feature, 1.0);
+    expect(result).toBeNull();
   });
 });

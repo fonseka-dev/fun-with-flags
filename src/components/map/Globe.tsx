@@ -24,7 +24,7 @@ type GlobeProps = {
 };
 
 export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: GlobeProps) {
-  const { countries, loading, upgrading } = useGlobeData();
+  const { countries, loading, upgrading, loadedCount, totalToLoad } = useGlobeData();
   const [showLabels, setShowLabels] = useState(false);
   const [isDaylight, setIsDaylight] = useState(false);
   const [autoRotate, setAutoRotate] = useState(true);
@@ -179,11 +179,10 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
           />
         </Suspense>
       </Canvas>
-      {loading && (
-        <div className="pointer-events-none absolute inset-0 flex items-end justify-center pb-12">
-          <span className="rounded-full bg-black/40 px-4 py-2 text-sm text-white/80 backdrop-blur-sm">
-            {t("loadingCountries")}
-          </span>
+      {(loading || upgrading) && (
+        <div className="pointer-events-none absolute right-4 top-4 flex items-center gap-2 rounded-full bg-black/40 px-3 py-1.5 text-sm text-white/80 backdrop-blur-sm">
+          <span className="material-symbols-outlined animate-spin text-base">public</span>
+          {t("loadingMap", { loaded: loadedCount, total: totalToLoad })}
         </div>
       )}
       {popupData && (

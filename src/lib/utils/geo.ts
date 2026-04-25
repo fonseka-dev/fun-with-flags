@@ -344,13 +344,13 @@ export function triangulatePolygon(
 // ---------------------------------------------------------------------------
 
 /**
- * Convert a GeoJSON Feature (Polygon or MultiPolygon) to a Three.js
- * BufferGeometry with triangulated faces on a sphere of the given radius.
+ * Triangulate a GeoJSON Feature into raw position and index arrays.
+ * Does not create any Three.js objects — safe to call from Node.js build scripts.
  */
-export function buildCountryGeometry(
+export function buildCountryGeometryData(
   feature: Feature<Polygon | MultiPolygon>,
   radius: number,
-): BufferGeometry | null {
+): { positions: number[]; indices: number[] } | null {
   const polygons: Position[][][] =
     feature.geometry.type === "MultiPolygon"
       ? feature.geometry.coordinates
@@ -373,12 +373,26 @@ export function buildCountryGeometry(
 
   if (allPositions.length === 0) return null;
 
+  return { positions: allPositions, indices: allIndices };
+}
+
+/**
+ * Convert a GeoJSON Feature (Polygon or MultiPolygon) to a Three.js
+ * BufferGeometry with triangulated faces on a sphere of the given radius.
+ */
+export function buildCountryGeometry(
+  feature: Feature<Polygon | MultiPolygon>,
+  radius: number,
+): BufferGeometry | null {
+  const data = buildCountryGeometryData(feature, radius);
+  if (!data) return null;
+
   const geometry = new BufferGeometry();
   geometry.setAttribute(
     "position",
-    new Float32BufferAttribute(new Float32Array(allPositions), 3),
+    new Float32BufferAttribute(new Float32Array(data.positions), 3),
   );
-  geometry.setIndex(new BufferAttribute(new Uint32Array(allIndices), 1));
+  geometry.setIndex(new BufferAttribute(new Uint32Array(data.indices), 1));
   geometry.computeVertexNormals();
 
   return geometry;
