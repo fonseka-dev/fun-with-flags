@@ -668,3 +668,40 @@ export async function loadWorldTopology(): Promise<
   _topologyCache = features;
   return _topologyCache;
 }
+
+// ---------------------------------------------------------------------------
+// Load low-resolution world topology
+// ---------------------------------------------------------------------------
+
+/**
+ * Fetch the Natural Earth world topology at low resolution for fast initial
+ * rendering. Used as stage 1 in the progressive LOD loading strategy.
+ *
+ * Resolution: world-110m.json (~100 KB, 110 km coastline tolerance)
+ * This is the fast-loading counterpart to loadWorldTopology() (world-50m.json).
+ */
+let _lowResTopologyCache: Feature<Polygon | MultiPolygon>[] | null = null;
+
+/** @internal Test-only — resets the module-level low-res topology cache */
+export function _resetLowResTopologyCacheForTesting(): void {
+  _lowResTopologyCache = null;
+}
+
+export async function loadLowResTopology(): Promise<
+  Feature<Polygon | MultiPolygon>[]
+> {
+  if (_lowResTopologyCache) return _lowResTopologyCache;
+
+  const response = await fetch("/geo/world-110m.json");
+  const topology = (await response.json()) as Topology<{
+    countries: GeometryCollection;
+  }>;
+
+  const { features } = topojson.feature(
+    topology,
+    topology.objects.countries,
+  ) as unknown as { features: Feature<Polygon | MultiPolygon>[] };
+
+  _lowResTopologyCache = features;
+  return _lowResTopologyCache;
+}
