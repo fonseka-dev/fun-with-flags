@@ -76,12 +76,6 @@ export function PodiumSection({ entries }: PodiumSectionProps) {
             key={entry.uid}
             className={`flex flex-col items-center w-full ${orderClass} ${isFirst ? "md:w-56 z-10" : "md:w-48"}`}
           >
-            {/* Crown for 1st place */}
-            {isFirst && (
-              <div className="text-3xl mb-1 text-center" aria-hidden="true">
-                👑
-              </div>
-            )}
             {/* Avatar */}
             <div className="mb-4 relative md:animate-bounce" style={{ animationDelay }}>
               <div
