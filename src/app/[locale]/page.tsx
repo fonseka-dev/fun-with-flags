@@ -59,7 +59,7 @@ function DashboardContent() {
               {isAnonymous ? t("adventurer") : `${nickname}!`}
             </span>
           </h1>
-          <p className="text-xl text-on-surface-variant max-w-2xl leading-[1.6]">
+          <p className="text-xl text-white/80 max-w-2xl leading-[1.6]">
             {t("subtitle")}
           </p>
         </header>

@@ -95,10 +95,10 @@ export function WorldRankingsContent() {
     <div className="max-w-4xl mx-auto">
       {/* Title */}
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-black text-on-surface mb-4 tracking-tight">
+        <h1 className="text-5xl font-black text-white mb-4 tracking-tight">
           {t("title")}
         </h1>
-        <p className="text-on-surface-variant text-lg">{t("subtitle")}</p>
+        <p className="text-white/80 text-lg">{t("subtitle")}</p>
       </div>
 
       {/* Top 3 Podium */}
@@ -126,7 +126,7 @@ export function WorldRankingsContent() {
       <div className="mt-16 text-center">
         <Link
           href="/games/guess-the-flag"
-          className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-on-primary rounded-full font-bold text-base shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
+          className="inline-flex items-center gap-2 px-10 py-4 bg-white text-primary rounded-full font-bold text-base shadow-xl hover:scale-105 active:scale-95 transition-all"
         >
           <span
             className="material-symbols-outlined"

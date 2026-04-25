@@ -120,13 +120,13 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
         <h2 className="text-4xl font-extrabold text-on-background text-center">
           {t("title")}
         </h2>
-        <p className="text-on-surface-variant text-lg text-center max-w-md leading-[1.6]">
+        <p className="text-white/80 text-lg text-center max-w-md leading-[1.6]">
           {t("subtitle")}
         </p>
 
         {/* Difficulty picker */}
         <div className="flex flex-col items-center gap-3 w-full max-w-sm">
-          <p className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+          <p className="text-sm font-bold uppercase tracking-widest text-white/70">
             {t("selectDifficulty")}
           </p>
           <div className="flex gap-3 w-full">
@@ -153,7 +153,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           </div>
         </div>
 
-        <Button variant="primary" onClick={startGame}>
+        <Button variant="inverted" onClick={startGame}>
           <span className="flex items-center gap-2">
             <span className="material-symbols-outlined">play_arrow</span>
             {t("startGame")}

@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "tertiary" | "ghost";
+type ButtonVariant = "primary" | "inverted" | "secondary" | "tertiary" | "ghost";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
@@ -10,6 +10,8 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "gradient-primary text-on-primary shadow-ambient hover:shadow-ambient-lg",
+  inverted:
+    "bg-white text-primary shadow-ambient hover:bg-surface-container-low hover:shadow-ambient-lg",
   secondary:
     "bg-secondary text-on-secondary shadow-ambient hover:bg-secondary-dim",
   tertiary:
