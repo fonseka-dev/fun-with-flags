@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "precompute": "tsx scripts/precompute-globe-geometry.ts"
   },
   "dependencies": {
     "@opentelemetry/api": "^1.9.1",
