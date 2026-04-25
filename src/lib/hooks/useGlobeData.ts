@@ -61,7 +61,7 @@ function processFeatures(
 
 async function loadPrecomputedGeometry(
   res: "lo" | "hi",
-  onProgress: (n: number) => void,
+  onProgress: (n: number, total: number) => void,
 ): Promise<ProcessedCountry[]> {
   const response = await fetch(`/geo/globe-geometry-${res}.json`);
   if (!response.ok) {
@@ -85,7 +85,7 @@ async function loadPrecomputedGeometry(
       centroid: item.centroid,
       geometry,
     });
-    onProgress(i + 1);
+    onProgress(i + 1, data.length);
   }
   return result;
 }
@@ -107,6 +107,7 @@ export function useGlobeData() {
   const [loading, setLoading] = useState(!_loCache && !_hiCache);
   const [upgrading, setUpgrading] = useState(!!_loCache && !_hiCache);
   const [loadedCount, setLoadedCount] = useState(0);
+  const [totalToLoad, setTotalToLoad] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -115,9 +116,8 @@ export function useGlobeData() {
       // Stage 1: low-res
       if (!_loCache) {
         try {
-          setLoadedCount(0);
-          _loCache = await loadPrecomputedGeometry("lo", (n) => {
-            if (!cancelled) setLoadedCount(n);
+          _loCache = await loadPrecomputedGeometry("lo", (n, total) => {
+            if (!cancelled) { setLoadedCount(n); setTotalToLoad(total); }
           });
         } catch {
           // Fallback: triangulate on-the-fly (local dev without precomputed files)
@@ -134,8 +134,8 @@ export function useGlobeData() {
       // Stage 2: hi-res
       if (!_hiCache) {
         try {
-          _hiCache = await loadPrecomputedGeometry("hi", (n) => {
-            if (!cancelled) setLoadedCount(n);
+          _hiCache = await loadPrecomputedGeometry("hi", (n, total) => {
+            if (!cancelled) { setLoadedCount(n); setTotalToLoad(total); }
           });
         } catch {
           // Fallback: triangulate on-the-fly
@@ -159,5 +159,5 @@ export function useGlobeData() {
     };
   }, []);
 
-  return { countries, loading, upgrading, loadedCount };
+  return { countries, loading, upgrading, loadedCount, totalToLoad };
 }

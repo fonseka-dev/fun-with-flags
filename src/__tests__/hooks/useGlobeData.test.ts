@@ -147,7 +147,7 @@ describe("useGlobeData", () => {
     expect(global.fetch).not.toHaveBeenCalled();
   });
 
-  it("loadedCount increases as countries are loaded", async () => {
+  it("loadedCount and totalToLoad reflect progress correctly", async () => {
     const twoCountries = [
       mockSerializedCountry,
       { ...mockSerializedCountry, slug: "test2", flagCode: "gb" },
@@ -160,8 +160,49 @@ describe("useGlobeData", () => {
       expect(result.current.countries.length).toBeGreaterThan(0);
     });
 
-    // After lo stage completes, loadedCount should be 2
     expect(result.current.loadedCount).toBe(2);
+    expect(result.current.totalToLoad).toBe(2);
+  });
+
+  it("falls back to hi-res topology when hi-res precomputed file is unavailable", async () => {
+    // lo-res fetch succeeds, hi-res fetch fails
+    global.fetch = vi.fn().mockImplementation((url: string) => {
+      if (url.includes("globe-geometry-lo")) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve([mockSerializedCountry]),
+        });
+      }
+      // hi-res fails
+      return Promise.resolve({ ok: false, json: () => Promise.resolve([]) });
+    });
+
+    const mockFeature = {
+      type: "Feature",
+      id: "840",
+      geometry: {
+        type: "Polygon",
+        coordinates: [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]],
+      },
+      properties: {},
+    } as unknown as import("geojson").Feature<import("geojson").Polygon | import("geojson").MultiPolygon>;
+
+    vi.mocked(geoModule.loadWorldTopology).mockResolvedValue([mockFeature]);
+    vi.mocked(geoModule.buildCountryGeometry).mockReturnValue({
+      isBufferGeometry: true,
+    } as unknown as import("three").BufferGeometry);
+    vi.mocked(geoModule.getCountryFlagCode).mockReturnValue("us");
+    vi.mocked(geoModule.latLngToCartesian).mockReturnValue([0, 0, 1]);
+
+    const { result } = renderHook(() => useGlobeData());
+
+    await waitFor(() => {
+      expect(result.current.upgrading).toBe(false);
+    });
+
+    // Hi-res topology was used as fallback
+    expect(geoModule.loadWorldTopology).toHaveBeenCalled();
+    expect(result.current.countries.length).toBeGreaterThan(0);
   });
 
   it("falls back to topology loading when precomputed files are unavailable", async () => {
