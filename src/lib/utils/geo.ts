@@ -645,6 +645,11 @@ export function getCountryFlagCode(
  */
 let _topologyCache: Feature<Polygon | MultiPolygon>[] | null = null;
 
+/** @internal Test-only — resets the module-level topology cache */
+export function _resetTopologyCacheForTesting(): void {
+  _topologyCache = null;
+}
+
 export async function loadWorldTopology(): Promise<
   Feature<Polygon | MultiPolygon>[]
 > {

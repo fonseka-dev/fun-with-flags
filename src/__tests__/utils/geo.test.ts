@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi, afterEach } from "vitest";
 import {
   latLngToCartesian,
   computeCentroid,
@@ -8,6 +8,7 @@ import {
   triangulatePolygon,
   getInteriorGeoPoints,
   loadWorldTopology,
+  _resetTopologyCacheForTesting,
 } from "@/lib/utils/geo";
 import type { Feature, Position } from "geojson";
 
@@ -331,12 +332,19 @@ describe("triangulatePolygon — antimeridian regression", () => {
 // loadWorldTopology — module-level cache
 // ---------------------------------------------------------------------------
 
-describe('loadWorldTopology', () => {
-  it('returns the same object reference on repeated calls (cache)', async () => {
-    vi.spyOn(global, 'fetch').mockResolvedValue({
+describe("loadWorldTopology", () => {
+  let fetchSpy: ReturnType<typeof vi.spyOn>;
+
+  afterEach(() => {
+    fetchSpy.mockRestore();
+    _resetTopologyCacheForTesting();
+  });
+
+  it("returns the same object reference on repeated calls (cache)", async () => {
+    fetchSpy = vi.spyOn(global, "fetch").mockResolvedValue({
       json: async () => ({
-        type: 'Topology',
-        objects: { countries: { type: 'GeometryCollection', geometries: [] } },
+        type: "Topology",
+        objects: { countries: { type: "GeometryCollection", geometries: [] } },
         arcs: [],
       }),
     } as unknown as Response);
@@ -345,9 +353,8 @@ describe('loadWorldTopology', () => {
     const result2 = await loadWorldTopology();
     const result3 = await loadWorldTopology();
 
+    expect(fetchSpy).toHaveBeenCalledTimes(1);
     expect(result2).toBe(result1);
     expect(result3).toBe(result1);
-
-    vi.restoreAllMocks();
   });
 });
