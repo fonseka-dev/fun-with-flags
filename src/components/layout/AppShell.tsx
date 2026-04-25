@@ -27,7 +27,7 @@ function AppShellInner({
   const handleContinentSelect = onContinentSelect ?? setContinent;
 
   return (
-    <div className="h-screen flex flex-col bg-surface">
+    <div className="h-screen flex flex-col">
       <TopNav searchQuery={searchQuery} onSearchChange={onSearchChange} />
       <div className="flex-1 overflow-hidden">
         <div className="flex h-full max-w-screen-2xl mx-auto">

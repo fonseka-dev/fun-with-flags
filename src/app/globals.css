@@ -19,17 +19,17 @@
   --color-error: #b31b25;
   --color-error-container: #fb5151;
 
-  --color-surface: #f8f5ff;
-  --color-surface-dim: #ced1ff;
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #dce5ff;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f1efff;
-  --color-surface-container: #e6e6ff;
-  --color-surface-container-high: #dfe0ff;
-  --color-surface-container-highest: #d8daff;
-  --color-surface-variant: #d8daff;
+  --color-surface-container-low: #f4f6ff;
+  --color-surface-container: #eaedff;
+  --color-surface-container-high: #e0e5ff;
+  --color-surface-container-highest: #d4dcff;
+  --color-surface-variant: #d4dcff;
 
-  --color-on-surface: #272b51;
-  --color-on-surface-variant: #545881;
+  --color-on-surface: #1a1e46;
+  --color-on-surface-variant: #3a3f6e;
 
   --color-on-primary: #f1f2ff;
   --color-on-primary-container: #001e58;
@@ -43,7 +43,7 @@
   --color-on-error: #ffefee;
   --color-on-error-container: #570008;
 
-  --color-on-background: #272b51;
+  --color-on-background: #ffffff;
 
   --color-outline: #70749e;
   --color-outline-variant: #a6aad7;
@@ -52,7 +52,7 @@
   --color-inverse-on-surface: #969ac6;
   --color-inverse-primary: #5e8bff;
 
-  --color-background: #f8f5ff;
+  --color-background: #0044BB;
 
   /* Continent accent colors */
   --color-continent-africa: #176a21;
@@ -72,16 +72,23 @@
   --radius-full: 9999px;
 
   /* ─── Shadows ─── */
-  --shadow-ambient: 0 8px 32px rgba(39, 43, 81, 0.06);
-  --shadow-ambient-lg: 0 16px 48px rgba(39, 43, 81, 0.08);
+  --shadow-ambient: 0 8px 32px rgba(0, 0, 0, 0.22);
+  --shadow-ambient-lg: 0 16px 48px rgba(0, 0, 0, 0.34);
 
   /* ─── Easing ─── */
   --ease-back-out: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @layer base {
+  html {
+    min-height: 100%;
+    background: radial-gradient(ellipse at 40% 35%, #4499FF 0%, #1A67F5 40%, #0044BB 100%) fixed;
+    background-color: #0044BB;
+  }
+
   body {
-    background-color: var(--color-background);
+    min-height: 100vh;
+    background: transparent;
     color: var(--color-on-surface);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -111,7 +118,7 @@
   }
 
   .glass {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(24px);
     box-shadow: var(--shadow-ambient);
   }

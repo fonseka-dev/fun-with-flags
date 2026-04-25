@@ -93,7 +93,7 @@ export function ProfileDialog({ isOpen, onClose }: Props) {
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="bg-surface rounded-3xl p-6 w-full max-w-sm shadow-2xl space-y-5 max-h-[90dvh] overflow-y-auto">
+      <div className="bg-surface-container-lowest rounded-3xl p-6 w-full max-w-sm shadow-2xl space-y-5 max-h-[90dvh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-bold text-on-surface">{t("title")}</h2>

@@ -26,7 +26,7 @@ export function CatalogContent() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-on-background tracking-tighter mb-4">
           {t("title")}
         </h1>
-        <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+        <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
           {t("subtitle")}
         </p>
       </header>

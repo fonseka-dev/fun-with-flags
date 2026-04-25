@@ -85,7 +85,7 @@ export default function OnboardingPage() {
                   maxLength={25}
                   autoComplete="off"
                   className={[
-                    "w-full rounded-xl border px-4 py-3 bg-surface text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary transition",
+                    "w-full rounded-xl border px-4 py-3 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary transition",
                     error ? "border-error focus:ring-error" : "border-outline-variant",
                   ].join(" ")}
                   onChange={(e) => {
