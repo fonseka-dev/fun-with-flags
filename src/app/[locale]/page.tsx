@@ -19,7 +19,7 @@ const DAY_OF_YEAR = Math.floor(
 function DashboardContent() {
   const t = useTranslations("home");
   const { countries } = useCountries();
-  const { progress, isAnonymous, nickname } = useAuth();
+  const { progress, isAnonymous, nickname, loading: authLoading } = useAuth();
   const router = useRouter();
 
   const handleContinentSelect = (continent: Continent | null) => {
@@ -85,7 +85,7 @@ function DashboardContent() {
             <div>
               <h3 className="text-2xl font-bold mb-1">{t("journey.title")}</h3>
               <p className="opacity-80">{t("journey.progress", { discovered: discoveredCount, total: countries.length })}</p>
-              {(progress?.quizHighScore ?? 0) > 0 && (
+              {!authLoading && (progress?.quizHighScore ?? 0) > 0 && (
                 <p className="text-sm opacity-70 mt-1">
                   {t("journey.highScore", { score: progress?.quizHighScore ?? 0 })}
                 </p>

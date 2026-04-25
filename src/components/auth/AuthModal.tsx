@@ -11,7 +11,7 @@ type AuthModalProps = {
 
 export function AuthModal({ isOpen, onClose }: AuthModalProps) {
   const t = useTranslations("auth");
-  const { signInWithGoogle, nickname, progress } = useAuth();
+  const { signInWithGoogle, nickname, progress, loading: authLoading } = useAuth();
   const [isSigningIn, setIsSigningIn] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -82,7 +82,7 @@ export function AuthModal({ isOpen, onClose }: AuthModalProps) {
           <p className="text-xs text-on-surface-variant mb-1">{t("anonymousLabel")}</p>
           <p className="font-bold text-on-surface">{nickname}</p>
           <p className="text-xs text-on-surface-variant mt-1">
-            {t("progressSummary", { countries: countriesCount, score: highScore })}
+            {authLoading ? "\u00a0" : t("progressSummary", { countries: countriesCount, score: highScore })}
           </p>
         </div>
 

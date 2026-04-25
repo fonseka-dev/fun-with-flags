@@ -18,7 +18,7 @@ const PAGE_SIZE = 10;
 
 export function WorldRankingsContent() {
   const t = useTranslations("leaderboard");
-  const { progress, uid } = useAuth();
+  const { progress, uid, loading: authLoading } = useAuth();
 
   const [topEntries, setTopEntries] = useState<LeaderboardEntry[]>([]);
   const [listEntries, setListEntries] = useState<LeaderboardEntry[]>([]);
@@ -34,6 +34,7 @@ export function WorldRankingsContent() {
 
   // Initial load
   useEffect(() => {
+    if (authLoading) return;
     async function load() {
       setLoading(true);
       try {
@@ -64,7 +65,7 @@ export function WorldRankingsContent() {
       }
     }
     void load();
-  }, [highScore]);
+  }, [highScore, authLoading]);
 
   const handleLoadMore = useCallback(async () => {
     if (loadingMore || !hasMore || lastScore === undefined) return;
@@ -81,7 +82,7 @@ export function WorldRankingsContent() {
     }
   }, [loadingMore, hasMore, lastScore]);
 
-  if (loading) {
+  if (authLoading || loading) {
     return (
       <div className="flex items-center justify-center py-32">
         <span className="material-symbols-outlined text-primary text-4xl animate-spin">

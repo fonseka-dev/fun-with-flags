@@ -38,7 +38,7 @@ export function ProfileDialog({ isOpen, onClose }: Props) {
   const tTiers = useTranslations("leaderboard.rankTiers");
   const tAuth = useTranslations("auth");
   const tQuiz = useTranslations("quiz");
-  const { nickname, avatarSeed, progress, updateAvatarSeed, signOut, lastGameInsignias } = useAuth();
+  const { nickname, avatarSeed, progress, loading: authLoading, updateAvatarSeed, signOut, lastGameInsignias } = useAuth();
 
   const [changingAvatar, setChangingAvatar] = useState(false);
   const [pendingSeed, setPendingSeed] = useState(avatarSeed);
@@ -230,13 +230,13 @@ export function ProfileDialog({ isOpen, onClose }: Props) {
         <div className="grid grid-cols-2 gap-2 text-center">
           <div className="bg-surface-variant rounded-2xl py-3">
             <p className="text-xl font-bold text-on-surface">
-              {progress?.discoveredCountries.length ?? 0}
+              {authLoading ? "—" : (progress?.discoveredCountries.length ?? 0)}
             </p>
             <p className="text-xs text-on-surface-variant">{t("flagsFound")}</p>
           </div>
           <div className="bg-surface-variant rounded-2xl py-3">
             <p className="text-xl font-bold text-on-surface">
-              {progress?.quizGamesPlayed ?? 0}
+              {authLoading ? "—" : (progress?.quizGamesPlayed ?? 0)}
             </p>
             <p className="text-xs text-on-surface-variant">{t("gamesPlayed")}</p>
           </div>
@@ -245,7 +245,7 @@ export function ProfileDialog({ isOpen, onClose }: Props) {
         {/* Badges */}
         <div className="space-y-2">
           <p className="text-sm font-semibold text-on-surface">{t("badgesTitle")}</p>
-          {earnedBadgeIds.length === 0 ? (
+          {!authLoading && earnedBadgeIds.length === 0 ? (
             <div className="flex flex-col items-center gap-2 py-4 text-center">
               <span
                 className="material-symbols-outlined text-on-surface-variant opacity-30 text-4xl"
