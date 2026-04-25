@@ -71,11 +71,13 @@ describe("useGlobeData", () => {
   it("sets upgrading=false after hi-res load completes", async () => {
     const { result } = renderHook(() => useGlobeData());
 
+    // Wait for full load cycle: loading=false AND upgrading=false simultaneously.
+    // (upgrading starts false in initial state, so we must not early-exit before
+    // the effect runs — waiting for loading===false guards against that.)
     await waitFor(() => {
+      expect(result.current.loading).toBe(false);
       expect(result.current.upgrading).toBe(false);
     });
-
-    expect(result.current.loading).toBe(false);
   });
 
   it("countries is non-empty after low-res load", async () => {

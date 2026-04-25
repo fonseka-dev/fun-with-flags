@@ -1,3 +1,4 @@
+import { memo } from "react";
 import * as THREE from "three";
 import type { ThreeEvent } from "@react-three/fiber";
 import type { ProcessedCountry } from "@/lib/hooks/useGlobeData";
@@ -16,6 +17,7 @@ const UNDISCOVERED_COLOR = "#C0C0C0";
 
 type CountryMeshesProps = {
   countries: ProcessedCountry[];
+  upgrading?: boolean;
   discoveredSlugs: string[];
   onCountrySelect?: (slug: string) => void;
   mode: "realistic" | "political";
@@ -23,8 +25,9 @@ type CountryMeshesProps = {
   onCountryHover?: (slug: string | null) => void;
 };
 
-export function CountryMeshes({
+function CountryMeshesImpl({
   countries,
+  upgrading: _upgrading,
   discoveredSlugs,
   onCountrySelect,
   mode,
@@ -84,3 +87,4 @@ export function CountryMeshes({
     </>
   );
 }
+export const CountryMeshes = memo(CountryMeshesImpl);

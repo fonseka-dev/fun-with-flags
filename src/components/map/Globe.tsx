@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, lazy, useState, useRef, useEffect, useMemo } from "react";
+import { Suspense, lazy, useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import { useLocale, useTranslations } from "next-intl";
@@ -60,13 +60,13 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
     };
   }, [selectedSlug, locale, discoveredSlugs]);
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
     if (cameraRef.current) {
       cameraRef.current.position.set(0, 0, 2.5);
     }
-  };
+  }, []);
 
-  const handleGeolocate = () => {
+  const handleGeolocate = useCallback(() => {
     if (!navigator.geolocation) {
       if (geoErrorTimer.current) clearTimeout(geoErrorTimer.current);
       setGeoError(t("geolocationError"));
@@ -96,9 +96,26 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         setGeolocating(false);
       },
     );
-  };
+  }, [t]);
 
-  const handleCreated = (state: RootState) => {
+  const globeT = useMemo(
+    () => ({
+      capital: t("capital"),
+      explore: t("explore"),
+      markExplored: t("markExplored"),
+      alreadyExplored: t("alreadyExplored"),
+    }),
+    [t],
+  );
+
+  const handleClosePopup = useCallback(() => setSelectedSlug(null), []);
+  const handleToggleLabels = useCallback(() => setShowLabels((v) => !v), []);
+  const handleToggleRotate = useCallback(() => setAutoRotate((v) => !v), []);
+  const handleToggleDaylight = useCallback(() => setIsDaylight((v) => !v), []);
+  const handleToggleMode = useCallback(() => setGlobeMode((m) => m === "realistic" ? "political" : "realistic"), []);
+  const handleToggleHoverMode = useCallback(() => setHoverMode((v) => !v), []);
+
+  const handleCreated = useCallback((state: RootState) => {
     cameraRef.current = state.camera;
     try {
       const saved = sessionStorage.getItem(SESSION_KEY);
@@ -109,7 +126,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
     } catch {
       // sessionStorage unavailable — ignore
     }
-  };
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -150,12 +167,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
             onCountrySelect={onCountrySelect}
             showLabels={showLabels}
             locale={locale}
-            globeT={{
-              capital: t("capital"),
-              explore: t("explore"),
-              markExplored: t("markExplored"),
-              alreadyExplored: t("alreadyExplored"),
-            }}
+            globeT={globeT}
             isDaylight={isDaylight}
             autoRotate={autoRotate}
             discoverCountry={discoverCountry}
@@ -185,7 +197,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
               markExploredLabel={t("markExplored")}
               alreadyExploredLabel={t("alreadyExplored")}
               onMarkExplored={discoverCountry}
-              onClose={() => setSelectedSlug(null)}
+              onClose={handleClosePopup}
             />
           </div>
         </div>
@@ -193,15 +205,15 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
       <GlobeControls
         onReset={handleReset}
         showLabels={showLabels}
-        onToggleLabels={() => setShowLabels((v) => !v)}
+        onToggleLabels={handleToggleLabels}
         autoRotate={autoRotate}
-        onToggleRotate={() => setAutoRotate((v) => !v)}
+        onToggleRotate={handleToggleRotate}
         isDaylight={isDaylight}
-        onToggleDaylight={() => setIsDaylight((v) => !v)}
+        onToggleDaylight={handleToggleDaylight}
         globeMode={globeMode}
-        onToggleMode={() => setGlobeMode((m) => m === "realistic" ? "political" : "realistic")}
+        onToggleMode={handleToggleMode}
         hoverMode={hoverMode}
-        onToggleHoverMode={() => setHoverMode((v) => !v)}
+        onToggleHoverMode={handleToggleHoverMode}
         onGeolocate={handleGeolocate}
         geolocating={geolocating}
       />
