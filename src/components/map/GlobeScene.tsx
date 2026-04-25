@@ -26,7 +26,7 @@ type GlobeSceneProps = {
   setSelectedSlug: (slug: string | null) => void;
 };
 
-export function GlobeScene({ countries, upgrading, discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode, selectedSlug, setSelectedSlug }: GlobeSceneProps) {
+export function GlobeScene({ countries, upgrading: _upgrading, discoveredSlugs, onCountrySelect, showLabels, locale, globeT, isDaylight, autoRotate, discoverCountry, closePopupRef, globeMode, hoverMode, selectedSlug, setSelectedSlug }: GlobeSceneProps) {
   const sphereRef = useRef<THREE.Mesh>(null);
 
   const handleCountrySelect = (slug: string) => {
