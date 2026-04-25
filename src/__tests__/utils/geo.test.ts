@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import {
   latLngToCartesian,
   computeCentroid,
@@ -7,6 +7,7 @@ import {
   subdivideRing,
   triangulatePolygon,
   getInteriorGeoPoints,
+  loadWorldTopology,
 } from "@/lib/utils/geo";
 import type { Feature, Position } from "geojson";
 
@@ -323,5 +324,30 @@ describe("triangulatePolygon — antimeridian regression", () => {
     expect(result).not.toBeNull();
     expect(result!.positions.length).toBeGreaterThan(0);
     expect(result!.indices.length).toBeGreaterThan(0);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// loadWorldTopology — module-level cache
+// ---------------------------------------------------------------------------
+
+describe('loadWorldTopology', () => {
+  it('returns the same object reference on repeated calls (cache)', async () => {
+    vi.spyOn(global, 'fetch').mockResolvedValue({
+      json: async () => ({
+        type: 'Topology',
+        objects: { countries: { type: 'GeometryCollection', geometries: [] } },
+        arcs: [],
+      }),
+    } as unknown as Response);
+
+    const result1 = await loadWorldTopology();
+    const result2 = await loadWorldTopology();
+    const result3 = await loadWorldTopology();
+
+    expect(result2).toBe(result1);
+    expect(result3).toBe(result1);
+
+    vi.restoreAllMocks();
   });
 });

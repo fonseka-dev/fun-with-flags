@@ -643,9 +643,13 @@ export function getCountryFlagCode(
  *     world-10m  ~1000 KB   10 km tolerance  too large for browser use
  * ────────────────────────────────────────────────────────────────────────────
  */
+let _topologyCache: Feature<Polygon | MultiPolygon>[] | null = null;
+
 export async function loadWorldTopology(): Promise<
   Feature<Polygon | MultiPolygon>[]
 > {
+  if (_topologyCache) return _topologyCache;
+
   const response = await fetch("/geo/world-50m.json");
   const topology = (await response.json()) as Topology<{
     countries: GeometryCollection;
@@ -656,5 +660,6 @@ export async function loadWorldTopology(): Promise<
     topology.objects.countries,
   ) as unknown as { features: Feature<Polygon | MultiPolygon>[] };
 
-  return features;
+  _topologyCache = features;
+  return _topologyCache;
 }
