@@ -4,7 +4,6 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CountriesProvider } from "@/lib/providers/CountriesProvider";
-import { AuthProvider } from "@/lib/providers/AuthProvider";
 import { OnboardingGuard } from "@/components/auth/OnboardingGuard";
 import "../globals.css";
 
@@ -53,10 +52,8 @@ export default async function LocaleLayout({
       <body className="font-sans">
         <NextIntlClientProvider messages={messages}>
           <CountriesProvider>
-            <AuthProvider>
-              <OnboardingGuard />
-              {children}
-            </AuthProvider>
+            <OnboardingGuard />
+            {children}
           </CountriesProvider>
         </NextIntlClientProvider>
       </body>
