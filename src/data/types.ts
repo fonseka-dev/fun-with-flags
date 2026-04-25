@@ -58,6 +58,15 @@ export type LeaderboardEntry = {
   updatedAt: Date;
 };
 
+export type SerializedCountry = {
+  slug: string;
+  flagCode: string;
+  continent: Continent;
+  centroid: [number, number, number];
+  positions: number[];
+  indices: number[];
+};
+
 export type InsigniaId =
   | "cartographer"
   | "speedy"
