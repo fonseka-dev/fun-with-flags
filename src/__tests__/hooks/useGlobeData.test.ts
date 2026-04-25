@@ -15,7 +15,7 @@ const mockFeature = {
     coordinates: [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]],
   },
   properties: {},
-} as any;
+} as unknown as import("geojson").Feature<import("geojson").Polygon | import("geojson").MultiPolygon>;
 
 vi.mock("@/lib/utils/geo", () => ({
   loadLowResTopology: vi.fn(),
@@ -40,7 +40,7 @@ beforeEach(() => {
   vi.mocked(geoModule.loadWorldTopology).mockResolvedValue([mockFeature]);
   vi.mocked(geoModule.buildCountryGeometry).mockReturnValue({
     isBufferGeometry: true,
-  } as any);
+  } as unknown as import("three").BufferGeometry);
   vi.mocked(geoModule.getCountryFlagCode).mockReturnValue("us");
   vi.mocked(geoModule.latLngToCartesian).mockReturnValue([0, 0, 1]);
 });

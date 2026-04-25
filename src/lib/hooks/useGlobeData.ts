@@ -107,7 +107,7 @@ export function useGlobeData() {
     return () => {
       cancelled = true;
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return { countries, loading, upgrading };
 }
