@@ -38,7 +38,7 @@ export function PersonalProgressCard({
 
   if (!hasScore) {
     return (
-      <div className="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 mb-12 shadow-xl shadow-primary/10 text-center">
+      <div className="bg-gradient-to-r from-primary to-primary-fixed rounded-xl p-8 mb-12 shadow-xl shadow-primary/10 text-center">
         <span
           className="material-symbols-outlined text-on-primary text-4xl mb-3 block"
           style={{ fontVariationSettings: "'FILL' 1" }}
@@ -59,7 +59,7 @@ export function PersonalProgressCard({
   }
 
   return (
-    <div className="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 mb-12 shadow-xl shadow-primary/10 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+    <div className="bg-gradient-to-r from-primary to-primary-fixed rounded-xl p-8 mb-12 shadow-xl shadow-primary/10 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 p-4 opacity-10">
         <span className="material-symbols-outlined text-9xl text-white">explore</span>
