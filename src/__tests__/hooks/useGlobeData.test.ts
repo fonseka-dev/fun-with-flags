@@ -92,4 +92,26 @@ describe("useGlobeData", () => {
 
     expect(result.current.countries[0].flagCode).toBe("us");
   });
+
+  it("returns cached data immediately when hi-res cache is warm", async () => {
+    // First, do a full load to warm both caches
+    const { result: r1, unmount: u1 } = renderHook(() => useGlobeData());
+    await waitFor(() => expect(r1.current.upgrading).toBe(false));
+    u1();
+
+    // Now reset mock call counts (but NOT the module cache — that's the whole point)
+    vi.clearAllMocks();
+
+    // Re-mount — should get cached data with no fetches
+    const { result: r2 } = renderHook(() => useGlobeData());
+
+    // Immediately (synchronously) has correct state — no loading, no upgrading
+    expect(r2.current.loading).toBe(false);
+    expect(r2.current.upgrading).toBe(false);
+    expect(r2.current.countries.length).toBeGreaterThan(0);
+
+    // Geo functions were never called again
+    expect(geoModule.loadLowResTopology).not.toHaveBeenCalled();
+    expect(geoModule.loadWorldTopology).not.toHaveBeenCalled();
+  });
 });
