@@ -19,17 +19,17 @@
   --color-error: #b31b25;
   --color-error-container: #fb5151;
 
-  --color-surface: #D4DFFF;
-  --color-surface-dim: #B0C5FF;
+  --color-surface: #C7DEFF;
+  --color-surface-dim: #A8C4EE;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #EEF5FF;
-  --color-surface-container: #E2EEFF;
-  --color-surface-container-high: #D6E6FF;
-  --color-surface-container-highest: #C8DBFF;
-  --color-surface-variant: #C8DBFF;
+  --color-surface-container-low: #f4f8ff;
+  --color-surface-container: #E8F1FF;
+  --color-surface-container-high: #DAE9FF;
+  --color-surface-container-highest: #CCE0FF;
+  --color-surface-variant: #CCE0FF;
 
   --color-on-surface: #272b51;
-  --color-on-surface-variant: #545881;
+  --color-on-surface-variant: #3f4475;
 
   --color-on-primary: #f1f2ff;
   --color-on-primary-container: #001e58;
@@ -52,7 +52,7 @@
   --color-inverse-on-surface: #969ac6;
   --color-inverse-primary: #5e8bff;
 
-  --color-background: #D4DFFF;
+  --color-background: #C7DEFF;
 
   /* Continent accent colors */
   --color-continent-africa: #176a21;
@@ -72,8 +72,8 @@
   --radius-full: 9999px;
 
   /* ─── Shadows ─── */
-  --shadow-ambient: 0 8px 32px rgba(39, 43, 81, 0.06);
-  --shadow-ambient-lg: 0 16px 48px rgba(39, 43, 81, 0.08);
+  --shadow-ambient: 0 8px 32px rgba(0, 44, 120, 0.12);
+  --shadow-ambient-lg: 0 16px 48px rgba(0, 44, 120, 0.18);
 
   /* ─── Easing ─── */
   --ease-back-out: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -81,9 +81,7 @@
 
 @layer base {
   body {
-    background-color: var(--color-background); /* solid fallback */
-    background-image: radial-gradient(ellipse at 60% 20%, #EAF3FF 0%, #CCDEFF 55%, #BDD5FF 100%);
-    background-attachment: fixed;
+    background-color: var(--color-background);
     color: var(--color-on-surface);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
