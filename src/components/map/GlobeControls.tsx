@@ -1,15 +1,10 @@
 import { useTranslations } from "next-intl";
 
 type GlobeControlsProps = {
-  onReset: () => void;
-  showLabels: boolean;
-  onToggleLabels: () => void;
   autoRotate: boolean;
   onToggleRotate: () => void;
   isDaylight: boolean;
   onToggleDaylight: () => void;
-  globeMode: "realistic" | "political";
-  onToggleMode: () => void;
   hoverMode: boolean;
   onToggleHoverMode: () => void;
   onGeolocate: () => void;
@@ -17,15 +12,10 @@ type GlobeControlsProps = {
 };
 
 export function GlobeControls({
-  onReset,
-  showLabels,
-  onToggleLabels,
   autoRotate,
   onToggleRotate,
   isDaylight,
   onToggleDaylight,
-  globeMode,
-  onToggleMode,
   hoverMode,
   onToggleHoverMode,
   onGeolocate,
@@ -37,15 +27,6 @@ export function GlobeControls({
 
   return (
     <div className="absolute bottom-8 right-8 z-10 flex flex-col gap-3">
-      <button
-        onClick={onToggleMode}
-        className={btnBase}
-        aria-label={globeMode === "realistic" ? t("politicalMode") : t("realisticMode")}
-      >
-        <span className="material-symbols-outlined">
-          {globeMode === "realistic" ? "map" : "satellite_alt"}
-        </span>
-      </button>
       <button
         onClick={onToggleDaylight}
         className={btnBase}
@@ -72,22 +53,6 @@ export function GlobeControls({
         <span className="material-symbols-outlined">
           {hoverMode ? "mouse" : "touch_app"}
         </span>
-      </button>
-      <button
-        onClick={onToggleLabels}
-        className={btnBase}
-        aria-label={showLabels ? t("hideLabels") : t("showLabels")}
-      >
-        <span className="material-symbols-outlined">
-          {showLabels ? "label_off" : "label"}
-        </span>
-      </button>
-      <button
-        onClick={onReset}
-        className={btnBase}
-        aria-label={t("reset")}
-      >
-        <span className="material-symbols-outlined">refresh</span>
       </button>
       <button
         onClick={onGeolocate}

@@ -60,12 +60,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
     };
   }, [selectedSlug, locale, discoveredSlugs]);
 
-  const handleReset = useCallback(() => {
-    if (cameraRef.current) {
-      cameraRef.current.position.set(0, 0, 2.5);
-    }
-  }, []);
-
   const handleGeolocate = useCallback(() => {
     if (!navigator.geolocation) {
       if (geoErrorTimer.current) clearTimeout(geoErrorTimer.current);
@@ -109,10 +103,8 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
   );
 
   const handleClosePopup = useCallback(() => setSelectedSlug(null), []);
-  const handleToggleLabels = useCallback(() => setShowLabels((v) => !v), []);
   const handleToggleRotate = useCallback(() => setAutoRotate((v) => !v), []);
   const handleToggleDaylight = useCallback(() => setIsDaylight((v) => !v), []);
-  const handleToggleMode = useCallback(() => setGlobeMode((m) => m === "realistic" ? "political" : "realistic"), []);
   const handleToggleHoverMode = useCallback(() => setHoverMode((v) => !v), []);
 
   const handleCreated = useCallback((state: RootState) => {
@@ -202,15 +194,10 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         </div>
       )}
       <GlobeControls
-        onReset={handleReset}
-        showLabels={showLabels}
-        onToggleLabels={handleToggleLabels}
         autoRotate={autoRotate}
         onToggleRotate={handleToggleRotate}
         isDaylight={isDaylight}
         onToggleDaylight={handleToggleDaylight}
-        globeMode={globeMode}
-        onToggleMode={handleToggleMode}
         hoverMode={hoverMode}
         onToggleHoverMode={handleToggleHoverMode}
         onGeolocate={handleGeolocate}
