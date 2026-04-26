@@ -33,7 +33,7 @@ export function AnswerOptions({
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full mt-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full mt-8">
       {options.map((option) => (
         <button
           key={option.slug}
@@ -41,12 +41,12 @@ export function AnswerOptions({
           disabled={isAnswered}
           className={`
             ${getOptionStyle(option.slug)}
-            p-3 rounded-xl flex items-center justify-between group
+            w-3/5 mx-auto p-5 rounded-xl relative flex items-center justify-center text-center group
             transition-bounce active:scale-95 shadow-ambient
           `}
         >
           <span className="text-lg font-extrabold">{option.name}</span>
-          <span className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="material-symbols-outlined absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity">
             arrow_forward
           </span>
         </button>

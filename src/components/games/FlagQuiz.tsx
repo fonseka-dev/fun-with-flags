@@ -342,7 +342,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           <LivesDisplay lives={lives} />
           <button
             onClick={handleExitGame}
-            className="flex items-center justify-center w-9 h-9 rounded-xl bg-error/20 text-error hover:bg-error hover:text-on-error transition-colors"
+            className="flex items-center justify-center w-9 h-9 rounded-xl bg-white/15 text-white hover:bg-white/25 transition-colors"
             aria-label={t("exitGame")}
             title={t("exitGame")}
           >
@@ -352,7 +352,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
       </div>
 
       {/* Question card */}
-      <div className="w-full bg-surface-container-low rounded-xl p-4 md:p-6 flex flex-col items-center relative overflow-hidden">
+      <div className="w-full bg-transparent rounded-xl p-4 md:p-6 flex flex-col items-center relative overflow-hidden">
         <h1 className="text-xl md:text-2xl font-extrabold text-center mb-3 text-on-background">
           {t("whoAmI")}
         </h1>
