@@ -41,10 +41,10 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             : "glass sticky top-0 z-40"
         }
       >
-        <div className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+        <div className="flex justify-between items-center w-full px-4 sm:px-8 py-3 sm:py-4 max-w-screen-2xl mx-auto">
           <Link
             href="/"
-            className={`text-2xl font-extrabold tracking-tight ${
+            className={`text-xl sm:text-2xl font-extrabold tracking-tight ${
               transparent ? "text-white" : "text-primary"
             }`}
           >
@@ -80,7 +80,7 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             })}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             {onSearchChange && (
               <div className="hidden sm:block">
                 <SearchInput
@@ -91,15 +91,17 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
               </div>
             )}
             <LanguageToggle />
-            <div className="flex gap-2">
+            <div className="hidden md:flex gap-2" aria-label="Quick links">
               <Link
                 href="/map"
+                aria-label={t("map")}
                 className="material-symbols-outlined text-primary p-2 bg-surface-container-low rounded-full hover:scale-105 transition-bounce"
               >
                 public
               </Link>
               <Link
                 href="/games/guess-the-flag"
+                aria-label={t("games")}
                 className="material-symbols-outlined text-primary p-2 bg-surface-container-low rounded-full hover:scale-105 transition-bounce"
               >
                 sports_esports
@@ -117,7 +119,7 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             ) : (
               <button
                 onClick={() => setIsProfileOpen(true)}
-                className="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-full hover:bg-surface-container transition-bounce"
+                className="flex items-center gap-2 px-2.5 sm:px-3 py-1.5 bg-surface-container-low rounded-full hover:bg-surface-container transition-bounce"
                 aria-label="Open profile"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
