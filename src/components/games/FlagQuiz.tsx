@@ -326,9 +326,9 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Score + Timer + Lives header */}
-      <div className="w-full flex justify-between items-center mb-10">
+      <div className="w-full flex justify-between items-center mb-4">
         {isEasyMode ? (
-          <p className="text-sm text-on-surface-variant font-medium flex items-center gap-1">
+          <p className="text-sm text-white font-medium flex items-center gap-1">
             <span className="material-symbols-outlined text-base">info</span>
             {t("easyNoScoreShort")}
           </p>
@@ -342,7 +342,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           <LivesDisplay lives={lives} />
           <button
             onClick={handleExitGame}
-            className="flex items-center justify-center w-9 h-9 rounded-xl bg-surface-container text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors"
+            className="flex items-center justify-center w-9 h-9 rounded-xl bg-error/20 text-error hover:bg-error hover:text-on-error transition-colors"
             aria-label={t("exitGame")}
             title={t("exitGame")}
           >
@@ -352,8 +352,8 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
       </div>
 
       {/* Question card */}
-      <div className="w-full bg-surface-container-low rounded-xl p-8 md:p-12 flex flex-col items-center relative overflow-hidden">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-on-background">
+      <div className="w-full bg-surface-container-low rounded-xl p-4 md:p-6 flex flex-col items-center relative overflow-hidden">
+        <h1 className="text-xl md:text-2xl font-extrabold text-center mb-3 text-on-background">
           {t("whoAmI")}
         </h1>
         <FlagDisplay country={currentQuestion.correct} />
