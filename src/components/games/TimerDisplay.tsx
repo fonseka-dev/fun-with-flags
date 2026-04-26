@@ -17,21 +17,20 @@ export function TimerDisplay({ timeLeft, totalTime }: TimerDisplayProps) {
 
   // Color transitions based on remaining time fraction
   let ringColor: string;
-  let textColor: string;
   if (fraction > 0.5) {
-    ringColor = "stroke-primary";
-    textColor = "text-primary";
+    ringColor = "stroke-cyan-300";
   } else if (fraction > 0.25) {
-    ringColor = "stroke-tertiary";
-    textColor = "text-tertiary";
+    ringColor = "stroke-amber-300";
   } else {
-    ringColor = "stroke-error";
-    textColor = "text-error";
+    ringColor = "stroke-rose-400";
   }
 
   return (
-    <div className="flex flex-col items-center gap-1">
-      <div className="relative" style={{ width: size, height: size }}>
+    <div className="flex flex-col items-center gap-2">
+      <div
+        className="relative rounded-full bg-white/10 ring-1 ring-white/15 shadow-ambient"
+        style={{ width: size, height: size }}
+      >
         <svg
           width={size}
           height={size}
@@ -45,7 +44,7 @@ export function TimerDisplay({ timeLeft, totalTime }: TimerDisplayProps) {
             r={radius}
             fill="none"
             strokeWidth={strokeWidth}
-            className="stroke-surface-container-highest"
+            className="stroke-white/20"
           />
           {/* Progress ring */}
           <circle
@@ -62,12 +61,12 @@ export function TimerDisplay({ timeLeft, totalTime }: TimerDisplayProps) {
         </svg>
         {/* Seconds label */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className={`text-xl font-extrabold leading-none ${textColor}`}>
+          <span className="text-xl font-extrabold leading-none text-white">
             {timeLeft}s
           </span>
         </div>
       </div>
-      <span className="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+      <span className="text-xs font-bold uppercase tracking-widest text-white/75">
         {t("timeLeft")}
       </span>
     </div>

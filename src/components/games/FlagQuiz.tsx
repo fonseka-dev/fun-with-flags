@@ -182,24 +182,24 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
         </div>
 
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-on-surface mb-2 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-2 tracking-tight">
             {t("gameOver", { name: progress?.nickname ?? "Explorer" })}
           </h2>
-          <p className="text-on-surface-variant text-lg font-medium">
+          <p className="text-white/80 text-lg font-medium">
             {t("correctAnswered", { count: snap.correctInGame })}
           </p>
         </div>
 
         {/* Score section */}
         {isEasy ? (
-          <div className="w-full max-w-md bg-surface-container-low rounded-xl p-8 text-center">
+          <div className="w-full max-w-md bg-white/10 rounded-xl p-8 text-center border border-white/10">
             <span
-              className="material-symbols-outlined text-4xl text-on-surface-variant mb-3 block"
+              className="material-symbols-outlined text-4xl text-white mb-3 block"
               style={{ fontVariationSettings: "'FILL' 1" }}
             >
               info
             </span>
-            <p className="text-on-surface-variant font-medium leading-[1.6]">
+            <p className="text-white/85 font-medium leading-[1.6]">
               {t("easyNoScore")}
             </p>
           </div>
@@ -263,7 +263,10 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
             </span>
           </Button>
           <Link href="/">
-            <Button variant="ghost">
+            <Button
+              variant="ghost"
+              className="bg-white/12 text-white border border-white/20 hover:bg-white/22 hover:text-white"
+            >
               <span className="flex items-center gap-2">
                 <span className="material-symbols-outlined">home</span>
                 {t("backToHome")}
@@ -275,7 +278,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
         {/* Insignias row */}
         {snap.earnedInsignias.length > 0 && (
           <div className="w-full max-w-2xl">
-            <h3 className="text-on-surface-variant font-bold uppercase tracking-widest text-sm mb-4 flex items-center gap-2">
+            <h3 className="text-white font-bold uppercase tracking-widest text-sm mb-4 flex items-center gap-2">
               <span className="material-symbols-outlined text-sm">workspace_premium</span>
               {t("insigniasUnlocked")}
             </h3>
@@ -352,8 +355,8 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
       </div>
 
       {/* Question card */}
-      <div className="w-full bg-transparent rounded-xl p-4 md:p-6 flex flex-col items-center relative overflow-hidden">
-        <h1 className="text-xl md:text-2xl font-extrabold text-center mb-3 text-on-background">
+      <div className="w-full bg-transparent rounded-xl p-4 md:p-6 flex flex-col items-center relative overflow-visible">
+        <h1 className="text-xl md:text-2xl font-extrabold text-center mb-3 text-white">
           {t("whoAmI")}
         </h1>
         <FlagDisplay country={currentQuestion.correct} />
