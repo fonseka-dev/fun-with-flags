@@ -20,16 +20,16 @@ export function AnswerOptions({
 
   function getOptionStyle(slug: string): string {
     if (!isAnswered) {
-      return "bg-white/12 text-white border border-white/10 hover:bg-white/20 hover:text-white";
+      return "bg-white text-primary border border-primary/15 hover:bg-white/90 hover:text-primary";
     }
     if (slug === correctSlug) {
-      return "bg-emerald-400 text-slate-950 border border-emerald-200";
+      return "bg-emerald-500 text-white border border-emerald-300";
     }
     // On timeout, no answer was selected — don't highlight anything red
     if (status !== "timeout" && slug === selectedAnswer && slug !== correctSlug) {
-      return "bg-rose-500 text-white border border-rose-300";
+      return "bg-rose-600 text-white border border-rose-300";
     }
-    return "bg-white/10 text-white/55 border border-white/10";
+    return "bg-white/60 text-primary/60 border border-primary/10";
   }
 
   return (
