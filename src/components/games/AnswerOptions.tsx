@@ -20,20 +20,20 @@ export function AnswerOptions({
 
   function getOptionStyle(slug: string): string {
     if (!isAnswered) {
-      return "bg-surface-container-highest hover:bg-primary hover:text-on-primary";
+      return "bg-white text-primary border border-primary/15 hover:bg-white/90 hover:text-primary";
     }
     if (slug === correctSlug) {
-      return "bg-secondary text-on-secondary";
+      return "bg-emerald-500 text-white border border-emerald-300";
     }
     // On timeout, no answer was selected — don't highlight anything red
     if (status !== "timeout" && slug === selectedAnswer && slug !== correctSlug) {
-      return "bg-error text-on-error";
+      return "bg-rose-600 text-white border border-rose-300";
     }
-    return "bg-surface-container-highest opacity-50";
+    return "bg-white/60 text-primary/60 border border-primary/10";
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mt-6">
       {options.map((option) => (
         <button
           key={option.slug}
@@ -41,12 +41,12 @@ export function AnswerOptions({
           disabled={isAnswered}
           className={`
             ${getOptionStyle(option.slug)}
-            p-6 rounded-xl flex items-center justify-between group
+            w-full p-5 rounded-2xl relative flex items-center justify-center text-center group
             transition-bounce active:scale-95 shadow-ambient
           `}
         >
-          <span className="text-2xl font-extrabold">{option.name}</span>
-          <span className="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="text-lg font-extrabold">{option.name}</span>
+          <span className="material-symbols-outlined absolute right-4 opacity-0 group-hover:opacity-100 transition-opacity">
             arrow_forward
           </span>
         </button>
