@@ -157,6 +157,8 @@
     "playAgain": "Play Again",
     "playNow": "Play Now",
     "loadMore": "Load More",
+    "loadError": "Couldn't load rankings. Please try again.",
+    "retry": "Retry",
     "xpPoints": "{score} points",
     "pointsLabel": "points",
     "yourRank": "Your Rank",

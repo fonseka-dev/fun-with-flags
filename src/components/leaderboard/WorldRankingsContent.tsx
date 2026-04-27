@@ -29,14 +29,16 @@ export function WorldRankingsContent() {
   const [loadingMore, setLoadingMore] = useState(false);
   const [hasMore, setHasMore] = useState(false);
   const [lastScore, setLastScore] = useState<number | undefined>(undefined);
+  const [fetchError, setFetchError] = useState(false);
 
   const highScore = progress?.quizHighScore ?? 0;
 
   // Initial load
   useEffect(() => {
-    if (authLoading) return;
+    if (authLoading || !uid) return;
     async function load() {
       setLoading(true);
+      setFetchError(false);
       try {
         const [top, count, rank] = await Promise.all([
           getTopLeaderboard(50),
@@ -60,12 +62,14 @@ export function WorldRankingsContent() {
         if (top.length > 0) {
           setLastScore(top[top.length - 1].quizHighScore);
         }
+      } catch {
+        setFetchError(true);
       } finally {
         setLoading(false);
       }
     }
     void load();
-  }, [highScore, authLoading]);
+  }, [highScore, authLoading, uid]);
 
   const handleLoadMore = useCallback(async () => {
     if (loadingMore || !hasMore || lastScore === undefined) return;
@@ -88,6 +92,21 @@ export function WorldRankingsContent() {
         <span className="material-symbols-outlined text-primary text-4xl animate-spin">
           progress_activity
         </span>
+      </div>
+    );
+  }
+
+  if (fetchError) {
+    return (
+      <div className="flex flex-col items-center justify-center py-32 gap-4">
+        <span className="material-symbols-outlined text-error text-4xl">error</span>
+        <p className="text-white/80">{t("loadError")}</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="px-6 py-2 bg-white text-primary rounded-full font-bold text-sm hover:scale-105 active:scale-95 transition-all"
+        >
+          {t("retry")}
+        </button>
       </div>
     );
   }
