@@ -11,44 +11,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Afghanistan",
               "capital": "Kabul",
-              "flagDescription": "The flag of Afghanistan.",
+              "flagDescription": "Afghanistan's flag has three equal vertical stripes of black, red, and green. In the center is a white emblem containing the Islamic shahada (declaration of faith) and two flags. Black represents strength, red symbolizes the blood of independence fighters, and green represents the wealth and hope of Islam.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Afghanistan",
-                      "description": "Afghanistan is a country in Southern Asia."
+                      "icon": "landscape",
+                      "title": "Hindu Kush Mountains",
+                      "description": "The Hindu Kush mountain range stretches across Afghanistan with over 20 peaks higher than 20,000 feet. These dramatic mountains have shaped Afghanistan's culture and history for thousands of years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Afghanistan has a population of approximately 43.8M."
+                      "icon": "history",
+                      "title": "Bamiyan Buddhas",
+                      "description": "Before they were destroyed in 2001, the Bamiyan Buddhas were two colossal statue carved into a cliffside in the 6th century — among the world's largest Buddha statues ever created."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Afghanistan is Kabul."
+                      "icon": "carpet",
+                      "title": "Carpet Weaving Tradition",
+                      "description": "Afghan carpets are world-famous for their intricate hand-woven designs and vibrant colors. Carpet weaving is a traditional craft passed down through generations in Afghan families."
                   }
               ]
           },
           "es": {
               "name": "Afganistán",
               "capital": "Kabul",
-              "flagDescription": "La bandera de Afganistán.",
+              "flagDescription": "La bandera de Afganistán tiene tres franjas verticales iguales de negro, rojo y verde. En el centro hay un emblema blanco que contiene la shahada islámica (declaración de fe) y dos banderas. El negro representa la fortaleza, el rojo simboliza la sangre de los luchadores por la independencia, y el verde representa la riqueza y esperanza del Islam.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Afganistán",
-                      "description": "Afganistán es un país en Southern Asia."
+                      "icon": "landscape",
+                      "title": "Las montañas del Hindu Kush",
+                      "description": "La cadena montañosa del Hindu Kush se extiende por Afganistán con más de 20 picos de más de 20.000 pies de altura. Estas montañas dramáticas han conformado la cultura e historia de Afganistán durante miles de años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Afganistán tiene una población de aproximadamente 43.8M."
+                      "icon": "history",
+                      "title": "Los Budas de Bamiyan",
+                      "description": "Antes de ser destruidos en 2001, los Budas de Bamiyan eran dos estatuas colosales talladas en un acantilado en el siglo VI, entre las estatuas de Buda más grandes jamás creadas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Afganistán es Kabul."
+                      "icon": "carpet",
+                      "title": "Tradición de tejido de alfombras",
+                      "description": "Las alfombras afganas son mundialmente famosas por sus diseños tejidos a mano de forma intrincada y colores vibrantes. El tejido de alfombras es una artesanía tradicional transmitida de generación en generación."
                   }
               ]
           }
@@ -541,44 +541,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Armenia",
               "capital": "Yerevan",
-              "flagDescription": "The flag of Armenia.",
+              "flagDescription": "Armenia's flag has three equal horizontal stripes of red, blue, and orange/apricot. Red represents the blood of those who died for Armenia, blue symbolizes the sky and hope, and orange/apricot represents the creative genius of the Armenian people. The colors are called the \"Armenian tricolor.\"",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Armenia",
-                      "description": "Armenia is a country in Western Asia."
+                      "icon": "history",
+                      "title": "First Christian Nation",
+                      "description": "Armenia was the first nation in the world to officially adopt Christianity as its state religion in 301 AD — before even the Roman Empire!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Armenia has a population of approximately 3.1M."
+                      "icon": "architecture",
+                      "title": "Ancient Monasteries",
+                      "description": "Armenian monasteries like Geghard and Khor Virap are built into mountainsides and carved partly underground. They are UNESCO World Heritage Sites that showcase ancient Armenian architecture."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Armenia is Yerevan."
+                      "icon": "music",
+                      "title": "Duduk: Ancient Woodwind",
+                      "description": "The duduk is an ancient Armenian woodwind instrument with a warm, soulful sound. It's one of the oldest instruments still in use and has been played for thousands of years."
                   }
               ]
           },
           "es": {
               "name": "Armenia",
-              "capital": "Yerevan",
-              "flagDescription": "La bandera de Armenia.",
+              "capital": "Ereván",
+              "flagDescription": "La bandera de Armenia tiene tres franjas horizontales iguales de rojo, azul y naranja/damasco. El rojo representa la sangre de quienes murieron por Armenia, el azul simboliza el cielo y la esperanza, y el naranja/damasco representa el genio creativo del pueblo armenio. Los colores se llaman el \"tricolor armenio\".",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Armenia",
-                      "description": "Armenia es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Primera nación cristiana",
+                      "description": "¡Armenia fue la primera nación del mundo en adoptar oficialmente el cristianismo como religión de estado en el año 301 d.C., antes incluso que el Imperio Romano!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Armenia tiene una población de aproximadamente 3.1M."
+                      "icon": "architecture",
+                      "title": "Monasterios antiguos",
+                      "description": "Los monasterios armenios como Geghard y Khor Virap están construidos en las laderas de las montañas y tallados parcialmente bajo tierra. Son Patrimonios de la Humanidad de la UNESCO que muestran la arquitectura armenia antigua."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Armenia es Yerevan."
+                      "icon": "music",
+                      "title": "Duduk: instrumento de viento antiguo",
+                      "description": "El duduk es un antiguo instrumento de viento armenio con un sonido cálido y evocador. Es uno de los instrumentos más antiguos que aún se usan y ha sido tocado durante miles de años."
                   }
               ]
           }
@@ -753,44 +753,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Azerbaijan",
               "capital": "Baku",
-              "flagDescription": "The flag of Azerbaijan.",
+              "flagDescription": "Azerbaijan's flag has three equal horizontal stripes of blue, red, and green with a white crescent and eight-pointed star in the center. Blue represents Turkic heritage, red symbolizes progress and prosperity, green represents Islam, and the crescent-star is an Islamic symbol.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Azerbaijan",
-                      "description": "Azerbaijan is a country in Western Asia."
+                      "icon": "fire",
+                      "title": "Yanar Dag: Fire Mountain",
+                      "description": "Yanar Dag is a hillside in Azerbaijan where natural gas seeps from the ground and burns continuously — creating the appearance of a mountain on fire! It has burned for centuries."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Azerbaijan has a population of approximately 10.2M."
+                      "icon": "water",
+                      "title": "Caspian Sea",
+                      "description": "The Caspian Sea, bordered by Azerbaijan, is the largest enclosed body of water in the world. It contains unique wildlife like the Caspian seal found nowhere else on Earth."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Azerbaijan is Baku."
+                      "icon": "carpet",
+                      "title": "Azerbaijani Carpets",
+                      "description": "Azerbaijani carpets are masterpieces of hand-weaving, with designs featuring symbols and colors that tell stories. They're considered among the finest in the world."
                   }
               ]
           },
           "es": {
               "name": "Azerbaiyán",
-              "capital": "Baku",
-              "flagDescription": "La bandera de Azerbaiyán.",
+              "capital": "Bakú",
+              "flagDescription": "La bandera de Azerbaiyán tiene tres franjas horizontales iguales de azul, rojo y verde con una media luna blanca y una estrella de ocho puntas en el centro. El azul representa el patrimonio turco, el rojo simboliza el progreso y la prosperidad, el verde representa el Islam, y la media luna-estrella es un símbolo islámico.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Azerbaiyán",
-                      "description": "Azerbaiyán es un país en Western Asia."
+                      "icon": "fire",
+                      "title": "Yanar Dag: montaña de fuego",
+                      "description": "¡Yanar Dag es una colina en Azerbaiyán donde el gas natural se filtra del suelo y quema continuamente, creando la apariencia de una montaña en llamas! Ha estado ardiendo durante siglos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Azerbaiyán tiene una población de aproximadamente 10.2M."
+                      "icon": "water",
+                      "title": "Mar Caspio",
+                      "description": "El mar Caspio, bordeado por Azerbaiyán, es el cuerpo de agua cerrado más grande del mundo. Contiene fauna única como la foca del Caspio que no se encuentra en ningún otro lugar."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Azerbaiyán es Baku."
+                      "icon": "carpet",
+                      "title": "Alfombras azerbaiyanas",
+                      "description": "Las alfombras azerbaiyanas son obras maestras de tejido a mano, con diseños que presentan símbolos y colores que cuentan historias. Se consideran entre las mejores del mundo."
                   }
               ]
           }
@@ -859,44 +859,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Bahrain",
               "capital": "Manama",
-              "flagDescription": "The flag of Bahrain.",
+              "flagDescription": "Bahrain's flag has two colors: white and maroon, separated by a jagged serrated line with 8 points. The white represents peace and honesty, maroon traditionally represented courage in the region, and the serrated line represents the strength of the nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Bahrain",
-                      "description": "Bahrain is a country in Western Asia."
+                      "icon": "water",
+                      "title": "Pearl Diving Heritage",
+                      "description": "Before oil was discovered, Bahrain was famous for pearl diving. For thousands of years, Bahraini divers hunted for pearls in the Persian Gulf — the finest in the world."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bahrain has a population of approximately 1.6M."
+                      "icon": "architecture",
+                      "title": "Al Baraha Mosque",
+                      "description": "The Al Baraha Mosque is one of Bahrain's oldest mosques, built with a stunning wooden dome and intricate Islamic architecture that has survived for over 350 years."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bahrain is Manama."
+                      "icon": "water",
+                      "title": "Freshwater Springs",
+                      "description": "Bahrain has natural freshwater springs on the seafloor — unique in the Middle East! The spring water is so fresh that locals can dive down and collect it."
                   }
               ]
           },
           "es": {
               "name": "Bahrein",
               "capital": "Manama",
-              "flagDescription": "La bandera de Bahrein.",
+              "flagDescription": "La bandera de Bahrein tiene dos colores: blanco y granate, separados por una línea dentada serrada con 8 puntas. El blanco representa la paz y la honestidad, el granate representa tradicionalmente el valor en la región, y la línea serrada representa la fortaleza de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bahrein",
-                      "description": "Bahrein es un país en Western Asia."
+                      "icon": "water",
+                      "title": "Herencia de buceo de perlas",
+                      "description": "Antes del descubrimiento del petróleo, Bahrein era famoso por el buceo de perlas. Durante miles de años, los buzos bahraní buscaban perlas en el Golfo Pérsico, las más finas del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bahrein tiene una población de aproximadamente 1.6M."
+                      "icon": "architecture",
+                      "title": "Mezquita de Al Baraha",
+                      "description": "La Mezquita de Al Baraha es una de las mezquitas más antiguas de Bahrein, construida con una cúpula de madera impresionante y arquitectura islámica intrincada que ha sobrevivido más de 350 años."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bahrein es Manama."
+                      "icon": "water",
+                      "title": "Manantiales de agua dulce",
+                      "description": "Bahrein tiene manantiales de agua dulce en el fondo del mar, ¡únicos en Oriente Medio! El agua del manantial es tan fresca que los habitantes locales pueden bucear y recopilarla."
                   }
               ]
           }
@@ -912,44 +912,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Bangladesh",
               "capital": "Dhaka",
-              "flagDescription": "The flag of Bangladesh.",
+              "flagDescription": "Bangladesh's flag is green with a red circle in the center. The green represents the lush vegetation and life of the land, and the red circle represents the blood of those who died in the 1971 independence war. The circle is off-center to represent the rising sun.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Bangladesh",
-                      "description": "Bangladesh is a country in Southern Asia."
+                      "icon": "water",
+                      "title": "Sundarbans Mangrove Forest",
+                      "description": "The Sundarbans is the largest mangrove forest in the world, straddling Bangladesh and India. It's home to the endangered Bengal tiger, and its name means \"beautiful forest\" in Bengali."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bangladesh has a population of approximately 169.8M."
+                      "icon": "festival",
+                      "title": "Pohela Boishakh: New Year",
+                      "description": "Pohela Boishakh is the Bengali New Year, celebrated with parades, music, and traditional food. People wear bright colors and visit friends and family to wish them well."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bangladesh is Dhaka."
+                      "icon": "water",
+                      "title": "Floating Villages",
+                      "description": "In Bangladesh's rivers and wetlands, some communities live entirely on boats and floating houses. The floating villages are a unique way of life that has existed for centuries."
                   }
               ]
           },
           "es": {
-              "name": "Bangladesh",
-              "capital": "Dhaka",
-              "flagDescription": "La bandera de Bangladesh.",
+              "name": "Bangladés",
+              "capital": "Daca",
+              "flagDescription": "La bandera de Bangladés es verde con un círculo rojo en el centro. El verde representa la exuberante vegetación y la vida de la tierra, y el círculo rojo representa la sangre de quienes murieron en la guerra de independencia de 1971. El círculo está descentrado para representar el sol naciente.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bangladesh",
-                      "description": "Bangladesh es un país en Southern Asia."
+                      "icon": "water",
+                      "title": "Bosque de manglares Sundarbans",
+                      "description": "Los Sundarbans es el mayor bosque de manglares del mundo, en la frontera entre Bangladés e India. Es el hogar del tigre de Bengala en peligro de extinción, y su nombre significa \"bosque hermoso\" en bengalí."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bangladesh tiene una población de aproximadamente 169.8M."
+                      "icon": "festival",
+                      "title": "Pohela Boishakh: Año Nuevo",
+                      "description": "Pohela Boishakh es el Año Nuevo bengalí, celebrado con desfiles, música y comida tradicional. La gente viste colores brillantes y visita a amigos y familiares para desearles lo mejor."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bangladesh es Dhaka."
+                      "icon": "water",
+                      "title": "Aldeas flotantes",
+                      "description": "En los ríos y humedales de Bangladés, algunas comunidades viven enteramente en botes y casas flotantes. Las aldeas flotantes son una forma de vida única que ha existido durante siglos."
                   }
               ]
           }
@@ -1283,44 +1283,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Bhutan",
               "capital": "Thimphu",
-              "flagDescription": "The flag of Bhutan.",
+              "flagDescription": "Bhutan's flag is divided diagonally with orange/saffron in the upper triangle and crimson red in the lower triangle. A white dragon (Druk) in the center represents the power and might of Bhutan. Orange symbolizes the Buddhist religion and crimson red represents secular authority.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Bhutan",
-                      "description": "Bhutan is a country in Southern Asia."
+                      "icon": "mountain",
+                      "title": "Gross National Happiness",
+                      "description": "Bhutan doesn't measure progress by GDP — instead it measures \"Gross National Happiness.\" The government focuses on the well-being and happiness of its people instead of just economic growth."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bhutan has a population of approximately 784K."
+                      "icon": "religion",
+                      "title": "Tiger's Nest Monastery",
+                      "description": "The Tiger's Nest is a sacred monastery perched on a cliff 3,000 meters above the ground. According to legend, a Buddhist saint flew to this cliffside on a tiger's back."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bhutan is Thimphu."
+                      "icon": "forest",
+                      "title": "70% Forest Coverage",
+                      "description": "Bhutan has maintained over 70% forest coverage by constitutional law — making it one of the world's greenest countries and a global leader in environmental conservation."
                   }
               ]
           },
           "es": {
               "name": "Bután",
-              "capital": "Thimphu",
-              "flagDescription": "La bandera de Bután.",
+              "capital": "Timbu",
+              "flagDescription": "La bandera de Bután está dividida en diagonal con naranja/azafrán en el triángulo superior y rojo carmesí en el inferior. Un dragón blanco (Druk) en el centro representa el poder y la fuerza de Bután. El naranja simboliza la religión budista y el rojo carmesí representa la autoridad secular.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bután",
-                      "description": "Bután es un país en Southern Asia."
+                      "icon": "mountain",
+                      "title": "Felicidad Nacional Bruta",
+                      "description": "Bután no mide el progreso por PIB, sino por \"Felicidad Nacional Bruta\". El gobierno se enfoca en el bienestar y la felicidad de su pueblo en lugar de solo el crecimiento económico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bután tiene una población de aproximadamente 784K."
+                      "icon": "religion",
+                      "title": "Monasterio del Nido del Tigre",
+                      "description": "El Nido del Tigre es un monasterio sagrado encaramado en un acantilado a 3.000 metros de altura. Según la leyenda, un santo budista voló a este acantilado montado en el lomo de un tigre."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bután es Thimphu."
+                      "icon": "forest",
+                      "title": "Cobertura forestal del 70%",
+                      "description": "Bután ha mantenido más del 70% de cobertura forestal por ley constitucional, lo que la convierte en uno de los países más verdes del mundo y líder mundial en conservación ambiental."
                   }
               ]
           }
@@ -1654,44 +1654,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Brunei",
               "capital": "Bandar Seri Begawan",
-              "flagDescription": "The flag of Brunei.",
+              "flagDescription": "Brunei's flag is yellow with a diagonal stripe of white and black dividing it. The stripes hold the national emblem featuring a crescent, parasol, and hands. Yellow represents the Sultan, while white and black represent the chief ministers. The emblem represents the sultanate.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Brunei",
-                      "description": "Brunei is a country in South-Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Jame'ath Hassanil Bolkiah Mosque",
+                      "description": "This stunning mosque has a golden dome covered in 24-karat gold leaf and can hold thousands of worshippers. It's one of Asia's largest and most beautiful mosques."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Brunei has a population of approximately 456K."
+                      "icon": "rainforest",
+                      "title": "Ancient Rainforest",
+                      "description": "Brunei's rainforests are estimated to be 140 million years old — older than the Amazon! They are home to rare species like the proboscis monkey with its distinctive long nose."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Brunei is Bandar Seri Begawan."
+                      "icon": "water",
+                      "title": "Kampong Ayer: Water Village",
+                      "description": "Kampong Ayer is a historic settlement of about 30,000 people living in wooden houses built over water. It's one of the oldest settlements in Brunei, dating back centuries."
                   }
               ]
           },
           "es": {
-              "name": "Brunei",
+              "name": "Brunéi",
               "capital": "Bandar Seri Begawan",
-              "flagDescription": "La bandera de Brunei.",
+              "flagDescription": "La bandera de Brunéi es amarilla con una franja diagonal de blanco y negro dividiéndola. Las franjas contienen el emblema nacional que presenta una media luna, un parasol y manos. El amarillo representa al Sultán, mientras que el blanco y negro representan a los ministros principales. El emblema representa el sultanato.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Brunei",
-                      "description": "Brunei es un país en South-Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Mezquita Jame'ath Hassanil Bolkiah",
+                      "description": "Esta impresionante mezquita tiene una cúpula dorada cubierta con pan de oro de 24 quilates y puede albergar a miles de fieles. Es una de las mezquitas más grandes y hermosas de Asia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Brunei tiene una población de aproximadamente 456K."
+                      "icon": "rainforest",
+                      "title": "Selva tropical antigua",
+                      "description": "¡Se estima que las selvas tropicales de Brunéi tienen 140 millones de años, más antiguas que el Amazonas! Albergan especies raras como el mono narigudo con su distintiva nariz larga."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Brunei es Bandar Seri Begawan."
+                      "icon": "water",
+                      "title": "Kampong Ayer: aldea acuática",
+                      "description": "Kampong Ayer es un asentamiento histórico de unas 30.000 personas que viven en casas de madera construidas sobre el agua. Es uno de los asentamientos más antiguos de Brunéi, que se remonta siglos atrás."
                   }
               ]
           }
@@ -1866,44 +1866,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cambodia",
               "capital": "Phnom Penh",
-              "flagDescription": "The flag of Cambodia.",
+              "flagDescription": "Cambodia's flag is red with a blue border and features the Angkor Wat temple in white in the center. Red represents the blood of those who fought for the nation, the blue border symbolizes royalty, and Angkor Wat represents Cambodia's rich cultural heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cambodia",
-                      "description": "Cambodia is a country in South-Eastern Asia."
+                      "icon": "castle",
+                      "title": "Angkor Wat Temple",
+                      "description": "Angkor Wat is the largest religious monument in the world and one of the most magnificent temples ever built. This 12th-century Hindu temple is a UNESCO World Heritage Site and covers 1,600 square kilometers!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cambodia has a population of approximately 17.6M."
+                      "icon": "water",
+                      "title": "Tonlé Sap Lake",
+                      "description": "Tonlé Sap is Southeast Asia's largest freshwater lake. During monsoon season, it swells to 6 times its dry-season size, creating a unique ecosystem that supports millions of fish and birds."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cambodia is Phnom Penh."
+                      "icon": "silk",
+                      "title": "Cambodian Silk",
+                      "description": "Cambodia is famous for its luxurious silk weaving tradition dating back centuries. Cambodian silk is known for its vibrant colors and intricate patterns, making it highly prized worldwide."
                   }
               ]
           },
           "es": {
               "name": "Camboya",
-              "capital": "Phnom Penh",
-              "flagDescription": "La bandera de Camboya.",
+              "capital": "Nom Pen",
+              "flagDescription": "La bandera de Camboya es roja con un borde azul y presenta el templo de Angkor Wat en blanco en el centro. El rojo representa la sangre de quienes lucharon por la nación, el borde azul simboliza la realeza, y Angkor Wat representa el rico patrimonio cultural de Camboya.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Camboya",
-                      "description": "Camboya es un país en South-Eastern Asia."
+                      "icon": "castle",
+                      "title": "Templo de Angkor Wat",
+                      "description": "¡Angkor Wat es el monumento religioso más grande del mundo y uno de los templos más magníficos jamás construidos! Este templo hindú del siglo XII es Patrimonio de la Humanidad de la UNESCO y ¡cubre 1.600 kilómetros cuadrados!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Camboya tiene una población de aproximadamente 17.6M."
+                      "icon": "water",
+                      "title": "Lago Tonlé Sap",
+                      "description": "Tonlé Sap es el mayor lago de agua dulce del Sudeste Asiático. Durante la temporada de monzones, se hincha hasta 6 veces su tamaño en temporada seca, creando un ecosistema único que sustenta millones de peces y aves."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Camboya es Phnom Penh."
+                      "icon": "silk",
+                      "title": "Seda camboyana",
+                      "description": "Camboya es famosa por su tradición de tejido de seda lujosa que se remonta siglos atrás. La seda camboyana es conocida por sus colores vibrantes y patrones intrincados, lo que la hace altamente apreciada en todo el mundo."
                   }
               ]
           }
@@ -2365,22 +2365,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "China",
               "capital": "Beijing",
-              "flagDescription": "La bandera de China.",
+              "flagDescription": "La bandera de China es roja (símbolo del comunismo) con cinco estrellas amarillas en la esquina superior izquierda. Una estrella grande representa el Partido Comunista Chino y cuatro estrellas más pequeñas representan el pueblo chino. El color rojo representa la revolución.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre China",
-                      "description": "China es un país en Eastern Asia."
+                      "icon": "building",
+                      "title": "La Gran Muralla",
+                      "description": "La Gran Muralla de China es una de las estructuras más impresionantes construidas por el hombre, extendiéndose más de 21.000 kilómetros. Fue construida durante más de 2.000 años para proteger contra invasiones del norte."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "China tiene una población de aproximadamente 1.4B."
+                      "icon": "statue",
+                      "title": "Terracota Warriors",
+                      "description": "El Ejército de Terracota es una colección de 8.000 figuras de guerreros de cerámica de tamaño natural hechas para el Emperador Qin. Son una de las arqueologías más importantes descubiertas en el siglo XX."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de China es Beijing."
+                      "icon": "panda",
+                      "title": "Pandas gigantes",
+                      "description": "Los pandas gigantes son un símbolo nacional de China. Estos osos dóciles son nativos de los bosques de bambú de China central y están protegidos como patrimonio nacional."
                   }
               ]
           }
@@ -4145,44 +4145,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Georgia",
               "capital": "Tbilisi",
-              "flagDescription": "The flag of Georgia.",
+              "flagDescription": "Georgia's flag has five red squares (one in the center, four in the corners) on a white background, each containing a cross. This unique design represents Georgia's Christian heritage. The cross is the historic symbol of Georgia, representing the four evangelists.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Georgia",
-                      "description": "Georgia is a country in Western Asia."
+                      "icon": "wine",
+                      "title": "Ancient Wine Country",
+                      "description": "Georgia is considered the birthplace of wine — grape cultivation and fermentation began here around 6000 BC. Georgian wine-making traditions using clay vessels called qvevri are UNESCO-protected."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Georgia has a population of approximately 4.0M."
+                      "icon": "mountain",
+                      "title": "Caucasus Mountains",
+                      "description": "The majestic Caucasus Mountains form Georgia's border and are home to Mount Elbrus, the highest peak in Europe at 5,642 meters. The mountains offer spectacular hiking and wildlife."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Georgia is Tbilisi."
+                      "icon": "language",
+                      "title": "Unique Script",
+                      "description": "Georgian has one of the world's oldest alphabets still in use — developed around 430 AD. The Georgian script is so distinctive it's taught in Georgian schools as a source of national pride."
                   }
               ]
           },
           "es": {
               "name": "Georgia",
-              "capital": "Tbilisi",
-              "flagDescription": "La bandera de Georgia.",
+              "capital": "Tiflis",
+              "flagDescription": "La bandera de Georgia tiene cinco cuadrados rojos (uno en el centro, cuatro en las esquinas) sobre un fondo blanco, cada uno contiene una cruz. Este diseño único representa el patrimonio cristiano de Georgia. La cruz es el símbolo histórico de Georgia, que representa a los cuatro evangelistas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Georgia",
-                      "description": "Georgia es un país en Western Asia."
+                      "icon": "wine",
+                      "title": "País de vino antiguo",
+                      "description": "Georgia es considerada la cuna del vino: el cultivo de uvas y la fermentación comenzaron aquí alrededor del 6000 a.C. Las tradiciones georgianas de elaboración de vino usando vasijas de barro llamadas qvevri están protegidas por la UNESCO."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Georgia tiene una población de aproximadamente 4.0M."
+                      "icon": "mountain",
+                      "title": "Montañas del Cáucaso",
+                      "description": "Las majestuosas montañas del Cáucaso forman la frontera de Georgia y albergan el monte Elbrus, el pico más alto de Europa con 5.642 metros. Las montañas ofrecen senderismo espectacular y vida silvestre."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Georgia es Tbilisi."
+                      "icon": "language",
+                      "title": "Script único",
+                      "description": "El georgiano tiene uno de los alfabetos más antiguos del mundo que aún se usa, desarrollado alrededor del 430 d.C. El script georgiano es tan distintivo que se enseña en las escuelas georgianas como fuente de orgullo nacional."
                   }
               ]
           }
@@ -4992,45 +4992,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Hong Kong",
-              "capital": "City of Victoria",
-              "flagDescription": "The flag of Hong Kong.",
+              "capital": "Hong Kong",
+              "flagDescription": "Hong Kong's flag is red with a white bauhinia flower in the center. The bauhinia is the official emblem of Hong Kong and appears on the flag with a gold/red background. Red represents China, the bauhinia is Hong Kong's symbol, and the flag has been Hong Kong's since 1997.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Hong Kong",
-                      "description": "Hong Kong is a country in Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Harbor of a Thousand Ships",
+                      "description": "Victoria Harbour is one of the world's most spectacular harbors, surrounded by towering skyscrapers and crowned by the Star Ferry — a historic transport that's been running for over 100 years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Hong Kong has a population of approximately 7.5M."
+                      "icon": "mountain",
+                      "title": "Peak Tram",
+                      "description": "The Peak Tram climbs to Victoria Peak, offering the most incredible views of Hong Kong's skyline and harbor. The tram has been operating since 1888 and is one of the world's steepest cable cars."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Hong Kong is City of Victoria."
+                      "icon": "food",
+                      "title": "Dim Sum Tradition",
+                      "description": "Hong Kong's dim sum dining tradition involves small plates of dumplings, steamed buns, and appetizers. Dim sum restaurants are social hubs where people gather for tea and food served by trolleys."
                   }
               ]
           },
           "es": {
               "name": "Hong Kong",
-              "capital": "City of Victoria",
-              "flagDescription": "La bandera de Hong Kong.",
+              "capital": "Hong Kong",
+              "flagDescription": "La bandera de Hong Kong es roja con una flor de bauhinia blanca en el centro. La bauhinia es el emblema oficial de Hong Kong y aparece en la bandera con un fondo dorado/rojo. El rojo representa a China, la bauhinia es el símbolo de Hong Kong, y la bandera ha sido de Hong Kong desde 1997.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Hong Kong",
-                      "description": "Hong Kong es un país en Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Puerto de mil barcos",
+                      "description": "El Puerto de Victoria es uno de los puertos más espectaculares del mundo, rodeado de rascacielos imponentes y coronado por el Star Ferry, un transporte histórico que opera desde hace más de 100 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Hong Kong tiene una población de aproximadamente 7.5M."
+                      "icon": "mountain",
+                      "title": "Tranvía del Pico",
+                      "description": "El Tranvía del Pico sube a Victoria Peak, ofreciendo vistas increíbles del horizonte de Hong Kong y el puerto. El tranvía ha operado desde 1888 y es uno de los teleféricos más empinados del mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Hong Kong es City of Victoria."
+                      "icon": "food",
+                      "title": "Tradición del dim sum",
+                      "description": "La tradición culinaria de dim sum de Hong Kong involucra pequeños platos de dumplings, bollos al vapor y aperitivos. Los restaurantes de dim sum son centros sociales donde la gente se reúne para tomar té y comer servido en carros."
                   }
               ]
           }
@@ -5152,44 +5152,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "India",
               "capital": "New Delhi",
-              "flagDescription": "India's tricolor flag features saffron (courage), white (peace and truth), and green (fertility). The navy blue Ashoka Chakra — a 24-spoke wheel — sits at the center, representing the eternal cycle of dharma (righteousness).",
+              "flagDescription": "India's flag is the \"Tricolor\" — three equal horizontal stripes of orange, white, and green with a blue Ashoka Chakra (24-spoked wheel) in the center of the white stripe. Orange represents courage and sacrifice, white symbolizes peace and truth, green represents fertility and growth, and the wheel represents the law of karma.",
               "funFacts": [
                   {
-                      "icon": "calculate",
-                      "title": "Inventor of Zero",
-                      "description": "The concept of zero as a number was first developed by Indian mathematician Brahmagupta in 628 AD, revolutionizing mathematics worldwide."
+                      "icon": "building",
+                      "title": "Taj Mahal",
+                      "description": "The Taj Mahal is one of the world's most beautiful buildings, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It took 20 years and 20,000 workers to complete this white marble masterpiece."
                   },
                   {
-                      "icon": "movie",
-                      "title": "Bollywood Powerhouse",
-                      "description": "India's film industry produces more movies annually than Hollywood — over 1,500 films per year in more than 20 languages."
+                      "icon": "festival",
+                      "title": "Holi: Festival of Colors",
+                      "description": "Holi is a joyful Hindu festival celebrating the arrival of spring. People throw colorful powder and water on each other, creating a rainbow of fun and togetherness."
                   },
                   {
-                      "icon": "local_dining",
-                      "title": "Spice Capital of the World",
-                      "description": "India produces 75% of the world's spices and has been a hub of the global spice trade for over 4,000 years."
+                      "icon": "food",
+                      "title": "Spice Master",
+                      "description": "India is the world's largest producer and consumer of spices. Indian cuisine uses hundreds of spices like turmeric, cardamom, and cinnamon to create some of the world's most flavorful dishes."
                   }
               ]
           },
           "es": {
               "name": "India",
-              "capital": "New Delhi",
-              "flagDescription": "La bandera de India.",
+              "capital": "Nueva Delhi",
+              "flagDescription": "La bandera de India es el \"Tricolor\": tres franjas horizontales iguales de naranja, blanco y verde con una Rueda de Ashoka azul (rueda de 24 radios) en el centro de la franja blanca. El naranja representa el valor y el sacrificio, el blanco simboliza la paz y la verdad, el verde representa la fertilidad y el crecimiento, y la rueda representa la ley del karma.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre India",
-                      "description": "India es un país en Southern Asia."
+                      "icon": "building",
+                      "title": "Taj Mahal",
+                      "description": "El Taj Mahal es uno de los edificios más hermosos del mundo, construido por el emperador mogol Shah Jahan en memoria de su esposa Mumtaz Mahal. ¡Tardó 20 años y 20.000 trabajadores en completar esta obra maestra de mármol blanco!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "India tiene una población de aproximadamente 1.4B."
+                      "icon": "festival",
+                      "title": "Holi: Festival de los colores",
+                      "description": "Holi es un alegre festival hindú que celebra la llegada de la primavera. La gente se lanza polvo y agua de colores entre sí, creando un arcoíris de diversión y unidad."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de India es New Delhi."
+                      "icon": "food",
+                      "title": "Maestro de las especias",
+                      "description": "India es el mayor productor y consumidor de especias del mundo. La cocina india usa cientos de especias como la cúrcuma, el cardamomo y la canela para crear algunos de los platos más sabrosos del mundo."
                   }
               ]
           }
@@ -5205,44 +5205,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Indonesia",
               "capital": "Jakarta",
-              "flagDescription": "Indonesia's flag, known as the Sang Saka Merah Putih (Sacred Red and White), features two equal horizontal stripes — red on top and white below. Red represents courage and white symbolizes purity.",
+              "flagDescription": "Indonesia's flag is simple but bold — two equal horizontal stripes of red and white. Red represents courage and the blood of independence fighters, while white symbolizes purity and spiritual values. This same colors scheme has been used since the 13th century.",
               "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "World's Largest Archipelago",
-                      "description": "Indonesia is the world's largest archipelago nation with over 17,000 islands. About 6,000 of those islands are inhabited by people."
-                  },
-                  {
-                      "icon": "forest",
-                      "title": "Orangutan Home",
-                      "description": "Borneo and Sumatra — two of Indonesia's main islands — are among the last wild habitats of orangutans, which share about 97% of human DNA."
-                  },
                   {
                       "icon": "volcano",
                       "title": "Ring of Fire",
-                      "description": "Indonesia sits on the Pacific Ring of Fire and has over 130 active volcanoes — the most of any country. The 1883 Krakatoa eruption was heard 4,800 km away."
+                      "description": "Indonesia sits on the Pacific Ring of Fire and has more active volcanoes than any other country in the world — about 130 volcanoes, 20 of which erupt regularly!"
+                  },
+                  {
+                      "icon": "pets",
+                      "title": "Komodo Dragons",
+                      "description": "Komodo dragons are the world's largest living lizards, growing up to 3 meters long. These prehistoric-looking reptiles live only on a few Indonesian islands and are carefully protected."
+                  },
+                  {
+                      "icon": "culture",
+                      "title": "World's Most Diverse Country",
+                      "description": "Indonesia has over 17,000 islands and over 300 ethnic groups, each with their own language and traditions. It's the most linguistically diverse country in the world."
                   }
               ]
           },
           "es": {
               "name": "Indonesia",
-              "capital": "Jakarta",
-              "flagDescription": "La bandera de Indonesia.",
+              "capital": "Yakarta",
+              "flagDescription": "La bandera de Indonesia es simple pero audaz: dos franjas horizontales iguales de rojo y blanco. El rojo representa el valor y la sangre de los luchadores por la independencia, mientras que el blanco simboliza la pureza y los valores espirituales. Este esquema de colores se ha utilizado desde el siglo XIII.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Indonesia",
-                      "description": "Indonesia es un país en South-Eastern Asia."
+                      "icon": "volcano",
+                      "title": "Anillo de fuego",
+                      "description": "¡Indonesia se encuentra en el Anillo de Fuego del Pacífico y tiene más volcanes activos que cualquier otro país del mundo, alrededor de 130 volcanes, 20 de los cuales entran en erupción regularmente!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Indonesia tiene una población de aproximadamente 284.4M."
+                      "icon": "pets",
+                      "title": "Dragones de Komodo",
+                      "description": "Los dragones de Komodo son los lagartos vivientes más grandes del mundo, creciendo hasta 3 metros de largo. Estos reptiles de aspecto prehistórico viven solo en algunas islas indonesias y están cuidadosamente protegidos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Indonesia es Jakarta."
+                      "icon": "culture",
+                      "title": "País más diverso del mundo",
+                      "description": "Indonesia tiene más de 17.000 islas y más de 300 grupos étnicos, cada uno con su propio idioma y tradiciones. Es el país más diverso lingüísticamente del mundo."
                   }
               ]
           }
@@ -5258,44 +5258,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Iran",
               "capital": "Tehran",
-              "flagDescription": "The flag of Iran.",
+              "flagDescription": "Iran's flag has three equal horizontal stripes of green, white, and red. Along the top and bottom edges runs a red script reading \"Allahu Akbar\" (God is Great). The green represents Islam, white represents peace, red symbolizes the blood of martyrs, and the script affirms Iran's Islamic heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Iran",
-                      "description": "Iran is a country in Southern Asia."
+                      "icon": "history",
+                      "title": "Ancient Persia",
+                      "description": "Iran is home to one of the world's oldest civilizations. The ancient Persian Empire was one of history's greatest, stretching from Egypt to India over 2,000 years ago."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Iran has a population of approximately 86.0M."
+                      "icon": "building",
+                      "title": "Persepolis Ruins",
+                      "description": "Persepolis was the capital of the Achaemenid Empire and is now a stunning archaeological site with ruins of palaces, gates, and reliefs carved into stone. It's a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Iran is Tehran."
+                      "icon": "carpet",
+                      "title": "Persian Carpets",
+                      "description": "Persian carpets are considered the finest hand-woven carpets in the world. Each carpet takes months to create and tells stories through its intricate patterns and colors."
                   }
               ]
           },
           "es": {
-              "name": "Iran",
-              "capital": "Tehran",
-              "flagDescription": "La bandera de Iran.",
+              "name": "Irán",
+              "capital": "Teherán",
+              "flagDescription": "La bandera de Irán tiene tres franjas horizontales iguales de verde, blanco y rojo. A lo largo de los bordes superior e inferior corre una escritura roja que dice \"Allahu Akbar\" (Dios es Grandioso). El verde representa el Islam, el blanco la paz, el rojo simboliza la sangre de los mártires, y el script afirma el patrimonio islámico de Irán.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Iran",
-                      "description": "Iran es un país en Southern Asia."
+                      "icon": "history",
+                      "title": "Persia antigua",
+                      "description": "Irán es el hogar de una de las civilizaciones más antiguas del mundo. El antiguo Imperio Persa fue uno de los más grandes de la historia, extendiéndose desde Egipto hasta India hace más de 2.000 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Iran tiene una población de aproximadamente 86.0M."
+                      "icon": "building",
+                      "title": "Ruinas de Persépolis",
+                      "description": "Persépolis fue la capital del Imperio Aqueménida y ahora es un impresionante sitio arqueológico con ruinas de palacios, puertas y relieves tallados en piedra. Es Patrimonio Mundial de la UNESCO."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Iran es Tehran."
+                      "icon": "carpet",
+                      "title": "Alfombras persas",
+                      "description": "Las alfombras persas son consideradas las mejores alfombras tejidas a mano del mundo. Cada alfombra tarda meses en crearse y cuenta historias a través de sus patrones y colores intrincados."
                   }
               ]
           }
@@ -5311,44 +5311,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Iraq",
               "capital": "Baghdad",
-              "flagDescription": "The flag of Iraq.",
+              "flagDescription": "Iraq's flag has three equal horizontal stripes of red, white, and black with the phrase \"Allahu Akbar\" (God is Great) in green script across the middle. Red represents courage, white symbolizes peace, black represents the dark past, and the green script affirms Iraq's Islamic identity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Iraq",
-                      "description": "Iraq is a country in Western Asia."
+                      "icon": "history",
+                      "title": "Cradle of Civilization",
+                      "description": "Iraq is home to ancient Mesopotamia, where some of the world's first civilizations began around 3500 BC. It's called the \"Cradle of Civilization\" because writing, cities, and law were invented here."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Iraq has a population of approximately 46.1M."
+                      "icon": "library",
+                      "title": "House of Wisdom",
+                      "description": "In medieval Baghdad, the House of Wisdom was one of the world's largest libraries and centers of learning. Scholars from around the world came to study mathematics, astronomy, and medicine."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Iraq is Baghdad."
+                      "icon": "architecture",
+                      "title": "Hanging Gardens of Babylon",
+                      "description": "The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World. Built in ancient Iraq (Babylon), they were legendary for their beauty and irrigation system."
                   }
               ]
           },
           "es": {
               "name": "Irak",
-              "capital": "Baghdad",
-              "flagDescription": "La bandera de Irak.",
+              "capital": "Bagdad",
+              "flagDescription": "La bandera de Irak tiene tres franjas horizontales iguales de rojo, blanco y negro con la frase \"Allahu Akbar\" (Dios es Grandioso) en escritura verde atravesando el centro. El rojo representa el valor, el blanco simboliza la paz, el negro representa el pasado oscuro, y la escritura verde afirma la identidad islámica de Irak.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Irak",
-                      "description": "Irak es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Cuna de la civilización",
+                      "description": "Irak es el hogar de la antigua Mesopotamia, donde comenzaron algunas de las primeras civilizaciones del mundo alrededor del 3500 a.C. Se llama la \"Cuna de la Civilización\" porque aquí fueron inventados la escritura, las ciudades y la ley."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Irak tiene una población de aproximadamente 46.1M."
+                      "icon": "library",
+                      "title": "Casa de la sabiduría",
+                      "description": "En el Bagdad medieval, la Casa de la Sabiduría fue una de las mayores bibliotecas y centros de aprendizaje del mundo. Eruditos de todo el mundo vinieron a estudiar matemáticas, astronomía y medicina."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Irak es Baghdad."
+                      "icon": "architecture",
+                      "title": "Jardines colgantes de Babilonia",
+                      "description": "Los Jardines Colgantes de Babilonia fueron una de las Siete Maravillas del Mundo Antiguo. Construidos en el antiguo Irak (Babilonia), eran legendarios por su belleza y sistema de riego."
                   }
               ]
           }
@@ -5470,44 +5470,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Israel",
               "capital": "Jerusalem",
-              "flagDescription": "The flag of Israel.",
+              "flagDescription": "Israel's flag is white with two blue horizontal stripes (top and bottom) and a blue six-pointed Star of David in the center. The colors are inspired by the tallit, a traditional Jewish prayer shawl. The Star of David is an ancient Jewish symbol, and the blue and white represent hope and faith.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Israel",
-                      "description": "Israel is a country in Western Asia."
+                      "icon": "history",
+                      "title": "Holy Sites",
+                      "description": "Jerusalem is the holiest city for Jews, Christians, and Muslims. The Western Wall, Church of the Holy Sepulchre, and Al-Aqsa Mosque are all located here, making it a place of profound spiritual importance."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Israel has a population of approximately 10.1M."
+                      "icon": "water",
+                      "title": "Dead Sea",
+                      "description": "The Dead Sea is the lowest point on Earth at 1,410 feet below sea level. Its water is so salty (33% salinity) that people float without effort — a unique natural phenomenon!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Israel is Jerusalem."
+                      "icon": "tech",
+                      "title": "Tech Innovation Hub",
+                      "description": "Israel is a global leader in technology and innovation. Despite its small size, Israel has more startups per capita than any other country and is called the \"Startup Nation.\""
                   }
               ]
           },
           "es": {
               "name": "Israel",
-              "capital": "Jerusalem",
-              "flagDescription": "La bandera de Israel.",
+              "capital": "Jerusalén",
+              "flagDescription": "La bandera de Israel es blanca con dos franjas azules horizontales (arriba y abajo) y una Estrella de David azul de seis puntas en el centro. Los colores están inspirados en el tallit, un chal de oración judío tradicional. La Estrella de David es un antiguo símbolo judío, y el azul y blanco representan esperanza y fe.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Israel",
-                      "description": "Israel es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Sitios sagrados",
+                      "description": "Jerusalén es la ciudad más sagrada para judíos, cristianos y musulmanes. El Muro de los Lamentos, la Iglesia del Santo Sepulcro y la Mezquita de Al-Aqsa están todos ubicados aquí, lo que la convierte en un lugar de profunda importancia espiritual."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Israel tiene una población de aproximadamente 10.1M."
+                      "icon": "water",
+                      "title": "Mar Muerto",
+                      "description": "El Mar Muerto es el punto más bajo de la Tierra, a 430 metros bajo el nivel del mar. Su agua es tan salada (33% de salinidad) que la gente flota sin esfuerzo, ¡un fenómeno natural único!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Israel es Jerusalem."
+                      "icon": "tech",
+                      "title": "Centro de innovación tecnológica",
+                      "description": "Israel es líder mundial en tecnología e innovación. A pesar de su tamaño pequeño, Israel tiene más startups per cápita que cualquier otro país y se conoce como la \"Nación Startup\"."
                   }
               ]
           }
@@ -5682,44 +5682,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Japan",
               "capital": "Tokyo",
-              "flagDescription": "The national flag of Japan, known as the Hinomaru (\"Circle of the Sun\"), features a red circle on a white field. White represents honesty and purity, while the red circle represents the sun — connecting Japan to its ancient name, \"Land of the Rising Sun.\"",
+              "flagDescription": "Japan's flag features a red circle representing the sun against a white background. It's called the \"Nisshoki\" or \"sun-mark flag.\" The red circle symbolizes the sun goddess Amaterasu in Japanese mythology, and Japan has been called the \"Land of the Rising Sun.\"",
               "funFacts": [
                   {
-                      "icon": "mountain_flag",
-                      "title": "Volcanic Landscape",
-                      "description": "Japan has over 100 active volcanoes! Mount Fuji is the tallest and most iconic, standing at 3,776 meters."
+                      "icon": "robot",
+                      "title": "Robotics Leader",
+                      "description": "Japan leads the world in robotics technology and manufacturing. From industrial robots to humanoid robots like Pepper, Japan creates innovations that help people in factories and homes around the world."
                   },
                   {
-                      "icon": "restaurant",
-                      "title": "Sushi Origins",
-                      "description": "While sushi is now considered high-end cuisine, it originally started as a cheap \"fast food\" for laborers to eat on the go!"
+                      "icon": "mountain",
+                      "title": "Mount Fuji",
+                      "description": "Mount Fuji is Japan's highest peak at 3,776 meters and is a sacred mountain in Japanese culture. It's almost perfectly conical and is one of Japan's most iconic symbols."
                   },
                   {
-                      "icon": "train",
-                      "title": "Bullet Train Punctuality",
-                      "description": "Japanese trains are so punctual that if a train is more than 5 minutes late, the staff hands out \"delay certificates.\""
+                      "icon": "culture",
+                      "title": "Cherry Blossom Festival",
+                      "description": "Hanami (cherry blossom festival) is a beloved Japanese tradition celebrating the blooming of cherry trees in spring. Families gather under the pink and white blossoms for picnics and celebrations."
                   }
               ]
           },
           "es": {
               "name": "Japón",
-              "capital": "Tokyo",
-              "flagDescription": "La bandera de Japón.",
+              "capital": "Tokio",
+              "flagDescription": "La bandera de Japón presenta un círculo rojo que representa el sol sobre un fondo blanco. Se llama \"Nisshoki\" o \"bandera marca del sol\". El círculo rojo simboliza a la diosa del sol Amaterasu en la mitología japonesa, y Japón ha sido llamado la \"Tierra del Sol Naciente\".",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Japón",
-                      "description": "Japón es un país en Eastern Asia."
+                      "icon": "robot",
+                      "title": "Líder en robótica",
+                      "description": "Japón lidera el mundo en tecnología robótica y fabricación. Desde robots industriales hasta robots humanoides como Pepper, Japón crea innovaciones que ayudan a las personas en fábricas y hogares de todo el mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Japón tiene una población de aproximadamente 123.2M."
+                      "icon": "mountain",
+                      "title": "Monte Fuji",
+                      "description": "El Monte Fuji es el pico más alto de Japón con 3.776 metros y es una montaña sagrada en la cultura japonesa. Es casi perfectamente cónico y es uno de los símbolos más icónicos de Japón."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Japón es Tokyo."
+                      "icon": "culture",
+                      "title": "Festival de las flores de cerezo",
+                      "description": "Hanami (festival de flores de cerezo) es una tradición japonesa amada que celebra la floración de los árboles de cerezo en primavera. Las familias se reúnen bajo los flores rosa y blanca para picnics y celebraciones."
                   }
               ]
           }
@@ -5788,44 +5788,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Jordan",
               "capital": "Amman",
-              "flagDescription": "The flag of Jordan.",
+              "flagDescription": "Jordan's flag has three equal horizontal stripes of black, white, and green (top to bottom) with a red triangle on the left side. The colors are the Pan-Arab colors: black for history, white for peace, green for the Prophet Muhammad's tribe, and red for courage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Jordan",
-                      "description": "Jordan is a country in Western Asia."
+                      "icon": "mountain",
+                      "title": "Petra: Rose City",
+                      "description": "Petra is an ancient city carved entirely into rose-colored stone cliffs. Built by the Nabataeans around 2,000 years ago, it's one of the New Seven Wonders of the World and a UNESCO site."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Jordan has a population of approximately 11.7M."
+                      "icon": "water",
+                      "title": "Dead Sea Lowest Point",
+                      "description": "The Dead Sea on Jordan's border is the lowest point on Earth. Its extreme salinity makes it perfect for floating, and mineral-rich mud is believed to have healing properties."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Jordan is Amman."
+                      "icon": "desert",
+                      "title": "Wadi Rum Red Desert",
+                      "description": "Wadi Rum is a stunning desert landscape with massive rock formations. It's been used as a filming location for Star Wars and other movies because of its otherworldly appearance."
                   }
               ]
           },
           "es": {
               "name": "Jordania",
-              "capital": "Amman",
-              "flagDescription": "La bandera de Jordania.",
+              "capital": "Ammán",
+              "flagDescription": "La bandera de Jordania tiene tres franjas horizontales iguales de negro, blanco y verde (de arriba a abajo) con un triángulo rojo a la izquierda. Los colores son los colores panárabes: negro por la historia, blanco por la paz, verde por la tribu del Profeta Mahoma, y rojo por el valor.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Jordania",
-                      "description": "Jordania es un país en Western Asia."
+                      "icon": "mountain",
+                      "title": "Petra: la ciudad rosa",
+                      "description": "Petra es una ciudad antigua tallada completamente en acantilados de piedra de color rosa. Construida por los nabateos hace alrededor de 2.000 años, es una de las Nuevas Siete Maravillas del Mundo y un sitio de la UNESCO."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Jordania tiene una población de aproximadamente 11.7M."
+                      "icon": "water",
+                      "title": "Mar Muerto: punto más bajo",
+                      "description": "El Mar Muerto en la frontera de Jordania es el punto más bajo de la Tierra. Su salinidad extrema lo hace perfecto para flotar, y el barro mineral se cree que tiene propiedades curativas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Jordania es Amman."
+                      "icon": "desert",
+                      "title": "Desierto rojo de Wadi Rum",
+                      "description": "Wadi Rum es un impresionante paisaje desértico con formaciones rocosas masivas. Ha sido utilizado como lugar de rodaje de Star Wars y otras películas por su apariencia fuera de este mundo."
                   }
               ]
           }
@@ -5841,44 +5841,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Kazakhstan",
               "capital": "Astana",
-              "flagDescription": "The flag of Kazakhstan.",
+              "flagDescription": "Kazakhstan's flag is sky-blue with a golden sun and a soaring steppe eagle (golden) in the center, with a gold ornamental pattern on the left side. The blue represents peace and prosperity, the sun represents life and energy, and the eagle symbolizes freedom and power.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Kazakhstan",
-                      "description": "Kazakhstan is a country in Central Asia."
+                      "icon": "space",
+                      "title": "Space Travel Birthplace",
+                      "description": "The Baikonur Cosmodrome in Kazakhstan is the world's oldest and largest space launch facility. Sputnik launched from here, and rockets carrying cosmonauts to the International Space Station still depart from this historic site."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Kazakhstan has a population of approximately 20.4M."
+                      "icon": "mountain",
+                      "title": "Steppe Landscape",
+                      "description": "Kazakhstan's vast steppes cover enormous areas of grassland. These endless rolling plains have been home to nomadic peoples for thousands of years and support unique wildlife like wild horses."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Kazakhstan is Astana."
+                      "icon": "city",
+                      "title": "Modern Astana",
+                      "description": "Astana is one of the world's newest capital cities, built from scratch in the late 1990s. Its futuristic architecture and rapid growth have made it a symbol of Kazakhstan's progress."
                   }
               ]
           },
           "es": {
               "name": "Kazajistán",
-              "capital": "Astana",
-              "flagDescription": "La bandera de Kazajistán.",
+              "capital": "Astaná",
+              "flagDescription": "La bandera de Kazajistán es azul cielo con un sol dorado y un águila de las estepas en vuelo (dorada) en el centro, con un patrón ornamental dorado en el lado izquierdo. El azul representa la paz y la prosperidad, el sol representa la vida y la energía, y el águila simboliza la libertad y el poder.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Kazajistán",
-                      "description": "Kazajistán es un país en Central Asia."
+                      "icon": "space",
+                      "title": "Cuna de los viajes espaciales",
+                      "description": "El Cosmódromo de Baikonur en Kazajistán es la instalación de lanzamiento espacial más antigua y grande del mundo. El Sputnik se lanzó desde aquí, y los cohetes que transportan cosmonautas a la Estación Espacial Internacional aún salen desde este sitio histórico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kazajistán tiene una población de aproximadamente 20.4M."
+                      "icon": "mountain",
+                      "title": "Paisaje de estepa",
+                      "description": "Las vastas estepas de Kazajistán cubren enormes áreas de pastizales. Estas llanuras ondulantes infinitas han sido hogar de pueblos nómadas durante miles de años y sustentan fauna única como caballos salvajes."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kazajistán es Astana."
+                      "icon": "city",
+                      "title": "Astaná moderna",
+                      "description": "Astaná es una de las nuevas capitales más nuevas del mundo, construida desde cero a finales de los años 90. Su arquitectura futurista y rápido crecimiento la han convertido en símbolo del progreso de Kazajistán."
                   }
               ]
           }
@@ -6074,23 +6074,23 @@ export const countriesData: CountryEntry[] = [
           },
           "es": {
               "name": "Kuwait",
-              "capital": "Kuwait City",
-              "flagDescription": "La bandera de Kuwait.",
+              "capital": "Ciudad de Kuwait",
+              "flagDescription": "La bandera de Kuwait tiene tres franjas horizontales iguales de verde, blanco y rojo con un trapecio negro en el lado izquierdo. El verde representa la vegetación, el blanco representa la paz, el rojo representa la fortaleza, y el negro representa las masas de petróleo del país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Kuwait",
-                      "description": "Kuwait es un país en Western Asia."
+                      "icon": "oil",
+                      "title": "Riqueza petrolera",
+                      "description": "Kuwait tiene las terceras reservas de petróleo más grandes del mundo. El petróleo ha transformado a Kuwait de un pequeño puerto comercial en un moderna nación próspera."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kuwait tiene una población de aproximadamente 4.9M."
+                      "icon": "architecture",
+                      "title": "Torre de la Liberación",
+                      "description": "La Torre de la Liberación es un símbolo de la resiliencia de Kuwait, reconstruida después de la Guerra del Golfo de 1991. La torre ofrece vistas 360 grados de la ciudad desde sus pisos de observación."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kuwait es Kuwait City."
+                      "icon": "desert",
+                      "title": "Desierto kuwaití",
+                      "description": "El desierto de Kuwait es árido y extremadamente caliente, con temperaturas que pueden superar los 50°C. A pesar de esto, la vida silvestre del desierto como el oryx árabe ha evolucionado para sobrevivir en este ambiente hostil."
                   }
               ]
           }
@@ -6106,44 +6106,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Kyrgyzstan",
               "capital": "Bishkek",
-              "flagDescription": "The flag of Kyrgyzstan.",
+              "flagDescription": "Kyrgyzstan's flag is red with a yellow sun in the center containing a red tunduk (a stylized depiction of the crown of a Kyrgyz yurt, the traditional dwelling). The red represents bravery and strength, the yellow sun symbolizes peace and prosperity, and the tunduk represents the Kyrgyz nomadic heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Kyrgyzstan",
-                      "description": "Kyrgyzstan is a country in Central Asia."
+                      "icon": "mountain",
+                      "title": "Tian Shan Mountains",
+                      "description": "The Tian Shan Mountains (\"Celestial Mountains\") dominate Kyrgyzstan with peaks over 7,000 meters. These dramatic mountains are home to rare snow leopards and ibex."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Kyrgyzstan has a population of approximately 7.3M."
+                      "icon": "epic",
+                      "title": "Epic of Manas",
+                      "description": "The Epic of Manas is one of the world's longest epic poems, telling stories of a legendary Kyrgyz hero. It's been passed down orally through generations and is UNESCO-protected as world heritage."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Kyrgyzstan is Bishkek."
+                      "icon": "culture",
+                      "title": "Nomadic Yurt Culture",
+                      "description": "Kyrgyzstan has a strong nomadic heritage. Yurts (traditional round felt tents) are still used today, and yurt stays allow visitors to experience traditional Kyrgyz hospitality and life."
                   }
               ]
           },
           "es": {
-              "name": "Kirguizistán",
-              "capital": "Bishkek",
-              "flagDescription": "La bandera de Kirguizistán.",
+              "name": "Kirguistán",
+              "capital": "Biskek",
+              "flagDescription": "La bandera de Kirguistán es roja con un sol amarillo en el centro que contiene un tunduk rojo (una representación estilizada de la corona de una yurta kirguisa, la vivienda tradicional). El rojo representa el valor y la fortaleza, el sol amarillo simboliza la paz y la prosperidad, y el tunduk representa el patrimonio nómada kirguiso.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Kirguizistán",
-                      "description": "Kirguizistán es un país en Central Asia."
+                      "icon": "mountain",
+                      "title": "Montañas Tian Shan",
+                      "description": "Las Montañas Tian Shan (\"Montañas Celestiales\") dominan Kirguistán con picos superiores a 7.000 metros. Estas dramáticas montañas albergan raros leopardos de las nieves e íbices."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kirguizistán tiene una población de aproximadamente 7.3M."
+                      "icon": "epic",
+                      "title": "Epopeya de Manas",
+                      "description": "La Epopeya de Manas es uno de los poemas épicos más largos del mundo, narrando historias de un legendario héroe kirguiso. Ha sido transmitida oralmente a través de generaciones y está protegida por la UNESCO como patrimonio mundial."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kirguizistán es Bishkek."
+                      "icon": "culture",
+                      "title": "Cultura nómada de yurtas",
+                      "description": "Kirguistán tiene un fuerte patrimonio nómada. Las yurtas (tiendas de fieltro redondas tradicionales) se siguen usando hoy, y alojamientos en yurtas permiten a los visitantes experimentar la hospitalidad y vida kirguisa tradicional."
                   }
               ]
           }
@@ -6159,44 +6159,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Laos",
               "capital": "Vientiane",
-              "flagDescription": "The flag of Laos.",
+              "flagDescription": "Laos's flag has three equal horizontal stripes of red, blue, and red with a white circle in the center. The red stripes represent the blood shed for independence, the blue represents the Mekong River and prosperity, and the white circle represents the full moon and unity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Laos",
-                      "description": "Laos is a country in South-Eastern Asia."
+                      "icon": "water",
+                      "title": "Mekong River",
+                      "description": "The Mekong River flows through Laos and is vital to the country's life and economy. It's one of the world's most important rivers and supports millions of people across Southeast Asia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Laos has a population of approximately 7.6M."
+                      "icon": "temple",
+                      "title": "Luang Prabang Temples",
+                      "description": "Luang Prabang is an ancient city filled with hundreds of golden temples and Buddhist monasteries. Watching monks in saffron robes collect alms at dawn is one of Southeast Asia's most peaceful traditions."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Laos is Vientiane."
+                      "icon": "nature",
+                      "title": "Karst Landscape",
+                      "description": "Laos has dramatic karst limestone formations creating stunning landscapes with caves and underground rivers. The karst scenery around Vang Vieng attracts rock climbers and explorers from around the world."
                   }
               ]
           },
           "es": {
               "name": "Laos",
-              "capital": "Vientiane",
-              "flagDescription": "La bandera de Laos.",
+              "capital": "Vientián",
+              "flagDescription": "La bandera de Laos tiene tres franjas horizontales iguales de rojo, azul y rojo con un círculo blanco en el centro. Las franjas rojas representan la sangre derramada por la independencia, el azul representa el río Mekong y la prosperidad, y el círculo blanco representa la luna llena y la unidad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Laos",
-                      "description": "Laos es un país en South-Eastern Asia."
+                      "icon": "water",
+                      "title": "Río Mekong",
+                      "description": "El río Mekong fluye a través de Laos y es vital para la vida y la economía del país. Es uno de los ríos más importantes del mundo y sustenta millones de personas en toda el Sudeste Asiático."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Laos tiene una población de aproximadamente 7.6M."
+                      "icon": "temple",
+                      "title": "Templos de Luang Prabang",
+                      "description": "Luang Prabang es una ciudad antigua llena de cientos de templos dorados y monasterios budistas. Ver a monjes con túnicas azafrán recolectando limosnas al amanecer es una de las tradiciones más pacíficas del Sudeste Asiático."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Laos es Vientiane."
+                      "icon": "nature",
+                      "title": "Paisaje kárstico",
+                      "description": "Laos tiene formaciones dramáticas de piedra caliza kárstica creando paisajes impresionantes con cuevas y ríos subterráneos. El paisaje kárstico alrededor de Vang Vieng atrae a escaladores y exploradores de todo el mundo."
                   }
               ]
           }
@@ -6265,44 +6265,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Lebanon",
               "capital": "Beirut",
-              "flagDescription": "The flag of Lebanon.",
+              "flagDescription": "Lebanon's flag has two red stripes separated by a white stripe with a green cedar tree in the center. The cedar is Lebanon's national symbol and appears on coins and stamps. Red represents courage and sacrifice, white symbolizes peace, and the cedar represents eternal life and resilience.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Lebanon",
-                      "description": "Lebanon is a country in Western Asia."
+                      "icon": "tree",
+                      "title": "Iconic Cedar Trees",
+                      "description": "The Cedar of Lebanon (Cedrus libani) is Lebanon's national symbol and appears on its flag. These ancient trees have been valued for over 3,000 years and are now protected in mountain reserves."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Lebanon has a population of approximately 5.5M."
+                      "icon": "history",
+                      "title": "Phoenician Legacy",
+                      "description": "Ancient Phoenicians from Lebanon were the world's greatest sailors and traders. They invented the alphabet (which became the basis for Arabic, Hebrew, and Greek letters) and established trade routes across the Mediterranean."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Lebanon is Beirut."
+                      "icon": "city",
+                      "title": "Paris of the Middle East",
+                      "description": "Beirut was once called the \"Paris of the Middle East\" for its cosmopolitan culture, restaurants, and nightlife. It remains a vibrant city with a mix of ancient and modern architecture."
                   }
               ]
           },
           "es": {
               "name": "Líbano",
               "capital": "Beirut",
-              "flagDescription": "La bandera de Líbano.",
+              "flagDescription": "La bandera del Líbano tiene dos franjas rojas separadas por una franja blanca con un árbol de cedro verde en el centro. El cedro es el símbolo nacional del Líbano y aparece en monedas y sellos. El rojo representa el valor y el sacrificio, el blanco simboliza la paz, y el cedro representa la vida eterna y la resiliencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Líbano",
-                      "description": "Líbano es un país en Western Asia."
+                      "icon": "tree",
+                      "title": "Árboles de cedro icónicos",
+                      "description": "El Cedro del Líbano (Cedrus libani) es el símbolo nacional del Líbano y aparece en su bandera. Estos árboles antiguos han sido valorados durante más de 3.000 años y ahora están protegidos en reservas montañosas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Líbano tiene una población de aproximadamente 5.5M."
+                      "icon": "history",
+                      "title": "Legado fenicio",
+                      "description": "Los antiguos fenicios del Líbano fueron los mayores marineros y comerciantes del mundo. Inventaron el alfabeto (que se convirtió en la base de las letras árabes, hebreas y griegas) y establecieron rutas comerciales a través del Mediterráneo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Líbano es Beirut."
+                      "icon": "city",
+                      "title": "París de Oriente Medio",
+                      "description": "Beirut fue una vez llamada la \"París de Oriente Medio\" por su cultura cosmopolita, restaurantes y vida nocturna. Sigue siendo una ciudad vibrante con una mezcla de arquitectura antigua y moderna."
                   }
               ]
           }
@@ -6635,45 +6635,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Macau",
-              "capital": "",
-              "flagDescription": "The flag of Macau.",
+              "capital": "Macau",
+              "flagDescription": "Macau's flag is green with the Macau emblem in white in the center. The emblem features a stylized lotus flower (symbol of purity and grace), an arched bridge (Macau-Zhuhai Bridge), and a boat representing the maritime heritage. Green represents harmony and the territory's prosperity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Macau",
-                      "description": "Macau is a country in Eastern Asia."
+                      "icon": "casino",
+                      "title": "Gambling Capital",
+                      "description": "Macau is the world's largest gambling center, surpassing even Las Vegas in gaming revenue. The glittering casinos and resorts line the skyline, making it a major Asian entertainment destination."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Macau has a population of approximately 686K."
+                      "icon": "architecture",
+                      "title": "Historic Portuguese Colony",
+                      "description": "Macau was the first European settlement in East Asia and remained a Portuguese colony for over 400 years until 1999. Its historic center is a UNESCO site with Portuguese architecture and traditions still visible."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Macau is ."
+                      "icon": "festival",
+                      "title": "Bun Festival",
+                      "description": "The Bun Festival celebrates Macau's multicultural heritage with traditional activities, opera performances, and the famous bun scrambling competition on a tower."
                   }
               ]
           },
           "es": {
               "name": "Macao",
-              "capital": "",
-              "flagDescription": "La bandera de Macao.",
+              "capital": "Macao",
+              "flagDescription": "La bandera de Macao es verde con el emblema de Macao en blanco en el centro. El emblema presenta una flor de loto estilizada (símbolo de pureza y gracia), un puente arqueado (Puente Macao-Zhuhai) y un barco que representa el patrimonio marítimo. El verde representa la armonía y la prosperidad del territorio.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Macao",
-                      "description": "Macao es un país en Eastern Asia."
+                      "icon": "casino",
+                      "title": "Capital de juego",
+                      "description": "Macao es el mayor centro de juego del mundo, superando incluso a Las Vegas en ingresos de juego. Los resplandecientes casinos y resorts bordean el horizonte, lo que la convierte en un importante destino de entretenimiento asiático."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Macao tiene una población de aproximadamente 686K."
+                      "icon": "architecture",
+                      "title": "Colonia portuguesa histórica",
+                      "description": "Macao fue el primer asentamiento europeo en Asia Oriental y permaneció como colonia portuguesa durante más de 400 años hasta 1999. Su centro histórico es un sitio de la UNESCO con arquitectura portuguesa y tradiciones aún visibles."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Macao es ."
+                      "icon": "festival",
+                      "title": "Festival de bollos",
+                      "description": "El Festival de Bollos celebra el patrimonio multicultural de Macao con actividades tradicionales, actuaciones de ópera y la famosa competencia de escalada de bollos en una torre."
                   }
               ]
           }
@@ -6795,44 +6795,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Malaysia",
               "capital": "Kuala Lumpur",
-              "flagDescription": "The flag of Malaysia.",
+              "flagDescription": "Malaysia's flag (Jalur Gemilang) has 14 red and white stripes (7 each) with a blue canton containing a crescent and 14-pointed star. The colors are red and white for the nation, blue for the states, the crescent represents Islam, and the star symbolizes the 13 states and federal territories.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Malaysia",
-                      "description": "Malaysia is a country in South-Eastern Asia."
+                      "icon": "building",
+                      "title": "Petronas Twin Towers",
+                      "description": "The Petronas Twin Towers in Kuala Lumpur are iconic skyscrapers connected by a skybridge. At 452 meters, they were once the world's tallest buildings and remain a symbol of Malaysia's modern development."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Malaysia has a population of approximately 34.2M."
+                      "icon": "rainforest",
+                      "title": "Ancient Rainforest",
+                      "description": "Malaysia has one of the world's oldest rainforests, estimated at 130 million years old. The rainforest is home to orangutans, tigers, and countless other species found nowhere else on Earth."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Malaysia is Kuala Lumpur."
+                      "icon": "food",
+                      "title": "Food Capital of Asia",
+                      "description": "Malaysian cuisine blends Malay, Chinese, and Indian flavors. Street food is legendary — dishes like nasi lemak, laksa, and dim sum reflect Malaysia's multicultural heritage."
                   }
               ]
           },
           "es": {
               "name": "Malasia",
               "capital": "Kuala Lumpur",
-              "flagDescription": "La bandera de Malasia.",
+              "flagDescription": "La bandera de Malasia (Jalur Gemilang) tiene 14 franjas rojo y blancas (7 cada una) con un cantón azul que contiene una media luna y una estrella de 14 puntas. Los colores son rojo y blanco para la nación, azul para los estados, la media luna representa el Islam, y la estrella simboliza los 13 estados y territorios federales.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Malasia",
-                      "description": "Malasia es un país en South-Eastern Asia."
+                      "icon": "building",
+                      "title": "Torres gemelas Petronas",
+                      "description": "Las Torres Gemelas Petronas en Kuala Lumpur son rascacielos icónicos conectados por un puente aéreo. Con 452 metros, una vez fueron los edificios más altos del mundo y siguen siendo un símbolo del desarrollo moderno de Malasia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Malasia tiene una población de aproximadamente 34.2M."
+                      "icon": "rainforest",
+                      "title": "Selva tropical antigua",
+                      "description": "Malasia tiene una de las selvas tropicales más antiguas del mundo, estimada en 130 millones de años. La selva tropical es hogar de orangutanes, tigres e incontables otras especies que no existen en ningún otro lugar de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Malasia es Kuala Lumpur."
+                      "icon": "food",
+                      "title": "Capital gastronómica de Asia",
+                      "description": "La cocina malaya mezcla sabores malayo, chino e indio. La comida callejera es legendaria: platos como nasi lemak, laksa y dim sum reflejan el patrimonio multicultural de Malasia."
                   }
               ]
           }
@@ -6848,44 +6848,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Maldives",
               "capital": "Malé",
-              "flagDescription": "The flag of Maldives.",
+              "flagDescription": "The Maldives flag is red with a green rectangle on the left containing a white crescent. Red represents the blood shed for independence, green represents Islam and prosperity, the crescent is an Islamic symbol, and white represents peace and purity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Maldives",
-                      "description": "Maldives is a country in Southern Asia."
+                      "icon": "water",
+                      "title": "Paradise Islands",
+                      "description": "The Maldives is an archipelago of 1,190 coral islands in the Indian Ocean, with only 199 inhabited. The islands are famous for their pristine white-sand beaches and crystal-clear turquoise waters."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Maldives has a population of approximately 515K."
+                      "icon": "diving",
+                      "title": "World's Top Diving Destination",
+                      "description": "The Maldives has some of the world's best coral reefs and is a paradise for snorkeling and diving. Visitors can see colorful fish, sea turtles, rays, and even whale sharks."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Maldives is Malé."
+                      "icon": "water",
+                      "title": "Lowest Country on Earth",
+                      "description": "The Maldives has an average elevation of just 1.5 meters above sea level — the lowest of any country. Climate change and rising sea levels are a serious concern for the nation's future."
                   }
               ]
           },
           "es": {
               "name": "Maldivas",
               "capital": "Malé",
-              "flagDescription": "La bandera de Maldivas.",
+              "flagDescription": "La bandera de Maldivas es roja con un rectángulo verde a la izquierda que contiene una media luna blanca. El rojo representa la sangre derramada por la independencia, el verde representa el Islam y la prosperidad, la media luna es un símbolo islámico, y el blanco representa la paz y la pureza.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Maldivas",
-                      "description": "Maldivas es un país en Southern Asia."
+                      "icon": "water",
+                      "title": "Islas paradisíacas",
+                      "description": "Las Maldivas es un archipiélago de 1.190 islas de coral en el Océano Índico, con solo 199 habitadas. Las islas son famosas por sus playas de arena blanca virgen y aguas turquesas cristalinas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Maldivas tiene una población de aproximadamente 515K."
+                      "icon": "diving",
+                      "title": "Mejor destino de buceo del mundo",
+                      "description": "Las Maldivas tiene algunos de los mejores arrecifes de coral del mundo y es un paraíso para snorkel y buceo. Los visitantes pueden ver peces coloridos, tortugas marinas, rayas, e incluso tiburones ballena."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Maldivas es Malé."
+                      "icon": "water",
+                      "title": "País más bajo de la Tierra",
+                      "description": "Las Maldivas tiene una elevación promedio de solo 1,5 metros sobre el nivel del mar, la más baja de cualquier país. El cambio climático y la subida del nivel del mar son una preocupación seria para el futuro de la nación."
                   }
               ]
           }
@@ -7483,45 +7483,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Mongolia",
-              "capital": "Ulan Bator",
-              "flagDescription": "The flag of Mongolia.",
+              "capital": "Ulaanbaatar",
+              "flagDescription": "Mongolia's flag has a gold-red vertical stripe in the center flanked by two red stripes, with a gold national emblem on the hoist side. Red represents the power and determination of the Mongolian people, and the emblem (Soyombo symbol) represents independence and cultural heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mongolia",
-                      "description": "Mongolia is a country in Eastern Asia."
+                      "icon": "horse",
+                      "title": "Land of Genghis Khan",
+                      "description": "Mongolia was the birthplace of Genghis Khan, who created the largest land empire in history. At its peak, the Mongol Empire stretched from China to Europe — the largest continuous land empire ever!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mongolia has a population of approximately 3.5M."
+                      "icon": "landscape",
+                      "title": "Gobi Desert",
+                      "description": "The Gobi Desert is one of the largest deserts in Asia, covering Mongolia, China, and beyond. It's home to unique wildlife like wild camels, snow leopards, and fossils of prehistoric dinosaurs."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mongolia is Ulan Bator."
+                      "icon": "culture",
+                      "title": "Nomadic Heritage",
+                      "description": "Nomadic pastoralism is still part of Mongolian culture. Herders live in gers (yurts) and move seasonally with their flocks of sheep, goats, and horses across the vast steppes."
                   }
               ]
           },
           "es": {
               "name": "Mongolia",
-              "capital": "Ulan Bator",
-              "flagDescription": "La bandera de Mongolia.",
+              "capital": "Ulán Bator",
+              "flagDescription": "La bandera de Mongolia tiene una franja vertical dorada-roja en el centro flanqueada por dos franjas rojas, con un emblema nacional dorado en el lado del asta. El rojo representa el poder y la determinación del pueblo mongol, y el emblema (símbolo Soyombo) representa la independencia y el patrimonio cultural.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mongolia",
-                      "description": "Mongolia es un país en Eastern Asia."
+                      "icon": "horse",
+                      "title": "Tierra de Gengis Khan",
+                      "description": "Mongolia fue la cuna de Gengis Khan, quien creó el imperio terrestre más grande de la historia. En su apogeo, el Imperio Mongol se extendía desde China hasta Europa, ¡el imperio terrestre continuo más grande jamás!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mongolia tiene una población de aproximadamente 3.5M."
+                      "icon": "landscape",
+                      "title": "Desierto de Gobi",
+                      "description": "El Desierto de Gobi es uno de los mayores desiertos de Asia, cubriendo Mongolia, China y más allá. Es hogar de fauna única como camellos salvajes, leopardos de las nieves y fósiles de dinosaurios prehistóricos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mongolia es Ulan Bator."
+                      "icon": "culture",
+                      "title": "Patrimonio nómada",
+                      "description": "El pastoralismo nómada sigue siendo parte de la cultura mongola. Los pastores viven en gers (yurtas) y se mueven estacionalmente con sus rebaños de ovejas, cabras y caballos a través de las vastas estepas."
                   }
               ]
           }
@@ -7749,44 +7749,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Myanmar",
               "capital": "Naypyidaw",
-              "flagDescription": "The flag of Myanmar.",
+              "flagDescription": "Myanmar's flag has three equal horizontal stripes of yellow, green, and red with a white star in the center. Yellow represents solidarity and freedom, green represents peace and tranquility, red represents courage, and the white star represents the unity of the nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Myanmar",
-                      "description": "Myanmar is a country in South-Eastern Asia."
+                      "icon": "building",
+                      "title": "Shwedagon Pagoda",
+                      "description": "The Shwedagon Pagoda in Yangon is one of the most sacred Buddhist sites in the world, covered in 27 tons of gold. It has been a place of pilgrimage for over 2,500 years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Myanmar has a population of approximately 51.3M."
+                      "icon": "culture",
+                      "title": "Longyi Tradition",
+                      "description": "Longyi (or sarongs) are traditional skirts worn by both men and women in Myanmar. Each region has distinctive patterns and colors, making them an important part of Burmese cultural identity."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Myanmar is Naypyidaw."
+                      "icon": "religion",
+                      "title": "Land of a Thousand Pagodas",
+                      "description": "Bagan is an archaeological zone with over 2,000 Buddhist temples and pagodas built between the 11th and 13th centuries. It's one of the most impressive religious sites in Asia."
                   }
               ]
           },
           "es": {
               "name": "Myanmar",
-              "capital": "Naypyidaw",
-              "flagDescription": "La bandera de Myanmar.",
+              "capital": "Naipyidó",
+              "flagDescription": "La bandera de Myanmar tiene tres franjas horizontales iguales de amarillo, verde y rojo con una estrella blanca en el centro. El amarillo representa la solidaridad y la libertad, el verde la paz y la tranquilidad, el rojo el valor, y la estrella blanca representa la unidad de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Myanmar",
-                      "description": "Myanmar es un país en South-Eastern Asia."
+                      "icon": "building",
+                      "title": "Pagoda de Shwedagon",
+                      "description": "La Pagoda de Shwedagon en Yangón es uno de los sitios budistas más sagrados del mundo, cubierta en 27 toneladas de oro. Ha sido un lugar de peregrinación durante más de 2.500 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Myanmar tiene una población de aproximadamente 51.3M."
+                      "icon": "culture",
+                      "title": "Tradición del Longyi",
+                      "description": "El longyi (o sarongs) son faldas tradicionales usadas tanto por hombres como por mujeres en Myanmar. Cada región tiene patrones y colores distintivos, lo que los convierte en una parte importante de la identidad cultural birmana."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Myanmar es Naypyidaw."
+                      "icon": "religion",
+                      "title": "Tierra de mil pagodas",
+                      "description": "Bagan es una zona arqueológica con más de 2.000 templos budistas y pagodas construidos entre los siglos XI y XIII. Es uno de los sitios religiosos más impresionantes de Asia."
                   }
               ]
           }
@@ -7908,44 +7908,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Nepal",
               "capital": "Kathmandu",
-              "flagDescription": "The flag of Nepal.",
+              "flagDescription": "Nepal's flag is unique — the only non-rectangular flag among UN nations. It consists of two stacked triangles, with a white crescent and star on each. Red represents the courage of Nepali people, blue represents peace, and the crimson color is very auspicious in Hindu culture.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Nepal",
-                      "description": "Nepal is a country in Southern Asia."
+                      "icon": "mountain",
+                      "title": "Mount Everest",
+                      "description": "Mount Everest, the world's highest mountain at 8,849 meters, straddles Nepal and Tibet. Many climbers attempt to summit Everest from Nepal's side, making it a major adventure tourism destination."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Nepal has a population of approximately 29.9M."
+                      "icon": "religion",
+                      "title": "Birthplace of Buddha",
+                      "description": "Lumbini in Nepal is the birthplace of Siddhartha Gautama, who became Buddha. It's one of the holiest sites in Buddhism and is a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Nepal is Kathmandu."
+                      "icon": "culture",
+                      "title": "Himalayan Culture",
+                      "description": "Nepal is famous for its Hindu and Buddhist temples, including the stunning Kathmandu Valley temples. The country blends ancient tradition with stunning mountain scenery."
                   }
               ]
           },
           "es": {
               "name": "Nepal",
-              "capital": "Kathmandu",
-              "flagDescription": "La bandera de Nepal.",
+              "capital": "Katmandú",
+              "flagDescription": "La bandera de Nepal es única, la única bandera no rectangular entre las naciones de la ONU. Consiste en dos triángulos apilados, con una media luna blanca y una estrella en cada uno. El rojo representa el coraje del pueblo nepalí, el azul la paz, y el color carmesí es muy auspicioso en la cultura hindú.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Nepal",
-                      "description": "Nepal es un país en Southern Asia."
+                      "icon": "mountain",
+                      "title": "Monte Everest",
+                      "description": "El Monte Everest, la montaña más alta del mundo con 8.849 metros, se extiende entre Nepal y el Tíbet. Muchos alpinistas intentan ascender al Everest por el lado de Nepal, lo que la convierte en un importante destino de turismo de aventura."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Nepal tiene una población de aproximadamente 29.9M."
+                      "icon": "religion",
+                      "title": "Lugar de nacimiento de Buda",
+                      "description": "Lumbini en Nepal es el lugar de nacimiento de Siddharta Gautama, quien se convirtió en Buda. Es uno de los sitios más sagrados en el budismo y es Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nepal es Kathmandu."
+                      "icon": "culture",
+                      "title": "Cultura del Himalaya",
+                      "description": "Nepal es famoso por sus templos hindúes y budistas, incluidos los impresionantes templos del Valle de Katmandú. El país mezcla tradición antigua con impresionante paisaje montañoso."
                   }
               ]
           }
@@ -8385,44 +8385,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "North Korea",
               "capital": "Pyongyang",
-              "flagDescription": "The flag of North Korea.",
+              "flagDescription": "North Korea's flag has three horizontal stripes: red, white (with blue stripe on edges), and red, with a white circle and red star on the left. Red represents the blood of independence fighters, white symbolizes the pure Korean character, and the star represents communism.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About North Korea",
-                      "description": "North Korea is a country in Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Juche Tower",
+                      "description": "The Juche Tower in Pyongyang is 170 meters tall and symbolizes the philosophy of self-reliance (Juche). It's one of the tallest monuments in the world and is a symbol of North Korean national pride."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "North Korea has a population of approximately 25.9M."
+                      "icon": "sport",
+                      "title": "Winter Sports Legacy",
+                      "description": "North Korea has competed in the Winter Olympics and has shown strength in winter sports. The national mass games in Pyongyang are spectacular performances involving thousands of participants."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of North Korea is Pyongyang."
+                      "icon": "culture",
+                      "title": "Arirang Festival",
+                      "description": "The Arirang Festival is a mass celebration in Pyongyang featuring synchronized gymnastics, dance, and performances with thousands of participants creating human mosaics."
                   }
               ]
           },
           "es": {
               "name": "Corea del Norte",
               "capital": "Pyongyang",
-              "flagDescription": "La bandera de Corea del Norte.",
+              "flagDescription": "La bandera de Corea del Norte tiene tres franjas horizontales: rojo, blanco (con franja azul en los bordes) y rojo, con un círculo blanco y una estrella roja a la izquierda. El rojo representa la sangre de los luchadores por la independencia, el blanco simboliza el carácter puro coreano, y la estrella representa el comunismo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Corea del Norte",
-                      "description": "Corea del Norte es un país en Eastern Asia."
+                      "icon": "architecture",
+                      "title": "Torre Juche",
+                      "description": "La Torre Juche en Pyongyang mide 170 metros de alto y simboliza la filosofía de la autosuficiencia (Juche). Es uno de los monumentos más altos del mundo y es un símbolo del orgullo nacional norcoreano."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Corea del Norte tiene una población de aproximadamente 25.9M."
+                      "icon": "sport",
+                      "title": "Legado de deportes de invierno",
+                      "description": "Corea del Norte ha competido en los Juegos Olímpicos de Invierno y ha mostrado fortaleza en deportes de invierno. Los juegos de masas nacionales en Pyongyang son actuaciones espectaculares con miles de participantes."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Corea del Norte es Pyongyang."
+                      "icon": "culture",
+                      "title": "Festival de Arirang",
+                      "description": "El Festival de Arirang es una celebración de masas en Pyongyang que presenta gimnasia sincronizada, danza y actuaciones con miles de participantes que crean mosaicos humanos."
                   }
               ]
           }
@@ -8597,44 +8597,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Oman",
               "capital": "Muscat",
-              "flagDescription": "The flag of Oman.",
+              "flagDescription": "Oman's flag has three equal horizontal stripes of white, red, and green with a vertical red stripe on the hoist side containing the national emblem (white khanjar dagger and crossed swords). The colors represent different aspects of the nation's character and heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Oman",
-                      "description": "Oman is a country in Western Asia."
+                      "icon": "mountain",
+                      "title": "Green Mountain (Jabal Akhdar)",
+                      "description": "Jabal Akhdar is a limestone mountain in Oman's interior that's green due to its higher elevation and monsoon moisture. It's surrounded by lush terraced gardens growing roses and pomegranates."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Oman has a population of approximately 5.3M."
+                      "icon": "water",
+                      "title": "Sultanate of Oman Coasts",
+                      "description": "Oman has coastlines along the Arabian Sea and Persian Gulf with dramatic rocky cliffs, hidden beaches, and coral reefs. The coasts are home to sea turtles and dolphins."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Oman is Muscat."
+                      "icon": "culture",
+                      "title": "Frankincense Trail",
+                      "description": "Oman was a major trading hub on the frankincense trail for thousands of years. The town of Salalah still produces frankincense, and the historical trade routes are being preserved as cultural heritage."
                   }
               ]
           },
           "es": {
               "name": "Omán",
-              "capital": "Muscat",
-              "flagDescription": "La bandera de Omán.",
+              "capital": "Mascate",
+              "flagDescription": "La bandera de Omán tiene tres franjas horizontales iguales de blanco, rojo y verde con una franja roja vertical en el lado del asta que contiene el emblema nacional (puñal khanjar blanco y espadas cruzadas). Los colores representan diferentes aspectos del carácter y patrimonio de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Omán",
-                      "description": "Omán es un país en Western Asia."
+                      "icon": "mountain",
+                      "title": "Montaña Verde (Jabal Akhdar)",
+                      "description": "Jabal Akhdar es una montaña de piedra caliza en el interior de Omán que es verde debido a su mayor elevación y humedad de monzón. Está rodeada de exuberantes jardines en terrazas que cultivan rosas y granadas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Omán tiene una población de aproximadamente 5.3M."
+                      "icon": "water",
+                      "title": "Costas del Sultanato de Omán",
+                      "description": "Omán tiene costas a lo largo del Mar Arábigo y el Golfo Pérsico con acantilados rocosos dramáticos, playas escondidas y arrecifes de coral. Las costas albergan tortugas marinas y delfines."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Omán es Muscat."
+                      "icon": "culture",
+                      "title": "Ruta del incienso",
+                      "description": "Omán fue un importante centro comercial en la ruta del incienso durante miles de años. La ciudad de Salalah sigue produciendo incienso, y las rutas comerciales históricas se están preservando como patrimonio cultural."
                   }
               ]
           }
@@ -8650,44 +8650,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Pakistan",
               "capital": "Islamabad",
-              "flagDescription": "The flag of Pakistan.",
+              "flagDescription": "Pakistan's flag is dark green with a white crescent and five-pointed star in the center and a vertical white stripe on the hoist side. Green represents Islam, the crescent and star are Islamic symbols, the white stripe represents religious minorities, and white symbolizes peace.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Pakistan",
-                      "description": "Pakistan is a country in Southern Asia."
+                      "icon": "mountain",
+                      "title": "K2 Mountain",
+                      "description": "K2 is the world's second-highest mountain at 8,611 meters, located in the Karakoram Mountains in northern Pakistan. It's known as the \"Savage Mountain\" because climbing it is extremely difficult and dangerous."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Pakistan has a population of approximately 241.5M."
+                      "icon": "building",
+                      "title": "Badshahi Mosque",
+                      "description": "The Badshahi Mosque in Lahore is one of the largest mosques in the world, with room for over 24,000 worshippers. Its red brick construction and marble inlay are architectural masterpieces."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Pakistan is Islamabad."
+                      "icon": "food",
+                      "title": "Spice Haven",
+                      "description": "Pakistan is famous for its aromatic and flavorful cuisine. Dishes like biryani, karahi, and samosas are beloved worldwide, and Pakistani spice markets are legendary for their variety."
                   }
               ]
           },
           "es": {
               "name": "Pakistán",
               "capital": "Islamabad",
-              "flagDescription": "La bandera de Pakistán.",
+              "flagDescription": "La bandera de Pakistán es verde oscuro con una media luna blanca y una estrella de cinco puntas en el centro y una franja blanca vertical en el lado del asta. El verde representa el Islam, la media luna y la estrella son símbolos islámicos, la franja blanca representa a las minorías religiosas, y el blanco simboliza la paz.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Pakistán",
-                      "description": "Pakistán es un país en Southern Asia."
+                      "icon": "mountain",
+                      "title": "Montaña K2",
+                      "description": "K2 es la segunda montaña más alta del mundo con 8.611 metros, ubicada en las Montañas Karakórum en el norte de Pakistán. Es conocida como la \"Montaña Salvaje\" porque escalarla es extremadamente difícil y peligroso."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Pakistán tiene una población de aproximadamente 241.5M."
+                      "icon": "building",
+                      "title": "Mezquita Badshahi",
+                      "description": "La Mezquita Badshahi en Lahore es una de las mezquitas más grandes del mundo, con espacio para más de 24.000 fieles. Su construcción de ladrillo rojo y adornos de mármol son obras maestras arquitectónicas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Pakistán es Islamabad."
+                      "icon": "food",
+                      "title": "Paraíso de especias",
+                      "description": "Pakistán es famoso por su cocina aromática y sabrosa. Platos como biryani, karahi y samosas son amados en todo el mundo, y los mercados de especias pakistaní son legendarios por su variedad."
                   }
               ]
           }
@@ -8755,45 +8755,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Palestine",
-              "capital": "Ramallah",
-              "flagDescription": "The flag of Palestine.",
+              "capital": "East Jerusalem",
+              "flagDescription": "Palestine's flag is identical to the Pan-Arab flag with three equal horizontal stripes of black, white, and green, with a red triangle on the left. The colors represent pan-Arab unity, and the flag symbolizes Palestinian national identity and sovereignty.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Palestine",
-                      "description": "Palestine is a country in Western Asia."
+                      "icon": "building",
+                      "title": "Church of the Nativity",
+                      "description": "The Church of the Nativity in Bethlehem is one of Christianity's holiest sites, believed to be built over the birthplace of Jesus. It's been a pilgrimage destination for nearly 2,000 years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Palestine has a population of approximately 5.5M."
+                      "icon": "culture",
+                      "title": "Palestinian Embroidery",
+                      "description": "Palestinian traditional embroidery is an ancient craft with distinctive patterns and colors passed down through generations. Each region has unique designs that tell stories of Palestinian heritage."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Palestine is Ramallah."
+                      "icon": "olives",
+                      "title": "Olive Trees",
+                      "description": "Olive trees have been part of Palestinian culture for thousands of years. Ancient olive groves produce some of the world's finest olive oil, and olives are central to Palestinian cuisine and economy."
                   }
               ]
           },
           "es": {
               "name": "Palestina",
-              "capital": "Ramallah",
-              "flagDescription": "La bandera de Palestina.",
+              "capital": "Jerusalén Oriental",
+              "flagDescription": "La bandera de Palestina es idéntica a la bandera panárabe con tres franjas horizontales iguales de negro, blanco y verde, con un triángulo rojo a la izquierda. Los colores representan la unidad panárabe, y la bandera simboliza la identidad nacional palestina y la soberanía.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Palestina",
-                      "description": "Palestina es un país en Western Asia."
+                      "icon": "building",
+                      "title": "Iglesia de la Natividad",
+                      "description": "La Iglesia de la Natividad en Belén es uno de los sitios más sagrados del cristianismo, se cree que está construida sobre el lugar de nacimiento de Jesús. Ha sido un destino de peregrinación durante casi 2.000 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Palestina tiene una población de aproximadamente 5.5M."
+                      "icon": "culture",
+                      "title": "Bordado palestino",
+                      "description": "El bordado tradicional palestino es una artesanía antigua con patrones y colores distintivos transmitidos a través de generaciones. Cada región tiene diseños únicos que cuentan historias del patrimonio palestino."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Palestina es Ramallah."
+                      "icon": "olives",
+                      "title": "Olivos",
+                      "description": "Los olivos han sido parte de la cultura palestina durante miles de años. Los olivares antiguos producen algunos de los mejores aceites de oliva del mundo, y las aceitunas son fundamentales para la cocina y la economía palestina."
                   }
               ]
           }
@@ -9021,44 +9021,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Philippines",
               "capital": "Manila",
-              "flagDescription": "The Philippines flag has a blue stripe (top) and red stripe (bottom) with a white equilateral triangle on the left containing a yellow sun with eight rays and three yellow stars. Blue represents peace and justice, red represents courage, and the sun's eight rays represent the first eight provinces that revolted against Spanish rule.",
+              "flagDescription": "The Philippine flag is unique with a white equilateral triangle on the left (representing the sun) with three gold stars (representing Luzon, Visayas, and Mindanao) and a gold sun. Blue (top) represents peace, red (bottom) represents courage, white represents unity, and gold represents wealth.",
               "funFacts": [
                   {
-                      "icon": "anchor",
-                      "title": "7,641 Islands",
-                      "description": "The Philippines is an archipelago of 7,641 islands. The number officially changed in 2016 when new islands were discovered through satellite imagery."
+                      "icon": "landscape",
+                      "title": "Banaue Rice Terraces",
+                      "description": "The Banaue Rice Terraces are ancient agricultural terraces built by the Ifugao people over 2,000 years ago. These 1,500-meter-high terraces are carved into the mountains and are a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "music_note",
-                      "title": "Karaoke Homeland",
-                      "description": "The karaoke machine was invented by Roberto del Rosario of the Philippines in 1975. Today, singing is deeply embedded in Filipino culture with karaoke bars everywhere."
+                      "icon": "festival",
+                      "title": "Sinulog Festival",
+                      "description": "The Sinulog Festival in Cebu is one of Asia's largest festivals, celebrating the Ati-Atihan with colorful street dances, parades, and reenactments of the legend of the Santo Niño."
                   },
                   {
-                      "icon": "water",
-                      "title": "Tubbataha Reef",
-                      "description": "Tubbataha Reef Natural Park in the Sulu Sea is a UNESCO World Heritage Site and one of the world's best dive spots, home to over 600 species of fish and 360 species of coral."
+                      "icon": "island",
+                      "title": "Tropical Island Nation",
+                      "description": "The Philippines is an archipelago of over 7,600 islands with diverse ecosystems, pristine beaches, and some of the world's best diving spots. Its coral reefs are among the most biodiverse."
                   }
               ]
           },
           "es": {
               "name": "Filipinas",
               "capital": "Manila",
-              "flagDescription": "La bandera de Filipinas.",
+              "flagDescription": "La bandera filipina es única con un triángulo blanco equilátero a la izquierda (representando el sol) con tres estrellas de oro (representando Luzón, Visayas y Mindanao) y un sol de oro. El azul (superior) representa la paz, el rojo (inferior) representa el valor, el blanco representa la unidad, y el oro representa la riqueza.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Filipinas",
-                      "description": "Filipinas es un país en South-Eastern Asia."
+                      "icon": "landscape",
+                      "title": "Terrazas de arroz de Banaue",
+                      "description": "Las Terrazas de Arroz de Banaue son antiguas terrazas agrícolas construidas por el pueblo Ifugao hace más de 2.000 años. Estas terrazas de 1.500 metros de altura están talladas en las montañas y son Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Filipinas tiene una población de aproximadamente 114.1M."
+                      "icon": "festival",
+                      "title": "Festival de Sinulog",
+                      "description": "El Festival de Sinulog en Cebú es uno de los mayores festivales de Asia, celebrando el Ati-Atihan con danzas callejeras coloridas, desfiles y recreaciones de la leyenda del Santo Niño."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Filipinas es Manila."
+                      "icon": "island",
+                      "title": "Nación de islas tropicales",
+                      "description": "Las Filipinas es un archipiélago de más de 7.600 islas con ecosistemas diversos, playas pristinas y algunos de los mejores lugares de buceo del mundo. Sus arrecifes de coral están entre los más biodiversos."
                   }
               ]
           }
@@ -9286,44 +9286,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Qatar",
               "capital": "Doha",
-              "flagDescription": "The flag of Qatar.",
+              "flagDescription": "Qatar's flag has a crimson/maroon stripe on the left separated by a white vertical stripe from a white field. The unusual saw-tooth border between the colors is distinctive. White represents peace and purity, while maroon represents the blood shed for independence.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Qatar",
-                      "description": "Qatar is a country in Western Asia."
+                      "icon": "city",
+                      "title": "Doha's Modern Skyline",
+                      "description": "Doha has transformed from a small coastal town into a gleaming modern metropolis. The city is known for its futuristic architecture, including the iconic Burj Qatar and Museum of Islamic Art."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Qatar has a population of approximately 3.2M."
+                      "icon": "sports",
+                      "title": "FIFA World Cup 2022",
+                      "description": "Qatar hosted the 2022 FIFA World Cup, the first World Cup in the Middle East and the first held in November instead of summer. It was a momentous event showcasing world-class stadiums."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Qatar is Doha."
+                      "icon": "culture",
+                      "title": "Qatari Pearl Diving Heritage",
+                      "description": "Before oil, Qatar's wealth came from pearl diving. The pearl diving heritage is preserved in museums and cultural centers, telling the story of this historic industry."
                   }
               ]
           },
           "es": {
               "name": "Catar",
               "capital": "Doha",
-              "flagDescription": "La bandera de Catar.",
+              "flagDescription": "La bandera de Catar tiene una franja carmesí/granate a la izquierda separada por una franja blanca vertical de un campo blanco. El inusual borde dentado entre los colores es distintivo. El blanco representa la paz y la pureza, mientras que el granate representa la sangre derramada por la independencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Catar",
-                      "description": "Catar es un país en Western Asia."
+                      "icon": "city",
+                      "title": "Horizonte moderno de Doha",
+                      "description": "Doha se ha transformado de un pequeño pueblo costero en una metrópolis moderna y resplandeciente. La ciudad es conocida por su arquitectura futurista, incluyendo el icónico Burj Qatar y Museo de Arte Islámico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Catar tiene una población de aproximadamente 3.2M."
+                      "icon": "sports",
+                      "title": "Copa Mundial FIFA 2022",
+                      "description": "Catar fue anfitrión de la Copa Mundial FIFA 2022, la primera Copa Mundial en Oriente Medio y la primera celebrada en noviembre en lugar de verano. Fue un evento monumental que mostró estadios de clase mundial."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Catar es Doha."
+                      "icon": "culture",
+                      "title": "Patrimonio de buceo de perlas de Catar",
+                      "description": "Antes del petróleo, la riqueza de Catar provenía del buceo de perlas. El patrimonio de buceo de perlas se conserva en museos y centros culturales, contando la historia de esta industria histórica."
                   }
               ]
           }
@@ -10134,44 +10134,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Saudi Arabia",
               "capital": "Riyadh",
-              "flagDescription": "Saudi Arabia's flag is green with white Arabic script reading the Shahada (Islamic declaration of faith) and a white sword below it. Green is the traditional color of Islam, and the sword represents strength and justice.",
+              "flagDescription": "Saudi Arabia's flag is green with the Islamic Shahada (declaration of faith) in white Arabic script and a curved white sword below it. Green is the color of Islam, the Shahada represents the faith, and the sword represents the nation's strength and heritage.",
               "funFacts": [
                   {
-                      "icon": "oil_barrel",
-                      "title": "Oil Giant",
-                      "description": "Saudi Arabia holds about 17% of the world's proven petroleum reserves and is typically the world's largest oil exporter. Oil accounts for about 70% of the country's export earnings."
+                      "icon": "religion",
+                      "title": "Islam's Holiest Sites",
+                      "description": "Saudi Arabia is home to Mecca and Medina, the two holiest cities in Islam. Every year, millions of pilgrims make the Hajj (pilgrimage) to Mecca, one of Islam's Five Pillars."
                   },
                   {
-                      "icon": "mosque",
-                      "title": "Holy Cities",
-                      "description": "Saudi Arabia is home to Islam's two holiest cities: Mecca and Medina. Every Muslim who is able is expected to make a pilgrimage (Hajj) to Mecca at least once, drawing 2-3 million pilgrims annually."
+                      "icon": "desert",
+                      "title": "Rub' al Khali Desert",
+                      "description": "The Rub' al Khali is the world's largest pure sand desert, covering an area larger than France. Its name means \"Empty Quarter\" in Arabic, and it's one of the harshest environments on Earth."
                   },
                   {
-                      "icon": "landscape",
-                      "title": "Ancient Trading Hub",
-                      "description": "Al-Ula, in northwestern Saudi Arabia, contains the remarkably preserved Nabataean city of Hegra, with tombs carved directly into rose-red sandstone cliffs — a second Petra."
+                      "icon": "oil",
+                      "title": "Oil Superpower",
+                      "description": "Saudi Arabia has the second-largest proven oil reserves in the world and is the largest oil exporter. Oil has transformed the nation into one of the world's most influential economic powers."
                   }
               ]
           },
           "es": {
               "name": "Arabia Saudí",
-              "capital": "Riyadh",
-              "flagDescription": "La bandera de Arabia Saudí.",
+              "capital": "Riad",
+              "flagDescription": "La bandera de Arabia Saudí es verde con la Shahada islámica (declaración de fe) en escritura árabe blanca y una espada curva blanca debajo. El verde es el color del Islam, la Shahada representa la fe, y la espada representa la fortaleza y el patrimonio de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Arabia Saudí",
-                      "description": "Arabia Saudí es un país en Western Asia."
+                      "icon": "religion",
+                      "title": "Sitios más sagrados del Islam",
+                      "description": "Arabia Saudí es hogar de La Meca y Medina, las dos ciudades más sagradas del Islam. Cada año, millones de peregrinos realizan el Hajj (peregrinación) a La Meca, uno de los Cinco Pilares del Islam."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Arabia Saudí tiene una población de aproximadamente 35.3M."
+                      "icon": "desert",
+                      "title": "Desierto Rub' al Khali",
+                      "description": "El Rub' al Khali es el desierto de arena pura más grande del mundo, cubriendo un área más grande que Francia. Su nombre significa \"Cuarto Vacío\" en árabe, y es uno de los ambientes más hostiles de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Arabia Saudí es Riyadh."
+                      "icon": "oil",
+                      "title": "Superpotencia petrolera",
+                      "description": "Arabia Saudí tiene la segunda mayor reserva de petróleo probada del mundo y es el mayor exportador de petróleo. El petróleo ha transformado la nación en una de las potencias económicas más influyentes del mundo."
                   }
               ]
           }
@@ -10399,44 +10399,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Singapore",
               "capital": "Singapore",
-              "flagDescription": "Singapore's flag has two horizontal stripes — red over white. On the red stripe, a white crescent moon faces five white stars arranged in a circle. Red represents universal brotherhood, white stands for purity, the crescent symbolizes the young nation, and the five stars represent democracy, peace, progress, justice, and equality.",
+              "flagDescription": "Singapore's flag has a red upper half with a white crescent and five white stars, and a white lower half. Red represents universal brotherhood and equality, white represents virtue and purity, the crescent symbolizes a young nation growing, and the five stars represent democracy, peace, progress, justice, and equality.",
               "funFacts": [
                   {
-                      "icon": "forest",
-                      "title": "City in a Garden",
-                      "description": "Singapore's Gardens by the Bay features 18 'Supertrees' — vertical gardens up to 16 stories tall — and over 250,000 plants. Singapore is called a 'City in a Garden' for its remarkable green urban spaces."
+                      "icon": "building",
+                      "title": "Marina Bay Sands",
+                      "description": "The Marina Bay Sands is one of the world's most iconic hotels, designed to look like a ship's bow. Its rooftop infinity pool and observation deck offer stunning views of Singapore's skyline."
                   },
                   {
-                      "icon": "restaurant",
-                      "title": "Hawker Culture",
-                      "description": "Singapore's hawker centres, where dozens of food stalls serve dishes at low prices, were recognized by UNESCO as an Intangible Cultural Heritage. Singapore even has Michelin-starred street food stalls."
+                      "icon": "tech",
+                      "title": "Tech and Finance Hub",
+                      "description": "Singapore is a global leader in technology, finance, and innovation. Its strategic location, efficient port, and highly educated population make it one of Asia's most important economic centers."
                   },
                   {
-                      "icon": "account_balance",
-                      "title": "No Natural Resources",
-                      "description": "Singapore has almost no natural resources and must import almost all its water and food. Yet it has become one of the world's wealthiest and most prosperous nations through trade and education."
+                      "icon": "garden",
+                      "title": "Gardens by the Bay",
+                      "description": "The Gardens by the Bay is a futuristic park featuring vertical gardens, nature attractions, and the iconic illuminated Supertrees that light up at night with synchronized performances."
                   }
               ]
           },
           "es": {
               "name": "Singapur",
-              "capital": "Singapore",
-              "flagDescription": "La bandera de Singapur.",
+              "capital": "Singapur",
+              "flagDescription": "La bandera de Singapur tiene una mitad superior roja con una media luna blanca y cinco estrellas blancas, y una mitad inferior blanca. El rojo representa la fraternidad universal e igualdad, el blanco representa la virtud y pureza, la media luna simboliza una nación joven en crecimiento, y las cinco estrellas representan democracia, paz, progreso, justicia e igualdad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Singapur",
-                      "description": "Singapur es un país en South-Eastern Asia."
+                      "icon": "building",
+                      "title": "Marina Bay Sands",
+                      "description": "Marina Bay Sands es uno de los hoteles más icónicos del mundo, diseñado para parecer una proa de barco. Su piscina de infinito en la azotea y plataforma de observación ofrecen vistas impresionantes del horizonte de Singapur."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Singapur tiene una población de aproximadamente 6.1M."
+                      "icon": "tech",
+                      "title": "Centro tecnológico y financiero",
+                      "description": "Singapur es líder mundial en tecnología, finanzas e innovación. Su ubicación estratégica, puerto eficiente y población altamente educada la convierten en uno de los centros económicos más importantes de Asia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Singapur es Singapore."
+                      "icon": "garden",
+                      "title": "Jardines de la Bahía",
+                      "description": "Los Jardines de la Bahía es un parque futurista que presenta jardines verticales, atracciones naturales, y los icónicos Supertrees iluminados que se iluminan por la noche con actuaciones sincronizadas."
                   }
               ]
           }
@@ -10770,44 +10770,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "South Korea",
               "capital": "Seoul",
-              "flagDescription": "South Korea's flag (the Taegukgi) has a white background representing purity, a red-and-blue yin-yang circle called the Taeguk symbolizing balance, and four black trigrams from the I Ching in the corners representing heaven, earth, water, and fire.",
+              "flagDescription": "South Korea's flag (Taegeuk-gi) features a white background with a red and blue taegeuk (yin-yang) symbol in the center and black trigrams in the four corners. The red and blue represent balance, the trigrams represent universal principles, and white represents peace and purity.",
               "funFacts": [
                   {
-                      "icon": "wifi",
-                      "title": "Fastest Internet",
-                      "description": "South Korea consistently ranks among the top nations for internet speed. Nearly every home and street corner is connected, making it a global leader in digital infrastructure."
+                      "icon": "tech",
+                      "title": "Technology Leader",
+                      "description": "South Korea is a global powerhouse in technology, producing cutting-edge smartphones, semiconductors, and electronics. Companies like Samsung and LG are household names worldwide."
                   },
                   {
-                      "icon": "music_note",
+                      "icon": "pop",
                       "title": "K-Pop Phenomenon",
-                      "description": "K-pop is a global cultural force. Groups like BTS and BLACKPINK have hundreds of millions of fans worldwide, and South Korea exports its pop culture through music, dramas, and food."
+                      "description": "K-Pop (Korean pop music) has become a global sensation, with groups like BTS and BLACKPINK having millions of devoted fans worldwide. Korean entertainment is now a major cultural export."
                   },
                   {
-                      "icon": "restaurant",
-                      "title": "Kimchi Kingdom",
-                      "description": "Kimchi — fermented vegetables, usually cabbage — is Korea's most iconic food. Koreans eat about 1.85 million tons per year, with many households still making it from scratch in a tradition called kimjang."
+                      "icon": "food",
+                      "title": "Korean Cuisine Excellence",
+                      "description": "Korean cuisine features kimchi, bulgogi, bibimbap, and Korean BBQ. Korean food culture emphasizes banchan (side dishes) and communal eating, creating a unique and delicious dining experience."
                   }
               ]
           },
           "es": {
               "name": "Corea del Sur",
-              "capital": "Seoul",
-              "flagDescription": "La bandera de Corea del Sur.",
+              "capital": "Seúl",
+              "flagDescription": "La bandera de Corea del Sur (Taegeuk-gi) presenta un fondo blanco con un símbolo rojo y azul taegeuk (yin-yang) en el centro y triggramas negros en las cuatro esquinas. El rojo y azul representan equilibrio, los triggramas representan principios universales, y el blanco representa paz y pureza.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Corea del Sur",
-                      "description": "Corea del Sur es un país en Eastern Asia."
+                      "icon": "tech",
+                      "title": "Líder en tecnología",
+                      "description": "Corea del Sur es una potencia mundial en tecnología, produciendo smartphones de vanguardia, semiconductores y electrónica. Compañías como Samsung y LG son marcas conocidas mundialmente."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Corea del Sur tiene una población de aproximadamente 51.2M."
+                      "icon": "pop",
+                      "title": "Fenómeno del K-Pop",
+                      "description": "El K-Pop (música pop coreana) se ha convertido en una sensación global, con grupos como BTS y BLACKPINK teniendo millones de fans devotos en todo el mundo. El entretenimiento coreano es ahora una importante exportación cultural."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Corea del Sur es Seoul."
+                      "icon": "food",
+                      "title": "Excelencia de la cocina coreana",
+                      "description": "La cocina coreana presenta kimchi, bulgogi, bibimbap y BBQ coreano. La cultura de la comida coreana enfatiza banchan (platos laterales) y comer comunitario, creando una experiencia gastronómica única y deliciosa."
                   }
               ]
           }
@@ -10928,45 +10928,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Sri Lanka",
-              "capital": "Sri Jayawardenepura Kotte",
-              "flagDescription": "The flag of Sri Lanka.",
+              "capital": "Colombo",
+              "flagDescription": "Sri Lanka's flag features a gold lion holding a curved sword (symbolizing courage) against a maroon background, with a gold border and two green and orange vertical stripes on the hoist side. The lion represents the nation's bravery, and the stripes represent the Muslim and Tamil communities.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Sri Lanka",
-                      "description": "Sri Lanka is a country in Southern Asia."
+                      "icon": "mountain",
+                      "title": "Adam's Peak",
+                      "description": "Adam's Peak is a sacred mountain in Sri Lanka with a depression at the summit believed by pilgrims to be the footprint of Buddha (by Buddhists), Adam (by Muslims and Christians), and other holy figures."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Sri Lanka has a population of approximately 21.8M."
+                      "icon": "tea",
+                      "title": "Ceylon Tea Paradise",
+                      "description": "Sri Lanka (formerly Ceylon) produces some of the world's finest tea. The misty tea gardens in the central highlands cover thousands of hectares and produce the aromatic \"Ceylon Tea\" famous worldwide."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Sri Lanka is Sri Jayawardenepura Kotte."
+                      "icon": "beach",
+                      "title": "Tropical Island Paradise",
+                      "description": "Sri Lanka is surrounded by pristine beaches, coral reefs, and tropical weather year-round. The island offers diverse attractions from ancient temples to surfing beaches and wildlife sanctuaries."
                   }
               ]
           },
           "es": {
               "name": "Sri Lanka",
-              "capital": "Sri Jayawardenepura Kotte",
-              "flagDescription": "La bandera de Sri Lanka.",
+              "capital": "Colombo",
+              "flagDescription": "La bandera de Sri Lanka presenta un león dorado sosteniendo una espada curva (simbolizando el valor) contra un fondo granate, con un borde dorado y dos franjas verticales verde y naranja en el lado del asta. El león representa la valentía de la nación, y las franjas representan a las comunidades musulmana y tamil.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sri Lanka",
-                      "description": "Sri Lanka es un país en Southern Asia."
+                      "icon": "mountain",
+                      "title": "Pico de Adán",
+                      "description": "El Pico de Adán es una montaña sagrada en Sri Lanka con una depresión en la cúspide que los peregrinos creen que es la huella de Buda (por budistas), Adán (por musulmanes y cristianos) y otras figuras sagradas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sri Lanka tiene una población de aproximadamente 21.8M."
+                      "icon": "tea",
+                      "title": "Paraíso del té de Ceilán",
+                      "description": "Sri Lanka (anteriormente Ceilán) produce algunos de los mejores tés del mundo. Los jardines de té brumosos en las tierras altas centrales cubren miles de hectáreas y producen el aromático \"Té de Ceilán\" famoso mundialmente."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sri Lanka es Sri Jayawardenepura Kotte."
+                      "icon": "beach",
+                      "title": "Paraíso de isla tropical",
+                      "description": "Sri Lanka está rodeada de playas prístinas, arrecifes de coral y clima tropical todo el año. La isla ofrece atracciones diversas desde templos antiguos hasta playas de surf y santuarios de vida silvestre."
                   }
               ]
           }
@@ -11247,44 +11247,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Syria",
               "capital": "Damascus",
-              "flagDescription": "The flag of Syria.",
+              "flagDescription": "Syria's flag has three equal horizontal stripes of red, white, and black with two green stars in the white stripe. The colors are Pan-Arab colors representing unity, and the stars represent Egypt and Syria in historical Arab union. Red represents courage, white means purity, and black represents hardship.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Syria",
-                      "description": "Syria is a country in Western Asia."
+                      "icon": "history",
+                      "title": "Ancient Civilization",
+                      "description": "Syria is home to some of the world's oldest cities, including Damascus, one of the oldest continuously inhabited capitals. The region has been a center of culture, trade, and learning for millennia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Syria has a population of approximately 25.6M."
+                      "icon": "building",
+                      "title": "Umayyad Mosque",
+                      "description": "The Umayyad Mosque in Damascus is one of Islam's greatest masterpieces, featuring stunning mosaics and architecture. It was built in the early 8th century and is considered a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Syria is Damascus."
+                      "icon": "architecture",
+                      "title": "Palmyra Ruins",
+                      "description": "Palmyra is an ancient city in the desert with stunning ruins including temples, colonnades, and tombs. It was a major trading hub on the Silk Road connecting East and West."
                   }
               ]
           },
           "es": {
               "name": "Siria",
-              "capital": "Damascus",
-              "flagDescription": "La bandera de Siria.",
+              "capital": "Damasco",
+              "flagDescription": "La bandera de Siria tiene tres franjas horizontales iguales de rojo, blanco y negro con dos estrellas verdes en la franja blanca. Los colores son colores panárabes que representan la unidad, y las estrellas representan Egipto y Siria en la unión árabe histórica. El rojo representa el valor, el blanco significa pureza, y el negro representa dificultad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Siria",
-                      "description": "Siria es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Civilización antigua",
+                      "description": "Siria es hogar de algunas de las ciudades más antiguas del mundo, incluyendo Damasco, una de las capitales continuamente habitadas más antiguas. La región ha sido un centro de cultura, comercio y aprendizaje durante milenios."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Siria tiene una población de aproximadamente 25.6M."
+                      "icon": "building",
+                      "title": "Mezquita Omeya",
+                      "description": "La Mezquita Omeya en Damasco es una de las grandes obras maestras del Islam, con mosaicos y arquitectura impresionantes. Fue construida a principios del siglo VIII y se considera Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Siria es Damascus."
+                      "icon": "architecture",
+                      "title": "Ruinas de Palmira",
+                      "description": "Palmira es una ciudad antigua en el desierto con impresionantes ruinas incluyendo templos, columnatas y tumbas. Fue un importante centro comercial en la Ruta de la Seda que conectaba Oriente y Occidente."
                   }
               ]
           }
@@ -11353,44 +11353,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Tajikistan",
               "capital": "Dushanbe",
-              "flagDescription": "The flag of Tajikistan.",
+              "flagDescription": "Tajikistan's flag has three equal horizontal stripes of red, white, and green with a gold crown and arch above seven gold stars in the white stripe. Red represents the blood of independence, white means peace and purity, green represents the mountains, and the stars represent the Tajik regions.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Tajikistan",
-                      "description": "Tajikistan is a country in Central Asia."
+                      "icon": "mountain",
+                      "title": "Pamir Mountains",
+                      "description": "The Pamir Mountains (\"Roof of the World\") dominate Tajikistan with peaks over 7,000 meters. These dramatic mountains are among the most remote and pristine wilderness areas on Earth."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Tajikistan has a population of approximately 10.5M."
+                      "icon": "culture",
+                      "title": "Silk Road Legacy",
+                      "description": "Tajikistan was a major crossroads on the ancient Silk Road trade route. The mountains, valleys, and ancient cities preserve the legacy of this historical trading network connecting East and West."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Tajikistan is Dushanbe."
+                      "icon": "culture",
+                      "title": "Traditional Textiles",
+                      "description": "Tajik traditional embroidery and weaving are renowned for intricate patterns and vibrant colors. The ikat technique is used to create beautifully patterned fabrics with geometric and floral designs."
                   }
               ]
           },
           "es": {
               "name": "Tayikistán",
-              "capital": "Dushanbe",
-              "flagDescription": "La bandera de Tayikistán.",
+              "capital": "Dusambé",
+              "flagDescription": "La bandera de Tayikistán tiene tres franjas horizontales iguales de rojo, blanco y verde con una corona dorada y arco sobre siete estrellas doradas en la franja blanca. El rojo representa la sangre de la independencia, el blanco significa paz y pureza, el verde representa las montañas, y las estrellas representan las regiones tayikas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Tayikistán",
-                      "description": "Tayikistán es un país en Central Asia."
+                      "icon": "mountain",
+                      "title": "Montañas Pamir",
+                      "description": "Las Montañas Pamir (\"Techo del Mundo\") dominan Tayikistán con picos superiores a 7.000 metros. Estas dramáticas montañas están entre las áreas de vida silvestre más remotas y prístinas de la Tierra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Tayikistán tiene una población de aproximadamente 10.5M."
+                      "icon": "culture",
+                      "title": "Legado de la Ruta de la Seda",
+                      "description": "Tayikistán fue una encrucijada importante en la ruta comercial antigua de la Ruta de la Seda. Las montañas, valles y ciudades antiguas preservan el legado de esta red comercial histórica que conecta Oriente y Occidente."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Tayikistán es Dushanbe."
+                      "icon": "culture",
+                      "title": "Textiles tradicionales",
+                      "description": "El bordado y tejido tradicional tayiko son renombrados por patrones intrincados y colores vibrantes. La técnica ikat se utiliza para crear telas con patrones hermosos con diseños geométricos y florales."
                   }
               ]
           }
@@ -11459,44 +11459,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Thailand",
               "capital": "Bangkok",
-              "flagDescription": "Thailand's flag, known as the Trairanga (Tricolor), has five horizontal stripes: red, white, blue, white, and red. Red represents the nation and blood of the people, white symbolizes religion and purity, and blue stands for the monarchy.",
+              "flagDescription": "Thailand's flag has five horizontal stripes of red, white, blue, white, and red. Blue is twice the size of other stripes and represents the monarchy. Red represents the nation, and white represents Buddhism. The proportion is unique among national flags.",
               "funFacts": [
                   {
-                      "icon": "temple_buddhist",
-                      "title": "Land of Temples",
-                      "description": "Thailand has over 40,000 Buddhist temples (wats). Bangkok alone contains more than 400 temples, with Wat Pho housing a 46-meter-long reclining Buddha statue."
+                      "icon": "temple",
+                      "title": "Temple of the Emerald Buddha",
+                      "description": "The Temple of the Emerald Buddha (Wat Phra Kaew) in Bangkok is the most sacred Buddhist temple in Thailand, housing a highly revered jade Buddha statue. It's one of the most beautifully decorated temples in the world."
                   },
                   {
-                      "icon": "emoji_nature",
+                      "icon": "elephant",
                       "title": "Elephant Symbol",
-                      "description": "The elephant has been sacred to Thailand for centuries. Thai war elephants once decided battles, and the white elephant is considered so rare and auspicious that it belongs to the king."
+                      "description": "Elephants are deeply revered in Thai culture and appear on the national emblem. White elephants are considered especially sacred. Elephants have been used in Thai warfare, ceremonies, and daily life for centuries."
                   },
                   {
-                      "icon": "restaurant",
-                      "title": "Street Food Paradise",
-                      "description": "Thailand has one of the most vibrant street food cultures on Earth. Pad Thai, som tum, and mango sticky rice are enjoyed by millions daily from roadside stalls."
+                      "icon": "food",
+                      "title": "Thai Cuisine Mastery",
+                      "description": "Thai cuisine is famous worldwide for its balance of sweet, sour, salty, and spicy flavors. Dishes like pad thai, green curry, and tom yum are beloved globally and showcase Thai culinary expertise."
                   }
               ]
           },
           "es": {
               "name": "Tailandia",
               "capital": "Bangkok",
-              "flagDescription": "La bandera de Tailandia.",
+              "flagDescription": "La bandera de Tailandia tiene cinco franjas horizontales de rojo, blanco, azul, blanco y rojo. El azul tiene el doble del tamaño de las otras franjas y representa la monarquía. El rojo representa la nación, y el blanco representa el budismo. La proporción es única entre banderas nacionales.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Tailandia",
-                      "description": "Tailandia es un país en South-Eastern Asia."
+                      "icon": "temple",
+                      "title": "Templo del Buda de Esmeralda",
+                      "description": "El Templo del Buda de Esmeralda (Wat Phra Kaew) en Bangkok es el templo budista más sagrado de Tailandia, albergando una estatua de Buda de jade muy reverenciada. Es uno de los templos más hermosamente decorados del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Tailandia tiene una población de aproximadamente 65.9M."
+                      "icon": "elephant",
+                      "title": "Símbolo del elefante",
+                      "description": "Los elefantes son profundamente reverenciados en la cultura tailandesa y aparecen en el emblema nacional. Los elefantes blancos se consideran especialmente sagrados. Los elefantes han sido usados en la guerra tailandesa, ceremonias y vida diaria durante siglos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Tailandia es Bangkok."
+                      "icon": "food",
+                      "title": "Maestría de la cocina tailandesa",
+                      "description": "La cocina tailandesa es famosa mundialmente por su equilibrio de sabores dulce, agrio, salado y picante. Platos como pad thai, curry verde y tom yum son amados mundialmente y muestran la experiencia culinaria tailandesa."
                   }
               ]
           }
@@ -11512,44 +11512,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Timor-Leste",
               "capital": "Dili",
-              "flagDescription": "The flag of Timor-Leste.",
+              "flagDescription": "Timor-Leste's flag has a yellow background with a white isosceles triangle and a black isosceles triangle overlapping, with a white star in the black triangle. Yellow represents the wealth of the nation, white represents peace, black represents the struggle for independence, and the star represents guidance.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Timor-Leste",
-                      "description": "Timor-Leste is a country in South-Eastern Asia."
+                      "icon": "history",
+                      "title": "Island of Spices",
+                      "description": "Timor-Leste was called the \"Island of Spices\" because it was famous for its nutmeg, cloves, and mace. These spices were highly sought after and made the island valuable to colonial powers."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Timor-Leste has a population of approximately 1.4M."
+                      "icon": "nature",
+                      "title": "Unique Biodiversity",
+                      "description": "Timor-Leste has unique ecosystems with species found nowhere else on Earth. Its forests and marine environments support endemic wildlife and are crucial for conservation."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Timor-Leste is Dili."
+                      "icon": "independence",
+                      "title": "Youngest Nation",
+                      "description": "Timor-Leste is the youngest country in Asia, having gained independence from Indonesia in 2002 after decades of struggle. It's the only Asian country colonized by Portugal."
                   }
               ]
           },
           "es": {
               "name": "Timor Oriental",
               "capital": "Dili",
-              "flagDescription": "La bandera de Timor Oriental.",
+              "flagDescription": "La bandera de Timor Oriental tiene un fondo amarillo con un triángulo isósceles blanco y un triángulo isósceles negro superpuestos, con una estrella blanca en el triángulo negro. El amarillo representa la riqueza de la nación, el blanco representa la paz, el negro representa la lucha por la independencia, y la estrella representa la guía.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Timor Oriental",
-                      "description": "Timor Oriental es un país en South-Eastern Asia."
+                      "icon": "history",
+                      "title": "Isla de las especias",
+                      "description": "Timor Oriental fue llamada la \"Isla de las Especias\" porque era famosa por su nuez moscada, clavos y macís. Estas especias eran muy codiciadas e hicieron que la isla fuera valiosa para las potencias coloniales."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Timor Oriental tiene una población de aproximadamente 1.4M."
+                      "icon": "nature",
+                      "title": "Biodiversidad única",
+                      "description": "Timor Oriental tiene ecosistemas únicos con especies que no se encuentran en ningún otro lugar de la Tierra. Sus bosques y ambientes marinos sustentan fauna endémica y son cruciales para la conservación."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Timor Oriental es Dili."
+                      "icon": "independence",
+                      "title": "Nación más joven",
+                      "description": "Timor Oriental es el país más joven de Asia, habiendo obtenido la independencia de Indonesia en 2002 después de décadas de lucha. Es el único país asiático colonizado por Portugal."
                   }
               ]
           }
@@ -11852,22 +11852,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Turquía",
               "capital": "Ankara",
-              "flagDescription": "La bandera de Turquía.",
+              "flagDescription": "La bandera de Turquía es roja con una media luna blanca y una estrella de cinco puntas blanca en el centro. El rojo representa la sangre derramada en la lucha por la independencia, la media luna y la estrella son símbolos islámicos tradicionales que representan la fe musulmana del país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Turquía",
-                      "description": "Turquía es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Puente entre dos continentes",
+                      "description": "Turquía es el único país que se extiende a través de dos continentes: Europa y Asia. El Estrecho de Bósforo en Estambul separa los dos continentes y ha sido un sitio estratégico por miles de años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Turquía tiene una población de aproximadamente 85.7M."
+                      "icon": "architecture",
+                      "title": "Hagia Sophia",
+                      "description": "La Basílica de Santa Sofía es una de las estructuras más impresionantes del mundo antiguo, construida en el siglo VI como una iglesia cristiana, luego convertida en mezquita, y ahora un museo de renombre mundial."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Turquía es Ankara."
+                      "icon": "nature",
+                      "title": "Capadocia: Chimeneas de hadas",
+                      "description": "Capadocia es famosa por sus formaciones rocosas únicas llamadas \"chimeneas de hadas\". El paisaje surrealista ha sido usado como set de película y es popular para paseos en globo aerostático."
                   }
               ]
           }
@@ -11883,44 +11883,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Turkmenistan",
               "capital": "Ashgabat",
-              "flagDescription": "The flag of Turkmenistan.",
+              "flagDescription": "Turkmenistan's flag has a green field with a red vertical stripe on the hoist containing a white carpet design (gul pattern). The flag also has a white crescent and five white stars in the upper hoist corner. Green represents Islam, and the carpet symbolizes Turkmen cultural heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Turkmenistan",
-                      "description": "Turkmenistan is a country in Central Asia."
+                      "icon": "building",
+                      "title": "Crater of Fire",
+                      "description": "The Crater of Fire (Darvaza Gas Crater) is a natural gas field that has been burning continuously since 1971 in the Karakum Desert. Locals call it \"the Gates of Hell\" because of its otherworldly appearance."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Turkmenistan has a population of approximately 7.1M."
+                      "icon": "architecture",
+                      "title": "White Marble City",
+                      "description": "Ashgabat is known for its white marble buildings and monuments. The city was built with white marble to create a stunning aesthetic, giving it the nickname \"White Marble City.\""
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Turkmenistan is Ashgabat."
+                      "icon": "culture",
+                      "title": "Turkmen Carpet Masters",
+                      "description": "Turkmen carpets are world-renowned for their intricate designs and beautiful colors. Carpet weaving is a traditional art form passed down through generations of Turkmen families."
                   }
               ]
           },
           "es": {
               "name": "Turkmenistán",
-              "capital": "Ashgabat",
-              "flagDescription": "La bandera de Turkmenistán.",
+              "capital": "Asjabat",
+              "flagDescription": "La bandera de Turkmenistán tiene un campo verde con una franja vertical roja en el asta que contiene un diseño blanco de alfombra (patrón gul). La bandera también tiene una media luna blanca y cinco estrellas blancas en la esquina superior del asta. El verde representa el Islam, y la alfombra simboliza el patrimonio cultural turkmeno.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Turkmenistán",
-                      "description": "Turkmenistán es un país en Central Asia."
+                      "icon": "building",
+                      "title": "Cráter de fuego",
+                      "description": "El Cráter de Fuego (Cráter de Gas de Darvaza) es un campo de gas natural que ha estado ardiendo continuamente desde 1971 en el Desierto de Karakum. Los lugareños lo llaman \"las Puertas del Infierno\" por su apariencia sobrenatural."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Turkmenistán tiene una población de aproximadamente 7.1M."
+                      "icon": "architecture",
+                      "title": "Ciudad de mármol blanco",
+                      "description": "Asjabat es conocida por sus edificios y monumentos de mármol blanco. La ciudad fue construida con mármol blanco para crear una estética impresionante, dándole el apodo de \"Ciudad de Mármol Blanco\"."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Turkmenistán es Ashgabat."
+                      "icon": "culture",
+                      "title": "Maestros de alfombras turmenas",
+                      "description": "Las alfombras turmenas son mundialmente reconocidas por sus diseños intrincados y hermosos colores. El tejido de alfombras es una forma de arte tradicional transmitida a través de generaciones de familias turmenas."
                   }
               ]
           }
@@ -12148,44 +12148,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "United Arab Emirates",
               "capital": "Abu Dhabi",
-              "flagDescription": "The UAE flag has three equal horizontal stripes of green, white, and black with a vertical red stripe on the left. The Arab Liberation colours represent Arab unity: red for hardiness and courage, green for hope and prosperity, white for peace and neutrality, and black for the defeat of enemies.",
+              "flagDescription": "The UAE flag has three equal horizontal stripes of green, white, and black, with a red vertical stripe on the hoist. Green represents Islam and hope, white represents peace, black represents strength, and red symbolizes courage and the blood of independence fighters.",
               "funFacts": [
                   {
-                      "icon": "apartment",
-                      "title": "Tallest Building",
-                      "description": "The Burj Khalifa in Dubai is the world's tallest building at 828 meters — taller than 160 floors. On a clear day, you can see it from 95 km away."
+                      "icon": "building",
+                      "title": "Burj Khalifa",
+                      "description": "The Burj Khalifa in Dubai is the world's tallest building at 828 meters. This architectural marvel is an iconic symbol of Dubai's ambition and rapid development in the 21st century."
                   },
                   {
-                      "icon": "wb_sunny",
-                      "title": "Desert Skiing",
-                      "description": "Ski Dubai inside a shopping mall maintains temperatures of -1°C in the desert where outside it may be 45°C. The indoor ski slope is 400 meters long with real snow."
+                      "icon": "desert",
+                      "title": "Arabian Desert",
+                      "description": "The UAE is home to vast desert landscapes featuring towering sand dunes. Desert safaris and dune bashing are popular activities offering visitors a taste of traditional Bedouin culture and stunning desert scenery."
                   },
                   {
-                      "icon": "emoji_nature",
-                      "title": "Falcon Culture",
-                      "description": "Falconry is a UNESCO-listed cultural heritage in the UAE. Falcons are treated as prized companions — they even get their own passports for international travel with their owners."
+                      "icon": "innovation",
+                      "title": "Innovation and Modernity",
+                      "description": "The UAE has transformed from an oil-based economy into a global hub for innovation, finance, and tourism. Palm Jumeirah, Dubai Marina, and the Sheikh Zayed Grand Mosque showcase modern and traditional architecture."
                   }
               ]
           },
           "es": {
               "name": "Emiratos Árabes Unidos",
-              "capital": "Abu Dhabi",
-              "flagDescription": "La bandera de Emiratos Árabes Unidos.",
+              "capital": "Abu Dabi",
+              "flagDescription": "La bandera de los EAU tiene tres franjas horizontales iguales de verde, blanco y negro, con una franja vertical roja en el asta. El verde representa el Islam y la esperanza, el blanco representa la paz, el negro representa la fortaleza, y el rojo simboliza el valor y la sangre de los luchadores por la independencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Emiratos Árabes Unidos",
-                      "description": "Emiratos Árabes Unidos es un país en Western Asia."
+                      "icon": "building",
+                      "title": "Burj Khalifa",
+                      "description": "El Burj Khalifa en Dubái es el edificio más alto del mundo con 828 metros. Esta maravilla arquitectónica es un símbolo icónico de la ambición y el rápido desarrollo de Dubái en el siglo XXI."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Emiratos Árabes Unidos tiene una población de aproximadamente 11.3M."
+                      "icon": "desert",
+                      "title": "Desierto Arábigo",
+                      "description": "Los EAU albergan vastos paisajes desérticos con dunas de arena imponentes. Los safaris en el desierto y el dune bashing son actividades populares que ofrecen a los visitantes un sabor de la cultura beduina tradicional y el impresionante paisaje del desierto."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Emiratos Árabes Unidos es Abu Dhabi."
+                      "icon": "innovation",
+                      "title": "Innovación y modernidad",
+                      "description": "Los EAU se han transformado de una economía basada en el petróleo en un centro mundial de innovación, finanzas y turismo. Palm Jumeirah, Dubai Marina y la Mezquita Sheikh Zayed muestran arquitectura moderna y tradicional."
                   }
               ]
           }
@@ -12466,44 +12466,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Uzbekistan",
               "capital": "Tashkent",
-              "flagDescription": "The flag of Uzbekistan.",
+              "flagDescription": "Uzbekistan's flag has three equal horizontal stripes of blue, white, and green, separated by thin red lines, with a white crescent and 12 white stars in the upper hoist corner. Blue represents the sky and hope, white represents peace, green represents nature and fertility, and red symbolizes vitality.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Uzbekistan",
-                      "description": "Uzbekistan is a country in Central Asia."
+                      "icon": "building",
+                      "title": "Samarkand and Bukhara",
+                      "description": "Samarkand and Bukhara are ancient Silk Road cities filled with stunning Islamic architecture including the Registan and Bibi-Khanym Mosque. These UNESCO sites showcase the region's rich cultural heritage."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Uzbekistan has a population of approximately 37.9M."
+                      "icon": "silk",
+                      "title": "Silk Road Hub",
+                      "description": "Uzbekistan was a major crossroads on the ancient Silk Road, connecting East and West through trade. The region became famous for silk, spices, and crafts that traveled along these historic routes."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Uzbekistan is Tashkent."
+                      "icon": "art",
+                      "title": "Traditional Crafts",
+                      "description": "Uzbek traditional crafts include intricate silk ikat weaving, ceramic tilework, and carpet making. These crafts are still practiced today and are a source of pride in Uzbek culture."
                   }
               ]
           },
           "es": {
               "name": "Uzbekistán",
-              "capital": "Tashkent",
-              "flagDescription": "La bandera de Uzbekistán.",
+              "capital": "Taskent",
+              "flagDescription": "La bandera de Uzbekistán tiene tres franjas horizontales iguales de azul, blanco y verde, separadas por líneas rojas finas, con una media luna blanca y 12 estrellas blancas en la esquina superior del asta. El azul representa el cielo y la esperanza, el blanco representa la paz, el verde representa la naturaleza y la fertilidad, y el rojo simboliza la vitalidad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Uzbekistán",
-                      "description": "Uzbekistán es un país en Central Asia."
+                      "icon": "building",
+                      "title": "Samarcanda y Bujará",
+                      "description": "Samarcanda y Bujará son ciudades antiguas de la Ruta de la Seda llenas de impresionante arquitectura islámica incluyendo el Registan y la Mezquita Bibi-Khanym. Estos sitios de la UNESCO muestran el rico patrimonio cultural de la región."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Uzbekistán tiene una población de aproximadamente 37.9M."
+                      "icon": "silk",
+                      "title": "Centro de la Ruta de la Seda",
+                      "description": "Uzbekistán fue una encrucijada importante en la antigua Ruta de la Seda, conectando Oriente y Occidente a través del comercio. La región se hizo famosa por la seda, especias y artesanías que viajaban a través de estas rutas históricas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Uzbekistán es Tashkent."
+                      "icon": "art",
+                      "title": "Artesanías tradicionales",
+                      "description": "Las artesanías tradicionales uzbekas incluyen tejido intrincado de seda ikat, azulejos de cerámica y fabricación de alfombras. Estas artesanías aún se practican hoy y son una fuente de orgullo en la cultura uzbeka."
                   }
               ]
           }
@@ -12678,44 +12678,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Vietnam",
               "capital": "Hanoi",
-              "flagDescription": "Vietnam's flag is a solid red background with a large gold star at the center. The red symbolizes the revolution and the blood shed by soldiers, while the five-pointed gold star represents the five classes of Vietnamese workers: intellectuals, farmers, workers, businesspeople, and soldiers.",
+              "flagDescription": "Vietnam's flag is red with a single large yellow five-pointed star in the center. Red represents the blood shed for independence and the communist revolution. The single star represents the Communist Party as the sole leader of the nation, while the color and star are traditional revolutionary symbols.",
               "funFacts": [
                   {
-                      "icon": "landscape",
+                      "icon": "water",
                       "title": "Ha Long Bay",
-                      "description": "Ha Long Bay features 1,600 limestone islands and islets rising from emerald waters near the Gulf of Tonkin. It's a UNESCO World Heritage Site and one of the most breathtaking natural wonders of the world."
+                      "description": "Ha Long Bay is a UNESCO World Heritage Site featuring thousands of limestone karst peaks rising from emerald waters. Its otherworldly landscape inspired the name \"Ha Long\" meaning \"where the dragon descended.\""
                   },
                   {
-                      "icon": "directions_bike",
-                      "title": "Motorbike Nation",
-                      "description": "Vietnam has about 45 million registered motorbikes — one for every two people. Watching traffic flow through Hanoi is like watching a river of bikes weave seamlessly together."
+                      "icon": "history",
+                      "title": "Thousand-Year Struggle for Independence",
+                      "description": "Vietnam has a long history of fighting for independence against foreign powers including China, France, and America. This struggle shapes Vietnamese culture, resilience, and national pride."
                   },
                   {
-                      "icon": "restaurant",
-                      "title": "Pho Culture",
-                      "description": "Pho, a fragrant noodle soup, is more than Vietnam's national dish — it's a cultural institution. Shops open at dawn to serve broth simmered overnight for 12–24 hours."
+                      "icon": "food",
+                      "title": "Pho and Culinary Excellence",
+                      "description": "Vietnamese cuisine is renowned for its balance of fresh herbs, lime, and fish sauce. Dishes like pho, banh mi, and spring rolls are beloved worldwide and represent Vietnamese culinary artistry."
                   }
               ]
           },
           "es": {
               "name": "Vietnam",
-              "capital": "Hanoi",
-              "flagDescription": "La bandera de Vietnam.",
+              "capital": "Hanói",
+              "flagDescription": "La bandera de Vietnam es roja con una gran estrella amarilla de cinco puntas en el centro. El rojo representa la sangre derramada por la independencia y la revolución comunista. La única estrella representa al Partido Comunista como único líder de la nación, mientras que el color y la estrella son símbolos revolucionarios tradicionales.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Vietnam",
-                      "description": "Vietnam es un país en South-Eastern Asia."
+                      "icon": "water",
+                      "title": "Bahía de Ha Long",
+                      "description": "La Bahía de Ha Long es un Patrimonio de la Humanidad de la UNESCO que presenta miles de picos de karst de piedra caliza elevándose desde aguas esmeraldas. Su paisaje sobrenatural inspiró el nombre \"Ha Long\" que significa \"donde descendió el dragón\"."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Vietnam tiene una población de aproximadamente 101.3M."
+                      "icon": "history",
+                      "title": "Lucha milenaria por la independencia",
+                      "description": "Vietnam tiene una larga historia de lucha por la independencia contra potencias extranjeras incluyendo China, Francia y América. Esta lucha forma la cultura, resiliencia y orgullo nacional de Vietnam."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Vietnam es Hanoi."
+                      "icon": "food",
+                      "title": "Pho y excelencia culinaria",
+                      "description": "La cocina vietnamita es renombrada por su equilibrio de hierbas frescas, lima y salsa de pescado. Platos como pho, banh mi y rollos de primavera son amados mundialmente y representan el arte culinario vietnamita."
                   }
               ]
           }
@@ -12837,44 +12837,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Yemen",
               "capital": "Sana'a",
-              "flagDescription": "The flag of Yemen.",
+              "flagDescription": "Yemen's flag has three equal horizontal stripes of red, white, and black. These are the Pan-Arab colors adopted during Yemen's struggle for independence and unification. Red represents courage and sacrifice, white symbolizes peace and purity, and black represents the past struggles.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Yemen",
-                      "description": "Yemen is a country in Western Asia."
+                      "icon": "history",
+                      "title": "Queen of Sheba's Land",
+                      "description": "Yemen was home to the Queen of Sheba, a legendary queen mentioned in ancient texts. The kingdom was a major power controlling trade routes and known for its wealth and wisdom in ancient times."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Yemen has a population of approximately 32.7M."
+                      "icon": "building",
+                      "title": "Shibam: Manhattan of the Desert",
+                      "description": "Shibam is an ancient walled city with skyscrapers-like mud-brick towers rising up to 30 meters tall. These centuries-old structures create a stunning skyline and are a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Yemen is Sana'a."
+                      "icon": "frankincense",
+                      "title": "Frankincense Trade",
+                      "description": "Yemen was a major producer of frankincense on the ancient trade routes. The fragrant resin was highly valued and traded across the Arabian Peninsula and beyond for thousands of years."
                   }
               ]
           },
           "es": {
               "name": "Yemen",
-              "capital": "Sana'a",
-              "flagDescription": "La bandera de Yemen.",
+              "capital": "Saná",
+              "flagDescription": "La bandera de Yemen tiene tres franjas horizontales iguales de rojo, blanco y negro. Estos son los colores panárabes adoptados durante la lucha de Yemen por la independencia y la unificación. El rojo representa el valor y el sacrificio, el blanco simboliza la paz y la pureza, y el negro representa las luchas pasadas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Yemen",
-                      "description": "Yemen es un país en Western Asia."
+                      "icon": "history",
+                      "title": "Tierra de la Reina de Sheba",
+                      "description": "Yemen fue hogar de la Reina de Sheba, una reina legendaria mencionada en textos antiguos. El reino fue una potencia importante que controla rutas comerciales y era conocido por su riqueza y sabiduría en tiempos antiguos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Yemen tiene una población de aproximadamente 32.7M."
+                      "icon": "building",
+                      "title": "Shibam: Manhattan del desierto",
+                      "description": "Shibam es una ciudad amurallada antigua con torres de ladrillo de barro parecidas a rascacielos que se elevan hasta 30 metros de altura. Estas estructuras centenarias crean un horizonte impresionante y son Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Yemen es Sana'a."
+                      "icon": "frankincense",
+                      "title": "Comercio del incienso",
+                      "description": "Yemen fue un importante productor de incienso en las rutas comerciales antiguas. La resina fragante era muy valorada y comercializada a través de la Península Arábiga y más allá durante miles de años."
                   }
               ]
           }
