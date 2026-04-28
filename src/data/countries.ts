@@ -373,8 +373,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "anguilla",
       "flagCode": "ai",
+      "continent": "Caribbean",
+      "population": "15.3K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Anguilla",
+          "capital": "The Valley",
+          "flagDescription": "Anguilla's flag features three horizontal stripes of blue, white, and blue, symbolizing the ocean and sky. The orange-red upright triangle on the hoist side represents the island's people and their African heritage. Inside the triangle is a white dove carrying an olive branch, symbolizing peace.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Island Paradise",
+            "description": "Anguilla is famous for its white sand beaches and crystal-clear waters, making it one of the Caribbean's most pristine destinations."
+          },
+          {
+            "icon": "groups",
+            "title": "Peaceful People",
+            "description": "The dove on the flag represents the peaceful nature of Anguillans and their commitment to harmony."
+          },
+          {
+            "icon": "waves",
+            "title": "Coral Reefs",
+            "description": "Anguilla has excellent coral reefs perfect for snorkeling and diving, protecting the island and supporting marine life."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival Island",
+            "description": "Anguilla is known for its Anguilla Summer Festival, celebrating the island's culture, music, and food."
+          }
+          ]
+        },
+        "es": {
+          "name": "Anguila",
+          "capital": "The Valley",
+          "flagDescription": "La bandera de Anguila tiene tres franjas horizontales de azul, blanco y azul, simbolizando el océano y el cielo. El triángulo rojo-anaranjado vertical en el lado del asta representa el pueblo de la isla y su herencia africana. Dentro del triángulo hay una paloma blanca llevando una rama de olivo, simbolizando la paz.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Paraíso Isleño",
+            "description": "Anguila es famosa por sus playas de arena blanca y aguas cristalinas, siendo uno de los destinos más pristinos del Caribe."
+          },
+          {
+            "icon": "groups",
+            "title": "Gente Pacífica",
+            "description": "La paloma en la bandera representa la naturaleza pacífica de los anguileños y su compromiso con la armonía."
+          },
+          {
+            "icon": "waves",
+            "title": "Arrecifes de Coral",
+            "description": "Anguila tiene excelentes arrecifes de coral perfectos para buceo de snorkel y buceo, protegiendo la isla y apoyando la vida marina."
+          },
+          {
+            "icon": "celebration",
+            "title": "Isla de Festivales",
+            "description": "Anguila es conocida por su Festival de Verano de Anguila, celebrando la cultura, música y comida de la isla."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "16K",
       "region": "Caribbean",
@@ -426,8 +487,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "antigua-and-barbuda",
       "flagCode": "ag",
+      "continent": "Caribbean",
+      "population": "98.7K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Antigua and Barbuda",
+          "capital": "Saint John's",
+          "flagDescription": "Antigua and Barbuda's flag has a triangular design with red, white, and blue colors. The rising sun at the point of the triangle is gold and red, symbolizing a new era. The horizontal stripes of black, white, and blue represent the unity of the people and the vibrant nation.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Dual Island Nation",
+            "description": "The country is made up of two main islands: Antigua and Barbuda, each with distinct characteristics."
+          },
+          {
+            "icon": "celebration",
+            "title": "Caribbean Carnival",
+            "description": "Antigua and Barbuda's carnival is one of the largest in the Caribbean, celebrated every year with music, food, and dancing."
+          },
+          {
+            "icon": "waves",
+            "title": "Beach Paradise",
+            "description": "The islands have 365 beaches, one for every day of the year, attracting visitors from around the world."
+          },
+          {
+            "icon": "history",
+            "title": "Historical Sites",
+            "description": "The islands contain important historical sites related to Caribbean colonial history and maritime heritage."
+          }
+          ]
+        },
+        "es": {
+          "name": "Antigua y Barbuda",
+          "capital": "Saint John's",
+          "flagDescription": "La bandera de Antigua y Barbuda tiene un diseño triangular con colores rojo, blanco y azul. El sol naciente en el punto del triángulo es oro y rojo, simbolizando una nueva era. Las franjas horizontales de negro, blanco y azul representan la unidad del pueblo y la nación vibrante.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Nación de Dos Islas",
+            "description": "El país está compuesto por dos islas principales: Antigua y Barbuda, cada una con características distintas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnaval Caribeño",
+            "description": "El carnaval de Antigua y Barbuda es uno de los más grandes del Caribe, celebrado cada año con música, comida y baile."
+          },
+          {
+            "icon": "waves",
+            "title": "Paraíso de Playas",
+            "description": "Las islas tienen 365 playas, una para cada día del año, atrayendo visitantes de todo el mundo."
+          },
+          {
+            "icon": "history",
+            "title": "Sitios Históricos",
+            "description": "Las islas contienen sitios históricos importantes relacionados con la historia colonial caribeña y el patrimonio marítimo."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "104K",
       "region": "Caribbean",
@@ -479,8 +601,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "argentina",
       "flagCode": "ar",
+      "continent": "South America",
+      "population": "46.2M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Argentina",
+          "capital": "Buenos Aires",
+          "flagDescription": "Argentina's flag consists of three equal horizontal stripes of light blue, white, and light blue. In the center of the white stripe is the Sun of May (Sol de Mayo), a golden sun with a human face, symbolizing independence and national hope. The light blue represents loyalty and righteousness.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Tango Birthplace",
+            "description": "Buenos Aires is the birthplace of tango, a passionate dance and music style that originated in the late 19th century."
+          },
+          {
+            "icon": "public",
+            "title": "Largest Spanish-Speaking Nation",
+            "description": "Argentina is the second-largest Spanish-speaking country by population in the world, after Mexico."
+          },
+          {
+            "icon": "landscape",
+            "title": "Diverse Landscapes",
+            "description": "Argentina stretches from tropical areas in the north to Patagonia in the south, featuring glaciers, mountains, and vast grasslands."
+          },
+          {
+            "icon": "sports",
+            "title": "Football Passion",
+            "description": "Football (soccer) is Argentina's national passion, and the country has produced many world-class players and legends."
+          }
+          ]
+        },
+        "es": {
+          "name": "Argentina",
+          "capital": "Buenos Aires",
+          "flagDescription": "La bandera de Argentina consta de tres franjas horizontales iguales de azul claro, blanco y azul claro. En el centro de la franja blanca está el Sol de Mayo (Sol de Mayo), un sol dorado con cara humana, simbolizando la independencia y la esperanza nacional. El azul claro representa la lealtad y la rectitud.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Cuna del Tango",
+            "description": "Buenos Aires es la cuna del tango, un estilo de danza y música pasional que se originó a finales del siglo XIX."
+          },
+          {
+            "icon": "public",
+            "title": "Mayor Nación Hispanohablante",
+            "description": "Argentina es el segundo país hispanohablante más grande por población en el mundo, después de México."
+          },
+          {
+            "icon": "landscape",
+            "title": "Paisajes Diversos",
+            "description": "Argentina se extiende desde áreas tropicales en el norte hasta la Patagonia en el sur, con glaciares, montañas y vastas llanuras."
+          },
+          {
+            "icon": "sports",
+            "title": "Pasión por el Fútbol",
+            "description": "El fútbol es la pasión nacional de Argentina, y el país ha producido muchos jugadores y leyendas de clase mundial."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "46.7M",
       "region": "South America",
@@ -585,8 +768,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "aruba",
       "flagCode": "aw",
+      "continent": "Caribbean",
+      "population": "106K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Aruba",
+          "capital": "Oranjestad",
+          "flagDescription": "Aruba's flag has two equal horizontal stripes of light blue and yellow, separated by a thin red-white-red stripe. The light blue represents the sea and sky, yellow represents the sandy beaches, and the red and white bands represent freedom and moral strength.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "One Happy Island",
+            "description": "Aruba's motto is \"One Happy Island,\" reflecting the island's peaceful, friendly, and welcoming nature."
+          },
+          {
+            "icon": "waves",
+            "title": "Year-Round Sunshine",
+            "description": "Aruba enjoys consistent warm weather year-round, making it a perfect tropical destination outside the hurricane belt."
+          },
+          {
+            "icon": "landscape",
+            "title": "Flamingo Island",
+            "description": "Aruba is home to beautiful pink flamingos that can be seen in the wild in certain areas of the island."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival Culture",
+            "description": "The island celebrates Carnival and other festivals with colorful parades, music, and traditional cuisine."
+          }
+          ]
+        },
+        "es": {
+          "name": "Aruba",
+          "capital": "Oranjestad",
+          "flagDescription": "La bandera de Aruba tiene dos franjas horizontales iguales de azul claro y amarillo, separadas por una fina franja rojo-blanco-rojo. El azul claro representa el mar y el cielo, el amarillo representa las playas de arena, y las bandas roja y blanca representan la libertad y la fortaleza moral.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Una Isla Feliz",
+            "description": "El lema de Aruba es \"One Happy Island\", reflejando la naturaleza pacífica, amistosa y acogedora de la isla."
+          },
+          {
+            "icon": "waves",
+            "title": "Sol Todo el Año",
+            "description": "Aruba disfruta de clima cálido constante durante todo el año, haciéndola un destino tropical perfecto fuera del cinturón de huracanes."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla de Flamencos",
+            "description": "Aruba es hogar de hermosos flamencos rosas que se pueden ver en estado salvaje en ciertas áreas de la isla."
+          },
+          {
+            "icon": "celebration",
+            "title": "Cultura de Festivales",
+            "description": "La isla celebra el Carnaval y otros festivales con desfiles coloridos, música y cocina tradicional."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "108K",
       "region": "Caribbean",
@@ -797,8 +1041,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "bahamas",
       "flagCode": "bs",
+      "continent": "Caribbean",
+      "population": "407K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "The Bahamas",
+          "capital": "Nassau",
+          "flagDescription": "The Bahamas' flag has three horizontal stripes of aquamarine, gold, and aquamarine, with a black triangle on the hoist side. The aquamarine represents the water surrounding the islands, the gold represents the beaches and resources, and the black triangle represents the determination of the Bahamian people.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Clear Waters",
+            "description": "The Bahamas is famous for its pristine turquoise waters and stunning underwater ecosystems."
+          },
+          {
+            "icon": "waves",
+            "title": "Blue Holes",
+            "description": "The Bahamas contains mysterious blue holes, deep marine caverns that are popular among divers and scientists."
+          },
+          {
+            "icon": "public",
+            "title": "Pirate History",
+            "description": "The Bahamas has a rich pirate history, with famous pirates like Blackbeard once operating in these waters."
+          },
+          {
+            "icon": "celebration",
+            "title": "Junkanoo Festival",
+            "description": "Junkanoo is a spectacular Bahamian parade festival with colorful costumes, music, and masks, celebrated after Christmas."
+          }
+          ]
+        },
+        "es": {
+          "name": "Las Bahamas",
+          "capital": "Nassau",
+          "flagDescription": "La bandera de Las Bahamas tiene tres franjas horizontales de agua marina, oro y agua marina, con un triángulo negro en el lado del asta. El agua marina representa el agua que rodea las islas, el oro representa las playas y recursos, y el triángulo negro representa la determinación del pueblo bahamense.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Aguas Cristalinas",
+            "description": "Las Bahamas es famosa por sus aguas turquesas prístinas y ecosistemas submarinos impresionantes."
+          },
+          {
+            "icon": "waves",
+            "title": "Agujeros Azules",
+            "description": "Las Bahamas contiene misteriosos agujeros azules, cavernas marinas profundas populares entre buceadores y científicos."
+          },
+          {
+            "icon": "public",
+            "title": "Historia Pirata",
+            "description": "Las Bahamas tiene una rica historia de piratas, con famosos piratas como Barba Negra operando en estas aguas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival Junkanoo",
+            "description": "Junkanoo es un espectacular festival de desfile bahamense con disfraces coloridos, música y máscaras, celebrado después de Navidad."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "398K",
       "region": "Caribbean",
@@ -956,8 +1261,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "barbados",
       "flagCode": "bb",
+      "continent": "Caribbean",
+      "population": "288K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Barbados",
+          "capital": "Bridgetown",
+          "flagDescription": "Barbados' flag has three equal vertical stripes of blue, gold, and blue. A black trident head is centered on the gold stripe, representing the island's African heritage and independence. The blue symbolizes the sea, and the gold symbolizes the sandy beaches.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Caribbean Jewel",
+            "description": "Barbados is known as the jewel of the Caribbean, with consistent good weather and vibrant culture."
+          },
+          {
+            "icon": "celebration",
+            "title": "Crop Over Festival",
+            "description": "Crop Over is Barbados' most famous festival, celebrating the end of the sugar cane harvest with music, dancing, and parades."
+          },
+          {
+            "icon": "waves",
+            "title": "Shipwreck Diving",
+            "description": "Barbados has numerous shipwrecks offshore that are excellent diving sites for exploring maritime history."
+          },
+          {
+            "icon": "landscape",
+            "title": "Bridgetown Harbor",
+            "description": "The capital's natural harbor has been a vital maritime hub since colonial times."
+          }
+          ]
+        },
+        "es": {
+          "name": "Barbados",
+          "capital": "Bridgetown",
+          "flagDescription": "La bandera de Barbados tiene tres franjas verticales iguales de azul, oro y azul. Una cabeza de tridente negra está centrada en la franja dorada, representando la herencia africana e independencia de la isla. El azul simboliza el mar, y el oro simboliza las playas de arena.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Joya del Caribe",
+            "description": "Barbados es conocida como la joya del Caribe, con clima consistentemente bueno y cultura vibrante."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival Crop Over",
+            "description": "Crop Over es el festival más famoso de Barbados, celebrando el fin de la cosecha de caña de azúcar con música, baile y desfiles."
+          },
+          {
+            "icon": "waves",
+            "title": "Buceo en Naufragios",
+            "description": "Barbados tiene numerosos naufragios en la costa que son excelentes sitios de buceo para explorar la historia marítima."
+          },
+          {
+            "icon": "landscape",
+            "title": "Puerto de Bridgetown",
+            "description": "El puerto natural de la capital ha sido un centro marítimo vital desde tiempos coloniales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "268K",
       "region": "Caribbean",
@@ -1115,8 +1481,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "belize",
       "flagCode": "bz",
+      "continent": "Central America",
+      "population": "397K",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Belize",
+          "capital": "Belmopan",
+          "flagDescription": "Belize's flag is the only flag with more people than land in its design. It features the Belize coat of arms (two loggers and a shield) on a blue background with red upper and lower stripes. The mahogany trees and forest symbolize Belize's natural wealth.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Great Blue Hole",
+            "description": "Belize is home to the famous Great Blue Hole, a massive underwater sinkhole that is a UNESCO World Heritage Site."
+          },
+          {
+            "icon": "nature",
+            "title": "Rainforest Biodiversity",
+            "description": "Belize has one of the highest biodiversity densities in the world, with rainforests covering much of the country."
+          },
+          {
+            "icon": "waves",
+            "title": "Barrier Reef",
+            "description": "Belize has the second-largest coral barrier reef in the world, making it a paradise for snorkeling and diving."
+          },
+          {
+            "icon": "history",
+            "title": "Mayan History",
+            "description": "Belize has significant Mayan archaeological sites and ruins, showcasing the ancient civilization's achievements."
+          }
+          ]
+        },
+        "es": {
+          "name": "Belice",
+          "capital": "Belmopán",
+          "flagDescription": "La bandera de Belice es la única bandera con más personas que tierra en su diseño. Presenta el escudo de armas de Belice (dos leñadores y un escudo) en un fondo azul con franjas rojo en la parte superior e inferior. Los árboles de caoba y bosque simbolizan la riqueza natural de Belice.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Gran Agujero Azul",
+            "description": "Belice es hogar del famoso Gran Agujero Azul, un sumidero subacuático masivo que es un Sitio del Patrimonio Mundial de la UNESCO."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversidad de la Selva Tropical",
+            "description": "Belice tiene una de las mayores densidades de biodiversidad del mundo, con selvas tropicales cubriendo gran parte del país."
+          },
+          {
+            "icon": "waves",
+            "title": "Barrera de Coral",
+            "description": "Belice tiene la segunda barrera de coral más grande del mundo, haciéndolo un paraíso para el buceo de snorkel y buceo."
+          },
+          {
+            "icon": "history",
+            "title": "Historia Maya",
+            "description": "Belice tiene sitios y ruinas arqueológicos mayas significativos, mostrando los logros de la civilización antigua."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "418K",
       "region": "Central America",
@@ -1221,8 +1648,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "bermuda",
       "flagCode": "bm",
+      "continent": "North America",
+      "population": "64.1K",
+      "region": "Atlantic Ocean",
+      "translations": {
+        "en": {
+          "name": "Bermuda",
+          "capital": "Hamilton",
+          "flagDescription": "Bermuda's flag is red with the Union Jack in the upper hoist corner and the Bermuda coat of arms on the lower right. The coat of arms features a shipwreck and lion, representing maritime heritage and British connections. The red background represents courage.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Island Pink Sands",
+            "description": "Bermuda's beaches are famous for their pink sand, which comes from coral, shells, and red minerals."
+          },
+          {
+            "icon": "public",
+            "title": "Maritime Nation",
+            "description": "Bermuda has a deep maritime heritage and is known for its ships and seafaring traditions."
+          },
+          {
+            "icon": "landscape",
+            "title": "Subtropical Paradise",
+            "description": "Bermuda is located in the Atlantic Ocean and has a subtropical climate with beautiful landscapes."
+          },
+          {
+            "icon": "celebration",
+            "title": "Gombey Dancers",
+            "description": "Gombey dancing is a traditional form of street performance in Bermuda with colorful costumes and rhythmic movement."
+          }
+          ]
+        },
+        "es": {
+          "name": "Bermuda",
+          "capital": "Hamilton",
+          "flagDescription": "La bandera de Bermuda es roja con la Union Jack en la esquina superior del asta y el escudo de armas de Bermuda en la esquina inferior derecha. El escudo de armas presenta un naufragio y un león, representando el patrimonio marítimo y las conexiones británicas. El fondo rojo representa el coraje.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Arena Rosa de la Isla",
+            "description": "Las playas de Bermuda son famosas por su arena rosa, que proviene de coral, conchas y minerales rojos."
+          },
+          {
+            "icon": "public",
+            "title": "Nación Marítima",
+            "description": "Bermuda tiene un profundo patrimonio marítimo y es conocida por sus barcos y tradiciones de navegación."
+          },
+          {
+            "icon": "landscape",
+            "title": "Paraíso Subtropical",
+            "description": "Bermuda está ubicada en el Océano Atlántico y tiene un clima subtropical con hermosos paisajes."
+          },
+          {
+            "icon": "celebration",
+            "title": "Bailarines Gombey",
+            "description": "El baile Gombey es una forma tradicional de actuación callejera en Bermuda con disfraces coloridos y movimiento rítmico."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "64K",
       "region": "North America",
@@ -1327,8 +1815,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "bolivia",
       "flagCode": "bo",
+      "continent": "South America",
+      "population": "11.8M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Bolivia",
+          "capital": "La Paz and Sucre",
+          "flagDescription": "Bolivia's flag has three equal horizontal stripes of red, yellow, and green. The red symbolizes the blood shed for independence, yellow represents mineral wealth and the sun, and green represents the land and fertility. The national emblem is often displayed in the center.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Salar de Uyuni",
+            "description": "Bolivia is home to Salar de Uyuni, the world's largest salt flat, which creates a stunning mirror effect during the rainy season."
+          },
+          {
+            "icon": "public",
+            "title": "Indigenous Heritage",
+            "description": "Bolivia has a rich indigenous heritage with many people speaking Quechua and Aymara languages."
+          },
+          {
+            "icon": "mountain",
+            "title": "Andes Mountains",
+            "description": "Bolivia is located in the Andes Mountains and contains some of the highest peaks in South America."
+          },
+          {
+            "icon": "history",
+            "title": "Silver Mining History",
+            "description": "Bolivia was once the world's largest producer of silver, which attracted Spanish colonizers in the 16th century."
+          }
+          ]
+        },
+        "es": {
+          "name": "Bolivia",
+          "capital": "La Paz y Sucre",
+          "flagDescription": "La bandera de Bolivia tiene tres franjas horizontales iguales de rojo, amarillo y verde. El rojo simboliza la sangre derramada por la independencia, el amarillo representa la riqueza mineral y el sol, y el verde representa la tierra y la fertilidad. El escudo nacional a menudo se exhibe en el centro.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Salar de Uyuni",
+            "description": "Bolivia es hogar del Salar de Uyuni, el mayor salar del mundo, que crea un efecto espejo impresionante durante la estación lluviosa."
+          },
+          {
+            "icon": "public",
+            "title": "Herencia Indígena",
+            "description": "Bolivia tiene una herencia indígena rica con muchas personas hablando idiomas quechua y aymara."
+          },
+          {
+            "icon": "mountain",
+            "title": "Montañas de los Andes",
+            "description": "Bolivia está ubicada en las Montañas de los Andes y contiene algunos de los picos más altos de América del Sur."
+          },
+          {
+            "icon": "history",
+            "title": "Historia de Minería de Plata",
+            "description": "Bolivia fue una vez el mayor productor de plata del mundo, lo que atrajo a colonizadores españoles en el siglo XVI."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "11.4M",
       "region": "South America",
@@ -1486,8 +2035,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "brazil",
       "flagCode": "br",
+      "continent": "South America",
+      "population": "215.3M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Brazil",
+          "capital": "Brasília",
+          "flagDescription": "Brazil's flag is green with a yellow diamond and a blue disk (globe) in the center. A white band with the national motto \"Order and Progress\" crosses the disk. Green represents the land, yellow represents the nation's minerals, and blue represents the sky.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Amazon Rainforest",
+            "description": "Brazil contains the Amazon Rainforest, the world's largest tropical forest and home to millions of species."
+          },
+          {
+            "icon": "music_note",
+            "title": "Samba and Carnival",
+            "description": "Brazil is the birthplace of samba music and hosts the world-famous Rio Carnival festival."
+          },
+          {
+            "icon": "sports",
+            "title": "Football Legacy",
+            "description": "Brazil is a football (soccer) powerhouse with five World Cup victories and countless legendary players."
+          },
+          {
+            "icon": "public",
+            "title": "South America's Largest",
+            "description": "Brazil is the largest country in South America and the fifth-largest in the world by area."
+          }
+          ]
+        },
+        "es": {
+          "name": "Brasil",
+          "capital": "Brasilia",
+          "flagDescription": "La bandera de Brasil es verde con un diamante amarillo y un disco azul (globo) en el centro. Una banda blanca con el lema nacional \"Orden y Progreso\" cruza el disco. El verde representa la tierra, el amarillo representa los minerales de la nación, y el azul representa el cielo.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Selva Amazónica",
+            "description": "Brasil contiene la Selva Amazónica, la selva tropical más grande del mundo y hogar de millones de especies."
+          },
+          {
+            "icon": "music_note",
+            "title": "Samba y Carnaval",
+            "description": "Brasil es el lugar de nacimiento de la música samba y alberga el famoso Carnaval de Río del mundo."
+          },
+          {
+            "icon": "sports",
+            "title": "Legado del Fútbol",
+            "description": "Brasil es una potencia del fútbol (soccer) con cinco victorias de la Copa Mundial e innumerables jugadores legendarios."
+          },
+          {
+            "icon": "public",
+            "title": "El Más Grande de América del Sur",
+            "description": "Brasil es el país más grande de América del Sur y el quinto más grande del mundo por área."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "213.4M",
       "region": "South America",
@@ -1592,8 +2202,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "british-virgin-islands",
       "flagCode": "vg",
+      "continent": "Caribbean",
+      "population": "35.7K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "British Virgin Islands",
+          "capital": "Road Town",
+          "flagDescription": "The British Virgin Islands' flag is blue with the Union Jack in the upper left and the coat of arms on the right. The coat of arms features an oil lamp and the motto \"Vigilate\" (watch). The blue represents the sea and sky surrounding the islands.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Sailing Paradise",
+            "description": "The British Virgin Islands are a paradise for sailing, with many yacht charters and water sports activities."
+          },
+          {
+            "icon": "landscape",
+            "title": "Island Chain",
+            "description": "The territory comprises about 60 islands and cays, many of which are uninhabited and pristine."
+          },
+          {
+            "icon": "public",
+            "title": "British Heritage",
+            "description": "The islands have maintained strong British cultural and political connections since colonial times."
+          },
+          {
+            "icon": "history",
+            "title": "Pirate History",
+            "description": "The British Virgin Islands have a colorful history as a pirate haven in the Caribbean."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Vírgenes Británicas",
+          "capital": "Road Town",
+          "flagDescription": "La bandera de las Islas Vírgenes Británicas es azul con la Union Jack en la esquina superior izquierda y el escudo de armas en la derecha. El escudo de armas presenta una lámpara de aceite y el lema \"Vigilate\" (vigila). El azul representa el mar y el cielo que rodean las islas.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Paraíso de la Vela",
+            "description": "Las Islas Vírgenes Británicas son un paraíso para la vela, con muchos alquileres de yates y actividades de deportes acuáticos."
+          },
+          {
+            "icon": "landscape",
+            "title": "Cadena de Islas",
+            "description": "El territorio comprende aproximadamente 60 islas y cayos, muchos de los cuales son deshabitados y prístinos."
+          },
+          {
+            "icon": "public",
+            "title": "Herencia Británica",
+            "description": "Las islas han mantenido conexiones culturales y políticas británicas fuertes desde tiempos coloniales."
+          },
+          {
+            "icon": "history",
+            "title": "Historia de Piratas",
+            "description": "Las Islas Vírgenes Británicas tienen una historia colorida como refugio pirata en el Caribe."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "39K",
       "region": "Caribbean",
@@ -1963,8 +2634,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "canada",
       "flagCode": "ca",
+      "continent": "North America",
+      "population": "39.7M",
+      "region": "North America",
+      "translations": {
+        "en": {
+          "name": "Canada",
+          "capital": "Ottawa",
+          "flagDescription": "Canada's flag features a red and white design with a maple leaf in the center. The red stripes represent the two oceans that border Canada, and the white center band represents the vast land. The red maple leaf is Canada's national symbol and represents the country's natural heritage.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Niagara Falls",
+            "description": "Canada is home to Niagara Falls, one of the world's most spectacular and powerful waterfalls."
+          },
+          {
+            "icon": "mountain",
+            "title": "Rocky Mountains",
+            "description": "Canada contains the beautiful Canadian Rocky Mountains, famous for their stunning peaks and pristine wilderness."
+          },
+          {
+            "icon": "public",
+            "title": "Second Largest Country",
+            "description": "Canada is the second-largest country in the world by land area, stretching from the Atlantic to the Pacific Ocean."
+          },
+          {
+            "icon": "celebration",
+            "title": "Maple Syrup Tradition",
+            "description": "Canada is the world's largest producer of maple syrup, a beloved national symbol and food product."
+          }
+          ]
+        },
+        "es": {
+          "name": "Canadá",
+          "capital": "Ottawa",
+          "flagDescription": "La bandera de Canadá presenta un diseño rojo y blanco con una hoja de arce en el centro. Las franjas rojas representan los dos océanos que bordean Canadá, y la banda blanca central representa la vasta tierra. La hoja de arce roja es el símbolo nacional de Canadá y representa la herencia natural del país.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Cataratas del Niágara",
+            "description": "Canadá es hogar de las Cataratas del Niágara, una de las cascadas más espectaculares y poderosas del mundo."
+          },
+          {
+            "icon": "mountain",
+            "title": "Montañas Rocosas",
+            "description": "Canadá contiene las hermosas Montañas Rocosas Canadienses, famosas por sus picos impresionantes y su naturaleza virgen."
+          },
+          {
+            "icon": "public",
+            "title": "Segundo País Más Grande",
+            "description": "Canadá es el segundo país más grande del mundo por área de tierra, extendiéndose del Océano Atlántico al Pacífico."
+          },
+          {
+            "icon": "celebration",
+            "title": "Tradición del Jarabe de Arce",
+            "description": "Canadá es el mayor productor de jarabe de arce del mundo, un símbolo nacional amado y producto alimenticio."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "41.7M",
       "region": "North America",
@@ -2069,8 +2801,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "caribbean-netherlands",
       "flagCode": "bq",
+      "continent": "Caribbean",
+      "population": "25.2K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Caribbean Netherlands",
+          "capital": "Bonaire",
+          "flagDescription": "The Caribbean Netherlands (Bonaire, Sint Eustatius, and Saba) use the Dutch flag or local flags. The islands' culture blends Dutch and Caribbean influences. White sandy beaches and clear waters define the islands.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Bonaire Marine Park",
+            "description": "Bonaire has one of the world's best marine parks, perfect for snorkeling and diving without leaving the shore."
+          },
+          {
+            "icon": "landscape",
+            "title": "Pristine Beaches",
+            "description": "The islands offer pristine white sand beaches and crystal-clear waters ideal for beach lovers."
+          },
+          {
+            "icon": "public",
+            "title": "Dutch Caribbean",
+            "description": "These islands are part of the Kingdom of the Netherlands and blend European and Caribbean cultures."
+          },
+          {
+            "icon": "nature",
+            "title": "Flamingo Sanctuary",
+            "description": "The islands are home to flamingos and other tropical bird species in their natural habitats."
+          }
+          ]
+        },
+        "es": {
+          "name": "Caribe Holandés",
+          "capital": "Bonaire",
+          "flagDescription": "El Caribe Holandés (Bonaire, Sint Eustatius y Saba) utilizan la bandera holandesa o banderas locales. La cultura de las islas combina influencias holandesas y caribeñas. Las playas de arena blanca y aguas cristalinas definen las islas.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Parque Marino de Bonaire",
+            "description": "Bonaire tiene uno de los mejores parques marinos del mundo, perfecto para buceo de snorkel y buceo sin dejar la costa."
+          },
+          {
+            "icon": "landscape",
+            "title": "Playas Prístinas",
+            "description": "Las islas ofrecen playas de arena blanca prístinas y aguas cristalinas ideales para amantes de la playa."
+          },
+          {
+            "icon": "public",
+            "title": "Caribe Holandés",
+            "description": "Estas islas son parte del Reino de los Países Bajos y combinan culturas europeas y caribeñas."
+          },
+          {
+            "icon": "nature",
+            "title": "Santuario de Flamencos",
+            "description": "Las islas son hogar de flamencos y otras especies de aves tropicales en sus hábitats naturales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "32K",
       "region": "Caribbean",
@@ -2122,8 +2915,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "cayman-islands",
       "flagCode": "ky",
+      "continent": "Caribbean",
+      "population": "67.4K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Cayman Islands",
+          "capital": "George Town",
+          "flagDescription": "The Cayman Islands' flag is blue with the Union Jack in the upper left and the coat of arms on the lower right. The coat of arms features a triple-crowned lion and represents the island's British heritage and maritime traditions.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Stingray City",
+            "description": "The Cayman Islands are famous for Stingray City, where visitors can swim with gentle stingrays in shallow water."
+          },
+          {
+            "icon": "landscape",
+            "title": "Seven Mile Beach",
+            "description": "Seven Mile Beach is one of the Caribbean's most beautiful beaches with pristine white sand."
+          },
+          {
+            "icon": "financial",
+            "title": "Finance Hub",
+            "description": "The Cayman Islands are a major international financial center and banking hub."
+          },
+          {
+            "icon": "waves",
+            "title": "Diving Paradise",
+            "description": "The islands offer world-class diving with colorful coral reefs and abundant marine life."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Caimán",
+          "capital": "George Town",
+          "flagDescription": "La bandera de las Islas Caimán es azul con la Union Jack en la esquina superior izquierda y el escudo de armas en la esquina inferior derecha. El escudo de armas presenta un león triple coronado y representa la herencia británica e tradiciones marítimas de la isla.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Stingray City",
+            "description": "Las Islas Caimán son famosas por Stingray City, donde los visitantes pueden nadar con rayas gentiles en aguas poco profundas."
+          },
+          {
+            "icon": "landscape",
+            "title": "Playa de Siete Millas",
+            "description": "Seven Mile Beach es una de las playas más hermosas del Caribe con arena blanca prístina."
+          },
+          {
+            "icon": "financial",
+            "title": "Centro Financiero",
+            "description": "Las Islas Caimán son un centro financiero internacional importante y centro bancario."
+          },
+          {
+            "icon": "waves",
+            "title": "Paraíso de Buceo",
+            "description": "Las islas ofrecen buceo de clase mundial con arrecifes de coral coloridos y abundante vida marina."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "85K",
       "region": "Caribbean",
@@ -2281,8 +3135,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "chile",
       "flagCode": "cl",
+      "continent": "South America",
+      "population": "19.6M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Chile",
+          "capital": "Santiago",
+          "flagDescription": "Chile's flag has three horizontal stripes: blue, white, and red. The blue band features a white star, representing the country's unity and progress. The red represents the blood of patriots, and the white represents the snow-covered Andes Mountains.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Atacama Desert",
+            "description": "Chile contains the Atacama Desert, one of the driest places on Earth, with stunning otherworldly landscapes."
+          },
+          {
+            "icon": "landscape",
+            "title": "Patagonia",
+            "description": "Chile's southern region of Patagonia is famous for its glaciers, mountains, and pristine wilderness."
+          },
+          {
+            "icon": "public",
+            "title": "Long and Narrow",
+            "description": "Chile is the longest north-south country in the world, stretching along South America's Pacific coast."
+          },
+          {
+            "icon": "history",
+            "title": "Easter Island",
+            "description": "Chile administers Easter Island (Rapa Nui), famous for its mysterious moai stone statues."
+          }
+          ]
+        },
+        "es": {
+          "name": "Chile",
+          "capital": "Santiago",
+          "flagDescription": "La bandera de Chile tiene tres franjas horizontales: azul, blanco y rojo. La banda azul presenta una estrella blanca, representando la unidad y el progreso del país. El rojo representa la sangre de los patriotas, y el blanco representa la nieve de las Montañas de los Andes.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Desierto de Atacama",
+            "description": "Chile contiene el Desierto de Atacama, uno de los lugares más secos de la Tierra, con paisajes impresionantes y extraterrestres."
+          },
+          {
+            "icon": "landscape",
+            "title": "Patagonia",
+            "description": "La región austral de Patagonia de Chile es famosa por sus glaciares, montañas y naturaleza prístina."
+          },
+          {
+            "icon": "public",
+            "title": "Largo y Estrecho",
+            "description": "Chile es el país más largo de norte a sur del mundo, extendiéndose a lo largo de la costa del Pacífico de América del Sur."
+          },
+          {
+            "icon": "history",
+            "title": "Isla de Pascua",
+            "description": "Chile administra la Isla de Pascua (Rapa Nui), famosa por sus misteriosas estatuas de piedra moai."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "20.2M",
       "region": "South America",
@@ -2493,8 +3408,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "colombia",
       "flagCode": "co",
+      "continent": "South America",
+      "population": "52.1M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Colombia",
+          "capital": "Bogotá",
+          "flagDescription": "Colombia's flag has three horizontal stripes, with the yellow stripe taking up half the flag. The yellow represents the country's precious resources, blue represents the sea and sky, and red represents the blood of those who fought for independence.",
+          "funFacts": [
+          {
+            "icon": "nature",
+            "title": "Coffee Country",
+            "description": "Colombia is the world's leading producer of specialty coffee, growing beans in the Andes Mountains."
+          },
+          {
+            "icon": "landscape",
+            "title": "Amazon Rainforest",
+            "description": "Colombia contains a significant portion of the Amazon Rainforest, one of the world's greatest natural treasures."
+          },
+          {
+            "icon": "public",
+            "title": "South America's Only Pacific Caribbean",
+            "description": "Colombia is unique in having both Pacific and Caribbean coastlines, offering diverse ecosystems."
+          },
+          {
+            "icon": "music_note",
+            "title": "Cumbia and Culture",
+            "description": "Colombia is known for its vibrant music culture, with cumbia, reggaeton, and other genres originating here."
+          }
+          ]
+        },
+        "es": {
+          "name": "Colombia",
+          "capital": "Bogotá",
+          "flagDescription": "La bandera de Colombia tiene tres franjas horizontales, con la franja amarilla ocupando la mitad de la bandera. El amarillo representa los recursos preciosos del país, el azul representa el mar y el cielo, y el rojo representa la sangre de quienes lucharon por la independencia.",
+          "funFacts": [
+          {
+            "icon": "nature",
+            "title": "País Cafetero",
+            "description": "Colombia es el principal productor mundial de café de especialidad, cultivando granos en las Montañas de los Andes."
+          },
+          {
+            "icon": "landscape",
+            "title": "Selva Amazónica",
+            "description": "Colombia contiene una porción significativa de la Selva Amazónica, uno de los tesoros naturales más grandes del mundo."
+          },
+          {
+            "icon": "public",
+            "title": "Único Caribeño Pacífico de América del Sur",
+            "description": "Colombia es única en tener costas tanto del Pacífico como del Caribe, ofreciendo ecosistemas diversos."
+          },
+          {
+            "icon": "music_note",
+            "title": "Cumbia y Cultura",
+            "description": "Colombia es conocida por su vibrante cultura musical, con cumbia, reggaeton y otros géneros originarios de aquí."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "53.1M",
       "region": "South America",
@@ -2652,8 +3628,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "costa-rica",
       "flagCode": "cr",
+      "continent": "Central America",
+      "population": "5.2M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Costa Rica",
+          "capital": "San José",
+          "flagDescription": "Costa Rica's flag has five horizontal stripes: blue, white, red (wider), white, and blue. The red stripe represents the blood and courage of the nation, while the blue and white represent nobility and peace. This flag design is based on the French tricolor.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Biodiversity Hotspot",
+            "description": "Costa Rica is one of the world's most biodiverse countries, with rainforests, cloud forests, and beaches."
+          },
+          {
+            "icon": "nature",
+            "title": "No Army Since 1949",
+            "description": "Costa Rica abolished its military in 1949, investing in education and nature conservation instead."
+          },
+          {
+            "icon": "landscape",
+            "title": "Arenal Volcano",
+            "description": "Costa Rica is home to the dramatic Arenal Volcano, one of the most active volcanoes in the world."
+          },
+          {
+            "icon": "celebration",
+            "title": "Pura Vida Philosophy",
+            "description": "\"Pura Vida\" (pure life) is Costa Rica's national motto, representing a lifestyle of happiness and contentment."
+          }
+          ]
+        },
+        "es": {
+          "name": "Costa Rica",
+          "capital": "San José",
+          "flagDescription": "La bandera de Costa Rica tiene cinco franjas horizontales: azul, blanco, rojo (más ancho), blanco y azul. La franja roja representa la sangre y el coraje de la nación, mientras que el azul y blanco representan la nobleza y la paz. Este diseño de bandera se basa en el tricolor francés.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Punto Caliente de Biodiversidad",
+            "description": "Costa Rica es uno de los países más biodiversos del mundo, con selvas tropicales, bosques nubosos y playas."
+          },
+          {
+            "icon": "nature",
+            "title": "Sin Ejército Desde 1949",
+            "description": "Costa Rica abolió su ejército en 1949, invirtiendo en educación y conservación de la naturaleza en su lugar."
+          },
+          {
+            "icon": "landscape",
+            "title": "Volcán Arenal",
+            "description": "Costa Rica es hogar del dramático Volcán Arenal, uno de los volcanes más activos del mundo."
+          },
+          {
+            "icon": "celebration",
+            "title": "Filosofía Pura Vida",
+            "description": "\"Pura Vida\" (vida pura) es el lema nacional de Costa Rica, representando un estilo de vida de felicidad y contentamiento."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "5.3M",
       "region": "Central America",
@@ -2758,8 +3795,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "cuba",
       "flagCode": "cu",
+      "continent": "Caribbean",
+      "population": "11.2M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Cuba",
+          "capital": "Havana",
+          "flagDescription": "Cuba's flag has five horizontal stripes: blue, white, blue, white, and blue. A red triangle is on the hoist side. The stripes represent the provinces, the blue represents the ocean and sky, the white represents independence and purity, and the red represents the blood of patriots.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Birthplace of Salsa",
+            "description": "Cuba is the birthplace of salsa music and dance, which originated in Havana in the 1920s-1940s."
+          },
+          {
+            "icon": "landscape",
+            "title": "Viñales Valley",
+            "description": "Cuba's Viñales Valley is famous for its dramatic mogote formations and tobacco plantations."
+          },
+          {
+            "icon": "public",
+            "title": "Caribbean's Largest Island",
+            "description": "Cuba is the largest island in the Caribbean Sea and has a unique culture and history."
+          },
+          {
+            "icon": "history",
+            "title": "Colonial Architecture",
+            "description": "Havana is famous for its well-preserved colonial architecture dating back centuries."
+          }
+          ]
+        },
+        "es": {
+          "name": "Cuba",
+          "capital": "La Habana",
+          "flagDescription": "La bandera de Cuba tiene cinco franjas horizontales: azul, blanco, azul, blanco y azul. Un triángulo rojo está en el lado del asta. Las franjas representan las provincias, el azul representa el océano y el cielo, el blanco representa la independencia y la pureza, y el rojo representa la sangre de los patriotas.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Cuna de la Salsa",
+            "description": "Cuba es la cuna de la música y el baile de salsa, que se originó en La Habana en los años 1920-1940."
+          },
+          {
+            "icon": "landscape",
+            "title": "Valle de Viñales",
+            "description": "El Valle de Viñales de Cuba es famoso por sus formaciones mogote dramáticas y plantaciones de tabaco."
+          },
+          {
+            "icon": "public",
+            "title": "Isla Más Grande del Caribe",
+            "description": "Cuba es la isla más grande del Mar Caribe y tiene una cultura e historia única."
+          },
+          {
+            "icon": "history",
+            "title": "Arquitectura Colonial",
+            "description": "La Habana es famosa por su arquitectura colonial bien conservada que data de siglos atrás."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "9.7M",
       "region": "Caribbean",
@@ -2811,8 +3909,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "curacao",
       "flagCode": "cw",
+      "continent": "Caribbean",
+      "population": "165K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Curaçao",
+          "capital": "Willemstad",
+          "flagDescription": "Curaçao's flag has a horizontal yellow stripe on a blue background, with white and red bands below the yellow stripe. A white star is centered. The blue represents the sea, yellow represents peace and prosperity, and red represents the blood of patriots.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Colorful Capital",
+            "description": "Willemstad is famous for its colorful colonial architecture, with bright pink, yellow, and blue buildings lining the waterfront."
+          },
+          {
+            "icon": "waves",
+            "title": "Diving Paradise",
+            "description": "Curaçao is an exceptional diving destination with coral reefs accessible right from the shore."
+          },
+          {
+            "icon": "public",
+            "title": "Melting Pot Culture",
+            "description": "Curaçao is a diverse, multicultural island with influences from Dutch, African, Latin American, and Caribbean cultures."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Celebration",
+            "description": "Curaçao's Carnival is celebrated with colorful parades, music, dancing, and traditional foods."
+          }
+          ]
+        },
+        "es": {
+          "name": "Curaçao",
+          "capital": "Willemstad",
+          "flagDescription": "La bandera de Curaçao tiene una franja amarilla horizontal en un fondo azul, con bandas blancas y rojas debajo de la franja amarilla. Una estrella blanca está centrada. El azul representa el mar, el amarillo representa la paz y la prosperidad, y el rojo representa la sangre de los patriotas.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Capital Colorida",
+            "description": "Willemstad es famosa por su arquitectura colonial colorida, con edificios de color rosa, amarillo y azul brillantes en la orilla."
+          },
+          {
+            "icon": "waves",
+            "title": "Paraíso de Buceo",
+            "description": "Curaçao es un destino de buceo excepcional con arrecifes de coral accesibles directamente desde la costa."
+          },
+          {
+            "icon": "public",
+            "title": "Cultura Crisol",
+            "description": "Curaçao es una isla diversa y multicultural con influencias de culturas holandesas, africanas, latinoamericanas y caribeñas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Celebración de Carnaval",
+            "description": "El Carnaval de Curaçao se celebra con desfiles coloridos, música, baile y comidas tradicionales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "156K",
       "region": "Caribbean",
@@ -3076,8 +4235,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "dominica",
       "flagCode": "dm",
+      "continent": "Caribbean",
+      "population": "71.6K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Dominica",
+          "capital": "Roseau",
+          "flagDescription": "Dominica's flag has a green background with a cross in yellow and black, representing the island's natural beauty and cultural diversity. The cross is divided into four sections with stripes of different colors. A red disk with a parrot is centered.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Nature Island",
+            "description": "Dominica is known as the Nature Island because of its pristine rainforests, waterfalls, and natural hot springs."
+          },
+          {
+            "icon": "waves",
+            "title": "Boiling Lake",
+            "description": "Dominica is home to one of the world's largest boiling lakes, a natural geothermal wonder."
+          },
+          {
+            "icon": "public",
+            "title": "Diverse Culture",
+            "description": "Dominica has a rich cultural heritage blending African, French, and English influences."
+          },
+          {
+            "icon": "nature",
+            "title": "Endemic Parrot",
+            "description": "The Dominica parrot, depicted on the flag, is an endemic species found only on the island."
+          }
+          ]
+        },
+        "es": {
+          "name": "Dominica",
+          "capital": "Roseau",
+          "flagDescription": "La bandera de Dominica tiene un fondo verde con una cruz en amarillo y negro, representando la belleza natural y la diversidad cultural de la isla. La cruz se divide en cuatro secciones con franjas de diferentes colores. Un disco rojo con un loro está centrado.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Isla de la Naturaleza",
+            "description": "Dominica es conocida como la Isla de la Naturaleza debido a sus selvas tropicales prístinas, cascadas y aguas termales naturales."
+          },
+          {
+            "icon": "waves",
+            "title": "Boiling Lake",
+            "description": "Dominica es hogar de uno de los lagos hirvientes más grandes del mundo, una maravilla geotérmica natural."
+          },
+          {
+            "icon": "public",
+            "title": "Cultura Diversa",
+            "description": "Dominica tiene un rico patrimonio cultural que mezcla influencias africanas, francesas e inglesas."
+          },
+          {
+            "icon": "nature",
+            "title": "Loro Endémico",
+            "description": "El loro de Dominica, representado en la bandera, es una especie endémica que se encuentra solo en la isla."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "67K",
       "region": "Caribbean",
@@ -3129,8 +4349,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "dominican-republic",
       "flagCode": "do",
+      "continent": "Caribbean",
+      "population": "11.4M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Dominican Republic",
+          "capital": "Santo Domingo",
+          "flagDescription": "The Dominican Republic's flag has a vertical tricolor of blue, white, and red, with a small coat of arms in the center. The blue represents liberty, white represents independence, and red represents the blood of patriots. A cross divides the flag into four quarters.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Sugar and Beaches",
+            "description": "The Dominican Republic is famous for its sugar production and beautiful beaches on both coasts."
+          },
+          {
+            "icon": "landscape",
+            "title": "Hispaniola Island",
+            "description": "The Dominican Republic shares the island of Hispaniola with Haiti, the second-largest Caribbean island."
+          },
+          {
+            "icon": "public",
+            "title": "Baseball Nation",
+            "description": "The Dominican Republic is a baseball superpower, producing many Major League Baseball players."
+          },
+          {
+            "icon": "music_note",
+            "title": "Merengue and Bachata",
+            "description": "The Dominican Republic is the birthplace of merengue and bachata music, vibrant Latin rhythms."
+          }
+          ]
+        },
+        "es": {
+          "name": "República Dominicana",
+          "capital": "Santo Domingo",
+          "flagDescription": "La bandera de la República Dominicana tiene un tricolor vertical de azul, blanco y rojo, con un pequeño escudo de armas en el centro. El azul representa la libertad, el blanco representa la independencia, y el rojo representa la sangre de los patriotas. Una cruz divide la bandera en cuatro cuartos.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Azúcar y Playas",
+            "description": "La República Dominicana es famosa por su producción de azúcar y hermosas playas en ambas costas."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla Hispaniola",
+            "description": "La República Dominicana comparte la isla de Hispaniola con Haití, la segunda isla más grande del Caribe."
+          },
+          {
+            "icon": "public",
+            "title": "Nación de Béisbol",
+            "description": "La República Dominicana es una superpotencia de béisbol, produciendo muchos jugadores de las Grandes Ligas."
+          },
+          {
+            "icon": "music_note",
+            "title": "Merengue y Bachata",
+            "description": "La República Dominicana es la cuna de la música merengue y bachata, ritmos latinos vibrantes."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "10.8M",
       "region": "Caribbean",
@@ -3235,8 +4516,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "ecuador",
       "flagCode": "ec",
+      "continent": "South America",
+      "population": "18.2M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Ecuador",
+          "capital": "Quito",
+          "flagDescription": "Ecuador's flag has three horizontal stripes with yellow taking up half the flag, followed by blue and red. The yellow represents the richness of the soil and the sun, blue represents the sea and sky, and red represents the blood of patriots. The coat of arms is centered on the yellow stripe.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Named After the Equator",
+            "description": "Ecuador is named after the equator that runs through the country, dividing the Earth into Northern and Southern hemispheres."
+          },
+          {
+            "icon": "landscape",
+            "title": "Galapagos Islands",
+            "description": "Ecuador administers the Galapagos Islands, a UNESCO World Heritage Site famous for unique wildlife and Darwin's theory of evolution."
+          },
+          {
+            "icon": "mountain",
+            "title": "Andes Mountains",
+            "description": "Ecuador is home to the Andes Mountains, with Chimborazo being one of the highest peaks."
+          },
+          {
+            "icon": "nature",
+            "title": "Amazon Rainforest",
+            "description": "Ecuador contains a significant portion of the Amazon Rainforest in its eastern regions."
+          }
+          ]
+        },
+        "es": {
+          "name": "Ecuador",
+          "capital": "Quito",
+          "flagDescription": "La bandera de Ecuador tiene tres franjas horizontales con amarillo ocupando la mitad de la bandera, seguido de azul y rojo. El amarillo representa la riqueza del suelo y el sol, el azul representa el mar y el cielo, y el rojo representa la sangre de los patriotas. El escudo de armas está centrado en la franja amarilla.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Nombrado por la Línea Ecuatorial",
+            "description": "Ecuador lleva el nombre de la línea ecuatorial que atraviesa el país, dividiendo la Tierra en hemisferios Norte y Sur."
+          },
+          {
+            "icon": "landscape",
+            "title": "Islas Galápagos",
+            "description": "Ecuador administra las Islas Galápagos, un Sitio del Patrimonio Mundial de la UNESCO famoso por su vida silvestre única y la teoría de Darwin sobre la evolución."
+          },
+          {
+            "icon": "mountain",
+            "title": "Montañas de los Andes",
+            "description": "Ecuador es hogar de las Montañas de los Andes, siendo Chimborazo uno de los picos más altos."
+          },
+          {
+            "icon": "nature",
+            "title": "Selva Amazónica",
+            "description": "Ecuador contiene una porción significativa de la Selva Amazónica en sus regiones orientales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "18.1M",
       "region": "South America",
@@ -3341,8 +4683,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "el-salvador",
       "flagCode": "sv",
+      "continent": "Central America",
+      "population": "6.3M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "El Salvador",
+          "capital": "San Salvador",
+          "flagDescription": "El Salvador's flag has three horizontal stripes of blue, white, and blue, with the national coat of arms in the center. The blue represents loyalty and ideals, the white represents peace and prosperity. The coat of arms features a triangle with volcanoes and the national motto.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "The Smallest Country",
+            "description": "El Salvador is the smallest country in Central America but has one of the highest population densities."
+          },
+          {
+            "icon": "landscape",
+            "title": "Volcanic Beauty",
+            "description": "El Salvador is home to numerous volcanoes and volcanic lakes, creating dramatic landscapes."
+          },
+          {
+            "icon": "public",
+            "title": "Ancient Mayan Sites",
+            "description": "El Salvador contains important Mayan archaeological sites, revealing the region's pre-Columbian history."
+          },
+          {
+            "icon": "celebration",
+            "title": "Pupusas",
+            "description": "El Salvador is famous for pupusas, delicious stuffed tortillas that are the national dish."
+          }
+          ]
+        },
+        "es": {
+          "name": "El Salvador",
+          "capital": "San Salvador",
+          "flagDescription": "La bandera de El Salvador tiene tres franjas horizontales de azul, blanco y azul, con el escudo de armas nacional en el centro. El azul representa la lealtad e ideales, el blanco representa la paz y la prosperidad. El escudo de armas presenta un triángulo con volcanes y el lema nacional.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "El País Más Pequeño",
+            "description": "El Salvador es el país más pequeño de América Central pero tiene una de las densidades de población más altas."
+          },
+          {
+            "icon": "landscape",
+            "title": "Belleza Volcánica",
+            "description": "El Salvador es hogar de numerosos volcanes y lagos volcánicos, creando paisajes dramáticos."
+          },
+          {
+            "icon": "public",
+            "title": "Sitios Mayas Antiguos",
+            "description": "El Salvador contiene sitios arqueológicos mayas importantes, revelando la historia precolombina de la región."
+          },
+          {
+            "icon": "celebration",
+            "title": "Pupusas",
+            "description": "El Salvador es famoso por las pupusas, deliciosas tortillas rellenas que son el plato nacional."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "6.0M",
       "region": "Central America",
@@ -3659,8 +5062,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "falkland-islands",
       "flagCode": "fk",
+      "continent": "South America",
+      "population": "3.5K",
+      "region": "South Atlantic",
+      "translations": {
+        "en": {
+          "name": "Falkland Islands",
+          "capital": "Stanley",
+          "flagDescription": "The Falkland Islands' flag is blue with the Union Jack in the upper left and the coat of arms on the right. The coat of arms features a lion and sheep, representing the island's British heritage and wool industry.",
+          "funFacts": [
+          {
+            "icon": "animal",
+            "title": "Penguin Paradise",
+            "description": "The Falkland Islands are home to five species of penguins, with hundreds of thousands of birds."
+          },
+          {
+            "icon": "landscape",
+            "title": "Windswept Islands",
+            "description": "The Falkland Islands are known for their windy, windswept landscapes and remote beauty."
+          },
+          {
+            "icon": "public",
+            "title": "British Territory",
+            "description": "The Falkland Islands are a British Overseas Territory in the South Atlantic Ocean."
+          },
+          {
+            "icon": "history",
+            "title": "Sheep Farming",
+            "description": "Sheep farming has been the traditional economy of the Falkland Islands since their settlement."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Malvinas",
+          "capital": "Stanley",
+          "flagDescription": "La bandera de las Islas Malvinas es azul con la Union Jack en la esquina superior izquierda y el escudo de armas en la derecha. El escudo de armas presenta un león y ovejas, representando la herencia británica de la isla e industria de la lana.",
+          "funFacts": [
+          {
+            "icon": "animal",
+            "title": "Paraíso de Pingüinos",
+            "description": "Las Islas Malvinas son hogar de cinco especies de pingüinos, con cientos de miles de aves."
+          },
+          {
+            "icon": "landscape",
+            "title": "Islas Azotadas por el Viento",
+            "description": "Las Islas Malvinas son conocidas por sus paisajes azotados por el viento y belleza remota."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Británico",
+            "description": "Las Islas Malvinas son un Territorio Británico de Ultramar en el Océano Atlántico Sur."
+          },
+          {
+            "icon": "history",
+            "title": "Ganadería de Ovejas",
+            "description": "La ganadería de ovejas ha sido la economía tradicional de las Islas Malvinas desde su asentamiento."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "4K",
       "region": "South America",
@@ -3924,8 +5388,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "french-guiana",
       "flagCode": "gf",
+      "continent": "South America",
+      "population": "304K",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "French Guiana",
+          "capital": "Cayenne",
+          "flagDescription": "French Guiana uses the French flag (blue, white, and red vertical stripes) as it is an overseas department of France. The region has a tropical climate and diverse cultural heritage blending French and Caribbean influences.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Amazon Rainforest",
+            "description": "French Guiana is covered by the Amazon Rainforest and is one of the least densely populated regions in South America."
+          },
+          {
+            "icon": "public",
+            "title": "Space Agency",
+            "description": "French Guiana hosts the European Space Agency's primary launch facility, the Guiana Space Centre."
+          },
+          {
+            "icon": "history",
+            "title": "Devil's Island",
+            "description": "French Guiana is home to Devil's Island, a former penal colony and UNESCO World Heritage Site."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversity",
+            "description": "French Guiana has incredible biodiversity with jaguars, caimans, anacondas, and thousands of bird species."
+          }
+          ]
+        },
+        "es": {
+          "name": "Guayana Francesa",
+          "capital": "Cayena",
+          "flagDescription": "La Guayana Francesa utiliza la bandera francesa (franjas verticales azul, blanco y rojo) ya que es un departamento de ultramar de Francia. La región tiene un clima tropical y un patrimonio cultural diverso que combina influencias francesas y caribeñas.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Selva Amazónica",
+            "description": "La Guayana Francesa está cubierta por la Selva Amazónica y es una de las regiones menos densamente pobladas de América del Sur."
+          },
+          {
+            "icon": "public",
+            "title": "Agencia Espacial",
+            "description": "La Guayana Francesa alberga la instalación de lanzamiento principal de la Agencia Espacial Europea, el Centro Espacial de Guayana."
+          },
+          {
+            "icon": "history",
+            "title": "Isla del Diablo",
+            "description": "La Guayana Francesa es hogar de la Isla del Diablo, una antigua colonia penitenciaria y Sitio del Patrimonio Mundial de la UNESCO."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversidad",
+            "description": "La Guayana Francesa tiene una biodiversidad increíble con jaguares, caimanes, anacondas y miles de especies de aves."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "292K",
       "region": "South America",
@@ -4401,8 +5926,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "greenland",
       "flagCode": "gl",
+      "continent": "North America",
+      "population": "56.4K",
+      "region": "North Atlantic",
+      "translations": {
+        "en": {
+          "name": "Greenland",
+          "capital": "Nuuk",
+          "flagDescription": "Greenland's flag consists of two equal horizontal disks, one red and one white, representing the sun setting over the ice. Red and white are the colors of the Danish flag. The flag symbolizes Greenland's connection to Denmark and its Arctic identity.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Arctic Wonderland",
+            "description": "Greenland is the world's largest island, mostly covered in ice, with pristine Arctic landscapes."
+          },
+          {
+            "icon": "nature",
+            "title": "Northern Lights",
+            "description": "Greenland offers spectacular displays of the Northern Lights (Aurora Borealis) during winter months."
+          },
+          {
+            "icon": "public",
+            "title": "Autonomous Territory",
+            "description": "Greenland is an autonomous territory within the Kingdom of Denmark."
+          },
+          {
+            "icon": "culture",
+            "title": "Inuit Heritage",
+            "description": "Greenland has a rich Inuit (Kalaallit) cultural heritage with traditional hunting and fishing practices."
+          }
+          ]
+        },
+        "es": {
+          "name": "Groenlandia",
+          "capital": "Nuuk",
+          "flagDescription": "La bandera de Groenlandia consiste en dos discos horizontales iguales, uno rojo y uno blanco, representando el sol poniéndose sobre el hielo. El rojo y blanco son los colores de la bandera danesa. La bandera simboliza la conexión de Groenlandia con Dinamarca y su identidad ártica.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Maravilla Ártica",
+            "description": "Groenlandia es la isla más grande del mundo, mayormente cubierta de hielo, con paisajes árticos prístinos."
+          },
+          {
+            "icon": "nature",
+            "title": "Luces Polares",
+            "description": "Groenlandia ofrece espectáculos espectaculares de las Luces Polares (Aurora Boreal) durante los meses de invierno."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Autónomo",
+            "description": "Groenlandia es un territorio autónomo dentro del Reino de Dinamarca."
+          },
+          {
+            "icon": "culture",
+            "title": "Herencia Inuit",
+            "description": "Groenlandia tiene un rico patrimonio cultural inuit (Kalaallit) con prácticas tradicionales de caza y pesca."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "57K",
       "region": "North America",
@@ -4454,8 +6040,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "grenada",
       "flagCode": "gd",
+      "continent": "Caribbean",
+      "population": "124K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Grenada",
+          "capital": "Saint George's",
+          "flagDescription": "Grenada's flag has a rectangle divided into gold and green triangles in the hoist corner, with red and green fields. A red border surrounds the flag. A nutmeg pod is shown, representing the island's spice industry. Yellow, green, and red represent the Caribbean people.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Spice Island",
+            "description": "Grenada is known as the Spice Island, famous for growing nutmeg, cinnamon, and other spices."
+          },
+          {
+            "icon": "waves",
+            "title": "Sandy Beaches",
+            "description": "Grenada has beautiful white sand beaches perfect for swimming, snorkeling, and diving."
+          },
+          {
+            "icon": "public",
+            "title": "Island Nation",
+            "description": "Grenada consists of the main island of Grenada plus smaller islands like Carriacou and Petite Martinique."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Festival",
+            "description": "Grenada's Carnival is celebrated with music, dancing, costumes, and traditional Caribbean food."
+          }
+          ]
+        },
+        "es": {
+          "name": "Granada",
+          "capital": "Saint George's",
+          "flagDescription": "La bandera de Granada tiene un rectángulo dividido en triángulos oro y verde en la esquina del asta, con campos rojo y verde. Un borde rojo rodea la bandera. Una vaina de nuez moscada se muestra, representando la industria especiera de la isla. El amarillo, verde y rojo representan al pueblo caribeño.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Isla de las Especias",
+            "description": "Granada es conocida como la Isla de las Especias, famosa por cultivar nuez moscada, canela y otras especias."
+          },
+          {
+            "icon": "waves",
+            "title": "Playas Arenosas",
+            "description": "Granada tiene hermosas playas de arena blanca perfectas para nadar, buceo de snorkel y buceo."
+          },
+          {
+            "icon": "public",
+            "title": "Nación Insular",
+            "description": "Granada consiste en la isla principal de Granada más islas más pequeñas como Carriacou y Petite Martinique."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival de Carnaval",
+            "description": "El Carnaval de Granada se celebra con música, baile, disfraces y comida caribeña tradicional."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "109K",
       "region": "Caribbean",
@@ -4507,8 +6154,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "guadeloupe",
       "flagCode": "gp",
+      "continent": "Caribbean",
+      "population": "395K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Guadeloupe",
+          "capital": "Basse-Terre",
+          "flagDescription": "Guadeloupe uses the French flag (blue, white, and red vertical stripes) as it is an overseas region of France. The islands have a tropical climate and blend French and Caribbean cultures.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Tropical Islands",
+            "description": "Guadeloupe is a group of tropical islands in the Caribbean known for beautiful beaches and lush vegetation."
+          },
+          {
+            "icon": "waves",
+            "title": "Diving and Snorkeling",
+            "description": "The islands offer excellent diving and snorkeling opportunities with colorful coral reefs and diverse marine life."
+          },
+          {
+            "icon": "public",
+            "title": "French Caribbean",
+            "description": "As an overseas region of France, Guadeloupe combines French and Caribbean cultural influences."
+          },
+          {
+            "icon": "nature",
+            "title": "La Soufrière Volcano",
+            "description": "Guadeloupe is home to the active La Soufrière volcano, which remains one of the Caribbean's most famous peaks."
+          }
+          ]
+        },
+        "es": {
+          "name": "Guadalupe",
+          "capital": "Basse-Terre",
+          "flagDescription": "Guadalupe utiliza la bandera francesa (franjas verticales azul, blanco y rojo) ya que es una región de ultramar de Francia. Las islas tienen un clima tropical y combinan culturas francesas y caribeñas.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Islas Tropicales",
+            "description": "Guadalupe es un grupo de islas tropicales en el Caribe conocidas por hermosas playas y vegetación exuberante."
+          },
+          {
+            "icon": "waves",
+            "title": "Buceo y Snorkel",
+            "description": "Las islas ofrecen excelentes oportunidades de buceo y snorkel con arrecifes de coral coloridos y vida marina diversa."
+          },
+          {
+            "icon": "public",
+            "title": "Caribe Francés",
+            "description": "Como región de ultramar de Francia, Guadalupe combina influencias culturales francesas y caribeñas."
+          },
+          {
+            "icon": "nature",
+            "title": "Volcán La Soufrière",
+            "description": "Guadalupe es hogar del volcán activo La Soufrière, que sigue siendo uno de los picos más famosos del Caribe."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "379K",
       "region": "Caribbean",
@@ -4613,8 +6321,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "guatemala",
       "flagCode": "gt",
+      "continent": "Central America",
+      "population": "17.1M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Guatemala",
+          "capital": "Guatemala City",
+          "flagDescription": "Guatemala's flag has three vertical stripes of light blue, white, and light blue. The white stripe displays a simplified version of the national coat of arms. The light blue represents the sky and oceans, while the white represents peace and purity.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Mayan Civilization",
+            "description": "Guatemala is the heart of ancient Mayan civilization, with significant ruins and archaeological sites throughout the country."
+          },
+          {
+            "icon": "mountain",
+            "title": "Tikal Ruins",
+            "description": "Tikal is one of the largest urban centers of Mayan civilization, located in the Petén rainforest."
+          },
+          {
+            "icon": "landscape",
+            "title": "Colorful Markets",
+            "description": "Guatemala is famous for its vibrant indigenous markets with traditional clothing, textiles, and crafts."
+          },
+          {
+            "icon": "nature",
+            "title": "Lake Atitlán",
+            "description": "Lake Atitlán is surrounded by volcanoes and indigenous villages, making it one of Central America's most beautiful destinations."
+          }
+          ]
+        },
+        "es": {
+          "name": "Guatemala",
+          "capital": "Ciudad de Guatemala",
+          "flagDescription": "La bandera de Guatemala tiene tres franjas verticales de azul claro, blanco y azul claro. La franja blanca muestra una versión simplificada del escudo de armas nacional. El azul claro representa el cielo y los océanos, mientras que el blanco representa la paz y la pureza.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Civilización Maya",
+            "description": "Guatemala es el corazón de la civilización maya antigua, con ruinas significativas y sitios arqueológicos en todo el país."
+          },
+          {
+            "icon": "mountain",
+            "title": "Ruinas de Tikal",
+            "description": "Tikal es uno de los mayores centros urbanos de la civilización maya, ubicado en la selva tropical de Petén."
+          },
+          {
+            "icon": "landscape",
+            "title": "Mercados Coloridos",
+            "description": "Guatemala es famosa por sus mercados indígenas vibrantes con ropa tradicional, textiles y artesanías."
+          },
+          {
+            "icon": "nature",
+            "title": "Lago Atitlán",
+            "description": "El Lago Atitlán está rodeado de volcanes y pueblos indígenas, lo que lo convierte en uno de los destinos más hermosos de América Central."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "18.1M",
       "region": "Central America",
@@ -4825,8 +6594,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "guyana",
       "flagCode": "gy",
+      "continent": "South America",
+      "population": "804K",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Guyana",
+          "capital": "Georgetown",
+          "flagDescription": "Guyana's flag features a gold arrowhead on a red field with black and white bands. The gold represents the country's wealth and resources, the red represents the determination of the people, and green represents the agricultural heritage.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Rainforest Paradise",
+            "description": "Guyana is home to vast rainforests covering about 80% of the country, with incredible biodiversity."
+          },
+          {
+            "icon": "waves",
+            "title": "Kaieteur Falls",
+            "description": "Kaieteur Falls is one of the world's highest single-drop waterfalls, a stunning natural wonder."
+          },
+          {
+            "icon": "public",
+            "title": "English-Speaking South America",
+            "description": "Guyana is the only English-speaking country in South America."
+          },
+          {
+            "icon": "culture",
+            "title": "Multicultural Nation",
+            "description": "Guyana has a diverse population with influences from African, Indian, European, and indigenous cultures."
+          }
+          ]
+        },
+        "es": {
+          "name": "Guyana",
+          "capital": "Georgetown",
+          "flagDescription": "La bandera de Guyana presenta una punta de flecha de oro en un campo rojo con bandas negras y blancas. El oro representa la riqueza y los recursos del país, el rojo representa la determinación del pueblo, y el verde representa la herencia agrícola.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Paraíso de la Selva Tropical",
+            "description": "Guyana es hogar de vastas selvas tropicales que cubren aproximadamente el 80% del país, con biodiversidad increíble."
+          },
+          {
+            "icon": "waves",
+            "title": "Cataratas de Kaieteur",
+            "description": "Las Cataratas de Kaieteur es una de las cataratas de caída única más altas del mundo, una maravilla natural impresionante."
+          },
+          {
+            "icon": "public",
+            "title": "Sudamérica de Habla Inglesa",
+            "description": "Guyana es el único país de habla inglesa en América del Sur."
+          },
+          {
+            "icon": "culture",
+            "title": "Nación Multicultural",
+            "description": "Guyana tiene una población diversa con influencias de culturas africanas, indias, europeas e indígenas."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "773K",
       "region": "South America",
@@ -4878,8 +6708,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "haiti",
       "flagCode": "ht",
+      "continent": "Caribbean",
+      "population": "11.4M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Haiti",
+          "capital": "Port-au-Prince",
+          "flagDescription": "Haiti's flag has two equal horizontal stripes of blue and red, with a white rectangular panel in the center containing the national coat of arms. The blue represents unity, red represents courage, and white represents purity.",
+          "funFacts": [
+          {
+            "icon": "history",
+            "title": "First Black Republic",
+            "description": "Haiti was the first independent black nation in the world, achieving independence from France in 1804."
+          },
+          {
+            "icon": "landscape",
+            "title": "Hispaniola Island",
+            "description": "Haiti shares the island of Hispaniola with the Dominican Republic, making it the second-largest Caribbean island."
+          },
+          {
+            "icon": "culture",
+            "title": "Unique Creole Culture",
+            "description": "Haiti has a unique cultural blend of African, French, and indigenous Taíno influences."
+          },
+          {
+            "icon": "celebration",
+            "title": "Vodou Traditions",
+            "description": "Haiti is known for its Vodou spiritual traditions, a blend of African religions and Catholicism."
+          }
+          ]
+        },
+        "es": {
+          "name": "Haití",
+          "capital": "Puerto Príncipe",
+          "flagDescription": "La bandera de Haití tiene dos franjas horizontales iguales de azul y rojo, con un panel rectangular blanco en el centro que contiene el escudo de armas nacional. El azul representa la unidad, el rojo representa el coraje, y el blanco representa la pureza.",
+          "funFacts": [
+          {
+            "icon": "history",
+            "title": "Primera República Negra",
+            "description": "Haití fue la primera nación negra independiente del mundo, logrando la independencia de Francia en 1804."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla Hispaniola",
+            "description": "Haití comparte la isla de Hispaniola con la República Dominicana, haciéndola la segunda isla más grande del Caribe."
+          },
+          {
+            "icon": "culture",
+            "title": "Cultura Criolla Única",
+            "description": "Haití tiene una mezcla cultural única de influencias africanas, francesas e indígenas taínas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Tradiciones Vudú",
+            "description": "Haití es conocida por sus tradiciones espirituales vudú, una mezcla de religiones africanas y catolicismo."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "11.9M",
       "region": "Caribbean",
@@ -4931,8 +6822,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "honduras",
       "flagCode": "hn",
+      "continent": "Central America",
+      "population": "10.1M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Honduras",
+          "capital": "Tegucigalpa",
+          "flagDescription": "Honduras' flag has three horizontal stripes of light blue, white, and light blue, with five blue stars arranged horizontally on the white stripe. The stars represent the five countries of Central America, and the blue represents loyalty.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Mesoamerican Barrier Reef",
+            "description": "Honduras is home to part of the Mesoamerican Barrier Reef, the second-largest coral reef system in the world."
+          },
+          {
+            "icon": "landscape",
+            "title": "Bay Islands",
+            "description": "The Bay Islands of Honduras are paradise for diving and snorkeling, with pristine beaches and clear waters."
+          },
+          {
+            "icon": "history",
+            "title": "Mayan Ruins",
+            "description": "Honduras contains important Mayan ruins, including Copán, one of the most significant Mayan sites."
+          },
+          {
+            "icon": "nature",
+            "title": "Tropical Forests",
+            "description": "Honduras is covered with tropical rainforests and is a biodiversity hotspot for Central America."
+          }
+          ]
+        },
+        "es": {
+          "name": "Honduras",
+          "capital": "Tegucigalpa",
+          "flagDescription": "La bandera de Honduras tiene tres franjas horizontales de azul claro, blanco y azul claro, con cinco estrellas azules dispuestas horizontalmente en la franja blanca. Las estrellas representan los cinco países de América Central, y el azul representa la lealtad.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Barrera de Coral Mesoamericana",
+            "description": "Honduras es hogar de parte de la Barrera de Coral Mesoamericana, el segundo sistema de barrera de coral más grande del mundo."
+          },
+          {
+            "icon": "landscape",
+            "title": "Islas de la Bahía",
+            "description": "Las Islas de la Bahía de Honduras son un paraíso para el buceo y snorkel, con playas prístinas y aguas claras."
+          },
+          {
+            "icon": "history",
+            "title": "Ruinas Mayas",
+            "description": "Honduras contiene ruinas mayas importantes, incluyendo Copán, uno de los sitios mayas más significativos."
+          },
+          {
+            "icon": "nature",
+            "title": "Selvas Tropicales",
+            "description": "Honduras está cubierta con selvas tropicales y es un punto caliente de biodiversidad para América Central."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "9.9M",
       "region": "Central America",
@@ -5620,8 +7572,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "jamaica",
       "flagCode": "jm",
+      "continent": "Caribbean",
+      "population": "2.8M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Jamaica",
+          "capital": "Kingston",
+          "flagDescription": "Jamaica's flag has a gold diagonal cross dividing the flag into four triangles of green and black. The gold represents sunlight and wealth, green represents hope and agricultural wealth, and black represents the hardships overcome.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Reggae Birthplace",
+            "description": "Jamaica is the birthplace of reggae music and has produced legendary artists like Bob Marley."
+          },
+          {
+            "icon": "sports",
+            "title": "Track and Field Powerhouse",
+            "description": "Jamaica is a world-renowned sprinting nation, producing Olympic champions and world record holders."
+          },
+          {
+            "icon": "landscape",
+            "title": "Dunn's River Falls",
+            "description": "Dunn's River Falls is a beautiful terraced waterfall that flows directly into the Caribbean Sea."
+          },
+          {
+            "icon": "celebration",
+            "title": "Rastafarian Culture",
+            "description": "Jamaica is the spiritual home of Rastafarianism, a significant religious and cultural movement."
+          }
+          ]
+        },
+        "es": {
+          "name": "Jamaica",
+          "capital": "Kingston",
+          "flagDescription": "La bandera de Jamaica tiene una cruz diagonal de oro que divide la bandera en cuatro triángulos de verde y negro. El oro representa la luz solar y la riqueza, el verde representa la esperanza y la riqueza agrícola, y el negro representa las dificultades superadas.",
+          "funFacts": [
+          {
+            "icon": "music_note",
+            "title": "Cuna del Reggae",
+            "description": "Jamaica es la cuna de la música reggae y ha producido artistas legendarios como Bob Marley."
+          },
+          {
+            "icon": "sports",
+            "title": "Potencia de Atletismo",
+            "description": "Jamaica es una nación de velocidad de renombre mundial, produciendo campeones olímpicos y poseedores de récords mundiales."
+          },
+          {
+            "icon": "landscape",
+            "title": "Cataratas de Dunn's River",
+            "description": "Las Cataratas de Dunn's River es una hermosa cascada aterrazada que fluye directamente hacia el Mar Caribe."
+          },
+          {
+            "icon": "celebration",
+            "title": "Cultura Rastafari",
+            "description": "Jamaica es el hogar espiritual del Rastafari, un movimiento religioso y cultural significativo."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "2.8M",
       "region": "Caribbean",
@@ -7051,8 +9064,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "martinique",
       "flagCode": "mq",
+      "continent": "Caribbean",
+      "population": "375K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Martinique",
+          "capital": "Fort-de-France",
+          "flagDescription": "Martinique uses the French flag (blue, white, and red vertical stripes) as it is an overseas region of France. The island blends French and Caribbean cultures with tropical beauty.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Tropical Beauty",
+            "description": "Martinique is known for its tropical beaches, lush vegetation, and pleasant Caribbean climate."
+          },
+          {
+            "icon": "mountain",
+            "title": "Mount Pelée",
+            "description": "Mount Pelée is an active volcano that devastated the capital in 1902, one of history's deadliest eruptions."
+          },
+          {
+            "icon": "public",
+            "title": "French Caribbean",
+            "description": "As an overseas region of France, Martinique is part of the European Union and uses the Euro currency."
+          },
+          {
+            "icon": "culture",
+            "title": "Creole Heritage",
+            "description": "Martinique has a rich creole culture blending African, French, and Caribbean influences."
+          }
+          ]
+        },
+        "es": {
+          "name": "Martinica",
+          "capital": "Fort-de-France",
+          "flagDescription": "Martinica utiliza la bandera francesa (franjas verticales azul, blanco y rojo) ya que es una región de ultramar de Francia. La isla combina culturas francesas y caribeñas con belleza tropical.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Belleza Tropical",
+            "description": "Martinica es conocida por sus playas tropicales, vegetación exuberante y agradable clima caribeño."
+          },
+          {
+            "icon": "mountain",
+            "title": "Monte Pelée",
+            "description": "El Monte Pelée es un volcán activo que devastó la capital en 1902, una de las erupciones más mortíferas de la historia."
+          },
+          {
+            "icon": "public",
+            "title": "Caribe Francés",
+            "description": "Como región de ultramar de Francia, Martinica es parte de la Unión Europea y utiliza la moneda Euro."
+          },
+          {
+            "icon": "culture",
+            "title": "Herencia Criolla",
+            "description": "Martinica tiene una cultura criolla rica que mezcla influencias africanas, francesas y caribeñas."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "350K",
       "region": "Caribbean",
@@ -7263,8 +9337,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "mexico",
       "flagCode": "mx",
+      "continent": "North America",
+      "population": "128.3M",
+      "region": "North America",
+      "translations": {
+        "en": {
+          "name": "Mexico",
+          "capital": "Mexico City",
+          "flagDescription": "Mexico's flag has three vertical stripes of green, white, and red. The center features the national coat of arms: an eagle perched on a cactus, eating a snake. This symbolizes the founding of Mexico City. The green represents hope, white represents peace, and red represents the blood of patriots.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Aztec Legacy",
+            "description": "Mexico was the center of the Aztec Empire, with ruins still visible in Mexico City including Templo Mayor."
+          },
+          {
+            "icon": "landscape",
+            "title": "Chichen Itza",
+            "description": "Chichen Itza is one of the New Seven Wonders of the World, an impressive Mayan-Aztec archaeological site."
+          },
+          {
+            "icon": "celebration",
+            "title": "Día de Muertos",
+            "description": "Day of the Dead is a unique Mexican celebration honoring deceased loved ones with colorful altars and traditions."
+          },
+          {
+            "icon": "public",
+            "title": "Most Populous Spanish-Speaking Nation",
+            "description": "Mexico is the most populous Spanish-speaking country in the world."
+          }
+          ]
+        },
+        "es": {
+          "name": "México",
+          "capital": "Ciudad de México",
+          "flagDescription": "La bandera de México tiene tres franjas verticales de verde, blanco y rojo. El centro presenta el escudo de armas nacional: un águila encaramada en un cactus, comiendo una serpiente. Esto simboliza la fundación de la Ciudad de México. El verde representa la esperanza, el blanco representa la paz, y el rojo representa la sangre de los patriotas.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Legado Azteca",
+            "description": "México fue el centro del Imperio Azteca, con ruinas aún visibles en la Ciudad de México incluyendo el Templo Mayor."
+          },
+          {
+            "icon": "landscape",
+            "title": "Chichén Itzá",
+            "description": "Chichén Itzá es una de las Nuevas Siete Maravillas del Mundo, un impresionante sitio arqueológico maya-azteca."
+          },
+          {
+            "icon": "celebration",
+            "title": "Día de Muertos",
+            "description": "Día de Muertos es una celebración única mexicana que honra a los seres queridos fallecidos con altares coloridos y tradiciones."
+          },
+          {
+            "icon": "public",
+            "title": "Nación Hispanohablante Más Poblada",
+            "description": "México es el país hispanohablante más poblado del mundo."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "130.6M",
       "region": "North America",
@@ -7581,8 +9716,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "montserrat",
       "flagCode": "ms",
+      "continent": "Caribbean",
+      "population": "4.4K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Montserrat",
+          "capital": "Little Bay",
+          "flagDescription": "Montserrat's flag is divided into four triangles by a gold cross. The upper and lower sections are green and blue, representing the island's agriculture and sea. The cross bears a female figure in the center, symbolizing the island's rich heritage.",
+          "funFacts": [
+          {
+            "icon": "mountain",
+            "title": "Soufrière Hills Volcano",
+            "description": "Montserrat is home to the active Soufrière Hills Volcano, which erupted dramatically in 1997, altering the island's landscape."
+          },
+          {
+            "icon": "landscape",
+            "title": "Volcanic Island",
+            "description": "The southern part of Montserrat is still an exclusion zone due to volcanic activity, making it a unique geological site."
+          },
+          {
+            "icon": "public",
+            "title": "British Territory",
+            "description": "Montserrat is a British Overseas Territory with a small but resilient population."
+          },
+          {
+            "icon": "nature",
+            "title": "Black Sand Beaches",
+            "description": "Montserrat has unique black sand beaches formed by the volcanic activity on the island."
+          }
+          ]
+        },
+        "es": {
+          "name": "Montserrat",
+          "capital": "Little Bay",
+          "flagDescription": "La bandera de Montserrat está dividida en cuatro triángulos por una cruz de oro. Las secciones superior e inferior son verde y azul, representando la agricultura de la isla y el mar. La cruz lleva una figura femenina en el centro, simbolizando el rico patrimonio de la isla.",
+          "funFacts": [
+          {
+            "icon": "mountain",
+            "title": "Volcán Soufrière Hills",
+            "description": "Montserrat es hogar del volcán Soufrière Hills activo, que entró en erupción dramáticamente en 1997, alterando el paisaje de la isla."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla Volcánica",
+            "description": "La parte sur de Montserrat sigue siendo una zona de exclusión debido a la actividad volcánica, lo que la convierte en un sitio geológico único."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Británico",
+            "description": "Montserrat es un Territorio Británico de Ultramar con una población pequeña pero resiliente."
+          },
+          {
+            "icon": "nature",
+            "title": "Playas de Arena Negra",
+            "description": "Montserrat tiene playas únicas de arena negra formadas por la actividad volcánica en la isla."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "4K",
       "region": "Caribbean",
@@ -8111,8 +10307,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "nicaragua",
       "flagCode": "ni",
+      "continent": "Central America",
+      "population": "6.9M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Nicaragua",
+          "capital": "Managua",
+          "flagDescription": "Nicaragua's flag has three horizontal stripes of light blue, white, and light blue, with the national coat of arms on the white stripe. The coat of arms features two oceanic peaks separated by a volcanic cone, representing the country's two coasts and volcanic terrain.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Lake Nicaragua",
+            "description": "Lake Nicaragua is Central America's largest lake, home to freshwater sharks and diverse marine life."
+          },
+          {
+            "icon": "mountain",
+            "title": "Volcanic Landscape",
+            "description": "Nicaragua sits on the Pacific Ring of Fire and has numerous active and dormant volcanoes."
+          },
+          {
+            "icon": "waves",
+            "title": "Two Ocean Coasts",
+            "description": "Nicaragua is one of Central America's only two countries with both Pacific and Caribbean coastlines."
+          },
+          {
+            "icon": "nature",
+            "title": "Rainforest Biodiversity",
+            "description": "Nicaragua has extensive rainforests and cloud forests with incredible biodiversity."
+          }
+          ]
+        },
+        "es": {
+          "name": "Nicaragua",
+          "capital": "Managua",
+          "flagDescription": "La bandera de Nicaragua tiene tres franjas horizontales de azul claro, blanco y azul claro, con el escudo de armas nacional en la franja blanca. El escudo de armas presenta dos picos oceánicos separados por un cono volcánico, representando las dos costas del país y el terreno volcánico.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Lago Nicaragua",
+            "description": "El Lago de Nicaragua es el lago más grande de América Central, hogar de tiburones de agua dulce y vida marina diversa."
+          },
+          {
+            "icon": "mountain",
+            "title": "Paisaje Volcánico",
+            "description": "Nicaragua se encuentra en el Anillo de Fuego del Pacífico y tiene numerosos volcanes activos e inactivos."
+          },
+          {
+            "icon": "waves",
+            "title": "Dos Costas Oceánicas",
+            "description": "Nicaragua es uno de los únicos dos países de América Central con costas tanto del Pacífico como del Caribe."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversidad de la Selva Tropical",
+            "description": "Nicaragua tiene extensas selvas tropicales y bosques nubosos con biodiversidad increíble."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "6.8M",
       "region": "Central America",
@@ -8800,8 +11057,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "panama",
       "flagCode": "pa",
+      "continent": "Central America",
+      "population": "4.4M",
+      "region": "Central America",
+      "translations": {
+        "en": {
+          "name": "Panama",
+          "capital": "Panama City",
+          "flagDescription": "Panama's flag is quartered with red, blue, white, and red-blue sections. Each quarter contains a white or gold star representing civic virtues. The flag design represents the unity and diversity of the Panamanian people.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Panama Canal",
+            "description": "The Panama Canal is one of the world's most important waterways, connecting the Atlantic and Pacific Oceans."
+          },
+          {
+            "icon": "landscape",
+            "title": "Darien Gap",
+            "description": "The Darien Gap is a unique jungle region and the only land break in the Pan-American Highway."
+          },
+          {
+            "icon": "landscape",
+            "title": "Biodiversity Hotspot",
+            "description": "Panama is a biodiversity hotspot, home to more species per square kilometer than almost any other place on Earth."
+          },
+          {
+            "icon": "public",
+            "title": "Multicultural Hub",
+            "description": "Panama is a multicultural nation influenced by Caribbean, Latin American, African, and Asian cultures."
+          }
+          ]
+        },
+        "es": {
+          "name": "Panamá",
+          "capital": "Ciudad de Panamá",
+          "flagDescription": "La bandera de Panamá está dividida en cuartos con secciones roja, azul, blanca y rojo-azul. Cada cuarto contiene una estrella blanca u dorada que representa virtudes cívicas. El diseño de la bandera representa la unidad y diversidad del pueblo panameño.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Canal de Panamá",
+            "description": "El Canal de Panamá es una de las vías fluviales más importantes del mundo, conectando los Océanos Atlántico y Pacífico."
+          },
+          {
+            "icon": "landscape",
+            "title": "Tapón del Darién",
+            "description": "El Tapón del Darién es una región de selva única y el único quiebre de tierra en la Carretera Panamericana."
+          },
+          {
+            "icon": "landscape",
+            "title": "Punto Caliente de Biodiversidad",
+            "description": "Panamá es un punto caliente de biodiversidad, hogar de más especies por kilómetro cuadrado que casi cualquier otro lugar en la Tierra."
+          },
+          {
+            "icon": "public",
+            "title": "Centro Multicultural",
+            "description": "Panamá es una nación multicultural influenciada por culturas caribeñas, latinoamericanas, africanas y asiáticas."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "4.1M",
       "region": "Central America",
@@ -8906,8 +11224,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "paraguay",
       "flagCode": "py",
+      "continent": "South America",
+      "population": "6.7M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Paraguay",
+          "capital": "Asunción",
+          "flagDescription": "Paraguay's flag has three horizontal stripes of red, white, and blue. On the white stripe is a seal (on the obverse side) or the Treasury seal (on the reverse). The colors represent the blood of patriots (red), peace (white), and loyalty (blue).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Jesuit Heritage",
+            "description": "Paraguay is famous for its Jesuit missions, UNESCO World Heritage Sites that showcase colonial religious history."
+          },
+          {
+            "icon": "public",
+            "title": "Bilingual Nation",
+            "description": "Paraguay is unique in that both Spanish and Guaraní (indigenous language) are official languages."
+          },
+          {
+            "icon": "landscape",
+            "title": "Iguazu Falls",
+            "description": "Paraguay shares the spectacular Iguazu Falls with Argentina and Brazil, one of the world's most powerful waterfalls."
+          },
+          {
+            "icon": "nature",
+            "title": "Chocó Rainforest",
+            "description": "Paraguay contains part of the Chocó rainforest, one of the world's most biodiverse regions."
+          }
+          ]
+        },
+        "es": {
+          "name": "Paraguay",
+          "capital": "Asunción",
+          "flagDescription": "La bandera de Paraguay tiene tres franjas horizontales de rojo, blanco y azul. En la franja blanca hay un sello (en el lado del anverso) o el sello del Tesoro (en el reverso). Los colores representan la sangre de los patriotas (rojo), la paz (blanco), y la lealtad (azul).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Herencia Jesuita",
+            "description": "Paraguay es famosa por sus misiones jesuitas, Sitios del Patrimonio Mundial de la UNESCO que muestran la historia religiosa colonial."
+          },
+          {
+            "icon": "public",
+            "title": "Nación Bilingüe",
+            "description": "Paraguay es única en que tanto el español como el guaraní (lengua indígena) son idiomas oficiales."
+          },
+          {
+            "icon": "landscape",
+            "title": "Cataratas de Iguazú",
+            "description": "Paraguay comparte las espectaculares Cataratas de Iguazú con Argentina y Brasil, una de las cataratas más poderosas del mundo."
+          },
+          {
+            "icon": "nature",
+            "title": "Selva Tropical del Chocó",
+            "description": "Paraguay contiene parte de la selva tropical del Chocó, una de las regiones más biodiversas del mundo."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "6.1M",
       "region": "South America",
@@ -8959,8 +11338,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "peru",
       "flagCode": "pe",
+      "continent": "South America",
+      "population": "34.4M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Peru",
+          "capital": "Lima",
+          "flagDescription": "Peru's flag has three vertical stripes of red, white, and red. The white stripe features the coat of arms on the obverse side. Red represents the blood of patriots, white represents peace and honesty, and the coat of arms symbolizes Peru's natural resources.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Machu Picchu",
+            "description": "Machu Picchu is an ancient Inca citadel located high in the Andes Mountains, one of the world's most iconic ruins."
+          },
+          {
+            "icon": "landscape",
+            "title": "Lake Titicaca",
+            "description": "Lake Titicaca is the world's highest navigable lake, shared with Bolivia, at over 12,000 feet elevation."
+          },
+          {
+            "icon": "landscape",
+            "title": "Amazon Rainforest",
+            "description": "Peru contains a significant portion of the Amazon Rainforest, the world's largest tropical forest."
+          },
+          {
+            "icon": "culture",
+            "title": "Inca Heritage",
+            "description": "Peru is the heart of Inca civilization, with countless archaeological sites and artifacts throughout the country."
+          }
+          ]
+        },
+        "es": {
+          "name": "Perú",
+          "capital": "Lima",
+          "flagDescription": "La bandera de Perú tiene tres franjas verticales de rojo, blanco y rojo. La franja blanca presenta el escudo de armas en el lado del anverso. El rojo representa la sangre de los patriotas, el blanco representa la paz y la honestidad, y el escudo de armas simboliza los recursos naturales de Perú.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Machu Picchu",
+            "description": "Machu Picchu es una ciudadela inca antigua ubicada en lo alto de las Montañas de los Andes, una de las ruinas más icónicas del mundo."
+          },
+          {
+            "icon": "landscape",
+            "title": "Lago Titicaca",
+            "description": "El Lago Titicaca es el lago navegable más alto del mundo, compartido con Bolivia, a más de 12,000 pies de elevación."
+          },
+          {
+            "icon": "landscape",
+            "title": "Selva Amazónica",
+            "description": "Perú contiene una porción significativa de la Selva Amazónica, la selva tropical más grande del mundo."
+          },
+          {
+            "icon": "culture",
+            "title": "Herencia Inca",
+            "description": "Perú es el corazón de la civilización inca, con innumerables sitios arqueológicos y artefactos en todo el país."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "34.4M",
       "region": "South America",
@@ -9224,8 +11664,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "puerto-rico",
       "flagCode": "pr",
+      "continent": "Caribbean",
+      "population": "3.2M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Puerto Rico",
+          "capital": "San Juan",
+          "flagDescription": "Puerto Rico's flag has five horizontal stripes of red and white, with a blue isosceles triangle on the hoist side. The triangle contains a white five-pointed star. The colors represent the blood of patriots (red), peace (white), and the sky and sea (blue).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Bioluminescent Bays",
+            "description": "Puerto Rico has bioluminescent bays where dinoflagellates glow in the dark, creating a magical experience."
+          },
+          {
+            "icon": "landscape",
+            "title": "El Yunque Rainforest",
+            "description": "El Yunque National Rainforest is the only rainforest in the U.S. National Forest System."
+          },
+          {
+            "icon": "culture",
+            "title": "Salsa Music",
+            "description": "Puerto Rico is a major center of salsa music and culture, with vibrant music venues throughout the island."
+          },
+          {
+            "icon": "public",
+            "title": "U.S. Territory",
+            "description": "Puerto Rico is a self-governing unincorporated territory of the United States."
+          }
+          ]
+        },
+        "es": {
+          "name": "Puerto Rico",
+          "capital": "San Juan",
+          "flagDescription": "La bandera de Puerto Rico tiene cinco franjas horizontales de rojo y blanco, con un triángulo isósceles azul en el lado del asta. El triángulo contiene una estrella blanca de cinco puntas. Los colores representan la sangre de los patriotas (rojo), la paz (blanco), y el cielo y el mar (azul).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Bahías Bioluminiscentes",
+            "description": "Puerto Rico tiene bahías bioluminiscentes donde los dinoflagelados brillan en la oscuridad, creando una experiencia mágica."
+          },
+          {
+            "icon": "landscape",
+            "title": "Bosque Tropical El Yunque",
+            "description": "El Bosque Tropical Nacional El Yunque es el único bosque tropical en el Sistema de Bosques Nacionales de EE.UU."
+          },
+          {
+            "icon": "culture",
+            "title": "Música Salsa",
+            "description": "Puerto Rico es un centro importante de música y cultura de salsa, con vibrantes lugares de música en toda la isla."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio de EE.UU.",
+            "description": "Puerto Rico es un territorio no incorporado autogobernado de los Estados Unidos."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "3.2M",
       "region": "Caribbean",
@@ -9595,8 +12096,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-barthelemy",
       "flagCode": "bl",
+      "continent": "Caribbean",
+      "population": "9.7K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Saint Barthélemy",
+          "capital": "Gustavia",
+          "flagDescription": "Saint Barthélemy uses the French flag as it is a French overseas collectivity. The island is known for its upscale beaches, luxury resorts, and blend of French and Caribbean charm.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Luxury Island",
+            "description": "Saint Barthélemy is known for its exclusive resorts, designer shops, and upscale beach clubs."
+          },
+          {
+            "icon": "landscape",
+            "title": "Beautiful Beaches",
+            "description": "The island has pristine white sand beaches and crystal-clear waters perfect for swimming and watersports."
+          },
+          {
+            "icon": "public",
+            "title": "French Territory",
+            "description": "Saint Barthélemy is a French overseas collectivity with French culture, language, and governance."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival Season",
+            "description": "The island hosts various festivals and events throughout the year, celebrating music, culture, and cuisine."
+          }
+          ]
+        },
+        "es": {
+          "name": "San Bartolomé",
+          "capital": "Gustavia",
+          "flagDescription": "San Bartolomé utiliza la bandera francesa ya que es una colectividad francesa de ultramar. La isla es conocida por sus playas de lujo, resorts de lujo, y mezcla de encanto francés y caribeño.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Isla de Lujo",
+            "description": "San Bartolomé es conocida por sus resorts exclusivos, tiendas de diseñador y clubes de playa de alta gama."
+          },
+          {
+            "icon": "landscape",
+            "title": "Playas Hermosas",
+            "description": "La isla tiene playas de arena blanca prístina y aguas cristalinas perfectas para nadar y deportes acuáticos."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Francés",
+            "description": "San Bartolomé es una colectividad francesa de ultramar con cultura, idioma y gobernanza franceses."
+          },
+          {
+            "icon": "celebration",
+            "title": "Temporada de Festivales",
+            "description": "La isla alberga varios festivales y eventos durante todo el año, celebrando música, cultura y cocina."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "11K",
       "region": "Caribbean",
@@ -9701,8 +12263,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-kitts-and-nevis",
       "flagCode": "kn",
+      "continent": "Caribbean",
+      "population": "53.4K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Saint Kitts and Nevis",
+          "capital": "Basseterre",
+          "flagDescription": "Saint Kitts and Nevis' flag has a diagonal yellow band dividing black and green triangles with two white stars. The black represents the soil and African heritage, green represents vegetation, yellow represents sunshine, and white represents purity.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Historical Fortresses",
+            "description": "Saint Kitts is home to Brimstone Hill Fortress, one of the Caribbean's most impressive historical forts."
+          },
+          {
+            "icon": "landscape",
+            "title": "Twin Island Nation",
+            "description": "The country comprises two main islands: Saint Kitts and Nevis, each with distinct characteristics."
+          },
+          {
+            "icon": "waves",
+            "title": "Pristine Beaches",
+            "description": "The islands have beautiful beaches with turquoise water and white sand, perfect for beach lovers."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Culture",
+            "description": "Saint Kitts and Nevis celebrates carnival with colorful parades, music, and traditional foods."
+          }
+          ]
+        },
+        "es": {
+          "name": "San Cristóbal y Nieves",
+          "capital": "Basseterre",
+          "flagDescription": "La bandera de San Cristóbal y Nieves tiene una banda amarilla diagonal dividiendo triángulos negros y verdes con dos estrellas blancas. El negro representa el suelo y la herencia africana, el verde representa la vegetación, el amarillo representa la luz solar, y el blanco representa la pureza.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Fortalezas Históricas",
+            "description": "San Cristóbal es hogar de la Fortaleza de Brimstone, uno de los fuertes históricos más impresionantes del Caribe."
+          },
+          {
+            "icon": "landscape",
+            "title": "Nación Insular Gemela",
+            "description": "El país comprende dos islas principales: San Cristóbal y Nieves, cada una con características distintas."
+          },
+          {
+            "icon": "waves",
+            "title": "Playas Prístinas",
+            "description": "Las islas tienen hermosas playas con agua turquesa y arena blanca, perfectas para amantes de la playa."
+          },
+          {
+            "icon": "celebration",
+            "title": "Cultura de Carnaval",
+            "description": "San Cristóbal y Nieves celebra el carnaval con desfiles coloridos, música y comidas tradicionales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "51K",
       "region": "Caribbean",
@@ -9754,8 +12377,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-lucia",
       "flagCode": "lc",
+      "continent": "Caribbean",
+      "population": "180K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Saint Lucia",
+          "capital": "Castries",
+          "flagDescription": "Saint Lucia's flag has a blue background with a triangle of black and white at the center, and a diamond shape composed of yellow and black triangles below. The colors represent the island's natural beauty and cultural heritage.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Pitons",
+            "description": "Saint Lucia is famous for the twin Pitons peaks, which are UNESCO World Heritage Sites and appear on the flag."
+          },
+          {
+            "icon": "landscape",
+            "title": "Volcanic Island",
+            "description": "Saint Lucia is a volcanic island with sulfur springs, adding to its dramatic natural landscape."
+          },
+          {
+            "icon": "culture",
+            "title": "Creole Culture",
+            "description": "Saint Lucia has a vibrant creole culture blending African, French, and English influences."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Celebration",
+            "description": "The island celebrates carnival with colorful parades, steel bands, and traditional costumes."
+          }
+          ]
+        },
+        "es": {
+          "name": "Santa Lucía",
+          "capital": "Castries",
+          "flagDescription": "La bandera de Santa Lucía tiene un fondo azul con un triángulo de negro y blanco en el centro, y una forma de diamante compuesta por triángulos amarillos y negros debajo. Los colores representan la belleza natural y el patrimonio cultural de la isla.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Pitons",
+            "description": "Santa Lucía es famosa por los picos gemelos de Pitons, que son Sitios del Patrimonio Mundial de la UNESCO y aparecen en la bandera."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla Volcánica",
+            "description": "Santa Lucía es una isla volcánica con aguas termales de azufre, añadiendo más a su paisaje natural dramático."
+          },
+          {
+            "icon": "culture",
+            "title": "Cultura Criolla",
+            "description": "Santa Lucía tiene una cultura criolla vibrante que mezcla influencias africanas, francesas e inglesas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Celebración de Carnaval",
+            "description": "La isla celebra el carnaval con desfiles coloridos, bandas de acero y disfraces tradicionales."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "184K",
       "region": "Caribbean",
@@ -9807,8 +12491,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-martin",
       "flagCode": "mf",
+      "continent": "Caribbean",
+      "population": "31.4K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Saint Martin",
+          "capital": "Marigot",
+          "flagDescription": "Saint Martin uses the French flag as it is a French overseas collectivity. The island is shared with the Netherlands (Sint Maarten), creating a unique cultural blend.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Shared Island",
+            "description": "Saint Martin is uniquely shared between France and the Netherlands, creating a blend of European cultures."
+          },
+          {
+            "icon": "waves",
+            "title": "Beautiful Beaches",
+            "description": "The island has stunning beaches with clear waters perfect for swimming, snorkeling, and watersports."
+          },
+          {
+            "icon": "celebration",
+            "title": "Cultural Diversity",
+            "description": "Saint Martin is a multicultural destination with French, Dutch, and Caribbean influences."
+          },
+          {
+            "icon": "restaurant",
+            "title": "Culinary Destination",
+            "description": "The island is known for its excellent restaurants and blend of French and Caribbean cuisine."
+          }
+          ]
+        },
+        "es": {
+          "name": "San Martín",
+          "capital": "Marigot",
+          "flagDescription": "San Martín utiliza la bandera francesa ya que es una colectividad francesa de ultramar. La isla se comparte con los Países Bajos (Sint Maarten), creando una mezcla cultural única.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Isla Compartida",
+            "description": "San Martín se comparte únicamente entre Francia y los Países Bajos, creando una mezcla de culturas europeas."
+          },
+          {
+            "icon": "waves",
+            "title": "Playas Hermosas",
+            "description": "La isla tiene playas impresionantes con aguas claras perfectas para nadar, snorkel y deportes acuáticos."
+          },
+          {
+            "icon": "celebration",
+            "title": "Diversidad Cultural",
+            "description": "San Martín es un destino multicultural con influencias francesas, holandesas y caribeñas."
+          },
+          {
+            "icon": "restaurant",
+            "title": "Destino Culinario",
+            "description": "La isla es conocida por sus excelentes restaurantes y mezcla de cocina francesa y caribeña."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "31K",
       "region": "Caribbean",
@@ -9860,8 +12605,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-pierre-and-miquelon",
       "flagCode": "pm",
+      "continent": "North America",
+      "population": "5.4K",
+      "region": "North Atlantic",
+      "translations": {
+        "en": {
+          "name": "Saint Pierre and Miquelon",
+          "capital": "Saint Pierre",
+          "flagDescription": "Saint Pierre and Miquelon uses the French flag as it is a French overseas collectivity. The islands are located off the coast of Newfoundland, Canada, making them the closest French territory to North America.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "French North America",
+            "description": "These islands are a unique piece of France located near Newfoundland, making them the closest French territory to North America."
+          },
+          {
+            "icon": "landscape",
+            "title": "Fishing Heritage",
+            "description": "The islands have a rich fishing heritage, traditionally dependent on cod fishing in the Atlantic."
+          },
+          {
+            "icon": "public",
+            "title": "French Territory",
+            "description": "Despite their location in North America, the islands are a French overseas collectivity with French culture and governance."
+          },
+          {
+            "icon": "nature",
+            "title": "Sea Bird Colonies",
+            "description": "The islands host important colonies of seabirds, making them significant for wildlife observation."
+          }
+          ]
+        },
+        "es": {
+          "name": "San Pierre y Miquelón",
+          "capital": "San Pierre",
+          "flagDescription": "San Pierre y Miquelón utiliza la bandera francesa ya que es una colectividad francesa de ultramar. Las islas están ubicadas frente a la costa de Terranova, Canadá, haciéndolas el territorio francés más cercano a América del Norte.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Francia en América del Norte",
+            "description": "Estas islas son una pieza única de Francia ubicada cerca de Terranova, haciéndolas el territorio francés más cercano a América del Norte."
+          },
+          {
+            "icon": "landscape",
+            "title": "Herencia Pesquera",
+            "description": "Las islas tienen una rica herencia pesquera, tradicionalmente dependiente de la pesca de bacalao en el Atlántico."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Francés",
+            "description": "A pesar de su ubicación en América del Norte, las islas son una colectividad francesa de ultramar con cultura y gobernanza francesas."
+          },
+          {
+            "icon": "nature",
+            "title": "Colonias de Aves Marinas",
+            "description": "Las islas albergan colonias importantes de aves marinas, haciéndolas significativas para la observación de vida silvestre."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "6K",
       "region": "North America",
@@ -9913,8 +12719,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "saint-vincent-and-the-grenadines",
       "flagCode": "vc",
+      "continent": "Caribbean",
+      "population": "111K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Saint Vincent and the Grenadines",
+          "capital": "Kingstown",
+          "flagDescription": "Saint Vincent and the Grenadines' flag has three vertical stripes of blue, gold, and green, with three diamonds in the gold stripe representing the islands. The colors represent the sea (blue), sunshine (gold), and vegetation (green).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Island Chain",
+            "description": "The country comprises Saint Vincent and 32 islands and cays known as the Grenadines."
+          },
+          {
+            "icon": "landscape",
+            "title": "Volcanic Island",
+            "description": "Saint Vincent is home to La Soufrière volcano, which last erupted in 1979."
+          },
+          {
+            "icon": "waves",
+            "title": "Sailing Paradise",
+            "description": "The Grenadines are a sailor's paradise with pristine anchorages and crystal-clear waters."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Festival",
+            "description": "The nation celebrates carnival with music, dancing, and colorful parades throughout the islands."
+          }
+          ]
+        },
+        "es": {
+          "name": "San Vicente y las Granadinas",
+          "capital": "Kingstown",
+          "flagDescription": "La bandera de San Vicente y las Granadinas tiene tres franjas verticales de azul, oro y verde, con tres diamantes en la franja dorada que representan las islas. Los colores representan el mar (azul), la luz solar (oro), y la vegetación (verde).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Cadena de Islas",
+            "description": "El país comprende San Vicente y 32 islas y cayos conocidos como las Granadinas."
+          },
+          {
+            "icon": "landscape",
+            "title": "Isla Volcánica",
+            "description": "San Vicente es hogar del volcán La Soufrière, que entró en erupción por última vez en 1979."
+          },
+          {
+            "icon": "waves",
+            "title": "Paraíso de la Vela",
+            "description": "Las Granadinas son un paraíso de navegantes con fondeaderos prístinos y aguas cristalinas."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival de Carnaval",
+            "description": "La nación celebra el carnaval con música, baile y desfiles coloridos en todas las islas."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "111K",
       "region": "Caribbean",
@@ -10443,8 +13310,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "sint-maarten",
       "flagCode": "sx",
+      "continent": "Caribbean",
+      "population": "41.4K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Sint Maarten",
+          "capital": "Philipsburg",
+          "flagDescription": "Sint Maarten's flag features a vertical tricolor of red, white, and blue, matching Dutch colors, with the coat of arms. Sint Maarten is the Dutch part of the shared island of Saint Martin.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Shared Island",
+            "description": "Sint Maarten shares the island with Saint Martin (France), creating a unique cultural blend."
+          },
+          {
+            "icon": "waves",
+            "title": "Water Sports Paradise",
+            "description": "The island is renowned for diving, snorkeling, windsurfing, and other water sports."
+          },
+          {
+            "icon": "celebration",
+            "title": "Carnival Festival",
+            "description": "Sint Maarten celebrates carnival with vibrant parades, music, and cultural festivities."
+          },
+          {
+            "icon": "landscape",
+            "title": "Beautiful Beaches",
+            "description": "The island has numerous stunning beaches with different characteristics and activities."
+          }
+          ]
+        },
+        "es": {
+          "name": "Sint Maarten",
+          "capital": "Philipsburg",
+          "flagDescription": "La bandera de Sint Maarten presenta un tricolor vertical de rojo, blanco y azul, coincidiendo con los colores holandeses, con el escudo de armas. Sint Maarten es la parte holandesa de la isla compartida de San Martín.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Isla Compartida",
+            "description": "Sint Maarten comparte la isla con San Martín (Francia), creando una mezcla cultural única."
+          },
+          {
+            "icon": "waves",
+            "title": "Paraíso de Deportes Acuáticos",
+            "description": "La isla es de renombre por el buceo, snorkel, windsurf y otros deportes acuáticos."
+          },
+          {
+            "icon": "celebration",
+            "title": "Festival de Carnaval",
+            "description": "Sint Maarten celebra el carnaval con desfiles vibrantes, música y festividades culturales."
+          },
+          {
+            "icon": "landscape",
+            "title": "Playas Hermosas",
+            "description": "La isla tiene numerosas playas impresionantes con características y actividades diferentes."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "41K",
       "region": "Caribbean",
@@ -11026,8 +13954,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "suriname",
       "flagCode": "sr",
+      "continent": "South America",
+      "population": "612K",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Suriname",
+          "capital": "Paramaribo",
+          "flagDescription": "Suriname's flag has five horizontal stripes of green, white, red, white, and green, with a gold star in the center. The colors represent the harvest (green), peace (white), and the blood of patriots (red).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Rainforest Paradise",
+            "description": "Suriname is almost entirely covered by rainforest, with incredible biodiversity and indigenous communities."
+          },
+          {
+            "icon": "public",
+            "title": "Dutch-Speaking South America",
+            "description": "Suriname is the only South American country where Dutch is the official language."
+          },
+          {
+            "icon": "landscape",
+            "title": "Cultural Diversity",
+            "description": "Suriname has a diverse population with African, Indian, Indonesian, and indigenous cultures blending together."
+          },
+          {
+            "icon": "history",
+            "title": "Colonial History",
+            "description": "Suriname has a unique colonial history as a Dutch colony, reflected in its architecture and culture."
+          }
+          ]
+        },
+        "es": {
+          "name": "Surinam",
+          "capital": "Paramaribo",
+          "flagDescription": "La bandera de Surinam tiene cinco franjas horizontales de verde, blanco, rojo, blanco y verde, con una estrella de oro en el centro. Los colores representan la cosecha (verde), la paz (blanco), y la sangre de los patriotas (rojo).",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Paraíso de la Selva Tropical",
+            "description": "Surinam está casi completamente cubierto por selva tropical, con biodiversidad increíble y comunidades indígenas."
+          },
+          {
+            "icon": "public",
+            "title": "Sudamérica de Habla Holandesa",
+            "description": "Surinam es el único país sudamericano donde el holandés es el idioma oficial."
+          },
+          {
+            "icon": "landscape",
+            "title": "Diversidad Cultural",
+            "description": "Surinam tiene una población diversa con culturas africanas, indias, indonesias e indígenas que se mezclan juntas."
+          },
+          {
+            "icon": "history",
+            "title": "Historia Colonial",
+            "description": "Surinam tiene una historia colonial única como colonia holandesa, reflejada en su arquitectura y cultura."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "617K",
       "region": "South America",
@@ -11715,8 +14704,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "trinidad-and-tobago",
       "flagCode": "tt",
+      "continent": "Caribbean",
+      "population": "1.4M",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Trinidad and Tobago",
+          "capital": "Port of Spain",
+          "flagDescription": "Trinidad and Tobago's flag has a red field with a white-edged black diagonal band dividing it. The red represents the vitality and courage of the people, white represents equality, and black represents the strength and unity of the nation.",
+          "funFacts": [
+          {
+            "icon": "celebration",
+            "title": "Carnival Paradise",
+            "description": "Trinidad and Tobago is famous for its spectacular Caribbean carnival with steel band music and colorful costumes."
+          },
+          {
+            "icon": "landscape",
+            "title": "Pitch Lake",
+            "description": "Trinidad has Pitch Lake, the world's largest natural reservoir of asphalt, a geological wonder."
+          },
+          {
+            "icon": "music_note",
+            "title": "Steel Drums",
+            "description": "Trinidad and Tobago is the birthplace of steel drum music, an iconic Caribbean sound."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversity",
+            "description": "The islands are home to incredible biodiversity with tropical birds, orchids, and marine life."
+          }
+          ]
+        },
+        "es": {
+          "name": "Trinidad y Tobago",
+          "capital": "Puerto de España",
+          "flagDescription": "La bandera de Trinidad y Tobago tiene un campo rojo con una banda diagonal negra con bordes blancos que lo divide. El rojo representa la vitalidad y el coraje del pueblo, el blanco representa la igualdad, y el negro representa la fortaleza y la unidad de la nación.",
+          "funFacts": [
+          {
+            "icon": "celebration",
+            "title": "Paraíso del Carnaval",
+            "description": "Trinidad y Tobago es famosa por su espectacular carnaval caribeño con música de banda de acero y disfraces coloridos."
+          },
+          {
+            "icon": "landscape",
+            "title": "Pitch Lake",
+            "description": "Trinidad tiene Pitch Lake, el mayor depósito natural de asfalto del mundo, una maravilla geológica."
+          },
+          {
+            "icon": "music_note",
+            "title": "Tambores de Acero",
+            "description": "Trinidad y Tobago es el lugar de nacimiento de la música de tambores de acero, un sonido caribeño icónico."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversidad",
+            "description": "Las islas son hogar de biodiversidad increíble con aves tropicales, orquídeas y vida marina."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "1.4M",
       "region": "Caribbean",
@@ -11927,8 +14977,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "turks-and-caicos-islands",
       "flagCode": "tc",
+      "continent": "Caribbean",
+      "population": "59.9K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "Turks and Caicos Islands",
+          "capital": "Cockburn Town",
+          "flagDescription": "The Turks and Caicos Islands' flag has a blue field with the Union Jack in the upper left and a shield on the right. The shield features a conch shell, a spiny lobster, and a turk's head cactus, representing the islands' natural resources.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Diving Paradise",
+            "description": "The Turks and Caicos Islands are a world-class diving destination with colorful coral reefs and marine life."
+          },
+          {
+            "icon": "landscape",
+            "title": "Grace Bay Beach",
+            "description": "Grace Bay Beach is consistently ranked among the world's best beaches, with pristine white sand."
+          },
+          {
+            "icon": "public",
+            "title": "British Territory",
+            "description": "The Turks and Caicos Islands are a British Overseas Territory in the Atlantic."
+          },
+          {
+            "icon": "waves",
+            "title": "Snorkeling and Water Sports",
+            "description": "The islands offer excellent opportunities for snorkeling, fishing, windsurfing, and other water activities."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Turcas y Caicos",
+          "capital": "Cockburn Town",
+          "flagDescription": "La bandera de las Islas Turcas y Caicos tiene un campo azul con la Union Jack en la esquina superior izquierda y un escudo en la derecha. El escudo presenta una concha de concha marina, una langosta espinosa, y un cactus cabeza de turco, representando los recursos naturales de las islas.",
+          "funFacts": [
+          {
+            "icon": "waves",
+            "title": "Paraíso de Buceo",
+            "description": "Las Islas Turcas y Caicos son un destino de buceo de clase mundial con arrecifes de coral coloridos y vida marina."
+          },
+          {
+            "icon": "landscape",
+            "title": "Playa de Grace Bay",
+            "description": "La Playa de Grace Bay está constantemente clasificada entre las mejores playas del mundo, con arena blanca prístina."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio Británico",
+            "description": "Las Islas Turcas y Caicos son un Territorio Británico de Ultramar en el Atlántico."
+          },
+          {
+            "icon": "waves",
+            "title": "Snorkel y Deportes Acuáticos",
+            "description": "Las islas ofrecen excelentes oportunidades para snorkel, pesca, windsurf y otras actividades acuáticas."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "51K",
       "region": "Caribbean",
@@ -12245,8 +15356,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "united-states",
       "flagCode": "us",
+      "continent": "North America",
+      "population": "340.1M",
+      "region": "North America",
+      "translations": {
+        "en": {
+          "name": "United States",
+          "capital": "Washington, D.C.",
+          "flagDescription": "The United States flag, known as the Stars and Stripes, features 13 horizontal stripes representing the original 13 states and 50 stars representing the current 50 states. The blue canton (upper left) contains the stars. Red represents courage, white represents purity, and blue represents loyalty.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "National Parks",
+            "description": "The USA has 63 national parks including Yellowstone, the world's first national park."
+          },
+          {
+            "icon": "landscape",
+            "title": "Diverse Geography",
+            "description": "The USA spans from Atlantic to Pacific with deserts, mountains, plains, and forests."
+          },
+          {
+            "icon": "public",
+            "title": "Most Populous Democracy",
+            "description": "The USA is the world's largest democracy and a global superpower."
+          },
+          {
+            "icon": "culture",
+            "title": "Cultural Influence",
+            "description": "American culture, music, and entertainment have global influence and reach."
+          }
+          ]
+        },
+        "es": {
+          "name": "Estados Unidos",
+          "capital": "Washington, D.C.",
+          "flagDescription": "La bandera de Estados Unidos, conocida como las Barras y Estrellas, presenta 13 franjas horizontales que representan los 13 estados originales y 50 estrellas que representan los 50 estados actuales. El cantón azul (esquina superior izquierda) contiene las estrellas. El rojo representa el coraje, el blanco representa la pureza, y el azul representa la lealtad.",
+          "funFacts": [
+          {
+            "icon": "landmark",
+            "title": "Parques Nacionales",
+            "description": "EE.UU. tiene 63 parques nacionales incluyendo Yellowstone, el primer parque nacional del mundo."
+          },
+          {
+            "icon": "landscape",
+            "title": "Geografía Diversa",
+            "description": "EE.UU. se extiende desde el Atlántico al Pacífico con desiertos, montañas, llanuras y bosques."
+          },
+          {
+            "icon": "public",
+            "title": "Democracia Más Poblada",
+            "description": "EE.UU. es la democracia más grande del mundo y una superpotencia global."
+          },
+          {
+            "icon": "culture",
+            "title": "Influencia Cultural",
+            "description": "La cultura, música y entretenimiento estadounidenses tienen influencia y alcance global."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "340.1M",
       "region": "North America",
@@ -12298,8 +15470,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "united-states-minor-outlying-islands",
       "flagCode": "um",
+      "continent": "North America",
+      "population": "0K",
+      "region": "Pacific & Atlantic",
+      "translations": {
+        "en": {
+          "name": "United States Minor Outlying Islands",
+          "capital": "None",
+          "flagDescription": "The United States Minor Outlying Islands use the U.S. flag. These are uninhabited or sparsely populated territories under U.S. sovereignty, scattered across the Pacific and Atlantic Oceans.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "U.S. Territories",
+            "description": "These are U.S. territories spread across the Pacific and Atlantic Oceans."
+          },
+          {
+            "icon": "landscape",
+            "title": "Mostly Uninhabited",
+            "description": "Most of these islands are uninhabited and primarily used for military or scientific purposes."
+          },
+          {
+            "icon": "nature",
+            "title": "Important Ecosystems",
+            "description": "Despite being small, these islands contain important ecosystems and wildlife habitats."
+          },
+          {
+            "icon": "history",
+            "title": "Strategic Importance",
+            "description": "Many of these islands have historical and strategic significance for the United States."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Menores Alejadas de EE.UU.",
+          "capital": "Ninguna",
+          "flagDescription": "Las Islas Menores Alejadas de EE.UU. utilizan la bandera estadounidense. Estos son territorios deshabitados o escasamente poblados bajo soberanía estadounidense, dispersos en los Océanos Pacífico y Atlántico.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Territorios estadounidenses",
+            "description": "Estos son territorios estadounidenses dispersos en los Océanos Pacífico y Atlántico."
+          },
+          {
+            "icon": "landscape",
+            "title": "Mayormente Deshabitados",
+            "description": "La mayoría de estas islas están deshabitadas y se utilizan principalmente para propósitos militares o científicos."
+          },
+          {
+            "icon": "nature",
+            "title": "Ecosistemas Importantes",
+            "description": "A pesar de ser pequeñas, estas islas contienen ecosistemas importantes y hábitats de vida silvestre."
+          },
+          {
+            "icon": "history",
+            "title": "Importancia Estratégica",
+            "description": "Muchas de estas islas tienen importancia histórica y estratégica para Estados Unidos."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "0",
       "region": "North America",
@@ -12351,8 +15584,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "united-states-virgin-islands",
       "flagCode": "vi",
+      "continent": "Caribbean",
+      "population": "87.1K",
+      "region": "Caribbean",
+      "translations": {
+        "en": {
+          "name": "United States Virgin Islands",
+          "capital": "Charlotte Amalie",
+          "flagDescription": "The U.S. Virgin Islands use the U.S. flag with a local seal. The territory is an unincorporated territory of the United States with a distinct island culture.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Tropical Paradise",
+            "description": "The U.S. Virgin Islands are known for pristine beaches, crystal-clear waters, and lush tropical vegetation."
+          },
+          {
+            "icon": "waves",
+            "title": "Water Sports",
+            "description": "The islands offer excellent diving, snorkeling, sailing, and other water sports activities."
+          },
+          {
+            "icon": "culture",
+            "title": "Caribbean Culture",
+            "description": "The islands have a vibrant Caribbean culture with distinct music, food, and traditions."
+          },
+          {
+            "icon": "public",
+            "title": "U.S. Territory",
+            "description": "The U.S. Virgin Islands are an unincorporated territory of the United States."
+          }
+          ]
+        },
+        "es": {
+          "name": "Islas Vírgenes de EE.UU.",
+          "capital": "Charlotte Amalie",
+          "flagDescription": "Las Islas Vírgenes de EE.UU. utilizan la bandera estadounidense con un sello local. El territorio es un territorio no incorporado de Estados Unidos con una cultura insular distinta.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Paraíso Tropical",
+            "description": "Las Islas Vírgenes de EE.UU. son conocidas por playas prístinas, aguas cristalinas y exuberante vegetación tropical."
+          },
+          {
+            "icon": "waves",
+            "title": "Deportes Acuáticos",
+            "description": "Las islas ofrecen excelente buceo, snorkel, vela y otras actividades de deportes acuáticos."
+          },
+          {
+            "icon": "culture",
+            "title": "Cultura Caribeña",
+            "description": "Las islas tienen una cultura caribeña vibrante con música distinta, comida y tradiciones."
+          },
+          {
+            "icon": "public",
+            "title": "Territorio estadounidense",
+            "description": "Las Islas Vírgenes de EE.UU. son un territorio no incorporado de Estados Unidos."
+          }
+          ]
+        }
+      }
+    }
       "continent": "North America",
       "population": "87K",
       "region": "Caribbean",
@@ -12404,8 +15698,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "uruguay",
       "flagCode": "uy",
+      "continent": "South America",
+      "population": "3.4M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Uruguay",
+          "capital": "Montevideo",
+          "flagDescription": "Uruguay's flag has nine horizontal stripes alternating white and blue. The upper left canton contains a white square with the Sun of May in gold. The stripes represent the nine departments of the original nation, and the sun symbolizes independence.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Most Developed in Latin America",
+            "description": "Uruguay is considered the most developed and stable country in Latin America."
+          },
+          {
+            "icon": "culture",
+            "title": "Tango Homeland",
+            "description": "Uruguay is the homeland of tango, sharing this cultural treasure with Argentina."
+          },
+          {
+            "icon": "public",
+            "title": "Progressive Nation",
+            "description": "Uruguay is known for progressive policies including legalized marijuana, same-sex marriage, and education."
+          },
+          {
+            "icon": "landscape",
+            "title": "River Plate",
+            "description": "Uruguay is located between the Paraná River and the Atlantic Ocean, with beautiful river and beach landscapes."
+          }
+          ]
+        },
+        "es": {
+          "name": "Uruguay",
+          "capital": "Montevideo",
+          "flagDescription": "La bandera de Uruguay tiene nueve franjas horizontales alternadas blancas y azules. El cantón superior izquierdo contiene un cuadrado blanco con el Sol de Mayo en oro. Las franjas representan los nueve departamentos de la nación original, y el sol simboliza la independencia.",
+          "funFacts": [
+          {
+            "icon": "public",
+            "title": "Más Desarrollado en América Latina",
+            "description": "Uruguay es considerado el país más desarrollado y estable en América Latina."
+          },
+          {
+            "icon": "culture",
+            "title": "Patria del Tango",
+            "description": "Uruguay es la patria del tango, compartiendo este tesoro cultural con Argentina."
+          },
+          {
+            "icon": "public",
+            "title": "Nación Progresista",
+            "description": "Uruguay es conocida por políticas progresistas incluyendo legalización de marihuana, matrimonio entre parejas del mismo sexo, y educación."
+          },
+          {
+            "icon": "landscape",
+            "title": "Río de la Plata",
+            "description": "Uruguay está ubicada entre el Río Paraná y el Océano Atlántico, con hermosos paisajes de río y playa."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "3.5M",
       "region": "South America",
@@ -12616,8 +15971,69 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
+  {
       "slug": "venezuela",
       "flagCode": "ve",
+      "continent": "South America",
+      "population": "28.3M",
+      "region": "South America",
+      "translations": {
+        "en": {
+          "name": "Venezuela",
+          "capital": "Caracas",
+          "flagDescription": "Venezuela's flag has three horizontal stripes of yellow, blue, and red. The yellow stripe is twice as wide as the other two. The flag also features stars and the coat of arms. The yellow represents the nation's wealth, blue represents independence, and red represents the blood of patriots.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Angel Falls",
+            "description": "Venezuela is home to Angel Falls, the world's highest uninterrupted waterfall at 979 meters."
+          },
+          {
+            "icon": "landscape",
+            "title": "Amazon Rainforest",
+            "description": "Venezuela contains a significant portion of the Amazon Rainforest in its southern region."
+          },
+          {
+            "icon": "public",
+            "title": "Oil Rich",
+            "description": "Venezuela has the world's largest proven oil reserves, a major part of its economy."
+          },
+          {
+            "icon": "nature",
+            "title": "Biodiversity Hotspot",
+            "description": "Venezuela is one of the world's most biodiverse countries with unique flora and fauna."
+          }
+          ]
+        },
+        "es": {
+          "name": "Venezuela",
+          "capital": "Caracas",
+          "flagDescription": "La bandera de Venezuela tiene tres franjas horizontales de amarillo, azul y rojo. La franja amarilla es dos veces más ancha que las otras dos. La bandera también presenta estrellas y el escudo de armas. El amarillo representa la riqueza de la nación, el azul representa la independencia, y el rojo representa la sangre de los patriotas.",
+          "funFacts": [
+          {
+            "icon": "landscape",
+            "title": "Salto Ángel",
+            "description": "Venezuela es hogar del Salto Ángel, la cascada ininterrumpida más alta del mundo con 979 metros."
+          },
+          {
+            "icon": "landscape",
+            "title": "Selva Amazónica",
+            "description": "Venezuela contiene una porción significativa de la Selva Amazónica en su región meridional."
+          },
+          {
+            "icon": "public",
+            "title": "Rica en Petróleo",
+            "description": "Venezuela tiene las mayores reservas probadas de petróleo del mundo, una parte importante de su economía."
+          },
+          {
+            "icon": "nature",
+            "title": "Punto Caliente de Biodiversidad",
+            "description": "Venezuela es uno de los países más biodiversos del mundo con flora y fauna única."
+          }
+          ]
+        }
+      }
+    }
       "continent": "South America",
       "population": "28.5M",
       "region": "South America",
