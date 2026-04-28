@@ -170,44 +170,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Algeria",
               "capital": "Algiers",
-              "flagDescription": "The flag of Algeria.",
+              "flagDescription": "Algeria's flag has two equal vertical halves — green on the left and white on the right — with a red crescent moon and star in the center. Green represents Islam and the beauty of nature, white stands for peace, and the red crescent and star are symbols of the Islamic faith.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Algeria",
-                      "description": "Algeria is a country in Northern Africa."
+                      "icon": "landscape",
+                      "title": "Biggest in Africa",
+                      "description": "Algeria is the largest country in Africa and the 10th largest in the world. Most of its land is covered by the vast Sahara Desert."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Algeria has a population of approximately 47.4M."
+                      "icon": "history",
+                      "title": "Ancient Roman City",
+                      "description": "The ruins of Timgad in northeastern Algeria were built by the Romans around 100 AD. Walking through its streets feels like stepping back 2,000 years in time!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Algeria is Algiers."
+                      "icon": "local_gas_station",
+                      "title": "Oil and Gas Giant",
+                      "description": "Algeria is one of Africa's top producers of oil and natural gas. Much of Europe's energy actually comes from Algerian pipelines under the sea."
                   }
               ]
           },
           "es": {
               "name": "Argelia",
-              "capital": "Algiers",
-              "flagDescription": "La bandera de Argelia.",
+              "capital": "Argel",
+              "flagDescription": "La bandera de Argelia tiene dos mitades verticales iguales: verde a la izquierda y blanca a la derecha, con una media luna y una estrella rojas en el centro. El verde representa el Islam y la naturaleza, el blanco simboliza la paz, y la media luna roja es símbolo de la fe islámica.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Argelia",
-                      "description": "Argelia es un país en Northern Africa."
+                      "icon": "landscape",
+                      "title": "La más grande de África",
+                      "description": "Argelia es el país más grande de África y el décimo más grande del mundo. La mayor parte de su territorio está cubierta por el vasto desierto del Sáhara."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Argelia tiene una población de aproximadamente 47.4M."
+                      "icon": "history",
+                      "title": "Ciudad romana antigua",
+                      "description": "Las ruinas de Timgad en el noreste de Argelia fueron construidas por los romanos hacia el año 100 d.C. ¡Caminar por sus calles es como retroceder 2.000 años en el tiempo!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Argelia es Algiers."
+                      "icon": "local_gas_station",
+                      "title": "Gran productor de energía",
+                      "description": "Argelia es uno de los principales productores de petróleo y gas natural de África. Gran parte de la energía que usa Europa viene de gasoductos argelinos que cruzan el mar."
                   }
               ]
           }
@@ -329,44 +329,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Angola",
               "capital": "Luanda",
-              "flagDescription": "The flag of Angola.",
+              "flagDescription": "Angola's flag is divided into two equal halves — red on top and black on the bottom — with a yellow emblem in the center showing a machete, a cog wheel, and a star. Red represents the blood shed for independence, black symbolizes the African continent, and yellow stands for the country's wealth and hard-working people.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Angola",
-                      "description": "Angola is a country in Middle Africa."
+                      "icon": "oil_barrel",
+                      "title": "Africa's Oil Powerhouse",
+                      "description": "Angola is one of Africa's top two oil producers, and oil has helped build roads, schools, and hospitals across the country since the 1970s."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Angola has a population of approximately 36.2M."
+                      "icon": "festival",
+                      "title": "Carnival of Luanda",
+                      "description": "The Luanda Carnival is one of Africa's biggest celebrations, featuring dazzling costumes, samba-inspired music, and street dancing that fills the entire capital city!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Angola is Luanda."
+                      "icon": "pets",
+                      "title": "Giant Sable Antelope",
+                      "description": "The Giant Sable Antelope is found only in Angola and is so rare it was thought to be extinct during the civil war. It has spectacular curved horns over a meter long."
                   }
               ]
           },
           "es": {
               "name": "Angola",
               "capital": "Luanda",
-              "flagDescription": "La bandera de Angola.",
+              "flagDescription": "La bandera de Angola está dividida en dos mitades iguales: roja arriba y negra abajo, con un emblema amarillo en el centro que muestra un machete, una rueda dentada y una estrella. El rojo representa la sangre derramada por la independencia, el negro simboliza el continente africano, y el amarillo representa la riqueza y el esfuerzo del pueblo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Angola",
-                      "description": "Angola es un país en Middle Africa."
+                      "icon": "oil_barrel",
+                      "title": "Gran potencia petrolera",
+                      "description": "Angola es uno de los dos principales productores de petróleo de África, y el oro negro ha financiado carreteras, escuelas y hospitales desde los años 70."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Angola tiene una población de aproximadamente 36.2M."
+                      "icon": "festival",
+                      "title": "Carnaval de Luanda",
+                      "description": "¡El Carnaval de Luanda es una de las celebraciones más grandes de África, con trajes deslumbrantes, música y baile que inundan toda la capital!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Angola es Luanda."
+                      "icon": "pets",
+                      "title": "El sable gigante angoleño",
+                      "description": "El sable gigante angoleño solo existe en Angola y es tan raro que se creyó extinto durante la guerra civil. Sus cuernos curvados miden más de un metro de largo."
                   }
               ]
           }
@@ -1177,44 +1177,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Benin",
               "capital": "Porto-Novo",
-              "flagDescription": "The flag of Benin.",
+              "flagDescription": "Benin's flag has a green vertical stripe on the left and two horizontal stripes on the right — yellow on top and red on the bottom. Green represents hope and renewal, yellow symbolizes the country's wealth, and red stands for the courage of the Beninese people.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Benin",
-                      "description": "Benin is a country in Western Africa."
+                      "icon": "auto_awesome",
+                      "title": "Birthplace of Voodoo",
+                      "description": "Benin is the birthplace of Voodoo, a spiritual tradition practiced by millions of people. The annual Voodoo Festival in Ouidah draws thousands of visitors from around the world!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Benin has a population of approximately 13.2M."
+                      "icon": "castle",
+                      "title": "Kingdom of Dahomey",
+                      "description": "The ancient Kingdom of Dahomey was famous for its fierce all-female warrior corps called the Agojie (or 'Dahomey Amazons'). Their incredible story inspired the film The Woman King."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Benin is Porto-Novo."
+                      "icon": "forest",
+                      "title": "Wildlife Sanctuary",
+                      "description": "Pendjari National Park in northern Benin is one of West Africa's last refuges for lions, elephants, and hippos, making it one of the most important wildlife areas in the region."
                   }
               ]
           },
           "es": {
               "name": "Benín",
               "capital": "Porto-Novo",
-              "flagDescription": "La bandera de Benín.",
+              "flagDescription": "La bandera de Benín tiene una franja vertical verde a la izquierda y dos franjas horizontales a la derecha: amarilla arriba y roja abajo. El verde representa la esperanza, el amarillo simboliza la riqueza del país, y el rojo representa el coraje del pueblo beninés.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Benín",
-                      "description": "Benín es un país en Western Africa."
+                      "icon": "auto_awesome",
+                      "title": "Cuna del Vudú",
+                      "description": "¡Benín es la cuna del Vudú, una tradición espiritual practicada por millones de personas. El Festival del Vudú en Ouidah atrae a miles de visitantes de todo el mundo cada año!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Benín tiene una población de aproximadamente 13.2M."
+                      "icon": "castle",
+                      "title": "Reino de Dahomey",
+                      "description": "El antiguo Reino de Dahomey era famoso por su cuerpo de guerreras llamadas Agojie ('Amazonas de Dahomey'). Su increíble historia inspiró la película La Mujer Rey."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Benín es Porto-Novo."
+                      "icon": "forest",
+                      "title": "Santuario de vida silvestre",
+                      "description": "El Parque Nacional Pendjari es uno de los últimos refugios de leones, elefantes e hipopótamos en África Occidental, siendo uno de los más importantes de la región."
                   }
               ]
           }
@@ -1442,44 +1442,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Botswana",
               "capital": "Gaborone",
-              "flagDescription": "The flag of Botswana.",
+              "flagDescription": "Botswana's flag has two light blue stripes at the top and bottom, a bold black stripe in the middle, and thin white lines on either side of the black — just like a zebra's pattern! Blue represents the precious rain and water in this dry land, while black and white symbolize racial harmony and equality.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Botswana",
-                      "description": "Botswana is a country in Southern Africa."
+                      "icon": "diamond",
+                      "title": "Diamond Kingdom",
+                      "description": "Botswana is the world's largest diamond producer by value. The Jwaneng mine is the richest diamond mine on Earth and has helped make Botswana one of Africa's wealthiest nations."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Botswana has a population of approximately 2.4M."
+                      "icon": "water",
+                      "title": "Magical Okavango Delta",
+                      "description": "The Okavango Delta is the world's largest inland river delta — a vast wetland that floods every year in the middle of the Kalahari Desert, creating a paradise for elephants, hippos, and flamingos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Botswana is Gaborone."
+                      "icon": "pets",
+                      "title": "Cheetah Country",
+                      "description": "Botswana has one of the world's largest cheetah populations. Its wide open savanna is the perfect home for the fastest animal on land."
                   }
               ]
           },
           "es": {
-              "name": "Botswana",
+              "name": "Botsuana",
               "capital": "Gaborone",
-              "flagDescription": "La bandera de Botswana.",
+              "flagDescription": "La bandera de Botsuana tiene dos franjas azules arriba y abajo, una gruesa franja negra en el centro y delgadas líneas blancas a cada lado, ¡igual que las rayas de una cebra! El azul representa la lluvia y el agua, tan preciosas en esta tierra seca, mientras que el negro y el blanco simbolizan la armonía racial y la igualdad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Botswana",
-                      "description": "Botswana es un país en Southern Africa."
+                      "icon": "diamond",
+                      "title": "Reino del diamante",
+                      "description": "Botsuana es el mayor productor mundial de diamantes por valor. La mina de Jwaneng es la más rica del planeta y ha convertido al país en uno de los más prósperos de África."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Botswana tiene una población de aproximadamente 2.4M."
+                      "icon": "water",
+                      "title": "El mágico delta del Okavango",
+                      "description": "El Delta del Okavango es el mayor delta fluvial interior del mundo: un enorme humedal que se inunda cada año en medio del desierto del Kalahari, creando un paraíso para elefantes, hipopótamos y flamencos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Botswana es Gaborone."
+                      "icon": "pets",
+                      "title": "País del guepardo",
+                      "description": "Botsuana alberga una de las mayores poblaciones de guepardos del mundo. Su amplia sabana es el hogar perfecto para el animal terrestre más rápido del planeta."
                   }
               ]
           }
@@ -1548,44 +1548,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "British Indian Ocean Territory",
               "capital": "Diego Garcia",
-              "flagDescription": "The flag of British Indian Ocean Territory.",
+              "flagDescription": "The flag of the British Indian Ocean Territory shows blue and white wavy stripes representing the ocean, with the Union Jack of the United Kingdom in the top-left corner and a palm tree topped with a crown on the right. It is a British overseas territory located in the middle of the Indian Ocean.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About British Indian Ocean Territory",
-                      "description": "British Indian Ocean Territory is a country in Eastern Africa."
+                      "icon": "waves",
+                      "title": "Giant Marine Reserve",
+                      "description": "The territory is home to one of the world's largest marine protected areas, covering over 640,000 square km of pristine ocean — bigger than the state of California!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "British Indian Ocean Territory has a population of approximately 0."
+                      "icon": "pest_control",
+                      "title": "Coconut Crab Giants",
+                      "description": "Coconut crabs are the world's biggest land invertebrates and they actually live here! These remarkable crabs can crack open coconuts with their powerful claws and weigh up to 4 kg."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of British Indian Ocean Territory is Diego Garcia."
+                      "icon": "anchor",
+                      "title": "Remote Coral Atolls",
+                      "description": "The territory consists of coral atolls rising from the deep Indian Ocean, surrounded by crystal-clear turquoise water with some of the most diverse coral reefs on Earth."
                   }
               ]
           },
           "es": {
               "name": "Territorio Británico del Océano Índico",
               "capital": "Diego Garcia",
-              "flagDescription": "La bandera de Territorio Británico del Océano Índico.",
+              "flagDescription": "La bandera del Territorio Británico del Océano Índico muestra franjas onduladas azules y blancas que representan el océano, con la bandera del Reino Unido en la esquina superior izquierda y una palmera coronada a la derecha. Es un territorio británico de ultramar en medio del Océano Índico.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Territorio Británico del Océano Índico",
-                      "description": "Territorio Británico del Océano Índico es un país en Eastern Africa."
+                      "icon": "waves",
+                      "title": "Gran reserva marina",
+                      "description": "Este territorio alberga una de las mayores áreas marinas protegidas del mundo, con más de 640.000 km² de océano prístino, ¡más grande que el estado de California!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Territorio Británico del Océano Índico tiene una población de aproximadamente 0."
+                      "icon": "pest_control",
+                      "title": "El cangrejo de los cocoteros",
+                      "description": "El cangrejo de los cocoteros es el invertebrado terrestre más grande del mundo, ¡y vive aquí! Puede abrir cocos con sus poderosas pinzas y pesar hasta 4 kg."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Territorio Británico del Océano Índico es Diego Garcia."
+                      "icon": "anchor",
+                      "title": "Atolones de coral remotos",
+                      "description": "El territorio está formado por atolones de coral rodeados de agua turquesa cristalina con algunos de los arrecifes de coral más diversos de la Tierra."
                   }
               ]
           }
@@ -1760,44 +1760,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Burkina Faso",
               "capital": "Ouagadougou",
-              "flagDescription": "The flag of Burkina Faso.",
+              "flagDescription": "Burkina Faso's flag has two equal horizontal stripes — red on top and green on the bottom — with a yellow five-pointed star in the center. Red represents the revolution and unity of the people, green symbolizes hope and the country's agriculture, and the yellow star is a guiding light for the nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Burkina Faso",
-                      "description": "Burkina Faso is a country in Western Africa."
+                      "icon": "translate",
+                      "title": "Land of Upright People",
+                      "description": "The name \"Burkina Faso\" means \"Land of Upright (Honest) People\" in the Mossi and Dioula languages. It's one of the most meaningful country names in the world!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Burkina Faso has a population of approximately 24.1M."
+                      "icon": "festival",
+                      "title": "Spectacular Mask Festivals",
+                      "description": "The traditional mask festivals of Burkina Faso are among the most spectacular in all of Africa. Enormous and colorful sacred masks represent ancestors and spirits in dramatic dances."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Burkina Faso is Ouagadougou."
+                      "icon": "agriculture",
+                      "title": "Mango Capital",
+                      "description": "Burkina Faso is one of West Africa's top mango exporters. The sweet Burkinabé mango is sold in markets across Europe and beyond."
                   }
               ]
           },
           "es": {
               "name": "Burkina Faso",
-              "capital": "Ouagadougou",
-              "flagDescription": "La bandera de Burkina Faso.",
+              "capital": "Uagadugú",
+              "flagDescription": "La bandera de Burkina Faso tiene dos franjas horizontales iguales: roja arriba y verde abajo, con una estrella amarilla de cinco puntas en el centro. El rojo representa la revolución y la unidad del pueblo, el verde simboliza la esperanza y la agricultura, y la estrella amarilla es una luz guía para la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Burkina Faso",
-                      "description": "Burkina Faso es un país en Western Africa."
+                      "icon": "translate",
+                      "title": "Tierra de personas íntegras",
+                      "description": "¡El nombre \"Burkina Faso\" significa \"Tierra de personas íntegras (honestas)\" en las lenguas mossi y dioula! Es uno de los nombres de países con más significado en el mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Burkina Faso tiene una población de aproximadamente 24.1M."
+                      "icon": "festival",
+                      "title": "Espectaculares festivales de máscaras",
+                      "description": "Los festivales de máscaras tradicionales de Burkina Faso se encuentran entre los más espectaculares de África. Enormes máscaras sagradas representan a los ancestros en dramáticas danzas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Burkina Faso es Ouagadougou."
+                      "icon": "agriculture",
+                      "title": "Capital del mango",
+                      "description": "Burkina Faso es uno de los principales exportadores de mangos de África Occidental. El dulce mango burkinés se vende en mercados de toda Europa."
                   }
               ]
           }
@@ -1813,44 +1813,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Burundi",
               "capital": "Gitega",
-              "flagDescription": "The flag of Burundi.",
+              "flagDescription": "Burundi's flag has red and green bands separated by a white diagonal cross, with three red stars outlined in green inside a white circle at the center. Red represents the independence struggle, green symbolizes hope, and the three stars stand for the country's three main ethnic groups — a reminder of unity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Burundi",
-                      "description": "Burundi is a country in Eastern Africa."
+                      "icon": "music_note",
+                      "title": "Royal Drumming Heritage",
+                      "description": "Burundian royal drumming (Ingoma) is a UNESCO Cultural Heritage. For centuries, the giant sacred drums were the heartbeat of the kingdom and were played only for the king."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Burundi has a population of approximately 12.3M."
+                      "icon": "water",
+                      "title": "World's Second Deepest Lake",
+                      "description": "Lake Tanganyika on Burundi's western border is the second deepest lake in the world (over 1,470 meters!) and holds 17% of the world's fresh surface water."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Burundi is Gitega."
+                      "icon": "coffee",
+                      "title": "Fine Highland Coffee",
+                      "description": "Burundi grows exceptional coffee on its volcanic highlands. The rich soil and altitude produce a bright, flavorful cup that coffee lovers around the world seek out."
                   }
               ]
           },
           "es": {
               "name": "Burundi",
               "capital": "Gitega",
-              "flagDescription": "La bandera de Burundi.",
+              "flagDescription": "La bandera de Burundi tiene bandas rojas y verdes separadas por una cruz diagonal blanca, con tres estrellas rojas bordeadas en verde dentro de un círculo blanco en el centro. El rojo representa la lucha por la independencia, el verde simboliza la esperanza, y las tres estrellas representan los tres principales grupos étnicos del país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Burundi",
-                      "description": "Burundi es un país en Eastern Africa."
+                      "icon": "music_note",
+                      "title": "Tambores reales",
+                      "description": "La percusión real de Burundi (Ingoma) es Patrimonio Cultural de la UNESCO. Durante siglos, los enormes tambores sagrados fueron el latido del reino y solo se tocaban para el rey."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Burundi tiene una población de aproximadamente 12.3M."
+                      "icon": "water",
+                      "title": "El segundo lago más profundo",
+                      "description": "El lago Tanganica, en la frontera oeste de Burundi, es el segundo lago más profundo del mundo (¡más de 1.470 metros!) y contiene el 17% del agua dulce superficial del planeta."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Burundi es Gitega."
+                      "icon": "coffee",
+                      "title": "Café de las tierras altas",
+                      "description": "Burundi cultiva un café excepcional en sus tierras altas volcánicas. El suelo rico y la altitud producen una taza brillante y sabrosa que buscan los amantes del café de todo el mundo."
                   }
               ]
           }
@@ -1919,44 +1919,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cameroon",
               "capital": "Yaoundé",
-              "flagDescription": "The flag of Cameroon.",
+              "flagDescription": "Cameroon's flag has three equal vertical stripes of green, red, and yellow with a small yellow star in the center of the red stripe. These are the Pan-African colors — green represents the forests of the south, red symbolizes unity, yellow stands for the sun and the savannas of the north, and the star represents unity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cameroon",
-                      "description": "Cameroon is a country in Middle Africa."
+                      "icon": "translate",
+                      "title": "Africa in Miniature",
+                      "description": "Cameroon is often called 'Africa in Miniature' because it has almost every landscape found on the continent: rainforest, savanna, mountains, desert, beaches, and over 250 languages spoken!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cameroon has a population of approximately 29.4M."
+                      "icon": "forest",
+                      "title": "Gorilla Forest",
+                      "description": "The Dja Faunal Reserve in Cameroon is one of Africa's most important rainforests and shelters western lowland gorillas, forest elephants, and chimpanzees in dense jungle."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cameroon is Yaoundé."
+                      "icon": "sports_soccer",
+                      "title": "Indomitable Lions",
+                      "description": "Cameroon's national football team, the Indomitable Lions, is one of Africa's most celebrated. Legend Roger Milla danced at corner flags during the 1990 World Cup and became an African icon."
                   }
               ]
           },
           "es": {
               "name": "Camerún",
-              "capital": "Yaoundé",
-              "flagDescription": "La bandera de Camerún.",
+              "capital": "Yaundé",
+              "flagDescription": "La bandera de Camerún tiene tres franjas verticales iguales de verde, rojo y amarillo, con una pequeña estrella amarilla en el centro de la franja roja. Estos son los colores panafricanos: el verde representa los bosques del sur, el rojo simboliza la unidad, el amarillo representa el sol y la sabana del norte.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Camerún",
-                      "description": "Camerún es un país en Middle Africa."
+                      "icon": "translate",
+                      "title": "África en miniatura",
+                      "description": "A Camerún a menudo se le llama 'África en miniatura' porque tiene casi todos los paisajes del continente: selva, sabana, montañas, desierto, playas y ¡más de 250 idiomas!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Camerún tiene una población de aproximadamente 29.4M."
+                      "icon": "forest",
+                      "title": "Bosque de gorilas",
+                      "description": "La Reserva Faunal del Dja es uno de los bosques más importantes de África y alberga gorilas de llanura occidental, elefantes forestales y chimpancés en densa selva."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Camerún es Yaoundé."
+                      "icon": "sports_soccer",
+                      "title": "Los Leones Indomables",
+                      "description": "El equipo de fútbol de Camerún, Los Leones Indomables, es uno de los más queridos de África. La leyenda Roger Milla bailó junto a los banderines en el Mundial de 1990 y se convirtió en un ícono africano."
                   }
               ]
           }
@@ -2025,44 +2025,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cape Verde",
               "capital": "Praia",
-              "flagDescription": "The flag of Cape Verde.",
+              "flagDescription": "Cape Verde's flag has a deep blue background representing the ocean and sky, with a red horizontal stripe bordered by two white stripes near the bottom. A circle of 10 yellow stars — one for each of the 10 islands — sits in the center. The red and white stripes represent the road toward building the nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cape Verde",
-                      "description": "Cape Verde is a country in Western Africa."
+                      "icon": "waves",
+                      "title": "Islands in the Atlantic",
+                      "description": "Cape Verde is an archipelago of 10 volcanic islands sitting in the middle of the Atlantic Ocean, about 570 km off the coast of West Africa. Each island has its own landscape and personality."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cape Verde has a population of approximately 491K."
+                      "icon": "music_note",
+                      "title": "Morna Music",
+                      "description": "Cape Verde's Morna music — melancholic songs of longing called 'saudade' — is a UNESCO Cultural Heritage. The legendary singer Cesária Évora brought its heartfelt sound to audiences worldwide."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cape Verde is Praia."
+                      "icon": "air",
+                      "title": "Windsurfer's Paradise",
+                      "description": "Year-round trade winds make Cape Verde one of the world's top destinations for windsurfing and kitesurfing. Sal and Boa Vista islands host international competitions every year."
                   }
               ]
           },
           "es": {
               "name": "Cabo Verde",
               "capital": "Praia",
-              "flagDescription": "La bandera de Cabo Verde.",
+              "flagDescription": "La bandera de Cabo Verde tiene un fondo azul profundo que representa el océano y el cielo, con una franja roja horizontal bordeada por dos franjas blancas cerca de la parte inferior. Un círculo de 10 estrellas amarillas, una por cada una de las 10 islas, se encuentra en el centro.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Cabo Verde",
-                      "description": "Cabo Verde es un país en Western Africa."
+                      "icon": "waves",
+                      "title": "Islas en el Atlántico",
+                      "description": "Cabo Verde es un archipiélago de 10 islas volcánicas en medio del Océano Atlántico, a unos 570 km de la costa de África Occidental. Cada isla tiene su propio paisaje y personalidad."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Cabo Verde tiene una población de aproximadamente 491K."
+                      "icon": "music_note",
+                      "title": "Música Morna",
+                      "description": "La Morna de Cabo Verde, canciones melancólicas de añoranza llamadas 'saudade', es Patrimonio Cultural de la UNESCO. La legendaria cantante Cesária Évora llevó su sonido al mundo entero."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Cabo Verde es Praia."
+                      "icon": "air",
+                      "title": "Paraíso del windsurf",
+                      "description": "Los vientos alisios durante todo el año hacen de Cabo Verde uno de los mejores destinos del mundo para el windsurf y el kitesurf. Las islas de Sal y Boa Vista acogen competiciones internacionales cada año."
                   }
               ]
           }
@@ -2184,44 +2184,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Central African Republic",
               "capital": "Bangui",
-              "flagDescription": "The flag of Central African Republic.",
+              "flagDescription": "The Central African Republic's flag has four horizontal stripes (blue, white, green, yellow) cut through the middle by a bold vertical red stripe, with a yellow star in the top-left corner. The red stripe symbolizes the blood shed for independence and boldly connects all four horizontal colors together.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Central African Republic",
-                      "description": "Central African Republic is a country in Middle Africa."
+                      "icon": "forest",
+                      "title": "Forest Elephant Haven",
+                      "description": "The Dzanga-Sangha Reserve is one of the best places on Earth to watch forest elephants. Hundreds gather at the Dzanga Bai (an open forest clearing) to drink minerals from the earth."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Pristine Rainforest Rivers",
+                      "description": "The Sangha River flows through untouched equatorial rainforest and is part of a UNESCO World Heritage Site shared with Cameroon and the Republic of Congo."
                   },
                   {
                       "icon": "groups",
-                      "title": "Population",
-                      "description": "Central African Republic has a population of approximately 6.5M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Central African Republic is Bangui."
+                      "title": "Aka Forest Dwellers",
+                      "description": "The Aka are a remarkable forest people who have lived in harmony with the Central African rainforest for thousands of years. They are renowned for their extraordinary polyphonic singing."
                   }
               ]
           },
           "es": {
               "name": "República Centroafricana",
               "capital": "Bangui",
-              "flagDescription": "La bandera de República Centroafricana.",
+              "flagDescription": "La bandera de la República Centroafricana tiene cuatro franjas horizontales (azul, blanca, verde, amarilla) cruzadas por una franja vertical roja en el centro y una estrella amarilla en la esquina superior izquierda. La franja roja simboliza la sangre derramada por la independencia y conecta audazmente los cuatro colores horizontales.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre República Centroafricana",
-                      "description": "República Centroafricana es un país en Middle Africa."
+                      "icon": "forest",
+                      "title": "Refugio del elefante forestal",
+                      "description": "La Reserva de Dzanga-Sangha es uno de los mejores lugares del mundo para observar elefantes forestales. Cientos de ellos se reúnen en el Dzanga Bai para beber minerales del suelo."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Ríos de selva prístina",
+                      "description": "El río Sangha fluye por una selva ecuatorial intacta y forma parte de un Patrimonio Mundial de la UNESCO compartido con Camerún y la República del Congo."
                   },
                   {
                       "icon": "groups",
-                      "title": "Población",
-                      "description": "República Centroafricana tiene una población de aproximadamente 6.5M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de República Centroafricana es Bangui."
+                      "title": "El pueblo Aka",
+                      "description": "Los Aka son un notable pueblo forestal que ha vivido en armonía con la selva centroafricana durante miles de años. Son famosos por su extraordinario canto polifónico."
                   }
               ]
           }
@@ -2237,44 +2237,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Chad",
               "capital": "N'Djamena",
-              "flagDescription": "The flag of Chad.",
+              "flagDescription": "Chad's flag has three vertical stripes of blue, yellow, and red — almost identical to the flag of Romania! Blue represents the sky and hope, yellow symbolizes the sun and the Sahara Desert that covers much of the country, and red stands for sacrifice and progress.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Chad",
-                      "description": "Chad is a country in Middle Africa."
+                      "icon": "water",
+                      "title": "Shrinking Lake Chad",
+                      "description": "Lake Chad was once one of Africa's largest lakes, but it has shrunk to less than 10% of its 1960s size due to climate change and water use. Scientists around the world are studying how to save it."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Chad has a population of approximately 19.3M."
+                      "icon": "history",
+                      "title": "Ancient Rock Art",
+                      "description": "The Tibesti Mountains in northern Chad contain rock paintings and engravings that are up to 10,000 years old, showing ancient animals and people from a time when the Sahara was green and wet."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Chad is N'Djamena."
+                      "icon": "pets",
+                      "title": "Saharan Camel Caravans",
+                      "description": "Camel caravans have crossed the Chadian Sahara for thousands of years, trading gold, salt, and cloth along routes that connected sub-Saharan Africa to North Africa and the Mediterranean."
                   }
               ]
           },
           "es": {
               "name": "Chad",
               "capital": "N'Djamena",
-              "flagDescription": "La bandera de Chad.",
+              "flagDescription": "La bandera del Chad tiene tres franjas verticales de azul, amarillo y rojo, ¡casi idéntica a la bandera de Rumanía! El azul representa el cielo y la esperanza, el amarillo simboliza el sol y el desierto del Sáhara que cubre gran parte del país, y el rojo representa el sacrificio y el progreso.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Chad",
-                      "description": "Chad es un país en Middle Africa."
+                      "icon": "water",
+                      "title": "El lago Chad se encoge",
+                      "description": "El lago Chad fue uno de los lagos más grandes de África, pero se ha reducido a menos del 10% de su tamaño de los años 60 debido al cambio climático. Científicos de todo el mundo estudian cómo salvarlo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Chad tiene una población de aproximadamente 19.3M."
+                      "icon": "history",
+                      "title": "Arte rupestre ancestral",
+                      "description": "Las montañas del Tibesti contienen pinturas y grabados rupestres de hasta 10.000 años de antigüedad, que muestran animales y personas de una época en que el Sáhara era verde y húmedo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Chad es N'Djamena."
+                      "icon": "pets",
+                      "title": "Caravanas de camellos",
+                      "description": "Las caravanas de camellos han cruzado el Sáhara chadiano durante miles de años, comerciando oro, sal y telas en rutas que conectaban el África subsahariana con el norte del continente y el Mediterráneo."
                   }
               ]
           }
@@ -2555,44 +2555,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Comoros",
               "capital": "Moroni",
-              "flagDescription": "The flag of Comoros.",
+              "flagDescription": "The Comoros flag is green with a white crescent moon and four white stars arranged diagonally. Green and the crescent moon represent Islam, which is central to the culture. The four stars stand for the country's four main islands — Grande Comore, Mohéli, Anjouan, and Mayotte.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Comoros",
-                      "description": "Comoros is a country in Eastern Africa."
+                      "icon": "local_florist",
+                      "title": "Perfume Islands",
+                      "description": "Comoros is the world's largest producer of ylang-ylang flowers, used in some of the world's most famous perfumes — including Chanel No. 5! The sweet scent fills the air across the islands."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Comoros has a population of approximately 920K."
+                      "icon": "volcano",
+                      "title": "Active Volcano",
+                      "description": "Mount Karthala on Grande Comore is one of the world's largest active volcanoes. It has erupted over 20 times in recorded history, most recently in 2005 — it even forced people to wear gas masks!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Comoros is Moroni."
+                      "icon": "pets",
+                      "title": "Giant Fruit Bats",
+                      "description": "Giant fruit bats (flying foxes) with wingspans over a meter wide roost in the trees of Comoros and fly dramatically through the sky at dusk — one of the island's most unforgettable sights."
                   }
               ]
           },
           "es": {
               "name": "Comoras",
               "capital": "Moroni",
-              "flagDescription": "La bandera de Comoras.",
+              "flagDescription": "La bandera de Comoras es verde con una media luna blanca y cuatro estrellas blancas dispuestas en diagonal. El verde y la media luna representan el Islam, central en la cultura del país. Las cuatro estrellas representan las cuatro islas principales: Gran Comora, Mohéli, Anjouan y Mayotte.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Comoras",
-                      "description": "Comoras es un país en Eastern Africa."
+                      "icon": "local_florist",
+                      "title": "Islas del perfume",
+                      "description": "Comoras es el mayor productor mundial de flores de ylang-ylang, usadas en algunos de los perfumes más famosos del mundo, ¡incluido el Chanel No. 5! Su dulce aroma impregna el aire de las islas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Comoras tiene una población de aproximadamente 920K."
+                      "icon": "volcano",
+                      "title": "Volcán activo",
+                      "description": "El monte Karthala en Gran Comora es uno de los volcanes activos más grandes del mundo. Ha hecho erupción más de 20 veces, y en 2005 obligó a los habitantes a usar máscaras antigás."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Comoras es Moroni."
+                      "icon": "pets",
+                      "title": "Murciélagos frugívoros gigantes",
+                      "description": "Los murciélagos frugívoros gigantes (zorros voladores), con envergaduras de más de un metro, se posan en los árboles de Comoras y surcan el cielo al atardecer en uno de los espectáculos más impresionantes de las islas."
                   }
               ]
           }
@@ -3032,44 +3032,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Djibouti",
               "capital": "Djibouti",
-              "flagDescription": "The flag of Djibouti.",
+              "flagDescription": "Djibouti's flag has two equal horizontal stripes — light blue on top and green on the bottom — with a white triangle on the left side containing a red star. Blue represents the sea and sky, green symbolizes the earth and Islam, white stands for peace, and the red star represents unity and independence.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Djibouti",
-                      "description": "Djibouti is a country in Eastern Africa."
+                      "icon": "anchor",
+                      "title": "World's Busiest Shipping Lane",
+                      "description": "Djibouti sits at the crossroads between the Red Sea and the Indian Ocean. Thousands of ships pass its coast every day, making it one of the world's most strategically important locations."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Djibouti has a population of approximately 1.1M."
+                      "icon": "water",
+                      "title": "Africa's Lowest Point",
+                      "description": "Lake Assal is Africa's lowest point at 155 meters below sea level, and it's one of the saltiest lakes on Earth — about 10 times saltier than the ocean! Salt crystals form beautiful patterns on its shores."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Djibouti is Djibouti."
+                      "icon": "pets",
+                      "title": "Whale Shark Season",
+                      "description": "Whale sharks — the world's largest fish, as long as a school bus — visit the warm waters of the Gulf of Tadjoura every year between October and January, drawing snorkelers from around the world."
                   }
               ]
           },
           "es": {
-              "name": "Djibouti",
-              "capital": "Djibouti",
-              "flagDescription": "La bandera de Djibouti.",
+              "name": "Yibuti",
+              "capital": "Yibuti",
+              "flagDescription": "La bandera de Yibuti tiene dos franjas horizontales iguales: azul claro arriba y verde abajo, con un triángulo blanco a la izquierda que contiene una estrella roja. El azul representa el mar y el cielo, el verde simboliza la tierra y el Islam, el blanco representa la paz, y la estrella roja representa la unidad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Djibouti",
-                      "description": "Djibouti es un país en Eastern Africa."
+                      "icon": "anchor",
+                      "title": "Ruta marítima vital",
+                      "description": "Yibuti se encuentra en el cruce entre el mar Rojo y el Océano Índico. Miles de barcos pasan por su costa cada día, convirtiéndola en uno de los puntos estratégicos más importantes del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Djibouti tiene una población de aproximadamente 1.1M."
+                      "icon": "water",
+                      "title": "El punto más bajo de África",
+                      "description": "El lago Assal es el punto más bajo de África, a 155 metros bajo el nivel del mar, y uno de los lagos más salados de la Tierra: ¡unas 10 veces más salado que el océano! Los cristales de sal forman hermosos patrones en sus orillas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Djibouti es Djibouti."
+                      "icon": "pets",
+                      "title": "Temporada del tiburón ballena",
+                      "description": "Los tiburones ballena, los peces más grandes del mundo (del tamaño de un autobús escolar), visitan las cálidas aguas del golfo de Tadjoura cada año entre octubre y enero, atrayendo a nadadores de todo el mundo."
                   }
               ]
           }
@@ -3191,44 +3191,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "DR Congo",
               "capital": "Kinshasa",
-              "flagDescription": "The flag of DR Congo.",
+              "flagDescription": "The DR Congo flag is blue with a red diagonal band bordered by thin yellow lines running from the lower-left to upper-right, and a yellow five-pointed star in the top-left corner. Blue represents peace, red recalls the blood of the country's heroes, yellow stands for the nation's mineral wealth, and the star represents a bright future.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About DR Congo",
-                      "description": "DR Congo is a country in Middle Africa."
+                      "icon": "forest",
+                      "title": "Second Largest Rainforest",
+                      "description": "The Congo Rainforest is the world's second-largest rainforest after the Amazon, and one of Earth's most important carbon stores. It is home to okapis, bonobos, and thousands of plant species found nowhere else."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "DR Congo has a population of approximately 112.8M."
+                      "icon": "water",
+                      "title": "World's Deepest River",
+                      "description": "The Congo River is the deepest river on Earth — over 220 meters deep in places! Its powerful current generates enough hydroelectric potential to power the whole of Africa."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of DR Congo is Kinshasa."
+                      "icon": "translate",
+                      "title": "Land of 700 Languages",
+                      "description": "Over 700 languages are spoken in the DR Congo, making it one of the most linguistically diverse countries on Earth. Lingala, Swahili, Tshiluba, and Kikongo are the four national languages."
                   }
               ]
           },
           "es": {
-              "name": "Congo (Rep. Dem.)",
+              "name": "RD Congo",
               "capital": "Kinshasa",
-              "flagDescription": "La bandera de Congo (Rep. Dem.).",
+              "flagDescription": "La bandera de la RD Congo es azul con una banda roja diagonal bordeada de líneas amarillas que va de la esquina inferior izquierda a la superior derecha, y una estrella amarilla de cinco puntas en la esquina superior izquierda. El azul representa la paz, el rojo recuerda la sangre de los héroes del país, el amarillo representa la riqueza mineral y la estrella simboliza un futuro brillante.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Congo (Rep. Dem.)",
-                      "description": "Congo (Rep. Dem.) es un país en Middle Africa."
+                      "icon": "forest",
+                      "title": "Segunda mayor selva tropical",
+                      "description": "La selva del Congo es la segunda mayor selva tropical del mundo tras el Amazonas y uno de los almacenes de carbono más importantes de la Tierra. Alberga okapis, bonobos y miles de especies vegetales únicas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Congo (Rep. Dem.) tiene una población de aproximadamente 112.8M."
+                      "icon": "water",
+                      "title": "El río más profundo del mundo",
+                      "description": "¡El río Congo es el río más profundo de la Tierra, con más de 220 metros en algunos puntos! Su poderosa corriente tiene el potencial hidroeléctrico suficiente para abastecer a toda África."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Congo (Rep. Dem.) es Kinshasa."
+                      "icon": "translate",
+                      "title": "Tierra de 700 idiomas",
+                      "description": "En la RD Congo se hablan más de 700 idiomas, lo que la convierte en uno de los países más lingüísticamente diversos del mundo. El lingala, el suajili, el tshiluba y el kikongo son las cuatro lenguas nacionales."
                   }
               ]
           }
@@ -3318,23 +3318,23 @@ export const countriesData: CountryEntry[] = [
           },
           "es": {
               "name": "Egipto",
-              "capital": "Cairo",
-              "flagDescription": "La bandera de Egipto.",
+              "capital": "El Cairo",
+              "flagDescription": "La bandera de Egipto tiene tres franjas horizontales de rojo, blanco y negro, con el Águila de Saladino dorada en el centro de la franja blanca. El rojo representa la lucha contra el colonialismo, el blanco simboliza la revolución de 1952, y el negro recuerda el fin de la opresión.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Egipto",
-                      "description": "Egipto es un país en Northern Africa."
+                      "icon": "pyramid",
+                      "title": "Maravillas antiguas",
+                      "description": "La Gran Pirámide de Guiza es la única estructura superviviente de las originales Siete Maravillas del Mundo Antiguo, construida alrededor del año 2560 a.C."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Egipto tiene una población de aproximadamente 107.3M."
+                      "icon": "water",
+                      "title": "El río Nilo",
+                      "description": "El Nilo es uno de los ríos más largos del mundo, con unos 6.650 km. La civilización del antiguo Egipto floreció en sus fértiles orillas durante más de 3.000 años."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Egipto es Cairo."
+                      "icon": "edit_note",
+                      "title": "Escritura jeroglífica",
+                      "description": "Los antiguos egipcios desarrollaron los jeroglíficos, uno de los primeros sistemas de escritura del mundo, alrededor del año 3200 a.C., usando más de 700 símbolos diferentes."
                   }
               ]
           }
@@ -3402,45 +3402,45 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Equatorial Guinea",
-              "capital": "Ciudad de la Paz",
-              "flagDescription": "The flag of Equatorial Guinea.",
+              "capital": "Malabo",
+              "flagDescription": "Equatorial Guinea's flag has three horizontal stripes — green at the top, white in the middle, and red at the bottom — with a blue triangle on the left side and a coat of arms at the center featuring a silk cotton tree. Green represents the jungle, white symbolizes peace, red recalls the struggle for independence, and blue represents the sea.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Equatorial Guinea",
-                      "description": "Equatorial Guinea is a country in Middle Africa."
+                      "icon": "translate",
+                      "title": "Africa's Spanish Speaker",
+                      "description": "Equatorial Guinea is the only country in Africa where Spanish is an official language! It also has French and Portuguese as official languages, reflecting its complex colonial history."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Equatorial Guinea has a population of approximately 1.7M."
+                      "icon": "forest",
+                      "title": "Tropical Rainforest",
+                      "description": "Dense equatorial rainforest covers most of Equatorial Guinea's mainland (Rio Muni), sheltering western lowland gorillas, forest elephants, and hundreds of bird species."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Equatorial Guinea is Ciudad de la Paz."
+                      "icon": "oil_barrel",
+                      "title": "Oil Transformation",
+                      "description": "The discovery of offshore oil in 1995 dramatically changed Equatorial Guinea — transforming it from one of Africa's poorest countries into one of the continent's highest income nations in just a few decades."
                   }
               ]
           },
           "es": {
               "name": "Guinea Ecuatorial",
-              "capital": "Ciudad de la Paz",
-              "flagDescription": "La bandera de Guinea Ecuatorial.",
+              "capital": "Malabo",
+              "flagDescription": "La bandera de Guinea Ecuatorial tiene tres franjas horizontales: verde arriba, blanca en el centro y roja abajo, con un triángulo azul a la izquierda y un escudo con un árbol de ceiba en el centro. El verde representa la selva, el blanco simboliza la paz, el rojo recuerda la lucha por la independencia, y el azul representa el mar.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Guinea Ecuatorial",
-                      "description": "Guinea Ecuatorial es un país en Middle Africa."
+                      "icon": "translate",
+                      "title": "El hispanohablante de África",
+                      "description": "¡Guinea Ecuatorial es el único país de África donde el español es idioma oficial! También tiene el francés y el portugués como idiomas oficiales, reflejo de su compleja historia colonial."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guinea Ecuatorial tiene una población de aproximadamente 1.7M."
+                      "icon": "forest",
+                      "title": "Selva tropical ecuatorial",
+                      "description": "Una densa selva ecuatorial cubre la mayor parte del territorio continental de Guinea Ecuatorial (Río Muni), donde viven gorilas de llanura occidental, elefantes forestales y cientos de especies de aves."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guinea Ecuatorial es Ciudad de la Paz."
+                      "icon": "oil_barrel",
+                      "title": "Transformación petrolera",
+                      "description": "El descubrimiento de petróleo en alta mar en 1995 transformó Guinea Ecuatorial de uno de los países más pobres de África a uno de los de mayor renta del continente en pocas décadas."
                   }
               ]
           }
@@ -3456,44 +3456,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Eritrea",
               "capital": "Asmara",
-              "flagDescription": "The flag of Eritrea.",
+              "flagDescription": "Eritrea's flag has three triangles — green at the top, blue at the bottom, and red in the center — with a golden olive wreath on the red section. Green represents the country's agriculture, blue symbolizes the Red Sea coastline, red recalls the blood shed in the fight for independence, and the olive wreath represents peace.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Eritrea",
-                      "description": "Eritrea is a country in Eastern Africa."
+                      "icon": "history",
+                      "title": "Africa's Newest Country",
+                      "description": "Eritrea became independent from Ethiopia in 1993 after a 30-year struggle, making it one of Africa's newest nations. Independence Day on May 24 is celebrated with enormous pride every year."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Eritrea has a population of approximately 3.6M."
+                      "icon": "anchor",
+                      "title": "Red Sea Dive Paradise",
+                      "description": "Eritrea's Red Sea coast has some of the world's most pristine coral reefs, plus WWII shipwrecks resting on the seafloor that divers explore like underwater museums."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Eritrea is Asmara."
+                      "icon": "castle",
+                      "title": "Art Deco Capital",
+                      "description": "The capital Asmara is nicknamed 'The Rome of Africa' because Italian colonizers built hundreds of stunning Art Deco buildings in the 1930s. The entire city center is a UNESCO World Heritage Site."
                   }
               ]
           },
           "es": {
               "name": "Eritrea",
               "capital": "Asmara",
-              "flagDescription": "La bandera de Eritrea.",
+              "flagDescription": "La bandera de Eritrea tiene tres triángulos: verde arriba, azul abajo y rojo en el centro, con una corona de olivo dorada sobre la parte roja. El verde representa la agricultura, el azul simboliza el mar Rojo, el rojo recuerda la sangre derramada en la lucha por la independencia, y la corona de olivo representa la paz.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Eritrea",
-                      "description": "Eritrea es un país en Eastern Africa."
+                      "icon": "history",
+                      "title": "Uno de los países más jóvenes",
+                      "description": "Eritrea se independizó de Etiopía en 1993 tras 30 años de lucha, convirtiéndose en uno de los países más jóvenes de África. El Día de la Independencia, el 24 de mayo, se celebra con enorme orgullo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Eritrea tiene una población de aproximadamente 3.6M."
+                      "icon": "anchor",
+                      "title": "Paraíso de buceo en el mar Rojo",
+                      "description": "La costa eritrea del mar Rojo tiene algunos de los arrecifes de coral más vírgenes del mundo, además de naufragios de la Segunda Guerra Mundial que los buceadores exploran como museos submarinos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Eritrea es Asmara."
+                      "icon": "castle",
+                      "title": "La capital Art Déco",
+                      "description": "La capital Asmara es conocida como 'La Roma de África' porque los colonizadores italianos construyeron en los años 30 cientos de impresionantes edificios Art Déco. Todo el centro histórico es Patrimonio Mundial de la UNESCO."
                   }
               ]
           }
@@ -3562,44 +3562,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Eswatini",
               "capital": "Mbabane",
-              "flagDescription": "The flag of Eswatini.",
+              "flagDescription": "Eswatini's flag has blue stripes at the top and bottom, a wide red stripe in the center, and thin yellow stripes in between. In the center of the red stripe is a traditional Nguni shield with two spears and three decorated sticks. Blue represents peace, red recalls past battles, yellow stands for mineral wealth, and the shield symbolizes protection of the nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Eswatini",
-                      "description": "Eswatini is a country in Southern Africa."
+                      "icon": "castle",
+                      "title": "Last Absolute Monarchy",
+                      "description": "Eswatini (formerly Swaziland) is one of Africa's last absolute monarchies, ruled by King Mswati III. The king's birthday and national holidays are celebrated with traditional ceremonies and colorful dancing."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Eswatini has a population of approximately 1.2M."
+                      "icon": "festival",
+                      "title": "Reed Dance Ceremony",
+                      "description": "The annual Umhlanga Reed Dance is a spectacular cultural event where tens of thousands of young women in traditional dress cut reeds and dance for the king in a week-long celebration."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Eswatini is Mbabane."
+                      "icon": "pets",
+                      "title": "Rhino Sanctuary",
+                      "description": "Both black and white rhinos roam freely in Hlane Royal National Park — one of the best places in southern Africa to see these magnificent and endangered animals up close."
                   }
               ]
           },
           "es": {
-              "name": "Suazilandia",
+              "name": "Esuatini",
               "capital": "Mbabane",
-              "flagDescription": "La bandera de Suazilandia.",
+              "flagDescription": "La bandera de Esuatini tiene franjas azules arriba y abajo, una amplia franja roja en el centro, y delgadas franjas amarillas entre ellas. En el centro de la franja roja hay un escudo tradicional Nguni con dos lanzas y tres palos decorados. El azul representa la paz, el rojo recuerda batallas pasadas, el amarillo representa la riqueza mineral, y el escudo simboliza la protección de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Suazilandia",
-                      "description": "Suazilandia es un país en Southern Africa."
+                      "icon": "castle",
+                      "title": "Última monarquía absoluta",
+                      "description": "Esuatini (antes Suazilandia) es una de las últimas monarquías absolutas de África, gobernada por el rey Mswati III. El cumpleaños del rey y los días festivos se celebran con ceremonias tradicionales y danzas coloridas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Suazilandia tiene una población de aproximadamente 1.2M."
+                      "icon": "festival",
+                      "title": "La danza de las cañas",
+                      "description": "El Umhlanga, la Danza Anual de las Cañas, es un espectacular evento cultural en el que decenas de miles de jóvenes con atuendos tradicionales cortan cañas y bailan para el rey durante una semana."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Suazilandia es Mbabane."
+                      "icon": "pets",
+                      "title": "Santuario del rinoceronte",
+                      "description": "Los rinocerontes negros y blancos deambulan libremente en el Parque Nacional Real de Hlane, uno de los mejores lugares del sur de África para ver a estos magníficos animales en peligro de extinción."
                   }
               ]
           }
@@ -3636,23 +3636,23 @@ export const countriesData: CountryEntry[] = [
           },
           "es": {
               "name": "Etiopía",
-              "capital": "Addis Ababa",
-              "flagDescription": "La bandera de Etiopía.",
+              "capital": "Addis Abeba",
+              "flagDescription": "La bandera de Etiopía tiene tres franjas horizontales iguales de verde, amarillo y rojo, con un disco azul y un pentágrama amarillo en el centro. Estos colores panafricanos inspiraron a muchas banderas de África después de que Etiopía resistiera la colonización europea.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Etiopía",
-                      "description": "Etiopía es un país en Eastern Africa."
+                      "icon": "coffee",
+                      "title": "Cuna del café",
+                      "description": "¡El café se originó en Etiopía! Según la leyenda, un pastor de cabras llamado Kaldi notó que sus cabras se volvían enérgicas al comer bayas de cierto árbol: ese árbol era la planta del café."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Etiopía tiene una población de aproximadamente 111.7M."
+                      "icon": "access_time",
+                      "title": "Calendario único",
+                      "description": "Etiopía tiene su propio calendario con 13 meses y actualmente va unos 7-8 años por detrás del calendario gregoriano. ¡El Año Nuevo se celebra en septiembre!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Etiopía es Addis Ababa."
+                      "icon": "history",
+                      "title": "Nación cristiana más antigua",
+                      "description": "Etiopía es una de las naciones cristianas más antiguas del mundo, habiendo adoptado el cristianismo como religión estatal en el año 330 d.C., antes que la mayoría de los países europeos."
                   }
               ]
           }
@@ -4039,44 +4039,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Gabon",
               "capital": "Libreville",
-              "flagDescription": "The flag of Gabon.",
+              "flagDescription": "Gabon's flag has three equal horizontal stripes — green at the top, yellow in the middle, and blue at the bottom. Green represents the country's vast tropical forests, yellow symbolizes the equator that passes right through Gabon and the sunshine, and blue stands for the Atlantic Ocean on its coast.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Gabon",
-                      "description": "Gabon is a country in Middle Africa."
+                      "icon": "forest",
+                      "title": "Nation of Forests",
+                      "description": "About 80% of Gabon is covered by rainforest, making it one of Earth's most forested and biodiverse countries. The trees here absorb huge amounts of carbon dioxide, helping to keep our planet cool."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Gabon has a population of approximately 2.5M."
+                      "icon": "pets",
+                      "title": "Forest Elephants",
+                      "description": "Gabon protects more than half of the world's remaining forest elephants — a smaller subspecies that lives in dense jungle and is rarely seen. They help the forest grow by spreading seeds."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Gabon is Libreville."
+                      "icon": "sunny",
+                      "title": "On the Equator",
+                      "description": "Gabon lies directly on the equator, meaning it gets almost exactly 12 hours of daylight and 12 hours of night every single day of the year."
                   }
               ]
           },
           "es": {
               "name": "Gabón",
               "capital": "Libreville",
-              "flagDescription": "La bandera de Gabón.",
+              "flagDescription": "La bandera de Gabón tiene tres franjas horizontales iguales: verde arriba, amarilla en el centro y azul abajo. El verde representa los vastos bosques tropicales del país, el amarillo simboliza el ecuador que atraviesa Gabón y el sol, y el azul representa el Océano Atlántico en su costa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Gabón",
-                      "description": "Gabón es un país en Middle Africa."
+                      "icon": "forest",
+                      "title": "Nación de bosques",
+                      "description": "Aproximadamente el 80% de Gabón está cubierto por bosque tropical, lo que lo convierte en uno de los países más forestados y biodiversos de la Tierra. Sus árboles absorben grandes cantidades de CO₂."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Gabón tiene una población de aproximadamente 2.5M."
+                      "icon": "pets",
+                      "title": "Elefantes forestales",
+                      "description": "Gabón protege a más de la mitad de los elefantes forestales restantes del mundo, una subespecie más pequeña que vive en la selva densa y que ayuda al bosque a crecer dispersando semillas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Gabón es Libreville."
+                      "icon": "sunny",
+                      "title": "En el ecuador",
+                      "description": "Gabón está situado directamente sobre el ecuador, lo que significa que tiene casi exactamente 12 horas de luz solar y 12 horas de noche todos los días del año."
                   }
               ]
           }
@@ -4092,44 +4092,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Gambia",
               "capital": "Banjul",
-              "flagDescription": "The flag of Gambia.",
+              "flagDescription": "The Gambia's flag has three horizontal stripes — red at the top, blue in the middle, and green at the bottom — separated by thin white borders. Red represents the sun and the dry savanna, blue symbolizes the mighty Gambia River that runs through the entire country, green stands for forests and crops, and white represents unity and peace.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Gambia",
-                      "description": "Gambia is a country in Western Africa."
+                      "icon": "water",
+                      "title": "Africa's Smallest Country",
+                      "description": "The Gambia is the smallest country on mainland Africa — a thin strip of land on both sides of the Gambia River, entirely surrounded by Senegal. You can drive across it in just a few hours!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Gambia has a population of approximately 2.4M."
+                      "icon": "pets",
+                      "title": "Birdwatcher's Paradise",
+                      "description": "Despite its tiny size, The Gambia has over 580 bird species recorded — one of the highest densities of birdlife in the world. Colorful kingfishers, storks, and eagles fill the mangroves and forests."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Gambia is Banjul."
+                      "icon": "music_note",
+                      "title": "The Kora",
+                      "description": "The kora — a beautiful 21-string bridge harp — was born in the Gambia/Senegal region and is one of West Africa's most magnificent instruments. Its music sounds like flowing water."
                   }
               ]
           },
           "es": {
               "name": "Gambia",
               "capital": "Banjul",
-              "flagDescription": "La bandera de Gambia.",
+              "flagDescription": "La bandera de Gambia tiene tres franjas horizontales: roja arriba, azul en el centro y verde abajo, separadas por delgados bordes blancos. El rojo representa el sol y la sabana seca, el azul simboliza el poderoso río Gambia que atraviesa todo el país, el verde representa los bosques y los cultivos, y el blanco representa la unidad y la paz.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Gambia",
-                      "description": "Gambia es un país en Western Africa."
+                      "icon": "water",
+                      "title": "El país más pequeño de África",
+                      "description": "¡Gambia es el país más pequeño de África continental, una delgada franja de tierra a ambos lados del río Gambia, completamente rodeada por Senegal! Se puede cruzar en pocas horas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Gambia tiene una población de aproximadamente 2.4M."
+                      "icon": "pets",
+                      "title": "Paraíso para los observadores de aves",
+                      "description": "A pesar de su pequeño tamaño, Gambia tiene registradas más de 580 especies de aves, una de las densidades más altas del mundo. Coloridos martines pescadores, cigüeñas y águilas llenan los manglares."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Gambia es Banjul."
+                      "icon": "music_note",
+                      "title": "La kora",
+                      "description": "La kora, una hermosa arpa de 21 cuerdas, nació en la región de Gambia/Senegal y es uno de los instrumentos más magníficos de África Occidental. Su música suena como agua fluyendo."
                   }
               ]
           }
@@ -4272,23 +4272,23 @@ export const countriesData: CountryEntry[] = [
           },
           "es": {
               "name": "Ghana",
-              "capital": "Accra",
-              "flagDescription": "La bandera de Ghana.",
+              "capital": "Acra",
+              "flagDescription": "La bandera de Ghana tiene tres franjas horizontales de rojo, oro y verde con una estrella negra en el centro. El rojo representa la sangre derramada por la independencia, el oro simboliza la riqueza mineral, el verde representa los bosques, y la estrella negra representa la libertad africana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Ghana",
-                      "description": "Ghana es un país en Western Africa."
+                      "icon": "star",
+                      "title": "Primera nación africana independiente",
+                      "description": "Ghana fue el primer país del África subsahariana en independizarse del dominio colonial, lográndolo en 1957 bajo el liderazgo de Kwame Nkrumah."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Ghana tiene una población de aproximadamente 33.7M."
+                      "icon": "shopping_bag",
+                      "title": "Tela kente",
+                      "description": "La tela kente, tejida con seda y algodón, es uno de los mayores tesoros culturales de Ghana. Originalmente usada solo por la realeza, cada patrón tiene un significado simbólico."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Ghana es Accra."
+                      "icon": "forest",
+                      "title": "Capital del cacao",
+                      "description": "Ghana es el segundo mayor productor mundial de granos de cacao, usados para hacer chocolate. Aproximadamente el 40% del cacao del mundo proviene de África Occidental."
                   }
               ]
           }
@@ -4728,44 +4728,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Guinea",
               "capital": "Conakry",
-              "flagDescription": "The flag of Guinea.",
+              "flagDescription": "Guinea's flag has three equal vertical stripes of red, yellow, and green — the Pan-African colors in the reverse order of Ghana's flag. Red represents the blood and sacrifice of the people, yellow symbolizes gold and the wealth of the land, and green stands for the country's lush vegetation and forests.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Guinea",
-                      "description": "Guinea is a country in Western Africa."
+                      "icon": "music_note",
+                      "title": "Home of the Djembe",
+                      "description": "The djembe drum was born in Guinea and has spread to become one of the most played hand drums on Earth! Its powerful sound is used in ceremonies, celebrations, and music studios worldwide."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guinea has a population of approximately 14.4M."
+                      "icon": "water",
+                      "title": "West Africa's Water Tower",
+                      "description": "The Fouta Djallon highlands in central Guinea are called 'the water tower of West Africa' because major rivers like the Niger, the Gambia, and the Senegal all begin here."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guinea is Conakry."
+                      "icon": "science",
+                      "title": "World's Largest Bauxite Reserves",
+                      "description": "Guinea holds the world's largest known reserves of bauxite — the ore used to make aluminum. Almost everything made of aluminum, from soda cans to airplanes, could trace its origins here."
                   }
               ]
           },
           "es": {
               "name": "Guinea",
-              "capital": "Conakry",
-              "flagDescription": "La bandera de Guinea.",
+              "capital": "Conakri",
+              "flagDescription": "La bandera de Guinea tiene tres franjas verticales iguales de rojo, amarillo y verde, los colores panafricanos en orden inverso al de la bandera de Ghana. El rojo representa la sangre y el sacrificio del pueblo, el amarillo simboliza el oro y la riqueza de la tierra, y el verde representa la exuberante vegetación y los bosques del país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Guinea",
-                      "description": "Guinea es un país en Western Africa."
+                      "icon": "music_note",
+                      "title": "Cuna del djembé",
+                      "description": "¡El djembé nació en Guinea y se ha convertido en uno de los tambores de mano más tocados del mundo! Su poderoso sonido se usa en ceremonias, celebraciones y estudios de música de todo el planeta."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guinea tiene una población de aproximadamente 14.4M."
+                      "icon": "water",
+                      "title": "El castillo de agua de África Occidental",
+                      "description": "Las tierras altas de Fouta Djallon, en el centro de Guinea, son llamadas \"el castillo de agua de África Occidental\" porque allí nacen grandes ríos como el Níger, el Gambia y el Senegal."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guinea es Conakry."
+                      "icon": "science",
+                      "title": "Mayores reservas de bauxita del mundo",
+                      "description": "Guinea alberga las mayores reservas conocidas de bauxita del mundo, el mineral que se usa para fabricar aluminio. Casi todo lo hecho de aluminio, desde latas hasta aviones, podría tener sus orígenes aquí."
                   }
               ]
           }
@@ -4781,44 +4781,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Guinea-Bissau",
               "capital": "Bissau",
-              "flagDescription": "The flag of Guinea-Bissau.",
+              "flagDescription": "Guinea-Bissau's flag has two horizontal stripes — yellow on top and green on the bottom — with a vertical red stripe on the left bearing a black star. The Pan-African colors represent the struggle for independence, and the black star symbolizes African unity and the dignity of the people.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Guinea-Bissau",
-                      "description": "Guinea-Bissau is a country in Western Africa."
+                      "icon": "waves",
+                      "title": "Hippos in the Ocean!",
+                      "description": "The Bijagós Archipelago off Guinea-Bissau's coast is one of Africa's most unique biosphere reserves — it's the only place in the world where wild hippos actually swim between ocean islands!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guinea-Bissau has a population of approximately 1.8M."
+                      "icon": "agriculture",
+                      "title": "Cashew Capital",
+                      "description": "Cashew nuts are Guinea-Bissau's biggest export. The whole country smells of cashew blossoms in spring, and the cashew tree is a national symbol of livelihood and pride."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guinea-Bissau is Bissau."
+                      "icon": "music_note",
+                      "title": "Land of the Balafon",
+                      "description": "The balafon — a wooden xylophone with gourd resonators — is central to Guinea-Bissau's traditional music. The rich, warm tones of this instrument can be heard at every celebration."
                   }
               ]
           },
           "es": {
               "name": "Guinea-Bisáu",
-              "capital": "Bissau",
-              "flagDescription": "La bandera de Guinea-Bisáu.",
+              "capital": "Bisáu",
+              "flagDescription": "La bandera de Guinea-Bisáu tiene dos franjas horizontales: amarilla arriba y verde abajo, con una franja roja vertical a la izquierda que lleva una estrella negra. Los colores panafricanos representan la lucha por la independencia, y la estrella negra simboliza la unidad africana y la dignidad del pueblo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Guinea-Bisáu",
-                      "description": "Guinea-Bisáu es un país en Western Africa."
+                      "icon": "waves",
+                      "title": "¡Hipopótamos en el océano!",
+                      "description": "¡El archipiélago de las Bijagós frente a la costa de Guinea-Bisáu es uno de los reservas biosféricas más singulares de África! Es el único lugar del mundo donde los hipopótamos salvajes nadan entre islas oceánicas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guinea-Bisáu tiene una población de aproximadamente 1.8M."
+                      "icon": "agriculture",
+                      "title": "Capital del anacardo",
+                      "description": "Las nueces de anacardo son el mayor producto de exportación de Guinea-Bisáu. Todo el país huele a flor de anacardo en primavera, y el árbol del anacardo es un símbolo nacional de orgullo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guinea-Bisáu es Bissau."
+                      "icon": "music_note",
+                      "title": "Tierra del balafón",
+                      "description": "El balafón, un xilófono de madera con resonadores de calabaza, es central en la música tradicional de Guinea-Bisáu. Sus ricos y cálidos tonos se escuchan en cada celebración."
                   }
               ]
           }
@@ -5576,44 +5576,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Ivory Coast",
               "capital": "Yamoussoukro",
-              "flagDescription": "The flag of Ivory Coast.",
+              "flagDescription": "Ivory Coast's flag has three equal vertical stripes of orange, white, and green — the reverse mirror image of Ireland's flag! Orange represents the dry savanna in the north, white symbolizes peace and unity, and green stands for the lush forests of the south.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Ivory Coast",
-                      "description": "Ivory Coast is a country in Western Africa."
+                      "icon": "restaurant",
+                      "title": "Chocolate Capital",
+                      "description": "Ivory Coast produces about 40% of the world's cocoa beans — meaning almost half of all the chocolate you've ever eaten likely started as a cacao pod on an Ivorian tree!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Ivory Coast has a population of approximately 31.7M."
+                      "icon": "church",
+                      "title": "World's Largest Church",
+                      "description": "The Basilica of Our Lady of Peace in Yamoussoukro is the world's largest church by area — even bigger than St. Peter's Basilica in Rome! It can hold 18,000 people inside."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Ivory Coast is Yamoussoukro."
+                      "icon": "palette",
+                      "title": "Masterpiece Masks",
+                      "description": "Traditional Dan and Baule wooden masks from Ivory Coast are recognized as masterpieces of world art. Their intricate craftsmanship has influenced artists like Pablo Picasso and inspired modern art movements."
                   }
               ]
           },
           "es": {
               "name": "Costa de Marfil",
-              "capital": "Yamoussoukro",
-              "flagDescription": "La bandera de Costa de Marfil.",
+              "capital": "Yamusukro",
+              "flagDescription": "La bandera de Costa de Marfil tiene tres franjas verticales iguales de naranja, blanco y verde, ¡el espejo invertido de la bandera de Irlanda! El naranja representa la sabana seca del norte, el blanco simboliza la paz y la unidad, y el verde representa los exuberantes bosques del sur.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Costa de Marfil",
-                      "description": "Costa de Marfil es un país en Western Africa."
+                      "icon": "restaurant",
+                      "title": "Capital del chocolate",
+                      "description": "¡Costa de Marfil produce alrededor del 40% de los granos de cacao del mundo! Casi la mitad de todo el chocolate que has comido probablemente comenzó como una mazorca de cacao en un árbol marfileño."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Costa de Marfil tiene una población de aproximadamente 31.7M."
+                      "icon": "church",
+                      "title": "La iglesia más grande del mundo",
+                      "description": "La Basílica de Nuestra Señora de la Paz en Yamusukro es la iglesia más grande del mundo por superficie, ¡incluso más grande que la Basílica de San Pedro en Roma! Puede albergar a 18.000 personas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Costa de Marfil es Yamoussoukro."
+                      "icon": "palette",
+                      "title": "Máscaras maestras",
+                      "description": "Las máscaras de madera tradicionales Dan y Baule de Costa de Marfil son reconocidas como obras maestras del arte mundial. Su artesanía ha influenciado a artistas como Pablo Picasso y ha inspirado el arte moderno."
                   }
               ]
           }
@@ -5916,22 +5916,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Kenia",
               "capital": "Nairobi",
-              "flagDescription": "La bandera de Kenia.",
+              "flagDescription": "La bandera de Kenia tiene tres franjas horizontales: negra, roja y verde, separadas por delgadas bandas blancas. En el centro hay un escudo masái y dos lanzas cruzadas. El negro representa al pueblo, el rojo la sangre derramada por la independencia, el verde el paisaje, y el blanco la paz.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Kenia",
-                      "description": "Kenia es un país en Eastern Africa."
+                      "icon": "sprint",
+                      "title": "Campeones del maratón",
+                      "description": "Kenia ha producido más ganadores olímpicos y del campeonato mundial de maratón que cualquier otro país. El Valle del Rift de gran altitud es considerado la cuna de las carreras de fondo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kenia tiene una población de aproximadamente 53.3M."
+                      "icon": "park",
+                      "title": "La gran migración",
+                      "description": "Cada año, más de 1,5 millones de ñus cruzan desde el Serengeti de Tanzania hasta el Masái Mara de Kenia, la mayor migración de animales terrestres de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kenia es Nairobi."
+                      "icon": "coffee",
+                      "title": "Café de clase mundial",
+                      "description": "El café keniano AA está considerado uno de los mejores del mundo, cultivado en las laderas del monte Kenia a altitudes superiores a 1.500 metros."
                   }
               ]
           }
@@ -6318,44 +6318,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Lesotho",
               "capital": "Maseru",
-              "flagDescription": "The flag of Lesotho.",
+              "flagDescription": "Lesotho's flag has three horizontal stripes — blue at the top, white in the middle, and green at the bottom — with a brown Basotho hat called a mokorotlo in the center. Blue represents rain and the sky, white symbolizes peace, green stands for prosperity, and the hat represents the Sotho people and their culture.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Lesotho",
-                      "description": "Lesotho is a country in Southern Africa."
+                      "icon": "terrain",
+                      "title": "Kingdom in the Sky",
+                      "description": "Lesotho is the only country in the world where every single point of land is above 1,000 meters altitude! It is entirely surrounded by South Africa and nicknamed 'the Kingdom in the Sky'."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Lesotho has a population of approximately 2.1M."
+                      "icon": "landscape",
+                      "title": "Sani Pass",
+                      "description": "Sani Pass is one of the most dramatic mountain roads in southern Africa — a steep, winding track that climbs to over 2,870 meters and crosses the border between Lesotho and South Africa."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Lesotho is Maseru."
+                      "icon": "pets",
+                      "title": "Basotho Pony Trek",
+                      "description": "The sturdy Basotho pony was bred for mountain terrain and is the best way to explore the remote Lesotho highlands. Pony trekking through misty mountain valleys is an unforgettable adventure."
                   }
               ]
           },
           "es": {
-              "name": "Lesotho",
+              "name": "Lesoto",
               "capital": "Maseru",
-              "flagDescription": "La bandera de Lesotho.",
+              "flagDescription": "La bandera de Lesoto tiene tres franjas horizontales: azul arriba, blanca en el centro y verde abajo, con un sombrero Basotho llamado mokorotlo en el centro. El azul representa la lluvia y el cielo, el blanco simboliza la paz, el verde representa la prosperidad, y el sombrero representa al pueblo Sotho y su cultura.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Lesotho",
-                      "description": "Lesotho es un país en Southern Africa."
+                      "icon": "terrain",
+                      "title": "El reino en el cielo",
+                      "description": "¡Lesoto es el único país del mundo donde cada punto del territorio está por encima de los 1.000 metros de altitud! Está completamente rodeado por Sudáfrica y se le llama \"el Reino en el Cielo\"."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Lesotho tiene una población de aproximadamente 2.1M."
+                      "icon": "landscape",
+                      "title": "El paso de Sani",
+                      "description": "El paso de Sani es uno de los caminos de montaña más espectaculares del sur de África: una pista empinada y sinuosa que asciende a más de 2.870 metros y cruza la frontera entre Lesoto y Sudáfrica."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Lesotho es Maseru."
+                      "icon": "pets",
+                      "title": "Cabalgata en poni Basotho",
+                      "description": "El robusto poni Basotho fue criado para el terreno montañoso y es la mejor manera de explorar las remotas tierras altas de Lesoto. Cabalgar a través de neblinosos valles de montaña es una aventura inolvidable."
                   }
               ]
           }
@@ -6371,44 +6371,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Liberia",
               "capital": "Monrovia",
-              "flagDescription": "The flag of Liberia.",
+              "flagDescription": "Liberia's flag has 11 alternating red and white horizontal stripes with a blue square in the top-left corner containing a single white star. The design was inspired by the American flag because Liberia was founded by freed American slaves. Red represents courage, white stands for purity, blue symbolizes freedom, and the lone star represents the first African republic.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Liberia",
-                      "description": "Liberia is a country in Western Africa."
+                      "icon": "history",
+                      "title": "First African Republic",
+                      "description": "Liberia was founded in 1822 by freed African-American slaves returning to Africa, and in 1847 it became the first independent republic in Africa — a powerful symbol of freedom on the continent."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Liberia has a population of approximately 5.2M."
+                      "icon": "forest",
+                      "title": "Pygmy Hippo Homeland",
+                      "description": "The pygmy hippopotamus lives in Liberia's rainforests and is one of Africa's rarest animals. About half the world's surviving pygmy hippos live here, deep in the Sapo National Park forest."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Liberia is Monrovia."
+                      "icon": "agriculture",
+                      "title": "World's Largest Rubber Farm",
+                      "description": "The Firestone rubber plantation established in 1926 covers over 490 square miles — once the world's largest rubber plantation in a single location, supplying rubber for tires and products globally."
                   }
               ]
           },
           "es": {
               "name": "Liberia",
               "capital": "Monrovia",
-              "flagDescription": "La bandera de Liberia.",
+              "flagDescription": "La bandera de Liberia tiene 11 franjas horizontales alternadas rojas y blancas, con un cuadrado azul en la esquina superior izquierda que contiene una estrella blanca. El diseño fue inspirado por la bandera de EE. UU. porque Liberia fue fundada por esclavos estadounidenses liberados. El rojo representa el coraje, el blanco la pureza, el azul la libertad, y la estrella solitaria la primera república africana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Liberia",
-                      "description": "Liberia es un país en Western Africa."
+                      "icon": "history",
+                      "title": "Primera república africana",
+                      "description": "Liberia fue fundada en 1822 por afroamericanos liberados que regresaron a África, y en 1847 se convirtió en la primera república independiente de África, un poderoso símbolo de libertad en el continente."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Liberia tiene una población de aproximadamente 5.2M."
+                      "icon": "forest",
+                      "title": "Hogar del hipopótamo pigmeo",
+                      "description": "El hipopótamo pigmeo vive en las selvas de Liberia y es uno de los animales más raros de África. Aproximadamente la mitad de los hipopótamos pigmeos supervivientes del mundo viven en el Parque Nacional de Sapo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Liberia es Monrovia."
+                      "icon": "agriculture",
+                      "title": "La mayor plantación de caucho del mundo",
+                      "description": "La plantación de caucho de Firestone, establecida en 1926, cubre más de 1.270 km², siendo en su momento la mayor plantación de caucho del mundo, suministrando caucho para neumáticos y otros productos."
                   }
               ]
           }
@@ -6424,44 +6424,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Libya",
               "capital": "Tripoli",
-              "flagDescription": "The flag of Libya.",
+              "flagDescription": "Libya's flag has three horizontal stripes — red at the top, black in the middle, and green at the bottom — with a white crescent moon and star on the black stripe. Red represents valor and the sacrifice of heroes, black recalls the dark era of colonization, green stands for prosperity and Islam, and the crescent and star represent the Islamic faith.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Libya",
-                      "description": "Libya is a country in Northern Africa."
+                      "icon": "history",
+                      "title": "Roman City of Leptis Magna",
+                      "description": "Leptis Magna near Tripoli is one of the best-preserved Roman cities in the entire world. Its enormous amphitheater, marble columns, and arches have stood for nearly 2,000 years!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Libya has a population of approximately 7.5M."
+                      "icon": "landscape",
+                      "title": "Desert Country",
+                      "description": "The Sahara Desert covers over 90% of Libya, making it one of the most desert-dominated countries on Earth. Huge sand seas, rocky plateaus, and ancient dry riverbeds stretch for thousands of kilometers."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Libya is Tripoli."
+                      "icon": "history",
+                      "title": "Prehistoric Rock Art",
+                      "description": "The Fezzan region of southern Libya contains thousands of Stone Age rock paintings depicting giraffes, elephants, and people — from a time when the Sahara was green with lakes and wildlife."
                   }
               ]
           },
           "es": {
               "name": "Libia",
-              "capital": "Tripoli",
-              "flagDescription": "La bandera de Libia.",
+              "capital": "Trípoli",
+              "flagDescription": "La bandera de Libia tiene tres franjas horizontales: roja arriba, negra en el centro y verde abajo, con una media luna y una estrella blancas en la franja negra. El rojo representa el valor y el sacrificio, el negro recuerda la era oscura de la colonización, el verde representa la prosperidad y el Islam, y la media luna y la estrella representan la fe islámica.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Libia",
-                      "description": "Libia es un país en Northern Africa."
+                      "icon": "history",
+                      "title": "Leptis Magna: ciudad romana",
+                      "description": "¡Leptis Magna, cerca de Trípoli, es una de las ciudades romanas mejor conservadas del mundo! Sus enormes anfiteatros, columnas de mármol y arcos han resistido casi 2.000 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Libia tiene una población de aproximadamente 7.5M."
+                      "icon": "landscape",
+                      "title": "País desértico",
+                      "description": "El desierto del Sáhara cubre más del 90% de Libia, lo que la convierte en uno de los países más desérticos del mundo. Enormes mares de arena y mesetas rocosas se extienden por miles de kilómetros."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Libia es Tripoli."
+                      "icon": "history",
+                      "title": "Arte rupestre prehistórico",
+                      "description": "La región de Fezzan, en el sur de Libia, contiene miles de pinturas rupestres de la Edad de Piedra con jirafas, elefantes y personas, de una época en que el Sáhara era verde con lagos y fauna abundante."
                   }
               ]
           }
@@ -6689,44 +6689,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Madagascar",
               "capital": "Antananarivo",
-              "flagDescription": "The flag of Madagascar.",
+              "flagDescription": "Madagascar's flag has a white vertical stripe on the left side and two horizontal stripes on the right — red on top and green on the bottom. White represents purity, red symbolizes sovereignty and the royal Merina people, and green stands for the coastal peoples and hope for the future.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Madagascar",
-                      "description": "Madagascar is a country in Eastern Africa."
+                      "icon": "pets",
+                      "title": "Island of Unique Wildlife",
+                      "description": "About 90% of Madagascar's wildlife exists NOWHERE else on Earth! This includes all 107 lemur species, over half the world's chameleons, and thousands of unique plants — like the famous upside-down-looking baobab trees."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Madagascar has a population of approximately 31.7M."
+                      "icon": "agriculture",
+                      "title": "Vanilla Capital of the World",
+                      "description": "Madagascar produces about 80% of the world's natural vanilla — the most popular flavor in food and ice cream on the planet. Madagascar vanilla is considered the finest in the world."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Madagascar is Antananarivo."
+                      "icon": "water",
+                      "title": "Giant Island",
+                      "description": "Madagascar is the world's 4th largest island — bigger than France! It separated from India about 88 million years ago, which is why its wildlife evolved so differently from everywhere else."
                   }
               ]
           },
           "es": {
               "name": "Madagascar",
               "capital": "Antananarivo",
-              "flagDescription": "La bandera de Madagascar.",
+              "flagDescription": "La bandera de Madagascar tiene una franja vertical blanca a la izquierda y dos franjas horizontales a la derecha: roja arriba y verde abajo. El blanco representa la pureza, el rojo simboliza la soberanía y el pueblo Merina real, y el verde representa a los pueblos costeros y la esperanza para el futuro.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Madagascar",
-                      "description": "Madagascar es un país en Eastern Africa."
+                      "icon": "pets",
+                      "title": "Isla de fauna única",
+                      "description": "¡Aproximadamente el 90% de la fauna de Madagascar no existe en ningún otro lugar de la Tierra! Esto incluye las 107 especies de lémures, más de la mitad de los camaleones del mundo y miles de plantas únicas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Madagascar tiene una población de aproximadamente 31.7M."
+                      "icon": "agriculture",
+                      "title": "Capital mundial de la vainilla",
+                      "description": "Madagascar produce alrededor del 80% de la vainilla natural del mundo, el sabor más popular en alimentos y helados del planeta. La vainilla malgache es considerada la mejor del mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Madagascar es Antananarivo."
+                      "icon": "water",
+                      "title": "Isla gigante",
+                      "description": "Madagascar es la 4ª isla más grande del mundo, ¡más grande que Francia! Se separó de India hace unos 88 millones de años, lo que explica por qué su fauna evolucionó tan diferente al resto del planeta."
                   }
               ]
           }
@@ -6742,44 +6742,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Malawi",
               "capital": "Lilongwe",
-              "flagDescription": "The flag of Malawi.",
+              "flagDescription": "Malawi's flag has three equal horizontal stripes — black at the top, red in the middle, and green at the bottom — with a rising red sun in the center of the black stripe. Black represents the African people, red symbolizes the blood of martyrs who fought for freedom, green stands for Malawi's beautiful nature, and the rising sun represents the dawn of hope for the continent.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Malawi",
-                      "description": "Malawi is a country in Eastern Africa."
+                      "icon": "water",
+                      "title": "Lake of Stars",
+                      "description": "Lake Malawi contains more fish species than any other lake on Earth — over 1,000 types of cichlid fish! The lake is so clear and beautiful it's nicknamed 'the Lake of Stars' because the fishing boats' lanterns reflect like stars at night."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Malawi has a population of approximately 20.7M."
+                      "icon": "pets",
+                      "title": "Africa's Fish Eagle",
+                      "description": "The African fish eagle's piercing cry is one of the most iconic sounds in Africa and serves as Malawi's national symbol. Seeing one swoop down and snatch a fish from the lake is unforgettable."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Malawi is Lilongwe."
+                      "icon": "festival",
+                      "title": "Warm Heart of Africa",
+                      "description": "Malawi is nicknamed 'the Warm Heart of Africa' because its people are famously friendly, welcoming, and joyful. Visitors consistently say it is one of the warmest and most hospitable countries they have ever visited."
                   }
               ]
           },
           "es": {
-              "name": "Malawi",
-              "capital": "Lilongwe",
-              "flagDescription": "La bandera de Malawi.",
+              "name": "Malaui",
+              "capital": "Lilongüe",
+              "flagDescription": "La bandera de Malaui tiene tres franjas horizontales iguales: negra arriba, roja en el centro y verde abajo, con un sol naciente rojo en el centro de la franja negra. El negro representa al pueblo africano, el rojo simboliza la sangre de los mártires que lucharon por la libertad, el verde representa la hermosa naturaleza de Malaui, y el sol naciente representa el amanecer de esperanza para el continente.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Malawi",
-                      "description": "Malawi es un país en Eastern Africa."
+                      "icon": "water",
+                      "title": "El lago de las estrellas",
+                      "description": "El lago Malaui contiene más especies de peces que cualquier otro lago de la Tierra: ¡más de 1.000 tipos de peces cíclidos! El lago es tan claro y hermoso que se le llama \"el Lago de las Estrellas\" porque las linternas de los pescadores se reflejan como estrellas de noche."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Malawi tiene una población de aproximadamente 20.7M."
+                      "icon": "pets",
+                      "title": "El águila pescadora africana",
+                      "description": "El penetrante grito del águila pescadora africana es uno de los sonidos más icónicos de África y sirve como símbolo nacional de Malaui. Ver a una abalanzarse y atrapar un pez del lago es inolvidable."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Malawi es Lilongwe."
+                      "icon": "festival",
+                      "title": "El corazón cálido de África",
+                      "description": "Malaui tiene el apodo de \"el Corazón Cálido de África\" porque su gente es famosa por su amabilidad y hospitalidad. Los visitantes dicen que es uno de los países más acogedores que han conocido."
                   }
               ]
           }
@@ -6901,44 +6901,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Mali",
               "capital": "Bamako",
-              "flagDescription": "The flag of Mali.",
+              "flagDescription": "Mali's flag has three equal vertical stripes of green, yellow, and red — the Pan-African colors. Green represents hope and the forests of the south, yellow symbolizes the gold and mineral wealth that made ancient Mali famous, and red stands for the blood shed for independence.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mali",
-                      "description": "Mali is a country in Western Africa."
+                      "icon": "history",
+                      "title": "Timbuktu: City of Gold",
+                      "description": "Timbuktu was one of the world's greatest centers of learning in the 14th century, with a famous university and over 700,000 ancient manuscripts still preserved there — a treasure trove of African knowledge."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mali has a population of approximately 22.4M."
+                      "icon": "castle",
+                      "title": "Great Mud Mosque",
+                      "description": "The Great Mosque of Djenné is the world's largest mud-brick building. Every year, the entire community comes together to replaster it — one of the most remarkable communal traditions in the world."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mali is Bamako."
+                      "icon": "landscape",
+                      "title": "Dogon Cliff Villages",
+                      "description": "The Dogon people have built their villages in the cliffs of the Bandiagara Escarpment for centuries. Their unique architecture, cosmology, and art have fascinated people worldwide."
                   }
               ]
           },
           "es": {
-              "name": "Mali",
+              "name": "Malí",
               "capital": "Bamako",
-              "flagDescription": "La bandera de Mali.",
+              "flagDescription": "La bandera de Malí tiene tres franjas verticales iguales de verde, amarillo y rojo, los colores panafricanos. El verde representa la esperanza y los bosques del sur, el amarillo simboliza el oro y la riqueza mineral que hizo famoso al antiguo Mali, y el rojo representa la sangre derramada por la independencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mali",
-                      "description": "Mali es un país en Western Africa."
+                      "icon": "history",
+                      "title": "Tombuctú: la ciudad de oro",
+                      "description": "Tombuctú fue uno de los mayores centros de aprendizaje del mundo en el siglo XIV, con una famosa universidad y más de 700.000 manuscritos antiguos aún conservados, un tesoro del conocimiento africano."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mali tiene una población de aproximadamente 22.4M."
+                      "icon": "castle",
+                      "title": "La gran mezquita de barro",
+                      "description": "La Gran Mezquita de Djenné es el mayor edificio de adobe del mundo. Cada año, toda la comunidad se reúne para revocarlo, ¡una de las tradiciones comunitarias más notables del mundo!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mali es Bamako."
+                      "icon": "landscape",
+                      "title": "Aldeas Dogon en los acantilados",
+                      "description": "El pueblo Dogon ha construido sus aldeas en los acantilados del Escarpe de Bandiagara durante siglos. Su arquitectura única, cosmología y arte han fascinado al mundo entero."
                   }
               ]
           }
@@ -7113,44 +7113,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Mauritania",
               "capital": "Nouakchott",
-              "flagDescription": "The flag of Mauritania.",
+              "flagDescription": "Mauritania's flag is green with a gold crescent moon and a gold five-pointed star in the center, plus thin red stripes at the top and bottom (added in 2017). Green and gold represent Islam and the Saharan heritage of the country, while the red stripes symbolize the blood and effort of the Mauritanian people.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mauritania",
-                      "description": "Mauritania is a country in Western Africa."
+                      "icon": "history",
+                      "title": "Ancient Manuscript Libraries",
+                      "description": "The medieval city of Chinguetti contains ancient libraries with hundreds of thousands of priceless manuscripts from the 13th century — a treasure of Islamic scholarship in the middle of the Sahara Desert."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mauritania has a population of approximately 4.9M."
+                      "icon": "train",
+                      "title": "World's Longest Train",
+                      "description": "The Mauritanian Iron Ore Train runs nearly 700 km through the Sahara Desert and is sometimes over 2 km long — one of the longest trains in the world! Adventurous travelers ride on top of the iron ore cars."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mauritania is Nouakchott."
+                      "icon": "pets",
+                      "title": "Millions of Migratory Birds",
+                      "description": "Banc d'Arguin National Park (UNESCO) is one of the world's most important stopovers for migratory birds. Millions of flamingos, pelicans, and wading birds rest here on their journey between Europe and Africa."
                   }
               ]
           },
           "es": {
               "name": "Mauritania",
-              "capital": "Nouakchott",
-              "flagDescription": "La bandera de Mauritania.",
+              "capital": "Nuakchot",
+              "flagDescription": "La bandera de Mauritania es verde con una media luna dorada y una estrella dorada de cinco puntas en el centro, más delgadas franjas rojas en la parte superior e inferior (añadidas en 2017). El verde y el dorado representan el Islam y el patrimonio sahariano, mientras que las franjas rojas simbolizan la sangre y el esfuerzo del pueblo mauritano.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mauritania",
-                      "description": "Mauritania es un país en Western Africa."
+                      "icon": "history",
+                      "title": "Bibliotecas de manuscritos ancestrales",
+                      "description": "La ciudad medieval de Chinguetti contiene antiguas bibliotecas con cientos de miles de manuscritos del siglo XIII, un tesoro de sabiduría islámica en medio del desierto del Sáhara."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mauritania tiene una población de aproximadamente 4.9M."
+                      "icon": "train",
+                      "title": "El tren más largo del mundo",
+                      "description": "El tren de mineral de hierro de Mauritania recorre casi 700 km a través del Sáhara y a veces supera los 2 km de longitud, ¡uno de los más largos del mundo! Los viajeros aventureros montan sobre los vagones de mineral."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mauritania es Nouakchott."
+                      "icon": "pets",
+                      "title": "Millones de aves migratorias",
+                      "description": "El Parque Nacional Banc d'Arguin (UNESCO) es uno de los puntos de parada más importantes del mundo para las aves migratorias. Millones de flamencos, pelícanos y limícolas descansan aquí en su viaje entre Europa y África."
                   }
               ]
           }
@@ -7166,44 +7166,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Mauritius",
               "capital": "Port Louis",
-              "flagDescription": "The flag of Mauritius.",
+              "flagDescription": "The Mauritius flag has four equal horizontal stripes of red, blue, yellow, and green — one of the most colorful flags in Africa. Red represents the nation and the blood of independence, blue symbolizes the Indian Ocean that surrounds the island, yellow stands for the bright light of freedom, and green represents the lush vegetation of this tropical island.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mauritius",
-                      "description": "Mauritius is a country in Eastern Africa."
+                      "icon": "pets",
+                      "title": "Home of the Dodo",
+                      "description": "The dodo bird lived only on Mauritius and became extinct around 1690 after sailors and their animals arrived on the island. It became one of the most famous examples of human-caused extinction in history."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mauritius has a population of approximately 1.2M."
+                      "icon": "restaurant",
+                      "title": "Cultural Melting Pot",
+                      "description": "Mauritius has a beautiful blend of Indian, African, European, and Chinese cultures reflected in its food, music, and festivals. Dishes like dholl puri (flatbread with lentils) and the rougaille (tomato stew) tell the story of the island."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mauritius is Port Louis."
+                      "icon": "waves",
+                      "title": "Lagoon Paradise",
+                      "description": "Mauritius is surrounded by a coral reef that creates stunning calm lagoons perfect for snorkeling. Colorful fish, sea turtles, and dolphins swim in the warm turquoise waters year-round."
                   }
               ]
           },
           "es": {
               "name": "Mauricio",
               "capital": "Port Louis",
-              "flagDescription": "La bandera de Mauricio.",
+              "flagDescription": "La bandera de Mauricio tiene cuatro franjas horizontales iguales de rojo, azul, amarillo y verde, una de las banderas más coloridas de África. El rojo representa la nación y la sangre de la independencia, el azul simboliza el Océano Índico que rodea la isla, el amarillo representa la luz brillante de la libertad, y el verde la exuberante vegetación tropical.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mauricio",
-                      "description": "Mauricio es un país en Eastern Africa."
+                      "icon": "pets",
+                      "title": "El hogar del dodo",
+                      "description": "El dodo vivió solo en Mauricio y se extinguió hacia 1690 tras la llegada de marineros y sus animales a la isla. Se convirtió en uno de los ejemplos más famosos de extinción causada por los seres humanos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mauricio tiene una población de aproximadamente 1.2M."
+                      "icon": "restaurant",
+                      "title": "Crisol cultural",
+                      "description": "Mauricio tiene una hermosa mezcla de culturas india, africana, europea y china reflejada en su gastronomía, música y festividades. Platos como el dholl puri y la rougaille cuentan la historia de la isla."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mauricio es Port Louis."
+                      "icon": "waves",
+                      "title": "Paraíso de lagunas",
+                      "description": "Mauricio está rodeado por un arrecife de coral que crea impresionantes lagunas tranquilas perfectas para el snorkel. Peces de colores, tortugas marinas y delfines nadan en sus cálidas aguas turquesas todo el año."
                   }
               ]
           }
@@ -7219,44 +7219,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Mayotte",
               "capital": "Mamoudzou",
-              "flagDescription": "The flag of Mayotte.",
+              "flagDescription": "As a French overseas department, Mayotte uses the French flag — three equal vertical stripes of blue, white, and red. The island also has its own coat of arms featuring two ylang-ylang flowers, which grow abundantly here and are famous for their sweet fragrance.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mayotte",
-                      "description": "Mayotte is a country in Eastern Africa."
+                      "icon": "waves",
+                      "title": "Giant Lagoon",
+                      "description": "Mayotte has one of the world's largest naturally enclosed lagoons, protecting incredible marine life including nesting sea turtles, colorful coral reefs, and bottlenose dolphins that play in the warm waters."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mayotte has a population of approximately 321K."
+                      "icon": "local_florist",
+                      "title": "Ylang-Ylang Paradise",
+                      "description": "Ylang-ylang flowers grow abundantly in Mayotte and are harvested to make some of the world's most famous perfumes. The sweet, exotic scent fills the air across the island."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mayotte is Mamoudzou."
+                      "icon": "pets",
+                      "title": "Home of Dugongs",
+                      "description": "Dugongs — rare sea mammals related to manatees — live in the seagrass beds of Mayotte's lagoon. These gentle creatures can live up to 70 years and are a protected species."
                   }
               ]
           },
           "es": {
               "name": "Mayotte",
               "capital": "Mamoudzou",
-              "flagDescription": "La bandera de Mayotte.",
+              "flagDescription": "Como departamento de ultramar francés, Mayotte usa la bandera de Francia: tres franjas verticales iguales de azul, blanco y rojo. La isla también tiene su propio escudo con dos flores de ylang-ylang, que crecen abundantemente aquí y son famosas por su dulce fragancia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mayotte",
-                      "description": "Mayotte es un país en Eastern Africa."
+                      "icon": "waves",
+                      "title": "Laguna gigante",
+                      "description": "Mayotte tiene una de las lagunas naturalmente cerradas más grandes del mundo, que protege increíble vida marina: tortugas marinas, coloridos arrecifes de coral y delfines nariz de botella que juegan en sus aguas cálidas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mayotte tiene una población de aproximadamente 321K."
+                      "icon": "local_florist",
+                      "title": "Paraíso del ylang-ylang",
+                      "description": "Las flores de ylang-ylang crecen abundantemente en Mayotte y se cosechan para elaborar algunos de los perfumes más famosos del mundo. Su dulce y exótico aroma impregna el aire de la isla."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mayotte es Mamoudzou."
+                      "icon": "pets",
+                      "title": "Hogar de dugongos",
+                      "description": "Los dugongos, raros mamíferos marinos emparentados con los manatíes, viven en los lechos de hierbas marinas de la laguna de Mayotte. Estas criaturas gentiles pueden vivir hasta 70 años y son una especie protegida."
                   }
               ]
           }
@@ -7665,22 +7665,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Marruecos",
               "capital": "Rabat",
-              "flagDescription": "La bandera de Marruecos.",
+              "flagDescription": "La bandera de Marruecos es de color rojo brillante con un pentáculo verde (estrella de cinco puntas) en el centro, llamado Sello de Salomón. El rojo representa la fortaleza y la valentía, mientras que el verde simboliza la esperanza, la alegría y el amor.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Marruecos",
-                      "description": "Marruecos es un país en Northern Africa."
+                      "icon": "castle",
+                      "title": "Medinas antiguas",
+                      "description": "La medina de Fez es el área urbana libre de coches más grande del mundo, Patrimonio de la Humanidad de la UNESCO, con calles tan estrechas que apenas pueden cruzarse dos burros."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Marruecos tiene una población de aproximadamente 36.8M."
+                      "icon": "landscape",
+                      "title": "Puerta del Sáhara",
+                      "description": "Marruecos es uno de los mejores lugares para experimentar el desierto del Sáhara. Las dunas de Erg Chebbi cerca de Merzouga pueden alcanzar los 150 metros de altura."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Marruecos es Rabat."
+                      "icon": "restaurant",
+                      "title": "Tradición del tajín",
+                      "description": "El tajín, un guiso cocinado a fuego lento en una olla de barro cónica del mismo nombre, ha sido un pilar de la cocina marroquí durante miles de años."
                   }
               ]
           }
@@ -7696,44 +7696,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Mozambique",
               "capital": "Maputo",
-              "flagDescription": "The flag of Mozambique.",
+              "flagDescription": "Mozambique's flag has three horizontal stripes of green, black, and yellow (separated by thin white lines) with a red triangle on the left side. Inside the red triangle is a white book (representing education), a hoe (for agriculture), and an AK-47 rifle (symbolizing defense). Green represents the land, black the African continent, yellow the minerals, and red the independence struggle.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Mozambique",
-                      "description": "Mozambique is a country in Eastern Africa."
+                      "icon": "castle",
+                      "title": "Island of Mozambique",
+                      "description": "Mozambique Island was the Portuguese colonial capital for 500 years and its old stone fort, chapel, and palaces are a UNESCO World Heritage Site — one of Africa's most atmospheric historic towns."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Mozambique has a population of approximately 34.1M."
+                      "icon": "waves",
+                      "title": "Whale Shark Hotspot",
+                      "description": "Whale sharks cruise Mozambique's warm waters year-round, and the Bazaruto Archipelago has some of the best coral reefs in Africa — a paradise for divers and snorkelers."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Mozambique is Maputo."
+                      "icon": "restaurant",
+                      "title": "Peri-Peri Prawns",
+                      "description": "Mozambique is famous for its enormous freshwater prawns cooked with peri-peri chili sauce — a fiery and delicious dish that has spread worldwide. South Africa's Nando's restaurant chain was inspired by Mozambican flavors."
                   }
               ]
           },
           "es": {
               "name": "Mozambique",
               "capital": "Maputo",
-              "flagDescription": "La bandera de Mozambique.",
+              "flagDescription": "La bandera de Mozambique tiene tres franjas horizontales de verde, negro y amarillo (separadas por delgadas líneas blancas) con un triángulo rojo a la izquierda. Dentro del triángulo hay un libro blanco (educación), una azada (agricultura) y un fusil AK-47 (defensa). El verde representa la tierra, el negro el continente africano, el amarillo los minerales y el rojo la lucha por la independencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mozambique",
-                      "description": "Mozambique es un país en Eastern Africa."
+                      "icon": "castle",
+                      "title": "La isla de Mozambique",
+                      "description": "La isla de Mozambique fue la capital colonial portuguesa durante 500 años, y su antiguo fuerte de piedra, capilla y palacios son Patrimonio Mundial de la UNESCO, uno de los pueblos históricos más evocadores de África."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mozambique tiene una población de aproximadamente 34.1M."
+                      "icon": "waves",
+                      "title": "Punto caliente del tiburón ballena",
+                      "description": "Los tiburones ballena navegan por las aguas cálidas de Mozambique durante todo el año, y el archipiélago de Bazaruto tiene algunos de los mejores arrecifes de coral de África, un paraíso para buceadores."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mozambique es Maputo."
+                      "icon": "restaurant",
+                      "title": "Gambas al peri-peri",
+                      "description": "Mozambique es famoso por sus enormes gambas de agua dulce cocinadas con salsa de chile peri-peri, un plato picante y delicioso que se ha extendido por todo el mundo. La cadena Nando's se inspiró en los sabores mozambiqueños."
                   }
               ]
           }
@@ -7802,44 +7802,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Namibia",
               "capital": "Windhoek",
-              "flagDescription": "The flag of Namibia.",
+              "flagDescription": "Namibia's flag has a diagonal red band (bordered by white) running from the lower-left to the upper-right, with a green triangle in the upper-left and a blue triangle in the lower-right. A golden sun with 12 rays shines from the upper-left. Blue represents the sky and the Atlantic Ocean, red symbolizes the people and their heroism, green stands for vegetation, and the gold sun represents life and energy.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Namibia",
-                      "description": "Namibia is a country in Southern Africa."
+                      "icon": "landscape",
+                      "title": "Oldest Desert on Earth",
+                      "description": "The Namib Desert is the oldest desert on Earth at approximately 55 million years old! Its towering orange sand dunes at Sossusvlei can reach 300 meters — some of the tallest in the world."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Namibia has a population of approximately 3.0M."
+                      "icon": "pets",
+                      "title": "Desert Elephants",
+                      "description": "Desert-adapted elephants in Namibia have learned to survive for days without water by traveling vast distances through the desert. They have longer legs and wider feet than regular elephants."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Namibia is Windhoek."
+                      "icon": "anchor",
+                      "title": "Skeleton Coast",
+                      "description": "The Skeleton Coast is one of the world's most dramatic and desolate shorelines, littered with shipwrecks and whale bones from when sailors called it 'the Gates of Hell'. Today it is a protected wilderness."
                   }
               ]
           },
           "es": {
               "name": "Namibia",
               "capital": "Windhoek",
-              "flagDescription": "La bandera de Namibia.",
+              "flagDescription": "La bandera de Namibia tiene una banda roja diagonal (bordeada de blanco) que va de la esquina inferior izquierda a la superior derecha, con un triángulo verde arriba a la izquierda y uno azul abajo a la derecha. Un sol dorado con 12 rayos brilla desde la esquina superior izquierda. El azul representa el cielo y el Océano Atlántico, el rojo simboliza al pueblo y su heroísmo, el verde representa la vegetación, y el sol dorado la vida y la energía.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Namibia",
-                      "description": "Namibia es un país en Southern Africa."
+                      "icon": "landscape",
+                      "title": "El desierto más antiguo de la Tierra",
+                      "description": "¡El desierto de Namib es el desierto más antiguo de la Tierra, con aproximadamente 55 millones de años! Sus imponentes dunas anaranjadas en Sossusvlei pueden alcanzar 300 metros de altura, algunas de las más altas del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Namibia tiene una población de aproximadamente 3.0M."
+                      "icon": "pets",
+                      "title": "Elefantes del desierto",
+                      "description": "Los elefantes adaptados al desierto en Namibia han aprendido a sobrevivir días sin agua recorriendo grandes distancias. Tienen patas más largas y pies más anchos que los elefantes normales."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Namibia es Windhoek."
+                      "icon": "anchor",
+                      "title": "La Costa de los Esqueletos",
+                      "description": "La Costa de los Esqueletos es una de las orillas más dramáticas y desoladas del mundo, plagada de naufragios y huesos de ballenas. Los marineros la llamaban 'las Puertas del Infierno'. Hoy es un santuario protegido."
                   }
               ]
           }
@@ -8173,44 +8173,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Niger",
               "capital": "Niamey",
-              "flagDescription": "The flag of Niger.",
+              "flagDescription": "Niger's flag has three equal horizontal stripes — orange at the top, white in the middle, and green at the bottom — with an orange circle in the center of the white stripe. Orange represents the Sahara Desert in the north, white symbolizes purity and the Niger River, green stands for the fertile grasslands of the south, and the orange circle represents the sun.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Niger",
-                      "description": "Niger is a country in Western Africa."
+                      "icon": "science",
+                      "title": "Uranium Superpower",
+                      "description": "Niger is one of the world's largest producers of uranium, which is used to generate nuclear electricity in France and other countries. About 15% of France's electricity comes from Nigerien uranium."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Niger has a population of approximately 26.3M."
+                      "icon": "pets",
+                      "title": "Last West African Giraffes",
+                      "description": "A small but growing population of wild West African giraffes lives near Niamey — the only giraffes remaining in all of West Africa! Niger is working hard to protect and grow this herd."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Niger is Niamey."
+                      "icon": "history",
+                      "title": "Ancient Agadez Mosque",
+                      "description": "The spectacular Agadez Mosque has a towering minaret built entirely from mud and wood, regularly repaired by the community. Agadez was once a thriving crossroads of trans-Saharan camel trade routes."
                   }
               ]
           },
           "es": {
               "name": "Níger",
               "capital": "Niamey",
-              "flagDescription": "La bandera de Níger.",
+              "flagDescription": "La bandera de Níger tiene tres franjas horizontales iguales: naranja arriba, blanca en el centro y verde abajo, con un círculo naranja en el centro de la franja blanca. El naranja representa el desierto del Sáhara en el norte, el blanco simboliza la pureza y el río Níger, el verde representa las fértiles llanuras del sur, y el círculo naranja representa el sol.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Níger",
-                      "description": "Níger es un país en Western Africa."
+                      "icon": "science",
+                      "title": "Gran productor de uranio",
+                      "description": "Níger es uno de los mayores productores mundiales de uranio, que se usa para generar electricidad nuclear en Francia y otros países. Alrededor del 15% de la electricidad francesa proviene del uranio nigerino."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Níger tiene una población de aproximadamente 26.3M."
+                      "icon": "pets",
+                      "title": "Las últimas jirafas de África Occidental",
+                      "description": "Una pequeña pero creciente población de jirafas salvajes del África Occidental vive cerca de Niamey, ¡las únicas jirafas que quedan en toda África Occidental! Níger trabaja para proteger y hacer crecer esta manada."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Níger es Niamey."
+                      "icon": "history",
+                      "title": "La mezquita de Agadez",
+                      "description": "La espectacular mezquita de Agadez tiene un minarete construido enteramente de barro y madera, reparado regularmente por la comunidad. Agadez fue una vez un próspero cruce de rutas caravaneras transsaharianas."
                   }
               ]
           }
@@ -8247,23 +8247,23 @@ export const countriesData: CountryEntry[] = [
           },
           "es": {
               "name": "Nigeria",
-              "capital": "Abuja",
-              "flagDescription": "La bandera de Nigeria.",
+              "capital": "Abuya",
+              "flagDescription": "La bandera de Nigeria tiene dos franjas verdes verticales que enmarcan una franja central blanca. El verde representa las fértiles tierras agrícolas y los bosques de Nigeria, mientras que el blanco simboliza la paz y la unidad entre los muchos grupos étnicos del país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Nigeria",
-                      "description": "Nigeria es un país en Western Africa."
-                  },
-                  {
                       "icon": "groups",
-                      "title": "Población",
-                      "description": "Nigeria tiene una población de aproximadamente 223.8M."
+                      "title": "El más poblado de África",
+                      "description": "Nigeria es la nación más poblada de África, con más de 218 millones de habitantes. Uno de cada seis africanos es nigeriano."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nigeria es Abuja."
+                      "icon": "movie",
+                      "title": "Nollywood",
+                      "description": "La industria cinematográfica de Nigeria, Nollywood, produce más de 2.500 películas al año, lo que la convierte en la segunda industria cinematográfica del mundo por volumen, por delante de Hollywood."
+                  },
+                  {
+                      "icon": "terrain",
+                      "title": "Culturas diversas",
+                      "description": "Nigeria tiene más de 500 grupos étnicos y lenguas distintos. Los tres más grandes, hausa-fulani, yoruba e igbo, tienen ricas tradiciones, música y arte propios."
                   }
               ]
           }
@@ -9339,44 +9339,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Republic of the Congo",
               "capital": "Brazzaville",
-              "flagDescription": "The flag of Republic of the Congo.",
+              "flagDescription": "The Republic of the Congo's flag has three diagonal stripes running from the lower-left to the upper-right — green at the top-left, yellow in the center, and red at the bottom-right. These Pan-African colors were given a unique diagonal arrangement when the flag was adopted in 1958, making it stand out from other African flags.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Republic of the Congo",
-                      "description": "Republic of the Congo is a country in Middle Africa."
+                      "icon": "water",
+                      "title": "Twin Capitals Across the River",
+                      "description": "Brazzaville (Congo) and Kinshasa (DR Congo) face each other across the Congo River — the only two capital cities in the entire world that are directly visible to each other from across a river!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Republic of the Congo has a population of approximately 6.1M."
+                      "icon": "forest",
+                      "title": "Congo Basin Rainforest",
+                      "description": "The Congo Basin rainforest extends into this country, sheltering western lowland gorillas, forest elephants, and bonobos. It is one of Earth's most critical ecosystems for absorbing carbon dioxide."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Republic of the Congo is Brazzaville."
+                      "icon": "water",
+                      "title": "World's Deepest River",
+                      "description": "The Congo River, which borders the country, is the deepest river on Earth (over 220 meters in places) and the second most powerful river by water volume after the Amazon."
                   }
               ]
           },
           "es": {
-              "name": "Congo",
+              "name": "República del Congo",
               "capital": "Brazzaville",
-              "flagDescription": "La bandera de Congo.",
+              "flagDescription": "La bandera de la República del Congo tiene tres franjas diagonales que van de la esquina inferior izquierda a la superior derecha: verde arriba a la izquierda, amarilla en el centro y roja abajo a la derecha. Estos colores panafricanos recibieron un arreglo diagonal único cuando se adoptó la bandera en 1958.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Congo",
-                      "description": "Congo es un país en Middle Africa."
+                      "icon": "water",
+                      "title": "Capitales gemelas frente al río",
+                      "description": "¡Brazzaville (Congo) y Kinshasa (RD Congo) se miran a través del río Congo, las dos únicas capitales del mundo directamente visibles entre sí a través de un río!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Congo tiene una población de aproximadamente 6.1M."
+                      "icon": "forest",
+                      "title": "Selva de la cuenca del Congo",
+                      "description": "La selva de la cuenca del Congo se extiende por este país, albergando gorilas de llanura occidental, elefantes forestales y bonobos. Es uno de los ecosistemas más importantes de la Tierra para absorber CO₂."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Congo es Brazzaville."
+                      "icon": "water",
+                      "title": "El río más profundo del mundo",
+                      "description": "El río Congo, que bordea el país, es el río más profundo de la Tierra (más de 220 metros en algunos puntos) y el segundo más poderoso por volumen de agua tras el Amazonas."
                   }
               ]
           }
@@ -9392,44 +9392,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Réunion",
               "capital": "Saint-Denis",
-              "flagDescription": "The flag of Réunion.",
+              "flagDescription": "As a French overseas department, Réunion uses the French flag — three equal vertical stripes of blue, white, and red. The island has its own local flag featuring a volcano, a sun, and tropical flowers, but officially it flies the tricolor of France.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Réunion",
-                      "description": "Réunion is a country in Eastern Africa."
+                      "icon": "volcano",
+                      "title": "One of the Most Active Volcanoes",
+                      "description": "Réunion's Piton de la Fournaise volcano erupts on average once a year and is one of the world's most active volcanoes! Watching the lava flow into the sea at night is an incredible spectacle."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Réunion has a population of approximately 896K."
+                      "icon": "landscape",
+                      "title": "Spectacular Cirques",
+                      "description": "The island has three ancient volcanic calderas called 'cirques' — Cilaos, Mafate, and Salazie — that are filled with lush jungle, waterfalls, and dramatic cliffs perfect for hiking and trekking."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Réunion is Saint-Denis."
+                      "icon": "restaurant",
+                      "title": "Creole Culture Fusion",
+                      "description": "Réunion's culture beautifully blends African, Indian, European, and Chinese traditions in its food, music, and festivals. The island is famous for its spicy Creole dishes and colorful celebrations."
                   }
               ]
           },
           "es": {
               "name": "Reunión",
               "capital": "Saint-Denis",
-              "flagDescription": "La bandera de Reunión.",
+              "flagDescription": "Como departamento de ultramar francés, Reunión usa la bandera de Francia: tres franjas verticales iguales de azul, blanco y rojo. La isla tiene su propia bandera local con un volcán, un sol y flores tropicales, pero oficialmente ondea el tricolor de Francia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Reunión",
-                      "description": "Reunión es un país en Eastern Africa."
+                      "icon": "volcano",
+                      "title": "Uno de los volcanes más activos",
+                      "description": "El volcán Piton de la Fournaise de Reunión hace erupción en promedio una vez al año y es uno de los volcanes más activos del mundo. ¡Ver la lava fluir al mar de noche es un espectáculo increíble!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Reunión tiene una población de aproximadamente 896K."
+                      "icon": "landscape",
+                      "title": "Circos volcánicos espectaculares",
+                      "description": "La isla tiene tres calderas volcánicas antiguas llamadas 'circos': Cilaos, Mafate y Salazie, llenas de selva exuberante, cascadas y acantilados dramáticos, perfectos para el senderismo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Reunión es Saint-Denis."
+                      "icon": "restaurant",
+                      "title": "Fusión cultural criolla",
+                      "description": "La cultura de Reunión mezcla de forma preciosa tradiciones africanas, indias, europeas y chinas en su gastronomía, música y festividades. La isla es famosa por sus picantes platos criollos y coloridas celebraciones."
                   }
               ]
           }
@@ -9573,22 +9573,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Ruanda",
               "capital": "Kigali",
-              "flagDescription": "La bandera de Ruanda.",
+              "flagDescription": "La bandera de Ruanda tiene tres franjas horizontales de azul (arriba, ocupando la mitad), amarillo y verde. Un sol dorado de 24 rayos aparece en la esquina superior derecha de la franja azul, simbolizando la unidad, el trabajo y el orgullo nacional.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Ruanda",
-                      "description": "Ruanda es un país en Eastern Africa."
+                      "icon": "forest",
+                      "title": "Refugio del gorila de montaña",
+                      "description": "El Parque Nacional de los Volcanes de Ruanda alberga aproximadamente la mitad de los gorilas de montaña restantes en el mundo. El trekking de gorilas aquí es una de las experiencias de fauna más memorables del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Ruanda tiene una población de aproximadamente 14.1M."
+                      "icon": "recycling",
+                      "title": "La ciudad más verde de África",
+                      "description": "Kigali es considerada la capital más limpia y organizada de África. Ruanda prohibió las bolsas de plástico en 2008, años antes que la mayoría de los países desarrollados."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Ruanda es Kigali."
+                      "icon": "female",
+                      "title": "El parlamento más femenino",
+                      "description": "Ruanda tiene el mayor porcentaje de mujeres en el parlamento del mundo, con más del 60%, liderando el mundo en igualdad de género en el gobierno."
                   }
               ]
           }
@@ -9657,44 +9657,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Saint Helena, Ascension and Tristan da Cunha",
               "capital": "Jamestown",
-              "flagDescription": "The flag of Saint Helena, Ascension and Tristan da Cunha.",
+              "flagDescription": "The flag of Saint Helena, Ascension and Tristan da Cunha has a blue background with the Union Jack of the United Kingdom in the top-left corner and the territory's coat of arms on the right. The coat of arms features a Saint Helena wirebird — a rare wading bird found only on this island — and a sailing ship.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Saint Helena, Ascension and Tristan da Cunha",
-                      "description": "Saint Helena, Ascension and Tristan da Cunha is a country in Western Africa."
+                      "icon": "history",
+                      "title": "Napoleon's Last Home",
+                      "description": "Napoleon Bonaparte was exiled to the remote island of Saint Helena after his defeat at the Battle of Waterloo in 1815. He lived on this tiny island until his death in 1821 — it was his last home."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Helena, Ascension and Tristan da Cunha has a population of approximately 6K."
+                      "icon": "landscape",
+                      "title": "Most Remote Inhabited Island",
+                      "description": "Tristan da Cunha is the most remote inhabited island in the entire world — the nearest land is 2,437 km away! The island's small community of about 250 people grows vegetables and fishes for their living."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Helena, Ascension and Tristan da Cunha is Jamestown."
+                      "icon": "pets",
+                      "title": "The Wirebird",
+                      "description": "The Saint Helena wirebird (Saint Helena plover) is found ONLY on Saint Helena island and was nearly extinct, with fewer than 200 remaining. Conservation efforts have helped the population slowly recover."
                   }
               ]
           },
           "es": {
               "name": "Santa Elena, Ascensión y Tristán de Acuña",
               "capital": "Jamestown",
-              "flagDescription": "La bandera de Santa Elena, Ascensión y Tristán de Acuña.",
+              "flagDescription": "La bandera de Santa Elena, Ascensión y Tristán de Acuña tiene un fondo azul con la bandera del Reino Unido en la esquina superior izquierda y el escudo del territorio a la derecha. El escudo muestra un pájaro playero de Santa Elena, un ave limícola rara que solo existe en esta isla, y un velero.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Santa Elena, Ascensión y Tristán de Acuña",
-                      "description": "Santa Elena, Ascensión y Tristán de Acuña es un país en Western Africa."
+                      "icon": "history",
+                      "title": "El último hogar de Napoleón",
+                      "description": "Napoleón Bonaparte fue exiliado a la remota isla de Santa Elena tras su derrota en la batalla de Waterloo en 1815. Vivió en esta pequeña isla hasta su muerte en 1821: fue su último hogar."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Santa Elena, Ascensión y Tristán de Acuña tiene una población de aproximadamente 6K."
+                      "icon": "landscape",
+                      "title": "La isla habitada más remota",
+                      "description": "¡Tristán de Acuña es la isla habitada más remota del mundo: el territorio más cercano está a 2.437 km! Su pequeña comunidad de unas 250 personas cultiva verduras y pesca para vivir."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Santa Elena, Ascensión y Tristán de Acuña es Jamestown."
+                      "icon": "pets",
+                      "title": "El playero alambre",
+                      "description": "El playero alambre de Santa Elena solo existe en la isla de Santa Elena y estuvo al borde de la extinción con menos de 200 individuos. Los esfuerzos de conservación han ayudado a que la población se recupere lentamente."
                   }
               ]
           }
@@ -10081,44 +10081,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "São Tomé and Príncipe",
               "capital": "São Tomé",
-              "flagDescription": "The flag of São Tomé and Príncipe.",
+              "flagDescription": "São Tomé and Príncipe's flag has three horizontal stripes of green, yellow, and green with a red triangle on the left side and two black stars — one for each of the two islands. The Pan-African colors represent the struggle for independence, and the two stars symbolize the twin islands that make up this small nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About São Tomé and Príncipe",
-                      "description": "São Tomé and Príncipe is a country in Middle Africa."
+                      "icon": "restaurant",
+                      "title": "Birthplace of Cacao Farming",
+                      "description": "São Tomé was one of the first places in the world where cacao (chocolate!) was cultivated on large plantations in the 1800s, making the island a key part of chocolate history."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "São Tomé and Príncipe has a population of approximately 210K."
+                      "icon": "forest",
+                      "title": "Biodiversity Hotspot",
+                      "description": "These tiny volcanic islands have extraordinary biodiversity with many unique bird species found nowhere else on Earth. The cloud forests that cover the mountains are home to endemic monkeys and birds."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of São Tomé and Príncipe is São Tomé."
+                      "icon": "volcano",
+                      "title": "Volcanic Mountains from the Sea",
+                      "description": "Dramatic volcanic mountains rise sharply from the ocean and are cloaked in lush tropical cloud forest. Pico Cão Grande (Great Dog Peak) is a spectacular needle-like volcanic plug soaring 370 meters."
                   }
               ]
           },
           "es": {
               "name": "Santo Tomé y Príncipe",
-              "capital": "São Tomé",
-              "flagDescription": "La bandera de Santo Tomé y Príncipe.",
+              "capital": "Santo Tomé",
+              "flagDescription": "La bandera de Santo Tomé y Príncipe tiene tres franjas horizontales de verde, amarillo y verde con un triángulo rojo a la izquierda y dos estrellas negras, una por cada isla. Los colores panafricanos representan la lucha por la independencia, y las dos estrellas simbolizan las dos islas que forman esta pequeña nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Santo Tomé y Príncipe",
-                      "description": "Santo Tomé y Príncipe es un país en Middle Africa."
+                      "icon": "restaurant",
+                      "title": "Cuna del cultivo del cacao",
+                      "description": "Santo Tomé fue uno de los primeros lugares del mundo donde se cultivó cacao (¡chocolate!) en grandes plantaciones en el siglo XIX, convirtiéndola en parte clave de la historia del chocolate."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Santo Tomé y Príncipe tiene una población de aproximadamente 210K."
+                      "icon": "forest",
+                      "title": "Punto de gran biodiversidad",
+                      "description": "Estas pequeñas islas volcánicas tienen una biodiversidad extraordinaria con muchas especies de aves únicas que no existen en ningún otro lugar. Los bosques de niebla que cubren las montañas albergan monos y aves endémicas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Santo Tomé y Príncipe es São Tomé."
+                      "icon": "volcano",
+                      "title": "Montañas volcánicas sobre el océano",
+                      "description": "Las dramáticas montañas volcánicas se elevan abruptamente del océano cubiertas de selva tropical. El Pico Cão Grande ('Pico del Gran Perro') es un impresionante pitón volcánico de 370 metros de altura."
                   }
               ]
           }
@@ -10209,22 +10209,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Senegal",
               "capital": "Dakar",
-              "flagDescription": "La bandera de Senegal.",
+              "flagDescription": "La bandera de Senegal tiene tres franjas verticales de verde, amarillo y rojo, con una estrella verde de cinco puntas en el centro. Los colores panafricanos representan la esperanza (verde), la riqueza (amarillo) y la sangre de los mártires (rojo).",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Senegal",
-                      "description": "Senegal es un país en Western Africa."
+                      "icon": "sports_soccer",
+                      "title": "Nación de luchadores",
+                      "description": "La lucha tradicional senegalesa (laamb) es el deporte más popular del país, más que el fútbol. Los campeones son celebrados como héroes nacionales."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Senegal tiene una población de aproximadamente 18.6M."
+                      "icon": "music_note",
+                      "title": "Música mbalax",
+                      "description": "El mbalax, un género musical rítmico que mezcla percusión wolof tradicional con jazz, es el sonido distintivo de Senegal. La superestrella Youssou N'Dour lo llevó a las audiencias de todo el mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Senegal es Dakar."
+                      "icon": "landscape",
+                      "title": "El lago rosa",
+                      "description": "El lago Retba (Lac Rose), cerca de Dakar, tiene un agua de color rosa chicle causada por un microorganismo que ama la sal. Con un 40% de salinidad, más salado que el Mar Muerto, los nadadores flotan sin esfuerzo."
                   }
               ]
           }
@@ -10293,44 +10293,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Seychelles",
               "capital": "Victoria",
-              "flagDescription": "The flag of Seychelles.",
+              "flagDescription": "The Seychelles flag has five colored rays spreading outward from the bottom-left corner like a sunrise: blue, yellow, red, white, and green. Blue represents the sky and sea, yellow stands for the golden sun, red symbolizes the determination of the people to build a better future, white represents social justice, and green stands for the land and natural environment.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Seychelles",
-                      "description": "Seychelles is a country in Eastern Africa."
+                      "icon": "nature",
+                      "title": "Coco de Mer: World's Biggest Seed",
+                      "description": "The coco de mer palm in the Seychelles produces the world's largest and heaviest seed — a single nut can weigh up to 25 kg and takes six years to mature! It looks like two coconuts joined together."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Seychelles has a population of approximately 123K."
+                      "icon": "pets",
+                      "title": "Giant Tortoises",
+                      "description": "The Seychelles is home to the Aldabra giant tortoise — the world's largest land tortoise. These gentle giants can live over 150 years, weigh up to 250 kg, and roam freely on Aldabra Atoll."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Seychelles is Victoria."
+                      "icon": "waves",
+                      "title": "World's Most Beautiful Beaches",
+                      "description": "The Seychelles' 115 islands have some of the most beautiful beaches on Earth, with powder-white sand, turquoise water, and huge pink granite boulders creating a landscape unlike anywhere else."
                   }
               ]
           },
           "es": {
               "name": "Seychelles",
               "capital": "Victoria",
-              "flagDescription": "La bandera de Seychelles.",
+              "flagDescription": "La bandera de las Seychelles tiene cinco rayos de colores que se expanden desde la esquina inferior izquierda como un amanecer: azul, amarillo, rojo, blanco y verde. El azul representa el cielo y el mar, el amarillo el sol dorado, el rojo la determinación del pueblo, el blanco la justicia social, y el verde la tierra y el medio ambiente natural.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Seychelles",
-                      "description": "Seychelles es un país en Eastern Africa."
+                      "icon": "nature",
+                      "title": "Coco de mer: la semilla más grande del mundo",
+                      "description": "La palmera coco de mer de las Seychelles produce la semilla más grande y pesada del mundo: ¡una sola nuez puede pesar hasta 25 kg y tarda seis años en madurar! Parece dos cocos unidos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Seychelles tiene una población de aproximadamente 123K."
+                      "icon": "pets",
+                      "title": "Tortugas gigantes",
+                      "description": "Las Seychelles albergan la tortuga gigante de Aldabra, la mayor tortuga terrestre del mundo. Estos gentiles gigantes pueden vivir más de 150 años, pesar hasta 250 kg y deambulan libremente por el Atolón de Aldabra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Seychelles es Victoria."
+                      "icon": "waves",
+                      "title": "Las playas más hermosas del mundo",
+                      "description": "Las 115 islas de las Seychelles tienen algunas de las playas más hermosas de la Tierra, con arena blanca, agua turquesa y enormes rocas de granito rosa, creando un paisaje único en el mundo."
                   }
               ]
           }
@@ -10346,44 +10346,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Sierra Leone",
               "capital": "Freetown",
-              "flagDescription": "The flag of Sierra Leone.",
+              "flagDescription": "Sierra Leone's flag has three equal horizontal stripes — green at the top, white in the middle, and blue at the bottom. Green represents the country's mountains and agriculture, white symbolizes unity and justice, and blue stands for the Atlantic Ocean that borders the country and the natural resources of the sea.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Sierra Leone",
-                      "description": "Sierra Leone is a country in Western Africa."
+                      "icon": "pets",
+                      "title": "Chimpanzee Sanctuary",
+                      "description": "The Tacugama Chimpanzee Sanctuary outside Freetown rescues and rehabilitates orphaned chimps, then teaches them to live in the wild again. It is one of Africa's most important primate conservation projects."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Sierra Leone has a population of approximately 9.1M."
+                      "icon": "waves",
+                      "title": "Beautiful West African Beaches",
+                      "description": "Sierra Leone has some of the most beautiful and unspoiled beaches in West Africa, including Tokeh Beach and River No. 2 Beach, with white sand and warm crystal-clear water."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Sierra Leone is Freetown."
+                      "icon": "history",
+                      "title": "Lion Mountain Country",
+                      "description": "The country is named after the 'Lion Mountains' (Serra Leoa in Portuguese) — the dramatic hills that overlook Freetown. Portuguese explorers named them in the 15th century when they heard what they thought sounded like a lion's roar in the thunder."
                   }
               ]
           },
           "es": {
-              "name": "Sierra Leone",
+              "name": "Sierra Leona",
               "capital": "Freetown",
-              "flagDescription": "La bandera de Sierra Leone.",
+              "flagDescription": "La bandera de Sierra Leona tiene tres franjas horizontales iguales: verde arriba, blanca en el centro y azul abajo. El verde representa las montañas y la agricultura, el blanco simboliza la unidad y la justicia, y el azul representa el Océano Atlántico y los recursos naturales del mar.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sierra Leone",
-                      "description": "Sierra Leone es un país en Western Africa."
+                      "icon": "pets",
+                      "title": "Santuario de chimpancés",
+                      "description": "El Santuario de Chimpancés de Tacugama, en las afueras de Freetown, rescata y rehabilita a chimpancés huérfanos para que vuelvan a vivir en la naturaleza. Es uno de los proyectos de conservación de primates más importantes de África."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sierra Leone tiene una población de aproximadamente 9.1M."
+                      "icon": "waves",
+                      "title": "Hermosas playas del África Occidental",
+                      "description": "Sierra Leona tiene algunas de las playas más hermosas e vírgenes de África Occidental, como Tokeh Beach y River No. 2 Beach, con arena blanca y aguas cálidas y cristalinas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sierra Leone es Freetown."
+                      "icon": "history",
+                      "title": "El país de la montaña del león",
+                      "description": "El país lleva el nombre de las 'Montañas del León' (Serra Leoa en portugués), las dramáticas colinas que dominan Freetown. Los exploradores portugueses del siglo XV creyeron escuchar el rugido de un león en el trueno."
                   }
               ]
           }
@@ -10664,44 +10664,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Somalia",
               "capital": "Mogadishu",
-              "flagDescription": "The flag of Somalia.",
+              "flagDescription": "Somalia's flag is light blue with a white five-pointed star in the center. The blue color was inspired by the United Nations flag (the UN helped Somalia gain independence) and represents both the sky and the Indian Ocean. The white star represents the five Somali territories that were once divided across different colonial powers.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Somalia",
-                      "description": "Somalia is a country in Eastern Africa."
+                      "icon": "anchor",
+                      "title": "Longest Coastline in Africa",
+                      "description": "Somalia has the longest coastline of any country in Africa — over 3,333 km of beaches, bays, and shores stretching along the Indian Ocean and Gulf of Aden."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Somalia has a population of approximately 19.7M."
+                      "icon": "local_florist",
+                      "title": "Frankincense and Myrrh",
+                      "description": "Somalia has been trading frankincense and myrrh — precious tree resins — for thousands of years. These aromatic resins were used by ancient Egyptians, Greeks, and Romans in ceremonies and medicines."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Somalia is Mogadishu."
+                      "icon": "pets",
+                      "title": "Land of Camels",
+                      "description": "Somalia has the world's largest population of camels! Camels are so central to Somali culture and economy that poetry, proverbs, and traditional songs are built around them."
                   }
               ]
           },
           "es": {
               "name": "Somalia",
-              "capital": "Mogadishu",
-              "flagDescription": "La bandera de Somalia.",
+              "capital": "Mogadiscio",
+              "flagDescription": "La bandera de Somalia es azul claro con una estrella blanca de cinco puntas en el centro. El color azul fue inspirado por la bandera de las Naciones Unidas (la ONU ayudó a Somalia a lograr su independencia) y representa el cielo y el Océano Índico. La estrella blanca representa los cinco territorios somalíes que una vez estuvieron divididos bajo distintos poderes coloniales.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Somalia",
-                      "description": "Somalia es un país en Eastern Africa."
+                      "icon": "anchor",
+                      "title": "La costa más larga de África",
+                      "description": "Somalia tiene la costa más larga de cualquier país en África, ¡más de 3.333 km de playas, bahías y orillas a lo largo del Océano Índico y el golfo de Adén!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Somalia tiene una población de aproximadamente 19.7M."
+                      "icon": "local_florist",
+                      "title": "Incienso y mirra",
+                      "description": "Somalia ha comerciado con incienso y mirra, preciosas resinas de árbol, durante miles de años. Estas resinas aromáticas fueron utilizadas por los antiguos egipcios, griegos y romanos en ceremonias y medicinas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Somalia es Mogadishu."
+                      "icon": "pets",
+                      "title": "Tierra de camellos",
+                      "description": "¡Somalia tiene la mayor población de camellos del mundo! Los camellos son tan centrales en la cultura y economía somalí que la poesía, los proverbios y las canciones tradicionales están construidos alrededor de ellos."
                   }
               ]
           }
@@ -10739,22 +10739,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Sudáfrica",
               "capital": "Pretoria",
-              "flagDescription": "La bandera de Sudáfrica.",
+              "flagDescription": "La bandera de Sudáfrica es una de las más coloridas del mundo, con seis colores: negro, dorado, verde, blanco, rojo y azul. La banda verde en forma de Y simboliza la convergencia de los diversos elementos de la sociedad sudafricana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sudáfrica",
-                      "description": "Sudáfrica es un país en Southern Africa."
+                      "icon": "diamond",
+                      "title": "Capital del diamante",
+                      "description": "Sudáfrica alberga la mina Kimberley, que fue la mayor mina de diamantes del mundo. El 'Gran Agujero' excavado allí es considerado la mayor excavación manual de la historia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sudáfrica tiene una población de aproximadamente 63.1M."
+                      "icon": "balance",
+                      "title": "Tres capitales",
+                      "description": "Sudáfrica es el único país del mundo con tres capitales oficiales: Pretoria (ejecutiva), Ciudad del Cabo (legislativa) y Bloemfontein (judicial)."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sudáfrica es Pretoria."
+                      "icon": "directions_walk",
+                      "title": "Cuna de la Humanidad",
+                      "description": "La Cuna de la Humanidad, Patrimonio Mundial de la UNESCO cerca de Johannesburgo, contiene la mayor concentración de fósiles de homínidos del mundo, algunos de más de 3,5 millones de años."
                   }
               ]
           }
@@ -10823,44 +10823,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "South Sudan",
               "capital": "Juba",
-              "flagDescription": "The flag of South Sudan.",
+              "flagDescription": "South Sudan's flag has three equal horizontal stripes — black at the top, red in the middle, and green at the bottom — with thin white borders between them and a blue triangle on the left side containing a gold star. Black represents the people, red the blood shed for independence, green the land's fertility, blue symbolizes the Nile River, and the star represents the unity of all states.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About South Sudan",
-                      "description": "South Sudan is a country in Middle Africa."
+                      "icon": "history",
+                      "title": "World's Newest Country",
+                      "description": "South Sudan became the world's newest internationally recognized country on July 9, 2011, when it voted to separate from Sudan. Independence Day is celebrated with enormous pride each year."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "South Sudan has a population of approximately 15.8M."
+                      "icon": "water",
+                      "title": "The Sudd Wetland",
+                      "description": "The Sudd is one of the world's largest freshwater wetlands — a vast swamp where papyrus reeds tower overhead and rare shoebill storks and millions of birds make their home."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of South Sudan is Juba."
+                      "icon": "pets",
+                      "title": "Great Wildlife Migration",
+                      "description": "The white-eared kob antelope undertakes one of Africa's greatest wildlife migrations across South Sudan's plains — with over a million animals moving together in a spectacular annual journey."
                   }
               ]
           },
           "es": {
               "name": "Sudán del Sur",
               "capital": "Juba",
-              "flagDescription": "La bandera de Sudán del Sur.",
+              "flagDescription": "La bandera de Sudán del Sur tiene tres franjas horizontales iguales: negra arriba, roja en el centro y verde abajo, con delgados bordes blancos entre ellas y un triángulo azul a la izquierda que contiene una estrella dorada. El negro representa al pueblo, el rojo la sangre derramada por la independencia, el verde la fertilidad de la tierra, el azul simboliza el Nilo, y la estrella la unidad de todos los estados.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sudán del Sur",
-                      "description": "Sudán del Sur es un país en Middle Africa."
+                      "icon": "history",
+                      "title": "El país más nuevo del mundo",
+                      "description": "Sudán del Sur se convirtió en el país independiente reconocido internacionalmente más nuevo del mundo el 9 de julio de 2011, cuando votó para separarse de Sudán. El Día de la Independencia se celebra con enorme orgullo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sudán del Sur tiene una población de aproximadamente 15.8M."
+                      "icon": "water",
+                      "title": "El humedal del Sudd",
+                      "description": "El Sudd es uno de los mayores humedales de agua dulce del mundo: un vasto pantano donde el papiro crece hasta grandes alturas y el ave picozapato y millones de aves hacen su hogar."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sudán del Sur es Juba."
+                      "icon": "pets",
+                      "title": "Gran migración de fauna",
+                      "description": "El kob de orejas blancas realiza una de las mayores migraciones de fauna de África por las llanuras de Sudán del Sur, con más de un millón de animales moviéndose juntos en un espectacular viaje anual."
                   }
               ]
           }
@@ -10982,44 +10982,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Sudan",
               "capital": "Khartoum",
-              "flagDescription": "The flag of Sudan.",
+              "flagDescription": "Sudan's flag has three horizontal stripes — red at the top, white in the middle, and black at the bottom — with a green triangle on the left side. Red represents the struggle for independence, white symbolizes peace and the bright future, black recalls the country's name ('Sudan' means 'Land of the Blacks' in Arabic), and green stands for Islam and prosperity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Sudan",
-                      "description": "Sudan is a country in Northern Africa."
+                      "icon": "history",
+                      "title": "More Pyramids Than Egypt!",
+                      "description": "Sudan has more ancient pyramids than Egypt — over 200 pyramids built by the Nubian Kushite civilization. These smaller, steeper pyramids at Meroe sit dramatically in the middle of the desert."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Sudan has a population of approximately 51.7M."
+                      "icon": "water",
+                      "title": "Where Two Niles Meet",
+                      "description": "Khartoum sits at the exact spot where the Blue Nile (coming from Ethiopia) and the White Nile (coming from Uganda) merge to form the mighty Nile River — one of the most historic confluences in the world."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Sudan is Khartoum."
+                      "icon": "castle",
+                      "title": "Ancient Nubian Kingdom",
+                      "description": "The ancient Kingdom of Kush and the Meroitic civilization were among the most powerful empires in Africa, producing art, ironwork, and architecture that rivaled ancient Egypt and Rome."
                   }
               ]
           },
           "es": {
               "name": "Sudán",
-              "capital": "Khartoum",
-              "flagDescription": "La bandera de Sudán.",
+              "capital": "Jartum",
+              "flagDescription": "La bandera de Sudán tiene tres franjas horizontales: roja arriba, blanca en el centro y negra abajo, con un triángulo verde a la izquierda. El rojo representa la lucha por la independencia, el blanco simboliza la paz y el futuro brillante, el negro recuerda el nombre del país ('Sudán' significa 'Tierra de los negros' en árabe), y el verde representa el Islam y la prosperidad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sudán",
-                      "description": "Sudán es un país en Northern Africa."
+                      "icon": "history",
+                      "title": "¡Más pirámides que Egipto!",
+                      "description": "Sudán tiene más pirámides antiguas que Egipto: ¡más de 200 pirámides construidas por la civilización nubia kushita! Estas pirámides más pequeñas y empinadas de Meroe se alzan dramáticamente en medio del desierto."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sudán tiene una población de aproximadamente 51.7M."
+                      "icon": "water",
+                      "title": "Donde se encuentran dos Nilos",
+                      "description": "Jartum está ubicada exactamente donde el Nilo Azul (que viene de Etiopía) y el Nilo Blanco (que viene de Uganda) se unen para formar el poderoso río Nilo, una de las confluencias más históricas del mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sudán es Khartoum."
+                      "icon": "castle",
+                      "title": "El antiguo reino nubio",
+                      "description": "El antiguo Reino de Kush y la civilización meroítica fueron poderosos imperios de África que produjeron arte, herrería y arquitectura que rivalizaban con el antiguo Egipto y Roma."
                   }
               ]
           }
@@ -11428,22 +11428,22 @@ export const countriesData: CountryEntry[] = [
           "es": {
               "name": "Tanzania",
               "capital": "Dodoma",
-              "flagDescription": "La bandera de Tanzania.",
+              "flagDescription": "La bandera de Tanzania tiene una franja diagonal negra con bordes amarillos que va de la esquina inferior izquierda a la superior derecha, dividiendo la bandera en verde (arriba a la izquierda) y azul (abajo a la derecha). El negro representa al pueblo, el verde la tierra, el azul el mar y el amarillo la riqueza mineral.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Tanzania",
-                      "description": "Tanzania es un país en Eastern Africa."
+                      "icon": "terrain",
+                      "title": "El techo de África",
+                      "description": "El monte Kilimanjaro en Tanzania es el pico más alto de África con 5.895 metros. Es un volcán que puede ser escalado sin ningún equipo técnico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Tanzania tiene una población de aproximadamente 68.2M."
+                      "icon": "park",
+                      "title": "La migración del Serengeti",
+                      "description": "El Parque Nacional del Serengeti alberga la Gran Migración, donde 1,5 millones de ñus y 250.000 cebras realizan un épico viaje anual por la sabana."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Tanzania es Dodoma."
+                      "icon": "anchor",
+                      "title": "Zanzíbar, la isla de las especias",
+                      "description": "La isla de Zanzíbar, parte de Tanzania, fue en su día el mayor productor mundial de clavo. Su ciudad antigua es Patrimonio de la Humanidad de la UNESCO y tiene una rica cultura suajili."
                   }
               ]
           }
@@ -11565,44 +11565,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Togo",
               "capital": "Lomé",
-              "flagDescription": "The flag of Togo.",
+              "flagDescription": "Togo's flag has five alternating horizontal stripes of green and yellow (green, yellow, green, yellow, green) with a red square in the top-left corner containing a white star. Green represents hope and agriculture, yellow symbolizes mineral wealth, red stands for love and the blood of those who fought for independence, and the white star represents life and purity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Togo",
-                      "description": "Togo is a country in Western Africa."
+                      "icon": "auto_awesome",
+                      "title": "World's Largest Voodoo Market",
+                      "description": "The Akodessewa Fetish Market in Lomé is the world's largest Voodoo market, selling traditional medicines, dried animals, and ritual items used in West African spiritual ceremonies. It's one of the most extraordinary markets on Earth!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Togo has a population of approximately 8.1M."
+                      "icon": "palette",
+                      "title": "Kente and Batik Weaving",
+                      "description": "Togo has a rich tradition of handwoven kente cloth and hand-dyed batik fabric. Skilled weavers create intricate geometric patterns that have been passed down through generations."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Togo is Lomé."
+                      "icon": "forest",
+                      "title": "Wildlife National Park",
+                      "description": "Fazao-Malfakassa National Park in central Togo shelters elephants, lions, leopards, and buffalos — making it an important wildlife sanctuary in West Africa."
                   }
               ]
           },
           "es": {
               "name": "Togo",
               "capital": "Lomé",
-              "flagDescription": "La bandera de Togo.",
+              "flagDescription": "La bandera de Togo tiene cinco franjas horizontales alternas de verde y amarillo (verde, amarillo, verde, amarillo, verde) con un cuadrado rojo en la esquina superior izquierda que contiene una estrella blanca. El verde representa la esperanza y la agricultura, el amarillo la riqueza mineral, el rojo el amor y la sangre de quienes lucharon por la independencia, y la estrella blanca la vida y la pureza.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Togo",
-                      "description": "Togo es un país en Western Africa."
+                      "icon": "auto_awesome",
+                      "title": "El mayor mercado de Vudú del mundo",
+                      "description": "¡El mercado fetiche de Akodessewa en Lomé es el mayor mercado de Vudú del mundo, que vende medicinas tradicionales, animales disecados y objetos rituales usados en ceremonias espirituales! Es uno de los mercados más extraordinarios de la Tierra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Togo tiene una población de aproximadamente 8.1M."
+                      "icon": "palette",
+                      "title": "Tejido kente y batik",
+                      "description": "Togo tiene una rica tradición de tela kente tejida a mano y batik teñido a mano. Los tejedores expertos crean intrincados patrones geométricos que se han transmitido de generación en generación."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Togo es Lomé."
+                      "icon": "forest",
+                      "title": "Parque nacional de fauna",
+                      "description": "El Parque Nacional Fazao-Malfakassa, en el centro de Togo, alberga elefantes, leones, leopardos y búfalos, lo que lo convierte en un importante santuario de fauna del África Occidental."
                   }
               ]
           }
@@ -11777,44 +11777,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Tunisia",
               "capital": "Tunis",
-              "flagDescription": "The flag of Tunisia.",
+              "flagDescription": "Tunisia's flag is red with a white circle in the center containing a red crescent moon and a red five-pointed star. Red represents the blood of those who defended the country against invaders, white stands for peace, and the crescent moon and star are symbols of Islam, which is central to Tunisian culture.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Tunisia",
-                      "description": "Tunisia is a country in Northern Africa."
+                      "icon": "anchor",
+                      "title": "Africa's Doorstep to Europe",
+                      "description": "Tunisia is Africa's closest country to Europe — Sicily, Italy is only 140 km away across the sea! This proximity has made Tunisia a crossroads of civilizations for thousands of years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Tunisia has a population of approximately 12.0M."
+                      "icon": "history",
+                      "title": "Ancient Carthage",
+                      "description": "The ancient city of Carthage, founded in 814 BC, was once Rome's greatest rival and nearly conquered the Roman Empire under general Hannibal (who crossed the Alps with elephants!). Its ruins are just outside Tunis."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Tunisia is Tunis."
+                      "icon": "movie",
+                      "title": "Star Wars Was Filmed Here",
+                      "description": "Scenes from the Star Wars movies — including Luke Skywalker's home planet Tatooine — were filmed in the Tunisian Sahara Desert and the underground cave city of Matmata. Fans still visit these locations today!"
                   }
               ]
           },
           "es": {
               "name": "Túnez",
-              "capital": "Tunis",
-              "flagDescription": "La bandera de Túnez.",
+              "capital": "Túnez",
+              "flagDescription": "La bandera de Túnez es roja con un círculo blanco en el centro que contiene una media luna roja y una estrella roja de cinco puntas. El rojo representa la sangre de quienes defendieron el país de los invasores, el blanco simboliza la paz, y la media luna y la estrella son símbolos del Islam, central en la cultura tunecina.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Túnez",
-                      "description": "Túnez es un país en Northern Africa."
+                      "icon": "anchor",
+                      "title": "El umbral de África a Europa",
+                      "description": "¡Túnez es el país de África más cercano a Europa: Sicilia, Italia, está a solo 140 km a través del mar! Esta proximidad ha convertido a Túnez en un cruce de civilizaciones durante miles de años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Túnez tiene una población de aproximadamente 12.0M."
+                      "icon": "history",
+                      "title": "La antigua Cartago",
+                      "description": "La ciudad de Cartago, fundada en 814 a.C., fue el mayor rival de Roma y casi conquistó el Imperio Romano bajo el general Aníbal (¡que cruzó los Alpes con elefantes!). Sus ruinas están justo a las afueras de la capital."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Túnez es Tunis."
+                      "icon": "movie",
+                      "title": "Star Wars se filmó aquí",
+                      "description": "¡Escenas de las películas de Star Wars, incluido el planeta natal de Luke Skywalker, Tatooine, fueron filmadas en el Sáhara tunecino y en la ciudad subterránea de Matmata! Los fans aún visitan estas localizaciones hoy."
                   }
               ]
           }
@@ -12042,44 +12042,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Uganda",
               "capital": "Kampala",
-              "flagDescription": "The flag of Uganda.",
+              "flagDescription": "Uganda's flag has six equal horizontal stripes alternating black, yellow, and red (black, yellow, red, black, yellow, red) with a white circle in the center featuring a grey crowned crane. Black represents the African people, yellow symbolizes the sunshine and vitality of the country, red stands for brotherhood and the blood of all people, and the grey crowned crane is Uganda's beloved national bird.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Uganda",
-                      "description": "Uganda is a country in Eastern Africa."
+                      "icon": "forest",
+                      "title": "Mountain Gorilla Capital",
+                      "description": "Bwindi Impenetrable National Park is home to over half the world's remaining mountain gorillas. Uganda has the most accessible gorilla trekking in the world — getting close to a gorilla family in the wild is a life-changing experience."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Uganda has a population of approximately 45.9M."
+                      "icon": "water",
+                      "title": "Source of the Nile",
+                      "description": "The source of the Nile River — where it flows out of Lake Victoria — is at Jinja, Uganda. From here, the great Nile begins its 6,650 km journey to the Mediterranean Sea. Jinja is also famous for thrilling white-water rafting!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Uganda is Kampala."
+                      "icon": "water",
+                      "title": "Africa's Largest Lake",
+                      "description": "Lake Victoria is the largest lake in Africa and the world's largest tropical lake. It supports the livelihoods of over 30 million people living on its shores in Uganda, Kenya, and Tanzania."
                   }
               ]
           },
           "es": {
               "name": "Uganda",
               "capital": "Kampala",
-              "flagDescription": "La bandera de Uganda.",
+              "flagDescription": "La bandera de Uganda tiene seis franjas horizontales iguales que alternan negro, amarillo y rojo (negro, amarillo, rojo, negro, amarillo, rojo) con un círculo blanco en el centro con una grulla coronada gris. El negro representa al pueblo africano, el amarillo simboliza el sol y la vitalidad del país, el rojo representa la fraternidad y la sangre de todas las personas, y la grulla coronada gris es el querido pájaro nacional de Uganda.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Uganda",
-                      "description": "Uganda es un país en Eastern Africa."
+                      "icon": "forest",
+                      "title": "Capital del gorila de montaña",
+                      "description": "El Parque Nacional Impenetrable de Bwindi alberga a más de la mitad de los gorilas de montaña restantes del mundo. Uganda ofrece el trekking de gorilas más accesible del mundo, una experiencia que cambia la vida."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Uganda tiene una población de aproximadamente 45.9M."
+                      "icon": "water",
+                      "title": "El nacimiento del Nilo",
+                      "description": "El nacimiento del río Nilo, donde sale del lago Victoria, está en Jinja, Uganda. Desde aquí, el gran Nilo comienza su viaje de 6.650 km hasta el mar Mediterráneo. ¡Jinja también es famosa por el rafting en aguas bravas!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Uganda es Kampala."
+                      "icon": "water",
+                      "title": "El lago más grande de África",
+                      "description": "El lago Victoria es el lago más grande de África y el mayor lago tropical del mundo. Sustenta los medios de vida de más de 30 millones de personas que viven en sus orillas en Uganda, Kenia y Tanzania."
                   }
               ]
           }
@@ -12784,44 +12784,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Western Sahara",
               "capital": "El Aaiún",
-              "flagDescription": "The flag of Western Sahara.",
+              "flagDescription": "The Western Sahara flag has three equal horizontal stripes — black at the top, white in the middle, and green at the bottom — with a red crescent moon and red star in the center of the white stripe. These are Pan-Arab colors representing the Sahrawi people's identity and their ongoing claim for independence as a recognized nation.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Western Sahara",
-                      "description": "Western Sahara is a country in Northern Africa."
+                      "icon": "balance",
+                      "title": "A Disputed Territory",
+                      "description": "Western Sahara is a disputed territory — Morocco controls most of the land, but the Sahrawi people's Polisario Front claims it should be an independent nation called the Sahrawi Arab Democratic Republic."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Western Sahara has a population of approximately 601K."
+                      "icon": "science",
+                      "title": "Phosphate Treasure",
+                      "description": "Western Sahara sits on some of the world's richest phosphate deposits — a mineral used to make fertilizer. Control of these resources is one reason why the territory's future is so contested."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Western Sahara is El Aaiún."
+                      "icon": "pets",
+                      "title": "Flamingos on the Coast",
+                      "description": "Despite being mostly barren desert, large flocks of flamingos gather along the Atlantic coastline of Western Sahara, feeding in the shallow coastal waters in a beautiful and unexpected spectacle."
                   }
               ]
           },
           "es": {
               "name": "Sahara Occidental",
               "capital": "El Aaiún",
-              "flagDescription": "La bandera de Sahara Occidental.",
+              "flagDescription": "La bandera del Sahara Occidental tiene tres franjas horizontales iguales: negra arriba, blanca en el centro y verde abajo, con una media luna roja y una estrella roja en el centro de la franja blanca. Estos son colores panarabistas que representan la identidad del pueblo saharaui y su reclamo continuo de independencia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Sahara Occidental",
-                      "description": "Sahara Occidental es un país en Northern Africa."
+                      "icon": "balance",
+                      "title": "Un territorio en disputa",
+                      "description": "El Sahara Occidental es un territorio en disputa: Marruecos controla la mayor parte del territorio, pero el Frente Polisario del pueblo saharaui reclama que debería ser una nación independiente llamada República Árabe Saharaui Democrática."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sahara Occidental tiene una población de aproximadamente 601K."
+                      "icon": "science",
+                      "title": "Tesoro de fosfatos",
+                      "description": "El Sahara Occidental se asienta sobre algunos de los depósitos de fosfato más ricos del mundo, un mineral usado para fabricar fertilizantes. El control de estos recursos es una razón clave por la que el futuro del territorio está tan disputado."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sahara Occidental es El Aaiún."
+                      "icon": "pets",
+                      "title": "Flamencos en la costa",
+                      "description": "A pesar de ser en su mayor parte desierto árido, grandes bandadas de flamencos se congregan a lo largo de la costa atlántica del Sahara Occidental, alimentándose en las aguas costeras poco profundas en un espectáculo hermoso e inesperado."
                   }
               ]
           }
@@ -12890,44 +12890,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Zambia",
               "capital": "Lusaka",
-              "flagDescription": "The flag of Zambia.",
+              "flagDescription": "Zambia's flag is predominantly green with a vertical band of red, black, and orange on the right side near the bottom, and an orange eagle in flight above it. Green represents the country's natural resources and farmland, red symbolizes the struggle for freedom, black represents the Zambian people, orange stands for copper and mineral wealth, and the eagle represents freedom.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Zambia",
-                      "description": "Zambia is a country in Eastern Africa."
+                      "icon": "water",
+                      "title": "Victoria Falls",
+                      "description": "Victoria Falls — one of the world's largest waterfalls — sits on the Zambia-Zimbabwe border. The thundering water creates a permanent rainbow and a mist cloud that can be seen from 50 km away!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Zambia has a population of approximately 19.7M."
+                      "icon": "diamond",
+                      "title": "Copper Country",
+                      "description": "Zambia's Copperbelt region has some of the world's richest copper deposits. Copper has shaped the country's economy for over a century and is still Zambia's most important export."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Zambia is Lusaka."
+                      "icon": "park",
+                      "title": "Kafue National Park",
+                      "description": "Kafue National Park is one of the largest national parks in Africa — almost as big as Switzerland! Red lechwe antelope, hippos, lions, and leopards roam this magnificent wilderness."
                   }
               ]
           },
           "es": {
               "name": "Zambia",
               "capital": "Lusaka",
-              "flagDescription": "La bandera de Zambia.",
+              "flagDescription": "La bandera de Zambia es predominantemente verde con una banda vertical de rojo, negro y naranja en el lado derecho inferior, y un águila naranja en vuelo encima. El verde representa los recursos naturales y las tierras de cultivo, el rojo simboliza la lucha por la libertad, el negro representa al pueblo zambiano, el naranja representa el cobre y la riqueza mineral, y el águila representa la libertad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Zambia",
-                      "description": "Zambia es un país en Eastern Africa."
+                      "icon": "water",
+                      "title": "Las cataratas Victoria",
+                      "description": "Las cataratas Victoria, una de las cascadas más grandes del mundo, se encuentran en la frontera entre Zambia y Zimbabue. ¡El agua atronadora crea un arcoíris permanente y una nube de vapor visible a 50 km de distancia!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Zambia tiene una población de aproximadamente 19.7M."
+                      "icon": "diamond",
+                      "title": "País del cobre",
+                      "description": "La región del Cinturón de Cobre de Zambia tiene algunos de los depósitos de cobre más ricos del mundo. El cobre ha conformado la economía del país durante más de un siglo y sigue siendo la exportación más importante de Zambia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Zambia es Lusaka."
+                      "icon": "park",
+                      "title": "Parque Nacional Kafue",
+                      "description": "¡El Parque Nacional Kafue es uno de los parques nacionales más grandes de África, casi tan grande como Suiza! El antílope lechwe rojo, hipopótamos, leones y leopardos deambulan por esta magnífica naturaleza."
                   }
               ]
           }
@@ -12943,44 +12943,44 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Zimbabwe",
               "capital": "Harare",
-              "flagDescription": "The flag of Zimbabwe.",
+              "flagDescription": "Zimbabwe's flag has seven horizontal stripes (green, yellow, red, black, red, yellow, green) with a white triangle on the left containing a red star and the Zimbabwe Bird — a carving of a fish eagle. Green represents vegetation and agriculture, yellow symbolizes mineral wealth, red stands for the blood shed during independence, black represents the African heritage of the people, and the Zimbabwe Bird recalls the ancient stone civilization of Great Zimbabwe.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Zimbabwe",
-                      "description": "Zimbabwe is a country in Southern Africa."
+                      "icon": "water",
+                      "title": "Victoria Falls: Wonder of the World",
+                      "description": "Victoria Falls (shared with Zambia) is so massive and powerful it creates its own weather — a permanent mist and rainbow every day — and the roar of the falls can be heard from 40 km away!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Zimbabwe has a population of approximately 17.1M."
+                      "icon": "history",
+                      "title": "Great Zimbabwe Ruins",
+                      "description": "The Great Zimbabwe ruins are a massive stone city built between 1100-1450 AD entirely without mortar — one of Africa's most impressive ancient monuments and the source of the country's name."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Zimbabwe is Harare."
+                      "icon": "pets",
+                      "title": "Rhino Conservation Leader",
+                      "description": "Zimbabwe is home to some of the last large populations of both black and white rhinos in Africa. Its national parks are among the best in the world for seeing these magnificent endangered giants."
                   }
               ]
           },
           "es": {
               "name": "Zimbabue",
               "capital": "Harare",
-              "flagDescription": "La bandera de Zimbabue.",
+              "flagDescription": "La bandera de Zimbabue tiene siete franjas horizontales (verde, amarillo, rojo, negro, rojo, amarillo, verde) con un triángulo blanco a la izquierda que contiene una estrella roja y el Pájaro de Zimbabue, una talla de águila pescadora. El verde representa la vegetación y la agricultura, el amarillo la riqueza mineral, el rojo la sangre derramada en la independencia, el negro el patrimonio africano del pueblo, y el Pájaro de Zimbabue recuerda la antigua civilización de piedra del Gran Zimbabue.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Zimbabue",
-                      "description": "Zimbabue es un país en Southern Africa."
+                      "icon": "water",
+                      "title": "Cataratas Victoria: maravilla del mundo",
+                      "description": "¡Las cataratas Victoria (compartidas con Zambia) son tan grandes y poderosas que crean su propio clima, con una niebla permanente y un arcoíris todos los días, y el rugido del agua se escucha a 40 km de distancia!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Zimbabue tiene una población de aproximadamente 17.1M."
+                      "icon": "history",
+                      "title": "Las ruinas del Gran Zimbabue",
+                      "description": "Las ruinas del Gran Zimbabue son una enorme ciudad de piedra construida entre 1100 y 1450 d.C. completamente sin mortero, uno de los monumentos antiguos más impresionantes de África y el origen del nombre del país."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Zimbabue es Harare."
+                      "icon": "pets",
+                      "title": "Líder en conservación del rinoceronte",
+                      "description": "Zimbabue alberga algunas de las últimas grandes poblaciones de rinocerontes negros y blancos de África. Sus parques nacionales son de los mejores del mundo para ver a estos magníficos gigantes en peligro de extinción."
                   }
               ]
           }
