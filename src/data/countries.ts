@@ -64,44 +64,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Åland Islands",
               "capital": "Mariehamn",
-              "flagDescription": "The flag of Åland Islands.",
+              "flagDescription": "The Åland Islands flag features a yellow cross outlined in red set on a blue background — a Nordic cross design that combines the colors of both Sweden and Finland. Åland is an autonomous region of Finland but has a Swedish-speaking population, and the flag beautifully blends both national identities. The cross design is shared by all Nordic countries as a symbol of Christianity and shared heritage.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Åland Islands",
-                      "description": "Åland Islands is a country in Northern Europe."
+                      "icon": "anchor",
+                      "title": "Demilitarized Zone",
+                      "description": "The Åland Islands are one of the world's oldest demilitarized and autonomous regions. Since 1856, international treaties have kept the islands free of military forces, making them a symbol of peaceful neutrality."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Åland Islands has a population of approximately 31K."
+                      "icon": "sailing",
+                      "title": "Maritime Capital",
+                      "description": "Åland has one of the highest concentrations of registered ships per capita in the world. Many international shipping companies are headquartered here, and sailing is woven into everyday island life."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Åland Islands is Mariehamn."
+                      "icon": "local_florist",
+                      "title": "Cowslip Symbol",
+                      "description": "The cowslip flower is the official symbol of Åland. In spring, these bright yellow blooms carpet the meadows, and locals celebrate the season with traditional outdoor gatherings."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Swedish-Speaking Finland",
+                      "description": "Although Åland belongs to Finland, Swedish is the only official language. Children learn Swedish in school, road signs are in Swedish, and the culture feels distinctly Scandinavian."
                   }
               ]
           },
           "es": {
-              "name": "Alandia",
+              "name": "Islas Åland",
               "capital": "Mariehamn",
-              "flagDescription": "La bandera de Alandia.",
+              "flagDescription": "La bandera de las Islas Åland muestra una cruz amarilla con contorno rojo sobre fondo azul — un diseño de cruz nórdica que combina los colores de Suecia y Finlandia. Åland es una región autónoma de Finlandia pero con población de habla sueca, y la bandera mezcla ambas identidades nacionales. El diseño de la cruz es compartido por todos los países nórdicos como símbolo del cristianismo y la herencia común.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Alandia",
-                      "description": "Alandia es un país en Northern Europe."
+                      "icon": "anchor",
+                      "title": "Zona Desmilitarizada",
+                      "description": "Las Islas Åland son una de las regiones autónomas y desmilitarizadas más antiguas del mundo. Desde 1856, tratados internacionales han mantenido las islas libres de fuerzas militares, convirtiéndolas en un símbolo de neutralidad pacífica."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Alandia tiene una población de aproximadamente 31K."
+                      "icon": "sailing",
+                      "title": "Capital Marítima",
+                      "description": "Åland tiene una de las concentraciones más altas de barcos registrados per cápita en el mundo. Muchas navieras internacionales tienen su sede aquí, y la navegación está entretejida en la vida cotidiana de las islas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Alandia es Mariehamn."
+                      "icon": "local_florist",
+                      "title": "Símbolo de la Prímula",
+                      "description": "La prímula es el símbolo oficial de Åland. En primavera, estas brillantes flores amarillas cubren los prados, y los lugareños celebran la temporada con reuniones tradicionales al aire libre."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Finlandia de habla sueca",
+                      "description": "Aunque Åland pertenece a Finlandia, el sueco es el único idioma oficial. Los niños aprenden sueco en la escuela, las señales de tráfico están en sueco y la cultura parece claramente escandinava."
                   }
               ]
           }
@@ -117,44 +127,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Albania",
               "capital": "Tirana",
-              "flagDescription": "The flag of Albania.",
+              "flagDescription": "Albania's flag is one of the most striking in the world — a bold black double-headed eagle on a vivid red background. The double-headed eagle is a symbol that dates back to the medieval Albanian nobleman Gjergj Kastrioti, known as Skanderbeg, who used it as his emblem while defending Albania from the Ottoman Empire. Today it represents Albania's strength and independence.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Albania",
-                      "description": "Albania is a country in Southeast Europe."
+                      "icon": "castle",
+                      "title": "Skanderbeg the Hero",
+                      "description": "Gjergj Kastrioti, known as Skanderbeg, is Albania's greatest national hero. For 25 years in the 1400s, he led Albanian forces against the Ottoman Empire and was never defeated in battle — earning him fame across all of Europe."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Albania has a population of approximately 2.4M."
+                      "icon": "temple_buddhist",
+                      "title": "Birthplace of Mother Teresa",
+                      "description": "Mother Teresa, the Nobel Peace Prize-winning nun who dedicated her life to helping the poor in India, was of Albanian descent. Her parents were ethnic Albanians from North Macedonia, and she is a source of immense national pride."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Albania is Tirana."
+                      "icon": "hiking",
+                      "title": "Albanian Alps",
+                      "description": "The Albanian Alps in the north are nicknamed the \"Accursed Mountains\" — but don't let the name fool you! They are breathtakingly beautiful, with towering peaks, crystal-clear lakes, and traditional villages unchanged for centuries."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Riviera Gem",
+                      "description": "Albania's Ionian coast is one of Europe's most unspoiled stretches of coastline, with turquoise waters, white pebble beaches, and ancient ruins. It's often called the \"Albanian Riviera\" and is becoming a popular destination."
                   }
               ]
           },
           "es": {
               "name": "Albania",
               "capital": "Tirana",
-              "flagDescription": "La bandera de Albania.",
+              "flagDescription": "La bandera de Albania es una de las más llamativas del mundo: un audaz águila bicéfala negra sobre un vivido fondo rojo. El águila bicéfala es un símbolo que se remonta al noble albanés medieval Gjergj Kastrioti, conocido como Skanderbeg, quien lo usó como emblema mientras defendía Albania del Imperio Otomano. Hoy representa la fuerza e independencia de Albania.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Albania",
-                      "description": "Albania es un país en Southeast Europe."
+                      "icon": "castle",
+                      "title": "Skanderbeg el Héroe",
+                      "description": "Gjergj Kastrioti, conocido como Skanderbeg, es el mayor héroe nacional de Albania. Durante 25 años en el siglo XV, lideró las fuerzas albanesas contra el Imperio Otomano y nunca fue derrotado en batalla, ganándose fama en toda Europa."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Albania tiene una población de aproximadamente 2.4M."
+                      "icon": "temple_buddhist",
+                      "title": "Cuna de la Madre Teresa",
+                      "description": "La Madre Teresa, la monja ganadora del Premio Nobel de la Paz que dedicó su vida a ayudar a los pobres en India, era de ascendencia albanesa. Sus padres eran albaneses étnicos de Macedonia del Norte, y es fuente de inmenso orgullo nacional."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Albania es Tirana."
+                      "icon": "hiking",
+                      "title": "Los Alpes Albaneses",
+                      "description": "Los Alpes albaneses en el norte son apodados las \"Montañas Malditas\", ¡pero no te dejes engañar por el nombre! Son de una belleza impresionante, con picos imponentes, lagos cristalinos y aldeas tradicionales inalteradas durante siglos."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Joya de la Riviera",
+                      "description": "La costa jónica de Albania es uno de los tramos costeros más vírgenes de Europa, con aguas turquesas, playas de guijarros blancos y ruinas antiguas. A menudo se llama la \"Riviera albanesa\" y se está convirtiendo en un destino popular."
                   }
               ]
           }
@@ -276,44 +296,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Andorra",
               "capital": "Andorra la Vella",
-              "flagDescription": "The flag of Andorra.",
+              "flagDescription": "Andorra's flag has three vertical stripes of blue, yellow, and red — the colors drawn from its two neighboring protectors, France and Spain. In the center is Andorra's coat of arms, featuring a bishop's mitre and crook, two cows, pine logs, and red-and-gold stripes. The motto on the coat of arms says 'Strength United is Stronger,' reflecting how this tiny nation has survived for centuries between powerful neighbors.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Andorra",
-                      "description": "Andorra is a country in Southern Europe."
+                      "icon": "landscape",
+                      "title": "Tiny Mountain Kingdom",
+                      "description": "Andorra is one of the smallest countries in the world, nestled high in the Pyrenees Mountains between France and Spain. The entire country is about the size of a large city, yet it has been independent for over 700 years!"
+                  },
+                  {
+                      "icon": "shopping_cart",
+                      "title": "Tax-Free Shopping",
+                      "description": "Andorra is famous for having very low taxes, making it a paradise for shoppers. Every year, millions of visitors come to buy electronics, perfume, chocolate, and tobacco at prices much cheaper than in neighboring countries."
+                  },
+                  {
+                      "icon": "downhill_skiing",
+                      "title": "Winter Sports Paradise",
+                      "description": "Despite its tiny size, Andorra has world-class ski resorts with over 300 kilometers of ski slopes. Skiing and snowboarding bring huge numbers of visitors each winter to enjoy the spectacular Pyrenean snow."
                   },
                   {
                       "icon": "groups",
-                      "title": "Population",
-                      "description": "Andorra has a population of approximately 88K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Andorra is Andorra la Vella."
+                      "title": "Co-Princes Rule",
+                      "description": "Andorra has a unique system of government — it is officially ruled by two co-princes simultaneously: the Bishop of Urgell (from Spain) and the President of France. This unusual arrangement has worked since the year 1278!"
                   }
               ]
           },
           "es": {
               "name": "Andorra",
               "capital": "Andorra la Vella",
-              "flagDescription": "La bandera de Andorra.",
+              "flagDescription": "La bandera de Andorra tiene tres franjas verticales de azul, amarillo y rojo — los colores tomados de sus dos vecinos protectores, Francia y España. En el centro está el escudo de Andorra, con la mitra y el báculo de un obispo, dos vacas, troncos de pino y franjas rojo-doradas. El lema del escudo dice 'La fuerza unida es más fuerte', reflejando cómo esta diminuta nación ha sobrevivido durante siglos entre poderosos vecinos.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Andorra",
-                      "description": "Andorra es un país en Southern Europe."
+                      "icon": "landscape",
+                      "title": "Diminuto Reino Montañoso",
+                      "description": "¡Andorra es uno de los países más pequeños del mundo, enclavado en las montañas de los Pirineos entre Francia y España. Todo el país tiene el tamaño de una ciudad grande, pero ha sido independiente durante más de 700 años!"
+                  },
+                  {
+                      "icon": "shopping_cart",
+                      "title": "Compras Libres de Impuestos",
+                      "description": "Andorra es famosa por tener impuestos muy bajos, lo que la convierte en un paraíso para los compradores. Cada año, millones de visitantes vienen a comprar electrónica, perfumes, chocolate y tabaco a precios mucho más baratos que en los países vecinos."
+                  },
+                  {
+                      "icon": "downhill_skiing",
+                      "title": "Paraíso de Deportes de Invierno",
+                      "description": "A pesar de su diminuto tamaño, Andorra tiene estaciones de esquí de categoría mundial con más de 300 kilómetros de pistas. El esquí y el snowboard atraen a gran cantidad de visitantes cada invierno para disfrutar de la espectacular nieve pirenaica."
                   },
                   {
                       "icon": "groups",
-                      "title": "Población",
-                      "description": "Andorra tiene una población de aproximadamente 88K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Andorra es Andorra la Vella."
+                      "title": "Los Co-Príncipes Gobiernan",
+                      "description": "Andorra tiene un sistema de gobierno único: está oficialmente gobernada por dos co-príncipes simultáneamente: el Obispo de Urgell (de España) y el Presidente de Francia. ¡Este inusual acuerdo funciona desde el año 1278!"
                   }
               ]
           }
@@ -740,44 +770,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Austria",
               "capital": "Vienna",
-              "flagDescription": "The flag of Austria.",
+              "flagDescription": "Austria's flag is one of the oldest national flags in the world, featuring three horizontal stripes of red, white, and red. According to legend, the design was inspired by Duke Leopold V after the Battle of Ptolemais in 1191 — his white tunic was so soaked in blood that only the stripe beneath his belt stayed clean, creating the red-white-red pattern. The flag symbolizes Austria's long and proud history stretching back over 800 years.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Austria",
-                      "description": "Austria is a country in Central Europe."
+                      "icon": "music_note",
+                      "title": "Land of Music Masters",
+                      "description": "Austria produced some of the world's greatest composers, including Mozart, Haydn, Schubert, and Strauss. Vienna was the musical capital of Europe for centuries, and classical music is still deeply woven into Austrian culture today."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Austria has a population of approximately 9.2M."
+                      "icon": "cake",
+                      "title": "Sachertorte Tradition",
+                      "description": "Austria's most famous dessert, the Sachertorte, is a rich chocolate cake with apricot jam and chocolate glaze, invented in Vienna in 1832. The original recipe is still a closely guarded secret kept at Vienna's Hotel Sacher."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Austria is Vienna."
+                      "icon": "castle",
+                      "title": "Habsburg Empire Legacy",
+                      "description": "For nearly 700 years, Austria was the center of the Habsburg dynasty, one of the most powerful royal families in European history. The empire once stretched across much of Europe, and grand palaces like Schönbrunn still stand as reminders of this imperial past."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Alpine Wonderland",
+                      "description": "Austria is dominated by the majestic Alps, with over 60% of the country covered by mountains. The scenery inspired The Sound of Music, and today Austria is world-famous for skiing, hiking, and breathtaking mountain villages."
                   }
               ]
           },
           "es": {
               "name": "Austria",
-              "capital": "Vienna",
-              "flagDescription": "La bandera de Austria.",
+              "capital": "Viena",
+              "flagDescription": "La bandera de Austria es una de las más antiguas del mundo, con tres franjas horizontales de rojo, blanco y rojo. Según la leyenda, el diseño fue inspirado por el Duque Leopoldo V tras la Batalla de Ptolemaida en 1191: su túnica blanca estaba tan empapada de sangre que solo la franja bajo su cinturón quedó limpia, creando el patrón rojo-blanco-rojo. La bandera simboliza la larga y orgullosa historia de Austria que se remonta más de 800 años.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Austria",
-                      "description": "Austria es un país en Central Europe."
+                      "icon": "music_note",
+                      "title": "Tierra de Maestros de la Música",
+                      "description": "Austria produjo algunos de los compositores más grandes del mundo, incluyendo Mozart, Haydn, Schubert y Strauss. Viena fue la capital musical de Europa durante siglos, y la música clásica sigue estando profundamente arraigada en la cultura austriaca."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Austria tiene una población de aproximadamente 9.2M."
+                      "icon": "cake",
+                      "title": "Tradición del Sachertorte",
+                      "description": "El postre más famoso de Austria, el Sachertorte, es un rico pastel de chocolate con mermelada de albaricoque y glaseado de chocolate, inventado en Viena en 1832. La receta original sigue siendo un secreto celosamente guardado en el Hotel Sacher de Viena."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Austria es Vienna."
+                      "icon": "castle",
+                      "title": "Legado del Imperio Habsburgo",
+                      "description": "Durante casi 700 años, Austria fue el centro de la dinastía Habsburgo, una de las familias reales más poderosas de la historia europea. El imperio se extendió por gran parte de Europa, y palacios grandiosos como Schönbrunn aún se mantienen como recordatorios de este pasado imperial."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Maravilla Alpina",
+                      "description": "Austria está dominada por los majestuosos Alpes, con más del 60% del país cubierto por montañas. El paisaje inspiró La Novicia Rebelde, y hoy Austria es famosa mundialmente por el esquí, el senderismo y los impresionantes pueblos de montaña."
                   }
               ]
           }
@@ -1078,44 +1118,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Belarus",
               "capital": "Minsk",
-              "flagDescription": "The flag of Belarus.",
+              "flagDescription": "Belarus's flag has two horizontal bands — a wide red stripe on top and a narrower green stripe on the bottom — with a decorative white and red ornamental pattern along the left side. The red represents the blood of those who fought for freedom, the green symbolizes the country's vast forests and hope for the future, and the traditional ornamental band on the left is a pattern from Belarusian folk art and weaving traditions.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Belarus",
-                      "description": "Belarus is a country in Eastern Europe."
+                      "icon": "forest",
+                      "title": "Land of Forests",
+                      "description": "Belarus is often called the \"Lungs of Europe\" because forests cover nearly 40% of the country. The Białowieża Forest, shared with Poland, is one of the last and largest ancient primeval forests in Europe and is home to the rare European bison."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Belarus has a population of approximately 9.1M."
+                      "icon": "sports_hockey",
+                      "title": "Ice Hockey Nation",
+                      "description": "Ice hockey is Belarus's national sport and a point of immense national pride. Belarusians are passionate fans, and the country has produced many top NHL players. Winter sports culture runs deep in this cold northern country."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Belarus is Minsk."
+                      "icon": "architecture",
+                      "title": "Mir Castle",
+                      "description": "Mir Castle, a UNESCO World Heritage Site, is a magnificent medieval fortress that survived wars, fires, and centuries of history. Its fairy-tale towers rising above a lake make it one of the most picturesque castles in all of Eastern Europe."
+                  },
+                  {
+                      "icon": "agriculture",
+                      "title": "Potato Capital",
+                      "description": "Belarus is famous for its love of potatoes — Belarusians eat more potatoes per person than almost any other country. Draniki, crispy potato pancakes, are the national dish and can be found on every menu across the country."
                   }
               ]
           },
           "es": {
               "name": "Bielorrusia",
               "capital": "Minsk",
-              "flagDescription": "La bandera de Bielorrusia.",
+              "flagDescription": "La bandera de Bielorrusia tiene dos bandas horizontales: una franja roja ancha en la parte superior y una franja verde más estrecha en la parte inferior, con un patrón ornamental blanco y rojo a lo largo del lado izquierdo. El rojo representa la sangre de quienes lucharon por la libertad, el verde simboliza los vastos bosques del país y la esperanza en el futuro, y la banda ornamental tradicional a la izquierda es un patrón del arte popular y las tradiciones textiles bielorrusas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bielorrusia",
-                      "description": "Bielorrusia es un país en Eastern Europe."
+                      "icon": "forest",
+                      "title": "Tierra de Bosques",
+                      "description": "Bielorrusia es conocida como los \"Pulmones de Europa\" porque los bosques cubren casi el 40% del país. El Bosque de Białowieża, compartido con Polonia, es uno de los últimos y más grandes bosques primitivos de Europa y es hogar del raro bisonte europeo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bielorrusia tiene una población de aproximadamente 9.1M."
+                      "icon": "sports_hockey",
+                      "title": "Nación del Hockey sobre Hielo",
+                      "description": "El hockey sobre hielo es el deporte nacional de Bielorrusia y fuente de enorme orgullo nacional. Los bielorrusos son fanáticos apasionados y el país ha producido muchos jugadores destacados de la NHL. La cultura de los deportes de invierno está arraigada en este frío país del norte."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bielorrusia es Minsk."
+                      "icon": "architecture",
+                      "title": "Castillo de Mir",
+                      "description": "El Castillo de Mir, Patrimonio de la Humanidad de la UNESCO, es una magnífica fortaleza medieval que sobrevivió guerras, incendios y siglos de historia. Sus torres de cuento de hadas que se alzan sobre un lago lo convierten en uno de los castillos más pintorescos de Europa del Este."
+                  },
+                  {
+                      "icon": "agriculture",
+                      "title": "Capital de la Patata",
+                      "description": "Bielorrusia es famosa por su amor a las patatas: los bielorrusos comen más patatas por persona que casi cualquier otro país. Los draniki, crujientes tortitas de patata, son el plato nacional y se pueden encontrar en todos los menús del país."
                   }
               ]
           }
@@ -1131,44 +1181,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Belgium",
               "capital": "Brussels",
-              "flagDescription": "The flag of Belgium.",
+              "flagDescription": "Belgium's flag has three vertical stripes of black, yellow, and red — colors taken from the historic coat of arms of the Duchy of Brabant, featuring a golden lion on a black background with red claws and tongue. The flag's design was inspired by the French tricolor during Belgium's revolution of 1830, when Belgians rose up to win their independence. Today it represents Belgium's unity across its Dutch, French, and German-speaking communities.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Belgium",
-                      "description": "Belgium is a country in Western Europe."
+                      "icon": "restaurant",
+                      "title": "Chocolate and Waffles Capital",
+                      "description": "Belgium is world-famous for its extraordinary chocolate and delicious waffles. Belgian chocolate is considered among the finest in the world, and there are more chocolate shops per square kilometer in Brussels than almost anywhere else on Earth."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Belgium has a population of approximately 11.8M."
+                      "icon": "comic_face",
+                      "title": "Comic Strip Country",
+                      "description": "Belgium is the birthplace of some of the world's most beloved comic strip characters, including Tintin and the Smurfs. The comic strip art form is taken so seriously that Brussels has a Comic Strip Museum and buildings decorated with giant comic murals."
+                  },
+                  {
+                      "icon": "emoji_food_beverage",
+                      "title": "Beer Paradise",
+                      "description": "Belgium produces over 1,500 different types of beer, many crafted by medieval monks in monasteries. Belgian beer culture was added to UNESCO's Intangible Cultural Heritage list, recognizing it as a unique and precious tradition."
                   },
                   {
                       "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Belgium is Brussels."
+                      "title": "Heart of Europe",
+                      "description": "Brussels is home to the headquarters of both NATO and the European Union, making Belgium the unofficial political capital of Europe. The country's central location and multilingual culture have made it a natural meeting place for nations."
                   }
               ]
           },
           "es": {
               "name": "Bélgica",
-              "capital": "Brussels",
-              "flagDescription": "La bandera de Bélgica.",
+              "capital": "Bruselas",
+              "flagDescription": "La bandera de Bélgica tiene tres franjas verticales de negro, amarillo y rojo, colores tomados del histórico escudo del Ducado de Brabante, con un león dorado sobre fondo negro con garras y lengua rojas. El diseño de la bandera fue inspirado por el tricolor francés durante la revolución belga de 1830, cuando los belgas se levantaron para ganar su independencia. Hoy representa la unidad de Bélgica entre sus comunidades de habla neerlandesa, francesa y alemana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bélgica",
-                      "description": "Bélgica es un país en Western Europe."
+                      "icon": "restaurant",
+                      "title": "Capital del Chocolate y los Gofres",
+                      "description": "Bélgica es famosa mundialmente por su extraordinario chocolate y sus deliciosos gofres. El chocolate belga se considera uno de los mejores del mundo, y hay más tiendas de chocolate por kilómetro cuadrado en Bruselas que en casi cualquier otro lugar de la Tierra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bélgica tiene una población de aproximadamente 11.8M."
+                      "icon": "comic_face",
+                      "title": "País del Cómic",
+                      "description": "Bélgica es el lugar de nacimiento de algunos de los personajes de cómic más queridos del mundo, incluyendo Tintín y los Pitufos. El arte del cómic se toma tan en serio que Bruselas tiene un Museo del Cómic y edificios decorados con enormes murales de historietas."
+                  },
+                  {
+                      "icon": "emoji_food_beverage",
+                      "title": "Paraíso de la Cerveza",
+                      "description": "Bélgica produce más de 1.500 tipos diferentes de cerveza, muchas elaboradas por monjes medievales en monasterios. La cultura cervecera belga fue añadida a la lista del Patrimonio Cultural Inmaterial de la UNESCO, reconociéndola como una tradición única y preciosa."
                   },
                   {
                       "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bélgica es Brussels."
+                      "title": "Corazón de Europa",
+                      "description": "Bruselas alberga las sedes tanto de la OTAN como de la Unión Europea, convirtiéndose en la capital política no oficial de Europa. La ubicación central del país y su cultura multilingüe lo han convertido en un lugar de encuentro natural para las naciones."
                   }
               ]
           }
@@ -1479,44 +1539,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Bosnia and Herzegovina",
               "capital": "Sarajevo",
-              "flagDescription": "The flag of Bosnia and Herzegovina.",
+              "flagDescription": "Bosnia and Herzegovina's flag features a large yellow right triangle pointing upward against a blue background, with a diagonal row of white stars running along the triangle's hypotenuse. The blue and yellow colors are shared with the European Union flag, symbolizing Bosnia's European aspirations. The white stars represent the people of Bosnia and Herzegovina, and the triangle's three points represent the three main ethnic groups: Bosniaks, Croats, and Serbs.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Bosnia and Herzegovina",
-                      "description": "Bosnia and Herzegovina is a country in Southeast Europe."
+                      "icon": "architecture",
+                      "title": "Stari Most Bridge",
+                      "description": "The Old Bridge (Stari Most) in Mostar is one of the most beautiful bridges in the world. Built by the Ottoman Empire in 1566, it gracefully arches over the turquoise Neretva River. Brave locals still hold diving competitions from its top every summer."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bosnia and Herzegovina has a population of approximately 3.4M."
+                      "icon": "downhill_skiing",
+                      "title": "1984 Winter Olympics",
+                      "description": "Sarajevo hosted the 1984 Winter Olympics, putting Bosnia on the world stage. The mountain venues used during those games — Jahorina and Bjelašnica — are still popular ski resorts today, attracting skiers from across Europe."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bosnia and Herzegovina is Sarajevo."
+                      "icon": "coffee",
+                      "title": "Coffee Culture",
+                      "description": "Bosnian coffee is a unique tradition unlike coffee anywhere else. Ground coffee is boiled directly in a small copper pot called a džezva, then poured slowly and sipped ceremonially. Sharing coffee is a deeply important social ritual in Bosnian culture."
+                  },
+                  {
+                      "icon": "waterfall",
+                      "title": "Kravice Waterfalls",
+                      "description": "The Kravice Waterfalls are often called the \"mini Niagara of Herzegovina\" — a stunning natural spectacle where the Trebižat River cascades over a 25-meter semicircular cliff into a turquoise pool below, surrounded by lush green vegetation."
                   }
               ]
           },
           "es": {
               "name": "Bosnia y Herzegovina",
               "capital": "Sarajevo",
-              "flagDescription": "La bandera de Bosnia y Herzegovina.",
+              "flagDescription": "La bandera de Bosnia y Herzegovina muestra un gran triángulo amarillo apuntando hacia arriba sobre un fondo azul, con una fila diagonal de estrellas blancas a lo largo de la hipotenusa del triángulo. Los colores azul y amarillo son compartidos con la bandera de la Unión Europea, simbolizando las aspiraciones europeas de Bosnia. Las estrellas blancas representan al pueblo de Bosnia y Herzegovina, y los tres vértices del triángulo representan a los tres grupos étnicos principales: bosniacos, croatas y serbios.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bosnia y Herzegovina",
-                      "description": "Bosnia y Herzegovina es un país en Southeast Europe."
+                      "icon": "architecture",
+                      "title": "El Puente Stari Most",
+                      "description": "El Puente Viejo (Stari Most) en Mostar es uno de los puentes más hermosos del mundo. Construido por el Imperio Otomano en 1566, se arquea elegantemente sobre el turquesa Río Neretva. Los valientes lugareños todavía celebran competiciones de salto desde su cima cada verano."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bosnia y Herzegovina tiene una población de aproximadamente 3.4M."
+                      "icon": "downhill_skiing",
+                      "title": "Juegos Olímpicos de Invierno 1984",
+                      "description": "Sarajevo fue sede de los Juegos Olímpicos de Invierno de 1984, poniendo a Bosnia en el escenario mundial. Las instalaciones de montaña utilizadas durante esos juegos — Jahorina y Bjelašnica — siguen siendo populares estaciones de esquí hoy en día."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bosnia y Herzegovina es Sarajevo."
+                      "icon": "coffee",
+                      "title": "Cultura del Café",
+                      "description": "El café bosnio es una tradición única diferente al café de cualquier otro lugar. El café molido se hierve directamente en una pequeña olla de cobre llamada džezva, luego se vierte lentamente y se sorbe ceremonialmente. Compartir café es un ritual social profundamente importante en la cultura bosnia."
+                  },
+                  {
+                      "icon": "waterfall",
+                      "title": "Cascadas de Kravice",
+                      "description": "Las Cascadas de Kravice son a menudo llamadas el \"mini Niágara de Herzegovina\": un impresionante espectáculo natural donde el Río Trebižat cae sobre un acantilado semicircular de 25 metros hacia una piscina turquesa, rodeada de exuberante vegetación verde."
                   }
               ]
           }
@@ -1817,44 +1887,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Bulgaria",
               "capital": "Sofia",
-              "flagDescription": "The flag of Bulgaria.",
+              "flagDescription": "Bulgaria's flag has three horizontal stripes of white, green, and red. The white represents peace and freedom, the green symbolizes the country's forests and agricultural wealth, and the red stands for the courage of those who fought for independence. The colors were chosen after Bulgaria gained independence from the Ottoman Empire in 1878, and the design was partly inspired by Russia's tricolor as a tribute to Russia's role in helping Bulgaria achieve freedom.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Bulgaria",
-                      "description": "Bulgaria is a country in Southeast Europe."
+                      "icon": "local_florist",
+                      "title": "Valley of Roses",
+                      "description": "Bulgaria produces about 70–85% of the world's rose oil, used in luxury perfumes. The Rose Valley near Kazanlak bursts into bloom every May and June, and locals celebrate with a beautiful Rose Festival — a tradition going back over 300 years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bulgaria has a population of approximately 6.4M."
+                      "icon": "history",
+                      "title": "Ancient Thracian Gold",
+                      "description": "Bulgaria has one of the richest collections of ancient Thracian gold treasure in the world. The Panagyurishte Treasure, discovered in 1949, includes extraordinary golden vessels decorated with mythological scenes and is considered a masterpiece of ancient craftsmanship."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bulgaria is Sofia."
+                      "icon": "beach_access",
+                      "title": "Black Sea Resorts",
+                      "description": "Bulgaria has a beautiful stretch of Black Sea coastline with warm waters, golden sandy beaches, and ancient seaside towns. Resorts like Sunny Beach attract millions of European visitors every summer, while historic towns like Nessebar date back 3,000 years."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Creators of the Cyrillic Alphabet",
+                      "description": "The Cyrillic alphabet, used by over 250 million people across Russia, Ukraine, Serbia, and many other countries, was created in Bulgaria in the 9th century by Saints Cyril and Methodius. Bulgaria is rightfully proud of this enormous gift to world literacy."
                   }
               ]
           },
           "es": {
               "name": "Bulgaria",
-              "capital": "Sofia",
-              "flagDescription": "La bandera de Bulgaria.",
+              "capital": "Sofía",
+              "flagDescription": "La bandera de Bulgaria tiene tres franjas horizontales de blanco, verde y rojo. El blanco representa la paz y la libertad, el verde simboliza los bosques y la riqueza agrícola del país, y el rojo representa el coraje de quienes lucharon por la independencia. Los colores fueron elegidos tras la independencia de Bulgaria del Imperio Otomano en 1878, y el diseño fue parcialmente inspirado por el tricolor ruso como tributo al papel de Rusia en ayudar a Bulgaria a conseguir la libertad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Bulgaria",
-                      "description": "Bulgaria es un país en Southeast Europe."
+                      "icon": "local_florist",
+                      "title": "Valle de las Rosas",
+                      "description": "Bulgaria produce entre el 70 y el 85% del aceite de rosas del mundo, usado en perfumes de lujo. El Valle de las Rosas cerca de Kazanlak florece cada mayo y junio, y los lugareños celebran con un hermoso Festival de la Rosa, una tradición que se remonta a más de 300 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bulgaria tiene una población de aproximadamente 6.4M."
+                      "icon": "history",
+                      "title": "Oro Tracio Antiguo",
+                      "description": "Bulgaria tiene una de las colecciones más ricas de tesoros de oro tracio antiguo del mundo. El Tesoro de Panagyurishte, descubierto en 1949, incluye extraordinarios recipientes de oro decorados con escenas mitológicas y es considerado una obra maestra de la artesanía antigua."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bulgaria es Sofia."
+                      "icon": "beach_access",
+                      "title": "Balnearios del Mar Negro",
+                      "description": "Bulgaria tiene un hermoso tramo de costa en el Mar Negro con aguas cálidas, playas de arena dorada y antiguas ciudades costeras. Balnearios como la Sunny Beach atraen a millones de visitantes europeos cada verano, mientras que ciudades históricas como Nessebar datan de hace 3.000 años."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Creadores del Alfabeto Cirílico",
+                      "description": "El alfabeto cirílico, usado por más de 250 millones de personas en Rusia, Ucrania, Serbia y muchos otros países, fue creado en Bulgaria en el siglo IX por los Santos Cirilo y Metodio. Bulgaria está justamente orgullosa de este enorme regalo a la alfabetización mundial."
                   }
               ]
           }
@@ -2884,44 +2964,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Croatia",
               "capital": "Zagreb",
-              "flagDescription": "The flag of Croatia.",
+              "flagDescription": "Croatia's flag has three horizontal stripes of red, white, and blue — the Pan-Slavic colors representing the unity of Slavic peoples. In the center is Croatia's distinctive coat of arms: a red-and-white checkerboard shield, one of the oldest Croatian symbols dating back to medieval times. Above the main shield are five smaller shields representing Croatia's five historic regions, making the coat of arms one of the most complex and beautiful in Europe.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Croatia",
-                      "description": "Croatia is a country in Southeast Europe."
+                      "icon": "beach_access",
+                      "title": "Adriatic Paradise",
+                      "description": "Croatia's Adriatic coastline is one of Europe's most spectacular, stretching over 1,700 kilometers with more than 1,000 islands. Crystal-clear turquoise waters, ancient walled cities like Dubrovnik, and stunning national parks make it a dream destination."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Croatia has a population of approximately 3.9M."
+                      "icon": "style",
+                      "title": "Birthplace of the Necktie",
+                      "description": "The necktie, worn by millions of people worldwide, was invented in Croatia! During the 17th century, Croatian soldiers wore colorful scarves around their necks, which French fashion designers noticed and transformed into the modern necktie. The word \"cravat\" comes from \"Croat.\""
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Croatia is Zagreb."
+                      "icon": "water",
+                      "title": "Plitvice Waterfalls",
+                      "description": "Plitvice Lakes National Park, a UNESCO World Heritage Site, is one of nature's greatest wonders: 16 terraced lakes connected by a series of waterfalls cascading through a forested canyon. The lakes change color from azure to green depending on the minerals and organisms in the water."
+                  },
+                  {
+                      "icon": "sports_soccer",
+                      "title": "World Cup Overachievers",
+                      "description": "Despite being a small country of just 4 million people, Croatia reached the World Cup final in 2018 and came third in 2022. With stars like Luka Modrić, Croatia has proven itself one of the greatest football nations in the world."
                   }
               ]
           },
           "es": {
               "name": "Croacia",
               "capital": "Zagreb",
-              "flagDescription": "La bandera de Croacia.",
+              "flagDescription": "La bandera de Croacia tiene tres franjas horizontales de rojo, blanco y azul — los colores paneslávicos que representan la unidad de los pueblos eslavos. En el centro está el distintivo escudo de armas de Croacia: un escudo de damero rojo y blanco, uno de los símbolos croatas más antiguos que data de la época medieval. Encima del escudo principal hay cinco escudos más pequeños que representan las cinco regiones históricas de Croacia, haciendo que el escudo sea uno de los más complejos y hermosos de Europa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Croacia",
-                      "description": "Croacia es un país en Southeast Europe."
+                      "icon": "beach_access",
+                      "title": "Paraíso del Adriático",
+                      "description": "La costa adriática de Croacia es una de las más espectaculares de Europa, extendiéndose más de 1.700 kilómetros con más de 1.000 islas. Aguas turquesas cristalinas, antiguas ciudades amuralladas como Dubrovnik y magníficos parques nacionales la convierten en un destino de ensueño."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Croacia tiene una población de aproximadamente 3.9M."
+                      "icon": "style",
+                      "title": "Cuna de la Corbata",
+                      "description": "¡La corbata, usada por millones de personas en todo el mundo, fue inventada en Croacia! Durante el siglo XVII, los soldados croatas llevaban pañuelos coloridos alrededor del cuello, que los diseñadores de moda franceses notaron y transformaron en la corbata moderna. La palabra \"cravate\" viene de \"croata\"."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Croacia es Zagreb."
+                      "icon": "water",
+                      "title": "Cascadas de Plitvice",
+                      "description": "El Parque Nacional de los Lagos de Plitvice, Patrimonio de la Humanidad de la UNESCO, es una de las maravillas más grandes de la naturaleza: 16 lagos en terrazas conectados por una serie de cascadas que caen en cascada a través de un cañón boscoso. Los lagos cambian de color del azul al verde según los minerales y organismos del agua."
+                  },
+                  {
+                      "icon": "sports_soccer",
+                      "title": "Superestrella del Mundial",
+                      "description": "A pesar de ser un pequeño país de solo 4 millones de personas, Croacia llegó a la final del Mundial en 2018 y quedó tercera en 2022. Con estrellas como Luka Modrić, Croacia ha demostrado ser una de las grandes naciones del fútbol mundial."
                   }
               ]
           }
@@ -3063,44 +3153,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cyprus",
               "capital": "Nicosia",
-              "flagDescription": "The flag of Cyprus.",
+              "flagDescription": "Cyprus has one of the most unique flags in the world — a white background with an orange-copper silhouette of the island above two crossing green olive branches. The copper color reflects that Cyprus means 'copper island' in Greek, as the island was once the world's main source of copper in ancient times. The olive branches symbolize peace between the Greek and Turkish Cypriot communities who share the island.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cyprus",
-                      "description": "Cyprus is a country in Southern Europe."
+                      "icon": "history",
+                      "title": "Birthplace of Aphrodite",
+                      "description": "According to Greek mythology, Aphrodite, the goddess of love and beauty, was born from the sea foam near the rocky shores of Cyprus at a place now called Petra tou Romiou. This makes Cyprus one of the most romantically legendary places in the ancient world."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cyprus has a population of approximately 1.4M."
+                      "icon": "wb_sunny",
+                      "title": "Sunshine Island",
+                      "description": "Cyprus enjoys more sunshine than almost anywhere else in Europe — about 340 sunny days per year! This Mediterranean climate makes it a year-round destination, with golden beaches in summer and green hills perfect for hiking in spring."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cyprus is Nicosia."
+                      "icon": "wine_bar",
+                      "title": "World's Oldest Wine",
+                      "description": "Cyprus is home to Commandaria wine, which has been produced continuously for at least 5,000 years — making it the world's oldest wine still in production. It was even praised by the ancient Greek poet Hesiod and was famously drunk at a party by the King of England in 1363."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "Incredible Mosaics",
+                      "description": "The Paphos Archaeological Park contains some of the most stunning ancient Roman mosaics in the world, depicting scenes from Greek mythology in extraordinary detail and color. These floor mosaics, over 1,700 years old, are so beautiful they became a UNESCO World Heritage Site."
                   }
               ]
           },
           "es": {
               "name": "Chipre",
               "capital": "Nicosia",
-              "flagDescription": "La bandera de Chipre.",
+              "flagDescription": "Chipre tiene una de las banderas más únicas del mundo: un fondo blanco con una silueta color cobre anaranjado de la isla sobre dos ramas de olivo verdes cruzadas. El color cobre refleja que Chipre significa 'isla del cobre' en griego, ya que la isla fue en tiempos la principal fuente mundial de cobre en la antigüedad. Las ramas de olivo simbolizan la paz entre las comunidades grecochipriota y turcochipriota que comparten la isla.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Chipre",
-                      "description": "Chipre es un país en Southern Europe."
+                      "icon": "history",
+                      "title": "Cuna de Afrodita",
+                      "description": "Según la mitología griega, Afrodita, la diosa del amor y la belleza, nació de la espuma del mar cerca de las rocosas orillas de Chipre en un lugar llamado hoy Petra tou Romiou. Esto convierte a Chipre en uno de los lugares más legendariamente románticos del mundo antiguo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Chipre tiene una población de aproximadamente 1.4M."
+                      "icon": "wb_sunny",
+                      "title": "Isla del Sol",
+                      "description": "Chipre disfruta de más sol que casi cualquier otro lugar de Europa — ¡alrededor de 340 días soleados al año! Este clima mediterráneo la convierte en un destino de todo el año, con playas doradas en verano y colinas verdes perfectas para senderismo en primavera."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Chipre es Nicosia."
+                      "icon": "wine_bar",
+                      "title": "El Vino Más Antiguo del Mundo",
+                      "description": "Chipre alberga el vino Commandaria, que se ha producido continuamente durante al menos 5.000 años, convirtiéndolo en el vino más antiguo del mundo que aún se produce. Fue elogiado por el antiguo poeta griego Hesíodo y fue bebido famosamente en una fiesta por el Rey de Inglaterra en 1363."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "Mosaicos Increíbles",
+                      "description": "El Parque Arqueológico de Pafos contiene algunos de los mosaicos romanos antiguos más impresionantes del mundo, que representan escenas de la mitología griega con extraordinario detalle y color. Estos mosaicos de suelo, con más de 1.700 años de antigüedad, son tan hermosos que se convirtieron en Patrimonio de la Humanidad de la UNESCO."
                   }
               ]
           }
@@ -3116,44 +3216,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Czechia",
               "capital": "Prague",
-              "flagDescription": "The flag of Czechia.",
+              "flagDescription": "Czechia's flag has two horizontal stripes of white on top and red on the bottom, with a blue triangle pointing from the left side toward the center. The white and red colors come from the traditional colors of Bohemia, one of the historic Czech lands, while the blue was added to distinguish the flag from Poland's very similar flag. The blue triangle also represents Moravia and Slovakia from the country's former Czechoslovakia days.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Czechia",
-                      "description": "Czechia is a country in Central Europe."
+                      "icon": "castle",
+                      "title": "Prague Castle",
+                      "description": "Prague Castle is the largest ancient castle complex in the world, covering an area of about 70,000 square meters. Perched dramatically above the Vltava River, it has been home to Czech kings, emperors, and presidents for over 1,000 years."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Czechia has a population of approximately 10.9M."
+                      "icon": "sports_bar",
+                      "title": "Beer Champions",
+                      "description": "Czechia consumes more beer per person than any other country in the world — about 142 liters per person per year! The world-famous Pilsner style of beer was invented in Plzeň, Czech Republic, in 1842, and the country is rightfully proud of its brewing heritage."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Czechia is Prague."
+                      "icon": "robot_2",
+                      "title": "Word \"Robot\" Invented Here",
+                      "description": "The word \"robot\" was invented by Czech writer Karel Čapek in his 1920 play R.U.R. It comes from the Czech word \"robota,\" meaning forced labor. The play introduced the concept of artificial beings that do work for humans — a strikingly modern idea over 100 years ago!"
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "Fairy-Tale Towns",
+                      "description": "Czech cities like Český Krumlov and Telč are so perfectly preserved from medieval times that they look like fairy-tale settings. Český Krumlov, a UNESCO site, has a stunning castle and winding cobblestone streets that have barely changed in 500 years."
                   }
               ]
           },
           "es": {
               "name": "Chequia",
-              "capital": "Prague",
-              "flagDescription": "La bandera de Chequia.",
+              "capital": "Praga",
+              "flagDescription": "La bandera de Chequia tiene dos franjas horizontales de blanco arriba y rojo abajo, con un triángulo azul que apunta desde el lado izquierdo hacia el centro. Los colores blanco y rojo provienen de los colores tradicionales de Bohemia, una de las tierras checas históricas, mientras que el azul fue añadido para distinguir la bandera de la muy similar de Polonia. El triángulo azul también representa Moravia y Eslovaquia de los días de la antigua Checoslovaquia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Chequia",
-                      "description": "Chequia es un país en Central Europe."
+                      "icon": "castle",
+                      "title": "El Castillo de Praga",
+                      "description": "El Castillo de Praga es el complejo de castillo antiguo más grande del mundo, cubriendo un área de unos 70.000 metros cuadrados. Situado dramáticamente sobre el Río Vltava, ha sido hogar de reyes checos, emperadores y presidentes durante más de 1.000 años."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Chequia tiene una población de aproximadamente 10.9M."
+                      "icon": "sports_bar",
+                      "title": "Campeones de la Cerveza",
+                      "description": "Chequia consume más cerveza por persona que cualquier otro país del mundo — ¡unas 142 litros por persona al año! El famoso estilo de cerveza Pilsner fue inventado en Plzeň, República Checa, en 1842, y el país está justamente orgulloso de su herencia cervecera."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Chequia es Prague."
+                      "icon": "robot_2",
+                      "title": "La Palabra \"Robot\" Inventada Aquí",
+                      "description": "¡La palabra \"robot\" fue inventada por el escritor checo Karel Čapek en su obra de 1920 R.U.R.! Proviene de la palabra checa \"robota\", que significa trabajo forzado. La obra introdujo el concepto de seres artificiales que hacen trabajo para los humanos, ¡una idea sorprendentemente moderna hace más de 100 años!"
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "Ciudades de Cuento de Hadas",
+                      "description": "Ciudades checas como Český Krumlov y Telč están tan perfectamente conservadas desde la época medieval que parecen escenarios de cuentos de hadas. Český Krumlov, un sitio de la UNESCO, tiene un impresionante castillo y serpenteantes calles adoquinadas que apenas han cambiado en 500 años."
                   }
               ]
           }
@@ -3169,44 +3279,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Denmark",
               "capital": "Copenhagen",
-              "flagDescription": "The flag of Denmark.",
+              "flagDescription": "Denmark's flag — called the Dannebrog, meaning 'Danish cloth' — is the oldest national flag still in use by an independent nation, dating back to the 13th century. It features a bold white Nordic cross on a bright red background. According to legend, the flag fell from the sky during the Battle of Lyndanisse in Estonia in 1219, giving Danish soldiers a miraculous sign of victory. Today the Dannebrog is treasured as one of the most iconic national symbols in the world.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Denmark",
-                      "description": "Denmark is a country in Northern Europe."
+                      "icon": "toys",
+                      "title": "LEGO Homeland",
+                      "description": "LEGO, the world's most popular toy, was invented in Denmark in 1932 by Ole Kirk Christiansen in the small town of Billund. The name LEGO comes from the Danish words \"leg godt\" meaning \"play well.\" Denmark even has the original LEGOLAND theme park in Billund!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Denmark has a population of approximately 6.0M."
+                      "icon": "sailing",
+                      "title": "Viking Legacy",
+                      "description": "Denmark was once the heartland of the fearless Viking warriors who explored and settled much of Europe, the North Atlantic, and even reached North America around 1000 CE — nearly 500 years before Columbus. Viking museums and burial sites can still be visited across Denmark today."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Denmark is Copenhagen."
+                      "icon": "menu_book",
+                      "title": "Hans Christian Andersen",
+                      "description": "Denmark is the homeland of fairy-tale author Hans Christian Andersen, who wrote beloved stories like The Little Mermaid, Thumbelina, and The Ugly Duckling. A famous bronze statue of the Little Mermaid sits in Copenhagen Harbor as tribute to him."
+                  },
+                  {
+                      "icon": "pedal_bike",
+                      "title": "World's Most Bike-Friendly City",
+                      "description": "Copenhagen is consistently ranked as the world's most bike-friendly city. More people commute by bicycle than by car, the city has hundreds of kilometers of dedicated bike lanes, and cycling is deeply embedded in Danish culture and identity."
                   }
               ]
           },
           "es": {
               "name": "Dinamarca",
-              "capital": "Copenhagen",
-              "flagDescription": "La bandera de Dinamarca.",
+              "capital": "Copenhague",
+              "flagDescription": "La bandera de Dinamarca — llamada Dannebrog, que significa 'tela danesa' — es la bandera nacional más antigua en uso por una nación independiente, que data del siglo XIII. Muestra una audaz cruz nórdica blanca sobre un brillante fondo rojo. Según la leyenda, la bandera cayó del cielo durante la Batalla de Lyndanisse en Estonia en 1219, dando a los soldados daneses una señal milagrosa de victoria. Hoy el Dannebrog es atesorado como uno de los símbolos nacionales más icónicos del mundo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Dinamarca",
-                      "description": "Dinamarca es un país en Northern Europe."
+                      "icon": "toys",
+                      "title": "Patria de LEGO",
+                      "description": "LEGO, el juguete más popular del mundo, fue inventado en Dinamarca en 1932 por Ole Kirk Christiansen en el pequeño pueblo de Billund. El nombre LEGO proviene de las palabras danesas \"leg godt\" que significan \"juega bien\". ¡Dinamarca incluso tiene el parque temático LEGOLAND original en Billund!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Dinamarca tiene una población de aproximadamente 6.0M."
+                      "icon": "sailing",
+                      "title": "Legado Vikingo",
+                      "description": "Dinamarca fue en su día el corazón de los temibles guerreros vikingos que exploraron y colonizaron gran parte de Europa, el Atlántico Norte e incluso llegaron a América del Norte alrededor del año 1000 d.C., casi 500 años antes de Colón. Los museos vikingos y los sitios de enterramiento aún pueden visitarse en toda Dinamarca."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Dinamarca es Copenhagen."
+                      "icon": "menu_book",
+                      "title": "Hans Christian Andersen",
+                      "description": "Dinamarca es la patria del autor de cuentos de hadas Hans Christian Andersen, quien escribió amadas historias como La Sirenita, Pulgarcita y El Patito Feo. Una famosa estatua de bronce de la Sirenita se encuentra en el Puerto de Copenhague en su honor."
+                  },
+                  {
+                      "icon": "pedal_bike",
+                      "title": "La Ciudad Más Amigable con la Bicicleta del Mundo",
+                      "description": "Copenhague está clasificada constantemente como la ciudad más amigable con la bicicleta del mundo. Más personas se desplazan en bicicleta que en coche, la ciudad tiene cientos de kilómetros de carriles bici dedicados, y el ciclismo está profundamente arraigado en la cultura e identidad danesa."
                   }
               ]
           }
@@ -3739,44 +3859,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Estonia",
               "capital": "Tallinn",
-              "flagDescription": "The flag of Estonia.",
+              "flagDescription": "Estonia's flag has three equal horizontal stripes of blue, black, and white. Blue represents the sky, sea, and the loyalty of the Estonian people. Black symbolizes the dark soil of Estonia and the suffering of the nation through centuries of occupation. White stands for purity, hard work, and the hope for a bright future. Together these colors tell the story of a small but resilient nation that has always strived for freedom.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Estonia",
-                      "description": "Estonia is a country in Northern Europe."
+                      "icon": "wifi",
+                      "title": "Digital Pioneer Nation",
+                      "description": "Estonia is one of the most digitally advanced countries in the world. It was the first country to offer online voting in national elections, has a digital government that lets citizens do almost everything online, and was the birthplace of Skype, the video-calling app used by hundreds of millions of people."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Estonia has a population of approximately 1.4M."
+                      "icon": "forest",
+                      "title": "Land of Forests and Bogs",
+                      "description": "Over half of Estonia is covered by forests, and the country has an extraordinary network of bogs and wetlands that are unique in all of Europe. Walking on bobbing bog moss during guided tours is a popular Estonian activity — it feels like walking on a giant water mattress!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Estonia is Tallinn."
+                      "icon": "music_note",
+                      "title": "Song Festival Tradition",
+                      "description": "Estonia's Song and Dance Celebration, held every five years, is one of the world's largest choral events, gathering up to 30,000 singers on one stage. During Estonia's movement for independence from the Soviet Union, these singing festivals became acts of peaceful national resistance — known as the \"Singing Revolution.\""
+                  },
+                  {
+                      "icon": "castle",
+                      "title": "Medieval Tallinn",
+                      "description": "Tallinn's Old Town is one of the best-preserved medieval cities in all of Europe, with ancient city walls, limestone towers, and cobblestone streets that look exactly as they did 600 years ago. It has been a UNESCO World Heritage Site since 1997."
                   }
               ]
           },
           "es": {
               "name": "Estonia",
-              "capital": "Tallinn",
-              "flagDescription": "La bandera de Estonia.",
+              "capital": "Tallin",
+              "flagDescription": "La bandera de Estonia tiene tres franjas horizontales iguales de azul, negro y blanco. El azul representa el cielo, el mar y la lealtad del pueblo estonio. El negro simboliza la tierra oscura de Estonia y el sufrimiento de la nación a través de siglos de ocupación. El blanco representa la pureza, el trabajo duro y la esperanza de un futuro brillante. Juntos, estos colores cuentan la historia de una nación pequeña pero resistente que siempre ha luchado por la libertad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Estonia",
-                      "description": "Estonia es un país en Northern Europe."
+                      "icon": "wifi",
+                      "title": "Nación Pionera Digital",
+                      "description": "Estonia es uno de los países más digitalmente avanzados del mundo. Fue el primer país en ofrecer votación en línea en elecciones nacionales, tiene un gobierno digital que permite a los ciudadanos hacer casi todo en línea, y fue el lugar de nacimiento de Skype, la aplicación de videollamadas usada por cientos de millones de personas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Estonia tiene una población de aproximadamente 1.4M."
+                      "icon": "forest",
+                      "title": "Tierra de Bosques y Turberas",
+                      "description": "Más de la mitad de Estonia está cubierta de bosques, y el país tiene una extraordinaria red de turberas y humedales única en toda Europa. Caminar sobre la flotante turba de musgo durante visitas guiadas es una actividad estonia popular, ¡se siente como caminar sobre un gigantesco colchón de agua!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Estonia es Tallinn."
+                      "icon": "music_note",
+                      "title": "Tradición del Festival de la Canción",
+                      "description": "La Celebración de la Canción y la Danza de Estonia, celebrada cada cinco años, es uno de los eventos corales más grandes del mundo, reuniendo hasta 30.000 cantantes en un mismo escenario. Durante el movimiento de independencia de Estonia de la Unión Soviética, estos festivales de canto se convirtieron en actos de resistencia nacional pacífica, conocidos como la \"Revolución Cantante\"."
+                  },
+                  {
+                      "icon": "castle",
+                      "title": "Tallin Medieval",
+                      "description": "El Casco Antiguo de Tallin es una de las ciudades medievales mejor conservadas de toda Europa, con antiguas murallas, torres de piedra caliza y calles adoquinadas que lucen exactamente como hace 600 años. Es Patrimonio de la Humanidad de la UNESCO desde 1997."
                   }
               ]
           }
@@ -3961,44 +4091,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Faroe Islands",
               "capital": "Tórshavn",
-              "flagDescription": "The flag of Faroe Islands.",
+              "flagDescription": "The Faroe Islands flag features a red Nordic cross outlined in blue set on a white background. The cross design connects the Faroese to the other Nordic nations — Denmark, Norway, Sweden, Finland, and Iceland — who all share the Nordic cross design on their flags. The colors of red, white, and blue were chosen to represent the Faroese people's connections to both Denmark and Norway while expressing their own unique identity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Faroe Islands",
-                      "description": "Faroe Islands is a country in Northern Europe."
+                      "icon": "waves",
+                      "title": "Dramatic Atlantic Islands",
+                      "description": "The Faroe Islands are a remote archipelago of 18 volcanic islands in the North Atlantic between Norway, Iceland, and Scotland. With dramatic cliffs, waterfalls plunging directly into the sea, and impossibly green hillsides dotted with tiny colorful houses, the scenery is like nowhere else on Earth."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Faroe Islands has a population of approximately 55K."
+                      "icon": "sports_soccer",
+                      "title": "Giant-Killers of Football",
+                      "description": "Despite a population of only 55,000 people, the Faroe Islands have a professional football team that has caused several famous upsets against much larger European nations. Their style and passion have made them beloved underdogs around the world."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Faroe Islands is Tórshavn."
+                      "icon": "cloud",
+                      "title": "Misty Weather Nation",
+                      "description": "The Faroe Islands are famous for their unpredictable, moody weather, where you can experience four seasons in a single day. This dramatic atmosphere has inspired artists and photographers from around the world to make the long journey to capture its ethereal beauty."
+                  },
+                  {
+                      "icon": "local_dining",
+                      "title": "Fermented Food Tradition",
+                      "description": "The Faroese have a unique food tradition of fermenting and wind-drying fish, lamb, and whale meat — a preservation method dating back to Viking times. The most prized dish is skerpikjøt, wind-dried mutton that hangs in special drying sheds called hjallur for months before eating."
                   }
               ]
           },
           "es": {
-              "name": "Islas Faroe",
+              "name": "Islas Feroe",
               "capital": "Tórshavn",
-              "flagDescription": "La bandera de Islas Faroe.",
+              "flagDescription": "La bandera de las Islas Feroe muestra una cruz nórdica roja con contorno azul sobre fondo blanco. El diseño de cruz conecta a los feroeses con las demás naciones nórdicas — Dinamarca, Noruega, Suecia, Finlandia e Islandia — que comparten el diseño de cruz nórdica en sus banderas. Los colores rojo, blanco y azul fueron elegidos para representar las conexiones del pueblo feroés tanto con Dinamarca como con Noruega, expresando al mismo tiempo su propia identidad única.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Faroe",
-                      "description": "Islas Faroe es un país en Northern Europe."
+                      "icon": "waves",
+                      "title": "Dramáticas Islas Atlánticas",
+                      "description": "Las Islas Feroe son un remoto archipiélago de 18 islas volcánicas en el Atlántico Norte, entre Noruega, Islandia y Escocia. Con dramáticos acantilados, cascadas que caen directamente al mar y colinas imposiblemente verdes salpicadas de pequeñas casas coloridas, el paisaje es como ningún otro lugar en la Tierra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Faroe tiene una población de aproximadamente 55K."
+                      "icon": "sports_soccer",
+                      "title": "Matadores de Gigantes del Fútbol",
+                      "description": "A pesar de una población de solo 55.000 personas, las Islas Feroe tienen un equipo de fútbol profesional que ha causado varias famosas sorpresas contra naciones europeas mucho más grandes. Su estilo y pasión los han convertido en queridos perdedores en todo el mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Faroe es Tórshavn."
+                      "icon": "cloud",
+                      "title": "Nación del Clima Neblinoso",
+                      "description": "Las Islas Feroe son famosas por su tiempo impredecible y cambiante, donde se pueden experimentar cuatro estaciones en un solo día. Esta atmósfera dramática ha inspirado a artistas y fotógrafos de todo el mundo a hacer el largo viaje para capturar su belleza etérea."
+                  },
+                  {
+                      "icon": "local_dining",
+                      "title": "Tradición de Comida Fermentada",
+                      "description": "Los feroeses tienen una tradición alimentaria única de fermentar y secar al viento pescado, cordero y carne de ballena, un método de conservación que data de los tiempos vikingos. El plato más apreciado es el skerpikjøt, cordero secado al viento que cuelga en cobertizos especiales llamados hjallur durante meses antes de comerlo."
                   }
               ]
           }
@@ -4067,44 +4207,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Finland",
               "capital": "Helsinki",
-              "flagDescription": "The flag of Finland.",
+              "flagDescription": "Finland's flag is beautifully simple — a blue Nordic cross on a white background. The white represents Finland's vast snowfields and the thousands of frozen lakes that cover the landscape in winter. The blue represents the country's many lakes and rivers, as well as the sky on a clear winter day. Finland has more lakes per land area than any other country in the world, making water and ice central parts of Finnish identity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Finland",
-                      "description": "Finland is a country in Northern Europe."
+                      "icon": "landscape",
+                      "title": "Land of a Thousand Lakes",
+                      "description": "Finland has a staggering 187,888 lakes — that's more lakes than almost any other country on Earth! These crystal-clear lakes, surrounded by ancient forests and granite rocks, are the perfect places to swim in summer and skate in winter."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Finland has a population of approximately 5.7M."
+                      "icon": "wb_sunny",
+                      "title": "Midnight Sun and Northern Lights",
+                      "description": "In northern Finland (called Lapland), the sun doesn't set at all for about 70 consecutive days in summer — called the Midnight Sun. And in winter, the sky comes alive with the spectacular Northern Lights, painting the darkness in dancing green, purple, and pink curtains of light."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Finland is Helsinki."
+                      "icon": "spa",
+                      "title": "Sauna Nation",
+                      "description": "Finland has about 3 million saunas for a population of only 5.5 million people! Sauna culture is so deeply embedded in Finnish life that there are saunas in homes, offices, parliament buildings, and even on ferries. The Finnish sauna tradition was added to UNESCO's Intangible Cultural Heritage list."
+                  },
+                  {
+                      "icon": "cake",
+                      "title": "Home of Santa Claus",
+                      "description": "Rovaniemi, in Finnish Lapland, is officially recognized as the hometown of Santa Claus. Santa's Village sits right on the Arctic Circle, and children from all over the world write letters to Santa Claus at the North Pole — officially located in Finland!"
                   }
               ]
           },
           "es": {
               "name": "Finlandia",
               "capital": "Helsinki",
-              "flagDescription": "La bandera de Finlandia.",
+              "flagDescription": "La bandera de Finlandia es hermosamente simple: una cruz nórdica azul sobre fondo blanco. El blanco representa los vastos campos de nieve de Finlandia y los miles de lagos congelados que cubren el paisaje en invierno. El azul representa los muchos lagos y ríos del país, así como el cielo en un día claro de invierno. Finlandia tiene más lagos por área de tierra que cualquier otro país del mundo, haciendo del agua y el hielo partes centrales de la identidad finlandesa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Finlandia",
-                      "description": "Finlandia es un país en Northern Europe."
+                      "icon": "landscape",
+                      "title": "La Tierra de los Mil Lagos",
+                      "description": "¡Finlandia tiene 187.888 lagos, más que casi cualquier otro país de la Tierra! Estos lagos cristalinos, rodeados de antiguos bosques y rocas de granito, son el lugar perfecto para nadar en verano y patinar en invierno."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Finlandia tiene una población de aproximadamente 5.7M."
+                      "icon": "wb_sunny",
+                      "title": "Sol de Medianoche y Auroras Boreales",
+                      "description": "En el norte de Finlandia (llamado Laponia), el sol no se pone en absoluto durante unos 70 días consecutivos en verano, llamado el Sol de Medianoche. Y en invierno, el cielo cobra vida con las espectaculares Auroras Boreales, pintando la oscuridad con danzantes cortinas de luz verde, púrpura y rosa."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Finlandia es Helsinki."
+                      "icon": "spa",
+                      "title": "Nación de la Sauna",
+                      "description": "¡Finlandia tiene unas 3 millones de saunas para una población de solo 5,5 millones de personas! La cultura de la sauna está tan profundamente arraigada en la vida finlandesa que hay saunas en hogares, oficinas, edificios del parlamento e incluso en ferrys. La tradición de la sauna finlandesa fue añadida a la lista del Patrimonio Cultural Inmaterial de la UNESCO."
+                  },
+                  {
+                      "icon": "cake",
+                      "title": "Hogar de Papá Noel",
+                      "description": "Rovaniemi, en la Laponia finlandesa, está oficialmente reconocida como la ciudad natal de Papá Noel. El Pueblo de Santa se encuentra justo en el Círculo Polar Ártico, y niños de todo el mundo escriben cartas a Papá Noel en el Polo Norte, ¡oficialmente ubicado en Finlandia!"
                   }
               ]
           }
@@ -4120,44 +4270,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "France",
               "capital": "Paris",
-              "flagDescription": "The French tricolor features three vertical bands of blue, white, and red. Adopted during the French Revolution, the colors combine the blue and red of Paris with the royal white, symbolizing liberty, equality, and fraternity.",
+              "flagDescription": "France's flag — called the Tricolore, meaning 'three-colored' — has three equal vertical stripes of blue, white, and red. This iconic design was born during the French Revolution of 1789, combining the traditional colors of Paris (blue and red) with the white of the French royal family. The Tricolore went on to inspire the design of national flags around the world and became a powerful symbol of liberty, equality, and fraternity — France's national motto.",
               "funFacts": [
                   {
-                      "icon": "museum",
-                      "title": "Art Capital",
-                      "description": "The Louvre Museum in Paris is the world's largest art museum, housing over 380,000 objects including the Mona Lisa and the Venus de Milo."
+                      "icon": "restaurant",
+                      "title": "Culinary Capital of the World",
+                      "description": "France is widely considered the culinary capital of the world. French cuisine has more Michelin-starred restaurants than any other country, and French cooking techniques form the foundation of professional cooking taught in culinary schools worldwide. France also produces over 1,200 different varieties of cheese!"
                   },
                   {
-                      "icon": "bakery_dining",
-                      "title": "Bread Culture",
-                      "description": "The French eat about 10 billion baguettes per year. In 1993, the government passed a law defining exactly what a \"traditional French baguette\" must contain."
+                      "icon": "architecture",
+                      "title": "Eiffel Tower Icon",
+                      "description": "The Eiffel Tower in Paris is the most visited paid monument in the world, welcoming nearly 7 million visitors every year. When it was built in 1889, it was the tallest man-made structure in the world. Originally criticized by many Parisians, it has since become the ultimate symbol of France."
                   },
                   {
-                      "icon": "rocket_launch",
-                      "title": "Space Pioneers",
-                      "description": "France has the third-largest space program in the world. The Ariane rockets launch from French Guiana, near the equator for maximum efficiency."
+                      "icon": "palette",
+                      "title": "Art and Culture Leader",
+                      "description": "France leads the world in art, culture, and fashion. The Louvre in Paris is the world's most visited art museum, home to the Mona Lisa and thousands of other priceless works. France is also the birthplace of Impressionism, one of history's most beloved art movements."
+                  },
+                  {
+                      "icon": "tour",
+                      "title": "Most Visited Country",
+                      "description": "France receives more international tourists than any other country on Earth — roughly 100 million visitors per year. From the beaches of the Côte d'Azur to the vineyards of Bordeaux, from the châteaux of the Loire Valley to the mountains of the Alps, France has something extraordinary for everyone."
                   }
               ]
           },
           "es": {
               "name": "Francia",
-              "capital": "Paris",
-              "flagDescription": "La bandera de Francia.",
+              "capital": "París",
+              "flagDescription": "La bandera de Francia — llamada Tricolore, que significa 'tres colores' — tiene tres franjas verticales iguales de azul, blanco y rojo. Este icónico diseño nació durante la Revolución Francesa de 1789, combinando los colores tradicionales de París (azul y rojo) con el blanco de la familia real francesa. El Tricolore inspiró el diseño de banderas nacionales en todo el mundo y se convirtió en un poderoso símbolo de libertad, igualdad y fraternidad, el lema nacional de Francia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Francia",
-                      "description": "Francia es un país en Western Europe."
+                      "icon": "restaurant",
+                      "title": "Capital Culinaria del Mundo",
+                      "description": "Francia es ampliamente considerada la capital culinaria del mundo. La cocina francesa tiene más restaurantes con estrellas Michelin que cualquier otro país, y las técnicas de cocina francesa son la base de la cocina profesional que se enseña en escuelas de cocina de todo el mundo. ¡Francia también produce más de 1.200 variedades diferentes de queso!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Francia tiene una población de aproximadamente 66.4M."
+                      "icon": "architecture",
+                      "title": "El Icono de la Torre Eiffel",
+                      "description": "La Torre Eiffel en París es el monumento de pago más visitado del mundo, recibiendo casi 7 millones de visitantes cada año. Cuando fue construida en 1889, era la estructura hecha por el hombre más alta del mundo. Inicialmente criticada por muchos parisinos, se ha convertido desde entonces en el símbolo definitivo de Francia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Francia es Paris."
+                      "icon": "palette",
+                      "title": "Líder en Arte y Cultura",
+                      "description": "Francia lidera el mundo en arte, cultura y moda. El Louvre en París es el museo de arte más visitado del mundo, hogar de la Mona Lisa y miles de otras obras invaluables. Francia también es el lugar de nacimiento del Impresionismo, uno de los movimientos artísticos más amados de la historia."
+                  },
+                  {
+                      "icon": "tour",
+                      "title": "El País Más Visitado",
+                      "description": "Francia recibe más turistas internacionales que cualquier otro país de la Tierra, aproximadamente 100 millones de visitantes al año. Desde las playas de la Costa Azul hasta los viñedos de Burdeos, desde los castillos del Valle del Loira hasta las montañas de los Alpes, Francia tiene algo extraordinario para todos."
                   }
               ]
           }
@@ -4448,44 +4608,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Germany",
               "capital": "Berlin",
-              "flagDescription": "Germany's flag displays three horizontal stripes of black, red, and gold. The colors date back to the early 19th century democratic movements and symbolize unity and freedom. They were officially adopted after World War II in 1949.",
+              "flagDescription": "Germany's flag has three horizontal stripes of black, red, and gold (sometimes called golden yellow). These colors were famously worn by the Lützow Free Corps, a volunteer army unit that fought against Napoleon in the early 1800s. The black-red-gold combination became a symbol of German unity and freedom during the revolutions of 1848. Today these colors represent democracy, unity, and the German people's commitment to freedom after the dark years of World War II.",
               "funFacts": [
                   {
-                      "icon": "directions_car",
-                      "title": "Autobahn Freedom",
-                      "description": "About 70% of Germany's Autobahn highways have no speed limit. Some drivers regularly travel above 200 km/h (124 mph)."
+                      "icon": "engineering",
+                      "title": "Engineering Powerhouse",
+                      "description": "Germany is one of the world's greatest engineering and innovation countries. German companies like Volkswagen, BMW, Mercedes-Benz, Siemens, and Bosch are global industry leaders. Germany has the most patents filed per year in Europe and a long tradition of technical excellence."
+                  },
+                  {
+                      "icon": "sports_bar",
+                      "title": "Oktoberfest Tradition",
+                      "description": "Munich's Oktoberfest, held every autumn, is the world's largest folk festival, drawing over 6 million visitors from around the globe. The tradition began in 1810 as a wedding celebration for Crown Prince Ludwig and has grown into a spectacular two-week celebration of Bavarian culture, music, and beer."
                   },
                   {
                       "icon": "castle",
-                      "title": "Castle Country",
-                      "description": "Germany has over 20,000 castles — more than any other country in the world. Neuschwanstein Castle inspired the Sleeping Beauty castle at Disneyland."
+                      "title": "Neuschwanstein Castle",
+                      "description": "Neuschwanstein Castle in Bavaria is one of the world's most iconic and photographed buildings, set dramatically against mountain forests. Built by King Ludwig II in the 19th century, it directly inspired Walt Disney's Sleeping Beauty Castle and Cinderella's Castle at Disneyland."
                   },
                   {
-                      "icon": "science",
-                      "title": "Invention Nation",
-                      "description": "Germans invented the printing press (Gutenberg), aspirin (Bayer), the automobile (Benz), and the MP3 audio format (Fraunhofer Institute)."
+                      "icon": "menu_book",
+                      "title": "Gutenberg's Printing Press",
+                      "description": "Johannes Gutenberg, born in Mainz, Germany, invented the movable-type printing press around 1440, one of the most revolutionary inventions in human history. His Gutenberg Bible was the first major book printed in Europe, and his invention made books affordable and literacy possible for ordinary people everywhere."
                   }
               ]
           },
           "es": {
               "name": "Alemania",
-              "capital": "Berlin",
-              "flagDescription": "La bandera de Alemania.",
+              "capital": "Berlín",
+              "flagDescription": "La bandera de Alemania tiene tres franjas horizontales de negro, rojo y dorado (a veces llamado amarillo dorado). Estos colores fueron usados famosamente por el Cuerpo Libre de Lützow, una unidad del ejército voluntario que luchó contra Napoleón a principios del siglo XIX. La combinación negro-rojo-dorado se convirtió en símbolo de unidad y libertad alemanas durante las revoluciones de 1848. Hoy estos colores representan la democracia, la unidad y el compromiso del pueblo alemán con la libertad después de los oscuros años de la Segunda Guerra Mundial.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Alemania",
-                      "description": "Alemania es un país en Western Europe."
+                      "icon": "engineering",
+                      "title": "Potencia de la Ingeniería",
+                      "description": "Alemania es uno de los países de ingeniería e innovación más grandes del mundo. Empresas alemanas como Volkswagen, BMW, Mercedes-Benz, Siemens y Bosch son líderes industriales globales. Alemania presenta el mayor número de patentes al año en Europa y tiene una larga tradición de excelencia técnica."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Alemania tiene una población de aproximadamente 83.5M."
+                      "icon": "sports_bar",
+                      "title": "Tradición del Oktoberfest",
+                      "description": "El Oktoberfest de Múnich, celebrado cada otoño, es el festival popular más grande del mundo, atrayendo a más de 6 millones de visitantes de todo el mundo. La tradición comenzó en 1810 como celebración de la boda del Príncipe Heredero Luis y ha crecido hasta convertirse en una espectacular celebración de dos semanas de la cultura bávara, la música y la cerveza."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Alemania es Berlin."
+                      "icon": "castle",
+                      "title": "Castillo de Neuschwanstein",
+                      "description": "El Castillo de Neuschwanstein en Baviera es uno de los edificios más icónicos y fotografiados del mundo, situado dramáticamente entre bosques de montaña. Construido por el Rey Luis II en el siglo XIX, inspiró directamente el Castillo de la Bella Durmiente y el Castillo de la Cenicienta de Walt Disney en Disneyland."
+                  },
+                  {
+                      "icon": "menu_book",
+                      "title": "La Imprenta de Gutenberg",
+                      "description": "Johannes Gutenberg, nacido en Maguncia, Alemania, inventó la imprenta de tipos móviles alrededor de 1440, uno de los inventos más revolucionarios en la historia humana. Su Biblia de Gutenberg fue el primer libro importante impreso en Europa, y su invento hizo que los libros fueran asequibles y la alfabetización posible para la gente común en todas partes."
                   }
               ]
           }
@@ -4554,44 +4724,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Gibraltar",
               "capital": "Gibraltar",
-              "flagDescription": "The flag of Gibraltar.",
+              "flagDescription": "Gibraltar's flag has two horizontal bands — white on top and red on the bottom — with a three-towered castle in red at the center and a golden key hanging below it. The castle and key come from Gibraltar's coat of arms and represent its legendary status as the 'Key to the Mediterranean.' The red castle symbolizes the great fortifications built to defend this strategically vital rock at the entrance to the Mediterranean Sea.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Gibraltar",
-                      "description": "Gibraltar is a country in Southern Europe."
+                      "icon": "landscape",
+                      "title": "The Rock of Gibraltar",
+                      "description": "The Rock of Gibraltar is a massive 426-meter limestone monolith that dominates the landscape and has been of immense strategic importance for thousands of years. The phrase \"solid as the Rock of Gibraltar\" is used worldwide to describe something incredibly strong and dependable."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Gibraltar has a population of approximately 38K."
+                      "icon": "pets",
+                      "title": "Barbary Macaques",
+                      "description": "Gibraltar is the only place in all of Europe where wild monkeys — called Barbary Macaques — live freely. Legend says that as long as the apes remain in Gibraltar, it will stay under British control. Winston Churchill himself ordered monkeys to be brought in when their numbers fell during World War II!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Gibraltar is Gibraltar."
+                      "icon": "waves",
+                      "title": "Two Seas Meeting",
+                      "description": "From Gibraltar, you can see two different bodies of water meeting: the Atlantic Ocean and the Mediterranean Sea. On a clear day, you can even see the coast of Morocco in Africa, just 14 kilometers away — Europe and Africa are closer here than almost anywhere else."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Neanderthal Home",
+                      "description": "Gibraltar was one of the last places on Earth where Neanderthals lived before they became extinct about 24,000 years ago. Skulls and tools of Neanderthals have been found in the caves of Gibraltar, giving scientists an extraordinary window into our prehistoric cousins."
                   }
               ]
           },
           "es": {
               "name": "Gibraltar",
               "capital": "Gibraltar",
-              "flagDescription": "La bandera de Gibraltar.",
+              "flagDescription": "La bandera de Gibraltar tiene dos bandas horizontales — blanco arriba y rojo abajo — con un castillo de tres torres en rojo en el centro y una llave dorada colgando debajo. El castillo y la llave provienen del escudo de armas de Gibraltar y representan su legendario estatus como la 'Llave del Mediterráneo'. El castillo rojo simboliza las grandes fortificaciones construidas para defender esta roca estratégicamente vital en la entrada del Mar Mediterráneo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Gibraltar",
-                      "description": "Gibraltar es un país en Southern Europe."
+                      "icon": "landscape",
+                      "title": "El Peñón de Gibraltar",
+                      "description": "El Peñón de Gibraltar es un enorme monolito de piedra caliza de 426 metros que domina el paisaje y ha sido de inmenso valor estratégico durante miles de años. La frase \"sólido como el Peñón de Gibraltar\" se usa en todo el mundo para describir algo increíblemente fuerte y confiable."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Gibraltar tiene una población de aproximadamente 38K."
+                      "icon": "pets",
+                      "title": "Macacos de Berbería",
+                      "description": "Gibraltar es el único lugar en toda Europa donde los monos salvajes — llamados Macacos de Berbería — viven libremente. La leyenda dice que mientras los monos permanezcan en Gibraltar, permanecerá bajo control británico. ¡El propio Winston Churchill ordenó traer monos cuando su número disminuyó durante la Segunda Guerra Mundial!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Gibraltar es Gibraltar."
+                      "icon": "waves",
+                      "title": "Dos Mares que se Encuentran",
+                      "description": "Desde Gibraltar, se pueden ver dos masas de agua diferentes encontrándose: el Océano Atlántico y el Mar Mediterráneo. En un día claro, incluso se puede ver la costa de Marruecos en África, a solo 14 kilómetros de distancia — Europa y África están más cerca aquí que en casi cualquier otro lugar."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Hogar de los Neandertales",
+                      "description": "Gibraltar fue uno de los últimos lugares de la Tierra donde vivieron los neandertales antes de extinguirse hace unos 24.000 años. Cráneos y herramientas de neandertales han sido encontrados en las cuevas de Gibraltar, dando a los científicos una extraordinaria ventana hacia nuestros primos prehistóricos."
                   }
               ]
           }
@@ -4607,44 +4787,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Greece",
               "capital": "Athens",
-              "flagDescription": "Greece's flag has nine equal blue and white horizontal stripes with a white cross on a blue square in the upper left. The nine stripes represent the nine syllables of 'Eleftheria i thanatos' (Freedom or Death) — the motto of the Greek revolution.",
+              "flagDescription": "Greece's flag has nine alternating horizontal stripes of blue and white, with a white cross on a blue square in the upper-left corner. The nine stripes represent the nine syllables of the Greek phrase 'Eleftheria i Thanatos,' meaning 'Freedom or Death' — the motto of the Greek War of Independence. The blue symbolizes the sea and sky, the white represents the purity of the struggle for independence, and the cross represents the Greek Orthodox Christian faith.",
               "funFacts": [
                   {
                       "icon": "history",
-                      "title": "birthplace of Democracy",
-                      "description": "Ancient Athens invented democracy around 508 BC. Citizens gathered in the Agora to vote directly on laws — an idea that transformed how the world is governed."
+                      "title": "Birthplace of Democracy",
+                      "description": "Ancient Athens invented democracy around 500 BCE — the idea that citizens should have a say in how their government works. This revolutionary concept, born in a small city-state in Greece over 2,500 years ago, is now the foundation of governments for billions of people around the world."
                   },
                   {
                       "icon": "sports",
-                      "title": "Olympic Origins",
-                      "description": "The Olympic Games were first held in ancient Olympia, Greece, in 776 BC in honor of the god Zeus. The modern Games were revived in Athens in 1896."
+                      "title": "First Olympic Games",
+                      "description": "The Olympic Games began in ancient Olympia, Greece, in 776 BCE as a religious festival honoring the god Zeus. Athletes came from all over the Greek world to compete, and wars were even stopped during the games. The modern Olympic Games were revived in Athens in 1896."
                   },
                   {
-                      "icon": "castle",
-                      "title": "The Acropolis",
-                      "description": "The Parthenon on Athens' Acropolis, built in 447 BC, is considered the pinnacle of ancient Greek architecture and one of the most recognizable structures in the world."
+                      "icon": "architecture",
+                      "title": "Acropolis of Athens",
+                      "description": "The Acropolis of Athens, crowned by the Parthenon temple, is one of the most recognized ancient structures in the world. Built 2,500 years ago, it was dedicated to the goddess Athena and is a symbol of ancient Greek civilization, beauty, and intellectual achievement."
+                  },
+                  {
+                      "icon": "local_dining",
+                      "title": "Mediterranean Diet",
+                      "description": "Greece is famous for the Mediterranean diet — olive oil, fresh vegetables, fish, legumes, and feta cheese — considered one of the healthiest diets in the world. The island of Ikaria is famous for having one of the highest concentrations of centenarians (people living to 100+) on Earth, linked to this wonderful diet and lifestyle."
                   }
               ]
           },
           "es": {
               "name": "Grecia",
-              "capital": "Athens",
-              "flagDescription": "La bandera de Grecia.",
+              "capital": "Atenas",
+              "flagDescription": "La bandera de Grecia tiene nueve franjas horizontales alternativas de azul y blanco, con una cruz blanca sobre un cuadrado azul en la esquina superior izquierda. Las nueve franjas representan las nueve sílabas de la frase griega 'Eleftheria i Thanatos', que significa 'Libertad o Muerte', el lema de la Guerra de Independencia griega. El azul simboliza el mar y el cielo, el blanco representa la pureza de la lucha por la independencia, y la cruz representa la fe cristiana ortodoxa griega.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Grecia",
-                      "description": "Grecia es un país en Southern Europe."
+                      "icon": "history",
+                      "title": "Cuna de la Democracia",
+                      "description": "La antigua Atenas inventó la democracia alrededor del 500 a.C., la idea de que los ciudadanos deben tener voz en el funcionamiento de su gobierno. Este concepto revolucionario, nacido en una pequeña ciudad-estado de Grecia hace más de 2.500 años, es ahora la base de los gobiernos de miles de millones de personas en todo el mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Grecia tiene una población de aproximadamente 10.4M."
+                      "icon": "sports",
+                      "title": "Los Primeros Juegos Olímpicos",
+                      "description": "Los Juegos Olímpicos comenzaron en la antigua Olimpia, Grecia, en el 776 a.C. como un festival religioso en honor al dios Zeus. Atletas de todo el mundo griego venían a competir, e incluso las guerras se detenían durante los juegos. Los modernos Juegos Olímpicos fueron revividos en Atenas en 1896."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Grecia es Athens."
+                      "icon": "architecture",
+                      "title": "La Acrópolis de Atenas",
+                      "description": "La Acrópolis de Atenas, coronada por el templo del Partenón, es una de las estructuras antiguas más reconocidas del mundo. Construida hace 2.500 años, estaba dedicada a la diosa Atenea y es símbolo de la civilización, belleza y logro intelectual de la antigua Grecia."
+                  },
+                  {
+                      "icon": "local_dining",
+                      "title": "La Dieta Mediterránea",
+                      "description": "Grecia es famosa por la dieta mediterránea — aceite de oliva, verduras frescas, pescado, legumbres y queso feta — considerada una de las dietas más saludables del mundo. La isla de Ikaria es famosa por tener una de las concentraciones más altas de centenarios (personas que viven hasta 100 años o más) de la Tierra, relacionada con esta maravillosa dieta y estilo de vida."
                   }
               ]
           }
@@ -4965,44 +5155,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Guernsey",
               "capital": "St. Peter Port",
-              "flagDescription": "The flag of Guernsey.",
+              "flagDescription": "Guernsey's flag features a red cross of St. George on a white background, with a golden cross of Burgundy placed within the red cross. The red St. George's cross is shared with England, reflecting Guernsey's historical ties to the English Crown. The golden cross of Burgundy — also called William's Cross — was added in 1985 to distinguish the Guernsey flag from the plain red-on-white Cross of St. George used by England.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Guernsey",
-                      "description": "Guernsey is a country in Northern Europe."
+                      "icon": "agriculture",
+                      "title": "Guernsey Cows",
+                      "description": "The beautiful golden-brown Guernsey cow breed was developed on this island and is now famous worldwide for producing exceptionally rich, creamy, golden-hued milk. These gentle cows are often called \"Golden Guernsey\" cows and are considered a national treasure of the island."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guernsey has a population of approximately 65K."
+                      "icon": "flower_sunflower",
+                      "title": "Floral Gem",
+                      "description": "Guernsey has a mild, sunny climate thanks to the Gulf Stream, allowing exotic plants like palm trees and agapanthus to thrive outdoors. The island is famous for its greenhouse-grown flowers, especially freesias and tomatoes, which have been exported to mainland Britain for over a century."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guernsey is St. Peter Port."
+                      "icon": "history",
+                      "title": "Victor Hugo's Island",
+                      "description": "The French author Victor Hugo, who wrote Les Misérables and The Hunchback of Notre-Dame, lived in exile on Guernsey for 15 years. His house, Hauteville House, which he decorated himself in an extraordinary style, is now a museum and one of the island's most visited sites."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "World War II Occupation",
+                      "description": "Guernsey was the only part of the British Crown to be occupied by Nazi Germany during World War II, from 1940 to 1945. The islanders' experiences during the occupation are movingly preserved in the German Occupation Museum and in the book and film The Guernsey Literary and Potato Peel Pie Society."
                   }
               ]
           },
           "es": {
               "name": "Guernsey",
               "capital": "St. Peter Port",
-              "flagDescription": "La bandera de Guernsey.",
+              "flagDescription": "La bandera de Guernsey muestra una cruz roja de San Jorge sobre fondo blanco, con una cruz dorada de Borgoña colocada dentro de la cruz roja. La cruz roja de San Jorge es compartida con Inglaterra, reflejando los lazos históricos de Guernsey con la Corona inglesa. La cruz dorada de Borgoña, también llamada Cruz de Guillermo, fue añadida en 1985 para distinguir la bandera de Guernsey de la simple cruz roja sobre blanco de San Jorge usada por Inglaterra.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Guernsey",
-                      "description": "Guernsey es un país en Northern Europe."
+                      "icon": "agriculture",
+                      "title": "Las Vacas de Guernsey",
+                      "description": "La hermosa raza de vaca marrón dorada de Guernsey fue desarrollada en esta isla y es ahora mundialmente famosa por producir leche excepcionalmente rica, cremosa y de tono dorado. Estas gentiles vacas a menudo se llaman vacas \"Dorado de Guernsey\" y son consideradas un tesoro nacional de la isla."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guernsey tiene una población de aproximadamente 65K."
+                      "icon": "flower_sunflower",
+                      "title": "Joya Floral",
+                      "description": "Guernsey tiene un clima suave y soleado gracias a la Corriente del Golfo, lo que permite que plantas exóticas como palmeras y agapantos prosperen al aire libre. La isla es famosa por sus flores cultivadas en invernadero, especialmente freesias y tomates, que han sido exportados a la Gran Bretaña continental durante más de un siglo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guernsey es St. Peter Port."
+                      "icon": "history",
+                      "title": "La Isla de Víctor Hugo",
+                      "description": "El autor francés Víctor Hugo, que escribió Los Miserables y El Jorobado de Notre-Dame, vivió en el exilio en Guernsey durante 15 años. Su casa, Hauteville House, que él mismo decoró en un estilo extraordinario, es ahora un museo y uno de los sitios más visitados de la isla."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Ocupación de la Segunda Guerra Mundial",
+                      "description": "Guernsey fue la única parte de la Corona Británica ocupada por la Alemania nazi durante la Segunda Guerra Mundial, de 1940 a 1945. Las experiencias de los isleños durante la ocupación están conmovedoramente preservadas en el Museo de la Ocupación Alemana y en el libro y película La Sociedad Literaria y del Pastel de Piel de Patata de Guernsey."
                   }
               ]
           }
@@ -5366,44 +5566,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Hungary",
               "capital": "Budapest",
-              "flagDescription": "The flag of Hungary.",
+              "flagDescription": "Hungary's flag has three horizontal stripes of red, white, and green — the national colors that became associated with Hungarian freedom and independence during the 1848 revolution against Austrian rule. Red represents strength and the blood of patriots, white symbolizes faithfulness and the purity of Hungary's purpose, and green represents hope for the country's future. The same tricolor was worn as a cockade by revolutionaries fighting for Hungarian freedom.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Hungary",
-                      "description": "Hungary is a country in Central Europe."
+                      "icon": "hot_tub",
+                      "title": "City of Spas",
+                      "description": "Budapest is known as the \"City of Spas\" because it sits above more than 100 thermal springs that produce hot mineral water. The city has some of the most magnificent bathing houses in the world, including the spectacular Széchenyi Baths, where people have been soaking in warm mineral pools since 1913."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Hungary has a population of approximately 9.5M."
+                      "icon": "local_dining",
+                      "title": "Paprika Kingdom",
+                      "description": "Hungary is the kingdom of paprika — the bright red spice made from dried peppers that gives Hungarian food its distinctive flavor. The national dish, goulash (gulyás), is a rich paprika-spiced beef stew, and it's hard to imagine Hungarian cooking without this beloved spice."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Hungary is Budapest."
+                      "icon": "music_note",
+                      "title": "Musical Giant",
+                      "description": "Hungary produced Franz Liszt, one of the greatest piano composers and performers in history. Hungarian folk music also heavily influenced Béla Bartók, another legendary composer. The famous Rubik's Cube was also invented by Hungarian architect Ernő Rubik in 1974!"
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "Budapest Bridges",
+                      "description": "Budapest is famously built on two sides of the Danube River (Buda and Pest), connected by nine spectacular bridges including the ornate Chain Bridge, the first permanent bridge to connect the two cities, opened in 1849. The Parliament Building, reflected in the river at night, is one of Europe's most beautiful buildings."
                   }
               ]
           },
           "es": {
               "name": "Hungría",
               "capital": "Budapest",
-              "flagDescription": "La bandera de Hungría.",
+              "flagDescription": "La bandera de Hungría tiene tres franjas horizontales de rojo, blanco y verde — los colores nacionales que se asociaron con la libertad e independencia húngaras durante la revolución de 1848 contra el dominio austriaco. El rojo representa la fuerza y la sangre de los patriotas, el blanco simboliza la fidelidad y la pureza del propósito de Hungría, y el verde representa la esperanza para el futuro del país. El mismo tricolor fue usado como escarapela por los revolucionarios que luchaban por la libertad húngara.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Hungría",
-                      "description": "Hungría es un país en Central Europe."
+                      "icon": "hot_tub",
+                      "title": "Ciudad de los Baños",
+                      "description": "Budapest es conocida como la \"Ciudad de los Baños\" porque se asienta sobre más de 100 manantiales termales que producen agua mineral caliente. La ciudad tiene algunas de las casas de baños más magníficas del mundo, incluyendo los espectaculares Baños Széchenyi, donde la gente ha estado remojándose en piscinas minerales cálidas desde 1913."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Hungría tiene una población de aproximadamente 9.5M."
+                      "icon": "local_dining",
+                      "title": "Reino del Pimentón",
+                      "description": "Hungría es el reino del pimentón, la brillante especia roja hecha de pimientos secos que da a la comida húngara su sabor distintivo. El plato nacional, el goulash (gulyás), es un rico estofado de ternera especiado con pimentón, ¡y es difícil imaginar la cocina húngara sin esta amada especia!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Hungría es Budapest."
+                      "icon": "music_note",
+                      "title": "Gigante Musical",
+                      "description": "Hungría produjo a Franz Liszt, uno de los compositores e intérpretes de piano más grandes de la historia. La música popular húngara también influyó profundamente en Béla Bartók, otro compositor legendario. ¡El famoso Cubo de Rubik también fue inventado por el arquitecto húngaro Ernő Rubik en 1974!"
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "Los Puentes de Budapest",
+                      "description": "Budapest está famosamente construida en dos lados del Río Danubio (Buda y Pest), conectadas por nueve espectaculares puentes incluyendo el ornamentado Puente de las Cadenas, el primer puente permanente que unió las dos ciudades, inaugurado en 1849. El Edificio del Parlamento, reflejado en el río por la noche, es uno de los edificios más hermosos de Europa."
                   }
               ]
           }
@@ -5419,44 +5629,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Iceland",
               "capital": "Reykjavik",
-              "flagDescription": "The flag of Iceland.",
+              "flagDescription": "Iceland's flag has a red Nordic cross outlined in white set on a deep blue background. The colors represent the dramatic forces that make up Iceland's incredible landscape: blue for the mountains and the Atlantic Ocean, white for the glaciers and Arctic snow that cover much of the island, and red for the volcanic fire that constantly reshapes the land from below. Iceland truly is a land of fire and ice, and these three colors perfectly capture that wild, elemental spirit.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Iceland",
-                      "description": "Iceland is a country in Northern Europe."
+                      "icon": "volcano",
+                      "title": "Land of Fire and Ice",
+                      "description": "Iceland sits on the Mid-Atlantic Ridge where two tectonic plates meet, making it one of the most volcanically active places on Earth. The island has around 130 volcanoes, stunning geysers, hot springs, lava fields, and 11% of its surface is covered by glaciers — truly a land of fire and ice!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Iceland has a population of approximately 392K."
+                      "icon": "auto_stories",
+                      "title": "World's Oldest Parliament",
+                      "description": "Iceland's Althing, established in 930 CE, is the world's oldest existing parliament. Viking settlers from Norway created this democratic assembly — called a \"Thing\" — where free men gathered annually at Þingvellir to make laws and settle disputes, over 1,000 years ago."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Iceland is Reykjavik."
+                      "icon": "spa",
+                      "title": "Blue Lagoon",
+                      "description": "The Blue Lagoon, one of Iceland's most famous attractions, is a geothermal spa where milky-blue, mineral-rich water sits at a perfect 38°C year-round. The water gets its unique color from silica and algae, and it's so warm that people bathe there even in snowstorms with the Northern Lights overhead."
+                  },
+                  {
+                      "icon": "book",
+                      "title": "Nation of Readers and Writers",
+                      "description": "Iceland has one of the highest literacy rates in the world and more writers, books published, and books read per capita than almost any other nation. The medieval Icelandic Sagas — epic stories of Viking adventures — are still read today and are considered masterpieces of world literature."
                   }
               ]
           },
           "es": {
               "name": "Islandia",
-              "capital": "Reykjavik",
-              "flagDescription": "La bandera de Islandia.",
+              "capital": "Reikiavik",
+              "flagDescription": "La bandera de Islandia tiene una cruz nórdica roja con contorno blanco sobre un fondo azul profundo. Los colores representan las dramáticas fuerzas que componen el increíble paisaje de Islandia: azul para las montañas y el Océano Atlántico, blanco para los glaciares y la nieve ártica que cubre gran parte de la isla, y rojo para el fuego volcánico que constantemente remodela la tierra desde abajo. Islandia es verdaderamente una tierra de fuego y hielo, y estos tres colores capturan perfectamente ese espíritu salvaje y elemental.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islandia",
-                      "description": "Islandia es un país en Northern Europe."
+                      "icon": "volcano",
+                      "title": "Tierra de Fuego y Hielo",
+                      "description": "Islandia se asienta en la Dorsal Mesoatlántica donde se encuentran dos placas tectónicas, lo que la convierte en uno de los lugares más volcánicamente activos de la Tierra. La isla tiene alrededor de 130 volcanes, impresionantes géiseres, aguas termales, campos de lava y el 11% de su superficie está cubierta por glaciares, ¡verdaderamente una tierra de fuego y hielo!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islandia tiene una población de aproximadamente 392K."
+                      "icon": "auto_stories",
+                      "title": "El Parlamento Más Antiguo del Mundo",
+                      "description": "El Althing de Islandia, establecido en el año 930 d.C., es el parlamento existente más antiguo del mundo. Los colonos vikingos de Noruega crearon esta asamblea democrática — llamada \"Thing\" — donde los hombres libres se reunían anualmente en Þingvellir para hacer leyes y resolver disputas, hace más de 1.000 años."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islandia es Reykjavik."
+                      "icon": "spa",
+                      "title": "La Laguna Azul",
+                      "description": "La Laguna Azul, una de las atracciones más famosas de Islandia, es un spa geotérmico donde el agua azul lechosa y rica en minerales se mantiene a una temperatura perfecta de 38°C durante todo el año. El agua obtiene su color único de la sílice y las algas, y es tan cálida que la gente se baña allí incluso en tormentas de nieve con las Auroras Boreales sobre sus cabezas."
+                  },
+                  {
+                      "icon": "book",
+                      "title": "Nación de Lectores y Escritores",
+                      "description": "Islandia tiene una de las tasas de alfabetización más altas del mundo y más escritores, libros publicados y libros leídos per cápita que casi cualquier otra nación. Las Sagas Islandesas medievales, historias épicas de aventuras vikingas, siguen leyéndose hoy en día y se consideran obras maestras de la literatura mundial."
                   }
               ]
           }
@@ -5684,44 +5904,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Ireland",
               "capital": "Dublin",
-              "flagDescription": "The flag of Ireland.",
+              "flagDescription": "Ireland's flag has three equal vertical stripes of green, white, and orange. The green represents the Gaelic Irish Catholic tradition, the orange represents the Protestant tradition associated with William of Orange, and the white in the middle symbolizes the hope for peace and unity between these two communities. The Irish tricolor was first displayed publicly in 1848, inspired by the French tricolor, and became the official flag when Ireland achieved independence in 1922.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Ireland",
-                      "description": "Ireland is a country in Northern Europe."
+                      "icon": "local_bar",
+                      "title": "St. Patrick's Day Magic",
+                      "description": "St. Patrick's Day, celebrated on March 17th, is Ireland's national holiday honoring its patron saint. The celebration has spread so far that cities all around the world, from New York to Sydney to Tokyo, dye their rivers green and hold enormous parades to celebrate Irish heritage and culture."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Ireland has a population of approximately 5.5M."
+                      "icon": "menu_book",
+                      "title": "Literary Giant",
+                      "description": "Ireland has produced an extraordinary number of world-famous writers for such a small country. Oscar Wilde, James Joyce, W.B. Yeats, Samuel Beckett, and Seamus Heaney — Ireland has more Nobel Literature Prize winners per capita than any other country in the world!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Ireland is Dublin."
+                      "icon": "landscape",
+                      "title": "Cliffs of Moher",
+                      "description": "The Cliffs of Moher on Ireland's west coast soar up to 214 meters above the crashing Atlantic Ocean. These dramatic sea cliffs stretch for 14 kilometers and were used as filming location for Harry Potter and the Half-Blood Prince, cementing their status as one of the most dramatic landscapes in all of Europe."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "Living Musical Tradition",
+                      "description": "Irish traditional music — played on fiddles, tin whistles, uilleann pipes, and bodhráns — is a living, breathing art form performed in pubs and festivals across the country. The tradition of the \"session\" (spontaneous group performance) continues unchanged, and Irish music has influenced country, bluegrass, and folk music worldwide."
                   }
               ]
           },
           "es": {
               "name": "Irlanda",
-              "capital": "Dublin",
-              "flagDescription": "La bandera de Irlanda.",
+              "capital": "Dublín",
+              "flagDescription": "La bandera de Irlanda tiene tres franjas verticales iguales de verde, blanco y naranja. El verde representa la tradición católica gaélica irlandesa, el naranja representa la tradición protestante asociada con Guillermo de Orange, y el blanco en el centro simboliza la esperanza de paz y unidad entre estas dos comunidades. El tricolor irlandés fue exhibido públicamente por primera vez en 1848, inspirado por el tricolor francés, y se convirtió en la bandera oficial cuando Irlanda logró la independencia en 1922.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Irlanda",
-                      "description": "Irlanda es un país en Northern Europe."
+                      "icon": "local_bar",
+                      "title": "La Magia del Día de San Patricio",
+                      "description": "El Día de San Patricio, celebrado el 17 de marzo, es el día festivo nacional de Irlanda en honor a su santo patrón. La celebración se ha extendido tanto que ciudades de todo el mundo, desde Nueva York hasta Sídney y Tokio, tiñen sus ríos de verde y organizan enormes desfiles para celebrar la herencia y la cultura irlandesas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Irlanda tiene una población de aproximadamente 5.5M."
+                      "icon": "menu_book",
+                      "title": "Gigante Literario",
+                      "description": "Irlanda ha producido un número extraordinario de escritores mundialmente famosos para ser un país tan pequeño. Oscar Wilde, James Joyce, W.B. Yeats, Samuel Beckett y Seamus Heaney — ¡Irlanda tiene más ganadores del Premio Nobel de Literatura per cápita que cualquier otro país del mundo!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Irlanda es Dublin."
+                      "icon": "landscape",
+                      "title": "Los Acantilados de Moher",
+                      "description": "Los Acantilados de Moher en la costa oeste de Irlanda se elevan hasta 214 metros sobre el rompiente Océano Atlántico. Estos dramáticos acantilados marinos se extienden por 14 kilómetros y fueron usados como locación de filmación para Harry Potter y el Misterio del Príncipe, consolidando su estatus como uno de los paisajes más dramáticos de toda Europa."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "Tradición Musical Viva",
+                      "description": "La música tradicional irlandesa, tocada con violines, flautas de hojalata, gaitas uilleann y bodhráns, es una forma de arte viva y palpitante que se interpreta en pubs y festivales de todo el país. La tradición de la \"sesión\" (actuación grupal espontánea) continúa sin cambios, y la música irlandesa ha influido en la música country, bluegrass y folk de todo el mundo."
                   }
               ]
           }
@@ -5737,44 +5967,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Isle of Man",
               "capital": "Douglas",
-              "flagDescription": "The flag of Isle of Man.",
+              "flagDescription": "The Isle of Man has one of the most unique and ancient flags in the world — a red background featuring the Triskelion, three armored human legs joined at the hip and radiating from a central point. This three-legged symbol is over 700 years old and its motto 'Whichever way you throw it, it will stand' reflects the resilience and determination of the Manx people. The Triskelion (or Trinacria) is one of the oldest symbols of human culture.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Isle of Man",
-                      "description": "Isle of Man is a country in Northern Europe."
+                      "icon": "two_wheeler",
+                      "title": "TT Motorcycle Races",
+                      "description": "The Isle of Man TT (Tourist Trophy) motorcycle races, held since 1907, are considered the most dangerous motor races in the world. Riders race at average speeds over 200 km/h on public roads with no barriers, threading through stone walls, cottages, and hedgerows. It's a spectacle that draws fans from around the world every June."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Isle of Man has a population of approximately 85K."
+                      "icon": "pets",
+                      "title": "Manx Cat",
+                      "description": "The Isle of Man gave its name to the famous Manx cat, a unique breed naturally born without a tail. The island is the cats' ancestral home, and the story goes that Manx cats ran late to Noah's Ark and had their tails shut in the door as they scrambled aboard!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Isle of Man is Douglas."
+                      "icon": "history",
+                      "title": "Viking Parliament",
+                      "description": "The Isle of Man's parliament, called the Tynwald, has been meeting continuously since around 979 CE, making it one of the oldest continuous parliaments in the world. Each year on Tynwald Day (July 5th), laws are proclaimed in both English and Manx Gaelic on a ceremonial outdoor hill."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Unspoiled Nature",
+                      "description": "Despite being only 52 km long and 22 km wide, the Isle of Man has extraordinary natural diversity — rugged mountains, ancient glens with enchanting waterfalls, wild moorlands, and spectacular coastal scenery. Over a quarter of the island is a UNESCO Biosphere Reserve."
                   }
               ]
           },
           "es": {
               "name": "Isla de Man",
               "capital": "Douglas",
-              "flagDescription": "La bandera de Isla de Man.",
+              "flagDescription": "La Isla de Man tiene una de las banderas más únicas y antiguas del mundo: un fondo rojo con el Triskelion, tres piernas humanas acorazadas unidas por la cadera y que irradian desde un punto central. Este símbolo de tres piernas tiene más de 700 años y su lema 'De cualquier manera que lo lances, se mantendrá en pie' refleja la resistencia y determinación del pueblo manés. El Triskelion (o Trinacria) es uno de los símbolos más antiguos de la cultura humana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Isla de Man",
-                      "description": "Isla de Man es un país en Northern Europe."
+                      "icon": "two_wheeler",
+                      "title": "Las Carreras TT de Motocicletas",
+                      "description": "Las carreras de motocicletas TT (Tourist Trophy) de la Isla de Man, celebradas desde 1907, son consideradas las carreras de motor más peligrosas del mundo. Los pilotos corren a velocidades medias de más de 200 km/h en carreteras públicas sin barreras, pasando entre muros de piedra, casas de campo y setos. Es un espectáculo que atrae a fans de todo el mundo cada junio."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Isla de Man tiene una población de aproximadamente 85K."
+                      "icon": "pets",
+                      "title": "El Gato Manés",
+                      "description": "La Isla de Man dio su nombre al famoso gato manés, una raza única que nace naturalmente sin cola. La isla es el hogar ancestral de los gatos, ¡y la historia dice que los gatos maneses llegaron tarde al Arca de Noé y les cerraron la cola en la puerta cuando se apresuraban a subir!"
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Isla de Man es Douglas."
+                      "icon": "history",
+                      "title": "El Parlamento Vikingo",
+                      "description": "El parlamento de la Isla de Man, llamado Tynwald, ha estado reuniéndose continuamente desde alrededor del año 979 d.C., lo que lo convierte en uno de los parlamentos continuos más antiguos del mundo. Cada año en el Día de Tynwald (5 de julio), las leyes se proclaman tanto en inglés como en gaélico manés en una colina ceremonial al aire libre."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Naturaleza Virgen",
+                      "description": "A pesar de tener solo 52 km de largo y 22 km de ancho, la Isla de Man tiene una extraordinaria diversidad natural: escarpadas montañas, antiguos barrancos con encantadoras cascadas, páramos salvajes y espectaculares paisajes costeros. Más de una cuarta parte de la isla es Reserva de la Biosfera de la UNESCO."
                   }
               ]
           }
@@ -5843,44 +6083,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Italy",
               "capital": "Rome",
-              "flagDescription": "Italy's flag is a vertical tricolor of green, white, and red. Inspired by the French flag during Napoleon's campaign, the colors were adopted in 1797. Green represents hope and the Italian landscape, white symbolizes faith and the snow-capped Alps, and red represents charity and the blood of patriots.",
+              "flagDescription": "Italy's flag has three equal vertical stripes of green, white, and red — called the Tricolore. The design was inspired by the French tricolor during the time of Napoleon, first used by the Cisalpine Republic in 1797. Green represents the Italian landscape and the hope of patriots, white symbolizes the snow of the Alps and the purity of their ideals, and red represents the blood spilled in the struggle for Italian unity and independence.",
               "funFacts": [
                   {
-                      "icon": "history",
-                      "title": "Most UNESCO Sites",
-                      "description": "Italy has more UNESCO World Heritage Sites than any other country — 58 sites ranging from the Colosseum and Pompeii to the Venice lagoon and Cinque Terre."
-                  },
-                  {
                       "icon": "restaurant",
-                      "title": "Pasta Pioneers",
-                      "description": "Italy has over 350 distinct pasta shapes, each traditionally matched with specific sauces. 'Spaghetti Bolognese' is actually not a traditional Italian dish — in Bologna, the ragu is served with tagliatelle."
+                      "title": "Birthplace of Pizza and Pasta",
+                      "description": "Italy is the birthplace of two of the world's most beloved foods: pizza and pasta. Naples created the modern pizza in the 1800s, and today there are over 2 billion pizzas eaten worldwide every year. Italy also has over 350 different shapes of pasta, each designed to hold different sauces perfectly!"
                   },
                   {
                       "icon": "palette",
-                      "title": "Renaissance Birthplace",
-                      "description": "Italy was the birthplace of the Renaissance — a cultural rebirth in art, science, and architecture. Leonardo da Vinci, Michelangelo, and Galileo all called Italy home."
+                      "title": "Renaissance Art Treasure",
+                      "description": "Italy holds more UNESCO World Heritage Sites than any other country in the world — 58 sites! Florence was the cradle of the Renaissance, producing Leonardo da Vinci, Michelangelo, Botticelli, and Raphael. The Vatican Museums, Uffizi Gallery, and Colosseum are among the greatest art and history destinations on Earth."
+                  },
+                  {
+                      "icon": "directions_car",
+                      "title": "Birthplace of Opera and Fashion",
+                      "description": "Italy invented opera in the late 1500s, and Italian opera houses like La Scala in Milan remain the most prestigious in the world. Italy is also the global capital of high fashion — Milan's fashion week is one of the \"Big Four\" alongside Paris, New York, and London, and brands like Gucci, Prada, Versace, and Ferrari are icons of Italian excellence."
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "Eternal Rome",
+                      "description": "Rome, known as the \"Eternal City,\" has been continuously inhabited for over 2,800 years and was the center of the greatest empire the Western world has ever known. Walking through Rome is walking through layer upon layer of history — ancient ruins sit next to Renaissance churches and modern cafés in a uniquely Italian mix."
                   }
               ]
           },
           "es": {
               "name": "Italia",
-              "capital": "Rome",
-              "flagDescription": "La bandera de Italia.",
+              "capital": "Roma",
+              "flagDescription": "La bandera de Italia tiene tres franjas verticales iguales de verde, blanco y rojo, llamada Tricolore. El diseño fue inspirado por el tricolor francés durante la época de Napoleón, utilizado por primera vez por la República Cisalpina en 1797. El verde representa el paisaje italiano y la esperanza de los patriotas, el blanco simboliza la nieve de los Alpes y la pureza de sus ideales, y el rojo representa la sangre derramada en la lucha por la unidad e independencia italiana.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Italia",
-                      "description": "Italia es un país en Southern Europe."
+                      "icon": "restaurant",
+                      "title": "Cuna de la Pizza y la Pasta",
+                      "description": "Italia es el lugar de nacimiento de dos de los alimentos más queridos del mundo: la pizza y la pasta. Nápoles creó la pizza moderna en el siglo XIX, y hoy en día se comen más de 2.000 millones de pizzas en todo el mundo cada año. ¡Italia también tiene más de 350 formas diferentes de pasta, cada una diseñada para retener perfectamente diferentes salsas!"
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Italia tiene una población de aproximadamente 58.9M."
+                      "icon": "palette",
+                      "title": "Tesoro del Arte del Renacimiento",
+                      "description": "Italia alberga más Sitios del Patrimonio Mundial de la UNESCO que cualquier otro país del mundo: ¡58 sitios! Florencia fue la cuna del Renacimiento, produciendo a Leonardo da Vinci, Miguel Ángel, Botticelli y Rafael. Los Museos Vaticanos, la Galería Uffizi y el Coliseo están entre los destinos de arte e historia más importantes de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Italia es Rome."
+                      "icon": "directions_car",
+                      "title": "Cuna de la Ópera y la Moda",
+                      "description": "Italia inventó la ópera a finales del siglo XVI, y las óperas italianas como La Scala de Milán siguen siendo las más prestigiosas del mundo. Italia es también la capital mundial de la alta moda: la semana de la moda de Milán es una de las \"Cuatro Grandes\" junto a París, Nueva York y Londres, y marcas como Gucci, Prada, Versace y Ferrari son iconos de la excelencia italiana."
+                  },
+                  {
+                      "icon": "architecture",
+                      "title": "La Eterna Roma",
+                      "description": "Roma, conocida como la \"Ciudad Eterna\", ha estado habitada continuamente durante más de 2.800 años y fue el centro del mayor imperio que el mundo occidental jamás haya conocido. Pasear por Roma es pasear por capa tras capa de historia: ruinas antiguas se sientan junto a iglesias renacentistas y cafés modernos en una mezcla únicamente italiana."
                   }
               ]
           }
@@ -6064,45 +6314,55 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Jersey",
-              "capital": "Saint Helier",
-              "flagDescription": "The flag of Jersey.",
+              "capital": "St. Helier",
+              "flagDescription": "Jersey's flag features a red diagonal cross (called a saltire) on a white background, with a yellow shield in the upper center bearing three red lions, and a red crown on top of the shield. The diagonal red cross is Jersey's traditional heraldic symbol, while the three lions are derived from the arms of the Duchy of Normandy, reflecting Jersey's historical ties to Normandy, France. The crown represents the British Crown's sovereignty over the island.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Jersey",
-                      "description": "Jersey is a country in Northern Europe."
+                      "icon": "agriculture",
+                      "title": "Jersey Royal Potatoes",
+                      "description": "Jersey is world-famous for its Jersey Royal potatoes, a special variety of new potato grown only in Jersey's unique soil conditions. These golden, kidney-shaped potatoes with their buttery flavor are one of the most prized vegetables in Britain and are exported to restaurants across Europe each spring."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Jersey has a population of approximately 103K."
+                      "icon": "history",
+                      "title": "Battle of Jersey",
+                      "description": "In 1781, French forces attempted to capture Jersey, and a young British officer named Major Peirson led a heroic defense of the island. The Battle of Jersey in Royal Square, St. Helier, ended in British victory but Peirson was killed at the moment of triumph. The battle is immortalized in a famous painting that hangs in the Tate Britain gallery in London."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Jersey is Saint Helier."
+                      "icon": "beach_access",
+                      "title": "Sunshine Island",
+                      "description": "Jersey is the sunniest place in the British Isles, enjoying more sunshine hours per year than anywhere else in the UK. Its beaches are extraordinary — at low tide, the sea retreats so far that you can walk several kilometers out to rock pools, exploring an entire hidden world that disappears when the tide returns."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Tax Haven Finance",
+                      "description": "Jersey is a major international finance center with its own government, laws, and tax system independent from the UK. This status has attracted banks and financial firms from around the world, making this small island of 100,000 people one of the most important financial centers in Europe."
                   }
               ]
           },
           "es": {
               "name": "Jersey",
-              "capital": "Saint Helier",
-              "flagDescription": "La bandera de Jersey.",
+              "capital": "St. Helier",
+              "flagDescription": "La bandera de Jersey muestra una cruz diagonal roja (llamada saltire) sobre fondo blanco, con un escudo amarillo en el centro superior que lleva tres leones rojos, y una corona roja encima del escudo. La cruz diagonal roja es el símbolo heráldico tradicional de Jersey, mientras que los tres leones provienen de las armas del Ducado de Normandía, reflejando los lazos históricos de Jersey con Normandía, Francia. La corona representa la soberanía de la Corona Británica sobre la isla.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Jersey",
-                      "description": "Jersey es un país en Northern Europe."
+                      "icon": "agriculture",
+                      "title": "Patatas Reales de Jersey",
+                      "description": "Jersey es mundialmente famosa por sus patatas Reales de Jersey, una variedad especial de patata nueva cultivada únicamente en las condiciones únicas del suelo de Jersey. Estas patatas doradas en forma de riñón con su sabor mantecoso son una de las verduras más apreciadas en Gran Bretaña y se exportan a restaurantes de toda Europa cada primavera."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Jersey tiene una población de aproximadamente 103K."
+                      "icon": "history",
+                      "title": "La Batalla de Jersey",
+                      "description": "En 1781, las fuerzas francesas intentaron capturar Jersey, y un joven oficial británico llamado Mayor Peirson lideró una heroica defensa de la isla. La Batalla de Jersey en la Plaza Real de St. Helier terminó en victoria británica, pero Peirson fue asesinado en el momento del triunfo. La batalla está inmortalizada en un famoso cuadro que cuelga en la galería Tate Britain en Londres."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Jersey es Saint Helier."
+                      "icon": "beach_access",
+                      "title": "Isla del Sol",
+                      "description": "Jersey es el lugar más soleado de las Islas Británicas, disfrutando de más horas de sol al año que en cualquier otro lugar del Reino Unido. Sus playas son extraordinarias: con la marea baja, el mar retrocede tanto que se puede caminar varios kilómetros hasta piscinas de roca, explorando un mundo oculto entero que desaparece cuando la marea regresa."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Centro Financiero",
+                      "description": "Jersey es un importante centro financiero internacional con su propio gobierno, leyes y sistema fiscal independiente del Reino Unido. Esta situación ha atraído a bancos y empresas financieras de todo el mundo, haciendo de esta pequeña isla de 100.000 personas uno de los centros financieros más importantes de Europa."
                   }
               ]
           }
@@ -6330,44 +6590,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Kosovo",
               "capital": "Pristina",
-              "flagDescription": "The flag of Kosovo.",
+              "flagDescription": "Kosovo's flag has a blue background with a golden map of Kosovo at the center, above which are six white stars arranged in an arc. The blue and gold colors are inspired by the flag of the European Union, symbolizing Kosovo's European aspirations and its hope to one day join the EU. The six white stars represent Kosovo's six major ethnic communities living together: Albanians, Serbs, Turks, Bosniaks, Roma, and Gorani.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Kosovo",
-                      "description": "Kosovo is a country in Southeast Europe."
+                      "icon": "history",
+                      "title": "World's Youngest Country",
+                      "description": "Kosovo declared independence from Serbia on February 17, 2008, making it one of the youngest countries in the world. The declaration was the result of decades of struggle for self-determination by the Albanian-majority population, and it has been recognized by over 100 UN member states."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Kosovo has a population of approximately 1.6M."
+                      "icon": "architecture",
+                      "title": "Medieval Serbian Monasteries",
+                      "description": "Despite its complex history, Kosovo is home to some of the most beautiful Serbian Orthodox monasteries in the world. Visoki Dečani Monastery, a UNESCO World Heritage Site, was built in the 14th century and contains extraordinarily detailed Byzantine frescoes — thousands of painted figures covering every wall and ceiling."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Kosovo is Pristina."
+                      "icon": "sports_soccer",
+                      "title": "Football Pride",
+                      "description": "Kosovo's national football team was officially recognized by FIFA in 2016. Despite being one of the newest national teams in the world, they have already caused major upsets against established European nations, becoming a source of enormous national pride."
+                  },
+                  {
+                      "icon": "mountain",
+                      "title": "Sharr Mountains",
+                      "description": "The Sharr Mountains (Šar planina) along Kosovo's southern border are a breathtaking natural treasure with glacial lakes, endemic wildflowers, wolves, lynxes, and golden eagles. The mountain range has been proposed for UNESCO Natural Heritage status for its extraordinary biodiversity."
                   }
               ]
           },
           "es": {
               "name": "Kosovo",
               "capital": "Pristina",
-              "flagDescription": "La bandera de Kosovo.",
+              "flagDescription": "La bandera de Kosovo tiene un fondo azul con un mapa dorado de Kosovo en el centro, sobre el cual hay seis estrellas blancas dispuestas en arco. Los colores azul y dorado están inspirados en la bandera de la Unión Europea, simbolizando las aspiraciones europeas de Kosovo y su esperanza de unirse algún día a la UE. Las seis estrellas blancas representan las seis principales comunidades étnicas de Kosovo que viven juntas: albaneses, serbios, turcos, bosníacos, romaníes y goranís.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Kosovo",
-                      "description": "Kosovo es un país en Southeast Europe."
+                      "icon": "history",
+                      "title": "El País Más Joven del Mundo",
+                      "description": "Kosovo declaró su independencia de Serbia el 17 de febrero de 2008, convirtiéndolo en uno de los países más jóvenes del mundo. La declaración fue el resultado de décadas de lucha por la autodeterminación de la población de mayoría albanesa, y ha sido reconocida por más de 100 estados miembros de la ONU."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kosovo tiene una población de aproximadamente 1.6M."
+                      "icon": "architecture",
+                      "title": "Monasterios Medievales Serbios",
+                      "description": "A pesar de su compleja historia, Kosovo alberga algunos de los monasterios ortodoxos serbios más hermosos del mundo. El Monasterio de Visoki Dečani, Patrimonio de la Humanidad de la UNESCO, fue construido en el siglo XIV y contiene extraordinarios frescos bizantinos con miles de figuras pintadas que cubren cada pared y techo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kosovo es Pristina."
+                      "icon": "sports_soccer",
+                      "title": "Orgullo del Fútbol",
+                      "description": "El equipo nacional de fútbol de Kosovo fue reconocido oficialmente por la FIFA en 2016. A pesar de ser uno de los equipos nacionales más nuevos del mundo, ya han causado importantes sorpresas contra naciones europeas establecidas, convirtiéndose en una fuente de enorme orgullo nacional."
+                  },
+                  {
+                      "icon": "mountain",
+                      "title": "Las Montañas Šar",
+                      "description": "Las Montañas Šar (Šar planina) a lo largo de la frontera sur de Kosovo son un impresionante tesoro natural con lagos glaciales, flores silvestres endémicas, lobos, linces y águilas reales. La cordillera ha sido propuesta para el estatus de Patrimonio Natural de la UNESCO por su extraordinaria biodiversidad."
                   }
               ]
           }
@@ -6542,44 +6812,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Latvia",
               "capital": "Riga",
-              "flagDescription": "The flag of Latvia.",
+              "flagDescription": "Latvia's flag is one of the oldest national flags in the world — a deep carmine red divided by a narrow white horizontal stripe. The design dates back to the 13th century, when Latvian tribes used it in battle. According to legend, a Latvian chieftain was wounded in battle and his white linen was stained red on both sides, leaving a white stripe in the center where he lay — and that became the flag.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Latvia",
-                      "description": "Latvia is a country in Northern Europe."
+                      "icon": "forest",
+                      "title": "Land of Forests",
+                      "description": "More than half of Latvia is covered by forests. Walking through Latvia's ancient woodlands — filled with oaks, pines, and birch trees — feels like stepping into a fairytale."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Latvia has a population of approximately 1.8M."
+                      "icon": "celebration",
+                      "title": "Song and Dance Festival",
+                      "description": "Latvia's Song and Dance Festival, held every five years, gathers up to 40,000 singers and dancers in traditional costumes. It is so important to Latvian identity that it is a UNESCO Intangible Cultural Heritage."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Latvia is Riga."
+                      "icon": "architecture",
+                      "title": "Art Nouveau Capital",
+                      "description": "Riga has one of the finest collections of Art Nouveau architecture in the world, with about 800 buildings decorated in elaborate floral patterns, faces, and geometric designs — a real open-air museum."
+                  },
+                  {
+                      "icon": "star",
+                      "title": "Midsummer Magic",
+                      "description": "Latvians celebrate Jāņi (Midsummer) with special intensity — people gather around bonfires, weave oak-leaf crowns, sing traditional songs, and search for the mythical fern flower that blooms only on this magical night."
                   }
               ]
           },
           "es": {
               "name": "Letonia",
               "capital": "Riga",
-              "flagDescription": "La bandera de Letonia.",
+              "flagDescription": "La bandera de Letonia es una de las banderas nacionales más antiguas del mundo: un rojo carmesí profundo dividido por una estrecha franja horizontal blanca. El diseño se remonta al siglo XIII, cuando las tribus letonas lo usaban en batalla. Según la leyenda, un jefe letón fue herido en batalla y su lino blanco se tiñó de rojo por ambos lados, dejando una franja blanca en el centro donde yacía — y así nació la bandera.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Letonia",
-                      "description": "Letonia es un país en Northern Europe."
+                      "icon": "forest",
+                      "title": "Tierra de Bosques",
+                      "description": "Más de la mitad de Letonia está cubierta de bosques. Caminar por los antiguos bosques letonos — llenos de robles, pinos y abedules — es como entrar en un cuento de hadas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Letonia tiene una población de aproximadamente 1.8M."
+                      "icon": "celebration",
+                      "title": "Festival de Canto y Danza",
+                      "description": "El Festival de Canto y Danza de Letonia, celebrado cada cinco años, reúne hasta 40.000 cantantes y bailarines en trajes tradicionales. Es tan importante para la identidad letona que es Patrimonio Cultural Inmaterial de la UNESCO."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Letonia es Riga."
+                      "icon": "architecture",
+                      "title": "Capital del Art Nouveau",
+                      "description": "Riga tiene una de las mejores colecciones de arquitectura Art Nouveau del mundo, con unos 800 edificios decorados con elaborados patrones florales, rostros y diseños geométricos — un auténtico museo al aire libre."
+                  },
+                  {
+                      "icon": "star",
+                      "title": "Magia del Solsticio de Verano",
+                      "description": "Los letonos celebran Jāņi (Midsummer) con especial intensidad — la gente se reúne alrededor de hogueras, teje coronas de hojas de roble, canta canciones tradicionales y busca la mítica flor del helecho que florece solo en esta noche mágica."
                   }
               ]
           }
@@ -6807,44 +7087,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Liechtenstein",
               "capital": "Vaduz",
-              "flagDescription": "The flag of Liechtenstein.",
+              "flagDescription": "Liechtenstein's flag has two equal horizontal stripes — blue on top and red on the bottom — with a golden crown in the upper left corner. The crown was added after the 1936 Olympics, when Liechtenstein discovered their flag was identical to Haiti's! The crown represents the royal family that has ruled this tiny principality for over 300 years.",
               "funFacts": [
                   {
+                      "icon": "castle",
+                      "title": "Royal Family in Residence",
+                      "description": "The Prince of Liechtenstein actually lives in Vaduz Castle, overlooking the capital. Residents can see the castle lit up at night, and the royal family interacts with citizens more directly than most European royals."
+                  },
+                  {
+                      "icon": "factory",
+                      "title": "Industrial Powerhouse",
+                      "description": "Despite being tiny — about 160 km² — Liechtenstein has one of the highest GDP per capita in the world. It is a major center for precision manufacturing, dental technology, and financial services."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Liechtenstein",
-                      "description": "Liechtenstein is a country in Western Europe."
+                      "title": "Double Landlocked",
+                      "description": "Liechtenstein is one of only two countries in the world that is doubly landlocked — surrounded entirely by countries that are themselves landlocked (Austria and Switzerland). The other is Uzbekistan."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Liechtenstein has a population of approximately 41K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Liechtenstein is Vaduz."
+                      "icon": "no_drinks",
+                      "title": "No Army Since 1868",
+                      "description": "Liechtenstein has not maintained a standing army since 1868, when it returned from its last war and decided the expense wasn't worth it. The last soldiers it sent out came back with one extra — a friend they made along the way!"
                   }
               ]
           },
           "es": {
               "name": "Liechtenstein",
               "capital": "Vaduz",
-              "flagDescription": "La bandera de Liechtenstein.",
+              "flagDescription": "La bandera de Liechtenstein tiene dos franjas horizontales iguales — azul arriba y roja abajo — con una corona dorada en la esquina superior izquierda. La corona se añadió después de los Juegos Olímpicos de 1936, cuando Liechtenstein descubrió que su bandera era idéntica a la de Haití. La corona representa a la familia real que ha gobernado este pequeño principado durante más de 300 años.",
               "funFacts": [
                   {
+                      "icon": "castle",
+                      "title": "La Familia Real en Residencia",
+                      "description": "El Príncipe de Liechtenstein vive en el Castillo de Vaduz, con vistas a la capital. Los residentes pueden ver el castillo iluminado por la noche, y la familia real interactúa con los ciudadanos de forma más directa que la mayoría de los reyes europeos."
+                  },
+                  {
+                      "icon": "factory",
+                      "title": "Potencia Industrial",
+                      "description": "A pesar de ser diminuto — unos 160 km² — Liechtenstein tiene uno de los PIB per cápita más altos del mundo. Es un gran centro de fabricación de precisión, tecnología dental y servicios financieros."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Liechtenstein",
-                      "description": "Liechtenstein es un país en Western Europe."
+                      "title": "Doblemente Sin Salida al Mar",
+                      "description": "Liechtenstein es uno de los dos únicos países del mundo que está doblemente sin salida al mar — rodeado por países que a su vez no tienen costa (Austria y Suiza). El otro es Uzbekistán."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Liechtenstein tiene una población de aproximadamente 41K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Liechtenstein es Vaduz."
+                      "icon": "no_drinks",
+                      "title": "Sin Ejército Desde 1868",
+                      "description": "Liechtenstein no ha mantenido un ejército permanente desde 1868, cuando regresó de su última guerra y decidió que el gasto no valía la pena. ¡Los últimos soldados que envió regresaron con uno extra — un amigo que hicieron en el camino!"
                   }
               ]
           }
@@ -6860,44 +7150,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Lithuania",
               "capital": "Vilnius",
-              "flagDescription": "The flag of Lithuania.",
+              "flagDescription": "Lithuania's flag has three equal horizontal stripes of yellow, green, and red. Yellow represents the golden fields of grain and the rising sun. Green symbolizes the deep forests that cover much of the country, hope, and freedom. Red stands for the blood and courage of Lithuanians throughout history. Together they paint a picture of a nation rooted in nature and shaped by resilience.",
               "funFacts": [
                   {
+                      "icon": "history",
+                      "title": "Europe's Last Pagan State",
+                      "description": "Lithuania was the last country in Europe to officially convert to Christianity, doing so in 1387. Before that, Lithuanians practiced their ancient Baltic religion, worshipping nature gods, sacred fires, and the forces of the natural world."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Lithuania",
-                      "description": "Lithuania is a country in Northern Europe."
+                      "title": "Grand Duchy Giant",
+                      "description": "In the 14th and 15th centuries, the Grand Duchy of Lithuania was one of the largest states in Europe, stretching from the Baltic Sea to the Black Sea — covering much of what is now Poland, Ukraine, Belarus, and Russia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Lithuania has a population of approximately 2.9M."
+                      "icon": "sports_basketball",
+                      "title": "Basketball Nation",
+                      "description": "Basketball is practically a religion in Lithuania. The country has won three Olympic bronze medals, and many Lithuanian players have had successful NBA careers. On game days, the whole nation watches together."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Lithuania is Vilnius."
+                      "icon": "park",
+                      "title": "Hill of Crosses",
+                      "description": "The Hill of Crosses near Šiauliai is one of the most unique pilgrimage sites in the world — a hill covered with over 100,000 crosses of every size. People have been leaving crosses there for centuries as acts of faith and remembrance."
                   }
               ]
           },
           "es": {
               "name": "Lituania",
               "capital": "Vilnius",
-              "flagDescription": "La bandera de Lituania.",
+              "flagDescription": "La bandera de Lituania tiene tres franjas horizontales iguales de amarillo, verde y rojo. El amarillo representa los dorados campos de cereales y el sol naciente. El verde simboliza los densos bosques que cubren gran parte del país, la esperanza y la libertad. El rojo representa la sangre y el coraje de los lituanos a lo largo de la historia. Juntos pintan el retrato de una nación arraigada en la naturaleza y forjada por la resiliencia.",
               "funFacts": [
                   {
+                      "icon": "history",
+                      "title": "El Último Estado Pagano de Europa",
+                      "description": "Lituania fue el último país de Europa en convertirse oficialmente al cristianismo, en 1387. Antes, los lituanos practicaban su antigua religión báltica, venerando dioses de la naturaleza, fuegos sagrados y las fuerzas del mundo natural."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Lituania",
-                      "description": "Lituania es un país en Northern Europe."
+                      "title": "El Gigante del Gran Ducado",
+                      "description": "En los siglos XIV y XV, el Gran Ducado de Lituania era uno de los estados más grandes de Europa, extendiéndose desde el mar Báltico hasta el mar Negro — cubriendo gran parte de lo que hoy es Polonia, Ucrania, Bielorrusia y Rusia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Lituania tiene una población de aproximadamente 2.9M."
+                      "icon": "sports_basketball",
+                      "title": "Nación del Baloncesto",
+                      "description": "El baloncesto es prácticamente una religión en Lituania. El país ha ganado tres medallas de bronce olímpicas, y muchos jugadores lituanos han tenido exitosas carreras en la NBA. Los días de partido, toda la nación mira junta."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Lituania es Vilnius."
+                      "icon": "park",
+                      "title": "La Colina de las Cruces",
+                      "description": "La Colina de las Cruces cerca de Šiauliai es uno de los lugares de peregrinación más únicos del mundo — una colina cubierta con más de 100.000 cruces de todos los tamaños. La gente lleva siglos dejando cruces allí como actos de fe y recuerdo."
                   }
               ]
           }
@@ -6912,45 +7212,55 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "Luxembourg",
-              "capital": "Luxembourg",
-              "flagDescription": "The flag of Luxembourg.",
+              "capital": "Luxembourg City",
+              "flagDescription": "Luxembourg's flag has three equal horizontal stripes of red, white, and light blue — very similar to the Dutch flag but with a lighter shade of blue. The colors come from the coat of arms of the Count of Luxembourg used in the 13th century. Though simple, the flag represents a small but prosperous nation that has been at the heart of European integration for centuries.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Luxembourg",
-                      "description": "Luxembourg is a country in Western Europe."
+                      "icon": "account_balance",
+                      "title": "Banking Powerhouse",
+                      "description": "Luxembourg is one of the wealthiest countries in the world per capita. It is a major European financial center, with hundreds of international banks and investment funds headquartered there — and the second largest investment fund center after the United States."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Luxembourg has a population of approximately 682K."
+                      "icon": "language",
+                      "title": "Three Official Languages",
+                      "description": "Luxembourg has three official languages: Luxembourgish, French, and German. Most Luxembourgers speak all three fluently, plus often English. It's one of the most multilingual countries on Earth."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Luxembourg is Luxembourg."
+                      "icon": "castle",
+                      "title": "Fortress City",
+                      "description": "Luxembourg City's old fortifications are so impressive they are a UNESCO World Heritage Site. The city was once considered one of the strongest fortresses in Europe — its underground casemates tunnel for 23 kilometers beneath the city."
+                  },
+                  {
+                      "icon": "star",
+                      "title": "Founding of the EU",
+                      "description": "Luxembourg was one of the six founding members of what became the European Union. Many key EU institutions are headquartered in Luxembourg City, making this tiny country a giant in European politics."
                   }
               ]
           },
           "es": {
               "name": "Luxemburgo",
-              "capital": "Luxembourg",
-              "flagDescription": "La bandera de Luxemburgo.",
+              "capital": "Ciudad de Luxemburgo",
+              "flagDescription": "La bandera de Luxemburgo tiene tres franjas horizontales iguales de rojo, blanco y azul claro — muy similar a la bandera holandesa pero con un tono más claro de azul. Los colores provienen del escudo de armas del Conde de Luxemburgo usado en el siglo XIII. Aunque simple, la bandera representa a una nación pequeña pero próspera que ha sido el corazón de la integración europea durante siglos.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Luxemburgo",
-                      "description": "Luxemburgo es un país en Western Europe."
+                      "icon": "account_balance",
+                      "title": "Potencia Bancaria",
+                      "description": "Luxemburgo es uno de los países más ricos del mundo per cápita. Es un importante centro financiero europeo, con cientos de bancos internacionales y fondos de inversión con sede allí — y el segundo mayor centro de fondos de inversión después de los Estados Unidos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Luxemburgo tiene una población de aproximadamente 682K."
+                      "icon": "language",
+                      "title": "Tres Idiomas Oficiales",
+                      "description": "Luxemburgo tiene tres idiomas oficiales: luxemburgués, francés y alemán. La mayoría de los luxemburgueses hablan los tres con fluidez, además de a menudo inglés. Es uno de los países más multilingües de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Luxemburgo es Luxembourg."
+                      "icon": "castle",
+                      "title": "Ciudad Fortaleza",
+                      "description": "Las antiguas fortificaciones de la Ciudad de Luxemburgo son tan impresionantes que son Patrimonio de la Humanidad por la UNESCO. La ciudad fue considerada una de las fortalezas más fuertes de Europa — sus casemates subterráneas se extienden 23 kilómetros bajo la ciudad."
+                  },
+                  {
+                      "icon": "star",
+                      "title": "Fundación de la UE",
+                      "description": "Luxemburgo fue uno de los seis miembros fundadores de lo que se convirtió en la Unión Europea. Muchas instituciones clave de la UE tienen sede en la Ciudad de Luxemburgo, haciendo de este diminuto país un gigante de la política europea."
                   }
               ]
           }
@@ -7284,44 +7594,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Malta",
               "capital": "Valletta",
-              "flagDescription": "The flag of Malta.",
+              "flagDescription": "Malta's flag has two equal vertical stripes — white on the left and red on the right — with the George Cross on the upper left. The George Cross is a British military decoration awarded to Malta in 1942 by King George VI for the island's extraordinary bravery during WWII, when it endured intense bombing while remaining a vital Allied base.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Malta",
-                      "description": "Malta is a country in Southern Europe."
+                      "icon": "history",
+                      "title": "Ancient Megalithic Temples",
+                      "description": "Malta is home to the world's oldest freestanding stone structures — the Megalithic Temples, built around 3600–2500 BC, predating Stonehenge and the Egyptian pyramids. These incredible buildings are a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Malta has a population of approximately 574K."
+                      "icon": "anchor",
+                      "title": "Knights of Malta",
+                      "description": "For over 250 years (1530–1798), Malta was ruled by the Knights of St. John, a Christian military order. They transformed Valletta into one of the most fortified cities in the world and built hospitals, churches, and palaces."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Malta is Valletta."
+                      "icon": "language",
+                      "title": "Arabic Roots",
+                      "description": "Maltese is the only Semitic language written in Latin script, and the only official EU language with Arabic roots. It evolved from medieval Sicilian Arabic mixed with Italian, French, and English — a linguistic treasure."
+                  },
+                  {
+                      "icon": "wb_sunny",
+                      "title": "Sunshine Capital of Europe",
+                      "description": "Malta enjoys more than 300 sunny days per year — one of the sunniest places in Europe. Its warm climate, crystal-clear waters, and historic towns make it one of the most visited places per square kilometer in the world."
                   }
               ]
           },
           "es": {
               "name": "Malta",
-              "capital": "Valletta",
-              "flagDescription": "La bandera de Malta.",
+              "capital": "La Valeta",
+              "flagDescription": "La bandera de Malta tiene dos franjas verticales iguales — blanca a la izquierda y roja a la derecha — con la Cruz de Jorge en la parte superior izquierda. La Cruz de Jorge es una condecoración militar británica otorgada a Malta en 1942 por el rey Jorge VI por el extraordinario valor de la isla durante la Segunda Guerra Mundial, cuando soportó intensos bombardeos mientras seguía siendo una base aliada vital.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Malta",
-                      "description": "Malta es un país en Southern Europe."
+                      "icon": "history",
+                      "title": "Templos Megalíticos Antiguos",
+                      "description": "Malta alberga las estructuras de piedra independientes más antiguas del mundo — los Templos Megalíticos, construidos alrededor del 3600–2500 a.C., anteriores a Stonehenge y las pirámides egipcias. Estos increíbles edificios son Patrimonio de la Humanidad por la UNESCO."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Malta tiene una población de aproximadamente 574K."
+                      "icon": "anchor",
+                      "title": "Caballeros de Malta",
+                      "description": "Durante más de 250 años (1530–1798), Malta fue gobernada por los Caballeros de San Juan, una orden militar cristiana. Transformaron La Valeta en una de las ciudades más fortificadas del mundo y construyeron hospitales, iglesias y palacios."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Malta es Valletta."
+                      "icon": "language",
+                      "title": "Raíces Árabes",
+                      "description": "El maltés es el único idioma semítico escrito en alfabeto latino, y el único idioma oficial de la UE con raíces árabes. Evolucionó del árabe siciliano medieval mezclado con italiano, francés e inglés — un tesoro lingüístico."
+                  },
+                  {
+                      "icon": "wb_sunny",
+                      "title": "Capital del Sol de Europa",
+                      "description": "Malta disfruta de más de 300 días soleados al año — uno de los lugares más soleados de Europa. Su cálido clima, aguas cristalinas y pueblos históricos lo convierten en uno de los lugares más visitados por kilómetro cuadrado del mundo."
                   }
               ]
           }
@@ -7728,44 +8048,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Moldova",
               "capital": "Chișinău",
-              "flagDescription": "The flag of Moldova.",
+              "flagDescription": "Moldova's flag has three vertical stripes of blue, yellow, and red — the same colors as Romania's flag, reflecting their shared Romanian heritage. In the center is Moldova's coat of arms showing an eagle holding a golden cross, an olive branch, and a scepter, with a shield bearing an aurochs head, a star, a rose, and a crescent — symbols rooted in ancient Moldovan history.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Moldova",
-                      "description": "Moldova is a country in Eastern Europe."
+                      "icon": "wine_bar",
+                      "title": "Wine Country",
+                      "description": "Moldova is one of the world's most wine-dense countries per capita. It has some of the oldest winemaking traditions in the world — over 5,000 years — and the Cricova winery has tunnels stretching 120 km underground filled with millions of bottles."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Moldova has a population of approximately 2.7M."
+                      "icon": "history",
+                      "title": "Soviet Past",
+                      "description": "Moldova was part of the Soviet Union until 1991. Today it is the poorest country in Europe by GDP, but its people are known for their warmth, resilience, and incredibly generous hospitality."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Moldova is Chișinău."
+                      "icon": "castle",
+                      "title": "Soroca Fortress",
+                      "description": "The Soroca Fortress, built in the 15th–16th centuries on the banks of the Dniester River, is one of Moldova's most iconic landmarks. Its perfectly circular design is unique among medieval European fortresses."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Wine Festival",
+                      "description": "Moldova's National Wine Day, held every October, is one of Europe's biggest wine festivals. Wineries open their doors, music fills the streets, and the entire country celebrates its most cherished tradition."
                   }
               ]
           },
           "es": {
               "name": "Moldavia",
               "capital": "Chișinău",
-              "flagDescription": "La bandera de Moldavia.",
+              "flagDescription": "La bandera de Moldavia tiene tres franjas verticales de azul, amarillo y rojo — los mismos colores que la bandera de Rumanía, reflejando su herencia rumana compartida. En el centro está el escudo de armas de Moldavia que muestra un águila sosteniendo una cruz dorada, una rama de olivo y un cetro, con un escudo que lleva una cabeza de uro, una estrella, una rosa y una media luna — símbolos arraigados en la antigua historia moldava.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Moldavia",
-                      "description": "Moldavia es un país en Eastern Europe."
+                      "icon": "wine_bar",
+                      "title": "País del Vino",
+                      "description": "Moldavia es uno de los países con más densidad de vino per cápita del mundo. Tiene algunas de las tradiciones vinícolas más antiguas del mundo — más de 5.000 años — y la bodega Cricova tiene túneles que se extienden 120 km bajo tierra llenos de millones de botellas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Moldavia tiene una población de aproximadamente 2.7M."
+                      "icon": "history",
+                      "title": "Pasado Soviético",
+                      "description": "Moldavia formó parte de la Unión Soviética hasta 1991. Hoy es el país más pobre de Europa por PIB, pero su gente es conocida por su calidez, resiliencia y una hospitalidad increíblemente generosa."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Moldavia es Chișinău."
+                      "icon": "castle",
+                      "title": "Fortaleza de Soroca",
+                      "description": "La Fortaleza de Soroca, construida en los siglos XV–XVI a orillas del río Dniéster, es uno de los hitos más icónicos de Moldavia. Su diseño perfectamente circular es único entre las fortalezas medievales europeas."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Festival del Vino",
+                      "description": "El Día Nacional del Vino de Moldavia, celebrado cada octubre, es uno de los mayores festivales de vino de Europa. Las bodegas abren sus puertas, la música llena las calles y todo el país celebra su tradición más querida."
                   }
               ]
           }
@@ -7781,44 +8111,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Monaco",
               "capital": "Monaco",
-              "flagDescription": "The flag of Monaco.",
+              "flagDescription": "Monaco's flag is one of the simplest in the world — two equal horizontal bands, red on top and white on the bottom. These colors have been associated with the Grimaldi family, Monaco's ruling dynasty, since the 13th century. Interestingly, the flag is almost identical to Indonesia's flag — both have red on top and white on the bottom — though Monaco's flag is square while Indonesia's is rectangular.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Monaco",
-                      "description": "Monaco is a country in Western Europe."
+                      "icon": "sports_motorsports",
+                      "title": "Formula 1 Street Circuit",
+                      "description": "The Monaco Grand Prix is one of the most prestigious races in Formula 1. Drivers race through Monaco's narrow streets, tunnels, and tight corners — it is incredibly difficult to overtake and widely considered the most glamorous race in the world."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Monaco has a population of approximately 38K."
+                      "icon": "casino",
+                      "title": "Casino Capital",
+                      "description": "The Monte Carlo Casino is one of the most famous gambling venues in the world. Ironically, Monegasque citizens are banned from gambling in the casino — it's reserved for tourists."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Monaco is Monaco."
+                      "icon": "castle",
+                      "title": "Oldest Ruling Family",
+                      "description": "The Grimaldi family has ruled Monaco almost continuously since 1297 — making it one of the world's oldest ruling dynasties. Prince Albert II currently leads this tiny principality with great flair and global influence."
+                  },
+                  {
+                      "icon": "eco",
+                      "title": "Tiny but Green",
+                      "description": "Despite being the world's second smallest country and one of the most densely populated, Monaco is surprisingly eco-conscious. It aims to be carbon neutral by 2050 and has built an entire district on land reclaimed from the sea."
                   }
               ]
           },
           "es": {
               "name": "Mónaco",
-              "capital": "Monaco",
-              "flagDescription": "La bandera de Mónaco.",
+              "capital": "Mónaco",
+              "flagDescription": "La bandera de Mónaco es una de las más simples del mundo: dos bandas horizontales iguales, roja arriba y blanca abajo. Estos colores han estado asociados con la familia Grimaldi, la dinastía gobernante de Mónaco, desde el siglo XIII. Curiosamente, la bandera es casi idéntica a la de Indonesia — ambas tienen rojo arriba y blanco abajo — aunque la de Mónaco es cuadrada mientras que la de Indonesia es rectangular.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Mónaco",
-                      "description": "Mónaco es un país en Western Europe."
+                      "icon": "sports_motorsports",
+                      "title": "Circuito Callejero de Fórmula 1",
+                      "description": "El Gran Premio de Mónaco es una de las carreras más prestigiosas de la Fórmula 1. Los pilotos corren por las estrechas calles de Mónaco, túneles y curvas cerradas — es increíblemente difícil adelantar y ampliamente considerada la carrera más glamurosa del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Mónaco tiene una población de aproximadamente 38K."
+                      "icon": "casino",
+                      "title": "Capital del Casino",
+                      "description": "El Casino de Montecarlo es uno de los lugares de juego más famosos del mundo. Irónicamente, los ciudadanos monegascos tienen prohibido jugar en el casino — está reservado para los turistas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Mónaco es Monaco."
+                      "icon": "castle",
+                      "title": "La Familia Gobernante Más Antigua",
+                      "description": "La familia Grimaldi ha gobernado Mónaco casi sin interrupción desde 1297 — convirtiéndola en una de las dinastías gobernantes más antiguas del mundo. El Príncipe Alberto II lidera actualmente este diminuto principado con gran estilo e influencia global."
+                  },
+                  {
+                      "icon": "eco",
+                      "title": "Pequeño pero Verde",
+                      "description": "A pesar de ser el segundo país más pequeño del mundo y uno de los más densamente poblados, Mónaco es sorprendentemente ecológico. Aspira a ser neutral en carbono para 2050 y ha construido un distrito entero en tierra recuperada del mar."
                   }
               ]
           }
@@ -7887,44 +8227,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Montenegro",
               "capital": "Podgorica",
-              "flagDescription": "The flag of Montenegro.",
+              "flagDescription": "Montenegro's flag has a golden-yellow border around a red field, with the country's coat of arms in the center — a golden double-headed eagle holding a blue-shielded lion. This design brings together centuries of Montenegrin heraldic tradition. The name 'Montenegro' means 'Black Mountain' in Italian and Venetian, inspired by the dark appearance of Mount Lovćen.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Montenegro",
-                      "description": "Montenegro is a country in Southeast Europe."
+                      "icon": "landscape",
+                      "title": "Black Mountain Beauty",
+                      "description": "Montenegro's landscape is breathtaking — from the dramatic peaks of the Durmitor National Park (a UNESCO World Heritage Site) to the medieval walled city of Kotor, nestled between mountains and a stunning bay."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Montenegro has a population of approximately 623K."
+                      "icon": "waves",
+                      "title": "Deepest Canyon in Europe",
+                      "description": "The Tara River Canyon is the deepest canyon in Europe and the second deepest in the world after the Grand Canyon. Its turquoise waters are perfect for white-water rafting through ancient forests."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Montenegro is Podgorica."
+                      "icon": "history",
+                      "title": "Oldest Royal Dynasty",
+                      "description": "Montenegro was an independent kingdom for centuries before joining Yugoslavia. Its royal Petrović-Njegoš dynasty produced not only kings but also poets, bishops, and diplomats — rare in European history."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Bay of Kotor",
+                      "description": "The Bay of Kotor is the only fjord-like bay in the Mediterranean — a stunning winding inlet surrounded by steep mountains and dotted with medieval towns and Venetian fortifications."
                   }
               ]
           },
           "es": {
               "name": "Montenegro",
               "capital": "Podgorica",
-              "flagDescription": "La bandera de Montenegro.",
+              "flagDescription": "La bandera de Montenegro tiene un borde amarillo dorado alrededor de un campo rojo, con el escudo de armas del país en el centro — un águila bicéfala dorada sosteniendo un león en escudo azul. Este diseño reúne siglos de tradición heráldica montenegrina. El nombre 'Montenegro' significa 'Montaña Negra' en italiano y veneciano, inspirado en la apariencia oscura del monte Lovćen.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Montenegro",
-                      "description": "Montenegro es un país en Southeast Europe."
+                      "icon": "landscape",
+                      "title": "La Belleza de la Montaña Negra",
+                      "description": "El paisaje de Montenegro es impresionante — desde los dramáticos picos del Parque Nacional Durmitor (Patrimonio de la Humanidad por la UNESCO) hasta la ciudad medieval amurallada de Kotor, enclavada entre montañas y una bahía impresionante."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Montenegro tiene una población de aproximadamente 623K."
+                      "icon": "waves",
+                      "title": "El Cañón Más Profundo de Europa",
+                      "description": "El Cañón del río Tara es el más profundo de Europa y el segundo más profundo del mundo tras el Gran Cañón. Sus aguas turquesas son perfectas para el descenso de ríos en kayak a través de bosques antiguos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Montenegro es Podgorica."
+                      "icon": "history",
+                      "title": "La Dinastía Real Más Antigua",
+                      "description": "Montenegro fue un reino independiente durante siglos antes de unirse a Yugoslavia. Su dinastía real Petrović-Njegoš produjo no solo reyes sino también poetas, obispos y diplomáticos — algo raro en la historia europea."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Bahía de Kotor",
+                      "description": "La Bahía de Kotor es la única bahía parecida a un fiordo en el Mediterráneo — una impresionante ensenada serpenteante rodeada de escarpadas montañas y salpicada de pueblos medievales y fortificaciones venecianas."
                   }
               ]
           }
@@ -8808,44 +9158,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "North Macedonia",
               "capital": "Skopje",
-              "flagDescription": "The flag of North Macedonia.",
+              "flagDescription": "North Macedonia's flag features a golden sun with eight rays bursting outward on a vivid red background. This is the 'Sun of Liberty,' a symbol of enlightenment and freedom for the Macedonian people. The flag was redesigned in 1995 after a dispute with Greece over the original Vergina Sun symbol, which Greece associated with ancient Macedonia — a region of Greece.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About North Macedonia",
-                      "description": "North Macedonia is a country in Southeast Europe."
+                      "icon": "history",
+                      "title": "Alexander the Great's Land",
+                      "description": "The ancient kingdom of Macedonia — the homeland of Alexander the Great, one of history's greatest conquerors — was located in the region that today includes North Macedonia and northern Greece. Alexander's legacy is a source of enormous pride and historical debate."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "North Macedonia has a population of approximately 1.8M."
+                      "icon": "landscape",
+                      "title": "Lake Ohrid",
+                      "description": "Lake Ohrid is one of Europe's oldest and deepest lakes, estimated to be over 3 million years old. It is a UNESCO World Heritage Site and home to unique species found nowhere else on Earth, including the Ohrid trout."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of North Macedonia is Skopje."
+                      "icon": "temple_buddhist",
+                      "title": "Mother Teresa's Birthplace",
+                      "description": "Mother Teresa was born in Skopje in 1910 as Anjezë Gonxhe Bojaxhiu. The city honors her with a museum and memorial house. She is beloved here as a symbol of compassion and humility."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "Galichnik Wedding",
+                      "description": "The Galichnik Wedding is a famous annual folk festival where couples marry in traditional Macedonian costumes in a centuries-old ceremony — with music, dancing, and feasting that lasts for days."
                   }
               ]
           },
           "es": {
               "name": "Macedonia del Norte",
               "capital": "Skopje",
-              "flagDescription": "La bandera de Macedonia del Norte.",
+              "flagDescription": "La bandera de Macedonia del Norte muestra un sol dorado con ocho rayos irradiándose sobre un vivido fondo rojo. Este es el 'Sol de la Libertad', símbolo de iluminación y libertad para el pueblo macedonio. La bandera fue rediseñada en 1995 tras una disputa con Grecia sobre el símbolo original del Sol de Vergina, que Grecia asociaba con la Macedonia antigua — una región de Grecia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Macedonia del Norte",
-                      "description": "Macedonia del Norte es un país en Southeast Europe."
+                      "icon": "history",
+                      "title": "La Tierra de Alejandro Magno",
+                      "description": "El antiguo reino de Macedonia — la tierra natal de Alejandro Magno, uno de los mayores conquistadores de la historia — estaba ubicado en la región que hoy incluye Macedonia del Norte y el norte de Grecia. El legado de Alejandro es fuente de enorme orgullo y debate histórico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Macedonia del Norte tiene una población de aproximadamente 1.8M."
+                      "icon": "landscape",
+                      "title": "Lago Ohrid",
+                      "description": "El lago Ohrid es uno de los lagos más antiguos y profundos de Europa, con una antigüedad estimada de más de 3 millones de años. Es Patrimonio de la Humanidad por la UNESCO y hogar de especies únicas que no se encuentran en ningún otro lugar de la Tierra, incluida la trucha de Ohrid."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Macedonia del Norte es Skopje."
+                      "icon": "temple_buddhist",
+                      "title": "Lugar de Nacimiento de la Madre Teresa",
+                      "description": "La Madre Teresa nació en Skopje en 1910 como Anjezë Gonxhe Bojaxhiu. La ciudad la honra con un museo y una casa memorial. Es amada aquí como símbolo de compasión y humildad."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "La Boda de Galichnik",
+                      "description": "La Boda de Galichnik es un famoso festival folklórico anual donde las parejas se casan con trajes tradicionales macedonios en una ceremonia centenaria — con música, baile y festín que dura días."
                   }
               ]
           }
@@ -9855,44 +10215,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Romania",
               "capital": "Bucharest",
-              "flagDescription": "The flag of Romania.",
+              "flagDescription": "Romania's flag has three vertical stripes of blue, yellow, and red. These colors have been used by Romanians since the early 19th century independence movements. Blue represents the sky and freedom, yellow symbolizes the wealth of the land and the fields of grain, and red stands for the blood and sacrifice of those who fought for Romania's independence and unity.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Romania",
-                      "description": "Romania is a country in Southeast Europe."
+                      "icon": "castle",
+                      "title": "Land of Dracula",
+                      "description": "Bran Castle in Transylvania is known as Dracula's Castle, inspiring Bram Stoker's famous novel. The real Vlad the Impaler (Vlad III) was a fierce Romanian prince who defended his country from the Ottoman Empire — his terrifying methods became legend."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Romania has a population of approximately 19.0M."
+                      "icon": "forest",
+                      "title": "Europe's Last Primeval Forests",
+                      "description": "Romania has some of the last ancient primeval forests in Europe. The Carpathian Mountains are home to Europe's largest populations of wolves, bears, and lynxes — wildlife that has long disappeared from much of the continent."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Romania is Bucharest."
+                      "icon": "sports_gymnastics",
+                      "title": "Gymnastics Legend",
+                      "description": "Nadia Comaneci, a Romanian gymnast, became the first person to score a perfect 10 in Olympic gymnastics at the 1976 Montreal Olympics — a moment that shocked the world because the scoreboard wasn't even designed to show a 10!"
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Roman Descendants",
+                      "description": "Romania's name comes from Rome. The Romans conquered the region of Dacia in the 2nd century AD and left a lasting cultural imprint. Romanian is the only Eastern European language descended from Latin, closely related to Italian, French, and Spanish."
                   }
               ]
           },
           "es": {
-              "name": "Rumania",
-              "capital": "Bucharest",
-              "flagDescription": "La bandera de Rumania.",
+              "name": "Rumanía",
+              "capital": "Bucarest",
+              "flagDescription": "La bandera de Rumanía tiene tres franjas verticales de azul, amarillo y rojo. Estos colores han sido usados por los rumanos desde los movimientos de independencia de principios del siglo XIX. El azul representa el cielo y la libertad, el amarillo simboliza la riqueza de la tierra y los campos de cereales, y el rojo representa la sangre y el sacrificio de quienes lucharon por la independencia y unidad de Rumanía.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Rumania",
-                      "description": "Rumania es un país en Southeast Europe."
+                      "icon": "castle",
+                      "title": "Tierra de Drácula",
+                      "description": "El Castillo de Bran en Transilvania es conocido como el Castillo de Drácula, que inspiró la famosa novela de Bram Stoker. El verdadero Vlad el Empalador (Vlad III) fue un feroz príncipe rumano que defendió su país del Imperio Otomano — sus aterradores métodos se convirtieron en leyenda."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Rumania tiene una población de aproximadamente 19.0M."
+                      "icon": "forest",
+                      "title": "Los Últimos Bosques Primigenios de Europa",
+                      "description": "Rumanía tiene algunos de los últimos bosques primigenios de Europa. Los Cárpatos albergan las mayores poblaciones de lobos, osos y linces de Europa — fauna que ha desaparecido hace mucho de gran parte del continente."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Rumania es Bucharest."
+                      "icon": "sports_gymnastics",
+                      "title": "Leyenda de la Gimnasia",
+                      "description": "Nadia Comaneci, una gimnasta rumana, se convirtió en la primera persona en obtener un 10 perfecto en gimnasia olímpica en los Juegos Olímpicos de Montreal de 1976 — un momento que impactó al mundo porque el marcador ni siquiera estaba diseñado para mostrar un 10."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Descendientes de Roma",
+                      "description": "El nombre de Rumanía viene de Roma. Los romanos conquistaron la región de Dacia en el siglo II d.C. y dejaron una huella cultural duradera. El rumano es el único idioma de Europa del Este descendiente del latín, estrechamente relacionado con el italiano, francés y español."
                   }
               ]
           }
@@ -10497,45 +10867,55 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "San Marino",
-              "capital": "City of San Marino",
-              "flagDescription": "The flag of San Marino.",
+              "capital": "San Marino City",
+              "flagDescription": "San Marino's flag has two equal horizontal stripes — pale blue on top and white on the bottom — with the country's coat of arms in the center. The coat of arms shows three towers (representing the three castles on Mount Titano), a crown, an ostrich feather, and two branches. San Marino claims to be the world's oldest republic, founded in 301 AD.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About San Marino",
-                      "description": "San Marino is a country in Southern Europe."
+                      "icon": "history",
+                      "title": "World's Oldest Republic",
+                      "description": "San Marino claims to be the world's oldest constitutional republic, founded in 301 AD by a Christian stonemason named Marinus who fled religious persecution. It has maintained its independence for over 1,700 years, even surviving Napoleon and both World Wars."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "San Marino has a population of approximately 34K."
+                      "icon": "landscape",
+                      "title": "Completely Inside Italy",
+                      "description": "San Marino is a microstate entirely surrounded by Italy — the only country in the world fully enclosed by a single nation other than Lesotho (in South Africa). Despite this, it has maintained full independence for centuries."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of San Marino is City of San Marino."
+                      "icon": "sports_motorsports",
+                      "title": "Formula 1 Connection",
+                      "description": "The famous San Marino Grand Prix was held in Imola, Italy — not San Marino itself, since the tiny country has no room for a race track! The race borrowed the name to honor the neighboring republic."
+                  },
+                  {
+                      "icon": "castle",
+                      "title": "Three Towers on the Mountain",
+                      "description": "The three medieval towers of San Marino — Guaita, Cesta, and Montale — perch dramatically on the rocky peaks of Mount Titano and are UNESCO World Heritage Sites. They appear on the country's flag and coat of arms."
                   }
               ]
           },
           "es": {
               "name": "San Marino",
-              "capital": "City of San Marino",
-              "flagDescription": "La bandera de San Marino.",
+              "capital": "Ciudad de San Marino",
+              "flagDescription": "La bandera de San Marino tiene dos franjas horizontales iguales — azul pálido arriba y blanco abajo — con el escudo de armas del país en el centro. El escudo muestra tres torres (que representan los tres castillos del Monte Titano), una corona, una pluma de avestruz y dos ramas. San Marino se proclama la república más antigua del mundo, fundada en el año 301 d.C.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre San Marino",
-                      "description": "San Marino es un país en Southern Europe."
+                      "icon": "history",
+                      "title": "La República Más Antigua del Mundo",
+                      "description": "San Marino se proclama la república constitucional más antigua del mundo, fundada en el año 301 d.C. por un cantero cristiano llamado Marinus que huyó de la persecución religiosa. Ha mantenido su independencia durante más de 1.700 años, sobreviviendo incluso a Napoleón y a las dos guerras mundiales."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "San Marino tiene una población de aproximadamente 34K."
+                      "icon": "landscape",
+                      "title": "Completamente Dentro de Italia",
+                      "description": "San Marino es un microestado completamente rodeado por Italia — el único país del mundo totalmente encerrado por una sola nación aparte de Lesoto (en Sudáfrica). A pesar de esto, ha mantenido plena independencia durante siglos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de San Marino es City of San Marino."
+                      "icon": "sports_motorsports",
+                      "title": "Conexión con la Fórmula 1",
+                      "description": "El famoso Gran Premio de San Marino se celebraba en Imola, Italia — ¡no en el propio San Marino, ya que el diminuto país no tiene espacio para un circuito de carreras! La carrera tomó prestado el nombre para honrar a la república vecina."
+                  },
+                  {
+                      "icon": "castle",
+                      "title": "Las Tres Torres en la Montaña",
+                      "description": "Las tres torres medievales de San Marino — Guaita, Cesta y Montale — se asientan dramáticamente en los picos rocosos del Monte Titano y son Patrimonio de la Humanidad por la UNESCO. Aparecen en la bandera y el escudo de armas del país."
                   }
               ]
           }
@@ -10710,44 +11090,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Serbia",
               "capital": "Belgrade",
-              "flagDescription": "The flag of Serbia.",
+              "flagDescription": "Serbia's flag has three equal horizontal stripes of red, blue, and white — the Pan-Slavic colors used by many Slavic nations. The coat of arms on the left shows a white double-headed eagle on a red shield, topped with a golden crown, with a smaller red shield showing a white cross and four firesteels. The firesteels are a traditional Serbian symbol representing the initials of the motto 'Only Unity Saves the Serbs.'",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Serbia",
-                      "description": "Serbia is a country in Southeast Europe."
+                      "icon": "music_note",
+                      "title": "Exit Festival",
+                      "description": "Serbia hosts the Exit Festival in Novi Sad — one of Europe's best and most beloved music festivals. Held in a 17th-century fortress overlooking the Danube River, it has hosted legendary artists and earned multiple awards for best European festival."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Serbia has a population of approximately 6.6M."
+                      "icon": "science",
+                      "title": "Tesla's Homeland",
+                      "description": "Nikola Tesla, one of the greatest inventors in history, was born in Serbia (then part of the Austrian Empire). He invented alternating current (AC) electricity and made foundational contributions to radio, radar, and X-ray technology."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Serbia is Belgrade."
+                      "icon": "castle",
+                      "title": "Kalemegdan Fortress",
+                      "description": "Belgrade's Kalemegdan Fortress sits at the confluence of the Danube and Sava rivers and has been fought over more than 115 times in history. Today it's a park where locals stroll, play chess, and watch stunning sunsets."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Rakija Culture",
+                      "description": "Rakija — a fruit brandy typically made from plums — is practically Serbia's national drink. Every family has its own recipe, and homemade rakija is offered to guests as a sign of hospitality and friendship."
                   }
               ]
           },
           "es": {
               "name": "Serbia",
-              "capital": "Belgrade",
-              "flagDescription": "La bandera de Serbia.",
+              "capital": "Belgrado",
+              "flagDescription": "La bandera de Serbia tiene tres franjas horizontales iguales de rojo, azul y blanco — los colores paneslávos usados por muchas naciones eslavas. El escudo de armas a la izquierda muestra un águila bicéfala blanca sobre un escudo rojo, coronada con una corona dorada, con un escudo rojo más pequeño que muestra una cruz blanca y cuatro eslabones de fuego. Los eslabones de fuego son un símbolo serbio tradicional que representa las iniciales del lema 'Solo la unidad salva a los serbios.'",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Serbia",
-                      "description": "Serbia es un país en Southeast Europe."
+                      "icon": "music_note",
+                      "title": "Festival Exit",
+                      "description": "Serbia acoge el Festival Exit en Novi Sad — uno de los mejores y más queridos festivales de música de Europa. Celebrado en una fortaleza del siglo XVII con vistas al río Danubio, ha acogido a artistas legendarios y ha ganado múltiples premios al mejor festival europeo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Serbia tiene una población de aproximadamente 6.6M."
+                      "icon": "science",
+                      "title": "La Patria de Tesla",
+                      "description": "Nikola Tesla, uno de los mayores inventores de la historia, nació en Serbia (entonces parte del Imperio Austríaco). Inventó la corriente alterna (CA) y realizó contribuciones fundamentales a la radio, el radar y la tecnología de rayos X."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Serbia es Belgrade."
+                      "icon": "castle",
+                      "title": "Fortaleza de Kalemegdan",
+                      "description": "La Fortaleza de Kalemegdan de Belgrado se asienta en la confluencia de los ríos Danubio y Sava y ha sido disputada más de 115 veces a lo largo de la historia. Hoy es un parque donde los lugareños pasean, juegan al ajedrez y contemplan impresionantes atardeceres."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Cultura de la Rakija",
+                      "description": "La rakija — un aguardiente de frutas elaborado típicamente con ciruelas — es prácticamente la bebida nacional de Serbia. Cada familia tiene su propia receta, y la rakija casera se ofrece a los invitados como señal de hospitalidad y amistad."
                   }
               ]
           }
@@ -10985,44 +11375,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Slovakia",
               "capital": "Bratislava",
-              "flagDescription": "The flag of Slovakia.",
+              "flagDescription": "Slovakia's flag has three equal horizontal stripes of white, blue, and red — the Pan-Slavic colors. What makes it unique is the country's coat of arms on the left side: a white double cross on a blue hill, representing the three mountain ranges of Slovakia. The double cross is a powerful Christian symbol and also connects to Slovakia's historical ties to the Byzantine mission of Saints Cyril and Methodius.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Slovakia",
-                      "description": "Slovakia is a country in Central Europe."
+                      "icon": "castle",
+                      "title": "Castle Country",
+                      "description": "Slovakia has one of the highest concentrations of castles per capita in the world — over 180 castles and castle ruins scattered across the landscape. The most dramatic is Spiš Castle, one of the largest castle ruins in Central Europe and a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Slovakia has a population of approximately 5.4M."
+                      "icon": "history",
+                      "title": "Peaceful Velvet Divorce",
+                      "description": "In 1993, Czechoslovakia peacefully split into two countries — the Czech Republic and Slovakia — in what became known as the Velvet Divorce. It remains one of history's most civilized and amicable national separations."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Slovakia is Bratislava."
+                      "icon": "landscape",
+                      "title": "Slovak Karst",
+                      "description": "The Slovak Karst region contains some of the most spectacular cave systems in the world, including the Domica cave system which connects underground with Hungary. Several caves are UNESCO World Heritage Sites."
+                  },
+                  {
+                      "icon": "sports_hockey",
+                      "title": "Ice Hockey Passion",
+                      "description": "Ice hockey is Slovakia's most beloved sport. The national team has won the World Championship and produced many NHL stars. On game days, Slovak cities come to a standstill as everyone gathers to cheer."
                   }
               ]
           },
           "es": {
-              "name": "República Eslovaca",
+              "name": "Eslovaquia",
               "capital": "Bratislava",
-              "flagDescription": "La bandera de República Eslovaca.",
+              "flagDescription": "La bandera de Eslovaquia tiene tres franjas horizontales iguales de blanco, azul y rojo — los colores paneslávos. Lo que la hace única es el escudo de armas del país en el lado izquierdo: una cruz doble blanca sobre una colina azul, que representa las tres cadenas montañosas de Eslovaquia. La cruz doble es un poderoso símbolo cristiano y también conecta con los lazos históricos de Eslovaquia con la misión bizantina de los Santos Cirilo y Metodio.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre República Eslovaca",
-                      "description": "República Eslovaca es un país en Central Europe."
+                      "icon": "castle",
+                      "title": "País de Castillos",
+                      "description": "Eslovaquia tiene una de las concentraciones más altas de castillos per cápita del mundo — más de 180 castillos y ruinas de castillos esparcidos por el paisaje. El más dramático es el Castillo de Spiš, una de las ruinas de castillos más grandes de Europa Central y Patrimonio de la Humanidad por la UNESCO."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "República Eslovaca tiene una población de aproximadamente 5.4M."
+                      "icon": "history",
+                      "title": "El Pacífico Divorcio de Terciopelo",
+                      "description": "En 1993, Checoslovaquia se dividió pacíficamente en dos países — la República Checa y Eslovaquia — en lo que se conoció como el Divorcio de Terciopelo. Sigue siendo una de las separaciones nacionales más civilizadas y amistosas de la historia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de República Eslovaca es Bratislava."
+                      "icon": "landscape",
+                      "title": "El Karst Eslovaco",
+                      "description": "La región del Karst Eslovaco contiene algunos de los sistemas de cuevas más espectaculares del mundo, incluido el sistema de cuevas de Domica que conecta bajo tierra con Hungría. Varias cuevas son Patrimonio de la Humanidad por la UNESCO."
+                  },
+                  {
+                      "icon": "sports_hockey",
+                      "title": "Pasión por el Hockey sobre Hielo",
+                      "description": "El hockey sobre hielo es el deporte más querido de Eslovaquia. La selección nacional ha ganado el Campeonato Mundial y ha producido muchas estrellas de la NHL. Los días de partido, las ciudades eslovacas se paralizan mientras todos se reúnen para animar."
                   }
               ]
           }
@@ -11038,44 +11438,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Slovenia",
               "capital": "Ljubljana",
-              "flagDescription": "The flag of Slovenia.",
+              "flagDescription": "Slovenia's flag has three equal horizontal stripes of white, blue, and red — Pan-Slavic colors. The coat of arms on the upper left shows Mount Triglav, Slovenia's highest peak, in white on a blue background, with two wavy blue lines below representing the Adriatic Sea and the country's rivers, and three golden stars above from the historical Celje coat of arms.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Slovenia",
-                      "description": "Slovenia is a country in Central Europe."
+                      "icon": "landscape",
+                      "title": "Lake Bled",
+                      "description": "Lake Bled is one of Europe's most photographed spots — a crystal-clear glacial lake with a tiny island and church in the center, backdropped by Julian Alps and a medieval clifftop castle. It looks like it was designed by a fairy-tale illustrator."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Slovenia has a population of approximately 2.1M."
+                      "icon": "forest",
+                      "title": "Most Forested Country in Europe",
+                      "description": "About 60% of Slovenia is covered by forests — making it one of the most forested countries in Europe. The country takes immense pride in its natural environment and has ambitious conservation policies."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Slovenia is Ljubljana."
+                      "icon": "wine_bar",
+                      "title": "Oldest Vine in the World",
+                      "description": "In the city of Maribor grows the world's oldest known grape vine, over 400 years old and still producing grapes every year. It is a proud national symbol and its wine is bottled and given as a gift to world leaders."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Tiny Adriatic Coast",
+                      "description": "Despite being a small country, Slovenia has a 46.6 km stretch of Adriatic coastline with charming towns like Piran — a beautifully preserved Venetian city that feels like a miniature Venice."
                   }
               ]
           },
           "es": {
               "name": "Eslovenia",
-              "capital": "Ljubljana",
-              "flagDescription": "La bandera de Eslovenia.",
+              "capital": "Liubliana",
+              "flagDescription": "La bandera de Eslovenia tiene tres franjas horizontales iguales de blanco, azul y rojo — colores paneslávos. El escudo de armas en la parte superior izquierda muestra el Monte Triglav, el pico más alto de Eslovenia, en blanco sobre fondo azul, con dos líneas azules onduladas debajo que representan el Mar Adriático y los ríos del país, y tres estrellas doradas arriba del escudo histórico de Celje.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Eslovenia",
-                      "description": "Eslovenia es un país en Central Europe."
+                      "icon": "landscape",
+                      "title": "Lago Bled",
+                      "description": "El lago Bled es uno de los lugares más fotografiados de Europa — un lago glacial cristalino con una pequeña isla e iglesia en el centro, con los Alpes Julianos de fondo y un castillo medieval en lo alto de un acantilado. Parece diseñado por un ilustrador de cuentos de hadas."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Eslovenia tiene una población de aproximadamente 2.1M."
+                      "icon": "forest",
+                      "title": "El País Más Boscoso de Europa",
+                      "description": "Aproximadamente el 60% de Eslovenia está cubierto de bosques — convirtiéndola en uno de los países más boscosos de Europa. El país siente un inmenso orgullo por su entorno natural y tiene ambiciosas políticas de conservación."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Eslovenia es Ljubljana."
+                      "icon": "wine_bar",
+                      "title": "La Vid Más Antigua del Mundo",
+                      "description": "En la ciudad de Maribor crece la vid más antigua conocida del mundo, con más de 400 años de antigüedad y que sigue produciendo uvas cada año. Es un orgulloso símbolo nacional y su vino se embotella y regala a líderes mundiales."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Pequeña Costa Adriática",
+                      "description": "A pesar de ser un país pequeño, Eslovenia tiene 46,6 km de costa adriática con encantadoras ciudades como Piran — una bellísima ciudad veneciana conservada que parece una Venecia en miniatura."
                   }
               ]
           }
@@ -11578,44 +11988,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Svalbard and Jan Mayen",
               "capital": "Longyearbyen",
-              "flagDescription": "The flag of Svalbard and Jan Mayen.",
+              "flagDescription": "Svalbard and Jan Mayen use the flag of Norway — a red background with a blue Nordic cross outlined in white. Although these Arctic territories are under Norwegian sovereignty, they have a special status under international treaties. Svalbard is unique because citizens of all countries that signed the 1920 Svalbard Treaty can live and work there without a visa.",
               "funFacts": [
                   {
+                      "icon": "ac_unit",
+                      "title": "Polar Night and Midnight Sun",
+                      "description": "In Longyearbyen, the sun does not rise for about 4 months in winter (Polar Night) and does not set for about 4 months in summer (Midnight Sun). Living through total darkness — and then endless light — is a profoundly unique experience."
+                  },
+                  {
+                      "icon": "pets",
+                      "title": "More Polar Bears than People",
+                      "description": "Svalbard has about 3,000 polar bears and only around 2,600 human residents! Locals are required by law to carry a rifle when venturing outside town. Encountering a polar bear in the wild is a real possibility."
+                  },
+                  {
+                      "icon": "science",
+                      "title": "Svalbard Global Seed Vault",
+                      "description": "Buried deep in an Arctic mountain on Svalbard is the Svalbard Global Seed Vault — a backup of over 1.3 million seed samples from around the world. It's humanity's insurance policy against crop extinction and global catastrophe."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Svalbard and Jan Mayen",
-                      "description": "Svalbard and Jan Mayen is a country in Northern Europe."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Svalbard and Jan Mayen has a population of approximately 3K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Svalbard and Jan Mayen is Longyearbyen."
+                      "title": "Visa-Free for Everyone",
+                      "description": "Uniquely, Svalbard is a visa-free zone for all nationalities due to the 1920 Svalbard Treaty. People from any country can move there to live and work. It is one of the only places on Earth where this is possible."
                   }
               ]
           },
           "es": {
-              "name": "Islas Svalbard y Jan Mayen",
+              "name": "Svalbard y Jan Mayen",
               "capital": "Longyearbyen",
-              "flagDescription": "La bandera de Islas Svalbard y Jan Mayen.",
+              "flagDescription": "Svalbard y Jan Mayen usan la bandera de Noruega — un fondo rojo con una cruz nórdica azul delineada en blanco. Aunque estos territorios árticos están bajo soberanía noruega, tienen un estatus especial bajo tratados internacionales. Svalbard es único porque los ciudadanos de todos los países que firmaron el Tratado de Svalbard de 1920 pueden vivir y trabajar allí sin visado.",
               "funFacts": [
                   {
+                      "icon": "ac_unit",
+                      "title": "Noche Polar y Sol de Medianoche",
+                      "description": "En Longyearbyen, el sol no sale durante unos 4 meses en invierno (Noche Polar) y no se pone durante unos 4 meses en verano (Sol de Medianoche). Vivir en total oscuridad — y luego en luz interminable — es una experiencia profundamente única."
+                  },
+                  {
+                      "icon": "pets",
+                      "title": "Más Osos Polares que Personas",
+                      "description": "Svalbard tiene unos 3.000 osos polares y solo alrededor de 2.600 residentes humanos. Los lugareños están obligados por ley a llevar un rifle cuando salen del pueblo. Encontrarse con un oso polar en la naturaleza es una posibilidad real."
+                  },
+                  {
+                      "icon": "science",
+                      "title": "Bóveda Global de Semillas de Svalbard",
+                      "description": "Enterrada en lo profundo de una montaña ártica de Svalbard está la Bóveda Global de Semillas de Svalbard — una copia de seguridad de más de 1,3 millones de muestras de semillas de todo el mundo. Es la póliza de seguros de la humanidad contra la extinción de cultivos y la catástrofe global."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Islas Svalbard y Jan Mayen",
-                      "description": "Islas Svalbard y Jan Mayen es un país en Northern Europe."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Svalbard y Jan Mayen tiene una población de aproximadamente 3K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Svalbard y Jan Mayen es Longyearbyen."
+                      "title": "Sin Visado para Todos",
+                      "description": "Curiosamente, Svalbard es una zona sin visado para todas las nacionalidades debido al Tratado de Svalbard de 1920. Personas de cualquier país pueden mudarse allí para vivir y trabajar. Es uno de los únicos lugares de la Tierra donde esto es posible."
                   }
               ]
           }
@@ -12605,44 +13025,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Ukraine",
               "capital": "Kyiv",
-              "flagDescription": "The flag of Ukraine.",
+              "flagDescription": "Ukraine's flag is beautifully simple — two equal horizontal stripes of blue on top and yellow on the bottom. The blue represents the clear sky over Ukraine, and the yellow represents the vast golden wheat fields that stretch across the country. Together they paint a picture of Ukraine's landscape: an endless blue sky over golden plains. This combination has been used as a Ukrainian symbol since the 12th century.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Ukraine",
-                      "description": "Ukraine is a country in Eastern Europe."
+                      "icon": "landscape",
+                      "title": "The Breadbasket of Europe",
+                      "description": "Ukraine has some of the world's most fertile agricultural land. Its rich black soil (called chernozem) is among the most productive on Earth. Ukraine is one of the world's largest exporters of wheat, corn, and sunflower oil — vital to global food supply."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Ukraine has a population of approximately 32.9M."
+                      "icon": "history",
+                      "title": "Birthplace of Kievan Rus",
+                      "description": "Kyiv, Ukraine's capital, was the center of Kievan Rus — the first great Slavic state, founded in the 9th century. It was one of medieval Europe's largest cities and the cultural and spiritual ancestor of modern Russia, Ukraine, and Belarus."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Ukraine is Kyiv."
+                      "icon": "celebration",
+                      "title": "Vyshyvanka Embroidery",
+                      "description": "The vyshyvanka — a traditional embroidered shirt — is a beloved symbol of Ukrainian identity. Each region has its own unique patterns and colors. On Vyshyvanka Day, millions of Ukrainians around the world proudly wear their embroidered shirts."
+                  },
+                  {
+                      "icon": "science",
+                      "title": "Space Pioneers",
+                      "description": "Ukraine has a proud space heritage. Yuzhnoye Design Office in Dnipro has designed rockets used in over 400 space launches. Ukrainian engineers have contributed to major space programs across the world, from satellites to launch vehicles."
                   }
               ]
           },
           "es": {
               "name": "Ucrania",
-              "capital": "Kyiv",
-              "flagDescription": "La bandera de Ucrania.",
+              "capital": "Kiev",
+              "flagDescription": "La bandera de Ucrania es bellamente simple — dos franjas horizontales iguales de azul arriba y amarillo abajo. El azul representa el cielo despejado sobre Ucrania, y el amarillo representa los vastos campos de trigo dorado que se extienden por todo el país. Juntos pintan un cuadro del paisaje de Ucrania: un cielo azul infinito sobre llanuras doradas. Esta combinación se ha usado como símbolo ucraniano desde el siglo XII.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Ucrania",
-                      "description": "Ucrania es un país en Eastern Europe."
+                      "icon": "landscape",
+                      "title": "El Granero de Europa",
+                      "description": "Ucrania tiene algunas de las tierras agrícolas más fértiles del mundo. Su rico suelo negro (llamado chernozem) es uno de los más productivos de la Tierra. Ucrania es uno de los mayores exportadores mundiales de trigo, maíz y aceite de girasol — vital para el suministro alimentario global."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Ucrania tiene una población de aproximadamente 32.9M."
+                      "icon": "history",
+                      "title": "Cuna de la Rus de Kiev",
+                      "description": "Kiev, la capital de Ucrania, fue el centro de la Rus de Kiev — el primer gran estado eslavo, fundado en el siglo IX. Era una de las ciudades más grandes de la Europa medieval y el ancestro cultural y espiritual de la Rusia, Ucrania y Bielorrusia modernas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Ucrania es Kyiv."
+                      "icon": "celebration",
+                      "title": "Bordado Vyshyvanka",
+                      "description": "El vyshyvanka — una camisa bordada tradicional — es un querido símbolo de identidad ucraniana. Cada región tiene sus propios patrones y colores únicos. En el Día del Vyshyvanka, millones de ucranianos de todo el mundo llevan con orgullo sus camisas bordadas."
+                  },
+                  {
+                      "icon": "science",
+                      "title": "Pioneros del Espacio",
+                      "description": "Ucrania tiene un orgulloso patrimonio espacial. La Oficina de Diseño Yuzhnoye en Dnipro ha diseñado cohetes utilizados en más de 400 lanzamientos espaciales. Los ingenieros ucranianos han contribuido a los principales programas espaciales de todo el mundo."
                   }
               ]
           }
@@ -13122,44 +13552,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Vatican City",
               "capital": "Vatican City",
-              "flagDescription": "The flag of Vatican City.",
+              "flagDescription": "Vatican City's flag has two equal vertical stripes — yellow on the left and white on the right — with the Papal coat of arms on the white stripe. The coat of arms shows two crossed keys (one gold, one silver, representing the Keys of Heaven given to Saint Peter) and the Papal Tiara (a triple crown). Yellow and white represent the two papal keys. This is the only square national flag in the world alongside Switzerland's.",
               "funFacts": [
                   {
+                      "icon": "church",
+                      "title": "World's Smallest Country",
+                      "description": "Vatican City is the world's smallest country — just 0.44 km², smaller than many city parks. Yet it is home to the Pope, the headquarters of the Roman Catholic Church, and some of the world's greatest art treasures."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "Michelangelo's Ceiling",
+                      "description": "The Sistine Chapel ceiling, painted by Michelangelo between 1508 and 1512, is one of humanity's greatest artistic achievements. Michelangelo painted it lying on scaffolding, looking up — he was so dedicated he reportedly slept in his clothes to keep working."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "Own Postal Service and Bank",
+                      "description": "Despite its tiny size, Vatican City has its own postal service (whose stamps are prized by collectors worldwide), its own bank (the Institute for the Works of Religion), its own radio station, and even its own supermarket and pharmacy."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Vatican City",
-                      "description": "Vatican City is a country in Southern Europe."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Vatican City has a population of approximately 882."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Vatican City is Vatican City."
+                      "title": "Over a Billion Followers",
+                      "description": "The Pope in Vatican City is the spiritual leader of over 1.3 billion Roman Catholics worldwide — about 17% of the entire human population. No other country on Earth has such a disproportionate spiritual influence relative to its size."
                   }
               ]
           },
           "es": {
               "name": "Ciudad del Vaticano",
-              "capital": "Vatican City",
-              "flagDescription": "La bandera de Ciudad del Vaticano.",
+              "capital": "Ciudad del Vaticano",
+              "flagDescription": "La bandera de la Ciudad del Vaticano tiene dos franjas verticales iguales — amarilla a la izquierda y blanca a la derecha — con el escudo de armas papal en la franja blanca. El escudo muestra dos llaves cruzadas (una de oro, una de plata, que representan las Llaves del Cielo entregadas a San Pedro) y la Tiara Papal (una corona triple). El amarillo y el blanco representan las dos llaves papales. Esta es la única bandera nacional cuadrada del mundo junto con la de Suiza.",
               "funFacts": [
                   {
+                      "icon": "church",
+                      "title": "El País Más Pequeño del Mundo",
+                      "description": "La Ciudad del Vaticano es el país más pequeño del mundo — solo 0,44 km², más pequeño que muchos parques urbanos. Sin embargo, es el hogar del Papa, la sede de la Iglesia Católica Romana y algunos de los mayores tesoros artísticos del mundo."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "El Techo de Miguel Ángel",
+                      "description": "El techo de la Capilla Sixtina, pintado por Miguel Ángel entre 1508 y 1512, es uno de los mayores logros artísticos de la humanidad. Miguel Ángel lo pintó tumbado en andamios, mirando hacia arriba — estaba tan dedicado que supuestamente dormía con la ropa puesta para seguir trabajando."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "Servicio Postal y Banco Propios",
+                      "description": "A pesar de su diminuto tamaño, la Ciudad del Vaticano tiene su propio servicio postal (cuyos sellos son apreciados por coleccionistas de todo el mundo), su propio banco (el Instituto para las Obras de la Religión), su propia emisora de radio e incluso su propio supermercado y farmacia."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Ciudad del Vaticano",
-                      "description": "Ciudad del Vaticano es un país en Southern Europe."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Ciudad del Vaticano tiene una población de aproximadamente 882."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Ciudad del Vaticano es Vatican City."
+                      "title": "Más de Mil Millones de Seguidores",
+                      "description": "El Papa en la Ciudad del Vaticano es el líder espiritual de más de 1.300 millones de católicos romanos en todo el mundo — aproximadamente el 17% de toda la población humana. Ningún otro país de la Tierra tiene una influencia espiritual tan desproporcionada en relación a su tamaño."
                   }
               ]
           }
