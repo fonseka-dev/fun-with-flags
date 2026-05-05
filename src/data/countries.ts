@@ -373,10 +373,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "anguilla",
       "flagCode": "ai",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "15.3K",
       "region": "Caribbean",
       "translations": {
@@ -435,62 +434,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "16K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Anguilla",
-              "capital": "The Valley",
-              "flagDescription": "The flag of Anguilla.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Anguilla",
-                      "description": "Anguilla is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Anguilla has a population of approximately 16K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Anguilla is The Valley."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Anguilla",
-              "capital": "The Valley",
-              "flagDescription": "La bandera de Anguilla.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Anguilla",
-                      "description": "Anguilla es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Anguilla tiene una población de aproximadamente 16K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Anguilla es The Valley."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "antigua-and-barbuda",
       "flagCode": "ag",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "98.7K",
       "region": "Caribbean",
       "translations": {
@@ -549,58 +497,7 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "104K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Antigua and Barbuda",
-              "capital": "Saint John's",
-              "flagDescription": "The flag of Antigua and Barbuda.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Antigua and Barbuda",
-                      "description": "Antigua and Barbuda is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Antigua and Barbuda has a population of approximately 104K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Antigua and Barbuda is Saint John's."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Antigua y Barbuda",
-              "capital": "Saint John's",
-              "flagDescription": "La bandera de Antigua y Barbuda.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Antigua y Barbuda",
-                      "description": "Antigua y Barbuda es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Antigua y Barbuda tiene una población de aproximadamente 104K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Antigua y Barbuda es Saint John's."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "argentina",
       "flagCode": "ar",
@@ -663,56 +560,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "South America",
-      "population": "46.7M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Argentina",
-              "capital": "Buenos Aires",
-              "flagDescription": "Argentina's flag has three horizontal stripes — light blue, white, and light blue — with the Sun of May at the center. The sun commemorates the May 1810 revolution. The light blue represents the sky, and white represents clouds and snow of the Andes.",
-              "funFacts": [
-                  {
-                      "icon": "music_note",
-                      "title": "Tango Birthplace",
-                      "description": "Tango was born in the neighborhoods of Buenos Aires in the late 1800s, blending African, European, and indigenous rhythms into one of the world's most passionate dances."
-                  },
-                  {
-                      "icon": "landscape",
-                      "title": "Patagonian Glaciers",
-                      "description": "Argentina's Perito Moreno Glacier in Patagonia is one of the few glaciers in the world that is still growing, advancing about 2 meters per day."
-                  },
-                  {
-                      "icon": "local_dining",
-                      "title": "Steak Capital",
-                      "description": "Argentines consume more beef per capita than almost any other country — about 50 kg per person per year. The traditional asado (barbecue) is a national ritual."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Argentina",
-              "capital": "Buenos Aires",
-              "flagDescription": "La bandera de Argentina.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Argentina",
-                      "description": "Argentina es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Argentina tiene una población de aproximadamente 46.7M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Argentina es Buenos Aires."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "armenia",
@@ -768,10 +615,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "aruba",
       "flagCode": "aw",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "106K",
       "region": "Caribbean",
       "translations": {
@@ -829,56 +675,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "108K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Aruba",
-              "capital": "Oranjestad",
-              "flagDescription": "The flag of Aruba.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Aruba",
-                      "description": "Aruba is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Aruba has a population of approximately 108K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Aruba is Oranjestad."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Aruba",
-              "capital": "Oranjestad",
-              "flagDescription": "La bandera de Aruba.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Aruba",
-                      "description": "Aruba es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Aruba tiene una población de aproximadamente 108K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Aruba es Oranjestad."
-                  }
-              ]
-          }
       }
   },
   {
@@ -1041,10 +837,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "bahamas",
       "flagCode": "bs",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "407K",
       "region": "Caribbean",
       "translations": {
@@ -1102,56 +897,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "398K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Bahamas",
-              "capital": "Nassau",
-              "flagDescription": "The flag of Bahamas.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Bahamas",
-                      "description": "Bahamas is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bahamas has a population of approximately 398K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bahamas is Nassau."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Bahamas",
-              "capital": "Nassau",
-              "flagDescription": "La bandera de Bahamas.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Bahamas",
-                      "description": "Bahamas es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bahamas tiene una población de aproximadamente 398K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bahamas es Nassau."
-                  }
-              ]
-          }
       }
   },
   {
@@ -1261,10 +1006,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "barbados",
       "flagCode": "bb",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "288K",
       "region": "Caribbean",
       "translations": {
@@ -1322,56 +1066,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "268K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Barbados",
-              "capital": "Bridgetown",
-              "flagDescription": "The flag of Barbados.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Barbados",
-                      "description": "Barbados is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Barbados has a population of approximately 268K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Barbados is Bridgetown."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Barbados",
-              "capital": "Bridgetown",
-              "flagDescription": "La bandera de Barbados.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Barbados",
-                      "description": "Barbados es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Barbados tiene una población de aproximadamente 268K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Barbados es Bridgetown."
-                  }
-              ]
-          }
       }
   },
   {
@@ -1481,10 +1175,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "belize",
       "flagCode": "bz",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "397K",
       "region": "Central America",
       "translations": {
@@ -1543,56 +1236,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "418K",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Belize",
-              "capital": "Belmopan",
-              "flagDescription": "The flag of Belize.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Belize",
-                      "description": "Belize is a country in Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Belize has a population of approximately 418K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Belize is Belmopan."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Belice",
-              "capital": "Belmopan",
-              "flagDescription": "La bandera de Belice.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Belice",
-                      "description": "Belice es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Belice tiene una población de aproximadamente 418K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Belice es Belmopan."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "benin",
@@ -1647,7 +1290,6 @@ export const countriesData: CountryEntry[] = [
           }
       }
   },
-  {
   {
       "slug": "bermuda",
       "flagCode": "bm",
@@ -1710,56 +1352,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "64K",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "Bermuda",
-              "capital": "Hamilton",
-              "flagDescription": "The flag of Bermuda.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Bermuda",
-                      "description": "Bermuda is a country in North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bermuda has a population of approximately 64K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bermuda is Hamilton."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Bermudas",
-              "capital": "Hamilton",
-              "flagDescription": "La bandera de Bermudas.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Bermudas",
-                      "description": "Bermudas es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bermudas tiene una población de aproximadamente 64K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bermudas es Hamilton."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "bhutan",
@@ -1814,7 +1406,6 @@ export const countriesData: CountryEntry[] = [
           }
       }
   },
-  {
   {
       "slug": "bolivia",
       "flagCode": "bo",
@@ -1876,56 +1467,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "11.4M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Bolivia",
-              "capital": "Sucre",
-              "flagDescription": "The flag of Bolivia.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Bolivia",
-                      "description": "Bolivia is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Bolivia has a population of approximately 11.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Bolivia is Sucre."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Bolivia",
-              "capital": "Sucre",
-              "flagDescription": "La bandera de Bolivia.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Bolivia",
-                      "description": "Bolivia es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Bolivia tiene una población de aproximadamente 11.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Bolivia es Sucre."
-                  }
-              ]
-          }
       }
   },
   {
@@ -2035,7 +1576,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "brazil",
       "flagCode": "br",
       "continent": "South America",
@@ -2097,56 +1637,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "South America",
-      "population": "213.4M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Brazil",
-              "capital": "Brasília",
-              "flagDescription": "The Brazilian flag features a green background with a large yellow diamond, inside which sits a dark blue globe with 27 white stars and a curved white band reading \"Ordem e Progresso\" (Order and Progress). The stars represent Brazil's states and the Federal District.",
-              "funFacts": [
-                  {
-                      "icon": "forest",
-                      "title": "Amazon Rainforest",
-                      "description": "Brazil contains about 60% of the Amazon Rainforest — the largest tropical rainforest on Earth, producing about 20% of the world's oxygen."
-                  },
-                  {
-                      "icon": "sports_soccer",
-                      "title": "Football Kingdom",
-                      "description": "Brazil is the only country to have played in every FIFA World Cup tournament and has won the title a record 5 times."
-                  },
-                  {
-                      "icon": "celebration",
-                      "title": "Carnival",
-                      "description": "Rio de Janeiro's Carnival is the world's largest festival, attracting over 2 million people per day to the streets for music, dance, and elaborate costumes."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Brasil",
-              "capital": "Brasília",
-              "flagDescription": "La bandera de Brasil.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Brasil",
-                      "description": "Brasil es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Brasil tiene una población de aproximadamente 213.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Brasil es Brasília."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "british-indian-ocean-territory",
@@ -2202,10 +1692,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "british-virgin-islands",
       "flagCode": "vg",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "35.7K",
       "region": "Caribbean",
       "translations": {
@@ -2263,56 +1752,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "39K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "British Virgin Islands",
-              "capital": "Road Town",
-              "flagDescription": "The flag of British Virgin Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About British Virgin Islands",
-                      "description": "British Virgin Islands is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "British Virgin Islands has a population of approximately 39K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of British Virgin Islands is Road Town."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Vírgenes del Reino Unido",
-              "capital": "Road Town",
-              "flagDescription": "La bandera de Islas Vírgenes del Reino Unido.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Vírgenes del Reino Unido",
-                      "description": "Islas Vírgenes del Reino Unido es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Vírgenes del Reino Unido tiene una población de aproximadamente 39K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Vírgenes del Reino Unido es Road Town."
-                  }
-              ]
-          }
       }
   },
   {
@@ -2634,7 +2073,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "canada",
       "flagCode": "ca",
       "continent": "North America",
@@ -2696,56 +2134,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "41.7M",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "Canada",
-              "capital": "Ottawa",
-              "flagDescription": "The Canadian flag features a red maple leaf on a white background, flanked by two red vertical bands. The maple leaf has been a symbol of Canada since the 1700s. The red and white colors were proclaimed Canada's official colors by King George V in 1921.",
-              "funFacts": [
-                  {
-                      "icon": "water",
-                      "title": "Lake Superpower",
-                      "description": "Canada contains more lakes than the rest of the world combined — over 2 million lakes, holding 20% of the world's fresh water."
-                  },
-                  {
-                      "icon": "forest",
-                      "title": "Massive Wilderness",
-                      "description": "Canada is the second-largest country in the world by area, yet 90% of its population lives within 160 km of the US border."
-                  },
-                  {
-                      "icon": "sports_hockey",
-                      "title": "Hockey Nation",
-                      "description": "Ice hockey is so important in Canada that the sport is referenced in the country's currency — the $5 bill features children playing hockey."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Canadá",
-              "capital": "Ottawa",
-              "flagDescription": "La bandera de Canadá.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Canadá",
-                      "description": "Canadá es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Canadá tiene una población de aproximadamente 41.7M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Canadá es Ottawa."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "cape-verde",
@@ -2801,10 +2189,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "caribbean-netherlands",
       "flagCode": "bq",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "25.2K",
       "region": "Caribbean",
       "translations": {
@@ -2863,62 +2250,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "32K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Caribbean Netherlands",
-              "capital": "Kralendijk",
-              "flagDescription": "The flag of Caribbean Netherlands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Caribbean Netherlands",
-                      "description": "Caribbean Netherlands is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Caribbean Netherlands has a population of approximately 32K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Caribbean Netherlands is Kralendijk."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Caribe Neerlandés",
-              "capital": "Kralendijk",
-              "flagDescription": "La bandera de Caribe Neerlandés.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Caribe Neerlandés",
-                      "description": "Caribe Neerlandés es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Caribe Neerlandés tiene una población de aproximadamente 32K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Caribe Neerlandés es Kralendijk."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "cayman-islands",
       "flagCode": "ky",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "67.4K",
       "region": "Caribbean",
       "translations": {
@@ -2976,56 +2312,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "85K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Cayman Islands",
-              "capital": "George Town",
-              "flagDescription": "The flag of Cayman Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Cayman Islands",
-                      "description": "Cayman Islands is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cayman Islands has a population of approximately 85K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cayman Islands is George Town."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Caimán",
-              "capital": "George Town",
-              "flagDescription": "La bandera de Islas Caimán.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Caimán",
-                      "description": "Islas Caimán es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Caimán tiene una población de aproximadamente 85K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Caimán es George Town."
-                  }
-              ]
-          }
       }
   },
   {
@@ -3135,7 +2421,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "chile",
       "flagCode": "cl",
       "continent": "South America",
@@ -3196,56 +2481,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "20.2M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Chile",
-              "capital": "Santiago",
-              "flagDescription": "Chile's flag has two equal horizontal stripes — white on top and red on bottom — with a blue square in the upper-left corner containing a white five-pointed star. The star represents a guide to progress and honor, blue symbolizes the sky and Pacific Ocean, white represents the snow of the Andes, and red represents the blood of independence patriots.",
-              "funFacts": [
-                  {
-                      "icon": "landscape",
-                      "title": "Driest Desert on Earth",
-                      "description": "The Atacama Desert in northern Chile is the driest non-polar desert on Earth — some areas have never recorded rainfall. Its extreme aridity makes it ideal for stargazing."
-                  },
-                  {
-                      "icon": "public",
-                      "title": "Longest Country",
-                      "description": "Chile is the longest country in the world, stretching 4,270 km from north to south while rarely more than 177 km wide. It spans from the tropics to the edge of Antarctica."
-                  },
-                  {
-                      "icon": "local_bar",
-                      "title": "Wine Powerhouse",
-                      "description": "Chile is one of the world's top wine exporters, with valleys like Maipo and Colchagua producing world-class Cabernet Sauvignon and Carménère."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Chile",
-              "capital": "Santiago",
-              "flagDescription": "La bandera de Chile.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Chile",
-                      "description": "Chile es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Chile tiene una población de aproximadamente 20.2M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Chile es Santiago."
-                  }
-              ]
-          }
       }
   },
   {
@@ -3408,7 +2643,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "colombia",
       "flagCode": "co",
       "continent": "South America",
@@ -3469,56 +2703,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "53.1M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Colombia",
-              "capital": "Bogotá",
-              "flagDescription": "Colombia's flag has three horizontal stripes: yellow (top, double width), blue, and red. Yellow represents the gold of the land, blue represents the seas on both its Pacific and Caribbean coasts, and red symbolizes the blood shed by those who fought for independence.",
-              "funFacts": [
-                  {
-                      "icon": "coffee",
-                      "title": "World Coffee Capital",
-                      "description": "Colombia is the world's largest producer of washed (mild) Arabica coffee. The coffee-growing regions — called the 'Eje Cafetero' — are a UNESCO World Heritage Site."
-                  },
-                  {
-                      "icon": "local_florist",
-                      "title": "Orchid Nation",
-                      "description": "Colombia is home to over 4,000 species of orchids — more than any other country. The Christmas orchid (Cattleya trianae) is its national flower."
-                  },
-                  {
-                      "icon": "music_note",
-                      "title": "Cumbia & Vallenato",
-                      "description": "Colombia gave the world cumbia and vallenato music. Superstar Shakira and singer Carlos Vives have brought Colombian music and dance to global audiences."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Colombia",
-              "capital": "Bogotá",
-              "flagDescription": "La bandera de Colombia.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Colombia",
-                      "description": "Colombia es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Colombia tiene una población de aproximadamente 53.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Colombia es Bogotá."
-                  }
-              ]
-          }
       }
   },
   {
@@ -3628,10 +2812,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "costa-rica",
       "flagCode": "cr",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "5.2M",
       "region": "Central America",
       "translations": {
@@ -3690,56 +2873,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "5.3M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Costa Rica",
-              "capital": "San José",
-              "flagDescription": "Costa Rica's flag has five horizontal stripes: blue, white, red (double width), white, and blue. The coat of arms sits on the red stripe. The colors were inspired by France's flag; blue represents the sky, white symbolizes peace, and red represents the warmth of the people.",
-              "funFacts": [
-                  {
-                      "icon": "forest",
-                      "title": "Biodiversity Hotspot",
-                      "description": "Despite being smaller than the US state of West Virginia, Costa Rica contains about 6% of the world's total biodiversity, including 500,000 species of animals and plants."
-                  },
-                  {
-                      "icon": "bolt",
-                      "title": "Almost 100% Renewables",
-                      "description": "Costa Rica regularly generates over 99% of its electricity from renewable sources — mostly hydropower, geothermal, and wind. It's one of the greenest nations on Earth."
-                  },
-                  {
-                      "icon": "balance",
-                      "title": "No Army Since 1948",
-                      "description": "Costa Rica abolished its military in 1948 and redirected that budget to education and healthcare. It's been nicknamed 'the Switzerland of Central America'."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Costa Rica",
-              "capital": "San José",
-              "flagDescription": "La bandera de Costa Rica.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Costa Rica",
-                      "description": "Costa Rica es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Costa Rica tiene una población de aproximadamente 5.3M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Costa Rica es San José."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "croatia",
@@ -3795,10 +2928,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "cuba",
       "flagCode": "cu",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "11.2M",
       "region": "Caribbean",
       "translations": {
@@ -3857,62 +2989,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "9.7M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Cuba",
-              "capital": "Havana",
-              "flagDescription": "Cuba's flag has five alternating blue and white horizontal stripes with a red triangle on the left containing a white five-pointed star. The triangle represents liberty, equality, and fraternity, and the star is the 'Lone Star' symbolizing Cuba's independence.",
-              "funFacts": [
-                  {
-                      "icon": "music_note",
-                      "title": "Rhythm of Salsa",
-                      "description": "Cuba is the birthplace of salsa, rumba, mambo, and cha-cha-cha. Cuban music has influenced the entire world, blending African rhythms with Spanish guitar."
-                  },
-                  {
-                      "icon": "directions_car",
-                      "title": "Classic Car Haven",
-                      "description": "Havana's streets are famously full of American cars from the 1950s, preserved as a result of the US trade embargo. These vintage vehicles are now iconic symbols of Cuba."
-                  },
-                  {
-                      "icon": "sports",
-                      "title": "Baseball Nation",
-                      "description": "Baseball is Cuba's national sport and passion. Despite being a small island, Cuba has won the most Baseball World Cups and consistently challenges powerhouse nations in the Olympics."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Cuba",
-              "capital": "Havana",
-              "flagDescription": "La bandera de Cuba.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Cuba",
-                      "description": "Cuba es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Cuba tiene una población de aproximadamente 9.7M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Cuba es Havana."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "curacao",
       "flagCode": "cw",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "165K",
       "region": "Caribbean",
       "translations": {
@@ -3970,56 +3051,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "156K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Curaçao",
-              "capital": "Willemstad",
-              "flagDescription": "The flag of Curaçao.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Curaçao",
-                      "description": "Curaçao is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Curaçao has a population of approximately 156K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Curaçao is Willemstad."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Curazao",
-              "capital": "Willemstad",
-              "flagDescription": "La bandera de Curazao.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Curazao",
-                      "description": "Curazao es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Curazao tiene una población de aproximadamente 156K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Curazao es Willemstad."
-                  }
-              ]
-          }
       }
   },
   {
@@ -4235,10 +3266,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "dominica",
       "flagCode": "dm",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "71.6K",
       "region": "Caribbean",
       "translations": {
@@ -4297,62 +3327,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "67K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Dominica",
-              "capital": "Roseau",
-              "flagDescription": "The flag of Dominica.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Dominica",
-                      "description": "Dominica is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Dominica has a population of approximately 67K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Dominica is Roseau."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Dominica",
-              "capital": "Roseau",
-              "flagDescription": "La bandera de Dominica.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Dominica",
-                      "description": "Dominica es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Dominica tiene una población de aproximadamente 67K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Dominica es Roseau."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "dominican-republic",
       "flagCode": "do",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "11.4M",
       "region": "Caribbean",
       "translations": {
@@ -4411,56 +3390,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "10.8M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Dominican Republic",
-              "capital": "Santo Domingo",
-              "flagDescription": "The Dominican Republic flag is a centred white cross dividing it into four rectangles — alternating blue and red. At the center is the national coat of arms. It is the only national flag that includes a Bible.",
-              "funFacts": [
-                  {
-                      "icon": "history",
-                      "title": "First European City",
-                      "description": "Santo Domingo, founded in 1498 by Bartholomew Columbus, is the oldest continuously inhabited European settlement in the Americas. Its Colonial Zone is a UNESCO World Heritage Site."
-                  },
-                  {
-                      "icon": "sports",
-                      "title": "Baseball Capital",
-                      "description": "The Dominican Republic produces more Major League Baseball players per capita than any other country. Many players come from humble backgrounds and see baseball as their path to a better life."
-                  },
-                  {
-                      "icon": "local_florist",
-                      "title": "Punta Cana Beaches",
-                      "description": "The DR's eastern coast, especially Punta Cana, is famous for its powder-white beaches and crystal-clear Caribbean water, making it one of the most visited tourist destinations in the Americas."
-                  }
-              ]
-          },
-          "es": {
-              "name": "República Dominicana",
-              "capital": "Santo Domingo",
-              "flagDescription": "La bandera de República Dominicana.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre República Dominicana",
-                      "description": "República Dominicana es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "República Dominicana tiene una población de aproximadamente 10.8M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de República Dominicana es Santo Domingo."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "dr-congo",
@@ -4515,7 +3444,6 @@ export const countriesData: CountryEntry[] = [
           }
       }
   },
-  {
   {
       "slug": "ecuador",
       "flagCode": "ec",
@@ -4578,56 +3506,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "South America",
-      "population": "18.1M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Ecuador",
-              "capital": "Quito",
-              "flagDescription": "Ecuador's flag has three horizontal stripes of yellow (double width), blue, and red with the national coat of arms at the center. The colors come from Gran Colombia (Ecuador, Colombia, Venezuela) which they were all once part of; yellow represents gold and fertility, blue the sky and sea, and red the blood of patriots.",
-              "funFacts": [
-                  {
-                      "icon": "emoji_nature",
-                      "title": "Galápagos Islands",
-                      "description": "Ecuador's Galápagos Islands are called the 'living laboratory of evolution' — Charles Darwin visited in 1835 and developed his theory of natural selection after observing unique species found nowhere else on Earth."
-                  },
-                  {
-                      "icon": "public",
-                      "title": "On the Equator",
-                      "description": "Ecuador gets its name from the Equator ('ecuador' in Spanish), which passes through the country. The Mitad del Mundo monument marks 0° latitude near Quito."
-                  },
-                  {
-                      "icon": "terrain",
-                      "title": "Farthest Point from Earth's Core",
-                      "description": "Mount Chimborazo in Ecuador is the farthest point from Earth's center — farther even than Everest — because the Earth bulges at the equator."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Ecuador",
-              "capital": "Quito",
-              "flagDescription": "La bandera de Ecuador.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Ecuador",
-                      "description": "Ecuador es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Ecuador tiene una población de aproximadamente 18.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Ecuador es Quito."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "egypt",
@@ -4683,10 +3561,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "el-salvador",
       "flagCode": "sv",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "6.3M",
       "region": "Central America",
       "translations": {
@@ -4744,56 +3621,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "6.0M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "El Salvador",
-              "capital": "San Salvador",
-              "flagDescription": "The flag of El Salvador.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About El Salvador",
-                      "description": "El Salvador is a country in Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "El Salvador has a population of approximately 6.0M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of El Salvador is San Salvador."
-                  }
-              ]
-          },
-          "es": {
-              "name": "El Salvador",
-              "capital": "San Salvador",
-              "flagDescription": "La bandera de El Salvador.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre El Salvador",
-                      "description": "El Salvador es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "El Salvador tiene una población de aproximadamente 6.0M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de El Salvador es San Salvador."
-                  }
-              ]
-          }
       }
   },
   {
@@ -5062,7 +3889,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "falkland-islands",
       "flagCode": "fk",
       "continent": "South America",
@@ -5123,56 +3949,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "4K",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Falkland Islands",
-              "capital": "Stanley",
-              "flagDescription": "The flag of Falkland Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Falkland Islands",
-                      "description": "Falkland Islands is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Falkland Islands has a population of approximately 4K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Falkland Islands is Stanley."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Malvinas",
-              "capital": "Stanley",
-              "flagDescription": "La bandera de Islas Malvinas.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Malvinas",
-                      "description": "Islas Malvinas es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Malvinas tiene una población de aproximadamente 4K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Malvinas es Stanley."
-                  }
-              ]
-          }
       }
   },
   {
@@ -5388,7 +4164,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "french-guiana",
       "flagCode": "gf",
       "continent": "South America",
@@ -5449,56 +4224,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "292K",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "French Guiana",
-              "capital": "Cayenne",
-              "flagDescription": "The flag of French Guiana.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About French Guiana",
-                      "description": "French Guiana is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "French Guiana has a population of approximately 292K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of French Guiana is Cayenne."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Guayana Francesa",
-              "capital": "Cayenne",
-              "flagDescription": "La bandera de Guayana Francesa.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Guayana Francesa",
-                      "description": "Guayana Francesa es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guayana Francesa tiene una población de aproximadamente 292K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guayana Francesa es Cayenne."
-                  }
-              ]
-          }
       }
   },
   {
@@ -5926,7 +4651,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "greenland",
       "flagCode": "gl",
       "continent": "North America",
@@ -5988,62 +4712,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "57K",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "Greenland",
-              "capital": "Nuuk",
-              "flagDescription": "The flag of Greenland.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Greenland",
-                      "description": "Greenland is a country in North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Greenland has a population of approximately 57K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Greenland is Nuuk."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Groenlandia",
-              "capital": "Nuuk",
-              "flagDescription": "La bandera de Groenlandia.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Groenlandia",
-                      "description": "Groenlandia es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Groenlandia tiene una población de aproximadamente 57K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Groenlandia es Nuuk."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "grenada",
       "flagCode": "gd",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "124K",
       "region": "Caribbean",
       "translations": {
@@ -6102,62 +4775,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "109K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Grenada",
-              "capital": "St. George's",
-              "flagDescription": "The flag of Grenada.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Grenada",
-                      "description": "Grenada is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Grenada has a population of approximately 109K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Grenada is St. George's."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Grenada",
-              "capital": "St. George's",
-              "flagDescription": "La bandera de Grenada.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Grenada",
-                      "description": "Grenada es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Grenada tiene una población de aproximadamente 109K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Grenada es St. George's."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "guadeloupe",
       "flagCode": "gp",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "395K",
       "region": "Caribbean",
       "translations": {
@@ -6216,56 +4838,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "379K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Guadeloupe",
-              "capital": "Basse-Terre",
-              "flagDescription": "The flag of Guadeloupe.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Guadeloupe",
-                      "description": "Guadeloupe is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guadeloupe has a population of approximately 379K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guadeloupe is Basse-Terre."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Guadalupe",
-              "capital": "Basse-Terre",
-              "flagDescription": "La bandera de Guadalupe.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Guadalupe",
-                      "description": "Guadalupe es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guadalupe tiene una población de aproximadamente 379K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guadalupe es Basse-Terre."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "guam",
@@ -6321,10 +4893,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "guatemala",
       "flagCode": "gt",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "17.1M",
       "region": "Central America",
       "translations": {
@@ -6382,56 +4953,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "18.1M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Guatemala",
-              "capital": "Guatemala City",
-              "flagDescription": "Guatemala's flag has three vertical stripes — two light blue flanking a white center — with the national coat of arms on the white stripe. The blue stripes represent the Pacific and Caribbean coasts, and white represents purity. It is the only flag with a rifle among its symbols.",
-              "funFacts": [
-                  {
-                      "icon": "history",
-                      "title": "Maya Heartland",
-                      "description": "Guatemala is the heartland of Maya civilization. Tikal National Park contains towering Maya pyramids in the jungle that were at their peak 1,200 years ago."
-                  },
-                  {
-                      "icon": "local_florist",
-                      "title": "Quetzal Bird",
-                      "description": "The Resplendent Quetzal, Guatemala's national bird, has iridescent green tail feathers up to 1 meter long. The ancient Maya regarded it as divine, and its image appears on currency."
-                  },
-                  {
-                      "icon": "coffee",
-                      "title": "Specialty Coffee Origin",
-                      "description": "Guatemala's volcanic highlands — especially Antigua and Huehuetenango — produce some of the world's most prized specialty coffees. The volcanic soil and altitude create unique flavor profiles."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Guatemala",
-              "capital": "Guatemala City",
-              "flagDescription": "La bandera de Guatemala.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Guatemala",
-                      "description": "Guatemala es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guatemala tiene una población de aproximadamente 18.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guatemala es Guatemala City."
-                  }
-              ]
-          }
       }
   },
   {
@@ -6594,7 +5115,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "guyana",
       "flagCode": "gy",
       "continent": "South America",
@@ -6656,62 +5176,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "South America",
-      "population": "773K",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Guyana",
-              "capital": "Georgetown",
-              "flagDescription": "The flag of Guyana.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Guyana",
-                      "description": "Guyana is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guyana has a population of approximately 773K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guyana is Georgetown."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Guyana",
-              "capital": "Georgetown",
-              "flagDescription": "La bandera de Guyana.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Guyana",
-                      "description": "Guyana es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guyana tiene una población de aproximadamente 773K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guyana es Georgetown."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "haiti",
       "flagCode": "ht",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "11.4M",
       "region": "Caribbean",
       "translations": {
@@ -6770,62 +5239,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "11.9M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Haiti",
-              "capital": "Port-au-Prince",
-              "flagDescription": "Haiti's flag has two horizontal stripes of blue (top) and red (bottom) with the national coat of arms at the center. The flag was created by slicing the French tricolor and removing the white stripe — symbolically removing white colonizers from the island.",
-              "funFacts": [
-                  {
-                      "icon": "history",
-                      "title": "First Black Republic",
-                      "description": "Haiti became the world's first Black republic and the first Caribbean nation to gain independence in 1804 after a successful slave revolt against French rule — a pivotal moment in world history."
-                  },
-                  {
-                      "icon": "palette",
-                      "title": "Vibrant Art Scene",
-                      "description": "Haiti has one of the most vibrant folk art traditions in the Western Hemisphere. Haitian `naïve art' with its bold colors and joyful imagery is internationally collected and celebrated."
-                  },
-                  {
-                      "icon": "music_note",
-                      "title": "Kompa Music",
-                      "description": "Kompa, a meringue-jazz fusion born in Haiti in the 1950s, is the national music and has influenced Caribbean music everywhere. It's known for its insistent, rolling rhythm."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Haití",
-              "capital": "Port-au-Prince",
-              "flagDescription": "La bandera de Haití.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Haití",
-                      "description": "Haití es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Haití tiene una población de aproximadamente 11.9M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Haití es Port-au-Prince."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "honduras",
       "flagCode": "hn",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "10.1M",
       "region": "Central America",
       "translations": {
@@ -6883,56 +5301,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "9.9M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Honduras",
-              "capital": "Tegucigalpa",
-              "flagDescription": "The flag of Honduras.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Honduras",
-                      "description": "Honduras is a country in Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Honduras has a population of approximately 9.9M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Honduras is Tegucigalpa."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Honduras",
-              "capital": "Tegucigalpa",
-              "flagDescription": "La bandera de Honduras.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Honduras",
-                      "description": "Honduras es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Honduras tiene una población de aproximadamente 9.9M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Honduras es Tegucigalpa."
-                  }
-              ]
-          }
       }
   },
   {
@@ -7572,10 +5940,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "jamaica",
       "flagCode": "jm",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "2.8M",
       "region": "Caribbean",
       "translations": {
@@ -7633,56 +6000,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "2.8M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Jamaica",
-              "capital": "Kingston",
-              "flagDescription": "Jamaica's flag is the only national flag that doesn't use red, white, or blue. It features a gold diagonal cross dividing the flag into four triangles — green on the left and right, black on top and bottom. Gold represents natural wealth, green the land and hope, and black the strength of the people.",
-              "funFacts": [
-                  {
-                      "icon": "music_note",
-                      "title": "Reggae Homeland",
-                      "description": "Jamaica is the birthplace of reggae music. Bob Marley, who grew up in Kingston, brought reggae to the entire world. UNESCO listed reggae music as an Intangible Cultural Heritage."
-                  },
-                  {
-                      "icon": "sprint",
-                      "title": "Fastest Nation",
-                      "description": "Jamaica has produced the world's fastest sprinters proportionally. Usain Bolt, who broke multiple world records, is from Trelawny, Jamaica. The island dominates Olympic 100m and 200m events."
-                  },
-                  {
-                      "icon": "coffee",
-                      "title": "Blue Mountain Coffee",
-                      "description": "Jamaica's Blue Mountain coffee is among the most expensive in the world. Grown in misty mountains at over 2,000 meters, it's known for its mild flavor and lack of bitterness."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Jamaica",
-              "capital": "Kingston",
-              "flagDescription": "La bandera de Jamaica.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Jamaica",
-                      "description": "Jamaica es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Jamaica tiene una población de aproximadamente 2.8M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Jamaica es Kingston."
-                  }
-              ]
-          }
       }
   },
   {
@@ -9064,10 +7381,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "martinique",
       "flagCode": "mq",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "375K",
       "region": "Caribbean",
       "translations": {
@@ -9125,56 +7441,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "350K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Martinique",
-              "capital": "Fort-de-France",
-              "flagDescription": "The flag of Martinique.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Martinique",
-                      "description": "Martinique is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Martinique has a population of approximately 350K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Martinique is Fort-de-France."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Martinica",
-              "capital": "Fort-de-France",
-              "flagDescription": "La bandera de Martinica.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Martinica",
-                      "description": "Martinica es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Martinica tiene una población de aproximadamente 350K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Martinica es Fort-de-France."
-                  }
-              ]
-          }
       }
   },
   {
@@ -9337,7 +7603,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "mexico",
       "flagCode": "mx",
       "continent": "North America",
@@ -9398,56 +7663,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "130.6M",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "Mexico",
-              "capital": "Mexico City",
-              "flagDescription": "The Mexican flag has three vertical stripes of green, white, and red. The coat of arms at the center shows an eagle perched on a cactus, eating a snake — fulfilling an ancient Aztec prophecy about where to build their capital city, Tenochtitlan.",
-              "funFacts": [
-                  {
-                      "icon": "restaurant",
-                      "title": "Chocolate Inventors",
-                      "description": "The ancient Aztecs and Maya invented chocolate over 3,000 years ago. They drank it as a bitter, spicy beverage called xocolātl — nothing like hot cocoa!"
-                  },
-                  {
-                      "icon": "volcano",
-                      "title": "Ring of Fire",
-                      "description": "Mexico sits on the \"Ring of Fire\" and has 42 active volcanoes, including Popocatépetl near Mexico City, which is one of the most active in the world."
-                  },
-                  {
-                      "icon": "celebration",
-                      "title": "Day of the Dead",
-                      "description": "Día de los Muertos is a colorful celebration where families honor their deceased loved ones with altars, marigolds, sugar skulls, and their favorite foods."
-                  }
-              ]
-          },
-          "es": {
-              "name": "México",
-              "capital": "Mexico City",
-              "flagDescription": "La bandera de México.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre México",
-                      "description": "México es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "México tiene una población de aproximadamente 130.6M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de México es Mexico City."
-                  }
-              ]
-          }
       }
   },
   {
@@ -9716,10 +7931,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "montserrat",
       "flagCode": "ms",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "4.4K",
       "region": "Caribbean",
       "translations": {
@@ -9777,56 +7991,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "4K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Montserrat",
-              "capital": "Plymouth",
-              "flagDescription": "The flag of Montserrat.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Montserrat",
-                      "description": "Montserrat is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Montserrat has a population of approximately 4K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Montserrat is Plymouth."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Montserrat",
-              "capital": "Plymouth",
-              "flagDescription": "La bandera de Montserrat.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Montserrat",
-                      "description": "Montserrat es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Montserrat tiene una población de aproximadamente 4K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Montserrat es Plymouth."
-                  }
-              ]
-          }
       }
   },
   {
@@ -10307,10 +8471,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "nicaragua",
       "flagCode": "ni",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "6.9M",
       "region": "Central America",
       "translations": {
@@ -10368,56 +8531,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "6.8M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Nicaragua",
-              "capital": "Managua",
-              "flagDescription": "The flag of Nicaragua.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Nicaragua",
-                      "description": "Nicaragua is a country in Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Nicaragua has a population of approximately 6.8M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Nicaragua is Managua."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Nicaragua",
-              "capital": "Managua",
-              "flagDescription": "La bandera de Nicaragua.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Nicaragua",
-                      "description": "Nicaragua es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Nicaragua tiene una población de aproximadamente 6.8M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nicaragua es Managua."
-                  }
-              ]
-          }
       }
   },
   {
@@ -11057,10 +9170,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "panama",
       "flagCode": "pa",
-      "continent": "Central America",
+      "continent": "North America",
       "population": "4.4M",
       "region": "Central America",
       "translations": {
@@ -11119,56 +9231,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "4.1M",
-      "region": "Central America",
-      "translations": {
-          "en": {
-              "name": "Panama",
-              "capital": "Panama City",
-              "flagDescription": "The flag of Panama.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Panama",
-                      "description": "Panama is a country in Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Panama has a population of approximately 4.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Panama is Panama City."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Panamá",
-              "capital": "Panama City",
-              "flagDescription": "La bandera de Panamá.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Panamá",
-                      "description": "Panamá es un país en Central America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Panamá tiene una población de aproximadamente 4.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Panamá es Panama City."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "papua-new-guinea",
@@ -11223,7 +9285,6 @@ export const countriesData: CountryEntry[] = [
           }
       }
   },
-  {
   {
       "slug": "paraguay",
       "flagCode": "py",
@@ -11286,58 +9347,7 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "South America",
-      "population": "6.1M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Paraguay",
-              "capital": "Asunción",
-              "flagDescription": "The flag of Paraguay.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Paraguay",
-                      "description": "Paraguay is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Paraguay has a population of approximately 6.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Paraguay is Asunción."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Paraguay",
-              "capital": "Asunción",
-              "flagDescription": "La bandera de Paraguay.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Paraguay",
-                      "description": "Paraguay es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Paraguay tiene una población de aproximadamente 6.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Paraguay es Asunción."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "peru",
       "flagCode": "pe",
@@ -11399,56 +9409,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "34.4M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Peru",
-              "capital": "Lima",
-              "flagDescription": "Peru's flag has three vertical stripes — red, white, and red. The national coat of arms appears in the center of the state flag (but not the civil flag). Red represents the blood of those who fought for independence, and white symbolizes peace.",
-              "funFacts": [
-                  {
-                      "icon": "terrain",
-                      "title": "Machu Picchu",
-                      "description": "Machu Picchu, the 15th-century Inca citadel set 2,430 meters above sea level in the Andes, is considered one of the greatest wonders of the ancient world."
-                  },
-                  {
-                      "icon": "restaurant",
-                      "title": "Gastronomic Capital",
-                      "description": "Lima is widely considered the culinary capital of Latin America. Peruvian cuisine blends Inca traditions with influences from Spanish, Japanese, Chinese, and Italian immigrants."
-                  },
-                  {
-                      "icon": "history",
-                      "title": "Ancient Nazca Lines",
-                      "description": "The Nazca Lines in southern Peru are a series of huge geoglyphs etched into the desert, depicting animals and plants up to 370 meters long. They were created between 500 BC and 500 AD and can only be fully seen from the air."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Perú",
-              "capital": "Lima",
-              "flagDescription": "La bandera de Perú.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Perú",
-                      "description": "Perú es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Perú tiene una población de aproximadamente 34.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Perú es Lima."
-                  }
-              ]
-          }
       }
   },
   {
@@ -11664,10 +9624,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "puerto-rico",
       "flagCode": "pr",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "3.2M",
       "region": "Caribbean",
       "translations": {
@@ -11725,56 +9684,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "3.2M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Puerto Rico",
-              "capital": "San Juan",
-              "flagDescription": "The flag of Puerto Rico.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Puerto Rico",
-                      "description": "Puerto Rico is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Puerto Rico has a population of approximately 3.2M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Puerto Rico is San Juan."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Puerto Rico",
-              "capital": "San Juan",
-              "flagDescription": "La bandera de Puerto Rico.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Puerto Rico",
-                      "description": "Puerto Rico es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Puerto Rico tiene una población de aproximadamente 3.2M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Puerto Rico es San Juan."
-                  }
-              ]
-          }
       }
   },
   {
@@ -12096,10 +10005,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "saint-barthelemy",
       "flagCode": "bl",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "9.7K",
       "region": "Caribbean",
       "translations": {
@@ -12158,56 +10066,6 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "11K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Saint Barthélemy",
-              "capital": "Gustavia",
-              "flagDescription": "The flag of Saint Barthélemy.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Barthélemy",
-                      "description": "Saint Barthélemy is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Barthélemy has a population of approximately 11K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Barthélemy is Gustavia."
-                  }
-              ]
-          },
-          "es": {
-              "name": "San Bartolomé",
-              "capital": "Gustavia",
-              "flagDescription": "La bandera de San Bartolomé.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre San Bartolomé",
-                      "description": "San Bartolomé es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "San Bartolomé tiene una población de aproximadamente 11K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de San Bartolomé es Gustavia."
-                  }
-              ]
-          }
-      }
   },
   {
       "slug": "saint-helena-ascension-and-tristan-da-cunha",
@@ -12263,10 +10121,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "saint-kitts-and-nevis",
       "flagCode": "kn",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "53.4K",
       "region": "Caribbean",
       "translations": {
@@ -12325,62 +10182,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "51K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Saint Kitts and Nevis",
-              "capital": "Basseterre",
-              "flagDescription": "The flag of Saint Kitts and Nevis.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Kitts and Nevis",
-                      "description": "Saint Kitts and Nevis is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Kitts and Nevis has a population of approximately 51K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Kitts and Nevis is Basseterre."
-                  }
-              ]
-          },
-          "es": {
-              "name": "San Cristóbal y Nieves",
-              "capital": "Basseterre",
-              "flagDescription": "La bandera de San Cristóbal y Nieves.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre San Cristóbal y Nieves",
-                      "description": "San Cristóbal y Nieves es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "San Cristóbal y Nieves tiene una población de aproximadamente 51K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de San Cristóbal y Nieves es Basseterre."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "saint-lucia",
       "flagCode": "lc",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "180K",
       "region": "Caribbean",
       "translations": {
@@ -12439,62 +10245,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "184K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Saint Lucia",
-              "capital": "Castries",
-              "flagDescription": "The flag of Saint Lucia.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Lucia",
-                      "description": "Saint Lucia is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Lucia has a population of approximately 184K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Lucia is Castries."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Santa Lucía",
-              "capital": "Castries",
-              "flagDescription": "La bandera de Santa Lucía.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Santa Lucía",
-                      "description": "Santa Lucía es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Santa Lucía tiene una población de aproximadamente 184K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Santa Lucía es Castries."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "saint-martin",
       "flagCode": "mf",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "31.4K",
       "region": "Caribbean",
       "translations": {
@@ -12553,58 +10308,7 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "31K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Saint Martin",
-              "capital": "Marigot",
-              "flagDescription": "The flag of Saint Martin.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Martin",
-                      "description": "Saint Martin is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Martin has a population of approximately 31K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Martin is Marigot."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Saint Martin",
-              "capital": "Marigot",
-              "flagDescription": "La bandera de Saint Martin.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Saint Martin",
-                      "description": "Saint Martin es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Saint Martin tiene una población de aproximadamente 31K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Saint Martin es Marigot."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "saint-pierre-and-miquelon",
       "flagCode": "pm",
@@ -12667,62 +10371,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "6K",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "Saint Pierre and Miquelon",
-              "capital": "Saint-Pierre",
-              "flagDescription": "The flag of Saint Pierre and Miquelon.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Pierre and Miquelon",
-                      "description": "Saint Pierre and Miquelon is a country in North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Pierre and Miquelon has a population of approximately 6K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Pierre and Miquelon is Saint-Pierre."
-                  }
-              ]
-          },
-          "es": {
-              "name": "San Pedro y Miquelón",
-              "capital": "Saint-Pierre",
-              "flagDescription": "La bandera de San Pedro y Miquelón.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre San Pedro y Miquelón",
-                      "description": "San Pedro y Miquelón es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "San Pedro y Miquelón tiene una población de aproximadamente 6K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de San Pedro y Miquelón es Saint-Pierre."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "saint-vincent-and-the-grenadines",
       "flagCode": "vc",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "111K",
       "region": "Caribbean",
       "translations": {
@@ -12780,56 +10433,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "111K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Saint Vincent and the Grenadines",
-              "capital": "Kingstown",
-              "flagDescription": "The flag of Saint Vincent and the Grenadines.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Saint Vincent and the Grenadines",
-                      "description": "Saint Vincent and the Grenadines is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Saint Vincent and the Grenadines has a population of approximately 111K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Saint Vincent and the Grenadines is Kingstown."
-                  }
-              ]
-          },
-          "es": {
-              "name": "San Vicente y Granadinas",
-              "capital": "Kingstown",
-              "flagDescription": "La bandera de San Vicente y Granadinas.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre San Vicente y Granadinas",
-                      "description": "San Vicente y Granadinas es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "San Vicente y Granadinas tiene una población de aproximadamente 111K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de San Vicente y Granadinas es Kingstown."
-                  }
-              ]
-          }
       }
   },
   {
@@ -13310,10 +10913,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "sint-maarten",
       "flagCode": "sx",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "41.4K",
       "region": "Caribbean",
       "translations": {
@@ -13371,56 +10973,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "41K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Sint Maarten",
-              "capital": "Philipsburg",
-              "flagDescription": "The flag of Sint Maarten.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Sint Maarten",
-                      "description": "Sint Maarten is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Sint Maarten has a population of approximately 41K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Sint Maarten is Philipsburg."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Sint Maarten",
-              "capital": "Philipsburg",
-              "flagDescription": "La bandera de Sint Maarten.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Sint Maarten",
-                      "description": "Sint Maarten es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Sint Maarten tiene una población de aproximadamente 41K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Sint Maarten es Philipsburg."
-                  }
-              ]
-          }
       }
   },
   {
@@ -13954,7 +11506,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "suriname",
       "flagCode": "sr",
       "continent": "South America",
@@ -14015,56 +11566,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "617K",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Suriname",
-              "capital": "Paramaribo",
-              "flagDescription": "The flag of Suriname.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Suriname",
-                      "description": "Suriname is a country in South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Suriname has a population of approximately 617K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Suriname is Paramaribo."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Surinam",
-              "capital": "Paramaribo",
-              "flagDescription": "La bandera de Surinam.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Surinam",
-                      "description": "Surinam es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Surinam tiene una población de aproximadamente 617K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Surinam es Paramaribo."
-                  }
-              ]
-          }
       }
   },
   {
@@ -14704,10 +12205,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "trinidad-and-tobago",
       "flagCode": "tt",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "1.4M",
       "region": "Caribbean",
       "translations": {
@@ -14765,56 +12265,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "1.4M",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Trinidad and Tobago",
-              "capital": "Port of Spain",
-              "flagDescription": "The flag of Trinidad and Tobago.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Trinidad and Tobago",
-                      "description": "Trinidad and Tobago is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Trinidad and Tobago has a population of approximately 1.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Trinidad and Tobago is Port of Spain."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Trinidad y Tobago",
-              "capital": "Port of Spain",
-              "flagDescription": "La bandera de Trinidad y Tobago.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Trinidad y Tobago",
-                      "description": "Trinidad y Tobago es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Trinidad y Tobago tiene una población de aproximadamente 1.4M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Trinidad y Tobago es Port of Spain."
-                  }
-              ]
-          }
       }
   },
   {
@@ -14977,10 +12427,9 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "turks-and-caicos-islands",
       "flagCode": "tc",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "59.9K",
       "region": "Caribbean",
       "translations": {
@@ -15038,56 +12487,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "North America",
-      "population": "51K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "Turks and Caicos Islands",
-              "capital": "Cockburn Town",
-              "flagDescription": "The flag of Turks and Caicos Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About Turks and Caicos Islands",
-                      "description": "Turks and Caicos Islands is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Turks and Caicos Islands has a population of approximately 51K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Turks and Caicos Islands is Cockburn Town."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Turks y Caicos",
-              "capital": "Cockburn Town",
-              "flagDescription": "La bandera de Islas Turks y Caicos.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Turks y Caicos",
-                      "description": "Islas Turks y Caicos es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Turks y Caicos tiene una población de aproximadamente 51K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Turks y Caicos es Cockburn Town."
-                  }
-              ]
-          }
       }
   },
   {
@@ -15356,7 +12755,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "united-states",
       "flagCode": "us",
       "continent": "North America",
@@ -15418,58 +12816,7 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "340.1M",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "United States",
-              "capital": "Washington D.C.",
-              "flagDescription": "The US flag has 13 alternating red and white horizontal stripes representing the original 13 colonies, and 50 white stars on a blue canton representing the current 50 states. The blue represents vigilance, perseverance and justice; red symbolizes hardiness and valor.",
-              "funFacts": [
-                  {
-                      "icon": "landscape",
-                      "title": "National Parks",
-                      "description": "The USA has 63 national parks protecting some of Earth's most spectacular landscapes, from Yellowstone's geysers to the Grand Canyon's mile-deep gorge. The idea of creating national parks was called 'America's best idea'."
-                  },
-                  {
-                      "icon": "lightbulb",
-                      "title": "Innovation Engine",
-                      "description": "The USA has produced more Nobel Prize winners than any other country and is home to the world's most prestigious technology companies. Silicon Valley has spawned Google, Apple, and thousands of world-changing startups."
-                  },
-                  {
-                      "icon": "music_note",
-                      "title": "Birthplace of Jazz",
-                      "description": "Jazz emerged in New Orleans in the late 1800s from a fusion of African rhythms, blues, and European classical music. It's considered America's greatest original art form and gave rise to genres from pop to hip-hop."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Estados Unidos",
-              "capital": "Washington, D.C.",
-              "flagDescription": "La bandera de Estados Unidos.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Estados Unidos",
-                      "description": "Estados Unidos es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Estados Unidos tiene una población de aproximadamente 340.1M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Estados Unidos es Washington, D.C.."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "united-states-minor-outlying-islands",
       "flagCode": "um",
@@ -15532,62 +12879,11 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "0",
-      "region": "North America",
-      "translations": {
-          "en": {
-              "name": "United States Minor Outlying Islands",
-              "capital": "Washington DC",
-              "flagDescription": "The flag of United States Minor Outlying Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About United States Minor Outlying Islands",
-                      "description": "United States Minor Outlying Islands is a country in North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "United States Minor Outlying Islands has a population of approximately 0."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of United States Minor Outlying Islands is Washington DC."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Ultramarinas Menores de Estados Unidos",
-              "capital": "Washington DC",
-              "flagDescription": "La bandera de Islas Ultramarinas Menores de Estados Unidos.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Ultramarinas Menores de Estados Unidos",
-                      "description": "Islas Ultramarinas Menores de Estados Unidos es un país en North America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Ultramarinas Menores de Estados Unidos tiene una población de aproximadamente 0."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Ultramarinas Menores de Estados Unidos es Washington DC."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "united-states-virgin-islands",
       "flagCode": "vi",
-      "continent": "Caribbean",
+      "continent": "North America",
       "population": "87.1K",
       "region": "Caribbean",
       "translations": {
@@ -15646,58 +12942,7 @@ export const countriesData: CountryEntry[] = [
           ]
         }
       }
-    }
-      "continent": "North America",
-      "population": "87K",
-      "region": "Caribbean",
-      "translations": {
-          "en": {
-              "name": "United States Virgin Islands",
-              "capital": "Charlotte Amalie",
-              "flagDescription": "The flag of United States Virgin Islands.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "About United States Virgin Islands",
-                      "description": "United States Virgin Islands is a country in Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "United States Virgin Islands has a population of approximately 87K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of United States Virgin Islands is Charlotte Amalie."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Islas Vírgenes de los Estados Unidos",
-              "capital": "Charlotte Amalie",
-              "flagDescription": "La bandera de Islas Vírgenes de los Estados Unidos.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Islas Vírgenes de los Estados Unidos",
-                      "description": "Islas Vírgenes de los Estados Unidos es un país en Caribbean."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Vírgenes de los Estados Unidos tiene una población de aproximadamente 87K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Vírgenes de los Estados Unidos es Charlotte Amalie."
-                  }
-              ]
-          }
-      }
   },
-  {
   {
       "slug": "uruguay",
       "flagCode": "uy",
@@ -15759,56 +13004,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "3.5M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Uruguay",
-              "capital": "Montevideo",
-              "flagDescription": "Uruguay's flag has nine horizontal stripes — five white and four blue — representing the nine original departments (provinces). A white canton with the Sun of May (16 alternating straight and wavy rays) sits in the upper left, representing the first May revolution.",
-              "funFacts": [
-                  {
-                      "icon": "sports_soccer",
-                      "title": "First Football World Cup",
-                      "description": "Uruguay hosted and won the very first FIFA World Cup in 1930, defeating Argentina 4-2 in the final with 93,000 fans watching."
-                  },
-                  {
-                      "icon": "bolt",
-                      "title": "Renewable Energy Leader",
-                      "description": "Uruguay gets about 98% of its electricity from renewables — mostly wind and hydro. It became one of the first countries in the world to achieve near-total renewable electricity."
-                  },
-                  {
-                      "icon": "emoji_nature",
-                      "title": "Sea Lion Colony",
-                      "description": "Cabo Polonio, a remote peninsula in Uruguay, is home to one of the largest South American sea lion colonies in the world, with up to 2,500 sea lions visible on the rocks."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Uruguay",
-              "capital": "Montevideo",
-              "flagDescription": "La bandera de Uruguay.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Uruguay",
-                      "description": "Uruguay es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Uruguay tiene una población de aproximadamente 3.5M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Uruguay es Montevideo."
-                  }
-              ]
-          }
       }
   },
   {
@@ -15971,7 +13166,6 @@ export const countriesData: CountryEntry[] = [
       }
   },
   {
-  {
       "slug": "venezuela",
       "flagCode": "ve",
       "continent": "South America",
@@ -16032,56 +13226,6 @@ export const countriesData: CountryEntry[] = [
           }
           ]
         }
-      }
-    }
-      "continent": "South America",
-      "population": "28.5M",
-      "region": "South America",
-      "translations": {
-          "en": {
-              "name": "Venezuela",
-              "capital": "Caracas",
-              "flagDescription": "Venezuela's flag has three horizontal stripes — yellow, blue, and red — with an arc of eight white stars on the blue stripe representing the country's provinces at independence, and the national coat of arms in the upper left.",
-              "funFacts": [
-                  {
-                      "icon": "water",
-                      "title": "Angel Falls",
-                      "description": "Angel Falls in Venezuela is the world's highest uninterrupted waterfall at 979 meters — nearly 20 times taller than Niagara Falls. It was named after American aviator Jimmie Angel who flew over it in 1933."
-                  },
-                  {
-                      "icon": "oil_barrel",
-                      "title": "Largest Oil Reserves",
-                      "description": "Venezuela holds the world's largest proven oil reserves — even more than Saudi Arabia. The discovery of oil in 1914 transformed the country's economy."
-                  },
-                  {
-                      "icon": "female",
-                      "title": "Beauty Queen Nation",
-                      "description": "Venezuela has won more Miss Universe and Miss World titles than any other country, earning it the nickname 'the most beautiful country in the world' in pageant circles."
-                  }
-              ]
-          },
-          "es": {
-              "name": "Venezuela",
-              "capital": "Caracas",
-              "flagDescription": "La bandera de Venezuela.",
-              "funFacts": [
-                  {
-                      "icon": "public",
-                      "title": "Sobre Venezuela",
-                      "description": "Venezuela es un país en South America."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Venezuela tiene una población de aproximadamente 28.5M."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Venezuela es Caracas."
-                  }
-              ]
-          }
       }
   },
   {
