@@ -243,44 +243,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "American Samoa",
               "capital": "Pago Pago",
-              "flagDescription": "The flag of American Samoa.",
+              "flagDescription": "American Samoa's flag has a blue field with a white-bordered red triangle pointing from the hoist to the fly, creating a V-shape. An American bald eagle clutches a traditional Samoan fly whisk (fue) and a war club (uatogi) — the fue represents wisdom and the uatogi represents power. The eagle symbolizes the protection offered by the United States, while the Samoan objects honor the island's indigenous culture.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About American Samoa",
-                      "description": "American Samoa is a country in Polynesia."
+                      "icon": "waves",
+                      "title": "Most American Island",
+                      "description": "American Samoa has one of the highest rates of military enlistment per capita of any US territory or state. Samoans have served with great distinction in the US armed forces, and military service is a deeply honored tradition here."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "American Samoa has a population of approximately 50K."
+                      "icon": "anchor",
+                      "title": "Natural Harbor",
+                      "description": "Pago Pago Harbor is one of the finest natural harbors in the South Pacific — a deep, sheltered bay surrounded by dramatic volcanic mountains. It was a critical coaling station and naval base in the 19th and early 20th centuries."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of American Samoa is Pago Pago."
+                      "icon": "landscape",
+                      "title": "National Park of American Samoa",
+                      "description": "The National Park of American Samoa protects pristine tropical rainforest, coral reefs, and traditional Samoan villages. It is one of the few US national parks accessible only by boat or small aircraft."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Fa'a Samoa",
+                      "description": "The Fa'a Samoa — the Samoan Way — is a living cultural system that guides daily life through communal decision-making, respect for elders, and sharing resources. It has remained remarkably intact despite American influence."
                   }
               ]
           },
           "es": {
               "name": "Samoa Americana",
               "capital": "Pago Pago",
-              "flagDescription": "La bandera de Samoa Americana.",
+              "flagDescription": "La bandera de Samoa Americana tiene un campo azul con un triángulo rojo bordeado de blanco que apunta desde el asta hasta el extremo, creando una forma de V. Un águila calva americana sostiene un matamoscas tradicional samoano (fue) y un garrote de guerra (uatogi) — el fue representa la sabiduría y el uatogi el poder. El águila simboliza la protección ofrecida por los Estados Unidos, mientras que los objetos samoanos honran la cultura indígena de la isla.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Samoa Americana",
-                      "description": "Samoa Americana es un país en Polynesia."
+                      "icon": "waves",
+                      "title": "La Isla Más Americana",
+                      "description": "Samoa Americana tiene una de las tasas más altas de alistamiento militar per cápita de cualquier territorio o estado de EE.UU. Los samoanos han servido con gran distinción en las fuerzas armadas estadounidenses, y el servicio militar es una tradición profundamente honrada aquí."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Samoa Americana tiene una población de aproximadamente 50K."
+                      "icon": "anchor",
+                      "title": "Puerto Natural",
+                      "description": "El Puerto de Pago Pago es uno de los mejores puertos naturales del Pacífico Sur — una bahía profunda y protegida rodeada de dramáticas montañas volcánicas. Fue una estación carbonera y base naval crítica en los siglos XIX y principios del XX."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Samoa Americana es Pago Pago."
+                      "icon": "landscape",
+                      "title": "Parque Nacional de Samoa Americana",
+                      "description": "El Parque Nacional de Samoa Americana protege bosques tropicales vírgenes, arrecifes de coral y aldeas samoanas tradicionales. Es uno de los pocos parques nacionales de EE.UU. accesible solo en barco o avioneta."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Fa'a Samoa",
+                      "description": "El Fa'a Samoa — la Manera Samoana — es un sistema cultural vivo que guía la vida cotidiana a través de la toma de decisiones comunal, el respeto por los ancianos y el intercambio de recursos. Se ha mantenido notablemente intacto a pesar de la influencia americana."
                   }
               ]
           }
@@ -2626,44 +2636,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Christmas Island",
               "capital": "Flying Fish Cove",
-              "flagDescription": "The flag of Christmas Island.",
+              "flagDescription": "Christmas Island's flag features a blue and green diagonal split, representing the ocean and the island's forests. A golden yellow circle in the center contains the outline of the island in green. Below the circle is a golden map of the island, and in the upper hoist is a small Union Jack. The most distinctive element is the golden Abbott's booby bird — a rare seabird found almost exclusively on Christmas Island.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Christmas Island",
-                      "description": "Christmas Island is a country in Australia and New Zealand."
+                      "icon": "pets",
+                      "title": "Red Crab Migration",
+                      "description": "Christmas Island is famous for one of nature's most spectacular events: every year, over 50 million bright-red Christmas Island crabs migrate from the forest to the sea to breed. Roads are closed and special bridges built to let them pass safely."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Christmas Island has a population of approximately 2K."
+                      "icon": "forest",
+                      "title": "Pristine Rainforest",
+                      "description": "About two-thirds of Christmas Island is protected as a national park, preserving ancient rainforest filled with unique wildlife found nowhere else on Earth, including the endangered Abbott's booby bird and the Christmas Island frigatebird."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Christmas Island is Flying Fish Cove."
+                      "icon": "anchor",
+                      "title": "Remote Territory",
+                      "description": "Christmas Island is an Australian territory located 2,600 km northwest of the Australian mainland — closer to Indonesia than to Australia. Its remote location has helped preserve its extraordinary biodiversity."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Named by William Mynors",
+                      "description": "The island was named Christmas Island because it was discovered on Christmas Day 1643 by Captain William Mynors. It remained uninhabited until the late 19th century, when workers arrived to mine its vast phosphate deposits."
                   }
               ]
           },
           "es": {
               "name": "Isla de Navidad",
               "capital": "Flying Fish Cove",
-              "flagDescription": "La bandera de Isla de Navidad.",
+              "flagDescription": "La bandera de la Isla de Navidad tiene una división diagonal azul y verde, que representa el océano y los bosques de la isla. Un círculo amarillo dorado en el centro contiene el contorno de la isla en verde. Debajo del círculo hay un mapa dorado de la isla, y en la parte superior izquierda hay una pequeña Union Jack. El elemento más distintivo es el pájaro piquero de Abbott dorado — una ave marina rara que se encuentra casi exclusivamente en la Isla de Navidad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Isla de Navidad",
-                      "description": "Isla de Navidad es un país en Australia and New Zealand."
+                      "icon": "pets",
+                      "title": "Migración de Cangrejos Rojos",
+                      "description": "La Isla de Navidad es famosa por uno de los eventos más espectaculares de la naturaleza: cada año, más de 50 millones de brillantes cangrejos rojos de la Isla de Navidad migran del bosque al mar para reproducirse. Las carreteras se cierran y se construyen puentes especiales para dejarlos pasar con seguridad."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Isla de Navidad tiene una población de aproximadamente 2K."
+                      "icon": "forest",
+                      "title": "Selva Tropical Prístina",
+                      "description": "Aproximadamente dos tercios de la Isla de Navidad están protegidos como parque nacional, preservando antigua selva tropical llena de fauna única que no se encuentra en ningún otro lugar de la Tierra, incluido el piquero de Abbott en peligro de extinción."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Isla de Navidad es Flying Fish Cove."
+                      "icon": "anchor",
+                      "title": "Territorio Remoto",
+                      "description": "La Isla de Navidad es un territorio australiano ubicado 2.600 km al noroeste del continente australiano — más cerca de Indonesia que de Australia. Su ubicación remota ha ayudado a preservar su extraordinaria biodiversidad."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Nombrada por William Mynors",
+                      "description": "La isla fue nombrada Isla de Navidad porque fue descubierta el día de Navidad de 1643 por el capitán William Mynors. Permaneció deshabitada hasta finales del siglo XIX, cuando llegaron trabajadores para explotar sus vastos depósitos de fosfato."
                   }
               ]
           }
@@ -2679,44 +2699,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cocos (Keeling) Islands",
               "capital": "West Island",
-              "flagDescription": "The flag of Cocos (Keeling) Islands.",
+              "flagDescription": "The Cocos (Keeling) Islands flag has a green field with a palm tree on a gold disc in the canton (upper left). The right side shows a golden crescent and a gold Southern Cross constellation. The palm tree represents the island's coconut plantations, the crescent and green evoke the Cocos Malay community's Muslim heritage, and the Southern Cross connects the territory to Australia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cocos (Keeling) Islands",
-                      "description": "Cocos (Keeling) Islands is a country in Australia and New Zealand."
+                      "icon": "anchor",
+                      "title": "Two Atolls, One Territory",
+                      "description": "The Cocos (Keeling) Islands consist of two coral atolls with 27 islands in total, located in the Indian Ocean midway between Australia and Sri Lanka. The turquoise lagoon inside the southern atoll is considered one of the most beautiful in the world."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cocos (Keeling) Islands has a population of approximately 593."
+                      "icon": "history",
+                      "title": "Darwin's Stopover",
+                      "description": "Charles Darwin visited the Cocos Islands in 1836 during his famous voyage on HMS Beagle. His observations of the coral atoll formation here helped him develop his theory of how atolls are created — a key piece of his scientific work."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cocos (Keeling) Islands is West Island."
+                      "icon": "language",
+                      "title": "Cocos Malay Culture",
+                      "description": "The Cocos Islands have a unique Cocos Malay community, descendants of workers brought from Malaysia in the 19th century. They maintain their own distinct dialect of Malay, traditional music, and Islamic customs that set them apart from other Australian communities."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Pristine Diving",
+                      "description": "The Cocos Islands are considered one of the world's finest scuba diving destinations, with crystal-clear waters, healthy coral reefs, and abundant marine life including turtles, reef sharks, and manta rays — largely untouched by mass tourism."
                   }
               ]
           },
           "es": {
-              "name": "Islas Cocos o Islas Keeling",
+              "name": "Islas Cocos (Keeling)",
               "capital": "West Island",
-              "flagDescription": "La bandera de Islas Cocos o Islas Keeling.",
+              "flagDescription": "La bandera de las Islas Cocos (Keeling) tiene un campo verde con una palmera sobre un disco dorado en el cantón (parte superior izquierda). El lado derecho muestra una media luna dorada y la constelación de la Cruz del Sur dorada. La palmera representa las plantaciones de cocoteros de la isla, la media luna y el verde evocan la herencia musulmana de la comunidad malaya de las Cocos, y la Cruz del Sur conecta el territorio con Australia.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Cocos o Islas Keeling",
-                      "description": "Islas Cocos o Islas Keeling es un país en Australia and New Zealand."
+                      "icon": "anchor",
+                      "title": "Dos Atolones, Un Territorio",
+                      "description": "Las Islas Cocos (Keeling) consisten en dos atolones de coral con 27 islas en total, ubicadas en el Océano Índico a medio camino entre Australia y Sri Lanka. La laguna turquesa dentro del atolón sur es considerada una de las más hermosas del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Cocos o Islas Keeling tiene una población de aproximadamente 593."
+                      "icon": "history",
+                      "title": "Escala de Darwin",
+                      "description": "Charles Darwin visitó las Islas Cocos en 1836 durante su famoso viaje en el HMS Beagle. Sus observaciones de la formación del atolón de coral aquí le ayudaron a desarrollar su teoría sobre cómo se crean los atolones — una pieza clave de su trabajo científico."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Cocos o Islas Keeling es West Island."
+                      "icon": "language",
+                      "title": "Cultura Malaya de Cocos",
+                      "description": "Las Islas Cocos tienen una comunidad malaya única, descendientes de trabajadores traídos de Malasia en el siglo XIX. Mantienen su propio dialecto distintivo del malayo, música tradicional y costumbres islámicas que los distinguen de otras comunidades australianas."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Buceo Prístino",
+                      "description": "Las Islas Cocos son consideradas uno de los mejores destinos de buceo del mundo, con aguas cristalinas, arrecifes de coral saludables y abundante vida marina incluyendo tortugas, tiburones de arrecife y mantas rayas — prácticamente intocado por el turismo masivo."
                   }
               ]
           }
@@ -2848,44 +2878,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Cook Islands",
               "capital": "Avarua",
-              "flagDescription": "The flag of Cook Islands.",
+              "flagDescription": "The Cook Islands flag has a blue ensign with the Union Jack in the upper left and a circle of 15 gold stars on the right. The 15 stars represent the 15 islands that make up the Cook Islands. The circle symbolizes unity among the islands, and the blue represents the Pacific Ocean that connects and surrounds them all.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Cook Islands",
-                      "description": "Cook Islands is a country in Polynesia."
+                      "icon": "waves",
+                      "title": "Free Association with New Zealand",
+                      "description": "The Cook Islands is a self-governing nation in free association with New Zealand — Cook Islanders are New Zealand citizens but have their own parliament and full control over their own affairs. It's a unique arrangement that gives them both independence and security."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Cook Islands has a population of approximately 15K."
+                      "icon": "landscape",
+                      "title": "Black Pearls",
+                      "description": "The Cook Islands produces some of the world's finest black pearls, grown in the pristine lagoons of Manihiki atoll. These lustrous dark pearls are prized worldwide and are one of the islands' most important exports."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Cook Islands is Avarua."
+                      "icon": "celebration",
+                      "title": "Dance Capital of the Pacific",
+                      "description": "Cook Islands is considered the dance capital of the Pacific. The hip-swiveling ura dance is one of the most dynamic and energetic traditional dances in Polynesia. Dance competitions are central to festivals and cultural celebrations."
+                  },
+                  {
+                      "icon": "forest",
+                      "title": "Rarotonga's Interior",
+                      "description": "Rarotonga, the main island, has a dramatic volcanic interior of jagged peaks and deep jungle that few tourists ever explore. The Cross-Island Track hike takes you through ancient rainforest to the iconic Needle — a spire of volcanic rock."
                   }
               ]
           },
           "es": {
               "name": "Islas Cook",
               "capital": "Avarua",
-              "flagDescription": "La bandera de Islas Cook.",
+              "flagDescription": "La bandera de las Islas Cook tiene un pabellón azul con la Union Jack en la parte superior izquierda y un círculo de 15 estrellas doradas a la derecha. Las 15 estrellas representan las 15 islas que forman las Islas Cook. El círculo simboliza la unidad entre las islas, y el azul representa el Océano Pacífico que las conecta y rodea a todas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Cook",
-                      "description": "Islas Cook es un país en Polynesia."
+                      "icon": "waves",
+                      "title": "Libre Asociación con Nueva Zelanda",
+                      "description": "Las Islas Cook es una nación autogobernada en libre asociación con Nueva Zelanda — los habitantes de las Islas Cook son ciudadanos neozelandeses pero tienen su propio parlamento y pleno control sobre sus propios asuntos. Es un acuerdo único que les da tanto independencia como seguridad."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Cook tiene una población de aproximadamente 15K."
+                      "icon": "landscape",
+                      "title": "Perlas Negras",
+                      "description": "Las Islas Cook produce algunas de las mejores perlas negras del mundo, cultivadas en las prístinas lagunas del atolón Manihiki. Estas perlas oscuras y lustrosas son apreciadas en todo el mundo y son una de las exportaciones más importantes de las islas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Cook es Avarua."
+                      "icon": "celebration",
+                      "title": "Capital de la Danza del Pacífico",
+                      "description": "Las Islas Cook es considerada la capital de la danza del Pacífico. La danza ura, con su característico movimiento de caderas, es una de las danzas tradicionales más dinámicas y enérgicas de la Polinesia. Los concursos de danza son centrales en los festivales y celebraciones culturales."
+                  },
+                  {
+                      "icon": "forest",
+                      "title": "El Interior de Rarotonga",
+                      "description": "Rarotonga, la isla principal, tiene un dramático interior volcánico de picos dentados y selva profunda que pocos turistas exploran. La caminata Cross-Island Track te lleva a través de antigua selva tropical hasta la icónica Aguja — una espira de roca volcánica."
                   }
               ]
           }
@@ -4395,45 +4435,55 @@ export const countriesData: CountryEntry[] = [
       "translations": {
           "en": {
               "name": "French Polynesia",
-              "capital": "Papeetē",
-              "flagDescription": "The flag of French Polynesia.",
+              "capital": "Papeete",
+              "flagDescription": "French Polynesia's flag has a French tricolor background (blue-white-red vertical stripes) with the territory's own emblem in the center: a traditional Polynesian canoe with a red sail on a blue sea, beneath a circle of five golden stars on a red background. The canoe represents the great voyaging tradition of Polynesian seafarers who navigated the Pacific with extraordinary skill thousands of years ago.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About French Polynesia",
-                      "description": "French Polynesia is a country in Polynesia."
+                      "icon": "waves",
+                      "title": "World's Finest Overwater Bungalows",
+                      "description": "French Polynesia — especially Bora Bora — invented the overwater bungalow concept that has been copied worldwide. Staying in a thatched-roof house perched over a crystal-clear turquoise lagoon, surrounded by coral reefs, is considered one of the world's ultimate travel experiences."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "French Polynesia has a population of approximately 280K."
+                      "icon": "palette",
+                      "title": "Gauguin's Paradise",
+                      "description": "French post-impressionist artist Paul Gauguin moved to Tahiti in 1891, inspired by Polynesian life, colors, and culture. His vibrant paintings of Tahitian people and landscapes are among the most recognizable artworks in the world."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of French Polynesia is Papeetē."
+                      "icon": "anchor",
+                      "title": "118 Islands",
+                      "description": "French Polynesia comprises 118 islands and atolls spread across an ocean area the size of Europe — yet the total land area is smaller than the US state of Rhode Island. Each island group has its own distinct character and culture."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "Surfing Mecca",
+                      "description": "Teahupo'o on Tahiti is considered one of the world's most dangerous and spectacular surf breaks — a massive, hollow wave that breaks over a sharp coral reef in very shallow water. Professional surfers come from around the world to challenge it."
                   }
               ]
           },
           "es": {
               "name": "Polinesia Francesa",
-              "capital": "Papeetē",
-              "flagDescription": "La bandera de Polinesia Francesa.",
+              "capital": "Papeete",
+              "flagDescription": "La bandera de la Polinesia Francesa tiene un fondo de tricolor francés (franjas verticales azul-blanco-rojo) con el emblema propio del territorio en el centro: una canoa polinesiana tradicional con una vela roja sobre un mar azul, bajo un círculo de cinco estrellas doradas sobre fondo rojo. La canoa representa la gran tradición de navegación de los marineros polinesios que navegaron el Pacífico con extraordinaria habilidad hace miles de años.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Polinesia Francesa",
-                      "description": "Polinesia Francesa es un país en Polynesia."
+                      "icon": "waves",
+                      "title": "Los Mejores Bungalows sobre el Agua del Mundo",
+                      "description": "La Polinesia Francesa — especialmente Bora Bora — inventó el concepto de bungalow sobre el agua que ha sido copiado en todo el mundo. Alojarse en una casa de techo de paja posada sobre una laguna turquesa cristalina, rodeada de arrecifes de coral, se considera una de las experiencias de viaje definitivas del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Polinesia Francesa tiene una población de aproximadamente 280K."
+                      "icon": "palette",
+                      "title": "El Paraíso de Gauguin",
+                      "description": "El artista postimpresionista francés Paul Gauguin se mudó a Tahití en 1891, inspirado por la vida, los colores y la cultura polinesios. Sus vibrantes pinturas de personas y paisajes tahitianos son algunas de las obras de arte más reconocibles del mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Polinesia Francesa es Papeetē."
+                      "icon": "anchor",
+                      "title": "118 Islas",
+                      "description": "La Polinesia Francesa comprende 118 islas y atolones dispersos en un área oceánica del tamaño de Europa — pero la superficie terrestre total es más pequeña que el estado de Rhode Island de EE.UU. Cada grupo de islas tiene su propio carácter y cultura distintos."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "Meca del Surf",
+                      "description": "Teahupo'o en Tahití es considerada una de las rompientes de surf más peligrosas y espectaculares del mundo — una ola masiva y hueca que rompe sobre un arrecife de coral afilado en aguas muy poco profundas. Surfistas profesionales de todo el mundo vienen a desafiarla."
                   }
               ]
           }
@@ -5039,44 +5089,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Guam",
               "capital": "Hagåtña",
-              "flagDescription": "The flag of Guam.",
+              "flagDescription": "Guam's flag has a deep blue background with a thin red border and the territory seal in the center: an oval scene showing a proa (traditional sailing canoe) gliding across Agana Bay, with a beach and palm tree on the right, and the word GUAM in red on a white banner below. The proa represents the ancient Chamorro seafaring culture that has lived on this island for over 4,000 years.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Guam",
-                      "description": "Guam is a country in Micronesia."
+                      "icon": "history",
+                      "title": "Ancient Chamorro Culture",
+                      "description": "The Chamorro people have lived on Guam for over 4,000 years. They built remarkable stone pillars called latte stones — used as foundations for high-status houses — that still stand today as powerful symbols of Chamorro heritage and resilience."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Guam has a population of approximately 154K."
+                      "icon": "anchor",
+                      "title": "Strategic Pacific Hub",
+                      "description": "Guam is a US territory and a critical military hub in the Pacific, home to major US Air Force and Navy bases. Its strategic location — roughly equidistant between Hawaii and the Philippines — has made it militarily significant since the 19th century."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Guam is Hagåtña."
+                      "icon": "waves",
+                      "title": "Typhoon Alley",
+                      "description": "Guam sits in one of the most typhoon-prone areas in the world. The island is frequently hit by powerful tropical storms, and Chamorros have developed deep resilience and strong community bonds through centuries of recovering and rebuilding together."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Fiesta Culture",
+                      "description": "Fiestas — community celebrations honoring patron saints — are the heart of Chamorro social life. Every village has its own patron saint and hosts an annual fiesta with traditional food (especially red rice and barbecue), music, dancing, and games for everyone."
                   }
               ]
           },
           "es": {
               "name": "Guam",
               "capital": "Hagåtña",
-              "flagDescription": "La bandera de Guam.",
+              "flagDescription": "La bandera de Guam tiene un fondo azul intenso con un delgado borde rojo y el sello del territorio en el centro: una escena oval que muestra una proa (canoa de vela tradicional) deslizándose por la Bahía de Agana, con una playa y una palmera a la derecha, y la palabra GUAM en rojo sobre un banner blanco abajo. La proa representa la antigua cultura marinera chamorra que ha vivido en esta isla durante más de 4.000 años.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Guam",
-                      "description": "Guam es un país en Micronesia."
+                      "icon": "history",
+                      "title": "Antigua Cultura Chamorra",
+                      "description": "El pueblo chamorro ha vivido en Guam durante más de 4.000 años. Construyeron notables pilares de piedra llamados piedras latte — usados como cimientos para casas de alto estatus — que aún permanecen en pie hoy como poderosos símbolos del patrimonio y la resiliencia chamorra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Guam tiene una población de aproximadamente 154K."
+                      "icon": "anchor",
+                      "title": "Centro Estratégico del Pacífico",
+                      "description": "Guam es un territorio de EE.UU. y un centro militar crítico en el Pacífico, hogar de importantes bases de la Fuerza Aérea y la Marina de EE.UU. Su ubicación estratégica — aproximadamente equidistante entre Hawái y Filipinas — lo ha hecho militarmente significativo desde el siglo XIX."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Guam es Hagåtña."
+                      "icon": "waves",
+                      "title": "El Callejón de los Tifones",
+                      "description": "Guam se encuentra en una de las zonas más propensas a tifones del mundo. La isla es frecuentemente azotada por poderosas tormentas tropicales, y los chamorros han desarrollado una profunda resiliencia y fuertes lazos comunitarios a través de siglos de recuperación y reconstrucción juntos."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Cultura de la Fiesta",
+                      "description": "Las fiestas — celebraciones comunitarias en honor a los santos patronos — son el corazón de la vida social chamorra. Cada pueblo tiene su propio santo patrón y organiza una fiesta anual con comida tradicional (especialmente arroz rojo y barbacoa), música, baile y juegos para todos."
                   }
               ]
           }
@@ -6537,44 +6597,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Kiribati",
               "capital": "South Tarawa",
-              "flagDescription": "The flag of Kiribati.",
+              "flagDescription": "Kiribati's flag has a red upper half showing a yellow frigate bird in flight above a rising golden sun with 17 rays, representing the 17 Gilbert Islands. The lower half has three wavy horizontal stripes of blue and white, symbolizing the Pacific Ocean. The frigate bird is a symbol of power, freedom, and the seafaring spirit of the Kiribati people.",
               "funFacts": [
                   {
                       "icon": "public",
-                      "title": "About Kiribati",
-                      "description": "Kiribati is a country in Micronesia."
+                      "title": "First Country to See the New Year",
+                      "description": "Kiribati straddles both the International Date Line and the Equator, making it the first country in the world to ring in each New Year. The island of Kiritimati (Christmas Island) was specifically repositioned on the date line side to ensure this distinction."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Kiribati has a population of approximately 121K."
+                      "icon": "waves",
+                      "title": "Climate Change Frontline",
+                      "description": "Kiribati is one of the countries most threatened by rising sea levels due to climate change. Most of its islands rise only 2–3 meters above sea level, and the government has purchased land in Fiji as a potential refuge for its 120,000 citizens."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Kiribati is South Tarawa."
+                      "icon": "history",
+                      "title": "WWII Battlegrounds",
+                      "description": "The Battle of Tarawa in 1943 was one of the most intense battles of the Pacific War, with fierce fighting between US Marines and Japanese defenders. The 76-hour battle on a tiny atoll cost over 6,000 lives. Memorials and WWII relics can still be found on the islands."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Scattered Nation",
+                      "description": "Kiribati consists of 33 islands scattered across an ocean area as large as the continental United States. The total land area is only 811 km², but the distance from the westernmost to the easternmost island is over 4,000 km."
                   }
               ]
           },
           "es": {
               "name": "Kiribati",
-              "capital": "South Tarawa",
-              "flagDescription": "La bandera de Kiribati.",
+              "capital": "Tarawa del Sur",
+              "flagDescription": "La bandera de Kiribati tiene una mitad superior roja que muestra un ave fragata amarilla en vuelo sobre un sol dorado naciente con 17 rayos, que representan las 17 Islas Gilbert. La mitad inferior tiene tres franjas horizontales onduladas de azul y blanco, que simbolizan el Océano Pacífico. El ave fragata es un símbolo de poder, libertad y el espíritu marinero del pueblo de Kiribati.",
               "funFacts": [
                   {
                       "icon": "public",
-                      "title": "Sobre Kiribati",
-                      "description": "Kiribati es un país en Micronesia."
+                      "title": "El Primer País en Ver el Año Nuevo",
+                      "description": "Kiribati atraviesa tanto la Línea Internacional de Cambio de Fecha como el Ecuador, lo que lo convierte en el primer país del mundo en recibir cada Año Nuevo. La isla de Kiritimati (Isla de Navidad) fue específicamente reposicionada en el lado de la línea de fecha para garantizar esta distinción."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Kiribati tiene una población de aproximadamente 121K."
+                      "icon": "waves",
+                      "title": "Línea del Frente del Cambio Climático",
+                      "description": "Kiribati es uno de los países más amenazados por el aumento del nivel del mar debido al cambio climático. La mayoría de sus islas solo se elevan 2-3 metros sobre el nivel del mar, y el gobierno ha comprado tierras en Fiyi como posible refugio para sus 120.000 ciudadanos."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Kiribati es South Tarawa."
+                      "icon": "history",
+                      "title": "Campos de Batalla de la Segunda Guerra Mundial",
+                      "description": "La Batalla de Tarawa en 1943 fue una de las batallas más intensas de la Guerra del Pacífico, con feroces combates entre marines estadounidenses y defensores japoneses. La batalla de 76 horas en un diminuto atolón costó más de 6.000 vidas. Monumentos y reliquias de la Segunda Guerra Mundial aún se pueden encontrar en las islas."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Nación Dispersa",
+                      "description": "Kiribati consiste en 33 islas dispersas en un área oceánica tan grande como los Estados Unidos continentales. La superficie terrestre total es solo 811 km², pero la distancia desde la isla más occidental hasta la más oriental es de más de 4.000 km."
                   }
               ]
           }
@@ -6653,44 +6723,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Kuwait",
               "capital": "Kuwait City",
-              "flagDescription": "The flag of Kuwait.",
+              "flagDescription": "Kuwait's flag has three equal horizontal stripes of green, white, and red, with a black trapezoid on the left (hoist) side. The colors are Pan-Arab colors used across many Arab nations: green represents the fertile lands and Islam, white stands for peace and purity, red symbolizes the blood of enemies on the sword, and black represents the defeat of enemies.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Kuwait",
-                      "description": "Kuwait is a country in Western Asia."
+                      "icon": "oil_barrel",
+                      "title": "Ocean of Oil",
+                      "description": "Kuwait sits atop one of the world's largest oil reserves. Oil was discovered in 1938, and within decades transformed Kuwait from a small pearl-diving and trading port into one of the wealthiest countries on Earth per capita."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Kuwait has a population of approximately 4.9M."
+                      "icon": "architecture",
+                      "title": "Kuwait Towers",
+                      "description": "The iconic Kuwait Towers — three elegant minaret-shaped towers overlooking the Arabian Gulf — are a symbol of modern Kuwait. The largest contains a revolving restaurant with panoramic views and was built to store water for the city."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Kuwait is Kuwait City."
+                      "icon": "wb_sunny",
+                      "title": "Extreme Heat",
+                      "description": "Kuwait regularly records some of the highest temperatures on Earth. In summer, temperatures can exceed 50°C (122°F). Life largely moves indoors during the peak heat hours, and virtually everything is air-conditioned."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Pearl Diving Heritage",
+                      "description": "Before oil, Kuwait's economy was built on pearl diving and trade. Kuwaiti divers were renowned throughout the Gulf for their skill and bravery, diving to depths of 40 meters. The tradition is honored in museums and cultural festivals today."
                   }
               ]
           },
           "es": {
               "name": "Kuwait",
               "capital": "Ciudad de Kuwait",
-              "flagDescription": "La bandera de Kuwait tiene tres franjas horizontales iguales de verde, blanco y rojo con un trapecio negro en el lado izquierdo. El verde representa la vegetación, el blanco representa la paz, el rojo representa la fortaleza, y el negro representa las masas de petróleo del país.",
+              "flagDescription": "La bandera de Kuwait tiene tres franjas horizontales iguales de verde, blanco y rojo, con un trapecio negro en el lado izquierdo (asta). Los colores son colores pan-árabes usados en muchas naciones árabes: el verde representa las tierras fértiles y el Islam, el blanco significa paz y pureza, el rojo simboliza la sangre de los enemigos en la espada, y el negro representa la derrota de los enemigos.",
               "funFacts": [
                   {
-                      "icon": "oil",
-                      "title": "Riqueza petrolera",
-                      "description": "Kuwait tiene las terceras reservas de petróleo más grandes del mundo. El petróleo ha transformado a Kuwait de un pequeño puerto comercial en un moderna nación próspera."
+                      "icon": "oil_barrel",
+                      "title": "Océano de Petróleo",
+                      "description": "Kuwait se asienta sobre una de las mayores reservas de petróleo del mundo. El petróleo se descubrió en 1938 y en pocas décadas transformó a Kuwait de un pequeño puerto de buceo de perlas y comercio en uno de los países más ricos de la Tierra per cápita."
                   },
                   {
                       "icon": "architecture",
-                      "title": "Torre de la Liberación",
-                      "description": "La Torre de la Liberación es un símbolo de la resiliencia de Kuwait, reconstruida después de la Guerra del Golfo de 1991. La torre ofrece vistas 360 grados de la ciudad desde sus pisos de observación."
+                      "title": "Torres de Kuwait",
+                      "description": "Las icónicas Torres de Kuwait — tres elegantes torres en forma de minarete con vistas al Golfo Arábigo — son un símbolo de la Kuwait moderna. La más grande contiene un restaurante giratorio con vistas panorámicas y fue construida para almacenar agua para la ciudad."
                   },
                   {
-                      "icon": "desert",
-                      "title": "Desierto kuwaití",
-                      "description": "El desierto de Kuwait es árido y extremadamente caliente, con temperaturas que pueden superar los 50°C. A pesar de esto, la vida silvestre del desierto como el oryx árabe ha evolucionado para sobrevivir en este ambiente hostil."
+                      "icon": "wb_sunny",
+                      "title": "Calor Extremo",
+                      "description": "Kuwait registra regularmente algunas de las temperaturas más altas de la Tierra. En verano, las temperaturas pueden superar los 50°C. La vida se traslada principalmente a interiores durante las horas de mayor calor, y prácticamente todo está climatizado."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Herencia del Buceo de Perlas",
+                      "description": "Antes del petróleo, la economía de Kuwait se basaba en el buceo de perlas y el comercio. Los buzos kuwaitíes eran reconocidos en todo el Golfo por su habilidad y valentía, buceando a profundidades de 40 metros. La tradición se honra en museos y festivales culturales hoy en día."
                   }
               ]
           }
@@ -7657,44 +7737,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Marshall Islands",
               "capital": "Majuro",
-              "flagDescription": "The flag of Marshall Islands.",
+              "flagDescription": "The Marshall Islands flag has a blue background with two diagonal stripes of orange and white rising from the lower left to the upper right. A large white star with 24 points sits in the upper hoist corner. The blue represents the Pacific Ocean, the stripes symbolize the two main island chains (Ratak and Ralik, meaning Sunrise and Sunset), and the star's points represent the 24 municipalities.",
               "funFacts": [
                   {
+                      "icon": "history",
+                      "title": "Nuclear Testing Legacy",
+                      "description": "The Marshall Islands was the site of 67 US nuclear tests between 1946 and 1958, including the massive Bikini Atoll tests. The nuclear legacy caused significant environmental damage and health issues for islanders, and the affected atolls remain too radioactive to inhabit today."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Stick Chart Navigation",
+                      "description": "Ancient Marshallese navigators used stick charts — intricate maps made of sticks and shells representing wave patterns and island positions — to navigate the open ocean. This sophisticated navigation system allowed them to voyage hundreds of miles without any modern instruments."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Atoll Nation",
+                      "description": "The Marshall Islands consists entirely of coral atolls and reef islands — 1,156 individual islands and islets spread across 29 atolls. No point in the country is more than a few meters above sea level, making it one of the most vulnerable nations to sea level rise."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Marshall Islands",
-                      "description": "Marshall Islands is a country in Micronesia."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Marshall Islands has a population of approximately 42K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Marshall Islands is Majuro."
+                      "title": "Free Association with the USA",
+                      "description": "The Marshall Islands is in free association with the United States, which provides defense and financial assistance in exchange for the right to maintain military bases. Marshallese citizens can live and work in the US without a visa."
                   }
               ]
           },
           "es": {
               "name": "Islas Marshall",
               "capital": "Majuro",
-              "flagDescription": "La bandera de Islas Marshall.",
+              "flagDescription": "La bandera de las Islas Marshall tiene un fondo azul con dos franjas diagonales de naranja y blanco que suben desde la parte inferior izquierda hasta la parte superior derecha. Una gran estrella blanca con 24 puntas se asienta en la esquina superior izquierda. El azul representa el Océano Pacífico, las franjas simbolizan las dos cadenas de islas principales (Ratak y Ralik, que significan Amanecer y Atardecer), y las puntas de la estrella representan los 24 municipios.",
               "funFacts": [
                   {
+                      "icon": "history",
+                      "title": "Legado de las Pruebas Nucleares",
+                      "description": "Las Islas Marshall fue el sitio de 67 pruebas nucleares estadounidenses entre 1946 y 1958, incluidas las masivas pruebas del Atolón Bikini. El legado nuclear causó daños ambientales significativos y problemas de salud para los isleños, y los atolones afectados siguen siendo demasiado radiactivos para habitarlos hoy."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Navegación con Cartas de Palos",
+                      "description": "Los antiguos navegantes marshaleses usaban cartas de palos — mapas intrincados hechos de palos y conchas que representan patrones de olas y posiciones de islas — para navegar por el océano abierto. Este sofisticado sistema de navegación les permitía viajar cientos de millas sin ningún instrumento moderno."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Nación de Atolones",
+                      "description": "Las Islas Marshall consisten enteramente en atolones de coral e islas de arrecife — 1.156 islas e islotes individuales dispersos en 29 atolones. Ningún punto del país está a más de unos pocos metros sobre el nivel del mar, lo que lo convierte en una de las naciones más vulnerables al aumento del nivel del mar."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Islas Marshall",
-                      "description": "Islas Marshall es un país en Micronesia."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Marshall tiene una población de aproximadamente 42K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Marshall es Majuro."
+                      "title": "Libre Asociación con EE.UU.",
+                      "description": "Las Islas Marshall están en libre asociación con los Estados Unidos, que proporciona defensa y asistencia financiera a cambio del derecho a mantener bases militares. Los ciudadanos marshaleses pueden vivir y trabajar en EE.UU. sin visado."
                   }
               ]
           }
@@ -7995,44 +8085,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Micronesia",
               "capital": "Palikir",
-              "flagDescription": "The flag of Micronesia.",
+              "flagDescription": "The Federated States of Micronesia's flag is a sky blue background with four white five-pointed stars arranged in a diamond pattern in the center. The blue represents the Pacific Ocean, and the four stars represent the four federated states: Chuuk, Pohnpei, Kosrae, and Yap. The original flag had just one star when the federation was formed in 1965, with more added as states joined.",
               "funFacts": [
                   {
+                      "icon": "anchor",
+                      "title": "Nan Madol: City in the Sea",
+                      "description": "Nan Madol is one of the most mysterious archaeological sites in the Pacific — an ancient city built on a coral reef, with 92 man-made islets connected by canals. Built around 1200 AD, this remarkable stone city is sometimes called the Venice of the Pacific and is a UNESCO World Heritage Site."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Chuuk Lagoon Wrecks",
+                      "description": "Chuuk Lagoon is considered the world's greatest wreck diving site. In 1944, the US Navy sank 60 Japanese ships in a single surprise attack (Operation Hailstone). Today those ships rest at the bottom of the lagoon, covered in coral and teeming with fish."
+                  },
+                  {
+                      "icon": "payments",
+                      "title": "Stone Money",
+                      "description": "The island of Yap is famous for its rai — giant stone discs up to 4 meters in diameter used as currency. Even when a stone sinks to the bottom of the ocean, everyone knows who owns it, and it still holds value. It's one of the most unusual monetary systems ever devised."
+                  },
+                  {
                       "icon": "public",
-                      "title": "About Micronesia",
-                      "description": "Micronesia is a country in Micronesia."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Micronesia has a population of approximately 106K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Micronesia is Palikir."
+                      "title": "Free Association with the USA",
+                      "description": "Micronesia is in free association with the United States. Micronesians can freely enter, live, and work in the US without a visa. The US provides extensive financial aid and defense commitments in return."
                   }
               ]
           },
           "es": {
               "name": "Micronesia",
               "capital": "Palikir",
-              "flagDescription": "La bandera de Micronesia.",
+              "flagDescription": "La bandera de los Estados Federados de Micronesia tiene un fondo azul cielo con cuatro estrellas blancas de cinco puntas dispuestas en forma de diamante en el centro. El azul representa el Océano Pacífico, y las cuatro estrellas representan los cuatro estados federados: Chuuk, Pohnpei, Kosrae y Yap. La bandera original tenía solo una estrella cuando se formó la federación en 1965, añadiéndose más a medida que los estados se unían.",
               "funFacts": [
                   {
+                      "icon": "anchor",
+                      "title": "Nan Madol: Ciudad en el Mar",
+                      "description": "Nan Madol es uno de los sitios arqueológicos más misteriosos del Pacífico — una ciudad antigua construida sobre un arrecife de coral, con 92 islotes artificiales conectados por canales. Construida alrededor del año 1200 d.C., esta notable ciudad de piedra es a veces llamada la Venecia del Pacífico y es Patrimonio de la Humanidad por la UNESCO."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Los Naufragios de la Laguna de Chuuk",
+                      "description": "La Laguna de Chuuk es considerada el mejor sitio de buceo en naufragios del mundo. En 1944, la Marina de EE.UU. hundió 60 barcos japoneses en un único ataque sorpresa (Operación Hailstone). Hoy esos barcos descansan en el fondo de la laguna, cubiertos de coral y repletos de peces."
+                  },
+                  {
+                      "icon": "payments",
+                      "title": "Dinero de Piedra",
+                      "description": "La isla de Yap es famosa por sus rai — enormes discos de piedra de hasta 4 metros de diámetro usados como moneda. Incluso cuando una piedra se hunde al fondo del océano, todos saben quién es el dueño, y sigue teniendo valor. Es uno de los sistemas monetarios más inusuales jamás ideados."
+                  },
+                  {
                       "icon": "public",
-                      "title": "Sobre Micronesia",
-                      "description": "Micronesia es un país en Micronesia."
-                  },
-                  {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Micronesia tiene una población de aproximadamente 106K."
-                  },
-                  {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Micronesia es Palikir."
+                      "title": "Libre Asociación con EE.UU.",
+                      "description": "Micronesia está en libre asociación con los Estados Unidos. Los micronesios pueden entrar, vivir y trabajar libremente en EE.UU. sin visado. EE.UU. proporciona amplia ayuda financiera y compromisos de defensa a cambio."
                   }
               ]
           }
@@ -8565,44 +8665,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Nauru",
               "capital": "Yaren",
-              "flagDescription": "The flag of Nauru.",
+              "flagDescription": "Nauru's flag has a blue background representing the Pacific Ocean, with a thin gold horizontal stripe across the middle representing the Equator — Nauru lies just south of it. A large white 12-pointed star sits just below the gold stripe on the left, representing Nauru's 12 original tribes. The flag's design is essentially a map: the star shows Nauru's position south of the Equator in the Pacific.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Nauru",
-                      "description": "Nauru is a country in Micronesia."
+                      "icon": "landscape",
+                      "title": "Boom and Bust",
+                      "description": "In the 1980s, Nauru became one of the richest countries in the world per capita thanks to massive phosphate deposits (ancient bird droppings). The country bought luxury hotels and an aircraft fleet. Then the phosphate ran out, and by the 2000s Nauru became one of the poorest."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Nauru has a population of approximately 12K."
+                      "icon": "anchor",
+                      "title": "World's Smallest Republic",
+                      "description": "Nauru is the world's smallest republic — just 21 km² — and one of the only island nations in the world with no official capital city. Government operations are spread across the island rather than centered in one place."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Nauru is Yaren."
+                      "icon": "sports",
+                      "title": "Weightlifting Champions",
+                      "description": "Despite its tiny size, Nauru has produced many world-class weightlifters. Nauruan weightlifters have won numerous Commonwealth Games gold medals, and the sport is deeply popular on the island."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Freshwater Crisis",
+                      "description": "Nauru has no rivers, streams, or natural freshwater lakes. Drinking water comes entirely from rainwater catchment and desalination. Climate change-driven droughts and population growth make water security a critical challenge for the island."
                   }
               ]
           },
           "es": {
               "name": "Nauru",
               "capital": "Yaren",
-              "flagDescription": "La bandera de Nauru.",
+              "flagDescription": "La bandera de Nauru tiene un fondo azul que representa el Océano Pacífico, con una delgada franja horizontal dorada en el medio que representa el Ecuador — Nauru está justo al sur. Una gran estrella blanca de 12 puntas se asienta justo debajo de la franja dorada a la izquierda, que representa las 12 tribus originales de Nauru. El diseño de la bandera es esencialmente un mapa: la estrella muestra la posición de Nauru al sur del Ecuador en el Pacífico.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Nauru",
-                      "description": "Nauru es un país en Micronesia."
+                      "icon": "landscape",
+                      "title": "Auge y Caída",
+                      "description": "En la década de 1980, Nauru se convirtió en uno de los países más ricos del mundo per cápita gracias a los masivos depósitos de fosfato (excrementos de aves antiguas). El país compró hoteles de lujo y una flota de aviones. Luego se agotó el fosfato, y para la década de 2000 Nauru se convirtió en uno de los más pobres."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Nauru tiene una población de aproximadamente 12K."
+                      "icon": "anchor",
+                      "title": "La República Más Pequeña del Mundo",
+                      "description": "Nauru es la república más pequeña del mundo — solo 21 km² — y una de las pocas naciones insulares del mundo sin una ciudad capital oficial. Las operaciones gubernamentales están distribuidas por toda la isla en lugar de concentrarse en un solo lugar."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nauru es Yaren."
+                      "icon": "sports",
+                      "title": "Campeones de Halterofilia",
+                      "description": "A pesar de su pequeño tamaño, Nauru ha producido muchos levantadores de pesas de clase mundial. Los levantadores de pesas nauruanos han ganado numerosas medallas de oro en los Juegos de la Mancomunidad, y el deporte es muy popular en la isla."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Crisis de Agua Dulce",
+                      "description": "Nauru no tiene ríos, arroyos ni lagos naturales de agua dulce. El agua potable proviene enteramente de la captación de agua de lluvia y la desalinización. Las sequías impulsadas por el cambio climático y el crecimiento de la población hacen que la seguridad del agua sea un desafío crítico para la isla."
                   }
               ]
           }
@@ -8724,44 +8834,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "New Caledonia",
               "capital": "Nouméa",
-              "flagDescription": "The flag of New Caledonia.",
+              "flagDescription": "New Caledonia is a French special collectivity and officially uses the French tricolor (blue, white, red). However, the indigenous Kanak people use their own flag: a horizontal tricolor of blue, red, and green with a yellow disc (representing the sun) and a vertical black band on the left bearing a flèche faîtière — a traditional Kanak arrow used as a totem symbol. Both flags are seen across the territory.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About New Caledonia",
-                      "description": "New Caledonia is a country in Melanesia."
+                      "icon": "landscape",
+                      "title": "Lagoon UNESCO Wonder",
+                      "description": "New Caledonia's lagoon is the second largest coral reef lagoon in the world, after Australia's Great Barrier Reef. It is a UNESCO World Heritage Site and protects an extraordinary diversity of sea life, including dugongs, sea turtles, and hundreds of species of coral."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "New Caledonia has a population of approximately 265K."
+                      "icon": "factory",
+                      "title": "Nickel Powerhouse",
+                      "description": "New Caledonia has about 25% of the world's known nickel reserves — a metal critical for stainless steel and electric vehicle batteries. Nickel mining has shaped the island's economy and landscape for over a century."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of New Caledonia is Nouméa."
+                      "icon": "forest",
+                      "title": "Unique Biodiversity",
+                      "description": "New Caledonia is a biodiversity hotspot. It is home to the world's only known carnivorous plant in the sundew family that grows as a shrub, and over 3,000 plant species — 75% of them found nowhere else on Earth."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Kanak Culture",
+                      "description": "The indigenous Kanak people have one of the richest traditional cultures in the Pacific, with intricate wood carving, tapa cloth weaving, and a complex system of ceremonial exchange called the coutume that governs social relationships and marks important life events."
                   }
               ]
           },
           "es": {
               "name": "Nueva Caledonia",
-              "capital": "Nouméa",
-              "flagDescription": "La bandera de Nueva Caledonia.",
+              "capital": "Numea",
+              "flagDescription": "Nueva Caledonia es una colectividad especial francesa y usa oficialmente el tricolor francés (azul, blanco, rojo). Sin embargo, el pueblo indígena Kanak usa su propia bandera: un tricolor horizontal de azul, rojo y verde con un disco amarillo (que representa el sol) y una banda negra vertical a la izquierda con una flèche faîtière — una flecha tradicional Kanak usada como símbolo totémico. Ambas banderas se ven en todo el territorio.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Nueva Caledonia",
-                      "description": "Nueva Caledonia es un país en Melanesia."
+                      "icon": "landscape",
+                      "title": "Laguna Maravilla de la UNESCO",
+                      "description": "La laguna de Nueva Caledonia es la segunda laguna de arrecife de coral más grande del mundo, después de la Gran Barrera de Coral de Australia. Es Patrimonio de la Humanidad por la UNESCO y protege una extraordinaria diversidad de vida marina, incluidos dugongos, tortugas marinas y cientos de especies de coral."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Nueva Caledonia tiene una población de aproximadamente 265K."
+                      "icon": "factory",
+                      "title": "Potencia del Níquel",
+                      "description": "Nueva Caledonia tiene alrededor del 25% de las reservas conocidas de níquel del mundo — un metal crítico para el acero inoxidable y las baterías de vehículos eléctricos. La minería del níquel ha dado forma a la economía y el paisaje de la isla durante más de un siglo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nueva Caledonia es Nouméa."
+                      "icon": "forest",
+                      "title": "Biodiversidad Única",
+                      "description": "Nueva Caledonia es un punto caliente de biodiversidad. Es el hogar de la única planta carnívora conocida del mundo de la familia de los rocíos del sol que crece como un arbusto, y más de 3.000 especies de plantas — el 75% de ellas no se encuentran en ningún otro lugar de la Tierra."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Cultura Kanak",
+                      "description": "El pueblo indígena Kanak tiene una de las culturas tradicionales más ricas del Pacífico, con intrincada talla en madera, tejido de tapa y un complejo sistema de intercambio ceremonial llamado la coutume que rige las relaciones sociales y marca importantes eventos vitales."
                   }
               ]
           }
@@ -8999,44 +9119,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Niue",
               "capital": "Alofi",
-              "flagDescription": "The flag of Niue.",
+              "flagDescription": "Niue's flag has a yellow background — unusual for a Pacific island nation — with the Union Jack in the upper left corner. The Union Jack features a small yellow disc (the sun) in the center. Around the Union Jack are four yellow five-pointed stars arranged in the pattern of the Southern Cross. The yellow represents the warm friendship between Niue and New Zealand, and the sunshine that bathes the island.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Niue",
-                      "description": "Niue is a country in Polynesia."
+                      "icon": "anchor",
+                      "title": "Rock of Polynesia",
+                      "description": "Niue is sometimes called the Rock of Polynesia because it is a single raised coral island — a massive rocky platform rising steeply from the ocean rather than a flat atoll. The dramatic coastal caves and chasms carved by the sea are stunning."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Niue has a population of approximately 2K."
+                      "icon": "waves",
+                      "title": "World's Smallest Self-Governing Nation",
+                      "description": "With about 1,600 people, Niue is the world's smallest self-governing state in free association with New Zealand. Many Niueans live in New Zealand — there are far more Niueans in New Zealand than on Niue itself."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Niue is Alofi."
+                      "icon": "eco",
+                      "title": "Dark Sky Reserve",
+                      "description": "Niue is one of the few places in the world certified as a Dark Sky Nation — the entire island has minimal light pollution, making it one of the best places on Earth to stargaze. The Milky Way appears brilliantly overhead on clear nights."
+                  },
+                  {
+                      "icon": "forest",
+                      "title": "Humpback Whale Nursery",
+                      "description": "Niue's crystal-clear waters are a nursery for humpback whales. Every winter, mother humpbacks bring their calves to Niue's sheltered waters to nurse and grow. Snorkeling with these gentle giants is one of the most magical wildlife experiences in the Pacific."
                   }
               ]
           },
           "es": {
               "name": "Niue",
               "capital": "Alofi",
-              "flagDescription": "La bandera de Niue.",
+              "flagDescription": "La bandera de Niue tiene un fondo amarillo — inusual para una nación insular del Pacífico — con la Union Jack en la esquina superior izquierda. La Union Jack tiene un pequeño disco amarillo (el sol) en el centro. Alrededor de la Union Jack hay cuatro estrellas amarillas de cinco puntas dispuestas en el patrón de la Cruz del Sur. El amarillo representa la cálida amistad entre Niue y Nueva Zelanda, y el sol que baña la isla.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Niue",
-                      "description": "Niue es un país en Polynesia."
+                      "icon": "anchor",
+                      "title": "La Roca de la Polinesia",
+                      "description": "Niue es a veces llamada la Roca de la Polinesia porque es una única isla de coral elevada — una plataforma rocosa masiva que se eleva abruptamente desde el océano en lugar de ser un atolón plano. Las dramáticas cuevas costeras y grietas esculpidas por el mar son impresionantes."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Niue tiene una población de aproximadamente 2K."
+                      "icon": "waves",
+                      "title": "El Estado Autogobernado Más Pequeño del Mundo",
+                      "description": "Con unas 1.600 personas, Niue es el estado autogobernado más pequeño del mundo en libre asociación con Nueva Zelanda. Muchos niueanos viven en Nueva Zelanda — hay muchos más niueanos en Nueva Zelanda que en la propia Niue."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Niue es Alofi."
+                      "icon": "eco",
+                      "title": "Reserva de Cielo Oscuro",
+                      "description": "Niue es uno de los pocos lugares del mundo certificado como Nación de Cielo Oscuro — toda la isla tiene mínima contaminación lumínica, lo que la convierte en uno de los mejores lugares de la Tierra para observar las estrellas. La Vía Láctea aparece brillantemente en lo alto en las noches despejadas."
+                  },
+                  {
+                      "icon": "forest",
+                      "title": "Guardería de Ballenas Jorobadas",
+                      "description": "Las aguas cristalinas de Niue son una guardería para las ballenas jorobadas. Cada invierno, las jorobadas madres traen a sus crías a las aguas protegidas de Niue para amamantarlas y crecer. Nadar con estos gentiles gigantes es una de las experiencias de vida silvestre más mágicas del Pacífico."
                   }
               ]
           }
@@ -9052,44 +9182,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Norfolk Island",
               "capital": "Kingston",
-              "flagDescription": "The flag of Norfolk Island.",
+              "flagDescription": "Norfolk Island's flag has three vertical stripes — green, white, and green — with a Norfolk Island pine tree silhouette in the center white stripe. The Norfolk Island pine is iconic to the island — these tall, distinctive trees were used by early European navigators as landmarks visible from far out at sea, and they still dominate the island's skyline today.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Norfolk Island",
-                      "description": "Norfolk Island is a country in Australia and New Zealand."
+                      "icon": "history",
+                      "title": "Pitcairn Islanders' New Home",
+                      "description": "In 1856, the entire population of Pitcairn Island — descendants of the Bounty mutineers — was relocated to Norfolk Island. They spoke a unique Creole language (Norfuk) blending 18th-century English with Tahitian, which is still spoken today as an official language alongside English."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Norfolk Island has a population of approximately 2K."
+                      "icon": "anchor",
+                      "title": "First British Colony",
+                      "description": "Norfolk Island was one of the first British colonial settlements in the Pacific, established in 1788 at the same time as the Sydney colony. It later served as a brutal penal colony where convicts were sent as a punishment for crimes committed in Australia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Norfolk Island is Kingston."
+                      "icon": "forest",
+                      "title": "World Heritage Nature",
+                      "description": "The Norfolk Island National Park protects exceptional biodiversity, including ancient forests of Norfolk Island pine and endemic birds found nowhere else. The island sits on an underwater volcanic ridge and has remarkably rich terrestrial and marine ecosystems."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Norfuk Language",
+                      "description": "Norfuk is a unique Creole language spoken on Norfolk Island, blending 18th-century English with Tahitian. Descended from the language of the Bounty mutineers and their Tahitian companions, it is officially recognized and actively preserved by the community."
                   }
               ]
           },
           "es": {
-              "name": "Isla de Norfolk",
+              "name": "Isla Norfolk",
               "capital": "Kingston",
-              "flagDescription": "La bandera de Isla de Norfolk.",
+              "flagDescription": "La bandera de la Isla Norfolk tiene tres franjas verticales — verde, blanca y verde — con la silueta de un pino de la Isla Norfolk en el centro de la franja blanca. El pino de la Isla Norfolk es icónico para la isla — estos altos y distintivos árboles fueron usados por los primeros navegantes europeos como puntos de referencia visibles desde lejos en el mar, y todavía dominan el horizonte de la isla hoy en día.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Isla de Norfolk",
-                      "description": "Isla de Norfolk es un país en Australia and New Zealand."
+                      "icon": "history",
+                      "title": "El Nuevo Hogar de los Isleños de Pitcairn",
+                      "description": "En 1856, toda la población de la Isla Pitcairn — descendientes de los amotinados del Bounty — fue reubicada en la Isla Norfolk. Hablaban un idioma criollo único (Norfuk) que mezcla inglés del siglo XVIII con tahitiano, que todavía se habla hoy como idioma oficial junto con el inglés."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Isla de Norfolk tiene una población de aproximadamente 2K."
+                      "icon": "anchor",
+                      "title": "Primera Colonia Británica",
+                      "description": "La Isla Norfolk fue uno de los primeros asentamientos coloniales británicos en el Pacífico, establecido en 1788 al mismo tiempo que la colonia de Sídney. Más tarde sirvió como brutal colonia penal donde se enviaba a los convictos como castigo por crímenes cometidos en Australia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Isla de Norfolk es Kingston."
+                      "icon": "forest",
+                      "title": "Naturaleza Patrimonio Mundial",
+                      "description": "El Parque Nacional de la Isla Norfolk protege una biodiversidad excepcional, incluidos los bosques antiguos de pino de la Isla Norfolk y aves endémicas que no se encuentran en ningún otro lugar. La isla se asienta sobre una cresta volcánica submarina y tiene ecosistemas terrestres y marinos notablemente ricos."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Idioma Norfuk",
+                      "description": "El norfuk es un idioma criollo único hablado en la Isla Norfolk, que mezcla inglés del siglo XVIII con tahitiano. Descendiente del idioma de los amotinados del Bounty y sus compañeros tahitianos, está oficialmente reconocido y activamente preservado por la comunidad."
                   }
               ]
           }
@@ -9221,44 +9361,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Northern Mariana Islands",
               "capital": "Saipan",
-              "flagDescription": "The flag of Northern Mariana Islands.",
+              "flagDescription": "The Northern Mariana Islands flag has a blue background with a large white star in the center, surrounded by a traditional Chamorro stone latte (a stone pillar used as a house foundation) and a white mwar (flower lei) wreath. The latte stone represents the ancient Chamorro culture, and the white star represents the islands' covenant with the United States established in 1978.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Northern Mariana Islands",
-                      "description": "Northern Mariana Islands is a country in Micronesia."
+                      "icon": "history",
+                      "title": "WWII Significance",
+                      "description": "The Northern Mariana Islands, especially Saipan and Tinian, were the site of some of the most important battles of World War II in the Pacific. The US B-29 bombers that dropped atomic bombs on Japan took off from Tinian Island in 1945."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Northern Mariana Islands has a population of approximately 47K."
+                      "icon": "landscape",
+                      "title": "Saipan's Blue Waters",
+                      "description": "Saipan has a stunning lagoon with some of the clearest and most brilliantly blue water in the world. The combination of white sand beaches, calm turquoise waters, and warm tropical climate makes it a popular resort destination."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Northern Mariana Islands is Saipan."
+                      "icon": "language",
+                      "title": "Ancient Chamorro Heritage",
+                      "description": "The Chamorro people have lived on the Marianas for over 4,000 years and developed a rich culture of seafaring, weaving, and chant. Despite colonization by Spain, Germany, Japan, and the US, Chamorro culture and language have survived and are actively revitalized today."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "US Commonwealth",
+                      "description": "Unlike US territories like Guam, the Northern Mariana Islands are a US Commonwealth, giving them a slightly higher degree of self-government. All residents are US citizens, though they cannot vote in federal elections unless they move to the US mainland."
                   }
               ]
           },
           "es": {
               "name": "Islas Marianas del Norte",
-              "capital": "Saipan",
-              "flagDescription": "La bandera de Islas Marianas del Norte.",
+              "capital": "Saipán",
+              "flagDescription": "La bandera de las Islas Marianas del Norte tiene un fondo azul con una gran estrella blanca en el centro, rodeada de una piedra latte chamorra tradicional (un pilar de piedra usado como cimiento de casa) y una guirnalda de mwar (corona de flores). La piedra latte representa la antigua cultura chamorra, y la estrella blanca representa el pacto de las islas con los Estados Unidos establecido en 1978.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Marianas del Norte",
-                      "description": "Islas Marianas del Norte es un país en Micronesia."
+                      "icon": "history",
+                      "title": "Importancia en la Segunda Guerra Mundial",
+                      "description": "Las Islas Marianas del Norte, especialmente Saipán y Tinian, fueron el sitio de algunas de las batallas más importantes de la Segunda Guerra Mundial en el Pacífico. Los bombarderos B-29 de EE.UU. que lanzaron las bombas atómicas sobre Japón despegaron de la isla de Tinian en 1945."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Marianas del Norte tiene una población de aproximadamente 47K."
+                      "icon": "landscape",
+                      "title": "Las Aguas Azules de Saipán",
+                      "description": "Saipán tiene una laguna impresionante con algunas de las aguas más claras y brillantemente azules del mundo. La combinación de playas de arena blanca, aguas turquesas tranquilas y cálido clima tropical lo convierte en un popular destino turístico."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Marianas del Norte es Saipan."
+                      "icon": "language",
+                      "title": "Antigua Herencia Chamorra",
+                      "description": "El pueblo chamorro ha vivido en las Marianas durante más de 4.000 años y desarrolló una rica cultura de navegación, tejido y canto. A pesar de la colonización por España, Alemania, Japón y EE.UU., la cultura y el idioma chamorros han sobrevivido y se revitalizan activamente hoy en día."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Estado Libre Asociado de EE.UU.",
+                      "description": "A diferencia de los territorios de EE.UU. como Guam, las Islas Marianas del Norte son un Estado Libre Asociado de EE.UU., dándoles un grado ligeramente mayor de autogobierno. Todos los residentes son ciudadanos estadounidenses, aunque no pueden votar en las elecciones federales a menos que se muden al continente de EE.UU."
                   }
               ]
           }
@@ -9433,44 +9583,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Palau",
               "capital": "Ngerulmud",
-              "flagDescription": "The flag of Palau.",
+              "flagDescription": "Palau's flag is a sky blue background with a large golden circle slightly off-center towards the hoist side. The blue represents the Pacific Ocean, and the golden circle represents the moon — which holds great significance in Palauan culture as the time for many traditional activities including fishing, planting, and ceremony. The moon's position slightly off-center represents Palau positioned within the Pacific.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Palau",
-                      "description": "Palau is a country in Micronesia."
+                      "icon": "waves",
+                      "title": "Jellyfish Lake Wonder",
+                      "description": "Palau's Jellyfish Lake is one of the world's most extraordinary swimming experiences. Millions of golden jellyfish migrated into a landlocked lake thousands of years ago and evolved without predators, losing their ability to sting. Swimmers can float among them completely safely."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Palau has a population of approximately 17K."
+                      "icon": "eco",
+                      "title": "Marine Sanctuary",
+                      "description": "Palau established one of the world's first shark sanctuaries, banning commercial shark fishing entirely. The country protects its ocean as a national treasure — its waters are considered some of the most biodiverse in the world with over 700 species of coral and 1,500 species of fish."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Palau is Ngerulmud."
+                      "icon": "history",
+                      "title": "Bai Meeting Houses",
+                      "description": "Traditional Palauan culture is centered around the bai — ornate communal meeting houses with intricately painted facade panels telling the stories and legends of the community. Each bai is a work of art that encodes the community's history and values."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Rock Islands UNESCO Site",
+                      "description": "Palau's Rock Islands are a UNESCO World Heritage Site — hundreds of mushroom-shaped limestone islands covered in dense jungle, rising from turquoise lagoons. Created by millions of years of marine erosion, they are one of the most visually stunning landscapes on Earth."
                   }
               ]
           },
           "es": {
-              "name": "Palau",
+              "name": "Palaos",
               "capital": "Ngerulmud",
-              "flagDescription": "La bandera de Palau.",
+              "flagDescription": "La bandera de Palaos tiene un fondo azul cielo con un gran círculo dorado ligeramente descentrado hacia el lado del asta. El azul representa el Océano Pacífico, y el círculo dorado representa la luna — que tiene gran importancia en la cultura palauense como el momento para muchas actividades tradicionales incluida la pesca, la siembra y la ceremonia. La posición ligeramente descentrada de la luna representa a Palaos posicionado dentro del Pacífico.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Palau",
-                      "description": "Palau es un país en Micronesia."
+                      "icon": "waves",
+                      "title": "El Lago de las Medusas",
+                      "description": "El Lago de las Medusas de Palaos es una de las experiencias de natación más extraordinarias del mundo. Millones de medusas doradas migraron a un lago sin salida al mar hace miles de años y evolucionaron sin depredadores, perdiendo su capacidad de picar. Los nadadores pueden flotar entre ellas con total seguridad."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Palau tiene una población de aproximadamente 17K."
+                      "icon": "eco",
+                      "title": "Santuario Marino",
+                      "description": "Palaos estableció uno de los primeros santuarios de tiburones del mundo, prohibiendo totalmente la pesca comercial de tiburones. El país protege su océano como un tesoro nacional — sus aguas son consideradas algunas de las más biodiversas del mundo con más de 700 especies de coral y 1.500 especies de peces."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Palau es Ngerulmud."
+                      "icon": "history",
+                      "title": "Casas de Reunión Bai",
+                      "description": "La cultura palauense tradicional se centra en el bai — ornamentadas casas comunales de reunión con paneles de fachada intrincadamente pintados que cuentan las historias y leyendas de la comunidad. Cada bai es una obra de arte que codifica la historia y los valores de la comunidad."
+                  },
+                  {
+                      "icon": "anchor",
+                      "title": "Sitio UNESCO de las Islas Rocosas",
+                      "description": "Las Islas Rocosas de Palaos son Patrimonio de la Humanidad por la UNESCO — cientos de islas de piedra caliza en forma de seta cubiertas de densa selva, que se elevan de lagunas turquesas. Creadas por millones de años de erosión marina, son uno de los paisajes más visualmente impresionantes de la Tierra."
                   }
               ]
           }
@@ -9834,44 +9994,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Pitcairn Islands",
               "capital": "Adamstown",
-              "flagDescription": "The flag of Pitcairn Islands.",
+              "flagDescription": "The Pitcairn Islands flag is a British blue ensign with the territory's coat of arms on the right: a green hillside bearing an anchor (representing the HMS Bounty) and a Bible and wheelbarrow on the shield. The crest shows a Pitcairn Island bird of paradise and a Polynesian canoe. The design reflects the islands' unique heritage as a settlement founded by the Bounty mutineers.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Pitcairn Islands",
-                      "description": "Pitcairn Islands is a country in Polynesia."
+                      "icon": "history",
+                      "title": "The Bounty Mutiny",
+                      "description": "In 1789, sailors aboard HMS Bounty mutinied against Captain Bligh and sailed to Pitcairn, where they burned the Bounty and settled with their Tahitian companions. Their descendants — about 50 people — still live on the island today, making Pitcairn one of the world's most isolated communities."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Pitcairn Islands has a population of approximately 35."
+                      "icon": "anchor",
+                      "title": "Least Populated Territory",
+                      "description": "Pitcairn is the least populated territory in the world — home to about 50 people. The island has no airport and is accessible only by boat, with supply ships arriving every few months. It is one of the most remote inhabited places on Earth."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Pitcairn Islands is Adamstown."
+                      "icon": "language",
+                      "title": "Pitkern Language",
+                      "description": "Pitcairn Islanders speak Pitkern — a unique Creole language that evolved from 18th-century English and Tahitian. It was the private language of the Bounty mutineers and their Tahitian companions, and their descendants still speak it today."
+                  },
+                  {
+                      "icon": "local_post_office",
+                      "title": "Famous Postage Stamps",
+                      "description": "Despite having only 50 inhabitants, Pitcairn is famous worldwide for its beautiful, collectible postage stamps, which depict local wildlife, history, and culture. Stamp sales are one of the island's main sources of income and are treasured by collectors globally."
                   }
               ]
           },
           "es": {
               "name": "Islas Pitcairn",
               "capital": "Adamstown",
-              "flagDescription": "La bandera de Islas Pitcairn.",
+              "flagDescription": "La bandera de las Islas Pitcairn es un pabellón azul británico con el escudo de armas del territorio a la derecha: una ladera verde con un ancla (que representa el HMS Bounty) y una Biblia y una carretilla en el escudo. El cimero muestra un ave del paraíso de la Isla Pitcairn y una canoa polinesia. El diseño refleja el único patrimonio de las islas como asentamiento fundado por los amotinados del Bounty.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Pitcairn",
-                      "description": "Islas Pitcairn es un país en Polynesia."
+                      "icon": "history",
+                      "title": "El Motín del Bounty",
+                      "description": "En 1789, marineros a bordo del HMS Bounty se amotinaron contra el Capitán Bligh y navegaron a Pitcairn, donde quemaron el Bounty y se asentaron con sus compañeras tahitianas. Sus descendientes — unas 50 personas — todavía viven en la isla hoy, haciendo de Pitcairn una de las comunidades más aisladas del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Pitcairn tiene una población de aproximadamente 35."
+                      "icon": "anchor",
+                      "title": "El Territorio Menos Poblado",
+                      "description": "Pitcairn es el territorio menos poblado del mundo — hogar de unas 50 personas. La isla no tiene aeropuerto y solo es accesible en barco, con barcos de suministro que llegan cada pocos meses. Es uno de los lugares habitados más remotos de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Pitcairn es Adamstown."
+                      "icon": "language",
+                      "title": "Idioma Pitkern",
+                      "description": "Los isleños de Pitcairn hablan pitkern — un idioma criollo único que evolucionó del inglés del siglo XVIII y del tahitiano. Era el idioma privado de los amotinados del Bounty y sus compañeras tahitianas, y sus descendientes todavía lo hablan hoy en día."
+                  },
+                  {
+                      "icon": "local_post_office",
+                      "title": "Sellos Postales Famosos",
+                      "description": "A pesar de tener solo 50 habitantes, Pitcairn es famosa en todo el mundo por sus hermosos y coleccionables sellos postales, que representan la vida silvestre local, la historia y la cultura. La venta de sellos es una de las principales fuentes de ingresos de la isla y son apreciados por coleccionistas de todo el mundo."
                   }
               ]
           }
@@ -11501,44 +11671,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Solomon Islands",
               "capital": "Honiara",
-              "flagDescription": "The flag of Solomon Islands.",
+              "flagDescription": "The Solomon Islands flag has a blue lower triangle and a green upper triangle, divided by a thin yellow diagonal stripe running from the lower-left to the upper-right corner. The blue represents the surrounding sea, the green symbolizes the land, and the yellow stripe represents the sunshine. Five white five-pointed stars in the upper-left blue area represent the five main island groups of the Solomon Islands.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Solomon Islands",
-                      "description": "Solomon Islands is a country in Melanesia."
+                      "icon": "history",
+                      "title": "WWII Guadalcanal",
+                      "description": "The Solomon Islands, especially Guadalcanal, was the site of one of the most pivotal and brutal campaigns of World War II in the Pacific. The six-month Guadalcanal Campaign (1942–43) was the first major Allied offensive against Japan and marked a turning point in the war."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Solomon Islands has a population of approximately 750K."
+                      "icon": "forest",
+                      "title": "Ancient Rainforests",
+                      "description": "The Solomon Islands has some of the most biodiverse and ancient rainforests in the Pacific. These forests are home to hundreds of endemic species, including spectacular butterflies, unique birds of paradise, and extraordinary insects found nowhere else on Earth."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Solomon Islands is Honiara."
+                      "icon": "anchor",
+                      "title": "Skull Island Legends",
+                      "description": "The people of Skull Island (Nggatokae) in the New Georgia group once practiced head-taking, using skulls to decorate their canoe houses. The warrior tradition was connected to spiritual beliefs, and the impressive stone fortresses and canoe houses of the island are still visible today."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Marovo Lagoon",
+                      "description": "Marovo Lagoon is one of the largest saltwater lagoons in the world and a UNESCO-listed area of outstanding natural beauty. Its extraordinary marine biodiversity, pristine coral reefs, and traditional islander communities make it a destination of global significance."
                   }
               ]
           },
           "es": {
               "name": "Islas Salomón",
               "capital": "Honiara",
-              "flagDescription": "La bandera de Islas Salomón.",
+              "flagDescription": "La bandera de las Islas Salomón tiene un triángulo inferior azul y un triángulo superior verde, divididos por una delgada franja diagonal amarilla que va de la esquina inferior izquierda a la superior derecha. El azul representa el mar circundante, el verde simboliza la tierra, y la franja amarilla representa el sol. Cinco estrellas blancas de cinco puntas en el área azul superior izquierda representan los cinco grupos de islas principales de las Islas Salomón.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Islas Salomón",
-                      "description": "Islas Salomón es un país en Melanesia."
+                      "icon": "history",
+                      "title": "Guadalcanal en la Segunda Guerra Mundial",
+                      "description": "Las Islas Salomón, especialmente Guadalcanal, fue el sitio de una de las campañas más decisivas y brutales de la Segunda Guerra Mundial en el Pacífico. La Campaña de Guadalcanal de seis meses (1942-43) fue la primera gran ofensiva aliada contra Japón y marcó un punto de inflexión en la guerra."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Salomón tiene una población de aproximadamente 750K."
+                      "icon": "forest",
+                      "title": "Selvas Tropicales Antiguas",
+                      "description": "Las Islas Salomón tiene algunas de las selvas tropicales más biodiversas y antiguas del Pacífico. Estos bosques albergan cientos de especies endémicas, incluidas mariposas espectaculares, aves del paraíso únicas e insectos extraordinarios que no se encuentran en ningún otro lugar de la Tierra."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Salomón es Honiara."
+                      "icon": "anchor",
+                      "title": "Leyendas de la Isla de las Calaveras",
+                      "description": "Los habitantes de la Isla de las Calaveras (Nggatokae) en el grupo de Nueva Georgia practicaron la decapitación, usando cráneos para decorar sus casas de canoas. La tradición guerrera estaba conectada a creencias espirituales, y las impresionantes fortalezas de piedra y las casas de canoas de la isla son todavía visibles hoy en día."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Laguna Marovo",
+                      "description": "La Laguna Marovo es una de las lagunas de agua salada más grandes del mundo y un área de sobresaliente belleza natural catalogada por la UNESCO. Su extraordinaria biodiversidad marina, los arrecifes de coral prístinos y las comunidades insulares tradicionales la convierten en un destino de importancia global."
                   }
               ]
           }
@@ -12210,44 +12390,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Taiwan",
               "capital": "Taipei",
-              "flagDescription": "The flag of Taiwan.",
+              "flagDescription": "Taiwan's flag is known as the Blue Sky, White Sun, and a Wholly Red Earth. A blue canton in the upper left bears a white sun with 12 triangular rays, representing the 12 months and 12 traditional hours of the day. The red field symbolizes the blood of revolutionaries who fought for the nation's founding. Blue stands for liberty and democracy, and white for fraternity and equality.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Taiwan",
-                      "description": "Taiwan is a country in Eastern Asia."
+                      "icon": "devices",
+                      "title": "Semiconductor Superpower",
+                      "description": "Taiwan produces more than 60% of the world's semiconductors and over 90% of the most advanced chips. Companies like TSMC manufacture the tiny chips that power nearly every smartphone, computer, car, and modern device on the planet."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Taiwan has a population of approximately 23.3M."
+                      "icon": "restaurant",
+                      "title": "Night Market Culture",
+                      "description": "Taiwan's night markets are legendary — bustling outdoor food markets open late into the night serving hundreds of unique dishes. Taipei's Shilin Night Market is one of the most famous in Asia, drawing millions of visitors with dumplings, bubble tea, and stinky tofu."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Taiwan is Taipei."
+                      "icon": "landscape",
+                      "title": "Island of Beautiful Mountains",
+                      "description": "Portugal's 16th-century sailors named Taiwan Ilha Formosa — Beautiful Island — and it still lives up to the name. Taroko Gorge, with its marble cliffs and turquoise rivers, is one of Asia's most spectacular natural wonders."
+                  },
+                  {
+                      "icon": "local_library",
+                      "title": "National Palace Museum",
+                      "description": "The National Palace Museum in Taipei houses one of the world's greatest collections of Chinese art and imperial treasures — over 700,000 items spanning 8,000 years. The collection was brought from mainland China during the Chinese Civil War."
                   }
               ]
           },
           "es": {
               "name": "Taiwán",
-              "capital": "Taipei",
-              "flagDescription": "La bandera de Taiwán.",
+              "capital": "Taipéi",
+              "flagDescription": "La bandera de Taiwán es conocida como el Cielo Azul, el Sol Blanco y la Tierra Completamente Roja. Un cantón azul en la parte superior izquierda lleva un sol blanco con 12 rayos triangulares, que representan los 12 meses y las 12 horas tradicionales del día. El campo rojo simboliza la sangre de los revolucionarios que lucharon por la fundación de la nación. El azul representa la libertad y la democracia, y el blanco la fraternidad y la igualdad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Taiwán",
-                      "description": "Taiwán es un país en Eastern Asia."
+                      "icon": "devices",
+                      "title": "Superpotencia de Semiconductores",
+                      "description": "Taiwán produce más del 60% de los semiconductores del mundo y más del 90% de los chips más avanzados. Empresas como TSMC fabrican los diminutos chips que impulsan prácticamente todos los smartphones, ordenadores, coches y dispositivos modernos del planeta."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Taiwán tiene una población de aproximadamente 23.3M."
+                      "icon": "restaurant",
+                      "title": "Cultura de los Mercados Nocturnos",
+                      "description": "Los mercados nocturnos de Taiwán son legendarios — bulliciosos mercados de comida al aire libre abiertos hasta altas horas de la noche que sirven cientos de platos únicos. El Mercado Nocturno Shilin de Taipéi es uno de los más famosos de Asia, atrayendo a millones de visitantes con dumplings, té de burbujas y tofu apestoso."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Taiwán es Taipei."
+                      "icon": "landscape",
+                      "title": "Isla de Hermosas Montañas",
+                      "description": "Los marineros portugueses del siglo XVI llamaron a Taiwán Ilha Formosa — Isla Hermosa — y todavía está a la altura del nombre. La Garganta de Taroko, con sus acantilados de mármol y ríos turquesas, es una de las maravillas naturales más espectaculares de Asia."
+                  },
+                  {
+                      "icon": "local_library",
+                      "title": "Museo del Palacio Nacional",
+                      "description": "El Museo del Palacio Nacional en Taipéi alberga una de las mayores colecciones del mundo de arte chino y tesoros imperiales — más de 700.000 objetos que abarcan 8.000 años. La colección fue traída desde la China continental durante la Guerra Civil China."
                   }
               ]
           }
@@ -12528,44 +12718,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Tokelau",
               "capital": "Fakaofo",
-              "flagDescription": "The flag of Tokelau.",
+              "flagDescription": "Tokelau's flag has a blue background with a yellow Tokelau canoe (a traditional proa) in the lower-left area, and in the upper-right a yellow Southern Cross constellation. Below the cross is a yellow crescent shape representing the atoll. The blue represents the Pacific Ocean, the yellow canoe represents the traditional seafaring culture, and the Southern Cross connects Tokelau to New Zealand, which administers the territory.",
               "funFacts": [
                   {
                       "icon": "public",
-                      "title": "About Tokelau",
-                      "description": "Tokelau is a country in Polynesia."
+                      "title": "Rotating Government",
+                      "description": "Tokelau has the world's most unusual government structure — the position of its head of government (the Ulu-o-Tokelau) rotates annually among the three village councils of its three atolls. This ensures equal representation for all three communities."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Tokelau has a population of approximately 3K."
+                      "icon": "eco",
+                      "title": "100% Solar Powered",
+                      "description": "Tokelau became the first territory in the world to run entirely on solar power in 2012. All three atolls generate their electricity from solar panels and coconut oil biofuel backup, making them 100% renewable — an impressive achievement for such a tiny place."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Tokelau is Fakaofo."
+                      "icon": "anchor",
+                      "title": "No Cars, No Airport",
+                      "description": "Tokelau has no cars, no airports, no harbors, and no paved roads. The only way to reach the three atolls is by boat from Samoa (a 2-day voyage). All transport on the atolls themselves is by foot or small boat through the lagoon."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Coral Atoll Living",
+                      "description": "Tokelau's three atolls — Atafu, Nukunonu, and Fakaofo — are tiny strips of coral rising just 2–3 meters above sea level. About 1,500 people live on a total land area of just 12 km², making it one of the most densely populated territories in the Pacific."
                   }
               ]
           },
           "es": {
-              "name": "Islas Tokelau",
+              "name": "Tokelau",
               "capital": "Fakaofo",
-              "flagDescription": "La bandera de Islas Tokelau.",
+              "flagDescription": "La bandera de Tokelau tiene un fondo azul con una canoa tokelau amarilla (una proa tradicional) en la zona inferior izquierda, y en la parte superior derecha una constelación de la Cruz del Sur amarilla. Debajo de la cruz hay una forma de media luna amarilla que representa el atolón. El azul representa el Océano Pacífico, la canoa amarilla representa la cultura marinera tradicional, y la Cruz del Sur conecta a Tokelau con Nueva Zelanda, que administra el territorio.",
               "funFacts": [
                   {
                       "icon": "public",
-                      "title": "Sobre Islas Tokelau",
-                      "description": "Islas Tokelau es un país en Polynesia."
+                      "title": "Gobierno Rotatorio",
+                      "description": "Tokelau tiene la estructura de gobierno más inusual del mundo — el cargo de jefe de gobierno (el Ulu-o-Tokelau) rota anualmente entre los tres consejos de aldea de sus tres atolones. Esto garantiza una representación igualitaria para las tres comunidades."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Islas Tokelau tiene una población de aproximadamente 3K."
+                      "icon": "eco",
+                      "title": "100% Energía Solar",
+                      "description": "Tokelau se convirtió en el primer territorio del mundo en funcionar completamente con energía solar en 2012. Los tres atolones generan su electricidad a partir de paneles solares y biocombustible de aceite de coco de reserva, haciéndolos 100% renovables — un logro impresionante para un lugar tan pequeño."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Islas Tokelau es Fakaofo."
+                      "icon": "anchor",
+                      "title": "Sin Coches, Sin Aeropuerto",
+                      "description": "Tokelau no tiene coches, aeropuertos, puertos ni carreteras pavimentadas. La única forma de llegar a los tres atolones es en barco desde Samoa (un viaje de 2 días). Todo el transporte en los propios atolones es a pie o en pequeñas embarcaciones a través de la laguna."
+                  },
+                  {
+                      "icon": "waves",
+                      "title": "Vida en el Atolón de Coral",
+                      "description": "Los tres atolones de Tokelau — Atafu, Nukunonu y Fakaofo — son pequeñas franjas de coral que se elevan solo 2-3 metros sobre el nivel del mar. Aproximadamente 1.500 personas viven en una superficie terrestre total de solo 12 km², lo que lo convierte en uno de los territorios más densamente poblados del Pacífico."
                   }
               ]
           }
@@ -12919,44 +13119,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Tuvalu",
               "capital": "Funafuti",
-              "flagDescription": "The flag of Tuvalu.",
+              "flagDescription": "Tuvalu's flag has a light blue background representing the Pacific Ocean, with the Union Jack in the upper left corner. On the right side are nine golden stars arranged in the same positions as Tuvalu's nine islands on a map of the Pacific. Each star represents one of the islands (though one island, Niulakita, was sometimes not counted, which led the flag to have 8 stars at one point — a political controversy that was resolved in 1997).",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Tuvalu",
-                      "description": "Tuvalu is a country in Polynesia."
+                      "icon": "waves",
+                      "title": "Rising Sea Threat",
+                      "description": "Tuvalu faces an existential threat from rising sea levels. Most of its land is less than 2 meters above sea level, and king tides already flood parts of the main island. The government has signed an agreement with Australia to allow all Tuvaluans to migrate there if the islands become uninhabitable."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Tuvalu has a population of approximately 11K."
+                      "icon": "language",
+                      "title": "Tuvalu.tv Domain",
+                      "description": "Tuvalu owns the .tv internet domain extension and licenses it to television companies worldwide for millions of dollars per year. This income from a quirk of geography has been a significant source of funding for this tiny nation."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Tuvalu is Funafuti."
+                      "icon": "anchor",
+                      "title": "Funafuti Atoll",
+                      "description": "Funafuti Atoll is one of the strangest capitals in the world — a narrow strip of coral encircling a vast lagoon. The entire capital fits on a ribbon of land barely 20 meters wide in places, with the ocean on both sides just steps away."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Fatele Dance",
+                      "description": "The fatele is Tuvalu's traditional group dance and the heart of all celebrations. Performed by seated groups who sing while a lead dancer performs increasingly energetic movements, fatele competitions between islands are passionate affairs where the honor of entire communities is at stake."
                   }
               ]
           },
           "es": {
               "name": "Tuvalu",
               "capital": "Funafuti",
-              "flagDescription": "La bandera de Tuvalu.",
+              "flagDescription": "La bandera de Tuvalu tiene un fondo azul claro que representa el Océano Pacífico, con la Union Jack en la esquina superior izquierda. En el lado derecho hay nueve estrellas doradas dispuestas en las mismas posiciones que las nueve islas de Tuvalu en un mapa del Pacífico. Cada estrella representa una de las islas (aunque una isla, Niulakita, a veces no se contaba, lo que llevó a que la bandera tuviera 8 estrellas en un momento — una controversia política que se resolvió en 1997).",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Tuvalu",
-                      "description": "Tuvalu es un país en Polynesia."
+                      "icon": "waves",
+                      "title": "Amenaza del Mar en Ascenso",
+                      "description": "Tuvalu enfrenta una amenaza existencial del aumento del nivel del mar. La mayor parte de sus tierras está a menos de 2 metros sobre el nivel del mar, y las mareas reyes ya inundan partes de la isla principal. El gobierno ha firmado un acuerdo con Australia para permitir que todos los tuvaluanos emigren allí si las islas se vuelven inhabitables."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Tuvalu tiene una población de aproximadamente 11K."
+                      "icon": "language",
+                      "title": "El Dominio Tuvalu.tv",
+                      "description": "Tuvalu posee la extensión de dominio de internet .tv y la licencia a empresas de televisión de todo el mundo por millones de dólares al año. Este ingreso de una peculiaridad geográfica ha sido una fuente significativa de financiación para esta diminuta nación."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Tuvalu es Funafuti."
+                      "icon": "anchor",
+                      "title": "Atolón Funafuti",
+                      "description": "El Atolón Funafuti es una de las capitales más extrañas del mundo — una estrecha franja de coral que rodea una vasta laguna. Toda la capital cabe en una cinta de tierra de apenas 20 metros de ancho en algunos lugares, con el océano a ambos lados a pocos pasos."
+                  },
+                  {
+                      "icon": "celebration",
+                      "title": "Danza Fatele",
+                      "description": "El fatele es la danza grupal tradicional de Tuvalu y el corazón de todas las celebraciones. Interpretado por grupos sentados que cantan mientras un bailarín principal realiza movimientos cada vez más enérgicos, las competiciones de fatele entre islas son asuntos apasionados donde está en juego el honor de comunidades enteras."
                   }
               ]
           }
@@ -13499,44 +13709,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Vanuatu",
               "capital": "Port Vila",
-              "flagDescription": "The flag of Vanuatu.",
+              "flagDescription": "Vanuatu's flag has two equal horizontal stripes — black on top and red below — with a green triangle on the hoist side. A thin yellow border separates the triangle from the stripes, forming a Y-shape. In the black stripe sits a yellow emblem: a boar's tusk (a symbol of prosperity in ni-Vanuatu culture) with two crossed namangu ferns. The colors represent the dark soil, the blood of boars and men, and the lush greenery of the island chain.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Vanuatu",
-                      "description": "Vanuatu is a country in Melanesia."
+                      "icon": "landscape",
+                      "title": "Yasur — Most Accessible Volcano",
+                      "description": "Mount Yasur on Tanna Island is one of the world's most accessible active volcanoes. Visitors can walk to the very rim and watch the spectacular eruptions up close. It has been erupting continuously for hundreds of years and is sacred to the local Tanna people."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Vanuatu has a population of approximately 321K."
+                      "icon": "celebration",
+                      "title": "Land Diving — the Original Bungee Jump",
+                      "description": "Naghol land diving on Pentecost Island is the inspiration for modern bungee jumping. Men and boys tie vines to their ankles and jump from wooden towers up to 30 meters high — a ritual to ensure a good yam harvest and demonstrate courage."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Vanuatu is Port Vila."
+                      "icon": "language",
+                      "title": "Most Languages Per Capita",
+                      "description": "Vanuatu has more languages per capita than any other country on Earth — over 100 indigenous languages spoken by just 330,000 people. The national language, Bislama, is an English-based Creole that allows all these different linguistic groups to communicate."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Cargo Cults",
+                      "description": "Vanuatu is home to the John Frum cargo cult on Tanna Island — one of the world's most unusual religious movements. Believers expect the return of a messianic figure called John Frum, who will bring modern goods and expel Europeans. They still march with bamboo rifles on February 15 each year."
                   }
               ]
           },
           "es": {
               "name": "Vanuatu",
               "capital": "Port Vila",
-              "flagDescription": "La bandera de Vanuatu.",
+              "flagDescription": "La bandera de Vanuatu tiene dos franjas horizontales iguales — negra arriba y roja abajo — con un triángulo verde en el lado del asta. Un delgado borde amarillo separa el triángulo de las franjas, formando una forma de Y. En la franja negra hay un emblema amarillo: un colmillo de jabalí (símbolo de prosperidad en la cultura ni-vanuatu) con dos helechos namangu cruzados. Los colores representan el suelo oscuro, la sangre de los jabalíes y los hombres, y la exuberante vegetación de la cadena de islas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Vanuatu",
-                      "description": "Vanuatu es un país en Melanesia."
+                      "icon": "landscape",
+                      "title": "Yasur — El Volcán Más Accesible",
+                      "description": "El Monte Yasur en la isla de Tanna es uno de los volcanes activos más accesibles del mundo. Los visitantes pueden caminar hasta el mismo borde y observar las espectaculares erupciones de cerca. Ha estado en erupción continuamente durante cientos de años y es sagrado para el pueblo local Tanna."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Vanuatu tiene una población de aproximadamente 321K."
+                      "icon": "celebration",
+                      "title": "Salto de Tierra — El Bungee Original",
+                      "description": "El salto de tierra naghol en la isla de Pentecostés es la inspiración del moderno bungee jumping. Hombres y niños atan lianas a sus tobillos y saltan desde torres de madera de hasta 30 metros de altura — un ritual para garantizar una buena cosecha de ñame y demostrar valentía."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Vanuatu es Port Vila."
+                      "icon": "language",
+                      "title": "Más Idiomas Per Cápita",
+                      "description": "Vanuatu tiene más idiomas per cápita que cualquier otro país de la Tierra — más de 100 idiomas indígenas hablados por solo 330.000 personas. El idioma nacional, el bislama, es un criollo de base inglesa que permite que todos estos diferentes grupos lingüísticos se comuniquen."
+                  },
+                  {
+                      "icon": "history",
+                      "title": "Cultos al Cargo",
+                      "description": "Vanuatu es el hogar del culto al cargo de John Frum en la isla de Tanna — uno de los movimientos religiosos más inusuales del mundo. Los creyentes esperan el regreso de una figura mesiánica llamada John Frum, que traerá bienes modernos y expulsará a los europeos. Aún marchan con rifles de bambú el 15 de febrero de cada año."
                   }
               ]
           }
@@ -13731,44 +13951,54 @@ export const countriesData: CountryEntry[] = [
           "en": {
               "name": "Wallis and Futuna",
               "capital": "Mata-Utu",
-              "flagDescription": "The flag of Wallis and Futuna.",
+              "flagDescription": "Wallis and Futuna officially uses the French tricolor, but has an unofficial local flag with a red background and the French tricolor in the upper left corner. In the center are three small Christian crosses arranged triangularly, representing the three traditional kingdoms (Uvea, Sigave, and Alo) that make up the territory. The territory is unique in the Pacific for maintaining its traditional monarchies alongside French administration.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "About Wallis and Futuna",
-                      "description": "Wallis and Futuna is a country in Polynesia."
+                      "icon": "history",
+                      "title": "Three Living Kingdoms",
+                      "description": "Wallis and Futuna is one of the last places in the world with functioning traditional monarchies operating alongside a modern government. Three kings — the Lavelua of Uvea, the Tuigaifo of Sigave, and the Tuisigave of Alo — still hold real political authority alongside the French administration."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Population",
-                      "description": "Wallis and Futuna has a population of approximately 12K."
+                      "icon": "anchor",
+                      "title": "Remote French Territory",
+                      "description": "Wallis and Futuna is one of France's most remote territories — located in the central Pacific between Fiji and Samoa. The islands have no ATMs, limited internet, and only a few flights per week. Life moves at an unhurried island pace far from metropolitan France."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "The capital of Wallis and Futuna is Mata-Utu."
+                      "icon": "celebration",
+                      "title": "Kava Ceremonies",
+                      "description": "Kava — a mildly sedating drink made from the pounded roots of the kava plant — is central to traditional ceremonies, social gatherings, and conflict resolution in Wallis and Futuna. Kava ceremonies follow strict protocols of respect and rank."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Two Distinct Languages",
+                      "description": "Wallis (Uvea) and Futuna speak two mutually unintelligible Polynesian languages — Wallisian and Futunan — in addition to French. The two island groups are separated by 230 km of ocean and have developed distinct cultures, traditions, and languages over centuries."
                   }
               ]
           },
           "es": {
               "name": "Wallis y Futuna",
               "capital": "Mata-Utu",
-              "flagDescription": "La bandera de Wallis y Futuna.",
+              "flagDescription": "Wallis y Futuna usa oficialmente el tricolor francés, pero tiene una bandera local no oficial con fondo rojo y el tricolor francés en la esquina superior izquierda. En el centro hay tres pequeñas cruces cristianas dispuestas en triángulo, que representan los tres reinos tradicionales (Uvea, Sigave y Alo) que forman el territorio. El territorio es único en el Pacífico por mantener sus monarquías tradicionales junto a la administración francesa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Wallis y Futuna",
-                      "description": "Wallis y Futuna es un país en Polynesia."
+                      "icon": "history",
+                      "title": "Tres Reinos Vivos",
+                      "description": "Wallis y Futuna es uno de los últimos lugares del mundo con monarquías tradicionales funcionando junto a un gobierno moderno. Tres reyes — el Lavelua de Uvea, el Tuigaifo de Sigave y el Tuisigave de Alo — todavía tienen autoridad política real junto a la administración francesa."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Wallis y Futuna tiene una población de aproximadamente 12K."
+                      "icon": "anchor",
+                      "title": "Territorio Francés Remoto",
+                      "description": "Wallis y Futuna es uno de los territorios más remotos de Francia — ubicado en el Pacífico central entre Fiyi y Samoa. Las islas no tienen cajeros automáticos, internet limitado y solo unos pocos vuelos por semana. La vida transcurre a un ritmo isleño tranquilo lejos de la Francia metropolitana."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Wallis y Futuna es Mata-Utu."
+                      "icon": "celebration",
+                      "title": "Ceremonias del Kava",
+                      "description": "El kava — una bebida levemente sedante hecha de las raíces trituradas de la planta del kava — es central en las ceremonias tradicionales, reuniones sociales y resolución de conflictos en Wallis y Futuna. Las ceremonias del kava siguen estrictos protocolos de respeto y rango."
+                  },
+                  {
+                      "icon": "language",
+                      "title": "Dos Idiomas Distintos",
+                      "description": "Wallis (Uvea) y Futuna hablan dos idiomas polinesios mutuamente ininteligibles — wallisiano y futunaño — además del francés. Los dos grupos de islas están separados por 230 km de océano y han desarrollado culturas, tradiciones e idiomas distintos a lo largo de los siglos."
                   }
               ]
           }
