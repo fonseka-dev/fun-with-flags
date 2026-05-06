@@ -743,28 +743,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "wb_sunny",
                       "title": "Widest Country",
                       "description": "Australia is wider than the moon! The continent spans about 4,000 km east to west, while the moon's diameter is only 3,474 km."
+                  },
+                  {
+                      "icon": "history_edu",
+                      "title": "Ancient Aboriginal Culture",
+                      "description": "Aboriginal Australians have the oldest continuous culture on Earth — spanning at least 65,000 years. Their Dreamtime stories, rock art, and knowledge of the land are among humanity's greatest living treasures."
                   }
               ]
           },
           "es": {
               "name": "Australia",
               "capital": "Canberra",
-              "flagDescription": "La bandera de Australia.",
+              "flagDescription": "La bandera australiana presenta la Union Jack en la esquina superior izquierda — que representa los vínculos históricos con Gran Bretaña — la Estrella de la Mancomunidad de siete puntas (una por cada estado y territorio) y la constelación de la Cruz del Sur con cinco estrellas a la derecha, visible únicamente desde el hemisferio sur.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Australia",
-                      "description": "Australia es un país en Australia and New Zealand."
+                      "icon": "pets",
+                      "title": "Fauna Única",
+                      "description": "Australia es el único continente donde los marsupiales (mamíferos con bolsa) dominan. Los canguros, koalas y wombats no se encuentran en estado salvaje en ningún otro lugar del mundo."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Australia tiene una población de aproximadamente 27.5M."
+                      "icon": "waves",
+                      "title": "Gran Barrera de Coral",
+                      "description": "La Gran Barrera de Coral es el sistema de arrecifes de coral más grande del mundo: tan grande que puede verse desde el espacio. Se extiende más de 2.300 km a lo largo de la costa de Queensland."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Australia es Canberra."
+                      "icon": "wb_sunny",
+                      "title": "El País Más Ancho",
+                      "description": "¡Australia es más ancha que la Luna! El continente mide unos 4.000 km de este a oeste, mientras que el diámetro de la Luna es de solo 3.474 km."
+                  },
+                  {
+                      "icon": "history_edu",
+                      "title": "Cultura Aborigen Milenaria",
+                      "description": "Los aborígenes australianos poseen la cultura continua más antigua de la Tierra, con al menos 65.000 años de historia. Sus relatos del Tiempo del Sueño, arte rupestre y conocimiento de la tierra son de los más grandes tesoros vivos de la humanidad."
                   }
               ]
           }
@@ -4210,28 +4220,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "local_bar",
                       "title": "Kava Ceremony",
                       "description": "Kava tea, made from the powdered root of the pepper plant, is central to Fijian culture. Drinking kava in a ceremony called the 'sevusevu' is how guests are welcomed into a village."
+                  },
+                  {
+                      "icon": "scuba_diving",
+                      "title": "Coral Triangle Gateway",
+                      "description": "Fiji's waters are some of the most biodiverse on Earth, nicknamed the 'soft coral capital of the world'. Divers find over 1,500 species of fish and 400 types of coral just beneath the surface."
                   }
               ]
           },
           "es": {
               "name": "Fiyi",
               "capital": "Suva",
-              "flagDescription": "La bandera de Fiyi.",
+              "flagDescription": "La bandera de Fiyi es de color azul claro (celeste) con la Union Jack en la esquina superior izquierda y el escudo de armas de Fiyi a la derecha. El azul claro representa el Océano Pacífico que rodea las islas. El escudo de armas muestra un león británico (arriba) y caña de azúcar, palmera de coco, paloma y un racimo de plátanos.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Fiyi",
-                      "description": "Fiyi es un país en Melanesia."
+                      "icon": "anchor",
+                      "title": "333 Islas",
+                      "description": "Fiyi está formada por 333 islas y alrededor de 500 islotes en el Pacífico Sur. Unas 110 islas están habitadas de forma permanente, y la mayoría de los fiyianos viven en las dos islas principales."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Fiyi tiene una población de aproximadamente 901K."
+                      "icon": "water",
+                      "title": "La Gente Más Cálida",
+                      "description": "Fiyi es famosa por la calidez y la alegría de su gente. El saludo '¡Bula!' (que significa 'hola' y 'vida') captura el espíritu de alegría y bienvenida fiyiano."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Fiyi es Suva."
+                      "icon": "local_bar",
+                      "title": "Ceremonia del Kava",
+                      "description": "El té de kava, elaborado con la raíz en polvo de la planta de pimienta, es fundamental en la cultura fiyiana. Beber kava en una ceremonia llamada 'sevusevu' es la forma en que los huéspedes son bienvenidos en un pueblo."
+                  },
+                  {
+                      "icon": "scuba_diving",
+                      "title": "Capital Mundial del Coral Blando",
+                      "description": "Las aguas de Fiyi son de las más biodiversas de la Tierra y se les llama la 'capital mundial del coral blando'. Los buceadores encuentran más de 1.500 especies de peces y 400 tipos de coral justo bajo la superficie."
                   }
               ]
           }
@@ -8797,28 +8817,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "local_florist",
                       "title": "Tulip Capital",
                       "description": "The Netherlands is the world's largest flower exporter, selling about 12 billion tulip bulbs per year. Tulips actually originated in Turkey but became the Dutch national flower."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "Golden Age of Painting",
+                      "description": "The 17th century Dutch Golden Age produced Rembrandt and Vermeer — two of the greatest painters in history. The Rijksmuseum in Amsterdam houses thousands of these masterpieces, including Rembrandt's famous Night Watch."
                   }
               ]
           },
           "es": {
               "name": "Países Bajos",
               "capital": "Amsterdam",
-              "flagDescription": "La bandera de Países Bajos.",
+              "flagDescription": "La bandera de los Países Bajos tiene tres franjas horizontales iguales de rojo, blanco y azul de arriba a abajo. Es una de las banderas tricolores más antiguas del mundo, adoptada en el siglo XVII durante la República Holandesa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Países Bajos",
-                      "description": "Países Bajos es un país en Western Europe."
+                      "icon": "directions_bike",
+                      "title": "Capital de las Bicicletas",
+                      "description": "Los Países Bajos tienen más bicicletas que personas: unos 23 millones de bicis para 17,9 millones de habitantes. Ámsterdam tiene 800.000 bicicletas pero solo 600.000 residentes."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Países Bajos tiene una población de aproximadamente 18.1M."
+                      "icon": "landscape",
+                      "title": "Bajo el Nivel del Mar",
+                      "description": "Aproximadamente el 26% de los Países Bajos está por debajo del nivel del mar. Los holandeses han ganado tierras al mar durante siglos gracias a un sofisticado sistema de diques y estaciones de bombeo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Países Bajos es Amsterdam."
+                      "icon": "local_florist",
+                      "title": "Capital del Tulipán",
+                      "description": "Los Países Bajos son el mayor exportador de flores del mundo, con unos 12.000 millones de bulbos de tulipán al año. Los tulipanes se originaron en Turquía, pero se convirtieron en la flor nacional holandesa."
+                  },
+                  {
+                      "icon": "palette",
+                      "title": "Edad de Oro de la Pintura",
+                      "description": "El Siglo de Oro holandés del siglo XVII dio al mundo a Rembrandt y Vermeer, dos de los pintores más grandes de la historia. El Rijksmuseum de Ámsterdam alberga miles de estas obras maestras, incluyendo la famosa Ronda de Noche de Rembrandt."
                   }
               ]
           }
@@ -8913,28 +8943,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "movie",
                       "title": "Middle-earth",
                       "description": "The entire Lord of the Rings and Hobbit film trilogies were filmed in New Zealand. The Hobbiton movie set in Matamata is now a permanent tourist attraction."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "Haka and the All Blacks",
+                      "description": "New Zealand's national rugby team, the All Blacks, is the most successful national rugby team in history. Before every match they perform the haka — a powerful Māori ceremonial dance that has become one of sport's most electrifying rituals."
                   }
               ]
           },
           "es": {
               "name": "Nueva Zelanda",
               "capital": "Wellington",
-              "flagDescription": "La bandera de Nueva Zelanda.",
+              "flagDescription": "La bandera de Nueva Zelanda presenta la Union Jack en la esquina superior izquierda y cuatro estrellas rojas con bordes blancos que representan la constelación de la Cruz del Sur. Las estrellas tienen tamaños ligeramente distintos, reflejando el brillo real de las estrellas en el cielo nocturno.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Nueva Zelanda",
-                      "description": "Nueva Zelanda es un país en Australia and New Zealand."
+                      "icon": "nature_people",
+                      "title": "Más Ovejas que Personas",
+                      "description": "Nueva Zelanda tiene unos 26 millones de ovejas para sus 5 millones de habitantes, una proporción de aproximadamente 5 ovejas por persona."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Nueva Zelanda tiene una población de aproximadamente 5.3M."
+                      "icon": "hiking",
+                      "title": "Capital de la Aventura",
+                      "description": "Queenstown, Nueva Zelanda, es conocida como la capital mundial de la aventura. El puenting se comercializó aquí en 1988."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Nueva Zelanda es Wellington."
+                      "icon": "movie",
+                      "title": "La Tierra Media",
+                      "description": "Las trilogías completas de El Señor de los Anillos y El Hobbit se filmaron en Nueva Zelanda. El set de rodaje de Hobbiton en Matamata es ahora una atracción turística permanente."
+                  },
+                  {
+                      "icon": "sports",
+                      "title": "El Haka y los All Blacks",
+                      "description": "El equipo nacional de rugby de Nueva Zelanda, los All Blacks, es el más exitoso de la historia. Antes de cada partido realizan el haka, una poderosa danza ceremonial māori que se ha convertido en uno de los rituales más electrizantes del deporte."
                   }
               ]
           }
@@ -9440,28 +9480,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "account_balance",
                       "title": "World's Richest Fund",
                       "description": "Norway's sovereign wealth fund — built from oil revenues — is the world's largest at over $1.4 trillion, investing in about 9,000 companies in 70 countries."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Land of Fjords",
+                      "description": "Norway has over 1,000 fjords — long, deep inlets carved by ancient glaciers. The Sognefjord is the deepest in the world at over 1,300 m. UNESCO has listed the Norwegian fjords as a World Heritage Site."
                   }
               ]
           },
           "es": {
               "name": "Noruega",
               "capital": "Oslo",
-              "flagDescription": "La bandera de Noruega.",
+              "flagDescription": "La bandera de Noruega tiene un fondo rojo con una cruz nórdica azul bordeada en blanco. El símbolo de la cruz lo usan todos los países nórdicos. El diseño fue adoptado en 1821 para distinguir la bandera noruega de las similares banderas escandinavas.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Noruega",
-                      "description": "Noruega es un país en Northern Europe."
+                      "icon": "local_see",
+                      "title": "Aurora Boreal",
+                      "description": "Noruega es uno de los mejores lugares del mundo para ver la Aurora Boreal. Tromsø, por encima del Círculo Ártico, recibe el apodo de 'Puerta al Ártico'."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Noruega tiene una población de aproximadamente 5.6M."
+                      "icon": "directions_boat",
+                      "title": "Origen Vikingo",
+                      "description": "Noruega fue el corazón del mundo vikingo, que exploró, comerció y se asentó desde Islandia hasta América del Norte unos 500 años antes que Colón."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Noruega es Oslo."
+                      "icon": "account_balance",
+                      "title": "El Fondo Más Rico del Mundo",
+                      "description": "El fondo soberano de Noruega — construido con los ingresos del petróleo — es el mayor del mundo, con más de 1,4 billones de dólares invertidos en unas 9.000 empresas de 70 países."
+                  },
+                  {
+                      "icon": "landscape",
+                      "title": "Tierra de Fiordos",
+                      "description": "Noruega tiene más de 1.000 fiordos: largas y profundas entradas esculpidas por antiguos glaciares. El Sognefjord es el más profundo del mundo, con más de 1.300 m. La UNESCO ha declarado los fiordos noruegos Patrimonio de la Humanidad."
                   }
               ]
           }
@@ -9778,28 +9828,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "emoji_nature",
                       "title": "Birds of Paradise",
                       "description": "Papua New Guinea is home to over 40 species of Birds of Paradise — the most elaborate and colorful birds on Earth. Males perform incredible dances to attract mates."
+                  },
+                  {
+                      "icon": "museum",
+                      "title": "Thousands of Cultures",
+                      "description": "PNG has over 1,000 distinct cultural groups — each with its own traditions, ceremonies, and art forms. Annual Sing-Sing festivals bring tribes together in a dazzling display of feathered headdresses, body paint, and traditional music."
                   }
               ]
           },
           "es": {
               "name": "Papúa Nueva Guinea",
               "capital": "Port Moresby",
-              "flagDescription": "La bandera de Papúa Nueva Guinea.",
+              "flagDescription": "La bandera de Papúa Nueva Guinea está dividida en diagonal: el triángulo superior es rojo con un Ave del Paraíso, y el triángulo inferior es negro con la constelación de la Cruz del Sur en blanco. El Ave del Paraíso representa la belleza natural de la nación.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Papúa Nueva Guinea",
-                      "description": "Papúa Nueva Guinea es un país en Melanesia."
+                      "icon": "language",
+                      "title": "Más Idiomas del Mundo",
+                      "description": "Papúa Nueva Guinea tiene más idiomas que cualquier otro país: más de 800 lenguas distintas, que representan aproximadamente el 12% del total mundial. El tok pisin es la lengua franca nacional."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Papúa Nueva Guinea tiene una población de aproximadamente 11.8M."
+                      "icon": "forest",
+                      "title": "Naturaleza Virgen",
+                      "description": "Las tierras altas de PNG contienen algunas de las últimas selvas tropicales intactas del Pacífico. Se estima que el 5% de la biodiversidad mundial vive en PNG."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Papúa Nueva Guinea es Port Moresby."
+                      "icon": "emoji_nature",
+                      "title": "Aves del Paraíso",
+                      "description": "Papúa Nueva Guinea alberga más de 40 especies de Aves del Paraíso, las aves más elaboradas y coloridas de la Tierra. Los machos realizan bailes increíbles para atraer a sus parejas."
+                  },
+                  {
+                      "icon": "museum",
+                      "title": "Miles de Culturas",
+                      "description": "PNG tiene más de 1.000 grupos culturales distintos, cada uno con sus propias tradiciones, ceremonias y formas de arte. Los festivales anuales Sing-Sing reúnen a las tribus en un deslumbrante despliegue de tocados de plumas, pintura corporal y música tradicional."
                   }
               ]
           }
@@ -10073,28 +10133,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "castle",
                       "title": "Medieval Treasures",
                       "description": "Krakow's Wawel Castle and the medieval old town are UNESCO World Heritage Sites. The city miraculously escaped destruction in WWII and preserves centuries of Polish history."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Pierogi Paradise",
+                      "description": "Poland's most beloved dish is pierogi — dumplings stuffed with potato and cheese, meat, mushrooms, or sweet cherries. Every Polish family has its own recipe, and there is even a dedicated annual Pierogi Festival in Krakow each August."
                   }
               ]
           },
           "es": {
               "name": "Polonia",
-              "capital": "Warsaw",
-              "flagDescription": "La bandera de Polonia.",
+              "capital": "Varsovia",
+              "flagDescription": "La bandera de Polonia tiene dos franjas horizontales iguales: blanca arriba y roja abajo. Estos dos colores han representado a Polonia desde el siglo XIII y provienen del escudo de armas que muestra un águila blanca sobre fondo rojo.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Polonia",
-                      "description": "Polonia es un país en Central Europe."
+                      "icon": "music_note",
+                      "title": "La Patria de Chopin",
+                      "description": "Frédéric Chopin, uno de los más grandes compositores para piano de la historia, nació en Polonia. Sus composiciones románticas están profundamente ligadas a la música folclórica polaca y a la identidad nacional."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Polonia tiene una población de aproximadamente 37.4M."
+                      "icon": "science",
+                      "title": "Marie Curie",
+                      "description": "Marie Curie, nacida Maria Sklodowska en Varsovia, fue la primera mujer en ganar un Premio Nobel y la única persona en ganar Premios Nobel en dos ciencias distintas (Física y Química)."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Polonia es Warsaw."
+                      "icon": "castle",
+                      "title": "Tesoros Medievales",
+                      "description": "El Castillo de Wawel y el casco antiguo medieval de Cracovia son Patrimonio de la Humanidad por la UNESCO. La ciudad escapó milagrosamente de la destrucción en la Segunda Guerra Mundial y conserva siglos de historia polaca."
+                  },
+                  {
+                      "icon": "restaurant",
+                      "title": "Paraíso de los Pierogi",
+                      "description": "El plato más querido de Polonia son los pierogi: empanadillas rellenas de patata y queso, carne, setas o cerezas dulces. Cada familia polaca tiene su propia receta, y cada agosto se celebra en Cracovia un Festival del Pierogi."
                   }
               ]
           }
@@ -10126,28 +10196,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "restaurant",
                       "title": "Pastel de Nata",
                       "description": "The pastel de nata (custard tart) was invented by monks at Jerónimos Monastery in Lisbon in the 18th century. The original recipe from Pastéis de Belém is still a closely guarded secret."
+                  },
+                  {
+                      "icon": "park",
+                      "title": "Cork Capital of the World",
+                      "description": "Portugal produces over half the world's cork, harvested from the bark of cork oak trees without cutting them down. The trees live for over 200 years and are stripped every 9 years — a perfectly sustainable industry practiced for centuries."
                   }
               ]
           },
           "es": {
               "name": "Portugal",
-              "capital": "Lisbon",
-              "flagDescription": "La bandera de Portugal.",
+              "capital": "Lisboa",
+              "flagDescription": "La bandera de Portugal tiene una franja verde vertical a la izquierda y una franja roja más ancha a la derecha, con el escudo de armas portugués centrado en el límite entre ambas. El verde representa la esperanza en el futuro, mientras que el rojo honra a quienes murieron luchando por el país.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Portugal",
-                      "description": "Portugal es un país en Southern Europe."
+                      "icon": "anchor",
+                      "title": "La Era de los Descubrimientos",
+                      "description": "En los siglos XV y XVI, los exploradores portugueses cartografiaron gran parte del mundo. Vasco da Gama encontró la ruta marítima hacia la India, y Bartolomeu Dias fue el primer europeo en doblar el Cabo de Buena Esperanza."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Portugal tiene una población de aproximadamente 10.7M."
+                      "icon": "music_note",
+                      "title": "El Fado",
+                      "description": "El fado es el conmovedor y melancólico género musical de Portugal que expresa la añoranza (saudade). La UNESCO reconoció el fado como Patrimonio Cultural Inmaterial en 2011."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Portugal es Lisbon."
+                      "icon": "restaurant",
+                      "title": "Pastel de Nata",
+                      "description": "El pastel de nata fue inventado por los monjes del Monasterio de los Jerónimos en Lisboa en el siglo XVIII. La receta original de los Pastéis de Belém sigue siendo un secreto celosamente guardado."
+                  },
+                  {
+                      "icon": "park",
+                      "title": "Capital Mundial del Corcho",
+                      "description": "Portugal produce más de la mitad del corcho del mundo, cosechado de la corteza de los alcornoques sin talarlos. Los árboles viven más de 200 años y se pelan cada 9 años: una industria perfectamente sostenible practicada durante siglos."
                   }
               ]
           }
@@ -10464,28 +10544,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "train",
                       "title": "Trans-Siberian Railway",
                       "description": "The Trans-Siberian Railway is the world's longest railway at 9,289 km, connecting Moscow to the Russian Far East. The full journey takes about 7 days."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Lake Baikal",
+                      "description": "Lake Baikal in Siberia is the world's deepest lake (1,642 m) and holds about 20% of all the fresh unfrozen surface water on Earth. It's also home to the nerpa, the world's only freshwater seal."
                   }
               ]
           },
           "es": {
               "name": "Rusia",
-              "capital": "Moscow",
-              "flagDescription": "La bandera de Rusia.",
+              "capital": "Moscú",
+              "flagDescription": "La bandera de Rusia tiene tres franjas horizontales iguales de blanco, azul y rojo de arriba a abajo. El tricolor blanco-azul-rojo fue introducido por Pedro el Grande en el siglo XVII, inspirado en la bandera holandesa durante su visita a los Países Bajos para estudiar la construcción naval.",
               "funFacts": [
                   {
                       "icon": "public",
-                      "title": "Sobre Rusia",
-                      "description": "Rusia es un país en Eastern Europe."
+                      "title": "El País Más Grande del Mundo",
+                      "description": "Rusia es con diferencia el país más grande del mundo, con 17,1 millones de km²: abarca 11 zonas horarias y se extiende por Europa y Asia. Es más grande que el planeta Plutón."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Rusia tiene una población de aproximadamente 146.0M."
+                      "icon": "rocket_launch",
+                      "title": "Pionero del Espacio",
+                      "description": "La Unión Soviética (Rusia) lanzó el primer satélite (Sputnik, 1957), el primer ser humano al espacio (Yuri Gagarin, 1961) y la primera estación espacial. El '¡Poyekhali!' de Gagarin se convirtió en una de las frases más famosas de la historia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Rusia es Moscow."
+                      "icon": "train",
+                      "title": "Ferrocarril Transiberiano",
+                      "description": "El Ferrocarril Transiberiano es el más largo del mundo con 9.289 km, conectando Moscú con el Extremo Oriente ruso. El viaje completo dura aproximadamente 7 días."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Lago Baikal",
+                      "description": "El lago Baikal en Siberia es el lago más profundo del mundo (1.642 m) y contiene aproximadamente el 20% de toda el agua dulce superficial no congelada de la Tierra. También es hogar de la nerpa, la única foca de agua dulce del mundo."
                   }
               ]
           }
@@ -11001,28 +11091,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "access_time",
                       "title": "First to See the New Year",
                       "description": "Samoa shifted time zones in 2011 and is now one of the first countries to celebrate New Year's Day every year, ahead of even New Zealand and Australia."
+                  },
+                  {
+                      "icon": "home",
+                      "title": "Open-Air Fale Architecture",
+                      "description": "Traditional Samoan homes called fale are open-sided oval structures with thatched roofs and no walls — allowing ocean breezes to flow freely. They reflect the Samoan value of communal living and transparency in community life."
                   }
               ]
           },
           "es": {
               "name": "Samoa",
               "capital": "Apia",
-              "flagDescription": "La bandera de Samoa.",
+              "flagDescription": "La bandera de Samoa es roja con el cantón azul (esquina superior izquierda) que contiene la constelación de la Cruz del Sur en blanco, con una pequeña estrella extra añadida en 1997. El rojo representa el valor, el blanco la pureza y el azul la libertad.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Samoa",
-                      "description": "Samoa es un país en Polynesia."
+                      "icon": "sports",
+                      "title": "Nación del Rugby",
+                      "description": "Para una pequeña nación de 200.000 habitantes, Samoa ha producido un número notable de jugadores de rugby profesionales y es una potencia del rugby del Pacífico."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Samoa tiene una población de aproximadamente 206K."
+                      "icon": "brush",
+                      "title": "Herencia del Tatuaje",
+                      "description": "La palabra 'tatuaje' proviene de la palabra samoana 'tatau'. El pe'a tradicional (tatuaje de cuerpo completo para hombres) y el malu (tatuaje de piernas para mujeres) son considerados sagrados ritos de paso."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Samoa es Apia."
+                      "icon": "access_time",
+                      "title": "Primeros en Ver el Año Nuevo",
+                      "description": "Samoa cambió de zona horaria en 2011 y ahora es uno de los primeros países en celebrar el Año Nuevo cada año, antes incluso que Nueva Zelanda y Australia."
+                  },
+                  {
+                      "icon": "home",
+                      "title": "Arquitectura del Fale",
+                      "description": "Las casas tradicionales samoanas llamadas fale son estructuras ovaladas abiertas con techos de paja y sin paredes, que permiten que la brisa del océano circule libremente. Reflejan el valor samoano de la vida comunitaria y la transparencia."
                   }
               ]
           }
@@ -11962,28 +12062,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "palette",
                       "title": "Gaudí's Architecture",
                       "description": "Antoni Gaudí designed Barcelona's Sagrada Família basilica, which has been under construction since 1882 and is still not finished. It's one of the most-visited buildings in the world."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "Flamenco",
+                      "description": "Flamenco — the passionate art of guitar, singing, and dance born in Andalusia — is one of the world's most expressive art forms. UNESCO listed flamenco as Intangible Cultural Heritage in 2010."
                   }
               ]
           },
           "es": {
               "name": "España",
               "capital": "Madrid",
-              "flagDescription": "La bandera de España.",
+              "flagDescription": "La bandera de España tiene tres franjas horizontales: rojo arriba y abajo, con una franja amarilla ancha en el centro que lleva el escudo de armas español. El rojo y el amarillo han estado asociados con la corona española desde el siglo XV.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre España",
-                      "description": "España es un país en Southern Europe."
+                      "icon": "celebration",
+                      "title": "País de las Fiestas",
+                      "description": "España tiene algunas de las fiestas más espectaculares del mundo: La Tomatina (batalla de tomates), el Encierro de los Toros en Pamplona y Las Fallas de Valencia."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "España tiene una población de aproximadamente 49.3M."
+                      "icon": "restaurant",
+                      "title": "Cultura de las Tapas",
+                      "description": "Las tapas se originaron en el sur de España como pequeños platos servidos con bebidas. La palabra significa 'tapa': las primeras tapas eran rebanadas de pan colocadas sobre los vasos para mantener alejadas las moscas."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de España es Madrid."
+                      "icon": "palette",
+                      "title": "La Arquitectura de Gaudí",
+                      "description": "Antoni Gaudí diseñó la basílica de la Sagrada Família de Barcelona, que lleva en construcción desde 1882 y aún no está terminada. Es uno de los edificios más visitados del mundo."
+                  },
+                  {
+                      "icon": "music_note",
+                      "title": "Flamenco",
+                      "description": "El flamenco — el apasionado arte de la guitarra, el cante y el baile nacido en Andalucía — es una de las formas artísticas más expresivas del mundo. La UNESCO declaró el flamenco Patrimonio Cultural Inmaterial en 2010."
                   }
               ]
           }
@@ -12247,28 +12357,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "wb_sunny",
                       "title": "Midsommar Festival",
                       "description": "Midsommar, celebrated around the summer solstice in June, is Sweden's most important celebration. Swedes dance around a maypole, eat herring, and stay up for the midnight sun."
+                  },
+                  {
+                      "icon": "gamepad",
+                      "title": "Gaming Powerhouse",
+                      "description": "Sweden is one of the world's top gaming nations. Swedish studios created Minecraft, Battlefield, Candy Crush, and ABBA's music is still among the best-selling of all time. Stockholm has more billion-dollar tech startups per capita than any city outside Silicon Valley."
                   }
               ]
           },
           "es": {
               "name": "Suecia",
-              "capital": "Stockholm",
-              "flagDescription": "La bandera de Suecia.",
+              "capital": "Estocolmo",
+              "flagDescription": "La bandera de Suecia es una cruz nórdica dorado-amarilla sobre fondo azul. El diseño de la cruz — con el travesaño que se extiende hasta el borde derecho — es compartido por todos los países nórdicos. Los colores azul y amarillo han estado asociados con Suecia desde el siglo XIV.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Suecia",
-                      "description": "Suecia es un país en Northern Europe."
+                      "icon": "forest",
+                      "title": "Derecho a Deambular",
+                      "description": "Suecia tiene el 'Allemansrätten' o 'Derecho de todos': el derecho legal de deambular libremente por cualquier terreno, incluida la propiedad privada, siempre que no se cause daño."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Suecia tiene una población de aproximadamente 10.6M."
+                      "icon": "lightbulb",
+                      "title": "Nación Innovadora",
+                      "description": "Suecia le ha dado al mundo la dinamita (Alfred Nobel), la cremallera, la cerilla de seguridad, la tecnología Bluetooth y Spotify. Para ser una nación pequeña, tiene un historial de innovación desproporcionado."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Suecia es Stockholm."
+                      "icon": "wb_sunny",
+                      "title": "Festival de Midsommar",
+                      "description": "El Midsommar, celebrado en torno al solsticio de verano en junio, es la celebración más importante de Suecia. Los suecos bailan alrededor de un palo de mayo, comen arenque y se quedan despiertos para ver el sol de medianoche."
+                  },
+                  {
+                      "icon": "gamepad",
+                      "title": "Potencia del Videojuego",
+                      "description": "Suecia es una de las principales potencias mundiales del videojuego. Los estudios suecos crearon Minecraft, Battlefield y Candy Crush. Estocolmo tiene más startups tecnológicas valoradas en mil millones de dólares per cápita que cualquier ciudad fuera de Silicon Valley."
                   }
               ]
           }
@@ -12300,28 +12420,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "balance",
                       "title": "Permanent Neutrality",
                       "description": "Switzerland has been officially neutral in international conflicts since 1815. It was the last European country to join the United Nations in 2002 and still hasn't joined the EU."
+                  },
+                  {
+                      "icon": "watch_later",
+                      "title": "Watchmaking Capital",
+                      "description": "Switzerland produces some of the world's finest watches — brands like Rolex, Omega, and Patek Philippe are crafted here. The Swiss watchmaking tradition stretches back over 500 years and the phrase 'Swiss Made' is legally protected to guarantee quality."
                   }
               ]
           },
           "es": {
               "name": "Suiza",
-              "capital": "Bern",
-              "flagDescription": "La bandera de Suiza.",
+              "capital": "Berna",
+              "flagDescription": "La bandera de Suiza es un cuadrado rojo con una cruz blanca. Es una de las únicas dos banderas nacionales cuadradas (la otra es la del Vaticano). El diseño se remonta al siglo XIV e inspiró el símbolo de la Cruz Roja.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Suiza",
-                      "description": "Suiza es un país en Western Europe."
+                      "icon": "terrain",
+                      "title": "Nación Alpina",
+                      "description": "Aproximadamente el 70% de Suiza está cubierto por los Alpes. El país tiene 208 montañas por encima de los 3.000 metros y algunos de los trayectos en tren más pintorescos del mundo, como el Glacier Express."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Suiza tiene una población de aproximadamente 9.1M."
+                      "icon": "restaurant",
+                      "title": "Chocolate y Queso",
+                      "description": "Suiza es famosa por el chocolate y el queso. Los quesos suizos (raclette, emmental, gruyère) y las marcas de chocolate suizo como Lindt y Toblerone son conocidas en todo el mundo."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Suiza es Bern."
+                      "icon": "balance",
+                      "title": "Neutralidad Permanente",
+                      "description": "Suiza ha sido oficialmente neutral en los conflictos internacionales desde 1815. Fue el último país europeo en unirse a las Naciones Unidas en 2002 y aún no se ha unido a la UE."
+                  },
+                  {
+                      "icon": "watch_later",
+                      "title": "Capital de la Relojería",
+                      "description": "Suiza fabrica algunos de los mejores relojes del mundo: marcas como Rolex, Omega y Patek Philippe se elaboran aquí. La tradición relojera suiza se remonta más de 500 años y la etiqueta 'Swiss Made' está protegida legalmente para garantizar la calidad."
                   }
               ]
           }
@@ -12797,28 +12927,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "king",
                       "title": "Pacific Kingdom",
                       "description": "Tonga is the only remaining monarchy in the Pacific Ocean. The royal family has ruled uninterrupted since the 10th century, making the Tongan monarchy one of the oldest continuous dynasties in the world."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Humpback Whale Nursery",
+                      "description": "Every year, humpback whales migrate to the warm waters of Tonga to give birth and nurse their calves. Tonga is one of the only places on Earth where you can legally swim alongside humpback whale mothers and their newborns."
                   }
               ]
           },
           "es": {
               "name": "Tonga",
               "capital": "Nuku'alofa",
-              "flagDescription": "La bandera de Tonga.",
+              "flagDescription": "La bandera de Tonga es roja con un rectángulo blanco en la esquina superior izquierda que contiene una cruz roja. El rojo representa la sangre de Cristo, el blanco simboliza la pureza y la cruz representa el cristianismo, que ha sido fundamental en la cultura tongana desde el siglo XIX.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Tonga",
-                      "description": "Tonga es un país en Polynesia."
+                      "icon": "sports",
+                      "title": "Potencia del Rugby",
+                      "description": "Al igual que Samoa y Fiyi, la pequeña Tonga supera con creces su peso en rugby union. Los jugadores tonganos son conocidos por su físico y el Sipi Tau (danza de guerra) que realizan antes de los partidos."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Tonga tiene una población de aproximadamente 100K."
+                      "icon": "anchor",
+                      "title": "Las Islas Amigas",
+                      "description": "El Capitán James Cook llamó a Tonga las 'Islas Amigas' tras la cálida bienvenida que recibió en 1773 del pueblo tongano."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Tonga es Nuku'alofa."
+                      "icon": "king",
+                      "title": "El Reino del Pacífico",
+                      "description": "Tonga es la única monarquía que queda en el Océano Pacífico. La familia real ha gobernado ininterrumpidamente desde el siglo X, convirtiendo a la monarquía tongana en una de las dinastías continuas más antiguas del mundo."
+                  },
+                  {
+                      "icon": "water",
+                      "title": "Guardería de Ballenas Jorobadas",
+                      "description": "Cada año, las ballenas jorobadas migran a las cálidas aguas de Tonga para dar a luz y amamantar a sus crías. Tonga es uno de los únicos lugares de la Tierra donde se puede nadar legalmente junto a madres ballenas jorobadas y sus recién nacidos."
                   }
               ]
           }
@@ -13367,28 +13507,38 @@ export const countriesData: CountryEntry[] = [
                       "icon": "music_note",
                       "title": "British Invasion",
                       "description": "In the 1960s, British bands like The Beatles, The Rolling Stones, and The Who transformed global music in what became known as the 'British Invasion' of American pop culture."
+                  },
+                  {
+                      "icon": "sports_soccer",
+                      "title": "Birthplace of Football",
+                      "description": "England invented Association Football (soccer) and codified its rules in 1863. The English Premier League is now the most-watched sports league in the world, broadcast to 189 countries."
                   }
               ]
           },
           "es": {
               "name": "Reino Unido",
-              "capital": "London",
-              "flagDescription": "La bandera de Reino Unido.",
+              "capital": "Londres",
+              "flagDescription": "La bandera del Reino Unido, la Union Jack, combina tres cruces: la Cruz de San Jorge roja (Inglaterra), la Cruz diagonal blanca de San Andrés (Escocia) y la Cruz diagonal roja de San Patricio (Irlanda). El fondo azul proviene de la bandera escocesa.",
               "funFacts": [
                   {
-                      "icon": "public",
-                      "title": "Sobre Reino Unido",
-                      "description": "Reino Unido es un país en Northern Europe."
+                      "icon": "history",
+                      "title": "La Revolución Industrial",
+                      "description": "El Reino Unido fue la cuna de la Revolución Industrial en el siglo XVIII, cambiando el mundo mediante máquinas de vapor, fábricas y ferrocarriles, e impulsando la era moderna."
                   },
                   {
-                      "icon": "groups",
-                      "title": "Población",
-                      "description": "Reino Unido tiene una población de aproximadamente 69.3M."
+                      "icon": "menu_book",
+                      "title": "El Legado de Shakespeare",
+                      "description": "William Shakespeare inventó más de 1.700 palabras que aún se usan hoy, como 'bedroom', 'lonely', 'generous' y 'eyeball'. Sigue siendo el dramaturgo más representado de la historia."
                   },
                   {
-                      "icon": "location_city",
-                      "title": "Capital",
-                      "description": "La capital de Reino Unido es London."
+                      "icon": "music_note",
+                      "title": "La Invasión Británica",
+                      "description": "En los años 60, bandas británicas como The Beatles, The Rolling Stones y The Who transformaron la música global en lo que se conoció como la 'Invasión Británica' de la cultura pop americana."
+                  },
+                  {
+                      "icon": "sports_soccer",
+                      "title": "Cuna del Fútbol",
+                      "description": "Inglaterra inventó el fútbol asociación y codificó sus reglas en 1863. La Premier League inglesa es actualmente el torneo deportivo más visto del mundo, emitido en 189 países."
                   }
               ]
           }
