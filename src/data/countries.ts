@@ -24,7 +24,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Before they were destroyed in 2001, the Bamiyan Buddhas were two colossal statue carved into a cliffside in the 6th century — among the world's largest Buddha statues ever created."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Carpet Weaving Tradition",
                       "description": "Afghan carpets are world-famous for their intricate hand-woven designs and vibrant colors. Carpet weaving is a traditional craft passed down through generations in Afghan families."
                   }
@@ -46,7 +46,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Antes de ser destruidos en 2001, los Budas de Bamiyan eran dos estatuas colosales talladas en un acantilado en el siglo VI, entre las estatuas de Buda más grandes jamás creadas."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Tradición de tejido de alfombras",
                       "description": "Las alfombras afganas son mundialmente famosas por sus diseños tejidos a mano de forma intrincada y colores vibrantes. El tejido de alfombras es una artesanía tradicional transmitida de generación en generación."
                   }
@@ -624,7 +624,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Armenian monasteries like Geghard and Khor Virap are built into mountainsides and carved partly underground. They are UNESCO World Heritage Sites that showcase ancient Armenian architecture."
                   },
                   {
-                      "icon": "music",
+                      "icon": "music_note",
                       "title": "Duduk: Ancient Woodwind",
                       "description": "The duduk is an ancient Armenian woodwind instrument with a warm, soulful sound. It's one of the oldest instruments still in use and has been played for thousands of years."
                   }
@@ -646,7 +646,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Los monasterios armenios como Geghard y Khor Virap están construidos en las laderas de las montañas y tallados parcialmente bajo tierra. Son Patrimonios de la Humanidad de la UNESCO que muestran la arquitectura armenia antigua."
                   },
                   {
-                      "icon": "music",
+                      "icon": "music_note",
                       "title": "Duduk: instrumento de viento antiguo",
                       "description": "El duduk es un antiguo instrumento de viento armenio con un sonido cálido y evocador. Es uno de los instrumentos más antiguos que aún se usan y ha sido tocado durante miles de años."
                   }
@@ -856,7 +856,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Azerbaijan's flag has three equal horizontal stripes of blue, red, and green with a white crescent and eight-pointed star in the center. Blue represents Turkic heritage, red symbolizes progress and prosperity, green represents Islam, and the crescent-star is an Islamic symbol.",
               "funFacts": [
                   {
-                      "icon": "fire",
+                      "icon": "whatshot",
                       "title": "Yanar Dag: Fire Mountain",
                       "description": "Yanar Dag is a hillside in Azerbaijan where natural gas seeps from the ground and burns continuously — creating the appearance of a mountain on fire! It has burned for centuries."
                   },
@@ -866,7 +866,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Caspian Sea, bordered by Azerbaijan, is the largest enclosed body of water in the world. It contains unique wildlife like the Caspian seal found nowhere else on Earth."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Azerbaijani Carpets",
                       "description": "Azerbaijani carpets are masterpieces of hand-weaving, with designs featuring symbols and colors that tell stories. They're considered among the finest in the world."
                   }
@@ -878,7 +878,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Azerbaiyán tiene tres franjas horizontales iguales de azul, rojo y verde con una media luna blanca y una estrella de ocho puntas en el centro. El azul representa el patrimonio turco, el rojo simboliza el progreso y la prosperidad, el verde representa el Islam, y la media luna-estrella es un símbolo islámico.",
               "funFacts": [
                   {
-                      "icon": "fire",
+                      "icon": "whatshot",
                       "title": "Yanar Dag: montaña de fuego",
                       "description": "¡Yanar Dag es una colina en Azerbaiyán donde el gas natural se filtra del suelo y quema continuamente, creando la apariencia de una montaña en llamas! Ha estado ardiendo durante siglos."
                   },
@@ -888,7 +888,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El mar Caspio, bordeado por Azerbaiyán, es el cuerpo de agua cerrado más grande del mundo. Contiene fauna única como la foca del Caspio que no se encuentra en ningún otro lugar."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Alfombras azerbaiyanas",
                       "description": "Las alfombras azerbaiyanas son obras maestras de tejido a mano, con diseños que presentan símbolos y colores que cuentan historias. Se consideran entre las mejores del mundo."
                   }
@@ -1209,7 +1209,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Belgium is world-famous for its extraordinary chocolate and delicious waffles. Belgian chocolate is considered among the finest in the world, and there are more chocolate shops per square kilometer in Brussels than almost anywhere else on Earth."
                   },
                   {
-                      "icon": "comic_face",
+                      "icon": "mood",
                       "title": "Comic Strip Country",
                       "description": "Belgium is the birthplace of some of the world's most beloved comic strip characters, including Tintin and the Smurfs. The comic strip art form is taken so seriously that Brussels has a Comic Strip Museum and buildings decorated with giant comic murals."
                   },
@@ -1236,7 +1236,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Bélgica es famosa mundialmente por su extraordinario chocolate y sus deliciosos gofres. El chocolate belga se considera uno de los mejores del mundo, y hay más tiendas de chocolate por kilómetro cuadrado en Bruselas que en casi cualquier otro lugar de la Tierra."
                   },
                   {
-                      "icon": "comic_face",
+                      "icon": "mood",
                       "title": "País del Cómic",
                       "description": "Bélgica es el lugar de nacimiento de algunos de los personajes de cómic más queridos del mundo, incluyendo Tintín y los Pitufos. El arte del cómic se toma tan en serio que Bruselas tiene un Museo del Cómic y edificios decorados con enormes murales de historietas."
                   },
@@ -1446,12 +1446,12 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Bhutan's flag is divided diagonally with orange/saffron in the upper triangle and crimson red in the lower triangle. A white dragon (Druk) in the center represents the power and might of Bhutan. Orange symbolizes the Buddhist religion and crimson red represents secular authority.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Gross National Happiness",
                       "description": "Bhutan doesn't measure progress by GDP — instead it measures \"Gross National Happiness.\" The government focuses on the well-being and happiness of its people instead of just economic growth."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Tiger's Nest Monastery",
                       "description": "The Tiger's Nest is a sacred monastery perched on a cliff 3,000 meters above the ground. According to legend, a Buddhist saint flew to this cliffside on a tiger's back."
                   },
@@ -1468,12 +1468,12 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Bután está dividida en diagonal con naranja/azafrán en el triángulo superior y rojo carmesí en el inferior. Un dragón blanco (Druk) en el centro representa el poder y la fuerza de Bután. El naranja simboliza la religión budista y el rojo carmesí representa la autoridad secular.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Felicidad Nacional Bruta",
                       "description": "Bután no mide el progreso por PIB, sino por \"Felicidad Nacional Bruta\". El gobierno se enfoca en el bienestar y la felicidad de su pueblo en lugar de solo el crecimiento económico."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Monasterio del Nido del Tigre",
                       "description": "El Nido del Tigre es un monasterio sagrado encaramado en un acantilado a 3.000 metros de altura. Según la leyenda, un santo budista voló a este acantilado montado en el lomo de un tigre."
                   },
@@ -1509,7 +1509,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Bolivia has a rich indigenous heritage with many people speaking Quechua and Aymara languages."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Andes Mountains",
             "description": "Bolivia is located in the Andes Mountains and contains some of the highest peaks in South America."
           },
@@ -1536,7 +1536,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Bolivia tiene una herencia indígena rica con muchas personas hablando idiomas quechua y aymara."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Montañas de los Andes",
             "description": "Bolivia está ubicada en las Montañas de los Andes y contiene algunos de los picos más altos de América del Sur."
           },
@@ -1577,7 +1577,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Bosnian coffee is a unique tradition unlike coffee anywhere else. Ground coffee is boiled directly in a small copper pot called a džezva, then poured slowly and sipped ceremonially. Sharing coffee is a deeply important social ritual in Bosnian culture."
                   },
                   {
-                      "icon": "waterfall",
+                      "icon": "water",
                       "title": "Kravice Waterfalls",
                       "description": "The Kravice Waterfalls are often called the \"mini Niagara of Herzegovina\" — a stunning natural spectacle where the Trebižat River cascades over a 25-meter semicircular cliff into a turquoise pool below, surrounded by lush green vegetation."
                   }
@@ -1604,7 +1604,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El café bosnio es una tradición única diferente al café de cualquier otro lugar. El café molido se hierve directamente en una pequeña olla de cobre llamada džezva, luego se vierte lentamente y se sorbe ceremonialmente. Compartir café es un ritual social profundamente importante en la cultura bosnia."
                   },
                   {
-                      "icon": "waterfall",
+                      "icon": "water",
                       "title": "Cascadas de Kravice",
                       "description": "Las Cascadas de Kravice son a menudo llamadas el \"mini Niágara de Herzegovina\": un impresionante espectáculo natural donde el Río Trebižat cae sobre un acantilado semicircular de 25 metros hacia una piscina turquesa, rodeada de exuberante vegetación verde."
                   }
@@ -1862,7 +1862,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "This stunning mosque has a golden dome covered in 24-karat gold leaf and can hold thousands of worshippers. It's one of Asia's largest and most beautiful mosques."
                   },
                   {
-                      "icon": "rainforest",
+                      "icon": "eco",
                       "title": "Ancient Rainforest",
                       "description": "Brunei's rainforests are estimated to be 140 million years old — older than the Amazon! They are home to rare species like the proboscis monkey with its distinctive long nose."
                   },
@@ -1884,7 +1884,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Esta impresionante mezquita tiene una cúpula dorada cubierta con pan de oro de 24 quilates y puede albergar a miles de fieles. Es una de las mezquitas más grandes y hermosas de Asia."
                   },
                   {
-                      "icon": "rainforest",
+                      "icon": "eco",
                       "title": "Selva tropical antigua",
                       "description": "¡Se estima que las selvas tropicales de Brunéi tienen 140 millones de años, más antiguas que el Amazonas! Albergan especies raras como el mono narigudo con su distintiva nariz larga."
                   },
@@ -2089,7 +2089,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Tonlé Sap is Southeast Asia's largest freshwater lake. During monsoon season, it swells to 6 times its dry-season size, creating a unique ecosystem that supports millions of fish and birds."
                   },
                   {
-                      "icon": "silk",
+                      "icon": "texture",
                       "title": "Cambodian Silk",
                       "description": "Cambodia is famous for its luxurious silk weaving tradition dating back centuries. Cambodian silk is known for its vibrant colors and intricate patterns, making it highly prized worldwide."
                   }
@@ -2111,7 +2111,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Tonlé Sap es el mayor lago de agua dulce del Sudeste Asiático. Durante la temporada de monzones, se hincha hasta 6 veces su tamaño en temporada seca, creando un ecosistema único que sustenta millones de peces y aves."
                   },
                   {
-                      "icon": "silk",
+                      "icon": "texture",
                       "title": "Seda camboyana",
                       "description": "Camboya es famosa por su tradición de tejido de seda lujosa que se remonta siglos atrás. La seda camboyana es conocida por sus colores vibrantes y patrones intrincados, lo que la hace altamente apreciada en todo el mundo."
                   }
@@ -2190,7 +2190,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Canada is home to Niagara Falls, one of the world's most spectacular and powerful waterfalls."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Rocky Mountains",
             "description": "Canada contains the beautiful Canadian Rocky Mountains, famous for their stunning peaks and pristine wilderness."
           },
@@ -2217,7 +2217,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Canadá es hogar de las Cataratas del Niágara, una de las cascadas más espectaculares y poderosas del mundo."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Montañas Rocosas",
             "description": "Canadá contiene las hermosas Montañas Rocosas Canadienses, famosas por sus picos impresionantes y su naturaleza virgen."
           },
@@ -2374,7 +2374,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Seven Mile Beach is one of the Caribbean's most beautiful beaches with pristine white sand."
           },
           {
-            "icon": "financial",
+            "icon": "attach_money",
             "title": "Finance Hub",
             "description": "The Cayman Islands are a major international financial center and banking hub."
           },
@@ -2401,7 +2401,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Seven Mile Beach es una de las playas más hermosas del Caribe con arena blanca prístina."
           },
           {
-            "icon": "financial",
+            "icon": "attach_money",
             "title": "Centro Financiero",
             "description": "Las Islas Caimán son un centro financiero internacional importante y centro bancario."
           },
@@ -2596,7 +2596,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "China's flag is red with one large yellow star and four smaller yellow stars in the upper-left corner. Red represents the communist revolution, while the yellow stars symbolize the unity of the Chinese people under the Communist Party.",
               "funFacts": [
                   {
-                      "icon": "wall",
+                      "icon": "fence",
                       "title": "Great Wall",
                       "description": "The Great Wall of China stretches over 21,000 km and was built over many centuries to protect against invasions. However, contrary to popular belief, it cannot be seen from space with the naked eye."
                   },
@@ -2618,17 +2618,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de China es roja (símbolo del comunismo) con cinco estrellas amarillas en la esquina superior izquierda. Una estrella grande representa el Partido Comunista Chino y cuatro estrellas más pequeñas representan el pueblo chino. El color rojo representa la revolución.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "La Gran Muralla",
                       "description": "La Gran Muralla de China es una de las estructuras más impresionantes construidas por el hombre, extendiéndose más de 21.000 kilómetros. Fue construida durante más de 2.000 años para proteger contra invasiones del norte."
                   },
                   {
-                      "icon": "statue",
+                      "icon": "account_balance",
                       "title": "Terracota Warriors",
                       "description": "El Ejército de Terracota es una colección de 8.000 figuras de guerreros de cerámica de tamaño natural hechas para el Emperador Qin. Son una de las arqueologías más importantes descubiertas en el siglo XX."
                   },
                   {
-                      "icon": "panda",
+                      "icon": "pets",
                       "title": "Pandas gigantes",
                       "description": "Los pandas gigantes son un símbolo nacional de China. Estos osos dóciles son nativos de los bosques de bambú de China central y están protegidos como patrimonio nacional."
                   }
@@ -3637,7 +3637,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Ecuador administers the Galapagos Islands, a UNESCO World Heritage Site famous for unique wildlife and Darwin's theory of evolution."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Andes Mountains",
             "description": "Ecuador is home to the Andes Mountains, with Chimborazo being one of the highest peaks."
           },
@@ -3664,7 +3664,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Ecuador administra las Islas Galápagos, un Sitio del Patrimonio Mundial de la UNESCO famoso por su vida silvestre única y la teoría de Darwin sobre la evolución."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Montañas de los Andes",
             "description": "Ecuador es hogar de las Montañas de los Andes, siendo Chimborazo uno de los picos más altos."
           },
@@ -3690,7 +3690,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "The Egyptian flag has three horizontal stripes of red, white, and black, with the golden Eagle of Saladin centered on the white band. Red represents the struggle against colonialism, white symbolizes the 1952 revolution, and black recalls the end of oppression.",
               "funFacts": [
                   {
-                      "icon": "pyramid",
+                      "icon": "account_balance",
                       "title": "Ancient Wonders",
                       "description": "The Great Pyramid of Giza is the only surviving structure of the original Seven Wonders of the Ancient World, built around 2560 BC."
                   },
@@ -3712,7 +3712,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Egipto tiene tres franjas horizontales de rojo, blanco y negro, con el Águila de Saladino dorada en el centro de la franja blanca. El rojo representa la lucha contra el colonialismo, el blanco simboliza la revolución de 1952, y el negro recuerda el fin de la opresión.",
               "funFacts": [
                   {
-                      "icon": "pyramid",
+                      "icon": "account_balance",
                       "title": "Maravillas antiguas",
                       "description": "La Gran Pirámide de Guiza es la única estructura superviviente de las originales Siete Maravillas del Mundo Antiguo, construida alrededor del año 2560 a.C."
                   },
@@ -4081,7 +4081,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "The Falkland Islands' flag is blue with the Union Jack in the upper left and the coat of arms on the right. The coat of arms features a lion and sheep, representing the island's British heritage and wool industry.",
           "funFacts": [
           {
-            "icon": "animal",
+            "icon": "pets",
             "title": "Penguin Paradise",
             "description": "The Falkland Islands are home to five species of penguins, with hundreds of thousands of birds."
           },
@@ -4108,7 +4108,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de las Islas Malvinas es azul con la Union Jack en la esquina superior izquierda y el escudo de armas en la derecha. El escudo de armas presenta un león y ovejas, representando la herencia británica de la isla e industria de la lana.",
           "funFacts": [
           {
-            "icon": "animal",
+            "icon": "pets",
             "title": "Paraíso de Pingüinos",
             "description": "Las Islas Malvinas son hogar de cinco especies de pingüinos, con cientos de miles de aves."
           },
@@ -4628,12 +4628,12 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Georgia's flag has five red squares (one in the center, four in the corners) on a white background, each containing a cross. This unique design represents Georgia's Christian heritage. The cross is the historic symbol of Georgia, representing the four evangelists.",
               "funFacts": [
                   {
-                      "icon": "wine",
+                      "icon": "wine_bar",
                       "title": "Ancient Wine Country",
                       "description": "Georgia is considered the birthplace of wine — grape cultivation and fermentation began here around 6000 BC. Georgian wine-making traditions using clay vessels called qvevri are UNESCO-protected."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Caucasus Mountains",
                       "description": "The majestic Caucasus Mountains form Georgia's border and are home to Mount Elbrus, the highest peak in Europe at 5,642 meters. The mountains offer spectacular hiking and wildlife."
                   },
@@ -4650,12 +4650,12 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Georgia tiene cinco cuadrados rojos (uno en el centro, cuatro en las esquinas) sobre un fondo blanco, cada uno contiene una cruz. Este diseño único representa el patrimonio cristiano de Georgia. La cruz es el símbolo histórico de Georgia, que representa a los cuatro evangelistas.",
               "funFacts": [
                   {
-                      "icon": "wine",
+                      "icon": "wine_bar",
                       "title": "País de vino antiguo",
                       "description": "Georgia es considerada la cuna del vino: el cultivo de uvas y la fermentación comenzaron aquí alrededor del 6000 a.C. Las tradiciones georgianas de elaboración de vino usando vasijas de barro llamadas qvevri están protegidas por la UNESCO."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Montañas del Cáucaso",
                       "description": "Las majestuosas montañas del Cáucaso forman la frontera de Georgia y albergan el monte Elbrus, el pico más alto de Europa con 5.642 metros. Las montañas ofrecen senderismo espectacular y vida silvestre."
                   },
@@ -4938,7 +4938,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Greenland is an autonomous territory within the Kingdom of Denmark."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Inuit Heritage",
             "description": "Greenland has a rich Inuit (Kalaallit) cultural heritage with traditional hunting and fishing practices."
           }
@@ -4965,7 +4965,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Groenlandia es un territorio autónomo dentro del Reino de Dinamarca."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Herencia Inuit",
             "description": "Groenlandia tiene un rico patrimonio cultural inuit (Kalaallit) con prácticas tradicionales de caza y pesca."
           }
@@ -5175,12 +5175,12 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "Guatemala's flag has three vertical stripes of light blue, white, and light blue. The white stripe displays a simplified version of the national coat of arms. The light blue represents the sky and oceans, while the white represents peace and purity.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Mayan Civilization",
             "description": "Guatemala is the heart of ancient Mayan civilization, with significant ruins and archaeological sites throughout the country."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Tikal Ruins",
             "description": "Tikal is one of the largest urban centers of Mayan civilization, located in the Petén rainforest."
           },
@@ -5202,12 +5202,12 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de Guatemala tiene tres franjas verticales de azul claro, blanco y azul claro. La franja blanca muestra una versión simplificada del escudo de armas nacional. El azul claro representa el cielo y los océanos, mientras que el blanco representa la paz y la pureza.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Civilización Maya",
             "description": "Guatemala es el corazón de la civilización maya antigua, con ruinas significativas y sitios arqueológicos en todo el país."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Ruinas de Tikal",
             "description": "Tikal es uno de los mayores centros urbanos de la civilización maya, ubicado en la selva tropical de Petén."
           },
@@ -5243,7 +5243,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The beautiful golden-brown Guernsey cow breed was developed on this island and is now famous worldwide for producing exceptionally rich, creamy, golden-hued milk. These gentle cows are often called \"Golden Guernsey\" cows and are considered a national treasure of the island."
                   },
                   {
-                      "icon": "flower_sunflower",
+                      "icon": "local_florist",
                       "title": "Floral Gem",
                       "description": "Guernsey has a mild, sunny climate thanks to the Gulf Stream, allowing exotic plants like palm trees and agapanthus to thrive outdoors. The island is famous for its greenhouse-grown flowers, especially freesias and tomatoes, which have been exported to mainland Britain for over a century."
                   },
@@ -5270,7 +5270,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "La hermosa raza de vaca marrón dorada de Guernsey fue desarrollada en esta isla y es ahora mundialmente famosa por producir leche excepcionalmente rica, cremosa y de tono dorado. Estas gentiles vacas a menudo se llaman vacas \"Dorado de Guernsey\" y son consideradas un tesoro nacional de la isla."
                   },
                   {
-                      "icon": "flower_sunflower",
+                      "icon": "local_florist",
                       "title": "Joya Floral",
                       "description": "Guernsey tiene un clima suave y soleado gracias a la Corriente del Golfo, lo que permite que plantas exóticas como palmeras y agapantos prosperen al aire libre. La isla es famosa por sus flores cultivadas en invernadero, especialmente freesias y tomates, que han sido exportados a la Gran Bretaña continental durante más de un siglo."
                   },
@@ -5422,7 +5422,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Guyana is the only English-speaking country in South America."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Multicultural Nation",
             "description": "Guyana has a diverse population with influences from African, Indian, European, and indigenous cultures."
           }
@@ -5449,7 +5449,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Guyana es el único país de habla inglesa en América del Sur."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Nación Multicultural",
             "description": "Guyana tiene una población diversa con influencias de culturas africanas, indias, europeas e indígenas."
           }
@@ -5480,7 +5480,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Haiti shares the island of Hispaniola with the Dominican Republic, making it the second-largest Caribbean island."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Unique Creole Culture",
             "description": "Haiti has a unique cultural blend of African, French, and indigenous Taíno influences."
           },
@@ -5507,7 +5507,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Haití comparte la isla de Hispaniola con la República Dominicana, haciéndola la segunda isla más grande del Caribe."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Cultura Criolla Única",
             "description": "Haití tiene una mezcla cultural única de influencias africanas, francesas e indígenas taínas."
           },
@@ -5601,12 +5601,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Victoria Harbour is one of the world's most spectacular harbors, surrounded by towering skyscrapers and crowned by the Star Ferry — a historic transport that's been running for over 100 years."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Peak Tram",
                       "description": "The Peak Tram climbs to Victoria Peak, offering the most incredible views of Hong Kong's skyline and harbor. The tram has been operating since 1888 and is one of the world's steepest cable cars."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Dim Sum Tradition",
                       "description": "Hong Kong's dim sum dining tradition involves small plates of dumplings, steamed buns, and appetizers. Dim sum restaurants are social hubs where people gather for tea and food served by trolleys."
                   }
@@ -5623,12 +5623,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Puerto de Victoria es uno de los puertos más espectaculares del mundo, rodeado de rascacielos imponentes y coronado por el Star Ferry, un transporte histórico que opera desde hace más de 100 años."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Tranvía del Pico",
                       "description": "El Tranvía del Pico sube a Victoria Peak, ofreciendo vistas increíbles del horizonte de Hong Kong y el puerto. El tranvía ha operado desde 1888 y es uno de los teleféricos más empinados del mundo."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Tradición del dim sum",
                       "description": "La tradición culinaria de dim sum de Hong Kong involucra pequeños platos de dumplings, bollos al vapor y aperitivos. Los restaurantes de dim sum son centros sociales donde la gente se reúne para tomar té y comer servido en carros."
                   }
@@ -5775,7 +5775,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "India's flag is the \"Tricolor\" — three equal horizontal stripes of orange, white, and green with a blue Ashoka Chakra (24-spoked wheel) in the center of the white stripe. Orange represents courage and sacrifice, white symbolizes peace and truth, green represents fertility and growth, and the wheel represents the law of karma.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Taj Mahal",
                       "description": "The Taj Mahal is one of the world's most beautiful buildings, built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It took 20 years and 20,000 workers to complete this white marble masterpiece."
                   },
@@ -5785,7 +5785,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Holi is a joyful Hindu festival celebrating the arrival of spring. People throw colorful powder and water on each other, creating a rainbow of fun and togetherness."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Spice Master",
                       "description": "India is the world's largest producer and consumer of spices. Indian cuisine uses hundreds of spices like turmeric, cardamom, and cinnamon to create some of the world's most flavorful dishes."
                   }
@@ -5797,7 +5797,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de India es el \"Tricolor\": tres franjas horizontales iguales de naranja, blanco y verde con una Rueda de Ashoka azul (rueda de 24 radios) en el centro de la franja blanca. El naranja representa el valor y el sacrificio, el blanco simboliza la paz y la verdad, el verde representa la fertilidad y el crecimiento, y la rueda representa la ley del karma.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Taj Mahal",
                       "description": "El Taj Mahal es uno de los edificios más hermosos del mundo, construido por el emperador mogol Shah Jahan en memoria de su esposa Mumtaz Mahal. ¡Tardó 20 años y 20.000 trabajadores en completar esta obra maestra de mármol blanco!"
                   },
@@ -5807,7 +5807,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Holi es un alegre festival hindú que celebra la llegada de la primavera. La gente se lanza polvo y agua de colores entre sí, creando un arcoíris de diversión y unidad."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Maestro de las especias",
                       "description": "India es el mayor productor y consumidor de especias del mundo. La cocina india usa cientos de especias como la cúrcuma, el cardamomo y la canela para crear algunos de los platos más sabrosos del mundo."
                   }
@@ -5838,7 +5838,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Komodo dragons are the world's largest living lizards, growing up to 3 meters long. These prehistoric-looking reptiles live only on a few Indonesian islands and are carefully protected."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "World's Most Diverse Country",
                       "description": "Indonesia has over 17,000 islands and over 300 ethnic groups, each with their own language and traditions. It's the most linguistically diverse country in the world."
                   }
@@ -5860,7 +5860,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Los dragones de Komodo son los lagartos vivientes más grandes del mundo, creciendo hasta 3 metros de largo. Estos reptiles de aspecto prehistórico viven solo en algunas islas indonesias y están cuidadosamente protegidos."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "País más diverso del mundo",
                       "description": "Indonesia tiene más de 17.000 islas y más de 300 grupos étnicos, cada uno con su propio idioma y tradiciones. Es el país más diverso lingüísticamente del mundo."
                   }
@@ -5886,12 +5886,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Iran is home to one of the world's oldest civilizations. The ancient Persian Empire was one of history's greatest, stretching from Egypt to India over 2,000 years ago."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Persepolis Ruins",
                       "description": "Persepolis was the capital of the Achaemenid Empire and is now a stunning archaeological site with ruins of palaces, gates, and reliefs carved into stone. It's a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Persian Carpets",
                       "description": "Persian carpets are considered the finest hand-woven carpets in the world. Each carpet takes months to create and tells stories through its intricate patterns and colors."
                   }
@@ -5908,12 +5908,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Irán es el hogar de una de las civilizaciones más antiguas del mundo. El antiguo Imperio Persa fue uno de los más grandes de la historia, extendiéndose desde Egipto hasta India hace más de 2.000 años."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Ruinas de Persépolis",
                       "description": "Persépolis fue la capital del Imperio Aqueménida y ahora es un impresionante sitio arqueológico con ruinas de palacios, puertas y relieves tallados en piedra. Es Patrimonio Mundial de la UNESCO."
                   },
                   {
-                      "icon": "carpet",
+                      "icon": "texture",
                       "title": "Alfombras persas",
                       "description": "Las alfombras persas son consideradas las mejores alfombras tejidas a mano del mundo. Cada alfombra tarda meses en crearse y cuenta historias a través de sus patrones y colores intrincados."
                   }
@@ -5939,7 +5939,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Iraq is home to ancient Mesopotamia, where some of the world's first civilizations began around 3500 BC. It's called the \"Cradle of Civilization\" because writing, cities, and law were invented here."
                   },
                   {
-                      "icon": "library",
+                      "icon": "local_library",
                       "title": "House of Wisdom",
                       "description": "In medieval Baghdad, the House of Wisdom was one of the world's largest libraries and centers of learning. Scholars from around the world came to study mathematics, astronomy, and medicine."
                   },
@@ -5961,7 +5961,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Irak es el hogar de la antigua Mesopotamia, donde comenzaron algunas de las primeras civilizaciones del mundo alrededor del 3500 a.C. Se llama la \"Cuna de la Civilización\" porque aquí fueron inventados la escritura, las ciudades y la ley."
                   },
                   {
-                      "icon": "library",
+                      "icon": "local_library",
                       "title": "Casa de la sabiduría",
                       "description": "En el Bagdad medieval, la Casa de la Sabiduría fue una de las mayores bibliotecas y centros de aprendizaje del mundo. Eruditos de todo el mundo vinieron a estudiar matemáticas, astronomía y medicina."
                   },
@@ -6123,7 +6123,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Dead Sea is the lowest point on Earth at 1,410 feet below sea level. Its water is so salty (33% salinity) that people float without effort — a unique natural phenomenon!"
                   },
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Tech Innovation Hub",
                       "description": "Israel is a global leader in technology and innovation. Despite its small size, Israel has more startups per capita than any other country and is called the \"Startup Nation.\""
                   }
@@ -6145,7 +6145,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Mar Muerto es el punto más bajo de la Tierra, a 430 metros bajo el nivel del mar. Su agua es tan salada (33% de salinidad) que la gente flota sin esfuerzo, ¡un fenómeno natural único!"
                   },
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Centro de innovación tecnológica",
                       "description": "Israel es líder mundial en tecnología e innovación. A pesar de su tamaño pequeño, Israel tiene más startups per cápita que cualquier otro país y se conoce como la \"Nación Startup\"."
                   }
@@ -6350,12 +6350,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Japan leads the world in robotics technology and manufacturing. From industrial robots to humanoid robots like Pepper, Japan creates innovations that help people in factories and homes around the world."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Mount Fuji",
                       "description": "Mount Fuji is Japan's highest peak at 3,776 meters and is a sacred mountain in Japanese culture. It's almost perfectly conical and is one of Japan's most iconic symbols."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Cherry Blossom Festival",
                       "description": "Hanami (cherry blossom festival) is a beloved Japanese tradition celebrating the blooming of cherry trees in spring. Families gather under the pink and white blossoms for picnics and celebrations."
                   }
@@ -6372,12 +6372,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Japón lidera el mundo en tecnología robótica y fabricación. Desde robots industriales hasta robots humanoides como Pepper, Japón crea innovaciones que ayudan a las personas en fábricas y hogares de todo el mundo."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Monte Fuji",
                       "description": "El Monte Fuji es el pico más alto de Japón con 3.776 metros y es una montaña sagrada en la cultura japonesa. Es casi perfectamente cónico y es uno de los símbolos más icónicos de Japón."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Festival de las flores de cerezo",
                       "description": "Hanami (festival de flores de cerezo) es una tradición japonesa amada que celebra la floración de los árboles de cerezo en primavera. Las familias se reúnen bajo los flores rosa y blanca para picnics y celebraciones."
                   }
@@ -6461,7 +6461,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Jordan's flag has three equal horizontal stripes of black, white, and green (top to bottom) with a red triangle on the left side. The colors are the Pan-Arab colors: black for history, white for peace, green for the Prophet Muhammad's tribe, and red for courage.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Petra: Rose City",
                       "description": "Petra is an ancient city carved entirely into rose-colored stone cliffs. Built by the Nabataeans around 2,000 years ago, it's one of the New Seven Wonders of the World and a UNESCO site."
                   },
@@ -6471,7 +6471,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Dead Sea on Jordan's border is the lowest point on Earth. Its extreme salinity makes it perfect for floating, and mineral-rich mud is believed to have healing properties."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Wadi Rum Red Desert",
                       "description": "Wadi Rum is a stunning desert landscape with massive rock formations. It's been used as a filming location for Star Wars and other movies because of its otherworldly appearance."
                   }
@@ -6483,7 +6483,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Jordania tiene tres franjas horizontales iguales de negro, blanco y verde (de arriba a abajo) con un triángulo rojo a la izquierda. Los colores son los colores panárabes: negro por la historia, blanco por la paz, verde por la tribu del Profeta Mahoma, y rojo por el valor.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Petra: la ciudad rosa",
                       "description": "Petra es una ciudad antigua tallada completamente en acantilados de piedra de color rosa. Construida por los nabateos hace alrededor de 2.000 años, es una de las Nuevas Siete Maravillas del Mundo y un sitio de la UNESCO."
                   },
@@ -6493,7 +6493,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Mar Muerto en la frontera de Jordania es el punto más bajo de la Tierra. Su salinidad extrema lo hace perfecto para flotar, y el barro mineral se cree que tiene propiedades curativas."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Desierto rojo de Wadi Rum",
                       "description": "Wadi Rum es un impresionante paisaje desértico con formaciones rocosas masivas. Ha sido utilizado como lugar de rodaje de Star Wars y otras películas por su apariencia fuera de este mundo."
                   }
@@ -6514,17 +6514,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Kazakhstan's flag is sky-blue with a golden sun and a soaring steppe eagle (golden) in the center, with a gold ornamental pattern on the left side. The blue represents peace and prosperity, the sun represents life and energy, and the eagle symbolizes freedom and power.",
               "funFacts": [
                   {
-                      "icon": "space",
+                      "icon": "rocket_launch",
                       "title": "Space Travel Birthplace",
                       "description": "The Baikonur Cosmodrome in Kazakhstan is the world's oldest and largest space launch facility. Sputnik launched from here, and rockets carrying cosmonauts to the International Space Station still depart from this historic site."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Steppe Landscape",
                       "description": "Kazakhstan's vast steppes cover enormous areas of grassland. These endless rolling plains have been home to nomadic peoples for thousands of years and support unique wildlife like wild horses."
                   },
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "Modern Astana",
                       "description": "Astana is one of the world's newest capital cities, built from scratch in the late 1990s. Its futuristic architecture and rapid growth have made it a symbol of Kazakhstan's progress."
                   }
@@ -6536,17 +6536,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Kazajistán es azul cielo con un sol dorado y un águila de las estepas en vuelo (dorada) en el centro, con un patrón ornamental dorado en el lado izquierdo. El azul representa la paz y la prosperidad, el sol representa la vida y la energía, y el águila simboliza la libertad y el poder.",
               "funFacts": [
                   {
-                      "icon": "space",
+                      "icon": "rocket_launch",
                       "title": "Cuna de los viajes espaciales",
                       "description": "El Cosmódromo de Baikonur en Kazajistán es la instalación de lanzamiento espacial más antigua y grande del mundo. El Sputnik se lanzó desde aquí, y los cohetes que transportan cosmonautas a la Estación Espacial Internacional aún salen desde este sitio histórico."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Paisaje de estepa",
                       "description": "Las vastas estepas de Kazajistán cubren enormes áreas de pastizales. Estas llanuras ondulantes infinitas han sido hogar de pueblos nómadas durante miles de años y sustentan fauna única como caballos salvajes."
                   },
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "Astaná moderna",
                       "description": "Astaná es una de las nuevas capitales más nuevas del mundo, construida desde cero a finales de los años 90. Su arquitectura futurista y rápido crecimiento la han convertido en símbolo del progreso de Kazajistán."
                   }
@@ -6698,7 +6698,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Kosovo's national football team was officially recognized by FIFA in 2016. Despite being one of the newest national teams in the world, they have already caused major upsets against established European nations, becoming a source of enormous national pride."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Sharr Mountains",
                       "description": "The Sharr Mountains (Šar planina) along Kosovo's southern border are a breathtaking natural treasure with glacial lakes, endemic wildflowers, wolves, lynxes, and golden eagles. The mountain range has been proposed for UNESCO Natural Heritage status for its extraordinary biodiversity."
                   }
@@ -6725,7 +6725,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El equipo nacional de fútbol de Kosovo fue reconocido oficialmente por la FIFA en 2016. A pesar de ser uno de los equipos nacionales más nuevos del mundo, ya han causado importantes sorpresas contra naciones europeas establecidas, convirtiéndose en una fuente de enorme orgullo nacional."
                   },
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Las Montañas Šar",
                       "description": "Las Montañas Šar (Šar planina) a lo largo de la frontera sur de Kosovo son un impresionante tesoro natural con lagos glaciales, flores silvestres endémicas, lobos, linces y águilas reales. La cordillera ha sido propuesta para el estatus de Patrimonio Natural de la UNESCO por su extraordinaria biodiversidad."
                   }
@@ -6809,17 +6809,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Kyrgyzstan's flag is red with a yellow sun in the center containing a red tunduk (a stylized depiction of the crown of a Kyrgyz yurt, the traditional dwelling). The red represents bravery and strength, the yellow sun symbolizes peace and prosperity, and the tunduk represents the Kyrgyz nomadic heritage.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Tian Shan Mountains",
                       "description": "The Tian Shan Mountains (\"Celestial Mountains\") dominate Kyrgyzstan with peaks over 7,000 meters. These dramatic mountains are home to rare snow leopards and ibex."
                   },
                   {
-                      "icon": "epic",
+                      "icon": "auto_awesome",
                       "title": "Epic of Manas",
                       "description": "The Epic of Manas is one of the world's longest epic poems, telling stories of a legendary Kyrgyz hero. It's been passed down orally through generations and is UNESCO-protected as world heritage."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Nomadic Yurt Culture",
                       "description": "Kyrgyzstan has a strong nomadic heritage. Yurts (traditional round felt tents) are still used today, and yurt stays allow visitors to experience traditional Kyrgyz hospitality and life."
                   }
@@ -6831,17 +6831,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Kirguistán es roja con un sol amarillo en el centro que contiene un tunduk rojo (una representación estilizada de la corona de una yurta kirguisa, la vivienda tradicional). El rojo representa el valor y la fortaleza, el sol amarillo simboliza la paz y la prosperidad, y el tunduk representa el patrimonio nómada kirguiso.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Montañas Tian Shan",
                       "description": "Las Montañas Tian Shan (\"Montañas Celestiales\") dominan Kirguistán con picos superiores a 7.000 metros. Estas dramáticas montañas albergan raros leopardos de las nieves e íbices."
                   },
                   {
-                      "icon": "epic",
+                      "icon": "auto_awesome",
                       "title": "Epopeya de Manas",
                       "description": "La Epopeya de Manas es uno de los poemas épicos más largos del mundo, narrando historias de un legendario héroe kirguiso. Ha sido transmitida oralmente a través de generaciones y está protegida por la UNESCO como patrimonio mundial."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Cultura nómada de yurtas",
                       "description": "Kirguistán tiene un fuerte patrimonio nómada. Las yurtas (tiendas de fieltro redondas tradicionales) se siguen usando hoy, y alojamientos en yurtas permiten a los visitantes experimentar la hospitalidad y vida kirguisa tradicional."
                   }
@@ -6867,7 +6867,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Mekong River flows through Laos and is vital to the country's life and economy. It's one of the world's most important rivers and supports millions of people across Southeast Asia."
                   },
                   {
-                      "icon": "temple",
+                      "icon": "temple_buddhist",
                       "title": "Luang Prabang Temples",
                       "description": "Luang Prabang is an ancient city filled with hundreds of golden temples and Buddhist monasteries. Watching monks in saffron robes collect alms at dawn is one of Southeast Asia's most peaceful traditions."
                   },
@@ -6889,7 +6889,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El río Mekong fluye a través de Laos y es vital para la vida y la economía del país. Es uno de los ríos más importantes del mundo y sustenta millones de personas en toda el Sudeste Asiático."
                   },
                   {
-                      "icon": "temple",
+                      "icon": "temple_buddhist",
                       "title": "Templos de Luang Prabang",
                       "description": "Luang Prabang es una ciudad antigua llena de cientos de templos dorados y monasterios budistas. Ver a monjes con túnicas azafrán recolectando limosnas al amanecer es una de las tradiciones más pacíficas del Sudeste Asiático."
                   },
@@ -6978,7 +6978,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Lebanon's flag has two red stripes separated by a white stripe with a green cedar tree in the center. The cedar is Lebanon's national symbol and appears on coins and stamps. Red represents courage and sacrifice, white symbolizes peace, and the cedar represents eternal life and resilience.",
               "funFacts": [
                   {
-                      "icon": "tree",
+                      "icon": "park",
                       "title": "Iconic Cedar Trees",
                       "description": "The Cedar of Lebanon (Cedrus libani) is Lebanon's national symbol and appears on its flag. These ancient trees have been valued for over 3,000 years and are now protected in mountain reserves."
                   },
@@ -6988,7 +6988,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Ancient Phoenicians from Lebanon were the world's greatest sailors and traders. They invented the alphabet (which became the basis for Arabic, Hebrew, and Greek letters) and established trade routes across the Mediterranean."
                   },
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "Paris of the Middle East",
                       "description": "Beirut was once called the \"Paris of the Middle East\" for its cosmopolitan culture, restaurants, and nightlife. It remains a vibrant city with a mix of ancient and modern architecture."
                   }
@@ -7000,7 +7000,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera del Líbano tiene dos franjas rojas separadas por una franja blanca con un árbol de cedro verde en el centro. El cedro es el símbolo nacional del Líbano y aparece en monedas y sellos. El rojo representa el valor y el sacrificio, el blanco simboliza la paz, y el cedro representa la vida eterna y la resiliencia.",
               "funFacts": [
                   {
-                      "icon": "tree",
+                      "icon": "park",
                       "title": "Árboles de cedro icónicos",
                       "description": "El Cedro del Líbano (Cedrus libani) es el símbolo nacional del Líbano y aparece en su bandera. Estos árboles antiguos han sido valorados durante más de 3.000 años y ahora están protegidos en reservas montañosas."
                   },
@@ -7010,7 +7010,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Los antiguos fenicios del Líbano fueron los mayores marineros y comerciantes del mundo. Inventaron el alfabeto (que se convirtió en la base de las letras árabes, hebreas y griegas) y establecieron rutas comerciales a través del Mediterráneo."
                   },
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "París de Oriente Medio",
                       "description": "Beirut fue una vez llamada la \"París de Oriente Medio\" por su cultura cosmopolita, restaurantes y vida nocturna. Sigue siendo una ciudad vibrante con una mezcla de arquitectura antigua y moderna."
                   }
@@ -7538,17 +7538,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Malaysia's flag (Jalur Gemilang) has 14 red and white stripes (7 each) with a blue canton containing a crescent and 14-pointed star. The colors are red and white for the nation, blue for the states, the crescent represents Islam, and the star symbolizes the 13 states and federal territories.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Petronas Twin Towers",
                       "description": "The Petronas Twin Towers in Kuala Lumpur are iconic skyscrapers connected by a skybridge. At 452 meters, they were once the world's tallest buildings and remain a symbol of Malaysia's modern development."
                   },
                   {
-                      "icon": "rainforest",
+                      "icon": "eco",
                       "title": "Ancient Rainforest",
                       "description": "Malaysia has one of the world's oldest rainforests, estimated at 130 million years old. The rainforest is home to orangutans, tigers, and countless other species found nowhere else on Earth."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Food Capital of Asia",
                       "description": "Malaysian cuisine blends Malay, Chinese, and Indian flavors. Street food is legendary — dishes like nasi lemak, laksa, and dim sum reflect Malaysia's multicultural heritage."
                   }
@@ -7560,17 +7560,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Malasia (Jalur Gemilang) tiene 14 franjas rojo y blancas (7 cada una) con un cantón azul que contiene una media luna y una estrella de 14 puntas. Los colores son rojo y blanco para la nación, azul para los estados, la media luna representa el Islam, y la estrella simboliza los 13 estados y territorios federales.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Torres gemelas Petronas",
                       "description": "Las Torres Gemelas Petronas en Kuala Lumpur son rascacielos icónicos conectados por un puente aéreo. Con 452 metros, una vez fueron los edificios más altos del mundo y siguen siendo un símbolo del desarrollo moderno de Malasia."
                   },
                   {
-                      "icon": "rainforest",
+                      "icon": "eco",
                       "title": "Selva tropical antigua",
                       "description": "Malasia tiene una de las selvas tropicales más antiguas del mundo, estimada en 130 millones de años. La selva tropical es hogar de orangutanes, tigres e incontables otras especies que no existen en ningún otro lugar de la Tierra."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Capital gastronómica de Asia",
                       "description": "La cocina malaya mezcla sabores malayo, chino e indio. La comida callejera es legendaria: platos como nasi lemak, laksa y dim sum reflejan el patrimonio multicultural de Malasia."
                   }
@@ -7596,7 +7596,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Maldives is an archipelago of 1,190 coral islands in the Indian Ocean, with only 199 inhabited. The islands are famous for their pristine white-sand beaches and crystal-clear turquoise waters."
                   },
                   {
-                      "icon": "diving",
+                      "icon": "scuba_diving",
                       "title": "World's Top Diving Destination",
                       "description": "The Maldives has some of the world's best coral reefs and is a paradise for snorkeling and diving. Visitors can see colorful fish, sea turtles, rays, and even whale sharks."
                   },
@@ -7618,7 +7618,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Las Maldivas es un archipiélago de 1.190 islas de coral en el Océano Índico, con solo 199 habitadas. Las islas son famosas por sus playas de arena blanca virgen y aguas turquesas cristalinas."
                   },
                   {
-                      "icon": "diving",
+                      "icon": "scuba_diving",
                       "title": "Mejor destino de buceo del mundo",
                       "description": "Las Maldivas tiene algunos de los mejores arrecifes de coral del mundo y es un paraíso para snorkel y buceo. Los visitantes pueden ver peces coloridos, tortugas marinas, rayas, e incluso tiburones ballena."
                   },
@@ -7828,7 +7828,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Martinique is known for its tropical beaches, lush vegetation, and pleasant Caribbean climate."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Mount Pelée",
             "description": "Mount Pelée is an active volcano that devastated the capital in 1902, one of history's deadliest eruptions."
           },
@@ -7838,7 +7838,7 @@ export const countriesData: CountryEntry[] = [
             "description": "As an overseas region of France, Martinique is part of the European Union and uses the Euro currency."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Creole Heritage",
             "description": "Martinique has a rich creole culture blending African, French, and Caribbean influences."
           }
@@ -7855,7 +7855,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Martinica es conocida por sus playas tropicales, vegetación exuberante y agradable clima caribeño."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Monte Pelée",
             "description": "El Monte Pelée es un volcán activo que devastó la capital en 1902, una de las erupciones más mortíferas de la historia."
           },
@@ -7865,7 +7865,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Como región de ultramar de Francia, Martinica es parte de la Unión Europea y utiliza la moneda Euro."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Herencia Criolla",
             "description": "Martinica tiene una cultura criolla rica que mezcla influencias africanas, francesas y caribeñas."
           }
@@ -8045,7 +8045,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "Mexico's flag has three vertical stripes of green, white, and red. The center features the national coat of arms: an eagle perched on a cactus, eating a snake. This symbolizes the founding of Mexico City. The green represents hope, white represents peace, and red represents the blood of patriots.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Aztec Legacy",
             "description": "Mexico was the center of the Aztec Empire, with ruins still visible in Mexico City including Templo Mayor."
           },
@@ -8072,7 +8072,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de México tiene tres franjas verticales de verde, blanco y rojo. El centro presenta el escudo de armas nacional: un águila encaramada en un cactus, comiendo una serpiente. Esto simboliza la fundación de la Ciudad de México. El verde representa la esperanza, el blanco representa la paz, y el rojo representa la sangre de los patriotas.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Legado Azteca",
             "description": "México fue el centro del Imperio Azteca, con ruinas aún visibles en la Ciudad de México incluyendo el Templo Mayor."
           },
@@ -8297,7 +8297,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Mongolia's flag has a gold-red vertical stripe in the center flanked by two red stripes, with a gold national emblem on the hoist side. Red represents the power and determination of the Mongolian people, and the emblem (Soyombo symbol) represents independence and cultural heritage.",
               "funFacts": [
                   {
-                      "icon": "horse",
+                      "icon": "pets",
                       "title": "Land of Genghis Khan",
                       "description": "Mongolia was the birthplace of Genghis Khan, who created the largest land empire in history. At its peak, the Mongol Empire stretched from China to Europe — the largest continuous land empire ever!"
                   },
@@ -8307,7 +8307,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Gobi Desert is one of the largest deserts in Asia, covering Mongolia, China, and beyond. It's home to unique wildlife like wild camels, snow leopards, and fossils of prehistoric dinosaurs."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Nomadic Heritage",
                       "description": "Nomadic pastoralism is still part of Mongolian culture. Herders live in gers (yurts) and move seasonally with their flocks of sheep, goats, and horses across the vast steppes."
                   }
@@ -8319,7 +8319,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Mongolia tiene una franja vertical dorada-roja en el centro flanqueada por dos franjas rojas, con un emblema nacional dorado en el lado del asta. El rojo representa el poder y la determinación del pueblo mongol, y el emblema (símbolo Soyombo) representa la independencia y el patrimonio cultural.",
               "funFacts": [
                   {
-                      "icon": "horse",
+                      "icon": "pets",
                       "title": "Tierra de Gengis Khan",
                       "description": "Mongolia fue la cuna de Gengis Khan, quien creó el imperio terrestre más grande de la historia. En su apogeo, el Imperio Mongol se extendía desde China hasta Europa, ¡el imperio terrestre continuo más grande jamás!"
                   },
@@ -8329,7 +8329,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Desierto de Gobi es uno de los mayores desiertos de Asia, cubriendo Mongolia, China y más allá. Es hogar de fauna única como camellos salvajes, leopardos de las nieves y fósiles de dinosaurios prehistóricos."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Patrimonio nómada",
                       "description": "El pastoralismo nómada sigue siendo parte de la cultura mongola. Los pastores viven en gers (yurtas) y se mueven estacionalmente con sus rebaños de ovejas, cabras y caballos a través de las vastas estepas."
                   }
@@ -8413,7 +8413,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "Montserrat's flag is divided into four triangles by a gold cross. The upper and lower sections are green and blue, representing the island's agriculture and sea. The cross bears a female figure in the center, symbolizing the island's rich heritage.",
           "funFacts": [
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Soufrière Hills Volcano",
             "description": "Montserrat is home to the active Soufrière Hills Volcano, which erupted dramatically in 1997, altering the island's landscape."
           },
@@ -8440,7 +8440,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de Montserrat está dividida en cuatro triángulos por una cruz de oro. Las secciones superior e inferior son verde y azul, representando la agricultura de la isla y el mar. La cruz lleva una figura femenina en el centro, simbolizando el rico patrimonio de la isla.",
           "funFacts": [
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Volcán Soufrière Hills",
             "description": "Montserrat es hogar del volcán Soufrière Hills activo, que entró en erupción dramáticamente en 1997, alterando el paisaje de la isla."
           },
@@ -8582,17 +8582,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Myanmar's flag has three equal horizontal stripes of yellow, green, and red with a white star in the center. Yellow represents solidarity and freedom, green represents peace and tranquility, red represents courage, and the white star represents the unity of the nation.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Shwedagon Pagoda",
                       "description": "The Shwedagon Pagoda in Yangon is one of the most sacred Buddhist sites in the world, covered in 27 tons of gold. It has been a place of pilgrimage for over 2,500 years."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Longyi Tradition",
                       "description": "Longyi (or sarongs) are traditional skirts worn by both men and women in Myanmar. Each region has distinctive patterns and colors, making them an important part of Burmese cultural identity."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Land of a Thousand Pagodas",
                       "description": "Bagan is an archaeological zone with over 2,000 Buddhist temples and pagodas built between the 11th and 13th centuries. It's one of the most impressive religious sites in Asia."
                   }
@@ -8604,17 +8604,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Myanmar tiene tres franjas horizontales iguales de amarillo, verde y rojo con una estrella blanca en el centro. El amarillo representa la solidaridad y la libertad, el verde la paz y la tranquilidad, el rojo el valor, y la estrella blanca representa la unidad de la nación.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Pagoda de Shwedagon",
                       "description": "La Pagoda de Shwedagon en Yangón es uno de los sitios budistas más sagrados del mundo, cubierta en 27 toneladas de oro. Ha sido un lugar de peregrinación durante más de 2.500 años."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Tradición del Longyi",
                       "description": "El longyi (o sarongs) son faldas tradicionales usadas tanto por hombres como por mujeres en Myanmar. Cada región tiene patrones y colores distintivos, lo que los convierte en una parte importante de la identidad cultural birmana."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Tierra de mil pagodas",
                       "description": "Bagan es una zona arqueológica con más de 2.000 templos budistas y pagodas construidos entre los siglos XI y XIII. Es uno de los sitios religiosos más impresionantes de Asia."
                   }
@@ -8751,17 +8751,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Nepal's flag is unique — the only non-rectangular flag among UN nations. It consists of two stacked triangles, with a white crescent and star on each. Red represents the courage of Nepali people, blue represents peace, and the crimson color is very auspicious in Hindu culture.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Mount Everest",
                       "description": "Mount Everest, the world's highest mountain at 8,849 meters, straddles Nepal and Tibet. Many climbers attempt to summit Everest from Nepal's side, making it a major adventure tourism destination."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Birthplace of Buddha",
                       "description": "Lumbini in Nepal is the birthplace of Siddhartha Gautama, who became Buddha. It's one of the holiest sites in Buddhism and is a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Himalayan Culture",
                       "description": "Nepal is famous for its Hindu and Buddhist temples, including the stunning Kathmandu Valley temples. The country blends ancient tradition with stunning mountain scenery."
                   }
@@ -8773,17 +8773,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Nepal es única, la única bandera no rectangular entre las naciones de la ONU. Consiste en dos triángulos apilados, con una media luna blanca y una estrella en cada uno. El rojo representa el coraje del pueblo nepalí, el azul la paz, y el color carmesí es muy auspicioso en la cultura hindú.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Monte Everest",
                       "description": "El Monte Everest, la montaña más alta del mundo con 8.849 metros, se extiende entre Nepal y el Tíbet. Muchos alpinistas intentan ascender al Everest por el lado de Nepal, lo que la convierte en un importante destino de turismo de aventura."
                   },
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Lugar de nacimiento de Buda",
                       "description": "Lumbini en Nepal es el lugar de nacimiento de Siddharta Gautama, quien se convirtió en Buda. Es uno de los sitios más sagrados en el budismo y es Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Cultura del Himalaya",
                       "description": "Nepal es famoso por sus templos hindúes y budistas, incluidos los impresionantes templos del Valle de Katmandú. El país mezcla tradición antigua con impresionante paisaje montañoso."
                   }
@@ -8998,7 +8998,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Lake Nicaragua is Central America's largest lake, home to freshwater sharks and diverse marine life."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Volcanic Landscape",
             "description": "Nicaragua sits on the Pacific Ring of Fire and has numerous active and dormant volcanoes."
           },
@@ -9025,7 +9025,7 @@ export const countriesData: CountryEntry[] = [
             "description": "El Lago de Nicaragua es el lago más grande de América Central, hogar de tiburones de agua dulce y vida marina diversa."
           },
           {
-            "icon": "mountain",
+            "icon": "terrain",
             "title": "Paisaje Volcánico",
             "description": "Nicaragua se encuentra en el Anillo de Fuego del Pacífico y tiene numerosos volcanes activos e inactivos."
           },
@@ -9293,12 +9293,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Juche Tower in Pyongyang is 170 meters tall and symbolizes the philosophy of self-reliance (Juche). It's one of the tallest monuments in the world and is a symbol of North Korean national pride."
                   },
                   {
-                      "icon": "sport",
+                      "icon": "sports",
                       "title": "Winter Sports Legacy",
                       "description": "North Korea has competed in the Winter Olympics and has shown strength in winter sports. The national mass games in Pyongyang are spectacular performances involving thousands of participants."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Arirang Festival",
                       "description": "The Arirang Festival is a mass celebration in Pyongyang featuring synchronized gymnastics, dance, and performances with thousands of participants creating human mosaics."
                   }
@@ -9315,12 +9315,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "La Torre Juche en Pyongyang mide 170 metros de alto y simboliza la filosofía de la autosuficiencia (Juche). Es uno de los monumentos más altos del mundo y es un símbolo del orgullo nacional norcoreano."
                   },
                   {
-                      "icon": "sport",
+                      "icon": "sports",
                       "title": "Legado de deportes de invierno",
                       "description": "Corea del Norte ha competido en los Juegos Olímpicos de Invierno y ha mostrado fortaleza en deportes de invierno. Los juegos de masas nacionales en Pyongyang son actuaciones espectaculares con miles de participantes."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Festival de Arirang",
                       "description": "El Festival de Arirang es una celebración de masas en Pyongyang que presenta gimnasia sincronizada, danza y actuaciones con miles de participantes que crean mosaicos humanos."
                   }
@@ -9530,7 +9530,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Oman's flag has three equal horizontal stripes of white, red, and green with a vertical red stripe on the hoist side containing the national emblem (white khanjar dagger and crossed swords). The colors represent different aspects of the nation's character and heritage.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Green Mountain (Jabal Akhdar)",
                       "description": "Jabal Akhdar is a limestone mountain in Oman's interior that's green due to its higher elevation and monsoon moisture. It's surrounded by lush terraced gardens growing roses and pomegranates."
                   },
@@ -9540,7 +9540,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Oman has coastlines along the Arabian Sea and Persian Gulf with dramatic rocky cliffs, hidden beaches, and coral reefs. The coasts are home to sea turtles and dolphins."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Frankincense Trail",
                       "description": "Oman was a major trading hub on the frankincense trail for thousands of years. The town of Salalah still produces frankincense, and the historical trade routes are being preserved as cultural heritage."
                   }
@@ -9552,7 +9552,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Omán tiene tres franjas horizontales iguales de blanco, rojo y verde con una franja roja vertical en el lado del asta que contiene el emblema nacional (puñal khanjar blanco y espadas cruzadas). Los colores representan diferentes aspectos del carácter y patrimonio de la nación.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Montaña Verde (Jabal Akhdar)",
                       "description": "Jabal Akhdar es una montaña de piedra caliza en el interior de Omán que es verde debido a su mayor elevación y humedad de monzón. Está rodeada de exuberantes jardines en terrazas que cultivan rosas y granadas."
                   },
@@ -9562,7 +9562,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Omán tiene costas a lo largo del Mar Arábigo y el Golfo Pérsico con acantilados rocosos dramáticos, playas escondidas y arrecifes de coral. Las costas albergan tortugas marinas y delfines."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Ruta del incienso",
                       "description": "Omán fue un importante centro comercial en la ruta del incienso durante miles de años. La ciudad de Salalah sigue produciendo incienso, y las rutas comerciales históricas se están preservando como patrimonio cultural."
                   }
@@ -9583,17 +9583,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Pakistan's flag is dark green with a white crescent and five-pointed star in the center and a vertical white stripe on the hoist side. Green represents Islam, the crescent and star are Islamic symbols, the white stripe represents religious minorities, and white symbolizes peace.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "K2 Mountain",
                       "description": "K2 is the world's second-highest mountain at 8,611 meters, located in the Karakoram Mountains in northern Pakistan. It's known as the \"Savage Mountain\" because climbing it is extremely difficult and dangerous."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Badshahi Mosque",
                       "description": "The Badshahi Mosque in Lahore is one of the largest mosques in the world, with room for over 24,000 worshippers. Its red brick construction and marble inlay are architectural masterpieces."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Spice Haven",
                       "description": "Pakistan is famous for its aromatic and flavorful cuisine. Dishes like biryani, karahi, and samosas are beloved worldwide, and Pakistani spice markets are legendary for their variety."
                   }
@@ -9605,17 +9605,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Pakistán es verde oscuro con una media luna blanca y una estrella de cinco puntas en el centro y una franja blanca vertical en el lado del asta. El verde representa el Islam, la media luna y la estrella son símbolos islámicos, la franja blanca representa a las minorías religiosas, y el blanco simboliza la paz.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Montaña K2",
                       "description": "K2 es la segunda montaña más alta del mundo con 8.611 metros, ubicada en las Montañas Karakórum en el norte de Pakistán. Es conocida como la \"Montaña Salvaje\" porque escalarla es extremadamente difícil y peligroso."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Mezquita Badshahi",
                       "description": "La Mezquita Badshahi en Lahore es una de las mezquitas más grandes del mundo, con espacio para más de 24.000 fieles. Su construcción de ladrillo rojo y adornos de mármol son obras maestras arquitectónicas."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Paraíso de especias",
                       "description": "Pakistán es famoso por su cocina aromática y sabrosa. Platos como biryani, karahi y samosas son amados en todo el mundo, y los mercados de especias pakistaní son legendarios por su variedad."
                   }
@@ -9699,17 +9699,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Palestine's flag is identical to the Pan-Arab flag with three equal horizontal stripes of black, white, and green, with a red triangle on the left. The colors represent pan-Arab unity, and the flag symbolizes Palestinian national identity and sovereignty.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Church of the Nativity",
                       "description": "The Church of the Nativity in Bethlehem is one of Christianity's holiest sites, believed to be built over the birthplace of Jesus. It's been a pilgrimage destination for nearly 2,000 years."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Palestinian Embroidery",
                       "description": "Palestinian traditional embroidery is an ancient craft with distinctive patterns and colors passed down through generations. Each region has unique designs that tell stories of Palestinian heritage."
                   },
                   {
-                      "icon": "olives",
+                      "icon": "restaurant",
                       "title": "Olive Trees",
                       "description": "Olive trees have been part of Palestinian culture for thousands of years. Ancient olive groves produce some of the world's finest olive oil, and olives are central to Palestinian cuisine and economy."
                   }
@@ -9721,17 +9721,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Palestina es idéntica a la bandera panárabe con tres franjas horizontales iguales de negro, blanco y verde, con un triángulo rojo a la izquierda. Los colores representan la unidad panárabe, y la bandera simboliza la identidad nacional palestina y la soberanía.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Iglesia de la Natividad",
                       "description": "La Iglesia de la Natividad en Belén es uno de los sitios más sagrados del cristianismo, se cree que está construida sobre el lugar de nacimiento de Jesús. Ha sido un destino de peregrinación durante casi 2.000 años."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Bordado palestino",
                       "description": "El bordado tradicional palestino es una artesanía antigua con patrones y colores distintivos transmitidos a través de generaciones. Cada región tiene diseños únicos que cuentan historias del patrimonio palestino."
                   },
                   {
-                      "icon": "olives",
+                      "icon": "restaurant",
                       "title": "Olivos",
                       "description": "Los olivos han sido parte de la cultura palestina durante miles de años. Los olivares antiguos producen algunos de los mejores aceites de oliva del mundo, y las aceitunas son fundamentales para la cocina y la economía palestina."
                   }
@@ -9752,7 +9752,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "Panama's flag is quartered with red, blue, white, and red-blue sections. Each quarter contains a white or gold star representing civic virtues. The flag design represents the unity and diversity of the Panamanian people.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Panama Canal",
             "description": "The Panama Canal is one of the world's most important waterways, connecting the Atlantic and Pacific Oceans."
           },
@@ -9779,7 +9779,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de Panamá está dividida en cuartos con secciones roja, azul, blanca y rojo-azul. Cada cuarto contiene una estrella blanca u dorada que representa virtudes cívicas. El diseño de la bandera representa la unidad y diversidad del pueblo panameño.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Canal de Panamá",
             "description": "El Canal de Panamá es una de las vías fluviales más importantes del mundo, conectando los Océanos Atlántico y Pacífico."
           },
@@ -9941,7 +9941,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "Peru's flag has three vertical stripes of red, white, and red. The white stripe features the coat of arms on the obverse side. Red represents the blood of patriots, white represents peace and honesty, and the coat of arms symbolizes Peru's natural resources.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Machu Picchu",
             "description": "Machu Picchu is an ancient Inca citadel located high in the Andes Mountains, one of the world's most iconic ruins."
           },
@@ -9956,7 +9956,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Peru contains a significant portion of the Amazon Rainforest, the world's largest tropical forest."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Inca Heritage",
             "description": "Peru is the heart of Inca civilization, with countless archaeological sites and artifacts throughout the country."
           }
@@ -9968,7 +9968,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de Perú tiene tres franjas verticales de rojo, blanco y rojo. La franja blanca presenta el escudo de armas en el lado del anverso. El rojo representa la sangre de los patriotas, el blanco representa la paz y la honestidad, y el escudo de armas simboliza los recursos naturales de Perú.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Machu Picchu",
             "description": "Machu Picchu es una ciudadela inca antigua ubicada en lo alto de las Montañas de los Andes, una de las ruinas más icónicas del mundo."
           },
@@ -9983,7 +9983,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Perú contiene una porción significativa de la Selva Amazónica, la selva tropical más grande del mundo."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Herencia Inca",
             "description": "Perú es el corazón de la civilización inca, con innumerables sitios arqueológicos y artefactos en todo el país."
           }
@@ -10014,7 +10014,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "The Sinulog Festival in Cebu is one of Asia's largest festivals, celebrating the Ati-Atihan with colorful street dances, parades, and reenactments of the legend of the Santo Niño."
                   },
                   {
-                      "icon": "island",
+                      "icon": "beach_access",
                       "title": "Tropical Island Nation",
                       "description": "The Philippines is an archipelago of over 7,600 islands with diverse ecosystems, pristine beaches, and some of the world's best diving spots. Its coral reefs are among the most biodiverse."
                   }
@@ -10036,7 +10036,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Festival de Sinulog en Cebú es uno de los mayores festivales de Asia, celebrando el Ati-Atihan con danzas callejeras coloridas, desfiles y recreaciones de la leyenda del Santo Niño."
                   },
                   {
-                      "icon": "island",
+                      "icon": "beach_access",
                       "title": "Nación de islas tropicales",
                       "description": "Las Filipinas es un archipiélago de más de 7.600 islas con ecosistemas diversos, playas pristinas y algunos de los mejores lugares de buceo del mundo. Sus arrecifes de coral están entre los más biodiversos."
                   }
@@ -10256,7 +10256,7 @@ export const countriesData: CountryEntry[] = [
             "description": "El Yunque National Rainforest is the only rainforest in the U.S. National Forest System."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Salsa Music",
             "description": "Puerto Rico is a major center of salsa music and culture, with vibrant music venues throughout the island."
           },
@@ -10283,7 +10283,7 @@ export const countriesData: CountryEntry[] = [
             "description": "El Bosque Tropical Nacional El Yunque es el único bosque tropical en el Sistema de Bosques Nacionales de EE.UU."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Música Salsa",
             "description": "Puerto Rico es un centro importante de música y cultura de salsa, con vibrantes lugares de música en toda la isla."
           },
@@ -10309,7 +10309,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Qatar's flag has a crimson/maroon stripe on the left separated by a white vertical stripe from a white field. The unusual saw-tooth border between the colors is distinctive. White represents peace and purity, while maroon represents the blood shed for independence.",
               "funFacts": [
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "Doha's Modern Skyline",
                       "description": "Doha has transformed from a small coastal town into a gleaming modern metropolis. The city is known for its futuristic architecture, including the iconic Burj Qatar and Museum of Islamic Art."
                   },
@@ -10319,7 +10319,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Qatar hosted the 2022 FIFA World Cup, the first World Cup in the Middle East and the first held in November instead of summer. It was a momentous event showcasing world-class stadiums."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Qatari Pearl Diving Heritage",
                       "description": "Before oil, Qatar's wealth came from pearl diving. The pearl diving heritage is preserved in museums and cultural centers, telling the story of this historic industry."
                   }
@@ -10331,7 +10331,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Catar tiene una franja carmesí/granate a la izquierda separada por una franja blanca vertical de un campo blanco. El inusual borde dentado entre los colores es distintivo. El blanco representa la paz y la pureza, mientras que el granate representa la sangre derramada por la independencia.",
               "funFacts": [
                   {
-                      "icon": "city",
+                      "icon": "location_city",
                       "title": "Horizonte moderno de Doha",
                       "description": "Doha se ha transformado de un pequeño pueblo costero en una metrópolis moderna y resplandeciente. La ciudad es conocida por su arquitectura futurista, incluyendo el icónico Burj Qatar y Museo de Arte Islámico."
                   },
@@ -10341,7 +10341,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Catar fue anfitrión de la Copa Mundial FIFA 2022, la primera Copa Mundial en Oriente Medio y la primera celebrada en noviembre en lugar de verano. Fue un evento monumental que mostró estadios de clase mundial."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Patrimonio de buceo de perlas de Catar",
                       "description": "Antes del petróleo, la riqueza de Catar provenía del buceo de perlas. El patrimonio de buceo de perlas se conserva en museos y centros culturales, contando la historia de esta industria histórica."
                   }
@@ -10790,7 +10790,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de San Cristóbal y Nieves tiene una banda amarilla diagonal dividiendo triángulos negros y verdes con dos estrellas blancas. El negro representa el suelo y la herencia africana, el verde representa la vegetación, el amarillo representa la luz solar, y el blanco representa la pureza.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Fortalezas Históricas",
             "description": "San Cristóbal es hogar de la Fortaleza de Brimstone, uno de los fuertes históricos más impresionantes del Caribe."
           },
@@ -10836,7 +10836,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Saint Lucia is a volcanic island with sulfur springs, adding to its dramatic natural landscape."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Creole Culture",
             "description": "Saint Lucia has a vibrant creole culture blending African, French, and English influences."
           },
@@ -10863,7 +10863,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Santa Lucía es una isla volcánica con aguas termales de azufre, añadiendo más a su paisaje natural dramático."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Cultura Criolla",
             "description": "Santa Lucía tiene una cultura criolla vibrante que mezcla influencias africanas, francesas e inglesas."
           },
@@ -11257,17 +11257,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Saudi Arabia's flag is green with the Islamic Shahada (declaration of faith) in white Arabic script and a curved white sword below it. Green is the color of Islam, the Shahada represents the faith, and the sword represents the nation's strength and heritage.",
               "funFacts": [
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Islam's Holiest Sites",
                       "description": "Saudi Arabia is home to Mecca and Medina, the two holiest cities in Islam. Every year, millions of pilgrims make the Hajj (pilgrimage) to Mecca, one of Islam's Five Pillars."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Rub' al Khali Desert",
                       "description": "The Rub' al Khali is the world's largest pure sand desert, covering an area larger than France. Its name means \"Empty Quarter\" in Arabic, and it's one of the harshest environments on Earth."
                   },
                   {
-                      "icon": "oil",
+                      "icon": "local_gas_station",
                       "title": "Oil Superpower",
                       "description": "Saudi Arabia has the second-largest proven oil reserves in the world and is the largest oil exporter. Oil has transformed the nation into one of the world's most influential economic powers."
                   }
@@ -11279,17 +11279,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Arabia Saudí es verde con la Shahada islámica (declaración de fe) en escritura árabe blanca y una espada curva blanca debajo. El verde es el color del Islam, la Shahada representa la fe, y la espada representa la fortaleza y el patrimonio de la nación.",
               "funFacts": [
                   {
-                      "icon": "religion",
+                      "icon": "temple_hindu",
                       "title": "Sitios más sagrados del Islam",
                       "description": "Arabia Saudí es hogar de La Meca y Medina, las dos ciudades más sagradas del Islam. Cada año, millones de peregrinos realizan el Hajj (peregrinación) a La Meca, uno de los Cinco Pilares del Islam."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Desierto Rub' al Khali",
                       "description": "El Rub' al Khali es el desierto de arena pura más grande del mundo, cubriendo un área más grande que Francia. Su nombre significa \"Cuarto Vacío\" en árabe, y es uno de los ambientes más hostiles de la Tierra."
                   },
                   {
-                      "icon": "oil",
+                      "icon": "local_gas_station",
                       "title": "Superpotencia petrolera",
                       "description": "Arabia Saudí tiene la segunda mayor reserva de petróleo probada del mundo y es el mayor exportador de petróleo. El petróleo ha transformado la nación en una de las potencias económicas más influyentes del mundo."
                   }
@@ -11532,17 +11532,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Singapore's flag has a red upper half with a white crescent and five white stars, and a white lower half. Red represents universal brotherhood and equality, white represents virtue and purity, the crescent symbolizes a young nation growing, and the five stars represent democracy, peace, progress, justice, and equality.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Marina Bay Sands",
                       "description": "The Marina Bay Sands is one of the world's most iconic hotels, designed to look like a ship's bow. Its rooftop infinity pool and observation deck offer stunning views of Singapore's skyline."
                   },
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Tech and Finance Hub",
                       "description": "Singapore is a global leader in technology, finance, and innovation. Its strategic location, efficient port, and highly educated population make it one of Asia's most important economic centers."
                   },
                   {
-                      "icon": "garden",
+                      "icon": "yard",
                       "title": "Gardens by the Bay",
                       "description": "The Gardens by the Bay is a futuristic park featuring vertical gardens, nature attractions, and the iconic illuminated Supertrees that light up at night with synchronized performances."
                   }
@@ -11554,17 +11554,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Singapur tiene una mitad superior roja con una media luna blanca y cinco estrellas blancas, y una mitad inferior blanca. El rojo representa la fraternidad universal e igualdad, el blanco representa la virtud y pureza, la media luna simboliza una nación joven en crecimiento, y las cinco estrellas representan democracia, paz, progreso, justicia e igualdad.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Marina Bay Sands",
                       "description": "Marina Bay Sands es uno de los hoteles más icónicos del mundo, diseñado para parecer una proa de barco. Su piscina de infinito en la azotea y plataforma de observación ofrecen vistas impresionantes del horizonte de Singapur."
                   },
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Centro tecnológico y financiero",
                       "description": "Singapur es líder mundial en tecnología, finanzas e innovación. Su ubicación estratégica, puerto eficiente y población altamente educada la convierten en uno de los centros económicos más importantes de Asia."
                   },
                   {
-                      "icon": "garden",
+                      "icon": "yard",
                       "title": "Jardines de la Bahía",
                       "description": "Los Jardines de la Bahía es un parque futurista que presenta jardines verticales, atracciones naturales, y los icónicos Supertrees iluminados que se iluminan por la noche con actuaciones sincronizadas."
                   }
@@ -11943,17 +11943,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "South Korea's flag (Taegeuk-gi) features a white background with a red and blue taegeuk (yin-yang) symbol in the center and black trigrams in the four corners. The red and blue represent balance, the trigrams represent universal principles, and white represents peace and purity.",
               "funFacts": [
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Technology Leader",
                       "description": "South Korea is a global powerhouse in technology, producing cutting-edge smartphones, semiconductors, and electronics. Companies like Samsung and LG are household names worldwide."
                   },
                   {
-                      "icon": "pop",
+                      "icon": "music_note",
                       "title": "K-Pop Phenomenon",
                       "description": "K-Pop (Korean pop music) has become a global sensation, with groups like BTS and BLACKPINK having millions of devoted fans worldwide. Korean entertainment is now a major cultural export."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Korean Cuisine Excellence",
                       "description": "Korean cuisine features kimchi, bulgogi, bibimbap, and Korean BBQ. Korean food culture emphasizes banchan (side dishes) and communal eating, creating a unique and delicious dining experience."
                   }
@@ -11965,17 +11965,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Corea del Sur (Taegeuk-gi) presenta un fondo blanco con un símbolo rojo y azul taegeuk (yin-yang) en el centro y triggramas negros en las cuatro esquinas. El rojo y azul representan equilibrio, los triggramas representan principios universales, y el blanco representa paz y pureza.",
               "funFacts": [
                   {
-                      "icon": "tech",
+                      "icon": "devices",
                       "title": "Líder en tecnología",
                       "description": "Corea del Sur es una potencia mundial en tecnología, produciendo smartphones de vanguardia, semiconductores y electrónica. Compañías como Samsung y LG son marcas conocidas mundialmente."
                   },
                   {
-                      "icon": "pop",
+                      "icon": "music_note",
                       "title": "Fenómeno del K-Pop",
                       "description": "El K-Pop (música pop coreana) se ha convertido en una sensación global, con grupos como BTS y BLACKPINK teniendo millones de fans devotos en todo el mundo. El entretenimiento coreano es ahora una importante exportación cultural."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Excelencia de la cocina coreana",
                       "description": "La cocina coreana presenta kimchi, bulgogi, bibimbap y BBQ coreano. La cultura de la comida coreana enfatiza banchan (platos laterales) y comer comunitario, creando una experiencia gastronómica única y deliciosa."
                   }
@@ -12112,17 +12112,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Sri Lanka's flag features a gold lion holding a curved sword (symbolizing courage) against a maroon background, with a gold border and two green and orange vertical stripes on the hoist side. The lion represents the nation's bravery, and the stripes represent the Muslim and Tamil communities.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Adam's Peak",
                       "description": "Adam's Peak is a sacred mountain in Sri Lanka with a depression at the summit believed by pilgrims to be the footprint of Buddha (by Buddhists), Adam (by Muslims and Christians), and other holy figures."
                   },
                   {
-                      "icon": "tea",
+                      "icon": "emoji_food_beverage",
                       "title": "Ceylon Tea Paradise",
                       "description": "Sri Lanka (formerly Ceylon) produces some of the world's finest tea. The misty tea gardens in the central highlands cover thousands of hectares and produce the aromatic \"Ceylon Tea\" famous worldwide."
                   },
                   {
-                      "icon": "beach",
+                      "icon": "beach_access",
                       "title": "Tropical Island Paradise",
                       "description": "Sri Lanka is surrounded by pristine beaches, coral reefs, and tropical weather year-round. The island offers diverse attractions from ancient temples to surfing beaches and wildlife sanctuaries."
                   }
@@ -12134,17 +12134,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Sri Lanka presenta un león dorado sosteniendo una espada curva (simbolizando el valor) contra un fondo granate, con un borde dorado y dos franjas verticales verde y naranja en el lado del asta. El león representa la valentía de la nación, y las franjas representan a las comunidades musulmana y tamil.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Pico de Adán",
                       "description": "El Pico de Adán es una montaña sagrada en Sri Lanka con una depresión en la cúspide que los peregrinos creen que es la huella de Buda (por budistas), Adán (por musulmanes y cristianos) y otras figuras sagradas."
                   },
                   {
-                      "icon": "tea",
+                      "icon": "emoji_food_beverage",
                       "title": "Paraíso del té de Ceilán",
                       "description": "Sri Lanka (anteriormente Ceilán) produce algunos de los mejores tés del mundo. Los jardines de té brumosos en las tierras altas centrales cubren miles de hectáreas y producen el aromático \"Té de Ceilán\" famoso mundialmente."
                   },
                   {
-                      "icon": "beach",
+                      "icon": "beach_access",
                       "title": "Paraíso de isla tropical",
                       "description": "Sri Lanka está rodeada de playas prístinas, arrecifes de coral y clima tropical todo el año. La isla ofrece atracciones diversas desde templos antiguos hasta playas de surf y santuarios de vida silvestre."
                   }
@@ -12475,7 +12475,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Syria is home to some of the world's oldest cities, including Damascus, one of the oldest continuously inhabited capitals. The region has been a center of culture, trade, and learning for millennia."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Umayyad Mosque",
                       "description": "The Umayyad Mosque in Damascus is one of Islam's greatest masterpieces, featuring stunning mosaics and architecture. It was built in the early 8th century and is considered a UNESCO World Heritage Site."
                   },
@@ -12497,7 +12497,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Siria es hogar de algunas de las ciudades más antiguas del mundo, incluyendo Damasco, una de las capitales continuamente habitadas más antiguas. La región ha sido un centro de cultura, comercio y aprendizaje durante milenios."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Mezquita Omeya",
                       "description": "La Mezquita Omeya en Damasco es una de las grandes obras maestras del Islam, con mosaicos y arquitectura impresionantes. Fue construida a principios del siglo VIII y se considera Patrimonio de la Humanidad de la UNESCO."
                   },
@@ -12586,17 +12586,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Tajikistan's flag has three equal horizontal stripes of red, white, and green with a gold crown and arch above seven gold stars in the white stripe. Red represents the blood of independence, white means peace and purity, green represents the mountains, and the stars represent the Tajik regions.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Pamir Mountains",
                       "description": "The Pamir Mountains (\"Roof of the World\") dominate Tajikistan with peaks over 7,000 meters. These dramatic mountains are among the most remote and pristine wilderness areas on Earth."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Silk Road Legacy",
                       "description": "Tajikistan was a major crossroads on the ancient Silk Road trade route. The mountains, valleys, and ancient cities preserve the legacy of this historical trading network connecting East and West."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Traditional Textiles",
                       "description": "Tajik traditional embroidery and weaving are renowned for intricate patterns and vibrant colors. The ikat technique is used to create beautifully patterned fabrics with geometric and floral designs."
                   }
@@ -12608,17 +12608,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Tayikistán tiene tres franjas horizontales iguales de rojo, blanco y verde con una corona dorada y arco sobre siete estrellas doradas en la franja blanca. El rojo representa la sangre de la independencia, el blanco significa paz y pureza, el verde representa las montañas, y las estrellas representan las regiones tayikas.",
               "funFacts": [
                   {
-                      "icon": "mountain",
+                      "icon": "terrain",
                       "title": "Montañas Pamir",
                       "description": "Las Montañas Pamir (\"Techo del Mundo\") dominan Tayikistán con picos superiores a 7.000 metros. Estas dramáticas montañas están entre las áreas de vida silvestre más remotas y prístinas de la Tierra."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Legado de la Ruta de la Seda",
                       "description": "Tayikistán fue una encrucijada importante en la ruta comercial antigua de la Ruta de la Seda. Las montañas, valles y ciudades antiguas preservan el legado de esta red comercial histórica que conecta Oriente y Occidente."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Textiles tradicionales",
                       "description": "El bordado y tejido tradicional tayiko son renombrados por patrones intrincados y colores vibrantes. La técnica ikat se utiliza para crear telas con patrones hermosos con diseños geométricos y florales."
                   }
@@ -12692,17 +12692,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Thailand's flag has five horizontal stripes of red, white, blue, white, and red. Blue is twice the size of other stripes and represents the monarchy. Red represents the nation, and white represents Buddhism. The proportion is unique among national flags.",
               "funFacts": [
                   {
-                      "icon": "temple",
+                      "icon": "temple_buddhist",
                       "title": "Temple of the Emerald Buddha",
                       "description": "The Temple of the Emerald Buddha (Wat Phra Kaew) in Bangkok is the most sacred Buddhist temple in Thailand, housing a highly revered jade Buddha statue. It's one of the most beautifully decorated temples in the world."
                   },
                   {
-                      "icon": "elephant",
+                      "icon": "pets",
                       "title": "Elephant Symbol",
                       "description": "Elephants are deeply revered in Thai culture and appear on the national emblem. White elephants are considered especially sacred. Elephants have been used in Thai warfare, ceremonies, and daily life for centuries."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Thai Cuisine Mastery",
                       "description": "Thai cuisine is famous worldwide for its balance of sweet, sour, salty, and spicy flavors. Dishes like pad thai, green curry, and tom yum are beloved globally and showcase Thai culinary expertise."
                   }
@@ -12714,17 +12714,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Tailandia tiene cinco franjas horizontales de rojo, blanco, azul, blanco y rojo. El azul tiene el doble del tamaño de las otras franjas y representa la monarquía. El rojo representa la nación, y el blanco representa el budismo. La proporción es única entre banderas nacionales.",
               "funFacts": [
                   {
-                      "icon": "temple",
+                      "icon": "temple_buddhist",
                       "title": "Templo del Buda de Esmeralda",
                       "description": "El Templo del Buda de Esmeralda (Wat Phra Kaew) en Bangkok es el templo budista más sagrado de Tailandia, albergando una estatua de Buda de jade muy reverenciada. Es uno de los templos más hermosamente decorados del mundo."
                   },
                   {
-                      "icon": "elephant",
+                      "icon": "pets",
                       "title": "Símbolo del elefante",
                       "description": "Los elefantes son profundamente reverenciados en la cultura tailandesa y aparecen en el emblema nacional. Los elefantes blancos se consideran especialmente sagrados. Los elefantes han sido usados en la guerra tailandesa, ceremonias y vida diaria durante siglos."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Maestría de la cocina tailandesa",
                       "description": "La cocina tailandesa es famosa mundialmente por su equilibrio de sabores dulce, agrio, salado y picante. Platos como pad thai, curry verde y tom yum son amados mundialmente y muestran la experiencia culinaria tailandesa."
                   }
@@ -12755,7 +12755,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Timor-Leste has unique ecosystems with species found nowhere else on Earth. Its forests and marine environments support endemic wildlife and are crucial for conservation."
                   },
                   {
-                      "icon": "independence",
+                      "icon": "flag",
                       "title": "Youngest Nation",
                       "description": "Timor-Leste is the youngest country in Asia, having gained independence from Indonesia in 2002 after decades of struggle. It's the only Asian country colonized by Portugal."
                   }
@@ -12777,7 +12777,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Timor Oriental tiene ecosistemas únicos con especies que no se encuentran en ningún otro lugar de la Tierra. Sus bosques y ambientes marinos sustentan fauna endémica y son cruciales para la conservación."
                   },
                   {
-                      "icon": "independence",
+                      "icon": "flag",
                       "title": "Nación más joven",
                       "description": "Timor Oriental es el país más joven de Asia, habiendo obtenido la independencia de Indonesia en 2002 después de décadas de lucha. Es el único país asiático colonizado por Portugal."
                   }
@@ -12924,7 +12924,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Captain James Cook called Tonga the 'Friendly Islands' after the warm welcome he received in 1773 from the Tongan people."
                   },
                   {
-                      "icon": "king",
+                      "icon": "crown",
                       "title": "Pacific Kingdom",
                       "description": "Tonga is the only remaining monarchy in the Pacific Ocean. The royal family has ruled uninterrupted since the 10th century, making the Tongan monarchy one of the oldest continuous dynasties in the world."
                   },
@@ -12951,7 +12951,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "El Capitán James Cook llamó a Tonga las 'Islas Amigas' tras la cálida bienvenida que recibió en 1773 del pueblo tongano."
                   },
                   {
-                      "icon": "king",
+                      "icon": "crown",
                       "title": "El Reino del Pacífico",
                       "description": "Tonga es la única monarquía que queda en el Océano Pacífico. La familia real ha gobernado ininterrumpidamente desde el siglo X, convirtiendo a la monarquía tongana en una de las dinastías continuas más antiguas del mundo."
                   },
@@ -13146,7 +13146,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Turkmenistan's flag has a green field with a red vertical stripe on the hoist containing a white carpet design (gul pattern). The flag also has a white crescent and five white stars in the upper hoist corner. Green represents Islam, and the carpet symbolizes Turkmen cultural heritage.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Crater of Fire",
                       "description": "The Crater of Fire (Darvaza Gas Crater) is a natural gas field that has been burning continuously since 1971 in the Karakum Desert. Locals call it \"the Gates of Hell\" because of its otherworldly appearance."
                   },
@@ -13156,7 +13156,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Ashgabat is known for its white marble buildings and monuments. The city was built with white marble to create a stunning aesthetic, giving it the nickname \"White Marble City.\""
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Turkmen Carpet Masters",
                       "description": "Turkmen carpets are world-renowned for their intricate designs and beautiful colors. Carpet weaving is a traditional art form passed down through generations of Turkmen families."
                   }
@@ -13168,7 +13168,7 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Turkmenistán tiene un campo verde con una franja vertical roja en el asta que contiene un diseño blanco de alfombra (patrón gul). La bandera también tiene una media luna blanca y cinco estrellas blancas en la esquina superior del asta. El verde representa el Islam, y la alfombra simboliza el patrimonio cultural turkmeno.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Cráter de fuego",
                       "description": "El Cráter de Fuego (Cráter de Gas de Darvaza) es un campo de gas natural que ha estado ardiendo continuamente desde 1971 en el Desierto de Karakum. Los lugareños lo llaman \"las Puertas del Infierno\" por su apariencia sobrenatural."
                   },
@@ -13178,7 +13178,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Asjabat es conocida por sus edificios y monumentos de mármol blanco. La ciudad fue construida con mármol blanco para crear una estética impresionante, dándole el apodo de \"Ciudad de Mármol Blanco\"."
                   },
                   {
-                      "icon": "culture",
+                      "icon": "public",
                       "title": "Maestros de alfombras turmenas",
                       "description": "Las alfombras turmenas son mundialmente reconocidas por sus diseños intrincados y hermosos colores. El tejido de alfombras es una forma de arte tradicional transmitida a través de generaciones de familias turmenas."
                   }
@@ -13441,17 +13441,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "The UAE flag has three equal horizontal stripes of green, white, and black, with a red vertical stripe on the hoist. Green represents Islam and hope, white represents peace, black represents strength, and red symbolizes courage and the blood of independence fighters.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Burj Khalifa",
                       "description": "The Burj Khalifa in Dubai is the world's tallest building at 828 meters. This architectural marvel is an iconic symbol of Dubai's ambition and rapid development in the 21st century."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Arabian Desert",
                       "description": "The UAE is home to vast desert landscapes featuring towering sand dunes. Desert safaris and dune bashing are popular activities offering visitors a taste of traditional Bedouin culture and stunning desert scenery."
                   },
                   {
-                      "icon": "innovation",
+                      "icon": "lightbulb",
                       "title": "Innovation and Modernity",
                       "description": "The UAE has transformed from an oil-based economy into a global hub for innovation, finance, and tourism. Palm Jumeirah, Dubai Marina, and the Sheikh Zayed Grand Mosque showcase modern and traditional architecture."
                   }
@@ -13463,17 +13463,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de los EAU tiene tres franjas horizontales iguales de verde, blanco y negro, con una franja vertical roja en el asta. El verde representa el Islam y la esperanza, el blanco representa la paz, el negro representa la fortaleza, y el rojo simboliza el valor y la sangre de los luchadores por la independencia.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Burj Khalifa",
                       "description": "El Burj Khalifa en Dubái es el edificio más alto del mundo con 828 metros. Esta maravilla arquitectónica es un símbolo icónico de la ambición y el rápido desarrollo de Dubái en el siglo XXI."
                   },
                   {
-                      "icon": "desert",
+                      "icon": "landscape",
                       "title": "Desierto Arábigo",
                       "description": "Los EAU albergan vastos paisajes desérticos con dunas de arena imponentes. Los safaris en el desierto y el dune bashing son actividades populares que ofrecen a los visitantes un sabor de la cultura beduina tradicional y el impresionante paisaje del desierto."
                   },
                   {
-                      "icon": "innovation",
+                      "icon": "lightbulb",
                       "title": "Innovación y modernidad",
                       "description": "Los EAU se han transformado de una economía basada en el petróleo en un centro mundial de innovación, finanzas y turismo. Palm Jumeirah, Dubai Marina y la Mezquita Sheikh Zayed muestran arquitectura moderna y tradicional."
                   }
@@ -13557,7 +13557,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "The United States flag, known as the Stars and Stripes, features 13 horizontal stripes representing the original 13 states and 50 stars representing the current 50 states. The blue canton (upper left) contains the stars. Red represents courage, white represents purity, and blue represents loyalty.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "National Parks",
             "description": "The USA has 63 national parks including Yellowstone, the world's first national park."
           },
@@ -13572,7 +13572,7 @@ export const countriesData: CountryEntry[] = [
             "description": "The USA is the world's largest democracy and a global superpower."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Cultural Influence",
             "description": "American culture, music, and entertainment have global influence and reach."
           }
@@ -13584,7 +13584,7 @@ export const countriesData: CountryEntry[] = [
           "flagDescription": "La bandera de Estados Unidos, conocida como las Barras y Estrellas, presenta 13 franjas horizontales que representan los 13 estados originales y 50 estrellas que representan los 50 estados actuales. El cantón azul (esquina superior izquierda) contiene las estrellas. El rojo representa el coraje, el blanco representa la pureza, y el azul representa la lealtad.",
           "funFacts": [
           {
-            "icon": "landmark",
+            "icon": "tour",
             "title": "Parques Nacionales",
             "description": "EE.UU. tiene 63 parques nacionales incluyendo Yellowstone, el primer parque nacional del mundo."
           },
@@ -13599,7 +13599,7 @@ export const countriesData: CountryEntry[] = [
             "description": "EE.UU. es la democracia más grande del mundo y una superpotencia global."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Influencia Cultural",
             "description": "La cultura, música y entretenimiento estadounidenses tienen influencia y alcance global."
           }
@@ -13693,7 +13693,7 @@ export const countriesData: CountryEntry[] = [
             "description": "The islands offer excellent diving, snorkeling, sailing, and other water sports activities."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Caribbean Culture",
             "description": "The islands have a vibrant Caribbean culture with distinct music, food, and traditions."
           },
@@ -13720,7 +13720,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Las islas ofrecen excelente buceo, snorkel, vela y otras actividades de deportes acuáticos."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Cultura Caribeña",
             "description": "Las islas tienen una cultura caribeña vibrante con música distinta, comida y tradiciones."
           },
@@ -13751,7 +13751,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Uruguay is considered the most developed and stable country in Latin America."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Tango Homeland",
             "description": "Uruguay is the homeland of tango, sharing this cultural treasure with Argentina."
           },
@@ -13778,7 +13778,7 @@ export const countriesData: CountryEntry[] = [
             "description": "Uruguay es considerado el país más desarrollado y estable en América Latina."
           },
           {
-            "icon": "culture",
+            "icon": "public",
             "title": "Patria del Tango",
             "description": "Uruguay es la patria del tango, compartiendo este tesoro cultural con Argentina."
           },
@@ -13809,17 +13809,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "Uzbekistan's flag has three equal horizontal stripes of blue, white, and green, separated by thin red lines, with a white crescent and 12 white stars in the upper hoist corner. Blue represents the sky and hope, white represents peace, green represents nature and fertility, and red symbolizes vitality.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Samarkand and Bukhara",
                       "description": "Samarkand and Bukhara are ancient Silk Road cities filled with stunning Islamic architecture including the Registan and Bibi-Khanym Mosque. These UNESCO sites showcase the region's rich cultural heritage."
                   },
                   {
-                      "icon": "silk",
+                      "icon": "texture",
                       "title": "Silk Road Hub",
                       "description": "Uzbekistan was a major crossroads on the ancient Silk Road, connecting East and West through trade. The region became famous for silk, spices, and crafts that traveled along these historic routes."
                   },
                   {
-                      "icon": "art",
+                      "icon": "palette",
                       "title": "Traditional Crafts",
                       "description": "Uzbek traditional crafts include intricate silk ikat weaving, ceramic tilework, and carpet making. These crafts are still practiced today and are a source of pride in Uzbek culture."
                   }
@@ -13831,17 +13831,17 @@ export const countriesData: CountryEntry[] = [
               "flagDescription": "La bandera de Uzbekistán tiene tres franjas horizontales iguales de azul, blanco y verde, separadas por líneas rojas finas, con una media luna blanca y 12 estrellas blancas en la esquina superior del asta. El azul representa el cielo y la esperanza, el blanco representa la paz, el verde representa la naturaleza y la fertilidad, y el rojo simboliza la vitalidad.",
               "funFacts": [
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Samarcanda y Bujará",
                       "description": "Samarcanda y Bujará son ciudades antiguas de la Ruta de la Seda llenas de impresionante arquitectura islámica incluyendo el Registan y la Mezquita Bibi-Khanym. Estos sitios de la UNESCO muestran el rico patrimonio cultural de la región."
                   },
                   {
-                      "icon": "silk",
+                      "icon": "texture",
                       "title": "Centro de la Ruta de la Seda",
                       "description": "Uzbekistán fue una encrucijada importante en la antigua Ruta de la Seda, conectando Oriente y Occidente a través del comercio. La región se hizo famosa por la seda, especias y artesanías que viajaban a través de estas rutas históricas."
                   },
                   {
-                      "icon": "art",
+                      "icon": "palette",
                       "title": "Artesanías tradicionales",
                       "description": "Las artesanías tradicionales uzbekas incluyen tejido intrincado de seda ikat, azulejos de cerámica y fabricación de alfombras. Estas artesanías aún se practican hoy y son una fuente de orgullo en la cultura uzbeka."
                   }
@@ -14061,7 +14061,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Vietnam has a long history of fighting for independence against foreign powers including China, France, and America. This struggle shapes Vietnamese culture, resilience, and national pride."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Pho and Culinary Excellence",
                       "description": "Vietnamese cuisine is renowned for its balance of fresh herbs, lime, and fish sauce. Dishes like pho, banh mi, and spring rolls are beloved worldwide and represent Vietnamese culinary artistry."
                   }
@@ -14083,7 +14083,7 @@ export const countriesData: CountryEntry[] = [
                       "description": "Vietnam tiene una larga historia de lucha por la independencia contra potencias extranjeras incluyendo China, Francia y América. Esta lucha forma la cultura, resiliencia y orgullo nacional de Vietnam."
                   },
                   {
-                      "icon": "food",
+                      "icon": "restaurant",
                       "title": "Pho y excelencia culinaria",
                       "description": "La cocina vietnamita es renombrada por su equilibrio de hierbas frescas, lima y salsa de pescado. Platos como pho, banh mi y rollos de primavera son amados mundialmente y representan el arte culinario vietnamita."
                   }
@@ -14225,12 +14225,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Yemen was home to the Queen of Sheba, a legendary queen mentioned in ancient texts. The kingdom was a major power controlling trade routes and known for its wealth and wisdom in ancient times."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Shibam: Manhattan of the Desert",
                       "description": "Shibam is an ancient walled city with skyscrapers-like mud-brick towers rising up to 30 meters tall. These centuries-old structures create a stunning skyline and are a UNESCO World Heritage Site."
                   },
                   {
-                      "icon": "frankincense",
+                      "icon": "spa",
                       "title": "Frankincense Trade",
                       "description": "Yemen was a major producer of frankincense on the ancient trade routes. The fragrant resin was highly valued and traded across the Arabian Peninsula and beyond for thousands of years."
                   }
@@ -14247,12 +14247,12 @@ export const countriesData: CountryEntry[] = [
                       "description": "Yemen fue hogar de la Reina de Sheba, una reina legendaria mencionada en textos antiguos. El reino fue una potencia importante que controla rutas comerciales y era conocido por su riqueza y sabiduría en tiempos antiguos."
                   },
                   {
-                      "icon": "building",
+                      "icon": "apartment",
                       "title": "Shibam: Manhattan del desierto",
                       "description": "Shibam es una ciudad amurallada antigua con torres de ladrillo de barro parecidas a rascacielos que se elevan hasta 30 metros de altura. Estas estructuras centenarias crean un horizonte impresionante y son Patrimonio de la Humanidad de la UNESCO."
                   },
                   {
-                      "icon": "frankincense",
+                      "icon": "spa",
                       "title": "Comercio del incienso",
                       "description": "Yemen fue un importante productor de incienso en las rutas comerciales antiguas. La resina fragante era muy valorada y comercializada a través de la Península Arábiga y más allá durante miles de años."
                   }
