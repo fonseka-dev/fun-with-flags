@@ -33,43 +33,63 @@ export function WorldRankingsContent() {
 
   const highScore = progress?.quizHighScore ?? 0;
 
-  // Initial load
+  // Effect A — public leaderboard data (no auth dependency, runs once on mount).
+  // Fetching top entries and total count is safe without auth since the leaderboard
+  // collection is publicly readable. This avoids any race with Firebase auth init.
   useEffect(() => {
-    if (authLoading || !uid) return;
-    async function load() {
+    let cancelled = false;
+    async function loadPublic() {
       setLoading(true);
       setFetchError(false);
       try {
-        const [top, count, rank] = await Promise.all([
+        const [top, count] = await Promise.all([
           getTopLeaderboard(50),
           getLeaderboardCount(),
-          getUserRank(highScore),
         ]);
-
+        if (cancelled) return;
         setTopEntries(top.slice(0, 3));
         setListEntries(top.slice(3, 3 + PAGE_SIZE));
         setTotal(count);
-        setUserRank(rank);
-
-        // Find the score of the person just above the user
-        if (rank > 1 && top.length >= rank - 1) {
-          setNextRankScore(top[rank - 2]?.quizHighScore ?? null);
-        } else {
-          setNextRankScore(null);
-        }
-
         setHasMore(top.length > 3 + PAGE_SIZE);
         if (top.length > 0) {
           setLastScore(top[top.length - 1].quizHighScore);
         }
       } catch {
-        setFetchError(true);
+        if (!cancelled) setFetchError(true);
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     }
-    void load();
-  }, [highScore, authLoading, uid]);
+    void loadPublic();
+    return () => { cancelled = true; };
+  }, []);
+
+  // Effect B — user rank (only runs after auth and progress are both fully ready).
+  // Guarding on `progress !== null` (not just `uid`) prevents fetching with
+  // highScore=0 while progress is still loading, which would return rank=0 and
+  // then trigger a second fetch when progress finally loads.
+  useEffect(() => {
+    if (authLoading || !uid || progress === null) return;
+    let cancelled = false;
+    async function loadUserRank() {
+      try {
+        const rank = await getUserRank(highScore);
+        if (cancelled) return;
+        setUserRank(rank);
+        // Derive the score of the person just above the user from the already-loaded
+        // topEntries snapshot (avoids an extra Firestore round-trip).
+        if (rank > 1 && topEntries.length >= rank - 1) {
+          setNextRankScore(topEntries[rank - 2]?.quizHighScore ?? null);
+        } else {
+          setNextRankScore(null);
+        }
+      } catch {
+        // Rank fetch failure is non-fatal — the public leaderboard is still shown.
+      }
+    }
+    void loadUserRank();
+    return () => { cancelled = true; };
+  }, [authLoading, uid, progress, highScore, topEntries]);
 
   const handleLoadMore = useCallback(async () => {
     if (loadingMore || !hasMore || lastScore === undefined) return;
