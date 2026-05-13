@@ -8,11 +8,11 @@ export async function CreatorBadge() {
       href="https://personal-engineering-hub.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 right-4 lg:bottom-6 lg:right-6 z-50 flex items-center gap-1.5 rounded-full px-3 py-1.5 bg-white/15 backdrop-blur-md border border-white/25 text-white text-xs font-medium transition-all duration-300 ease-out hover:bg-white/25 hover:scale-105"
+      className="fixed bottom-20 right-2 lg:bottom-2 lg:right-2 z-50 flex items-center gap-1 rounded-full px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 text-white text-[10px] transition-all duration-300 ease-out hover:bg-white/20 hover:scale-105"
       aria-label={t("visitCreator")}
     >
       <span>{t("visitCreator")}</span>
-      <span className="material-symbols-outlined" style={{ fontSize: 14 }}>
+      <span className="material-symbols-outlined" style={{ fontSize: 12 }}>
         open_in_new
       </span>
     </a>
