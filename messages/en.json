@@ -211,5 +211,8 @@
     "reset": "Reset view",
     "geolocationError": "Could not detect your location",
     "loadingMap": "Loading map… {loaded} / {total}"
+  },
+  "creatorBadge": {
+    "visitCreator": "Visit the Creator"
   }
 }
