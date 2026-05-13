@@ -26,7 +26,7 @@ export function GlobeControls({
     "w-12 h-12 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl flex items-center justify-center text-white/80 hover:bg-white/20 hover:text-white transition-all duration-200";
 
   return (
-    <div className="absolute bottom-8 right-8 z-10 flex flex-col gap-3">
+    <div className="absolute bottom-12 right-8 z-10 flex flex-col gap-3">
       <button
         onClick={onToggleDaylight}
         className={btnBase}
