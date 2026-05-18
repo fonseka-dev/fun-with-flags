@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Country } from "@/data/types";
@@ -19,12 +18,18 @@ export function CountryCard({ country }: CountryCardProps) {
       className="group bg-surface-container-low rounded-xl overflow-hidden hover:scale-[1.02] transition-bounce shadow-ambient flex flex-col"
     >
       <div className="relative h-48 overflow-hidden bg-surface-container-highest">
-        <Image
-          src={`https://flagcdn.com/w320/${country.flagCode}.png`}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`https://flagcdn.com/w640/${country.flagCode}.png`}
+          srcSet={[
+            `https://flagcdn.com/w320/${country.flagCode}.png 320w`,
+            `https://flagcdn.com/w640/${country.flagCode}.png 640w`,
+            `https://flagcdn.com/w1280/${country.flagCode}.png 1280w`,
+          ].join(", ")}
           alt={`Flag of ${country.name}`}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-500"
+          className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          loading="lazy"
         />
       </div>
       <div className="p-6 flex-1 flex flex-col">

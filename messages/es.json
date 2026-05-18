@@ -54,7 +54,8 @@
     "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de los siete continentes.",
     "capitalLabel": "Capital",
     "populationLabel": "Población",
-    "exploreCulture": "Explorar Cultura"
+    "exploreCulture": "Explorar Cultura",
+    "loadMore": "Mostrar más países"
   },
   "country": {
     "spotlight": "País Destacado",
