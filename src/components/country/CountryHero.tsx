@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Country } from "@/data/types";
 
@@ -15,13 +14,17 @@ export function CountryHero({ country }: CountryHeroProps) {
       <div className="flex flex-col lg:flex-row items-end gap-8">
         {/* Flag image */}
         <div className="relative w-full lg:w-2/3 aspect-video rounded-xl overflow-hidden shadow-ambient-lg">
-          <Image
-            src={`https://flagcdn.com/w640/${country.flagCode}.png`}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`https://flagcdn.com/w1280/${country.flagCode}.png`}
+            srcSet={[
+              `https://flagcdn.com/w640/${country.flagCode}.png 640w`,
+              `https://flagcdn.com/w1280/${country.flagCode}.png 1280w`,
+            ].join(", ")}
             alt={t("flagAlt", { name: country.name })}
-            fill
-            className="object-cover"
-            priority
+            className="h-full w-full object-cover"
             sizes="(max-width: 1024px) 100vw, 66vw"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           <div className="absolute bottom-8 left-8">

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 
@@ -26,7 +25,8 @@ export function LanguageToggle() {
       className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-high rounded-full text-sm font-bold text-on-surface hover:bg-surface-container-highest transition-bounce"
       aria-label={ariaLabel}
     >
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={`https://flagcdn.com/w20/${targetFlag}.png`}
         alt={targetLabel}
         width={20}

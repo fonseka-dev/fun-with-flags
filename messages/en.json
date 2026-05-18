@@ -54,7 +54,8 @@
     "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents.",
     "capitalLabel": "Capital City",
     "populationLabel": "Population",
-    "exploreCulture": "Explore Culture"
+    "exploreCulture": "Explore Culture",
+    "loadMore": "Load More Countries"
   },
   "country": {
     "spotlight": "Country Spotlight",
