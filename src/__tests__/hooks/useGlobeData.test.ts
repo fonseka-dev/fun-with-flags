@@ -197,12 +197,13 @@ describe("useGlobeData", () => {
     const { result } = renderHook(() => useGlobeData());
 
     await waitFor(() => {
+      expect(geoModule.loadWorldTopology).toHaveBeenCalled();
       expect(result.current.upgrading).toBe(false);
+      expect(result.current.countries.length).toBeGreaterThan(0);
     });
 
     // Hi-res topology was used as fallback
-    expect(geoModule.loadWorldTopology).toHaveBeenCalled();
-    expect(result.current.countries.length).toBeGreaterThan(0);
+    expect(result.current.countries[0].flagCode).toBe("us");
   });
 
   it("falls back to topology loading when precomputed files are unavailable", async () => {
