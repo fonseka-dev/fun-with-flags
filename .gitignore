@@ -61,3 +61,4 @@ ui-debug.log
 # ── Others ────────────────────────────────────────────────────
 logs.txt
 individual_designs/
+*.kilo
