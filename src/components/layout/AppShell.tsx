@@ -4,6 +4,7 @@ import { ReactNode, Suspense } from "react";
 import { TopNav } from "./TopNav";
 import { SideNav } from "./SideNav";
 import { BottomNav } from "./BottomNav";
+import { Footer } from "./Footer";
 import { useContinentFilter } from "@/lib/hooks/useContinentFilter";
 import { Continent } from "@/data/types";
 
@@ -37,8 +38,9 @@ function AppShellInner({
               onSelectContinent={handleContinentSelect}
             />
           )}
-          <main className="flex-1 overflow-y-auto scrollbar-hidden p-6 md:p-12 pb-24 lg:pb-12">
+          <main className="flex-1 flex flex-col overflow-y-auto scrollbar-hidden p-6 md:p-12 pb-24 lg:pb-12">
             {children}
+            <Footer />
           </main>
         </div>
       </div>

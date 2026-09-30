@@ -213,7 +213,8 @@
     "geolocationError": "Could not detect your location",
     "loadingMap": "Loading map… {loaded} / {total}"
   },
-  "creatorBadge": {
-    "visitCreator": "Visit the Creator"
+  "footer": {
+    "copyright": "© {year} Explorer's Atlas. All rights reserved.",
+    "meetCreator": "Meet the creator"
   }
 }
