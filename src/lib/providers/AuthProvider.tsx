@@ -38,6 +38,11 @@ type AuthContextValue = {
   nickname: string;
   avatarSeed: string;
   avatarUrl: string;
+  /**
+   * True once the progress document for the signed-in user has settled
+   * (loaded, or the fetch failed). Stays false while no user is known yet.
+   */
+  progressLoaded: boolean;
   needsOnboarding: boolean;
   tier: UserTier;
   hasAccess: (feature: Feature) => boolean;
@@ -62,11 +67,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [loading, setLoading] = useState(true);
+  const [progressLoaded, setProgressLoaded] = useState(false);
   const [lastGameInsignias, setLastGameInsignias] = useState<InsigniaId[]>([]);
 
   useEffect(() => {
     if (!isFirebaseConfigured()) {
       setLoading(false);
+      setProgressLoaded(true);
       return;
     }
 
@@ -81,19 +88,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           return;
         }
         setUser(firebaseUser);
-        await initUserProgress(firebaseUser.uid, {
-          isAnonymous: firebaseUser.isAnonymous,
-        });
-        const data = await getUserProgress(firebaseUser.uid);
-        setProgress(data);
-        // Backfill leaderboard for existing users who played before this feature
-        if (data && data.quizHighScore > 0) {
-          void upsertLeaderboardEntry(
-            firebaseUser.uid,
-            data.nickname ?? generatePseudonym(firebaseUser.uid),
-            data.avatarSeed ?? firebaseUser.uid,
-            data.quizHighScore,
-          );
+        try {
+          await initUserProgress(firebaseUser.uid, {
+            isAnonymous: firebaseUser.isAnonymous,
+          });
+          const data = await getUserProgress(firebaseUser.uid);
+          setProgress(data);
+          // Backfill leaderboard for existing users who played before this feature
+          if (data && data.quizHighScore > 0) {
+            void upsertLeaderboardEntry(
+              firebaseUser.uid,
+              data.nickname ?? generatePseudonym(firebaseUser.uid),
+              data.avatarSeed ?? firebaseUser.uid,
+              data.quizHighScore,
+            );
+          }
+        } finally {
+          // Progress is settled for this user: either it loaded, or the fetch
+          // failed. Consumers must not treat "not loaded yet" as "unknown".
+          setProgressLoaded(true);
         }
       } catch (err: unknown) {
         // Auth or Firestore unavailable — app still works without progress data
@@ -228,7 +241,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const nickname = progress?.nickname ?? (user ? generatePseudonym(user.uid) : "Explorer");
   const avatarSeed = progress?.avatarSeed ?? (user?.uid ?? "explorer");
   const avatarUrlValue = deriveAvatarUrl(avatarSeed);
-  const needsOnboarding = !isAnonymous && !(progress?.onboardingComplete ?? false);
+  // Only conclude that onboarding is required once we have actually read the
+  // progress document. While it is still in flight `progress` is null, and
+  // treating that as "not onboarded" bounces signed-in users to /onboarding
+  // for the duration of the Firestore round trip (e.g. after a hard reload).
+  const needsOnboarding =
+    !isAnonymous && progress !== null && !progress.onboardingComplete;
 
   const tier: UserTier = progress?.tier ?? "free";
   const hasAccessFn = useCallback(
@@ -247,6 +265,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         nickname,
         avatarSeed,
         avatarUrl: avatarUrlValue,
+        progressLoaded,
         needsOnboarding,
         tier,
         hasAccess: hasAccessFn,

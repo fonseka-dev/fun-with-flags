@@ -182,7 +182,6 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
           <div className="pointer-events-auto">
             <CountryPopup
               {...popupData}
-              locale={locale}
               capitalLabel={t("capital")}
               exploreLabel={t("explore")}
               markExploredLabel={t("markExplored")}

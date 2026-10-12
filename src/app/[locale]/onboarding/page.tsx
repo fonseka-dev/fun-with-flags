@@ -11,9 +11,16 @@ import { avatarUrl } from "@/data/types";
 
 export default function OnboardingPage() {
   const t = useTranslations("onboarding");
+  const tAuth = useTranslations("auth");
   const router = useRouter();
-  const { isAnonymous, needsOnboarding, progress, completeOnboardingFlow } =
-    useAuth();
+  const {
+    isAnonymous,
+    needsOnboarding,
+    progress,
+    progressLoaded,
+    completeOnboardingFlow,
+    signOut,
+  } = useAuth();
 
   const [selectedSeed, setSelectedSeed] = useState<string>(AVATAR_SEEDS[0]);
   const [nickname, setNickname] = useState("");
@@ -22,12 +29,15 @@ export default function OnboardingPage() {
 
   // Redirect guards
   useEffect(() => {
+    // Wait until we know the user's identity and their progress document,
+    // otherwise the initial (unknown) state looks anonymous and bounces.
+    if (!progressLoaded) return;
     if (isAnonymous) {
       router.replace("/");
     } else if (!needsOnboarding) {
       router.replace("/");
     }
-  }, [isAnonymous, needsOnboarding, router]);
+  }, [progressLoaded, isAnonymous, needsOnboarding, router]);
 
   const error = touched ? validateNickname(nickname) : null;
   const isValid = validateNickname(nickname) === null;
@@ -148,7 +158,7 @@ export default function OnboardingPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-6 flex justify-center">
+          <div className="mt-6 flex flex-col items-center gap-3">
             <button
               type="submit"
               disabled={!isValid || submitting}
@@ -167,6 +177,13 @@ export default function OnboardingPage() {
                   {t("startExploring")}
                 </>
               )}
+            </button>
+            <button
+              type="button"
+              onClick={signOut}
+              className="text-sm text-on-surface-variant hover:text-error transition"
+            >
+              {tAuth("signOut")}
             </button>
           </div>
         </form>
