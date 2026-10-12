@@ -2,6 +2,7 @@
 
 import { Suspense } from "react";
 import { TopNav } from "@/components/layout/TopNav";
+import { BottomNav } from "@/components/layout/BottomNav";
 import { Globe } from "@/components/map/Globe";
 import { useUserProgress } from "@/lib/hooks/useUserProgress";
 
@@ -21,6 +22,8 @@ function MapContent() {
       ) : (
         <Globe discoveredSlugs={discoveredSlugs} discoverCountry={discoverCountry} />
       )}
+      {/* Mobile main menu — the map renders outside AppShell, but must keep it */}
+      <BottomNav />
     </div>
   );
 }

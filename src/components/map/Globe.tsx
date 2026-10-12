@@ -204,7 +204,7 @@ export function Globe({ discoveredSlugs, onCountrySelect, discoverCountry }: Glo
         geolocating={geolocating}
       />
       {geoError && (
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white text-sm px-4 py-2 rounded-xl backdrop-blur-md pointer-events-none">
+        <div className="absolute bottom-28 lg:bottom-8 left-1/2 -translate-x-1/2 bg-black/70 text-white text-sm px-4 py-2 rounded-xl backdrop-blur-md pointer-events-none">
           {geoError}
         </div>
       )}

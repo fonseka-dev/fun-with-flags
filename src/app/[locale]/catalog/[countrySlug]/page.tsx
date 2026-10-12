@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getCountryBySlug, getCountrySlugs } from "@/lib/utils/countries";
 import { CountryDetailHeader } from "@/components/country/CountryDetailHeader";
 import { CountryDetailContent } from "@/components/country/CountryDetailContent";
+import { BottomNav } from "@/components/layout/BottomNav";
 
 export const dynamicParams = false;
 
@@ -39,6 +40,8 @@ export default async function CountryDetailPage({
         <CountryDetailHeader />
       </Suspense>
       <CountryDetailContent slug={countrySlug} />
+      {/* Mobile main menu — this route renders outside AppShell too */}
+      <BottomNav />
     </div>
   );
 }
