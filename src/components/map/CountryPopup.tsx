@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Link } from "@/i18n/navigation";
 import type { FunFact } from "@/data/types";
 
 const CONTINENT_DOT_COLORS: Record<string, string> = {
@@ -19,7 +20,6 @@ type CountryPopupProps = {
   capital: string;
   continent: string;
   funFact: FunFact | null;
-  locale: string;
   capitalLabel: string;
   exploreLabel: string;
   markExploredLabel: string;
@@ -36,7 +36,6 @@ export function CountryPopup({
   capital,
   continent,
   funFact,
-  locale,
   capitalLabel,
   exploreLabel,
   markExploredLabel,
@@ -125,12 +124,12 @@ export function CountryPopup({
         </button>
 
         {/* Explore link */}
-        <a
-          href={`/${locale}/catalog/${slug}?from=map`}
+        <Link
+          href={`/catalog/${slug}?from=map`}
           className="mt-3 block w-full rounded-xl bg-white/10 py-2 text-center text-sm font-medium transition-colors hover:bg-white/20"
         >
           {exploreLabel}
-        </a>
+        </Link>
     </div>
   );
 }
