@@ -9,6 +9,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
+    "check:seo": "node scripts/check-seo.mjs",
     "precompute": "tsx scripts/precompute-globe-geometry.ts"
   },
   "dependencies": {

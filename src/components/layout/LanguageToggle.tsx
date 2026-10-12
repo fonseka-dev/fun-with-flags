@@ -10,7 +10,9 @@ export function LanguageToggle() {
 
   function switchLocale() {
     const newLocale = locale === "en" ? "es" : "en";
-    router.replace(pathname, { locale: newLocale });
+    router.replace(`${pathname}${window.location.search}${window.location.hash}`, {
+      locale: newLocale,
+    });
   }
 
   // When viewing in English → offer to switch to Spanish (show ES flag)

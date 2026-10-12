@@ -74,7 +74,31 @@ The app works without Firebase — sign-in and progress tracking will simply be 
 npm test
 ```
 
-31 unit tests covering auth flows, country data, and quiz logic.
+Vitest tests cover auth flows, country data, quiz logic, and the SEO contract.
+
+### SEO and social cards
+
+The confirmed public origin is `https://fun-with-flags-six.vercel.app`. `/` redirects to the locale route; `/en` and `/es` are canonical. Public pages are the home, catalog, map, flag game, rankings, and every country detail in both languages. `/en/onboarding` and `/es/onboarding` are `noindex` and excluded from the sitemap. Preview builds also render `noindex` in HTML using `VERCEL_ENV=preview`; Vercel normally adds an `X-Robots-Tag: noindex` header. Check that header after deployment, particularly if a custom domain is assigned to a preview.
+
+Titles, descriptions, canonical URLs, language alternatives, and social image URLs come from `src/lib/seo.ts`. Update `SITE_ORIGIN` there if the production domain changes, then regenerate and check the site. Route-specific country titles and descriptions are built from the translations in `src/data/countries.ts`. `src/app/sitemap.ts` and `src/app/robots.ts` use the same origin and route list.
+
+The approved blue card uses the product icon, Jorge's portrait in `design/social-card/profile_1.png`, and the JF mark in `design/social-card/jf-favicon.svg`. Final cards are `public/social/explorers-atlas-en.png` and `public/social/explorers-atlas-es.png` (1200 × 630). To change the portrait or text, edit the source assets or `scripts/generate-social-cards.py`, then regenerate on macOS with Pillow and the installed Node dependencies:
+
+```bash
+python3 scripts/generate-social-cards.py
+```
+
+The generator uses the system Avenir Next font and `sharp` from the existing Next.js dependencies; it does not fetch assets at render time. The card is a static image when shared. For a full local check, run:
+
+```bash
+npm test
+npm run build
+PORT=3100 npm run start
+# In a second terminal:
+SEO_BASE_URL=http://127.0.0.1:3100 npm run check:seo
+```
+
+The GET check reads all 500 public HTML pages without JavaScript, plus `robots.txt`, `sitemap.xml`, the two PNGs, and both onboarding pages. Country detail body content and some interactive views load in the client with Firebase; metadata in initial HTML does not make that body content available without JavaScript. Local checks cannot prove search indexing, ranking, or when social platforms refresh cached cards. After an authorized deploy, check the public URLs and `X-Robots-Tag` headers separately.
 
 ---
 

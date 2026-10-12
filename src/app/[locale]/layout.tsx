@@ -1,14 +1,25 @@
 import { NextIntlClientProvider } from "next-intl";
+import type { Metadata } from "next";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { CountriesProvider } from "@/lib/providers/CountriesProvider";
 import { OnboardingGuard } from "@/components/auth/OnboardingGuard";
+import { publicMetadata } from "@/lib/seo";
 import "../globals.css";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return publicMetadata(locale as "en" | "es", "");
 }
 
 const jakarta = Plus_Jakarta_Sans({
