@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Continent } from "@/data/types";
 import { ContinentFilter } from "@/components/catalog/ContinentFilter";
-import { Button } from "@/components/ui/Button";
 import { Link } from "@/i18n/navigation";
 
 type SideNavProps = {
@@ -29,13 +28,11 @@ export function SideNav({
       <ContinentFilter active={activeContinent} onSelect={onSelectContinent} />
 
       <div className="mt-auto px-6 pb-8">
-        <Link href="/games/guess-the-flag" className="group/cta">
-          <Button variant="tertiary" fullWidth>
+        <Link href="/games/guess-the-flag" className="group/cta block w-full rounded-full bg-tertiary-container px-5 py-4 text-center font-bold text-on-tertiary-container shadow-ambient hover:brightness-95 focus-visible:outline-4 focus-visible:outline-primary">
             <span className="flex items-center justify-center gap-2">
               <span className="material-symbols-outlined transition-transform duration-150 group-hover/cta:scale-110">auto_awesome</span>
               {t("dailyChallenge")}
             </span>
-          </Button>
         </Link>
       </div>
     </aside>

@@ -3,19 +3,39 @@ service cloud.firestore {
   match /databases/{database}/documents {
     match /users/{uid} {
       // Users can read and write their own document.
-      // On create, any fields are allowed (new users always start at free tier).
-      // On update, clients cannot change the `tier` field (prevents privilege escalation).
+      // A client-created profile must start on the free tier.
       allow read: if request.auth != null && request.auth.uid == uid;
-      allow create: if request.auth != null && request.auth.uid == uid;
+      allow create: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.uid == uid
+        && request.resource.data.tier == "free";
       allow update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.uid == resource.data.uid
         && !request.resource.data.diff(resource.data).affectedKeys().hasAny(["tier"]);
+      allow delete: if false;
     }
 
     match /leaderboard/{uid} {
       // Leaderboard is public — anyone can read rankings.
-      // Only the owner can write their own entry.
+      // Public entries must mirror a profile and contain only display fields.
       allow read: if true;
-      allow write: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && exists(/databases/$(database)/documents/users/$(uid))
+        && request.resource.data.keys().hasOnly([
+          "uid", "nickname", "avatarSeed", "quizHighScore", "updatedAt"
+        ])
+        && request.resource.data.keys().hasAll([
+          "uid", "nickname", "avatarSeed", "quizHighScore", "updatedAt"
+        ])
+        && request.resource.data.uid == uid
+        && request.resource.data.nickname is string
+        && request.resource.data.nickname.size() <= 40
+        && request.resource.data.avatarSeed is string
+        && request.resource.data.avatarSeed.size() <= 128
+        && request.resource.data.quizHighScore is int
+        && request.resource.data.quizHighScore >= 0
+        && request.resource.data.quizHighScore == get(/databases/$(database)/documents/users/$(uid)).data.quizHighScore
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if false;
     }
   }
 }

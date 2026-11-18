@@ -5,15 +5,17 @@
     "passport": "Countries",
     "games": "Games",
     "map": "Map",
-    "leaderboard": "Rankings"
+    "leaderboard": "Rankings",
+    "skipToContent": "Skip to content"
   },
   "sidebar": {
     "title": "The World",
     "subtitle": "Choose a region",
-    "dailyChallenge": "Daily Challenge"
+    "dailyChallenge": "Play Flag Quiz"
   },
   "search": {
-    "placeholder": "Search countries..."
+    "placeholder": "Search countries…",
+    "label": "Search countries"
   },
   "continents": {
     "Africa": "Africa",
@@ -51,11 +53,16 @@
   },
   "catalog": {
     "title": "Discover Nations",
-    "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across all seven continents.",
+    "subtitle": "Your digital field guide to the wonders of our planet. Explore histories, flags, and cultures across six world regions.",
     "capitalLabel": "Capital City",
     "populationLabel": "Population",
     "exploreCulture": "Explore Culture",
-    "loadMore": "Load More Countries"
+    "loadMore": "Load More Countries",
+    "searchLabel": "Search countries",
+    "searchPlaceholder": "Search countries…",
+    "regionFilter": "Filter by region",
+    "allRegions": "All Regions",
+    "empty": "No countries found. Try another search or region."
   },
   "country": {
     "spotlight": "Country Spotlight",

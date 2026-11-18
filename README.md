@@ -2,7 +2,7 @@
 
 **Explore every nation on Earth. Learn their flags. Test your knowledge.**
 
-Explorer's Atlas is an interactive geography app covering all **245 countries and territories** across 7 continents. Discover cultures, play flag quizzes, track your progress, and challenge yourself — all in English or Spanish.
+Explorer's Atlas is an interactive geography app covering **245 countries and territories** across six world regions. Discover cultures, play flag quizzes, and track your progress — all in English or Spanish.
 
 **🔗 Live site: [fun-with-flags-six.vercel.app](https://fun-with-flags-six.vercel.app/)**
 
@@ -13,7 +13,7 @@ Explorer's Atlas is an interactive geography app covering all **245 countries an
 ## ✨ Features
 
 - **🗺️ Countries Catalog** — Browse all 245 nations with flags, capitals, populations and continents. Filter by region, or search by name.
-- **🎮 Flag Quiz** — See a flag, pick the right country from 4 options. 3 lives, score tracking, and a Daily Challenge mode to keep you coming back.
+- **🎮 Flag Quiz** — See a flag, pick the right country from 4 options. 3 lives, difficulty levels, and score tracking.
 - **📈 Personal Journey** — Your progress is saved automatically. See how many countries you've discovered and your quiz high score.
 - **🔐 Sign In with Google** — One click to save your progress across devices and sessions.
 - **🌐 Bilingual** — Full English and Spanish interface (EN / ES).

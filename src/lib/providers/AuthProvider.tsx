@@ -66,14 +66,12 @@ export function useAuth(): AuthContextValue {
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [progress, setProgress] = useState<UserProgress | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [progressLoaded, setProgressLoaded] = useState(false);
+  const [loading, setLoading] = useState(() => isFirebaseConfigured());
+  const [progressLoaded, setProgressLoaded] = useState(() => !isFirebaseConfigured());
   const [lastGameInsignias, setLastGameInsignias] = useState<InsigniaId[]>([]);
 
   useEffect(() => {
     if (!isFirebaseConfigured()) {
-      setLoading(false);
-      setProgressLoaded(true);
       return;
     }
 

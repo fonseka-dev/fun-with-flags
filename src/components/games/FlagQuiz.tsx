@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Country, Difficulty, InsigniaId } from "@/data/types";
 import { avatarUrl } from "@/data/types";
@@ -45,23 +45,16 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
   const t = useTranslations("quiz");
   const { state, selectDifficulty, startGame, exitGame, submitAnswer } = useGameState(pool);
   const { progress } = useUserProgress();
+  const [progressAtStart, setProgressAtStart] = useState(progress);
 
-  // Snapshot of game-over results — computed once during render (ref, not state)
-  const snapshotRef = useRef<GameOverSnapshot | null>(null);
   const gameOverFiredRef = useRef(false);
 
-  // Reset snapshot when a new game starts so next game-over can compute fresh
-  if (state.status === "idle" || state.status === "playing") {
-    snapshotRef.current = null;
-    gameOverFiredRef.current = false;
-  }
-
-  // Compute snapshot on the first render in gameOver status (during render, no setState)
-  if (state.status === "gameOver" && !snapshotRef.current) {
+  const snapshot = useMemo<GameOverSnapshot | null>(() => {
+    if (state.status !== "gameOver") return null;
     const correctInGame = Math.round(state.score / POINTS_PER_CORRECT);
     const multiplier = SCORE_MULTIPLIERS[state.difficulty];
     const computed = state.score * multiplier;
-    const isRecord = !!progress && computed > 0 && computed > (progress.quizHighScore ?? 0);
+    const isRecord = !!progressAtStart && computed > 0 && computed > (progressAtStart.quizHighScore ?? 0);
     const gameResult = {
       difficulty: state.difficulty,
       livesRemaining: state.lives,
@@ -70,24 +63,35 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
       fastAnswerCount: state.fastAnswerCount,
       correctInGame,
     };
-    const newInsignias = progress ? evaluateInsignias(gameResult, progress) : [];
-    snapshotRef.current = {
+    const newInsignias = progressAtStart ? evaluateInsignias(gameResult, progressAtStart) : [];
+    return {
       finalScore: computed,
       isFinalScoreNewRecord: isRecord,
       earnedInsignias: newInsignias,
       correctInGame,
     };
+  }, [state, progressAtStart]);
+
+  function handleStartGame() {
+    setProgressAtStart(progress);
+    startGame();
   }
+
+  useEffect(() => {
+    if (state.status === "idle" || state.status === "playing") {
+      gameOverFiredRef.current = false;
+    }
+  }, [state.status]);
 
   // Side effect: fire onGameOver once (no setState here)
   useEffect(() => {
     if (state.status !== "gameOver") return;
     if (gameOverFiredRef.current) return;
-    const snap = snapshotRef.current;
+    const snap = snapshot;
     if (!snap) return;
     gameOverFiredRef.current = true;
     onGameOver?.(snap.finalScore, snap.earnedInsignias, snap.correctInGame);
-  }, [state.status, onGameOver]);
+  }, [state.status, snapshot, onGameOver]);
 
   function handleExitGame() {
     // Save partial score before resetting (only if game was in progress and has score)
@@ -153,7 +157,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
           </div>
         </div>
 
-        <Button variant="inverted" onClick={startGame}>
+        <Button variant="inverted" onClick={handleStartGame}>
           <span className="flex items-center gap-2">
             <span className="material-symbols-outlined">play_arrow</span>
             {t("startGame")}
@@ -165,7 +169,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
 
   // Game Over screen
   if (state.status === "gameOver") {
-    const snap = snapshotRef.current!;
+    const snap = snapshot!;
     const isEasy = state.difficulty === "easy";
     const multiplierLabelKey = DIFFICULTY_MULTIPLIER_LABEL[state.difficulty];
 
@@ -256,7 +260,7 @@ export function FlagQuiz({ pool, onGameOver }: FlagQuizProps) {
 
         {/* Action buttons */}
         <div className="flex flex-col md:flex-row items-center gap-4">
-          <Button variant="primary" onClick={startGame}>
+          <Button variant="primary" onClick={handleStartGame}>
             <span className="flex items-center gap-2">
               <span className="material-symbols-outlined">replay</span>
               {t("playAgain")}

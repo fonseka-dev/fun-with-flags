@@ -15,19 +15,20 @@ export function BottomNav() {
   ] as const;
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 glass rounded-t-xl">
+    <nav aria-label={t("title")} className="lg:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-stretch gap-1 px-2 sm:px-6 pb-[calc(0.5rem+env(safe-area-inset-bottom))] pt-2 glass rounded-t-xl">
       {tabs.map((tab) => {
         const isActive = pathname.startsWith(tab.href);
         return (
           <Link
             key={tab.href}
             href={tab.href}
+            aria-current={isActive ? "page" : undefined}
             className={`
-              flex flex-col items-center justify-center p-3
+              min-w-0 flex-1 flex flex-col items-center justify-center rounded-2xl px-1 py-2
               transition-bounce
               ${
                 isActive
-                  ? "bg-primary text-on-primary rounded-2xl scale-110 -translate-y-2 shadow-ambient"
+                  ? "bg-primary text-on-primary shadow-ambient"
                   : "text-on-surface-variant hover:text-primary"
               }
             `}
@@ -42,7 +43,7 @@ export function BottomNav() {
             >
               {tab.icon}
             </span>
-            <span className="text-[10px] font-medium mt-1">{tab.label}</span>
+            <span className="max-w-full truncate text-[10px] font-semibold mt-1">{tab.label}</span>
           </Link>
         );
       })}

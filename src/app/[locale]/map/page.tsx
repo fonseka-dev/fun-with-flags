@@ -11,7 +11,7 @@ function MapContent() {
   const discoveredSlugs = progress?.discoveredCountries ?? [];
 
   return (
-    <div className="relative h-screen overflow-hidden bg-[#0A0E27]">
+    <main id="main-content" className="relative h-dvh overflow-hidden bg-[#0A0E27]">
       <div className="absolute inset-x-0 top-0 z-20">
         <TopNav transparent />
       </div>
@@ -24,7 +24,7 @@ function MapContent() {
       )}
       {/* Mobile main menu — the map renders outside AppShell, but must keep it */}
       <BottomNav />
-    </div>
+    </main>
   );
 }
 

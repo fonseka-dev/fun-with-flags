@@ -5,15 +5,17 @@
     "passport": "Países",
     "games": "Juegos",
     "map": "Mapa",
-    "leaderboard": "Clasificación"
+    "leaderboard": "Clasificación",
+    "skipToContent": "Ir al contenido"
   },
   "sidebar": {
     "title": "El Mundo",
     "subtitle": "Elige una región",
-    "dailyChallenge": "Desafío Diario"
+    "dailyChallenge": "Jugar al quiz de banderas"
   },
   "search": {
-    "placeholder": "Buscar países..."
+    "placeholder": "Buscar países…",
+    "label": "Buscar países"
   },
   "continents": {
     "Africa": "África",
@@ -51,11 +53,16 @@
   },
   "catalog": {
     "title": "Descubre Naciones",
-    "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de los siete continentes.",
+    "subtitle": "Tu guía digital de las maravillas de nuestro planeta. Explora historias, banderas y culturas de seis regiones del mundo.",
     "capitalLabel": "Capital",
     "populationLabel": "Población",
     "exploreCulture": "Explorar Cultura",
-    "loadMore": "Mostrar más países"
+    "loadMore": "Mostrar más países",
+    "searchLabel": "Buscar países",
+    "searchPlaceholder": "Buscar países…",
+    "regionFilter": "Filtrar por región",
+    "allRegions": "Todas las regiones",
+    "empty": "No se encontraron países. Prueba otra búsqueda o región."
   },
   "country": {
     "spotlight": "País Destacado",

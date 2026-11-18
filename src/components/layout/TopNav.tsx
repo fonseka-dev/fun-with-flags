@@ -34,6 +34,9 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
 
   return (
     <>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-primary">
+        {t("skipToContent")}
+      </a>
       <header
         className={
           transparent
@@ -41,17 +44,17 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             : "glass sticky top-0 z-40"
         }
       >
-        <div className="flex justify-between items-center w-full px-4 sm:px-8 py-3 sm:py-4 max-w-screen-2xl mx-auto">
+        <div className="flex justify-between items-center gap-2 w-full px-3 sm:px-8 py-3 sm:py-4 max-w-screen-2xl mx-auto">
           <Link
             href="/"
-            className={`text-xl sm:text-2xl font-extrabold tracking-tight ${
+            className={`min-w-0 text-base sm:text-2xl font-extrabold tracking-tight focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
               transparent ? "text-white" : "text-primary"
             }`}
           >
             {t("title")}
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-5">
             {navLinks.map((link) => {
               const isActive =
                 link.href === "/"
@@ -61,8 +64,9 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
                 <Link
                   key={link.href}
                   href={link.href}
+                  aria-current={isActive ? "page" : undefined}
                   className={`
-                    font-bold text-lg transition-bounce
+                    font-bold text-base transition-bounce focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary
                     ${
                       transparent
                         ? isActive
@@ -80,10 +84,11 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             })}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-4">
             {onSearchChange && (
-              <div className="hidden sm:block">
+              <div className="hidden xl:block">
                 <SearchInput
+                  label={tSearch("label")}
                   value={searchQuery ?? ""}
                   onChange={onSearchChange}
                   placeholder={tSearch("placeholder")}
@@ -91,7 +96,7 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
               </div>
             )}
             <LanguageToggle />
-            <div className="hidden md:flex gap-2" aria-label="Quick links">
+            <div className="hidden xl:flex gap-2" aria-label="Quick links">
               <Link
                 href="/map"
                 aria-label={t("map")}
@@ -112,7 +117,7 @@ export function TopNav({ searchQuery, onSearchChange, transparent = false }: Top
             {isAnonymous ? (
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="px-4 py-2 bg-primary text-white font-bold text-sm rounded-full hover:brightness-110 transition-bounce"
+                className="px-3 sm:px-4 py-2 bg-primary text-white font-bold text-xs sm:text-sm rounded-full hover:brightness-110 transition-bounce"
               >
                 {tAuth("signIn")}
               </button>

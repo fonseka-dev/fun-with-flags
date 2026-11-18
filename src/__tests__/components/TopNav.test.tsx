@@ -58,7 +58,7 @@ describe("TopNav", () => {
 
     const quickLinks = screen.getByLabelText("Quick links");
     expect(quickLinks).toHaveClass("hidden");
-    expect(quickLinks).toHaveClass("md:flex");
+    expect(quickLinks).toHaveClass("xl:flex");
 
     expect(within(quickLinks).getByRole("link", { name: "map" })).toBeInTheDocument();
     expect(within(quickLinks).getByRole("link", { name: "games" })).toBeInTheDocument();
@@ -78,6 +78,6 @@ describe("TopNav", () => {
 
     const quickLinks = screen.getByLabelText("Quick links");
     expect(quickLinks).toHaveClass("hidden");
-    expect(quickLinks).toHaveClass("md:flex");
+    expect(quickLinks).toHaveClass("xl:flex");
   });
 });

@@ -18,6 +18,8 @@ const DAY_OF_YEAR = Math.floor(
 
 function DashboardContent() {
   const t = useTranslations("home");
+  const tContinents = useTranslations("continents");
+  const tCountry = useTranslations("country");
   const { countries } = useCountries();
   const { progress, isAnonymous, nickname, loading: authLoading } = useAuth();
   const router = useRouter();
@@ -52,10 +54,10 @@ function DashboardContent() {
             </span>
             {t("badge")}
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background leading-none">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background leading-tight break-words">
             {t("welcome")}
             <br />
-            <span className="text-primary">
+            <span className="text-white">
               {isAnonymous ? t("adventurer") : `${nickname}!`}
             </span>
           </h1>
@@ -207,8 +209,8 @@ function DashboardContent() {
 
         {/* Discover Daily */}
         <section className="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-ambient">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-4xl font-bold">{t("discoverDaily")}</h2>
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold">{t("discoverDaily")}</h2>
             <Link
               href="/catalog"
               className="text-primary font-bold flex items-center gap-2 hover:underline"
@@ -227,12 +229,15 @@ function DashboardContent() {
                 <div className="w-full h-32 bg-surface-container rounded-lg mb-4 overflow-hidden">
                   <img
                     src={`https://flagcdn.com/w320/${country.flagCode}.png`}
-                    alt={`Flag of ${country.name}`}
+                    alt={tCountry("flagAlt", { name: country.name })}
+                    width={320}
+                    height={240}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <span className="text-xs font-bold uppercase tracking-widest text-primary">
-                  {country.continent}
+                  {tContinents(country.continent)}
                 </span>
                 <h4 className="font-bold text-lg mt-1">{country.name}</h4>
                 <p className="text-on-surface-variant text-sm">{country.capital}</p>

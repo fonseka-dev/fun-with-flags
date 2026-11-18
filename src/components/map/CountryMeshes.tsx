@@ -38,14 +38,14 @@ function CountryMeshesImpl({
     e.stopPropagation();
     const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
     mat.emissive.set("#333333");
-    document.body.style.cursor = "pointer";
+    (e.nativeEvent.target as HTMLElement).style.cursor = "pointer";
     if (hoverMode) onCountryHover?.(slug);
   };
 
   const handlePointerOut = (e: ThreeEvent<PointerEvent>) => {
     const mat = (e.object as THREE.Mesh).material as THREE.MeshStandardMaterial;
     mat.emissive.set("#000000");
-    document.body.style.cursor = "default";
+    (e.nativeEvent.target as HTMLElement).style.cursor = "default";
     if (hoverMode) onCountryHover?.(null);
   };
 

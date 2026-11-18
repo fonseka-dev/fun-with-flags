@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { CatalogContent } from "@/app/[locale]/catalog/CatalogContent";
 import type { Continent, Country } from "@/data/types";
 
@@ -79,6 +79,7 @@ vi.mock("@/components/catalog/CountryGrid", () => ({
 }));
 
 describe("CatalogContent", () => {
+  afterEach(cleanup);
   beforeEach(() => {
     mockUseCountries.mockReset();
     mockUseContinentFilter.mockReset();
@@ -128,5 +129,21 @@ describe("CatalogContent", () => {
 
     expect(screen.getAllByRole("button", { name: "exploreCulture" })).toHaveLength(24);
     expect(screen.getByRole("button", { name: "loadMore" })).toBeInTheDocument();
+  });
+
+  it("lets mobile visitors search and filter directly in the catalog", () => {
+    render(<CatalogContent />);
+
+    fireEvent.change(screen.getByRole("searchbox", { name: /searchLabel/ }), {
+      target: { value: "Afghanistan" },
+    });
+    expect(screen.getAllByRole("button", { name: "exploreCulture" })).toHaveLength(1);
+
+    fireEvent.change(screen.getByRole("searchbox", { name: /searchLabel/ }), {
+      target: { value: "" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Asia" }));
+    expect(screen.getAllByRole("button", { name: "exploreCulture" })).toHaveLength(10);
+    expect(screen.getByRole("button", { name: "Asia" })).toHaveAttribute("aria-pressed", "true");
   });
 });

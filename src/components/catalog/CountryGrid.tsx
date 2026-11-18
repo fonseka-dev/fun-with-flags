@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Country } from "@/data/types";
 import { CountryCard } from "./CountryCard";
 
@@ -6,6 +7,7 @@ type CountryGridProps = {
 };
 
 export function CountryGrid({ countries }: CountryGridProps) {
+  const t = useTranslations("catalog");
   if (countries.length === 0) {
     return (
       <div className="text-center py-16">
@@ -13,7 +15,7 @@ export function CountryGrid({ countries }: CountryGridProps) {
           search_off
         </span>
         <p className="text-on-surface-variant text-lg font-semibold">
-          No countries found. Try a different search or region.
+          {t("empty")}
         </p>
       </div>
     );
