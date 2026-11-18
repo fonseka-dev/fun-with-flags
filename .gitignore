@@ -35,6 +35,7 @@ Thumbs.db
 
 # ── Local tooling (project-specific) ─────────────────────────
 .worktrees/
+.worktree-recovery/
 .superpowers/
 .env.local.next/
 
